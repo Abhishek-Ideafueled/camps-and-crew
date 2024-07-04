@@ -8,6 +8,7 @@ import Industries from './Industries';
 import CaseStudies from './CaseStudies';
 import SetsUsApart from './SetsUsApart';
 import DemoForm from './DemoForm';
+import Footer from './Footer';
 
 const Homepage = () => {
   return (
@@ -21,6 +22,7 @@ const Homepage = () => {
       <CaseStudies/>
       <SetsUsApart/>
       <DemoForm/>
+      <Footer/>
     </div>
   )
 }

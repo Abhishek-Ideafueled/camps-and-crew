@@ -12,7 +12,7 @@ const DemoForm = () => {
     <div className='py-20 px-28 w-full '>
         <div className='relative '>
             <img src={formbg} alt="" className='absolute  inset-0 h-[786px] rounded-[26px] object-cover bg-[linear-gradient(90deg,_#05334799_60%,_#05334700_0%)]'/>
-            <div className='relative p-10 '>  
+            <div className='relative p-10 h-[786px]'>  
                 <div className='flex flex-col w-[590px] relative top-64 gap-2 right-4'>
                     <h2 className='text-[44px] text-[#EFBC43]'>Streamline the Management of your Remote Operations</h2>
                     <p className='text-white text-2xl'>See SmartLodge or EnRoute in action by filling out the form and we’ll be in touch very shortly.</p>
