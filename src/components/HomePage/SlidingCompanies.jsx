@@ -7,9 +7,9 @@ import top5canada from '/top-5-canada.png';
 
 const SlidingCompanies = () => {
   return (
-    <div className='flex flex-col gap-14 py-20'>
-      <h3 className='text-center text-2xl'>Trusted by Companies All Over the World</h3>
-      <div className='flex justify-between'>
+    <div className='flex flex-col gap-14 py-20 w-full'>
+      <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
+      <div className='flex justify-between overflow-x-auto w-full'>
         <img src={b2gold} alt="" />
         <img src={agincourtlogo} alt="" />
         <img src={canadianenergy} alt="" />
