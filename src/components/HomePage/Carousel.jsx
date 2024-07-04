@@ -9,7 +9,7 @@ const Carousel = () => {
       <div>
         <img src={home} alt="" />
       </div>
-      <div className='flex justify-between px-28 py-5 text-[#63C1EC]'>
+      <div className='flex justify-between px-28 py-5 text-[#63C1EC] font-ttCommonProNormal font-semibold'>
       <div className='flex items-center gap-2'>
         <BsArrowLeft />
         <p>SMARTLODGE</p>

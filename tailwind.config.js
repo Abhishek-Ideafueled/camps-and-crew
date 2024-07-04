@@ -37,7 +37,11 @@ export default {
       ttCommonProNormal:["tt_common_pro_normal","sans-serif"],
       ttCommonProRegular:["tt_common_pro_regular","sans-serif"],
     },
-    extend: {},
+    extend: {
+      colors: { 
+        'custom-heading': '#08425D',
+    }, 
+    },
   },
   plugins: [],
 }
