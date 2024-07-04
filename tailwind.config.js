@@ -41,6 +41,10 @@ export default {
       colors: { 
         'custom-heading': '#08425D',
     }, 
+    fontSize:{
+      h1: '48px',
+      h2:'40px'
+    }
     },
   },
   plugins: [],
