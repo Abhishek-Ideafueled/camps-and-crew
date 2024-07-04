@@ -27,13 +27,13 @@ const Footer = () => {
         <div className='flex gap-2 text-[#CAD5DE]'>
         <BsTelephone className='mt-2'/>
         <div className='flex flex-col'>
-            <p className='flex items-center gap-2 '>USA : +1 6197983914</p>
-       <p className=''>CA : +1 2898072990</p>
-       <p className=''>Global: +1 8002138556</p></div>
+        <a href="#" className='hover:underline text-[#CAD5DE]'>USA : +1 6197983914</a>
+        <a href="#" className='hover:underline text-[#CAD5DE]'>CA : +1 2898072990</a>
+        <a href="#" className='hover:underline text-[#CAD5DE]'>Global: +1 8002138556</a></div>
         </div>
        <div className='flex items-center text-[#CAD5DE] gap-2'>
        <FaRegEnvelope />
-       <p>info@campsandcrew.com</p>
+       <a href="#" className='hover:underline text-[#CAD5DE]'>info@campsandcrew.com</a>
        </div>
         </div>
       </div>
