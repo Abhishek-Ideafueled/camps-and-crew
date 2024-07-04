@@ -40,6 +40,7 @@ export default {
     extend: {
       colors: { 
         'custom-heading': '#08425D',
+        'custom-body':'#344054'
     }, 
     fontSize:{
       h1: '48px',
