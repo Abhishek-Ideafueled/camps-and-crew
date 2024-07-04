@@ -14,12 +14,12 @@ const DemoForm = () => {
             <img src={formbg} alt="" className='absolute inset-0 opacity-90 h-[786px] rounded-[26px] object-cover bg-[linear-gradient(90deg,_#053347_60%,_#053347_0%)]'/>
             <div className='relative p-10 h-[786px]'>  
                 <div className='flex flex-col w-[590px] relative top-64 gap-2 right-4'>
-                    <h2 className='text-[44px] text-[#EFBC43]'>Streamline the Management of your Remote Operations</h2>
-                    <p className='text-white text-2xl'>See SmartLodge or EnRoute in action by filling out the form and we’ll be in touch very shortly.</p>
+                    <h2 className='text-[44px] text-[#EFBC43] font-gilroyBold font-normal'>Streamline the Management of your Remote Operations</h2>
+                    <p className='text-white text-2xl font-ttCommonProRegular font-normal'>See SmartLodge or EnRoute in action by filling out the form and we’ll be in touch very shortly.</p>
                 </div>
                 <div className='relative bg-[#00000033] backdrop-blur-sm w-[408px] left-[600px] bottom-[200px] p-9 rounded-2xl'>
-                <form action="" className='flex gap-4 flex-col' >
-                <h4 className='text-[32px] text-white mb-5 text-center'>Book a Demo</h4>
+                <form action="" className='flex gap-4 flex-col font-ttCommonProMedium' >
+                <h4 className='text-[32px] text-white mb-5 text-center font-gilroyBold font-normal'>Book a Demo</h4>
                 <div className='bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg'>
                 <IoMdPerson />
                 <input type="text" placeholder='Full Name' className='border-none outline-none text-black' />
@@ -47,7 +47,7 @@ const DemoForm = () => {
                 <textarea placeholder='Add Message' className='border-none outline-none text-black' rows="4"/>
                 </div>
                 <div className='bg-[#EFBC43] flex items-center h-[54px]'>
-                  <button className='w-full'>Continue</button>
+                  <button className='w-full font-ttCommonProMedium'>CONTINUE</button>
                 </div>
                 </form>
                 </div>
