@@ -12,8 +12,8 @@ const SecondPage = () => {
     <div className="flex flex-col justify-center items-center gap-8 py-14 px-28">
       <div className="flex items-center gap-[2px] p-2 bg-[#F7F5F2] w-[356px] h-[83px] cursor-pointer">
         <div
-          className={` flex flex-col gap-[2px] py-3 px-4 rounded-lg w-[170px] ${
-            active === 1 ? "bg-white border-[1px] border-[#63C1EC]" : ""
+          className={` flex flex-col gap-[2px] py-3 px-4 rounded-lg w-[180px] ${
+            active === 1 ? "bg-white border-[1px] border-[#63C1EC]" : "border-none"
           }`}
           onClick={() => setActive(1)}
         >
