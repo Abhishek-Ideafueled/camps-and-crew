@@ -6,7 +6,7 @@ const Header = () => {
     <div className='flex justify-between px-28 py-4'>
       <img src={logo1} alt="" />
       <div className='flex gap-12 justify-center items-center text-[#09425D]'>
-      <div className='flex gap-10 '>
+      <div className='flex gap-10'>
         <p>Home</p>
         <p>Solutions</p>
         <p>Company</p>

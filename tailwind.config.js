@@ -7,6 +7,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    
+    fontFamily: {
+      gilroy: ["Gilroy", "sans-serif"],
+      
+    },
     extend: {},
   },
   plugins: [],
