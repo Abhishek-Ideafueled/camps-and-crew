@@ -16,7 +16,7 @@ const Footer = () => {
         <a href="#" className='hover:underline text-[#CAD5DE]'>Software to Manage Remote Workforce Camps</a>
         <a href="#" className='hover:underline text-[#CAD5DE]'>Online Booking Tool for FIFO Travel Logistics</a>
         </div>
-        <div className='flex flex-col w-[90px]'>
+        <div className='flex flex-col w-[90px] gap-4'>
             <p className='font-gilroyBold font-normal'>Resources</p>
             <a href="#" className='hover:underline text-[#CAD5DE]'>Blog</a>
             <a href="#" className='hover:underline text-[#CAD5DE]'>Case Studies</a>
