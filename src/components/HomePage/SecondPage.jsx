@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import RoomsManagement from './SecondPage/RoomsManagement';
 import Frontdesk from './SecondPage/Frontdesk';
 import Housekeeping from './SecondPage/Housekeeping';
 import Reporting from './SecondPage/Reporting';
 import AllFeatures from './SecondPage/AllFeatures';
+import Transportation from './SecondPage/Transportation';
+import Passenger from './SecondPage/Passenger';
+import Reservations from './SecondPage/Reservations';
+import RulesEngine from './SecondPage/RulesEngine';
+import Travel from './SecondPage/Travel';
 
 
 const SecondPage = () => {
 
     const [active,setActive] = useState(1);
-    const [activeHeading,setActiveHeading] = useState("rooms");
+    const [activeHeading,setActiveHeading] = useState("");
+
+    useEffect(()=>{
+      if(active ===1)
+      {
+        setActiveHeading("rooms");
+      }
+      else setActiveHeading("transportation")
+    },[active])
 
 
   return (
@@ -34,7 +47,9 @@ const SecondPage = () => {
           <span className="text-sm text-custom-blue font-ttCommonProNormal font-medium w-[138px] h-[22px] leading-[1.4rem] text-center">FIFO TRAVEL</span>
         </button>
       </div>
-      <div className="flex w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem]">
+    { active ===1 
+        ?     
+        <div className="flex min-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
         <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[202px] text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
@@ -52,16 +67,55 @@ const SecondPage = () => {
         >
           Reporting
           </div>
-        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[136px]  text-center`}
+        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[116px]  text-center`}
          onClick={()=>{setActiveHeading("features")}}
         >All Features
         </div>
+      </div> 
+      :
+
+      <div className="flex w-full  text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+      onClick={()=>{setActiveHeading("transportation")}}
+      >Chartered Transportation</div>
+      <div className={`${ activeHeading ==="passenger"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5  text-center`}
+       onClick={()=>{setActiveHeading("passenger")}}
+      >Passenger Manifests
       </div>
-     {activeHeading ==="rooms" && <RoomsManagement/>}
+      <div className={`${ activeHeading ==="reservations"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer  w-1/5 text-center`}
+       onClick={()=>{setActiveHeading("reservations")}}
+      >
+        Rostered Reservations
+        </div>
+      <div className={`${ activeHeading ==="travel"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer  w-1/5  text-center`}
+       onClick={()=>{setActiveHeading("travel")}}
+      >
+        Commerical Travel
+        </div>
+      <div className={`${ activeHeading ==="rulesEngine"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer   text-center`}
+       onClick={()=>{setActiveHeading("rulesEngine")}}
+      >Robust Rules Engine
+      </div>
+    </div> 
+      }
+
+      {/* For setting the navigation according to the selected tab at hte top */}
+    { active ===1
+     ?
+    <> {activeHeading ==="rooms" && <RoomsManagement/>}
      {activeHeading ==="frontDesk" && <Frontdesk/>}
      {activeHeading ==="housekeeping" && <Housekeeping/>}
       {activeHeading ==="reporting" && <Reporting/>}
-     {activeHeading ==="features" && <AllFeatures/>} 
+     {activeHeading ==="features" && <AllFeatures/>}
+     </> 
+     :
+    <> {activeHeading ==="transportation" && <Transportation/>}
+     {activeHeading ==="passenger" && <Passenger/>}
+     {activeHeading ==="reservations" && <Reservations/>}
+      {activeHeading ==="rulesEngine" && <RulesEngine/>}
+     {activeHeading ==="travel" && <Travel/>}
+     </>
+     }
     </div>
   );
 }

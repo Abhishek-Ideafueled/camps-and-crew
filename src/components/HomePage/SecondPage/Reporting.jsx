@@ -14,19 +14,19 @@ const Reporting = () => {
         <div className="flex flex-col py-2 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
           <div className="flex gap-10 items-center">
             <CiCircleCheck className="text-custom-blue" />
-            <span className="text-[#344054]">
+            <span className="text-custom-body">
             View all camp residents in-house and all rooms scheduled for cleaning
             </span>
           </div>
           <div className="flex gap-10 items-center">
             <CiCircleCheck className="text-custom-blue" />
-            <span className="text-[#344054]">
+            <span className="text-custom-body">
             See historical or forecasted camp occupancy and much more
             </span>
           </div>
           <div className="flex gap-10 items-center">
             <CiCircleCheck className="text-custom-blue" />
-            <span className="text-[#344054]">
+            <span className="text-custom-body">
             Distribute reports automatically or give view-only access
             </span>
           </div>
@@ -36,7 +36,7 @@ const Reporting = () => {
       </div>
     </div>
     <div className="w-1/2 h-[465px] object-contain rounded-2xl">
-      <img src={reporting} alt="girl reading image" className='w-full h-[465px] rounded-2xl'/>
+      <img src={reporting} alt="reporting image" className='w-full h-[465px] rounded-2xl'/>
     </div>
   </div>
   )
