@@ -41,7 +41,9 @@ export default {
       colors: { 
         'custom-heading': '#08425D',
         'custom-body':'#344054',
-        'custom-button':'#EFBC43'
+        'custom-button':'#EFBC43',
+        'btn-text':'#060F1F',
+        'custom-blue':'#63C1EC'
     }, 
     fontSize:{
       h1: '48px',

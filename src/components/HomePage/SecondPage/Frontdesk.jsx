@@ -13,19 +13,19 @@ const Frontdesk = () => {
         <hr className="w-24 text-[#D0D5DD]" />
         <div className="flex flex-col py-2 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             View all arrivals and departures, track no-shows and go-shows
             </span>
           </div>
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             Digital registration documents to reduce paper waste
             </span>
           </div>
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             Enable camp residents to check in on mobile phones or kiosks
             </span>

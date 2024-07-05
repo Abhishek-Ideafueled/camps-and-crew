@@ -13,25 +13,25 @@ const Reporting = () => {
         <hr className="w-24 text-[#D0D5DD]" />
         <div className="flex flex-col py-2 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             View all camp residents in-house and all rooms scheduled for cleaning
             </span>
           </div>
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             See historical or forecasted camp occupancy and much more
             </span>
           </div>
           <div className="flex gap-10 items-center">
-            <CiCircleCheck className="text-[#63C1EC]" />
+            <CiCircleCheck className="text-custom-blue" />
             <span className="text-[#344054]">
             Distribute reports automatically or give view-only access
             </span>
           </div>
         </div>
-     <button className='bg-[#EFBC43] mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-[#060F1F] leading-[1.6rem]'>
+     <button className='bg-[#EFBC43] mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     </div>
