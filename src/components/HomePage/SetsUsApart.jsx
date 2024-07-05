@@ -45,32 +45,32 @@ const SetsUsApart = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
         <div className='flex flex-col gap-5'>
-            <img src={cuttingedge} alt="" className='w-[50px] h-[50px]' />
+            <img src={cuttingedge} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>Cutting-Edge Technology</h3>
             <p className='font-ttCommonProRegular font-normal'>We continually innovate to meet the ever-evolving requirements of our clients and their remote project operations. Our clients play an integral part in defining our product roadmap.</p>
         </div>
         <div className='flex flex-col gap-5'>
-            <img src={homeflexible} alt="" className='w-[50px] h-[50px]' />
+            <img src={homeflexible} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>Flexible System Configurations</h3>
             <p className='font-ttCommonProRegular font-normal'>SmartLodge manages camps with varying requirements, large or small. Similarly, EnRoute is designed to book and manage FIFO travel and transportation logistics no matter how simple or complex.</p>
         </div>
         <div className='flex flex-col gap-5'>
-            <img src={homeone} alt="" className='w-[50px] h-[50px]' />
+            <img src={homeone} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>One-Stop Shop for FIFO Operations</h3>
             <p className='font-ttCommonProRegular font-normal'>Our platform provides a single source of truth for companies looking to manage their FIFO transportation bookings and remote camp operations all in one place.</p>
         </div>
         <div className='flex flex-col gap-5'>
-            <img src={homedomain} alt="" className='w-[50px] h-[50px]' />
+            <img src={homedomain} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>Deep Domain Knowledge</h3>
             <p className='font-ttCommonProRegular font-normal'>Our team is comprised of professionals with 74+ years combined experience across the hospitality, mining, energy, corporate travel and technology industries.</p>
         </div>
         <div className='flex flex-col gap-5'>
-            <img src={homedomain} alt="" className='w-[50px] h-[50px]' />
+            <img src={homedomain} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>Exceptional Support</h3>
             <p className='font-ttCommonProRegular font-normal'>Our support staff is available 24/7/365 via phone, live chat, or email to support our clients spread across 15 time zones and five continents.</p>
         </div>
         <div className='flex flex-col gap-5'>
-            <img src={problemsolve} alt="" className='w-[50px] h-[50px]' />
+            <img src={problemsolve} alt="" className='w-auto max-w-max' />
             <h3 className='text-[24px] font-gilroyBold font-normal'>Problem Solvers</h3>
             <p className='font-ttCommonProRegular font-normal'>We work with clients to ensure their implementations accommodate the unique, and often highly complex, requirements of their remote operations.</p>
         </div>
