@@ -40,11 +40,13 @@ export default {
     extend: {
       colors: { 
         'custom-heading': '#08425D',
-        'custom-body':'#344054'
+        'custom-body':'#344054',
+        'custom-button':'#EFBC43'
     }, 
     fontSize:{
       h1: '48px',
-      h2:'40px'
+      h2:'40px',
+      h3:'24px'
     },
     backgroundImage: 
     {'home': "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/home.jpg')",
