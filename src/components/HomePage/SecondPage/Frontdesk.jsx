@@ -31,7 +31,7 @@ const Frontdesk = () => {
             </span>
           </div>
         </div>
-     <button className='bg-custom-button mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-[#060F1F] leading-[1.6rem]'>
+     <button className='bg-custom-button hover:bg-btn-hover mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-[#060F1F] leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     </div>

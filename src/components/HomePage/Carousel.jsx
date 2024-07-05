@@ -11,7 +11,7 @@ const Carousel = () => {
         <div className='flex flex-col w-[600px] gap-[10px] '>
           <span className='font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]'>| SMART LODGE |</span>
           <h1 className='text-h1 font-gilroyBold font-normal leading-[3.6rem]'>The most flexible camp management system on the market </h1>
-          <button className='w-[219px] h-[64px] bg-custom-button text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]'>
+          <button className='w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]'>
             SEE ALL FEATURES</button>
         </div>
       </div>

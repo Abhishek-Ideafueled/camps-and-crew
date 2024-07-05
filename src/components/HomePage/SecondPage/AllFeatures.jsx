@@ -79,7 +79,7 @@ const AllFeatures = () => {
       </div>
       <div className='flex flex-col bg-custom-heading w-[340px] h-[265px] rounded-xl border-[1px] border-custom-blue py-10 px-5 gap-8'>
             <h3 className='text-h3 text-white font-gilroyBold leading-7 font-normal'>See everything SmartLodge has to offer.</h3>
-            <button className='bg-custom-button text-btn-text font-ttCommonProNormal font-semibold leading-[1.6rem] w-[248px] py-[19px] rounded-[4px]'>TAKE ME TO SMARTLODGE</button>
+            <button className='bg-custom-button hover:bg-btn-hover text-btn-text font-ttCommonProNormal font-semibold leading-[1.6rem] w-[248px] py-[19px] rounded-[4px]'>TAKE ME TO SMARTLODGE</button>
       </div>
     </div>
   )
