@@ -11,11 +11,11 @@ const Carousel = () => {
         <div className='flex flex-col w-[600px] gap-[10px] '>
           <span className='font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]'>| SMART LODGE |</span>
           <h1 className='text-h1 font-gilroyBold font-normal leading-[3.6rem]'>The most flexible camp management system on the market </h1>
-          <button className='w-[219px] h-[64px] bg-[#EFBC43] text-center font-ttCommonProNormal font-semibold text-[#060F1F] rounded-[4px] leading-[1.55rem]'>
+          <button className='w-[219px] h-[64px] bg-custom-button text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]'>
             SEE ALL FEATURES</button>
         </div>
       </div>
-      <div className='flex justify-between px-28 py-5 text-[#63C1EC] '>
+      <div className='flex justify-between px-28 py-5 text-custom-blue '>
       <div className='flex items-center gap-2 '>
         <BsArrowLeft />
         <p className='font-ttCommonProNormal font-semibold leading-[1.6rem]'>SMARTLODGE</p>

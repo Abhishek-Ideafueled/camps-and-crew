@@ -12,7 +12,7 @@ const Header = () => {
   },[])
 
   return (
-    <div className='flex justify-between px-28 py-4'>
+    <div className='flex justify-between px-28 py-4 sticky top-0 bg-white border-custom-blue border-b-[1px]'>
       <img src={logo1} alt="" />
       <div className='flex gap-12 justify-center items-center text-[#09425D]'>
       <div className='flex gap-10 font-gilroyBold font-normal leading-5'>

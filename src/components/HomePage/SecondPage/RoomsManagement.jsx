@@ -31,7 +31,7 @@ const RoomsManagement = () => {
             </span>
           </div>
         </div>
-     <button className='bg-[#EFBC43] mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
+     <button className='bg-custom-button mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     </div>
