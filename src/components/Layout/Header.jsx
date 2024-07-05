@@ -15,7 +15,7 @@ const Header = () => {
     <div className='flex justify-between px-28 py-4'>
       <img src={logo1} alt="" />
       <div className='flex gap-12 justify-center items-center text-[#09425D]'>
-      <div className='flex gap-10 font-gilroyBold font-normal'>
+      <div className='flex gap-10 font-gilroyBold font-normal leading-5'>
         <Link to="/" className={`${activeLink ==="/" ? "text-[#63C1EC] border-b-[1px] border-[#63C1EC]" :""} hover:text-[#63C1EC] cursor-pointer`}
         onClick={()=>setActiveLink("/")}
         >Home</Link>
@@ -28,7 +28,7 @@ const Header = () => {
         onClick={()=>setActiveLink("/case-studies")}
         >Case Studies</Link>
       </div>
-    <div className='bg-[#5BC0ED] px-4 py-3 font-ttCommonProRegular font-semibold rounded-[4px] hover:bg-[#53abd1]'>
+    <div className='bg-[#5BC0ED] px-4 py-3 font-ttCommonProNormal font-semibold rounded-[4px] hover:bg-[#53abd1]'>
        <button> BOOK A DEMO</button>
     </div>
       </div>

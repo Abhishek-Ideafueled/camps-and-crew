@@ -45,6 +45,10 @@ export default {
     fontSize:{
       h1: '48px',
       h2:'40px'
+    },
+    backgroundImage: 
+    {'home': "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/home.jpg')",
+
     }
     },
   },
