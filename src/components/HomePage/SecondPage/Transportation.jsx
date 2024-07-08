@@ -5,7 +5,7 @@ import { CiCircleCheck } from 'react-icons/ci';
 const Transportation = () => {
   return (
   
-    <div className="flex items-center shadow-lg h-[465px] rounded-2xl">
+    <div className="flex items-center shadow-lg lg:w-[1216] xl:w-full xl:mx-auto h-[465px] rounded-2xl">
     <div className=" px-10 py-16  height-[420px] w-1/2">
       <div className="flex flex-col">
         <div className="text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
