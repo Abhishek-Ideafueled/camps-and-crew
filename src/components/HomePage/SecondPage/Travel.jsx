@@ -35,8 +35,8 @@ const Travel = () => {
       LEARN MORE</button>
       </div>
     </div>
-    <div className="w-1/2 h-[465px] object-contain rounded-2xl">
-      <img src={travel} alt="travel image" className='w-full h-[465px] rounded-2xl'/>
+    <div className="w-1/2 h-[465px] rounded-2xl">
+      <img src={travel} alt="travel image" className='w-full h-full object-cover rounded-2xl'/>
     </div>
   </div>
   )

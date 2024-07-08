@@ -36,7 +36,7 @@ const Frontdesk = () => {
       </div>
     </div>
     <div className="w-1/2 h-[465px] rounded-2xl">
-      <img src={frontdesk} alt="front desk image" className='w-full h-full rounded-2xl'/>
+      <img src={frontdesk} alt="front desk image" className='w-full h-full object-cover rounded-2xl'/>
     </div>
   </div>
   )

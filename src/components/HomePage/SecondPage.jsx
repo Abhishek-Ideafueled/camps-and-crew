@@ -49,32 +49,32 @@ const SecondPage = () => {
       </div>
     { active ===1 
         ?     
-        <div className="flex min-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
-        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[202px] text-center`}
+        <div className="flex w-full px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
-        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[127px]  text-center`}
+        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
          onClick={()=>{setActiveHeading("frontDesk")}}
         >Front Desk
         </div>
-        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[154px]  text-center`}
+        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
          onClick={()=>{setActiveHeading("housekeeping")}}
         >
           Housekeeping
           </div>
-        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[122px]  text-center`}
+        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
          onClick={()=>{setActiveHeading("reporting")}}
         >
           Reporting
           </div>
-        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-[116px]  text-center`}
+        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
          onClick={()=>{setActiveHeading("features")}}
         >All Features
         </div>
       </div> 
       :
 
-      <div className="flex w-full  text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className="flex w-full px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
       <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>
@@ -99,7 +99,7 @@ const SecondPage = () => {
     </div> 
       }
 
-      {/* For setting the navigation according to the selected tab at hte top */}
+      {/* For setting the navigation according to the selected tab at the top */}
     { active ===1
      ?
     <> {activeHeading ==="rooms" && <RoomsManagement/>}
