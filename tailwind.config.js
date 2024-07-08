@@ -45,6 +45,8 @@ export default {
         'btn-hover':'#D7A93C',
         'btn-text':'#060F1F',
         'custom-blue':'#63C1EC',
+        'industryGradient':'#04253400',
+
     }, 
     fontSize:{
       h1: '48px',
@@ -54,9 +56,17 @@ export default {
     backgroundImage: 
     {'home': "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/home.jpg')",
       'demo':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%), url('/formbg.jpg')",
+      'integrated-img' :"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/integrated.jpg)",
+      'oil-gas':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/oil-gas.jpg)",
+      'mining':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(mining.jpg)",
+      'construction':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(construction.jpg)"
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
+    },
+    gradientColorStops:{
+      'industryGradient':'#04253400',
+
     }
     },
    
