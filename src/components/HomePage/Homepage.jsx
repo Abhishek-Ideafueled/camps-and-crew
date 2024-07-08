@@ -1,5 +1,5 @@
 import React from 'react'
-import Carousel from './Carousel';
+import Carousel from './Carousel/Carousel';
 import SecondPage from './SecondPage';
 import FifoOperations from './FifoOperations';
 import SlidingCompanies from './SlidingCompanies';
