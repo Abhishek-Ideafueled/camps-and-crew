@@ -2,9 +2,15 @@ import React, { useEffect, useState } from 'react';
 import logo1 from '/logo1.png';
 import { IoIosArrowDown } from 'react-icons/io';
 import { Link } from 'react-router-dom';
+import Modal from '../HomePage/Modal';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClose=()=>{
+    setIsOpen(false);
+  }
 
   useEffect(()=>{
     let curr = window.location.pathname;
@@ -12,7 +18,7 @@ const Header = () => {
   },[])
 
   return (
-    
+    <>
     <header className='flex justify-between h-[106px] px-28 py-4 sticky top-0 z-10 bg-white border-custom-blue border-b-[1px]'>
       <Link to='/home'> <img src={logo1} alt="" className='w-[115px] h-[74px]' /></Link>
      
@@ -22,7 +28,7 @@ const Header = () => {
         onClick={()=>setActiveLink("/")}
         >Home</Link>
         
-        <span className='flex items-center gap-1 hover:text-custom-blue cursor-pointer'><p >Solutions</p> <IoIosArrowDown /></span>
+        <span className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' onClick={()=>setIsOpen(true)}><p >Solutions</p> <IoIosArrowDown /></span>
         <Link to="/company" className={`${activeLink ==="/company" ? "text-custom-blue border-b-[1px] border-custom-blue" :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/company")}
         >Company</Link>
@@ -35,6 +41,11 @@ const Header = () => {
     </div>
       </div>
     </header>
+    <Modal isOpen={isOpen} onClose={handleClose}>
+      <>Helloooo</>
+      </Modal>
+      
+      </>
   )
 }
 
