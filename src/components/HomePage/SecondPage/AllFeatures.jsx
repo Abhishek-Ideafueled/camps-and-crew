@@ -3,7 +3,7 @@ import { CiCircleCheck } from 'react-icons/ci'
 
 const AllFeatures = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 h-[526px] gap-5">
+    <div className=" grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto">
       <div className='flex flex-col w-[340px] h-[265px] rounded-xl border-[1px] border-custom-blue py-10 px-5 gap-4'>
         <p className='text-2xl leading-7 font-gilroyBold font-normal text-custom-heading '>System Integrations</p>
         <ul className='flex flex-col gap-4 font-ttCommonProNormal'>
