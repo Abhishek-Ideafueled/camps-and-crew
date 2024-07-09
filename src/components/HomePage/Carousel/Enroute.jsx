@@ -25,7 +25,7 @@ const Enroute = () => {
       };
 
   return (
-    <div className="h-[620px] banner-slider">
+    <div className="h-[620px] banner-slider2">
       <Slider {...settings}>
         <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
           <img
@@ -35,7 +35,7 @@ const Enroute = () => {
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
-            <div className='flex flex-col gap-[10px] w-full'>
+            <div className='flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
@@ -56,7 +56,7 @@ const Enroute = () => {
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
-            <div className='flex flex-col gap-[10px] w-full'>
+            <div className='flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
@@ -77,7 +77,7 @@ const Enroute = () => {
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative w-full xl:max-w-[1216px] mx-auto">
-            <div className=' flex flex-col gap-[10px] w-full'>
+            <div className=' flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
@@ -98,7 +98,7 @@ const Enroute = () => {
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
-            <div className='flex flex-col gap-[10px] w-full'>
+            <div className='flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>

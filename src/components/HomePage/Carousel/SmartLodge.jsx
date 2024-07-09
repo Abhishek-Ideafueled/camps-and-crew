@@ -36,7 +36,7 @@ const SmartLodge = () => {
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto ">
-              <div className='w-full flex flex-col gap-[10px]'>
+              <div className='w-full flex flex-col gap-8'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -57,14 +57,14 @@ const SmartLodge = () => {
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
-              <div className='flex flex-col gap-[10px] w-full'>
+              <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
               <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
                 Maximize room utilization before you buy, build or rent
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -78,7 +78,7 @@ const SmartLodge = () => {
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
-              <div className='flex flex-col gap-[10px] w-full '>
+              <div className='flex flex-col gap-8 w-full '>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -98,7 +98,7 @@ const SmartLodge = () => {
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
-              <div className='flex flex-col gap-[10px] w-full'>
+              <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -119,7 +119,7 @@ const SmartLodge = () => {
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
-              <div className='flex flex-col gap-[10px] w-full'>
+              <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>

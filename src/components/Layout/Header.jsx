@@ -70,7 +70,7 @@ const Header = () => {
         onClick={()=>setActiveLink("/case-studies")}
         >Case Studies</Link>
       </nav>
-    <div className='bg-[#5BC0ED] px-4 py-3 font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'>
+    <div className='bg-[#5BC0ED] px-4 py-3 font-ttCommonProRegular font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'>
        <button> BOOK A DEMO</button>
     </div>
       </div>

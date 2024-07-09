@@ -5,13 +5,13 @@ import passengers from '/passenger.png';
 const Passenger = () => {
   return (
     <div className="flex items-center shadow-lg h-[465px] w-full rounded-2xl">
-    <div className=" px-10 py-16  height-[420px] w-1/2">
+    <div className=" px-10 py-16  height-[420px] w-[645px]">
       <div className="flex flex-col">
         <div className="text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
         Monitor your workers at every step of their journey to and from camp
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
-        <div className="flex flex-col py-2 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
+        <div className="flex flex-col py-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
           <div className="flex gap-10 items-center">
             <CiCircleCheck className="text-custom-blue" />
             <span className="text-custom-body">
@@ -35,8 +35,8 @@ const Passenger = () => {
       LEARN MORE</button>
       </div>
     </div>
-    <div className="w-1/2 h-[465px] rounded-2xl">
-      <img src={passengers} alt="passenger image" className='w-full h-full object-cover rounded-2xl'/>
+    <div className="w-[571px] h-[465px] rounded-2xl">
+      <img src={passengers} alt="passenger image" className='w-full h-full object-fit rounded-2xl'/>
     </div>
   </div>
   )

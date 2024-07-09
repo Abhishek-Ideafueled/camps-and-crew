@@ -5,7 +5,7 @@ import canadianenergy from '/canadian-energy.png';
 import permianlodging from '/permian-lodging.png';
 import top5canada from '/top-5-canada.png';
 import top5logo from '/top5logo.png';
-import sodexo1 from '/sodexo1.png';
+import sodexofull from '/sodexofull.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -81,7 +81,7 @@ const settings ={  dots: false,
       <span className='justify-self-center '><img src={canadianenergy} alt="canadian energy logo" /></span> 
       <span className='justify-self-center '> <img src={top5logo} alt="top 5 global logo" /></span>  
       <span className='justify-self-center '><img src={permianlodging} alt="permian lodging logo" /></span> 
-      <span className='justify-self-center '> <img src={sodexo1} alt="sodexo logo" /></span> 
+      <span className='justify-self-center '> <img src={sodexofull} alt="sodexo logo" /></span> 
       <span className='justify-self-center '> <img src={top5canada} alt="top 5 canada logo" /></span> 
      
      

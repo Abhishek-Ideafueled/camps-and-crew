@@ -1,8 +1,7 @@
 
 .banner-slider .slick-slider.slick-initialized .slick-dots{
-    bottom:150px;
+    bottom:110px;
     right: 540px;
-    
 }
 
 .banner-slider .slick-slider.slick-initialized .slick-dots li button:before{
