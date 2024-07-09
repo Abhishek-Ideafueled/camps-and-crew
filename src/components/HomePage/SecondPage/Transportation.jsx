@@ -1,5 +1,5 @@
 import React from 'react';
-import transportation from '/transportation.png';
+import transportation from '/transportation.jpg';
 import { CiCircleCheck } from 'react-icons/ci';
 
 const Transportation = () => {
@@ -37,7 +37,7 @@ const Transportation = () => {
       </div>
     </div>
     <div className="w-[571px] h-[465px] rounded-2xl">
-      <img src={transportation} alt="chartered transportation image" className='w-full h-full object-fit rounded-2xl'/>
+      <img src={transportation} alt="chartered transportation image" className=' rounded-2xl'/>
     </div>
   </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiCircleCheck } from 'react-icons/ci';
-import reservations from '/reservations.png';
+import reservations from '/reservations.jpg';
 
 const Reservations = () => {
   return (
@@ -36,7 +36,7 @@ const Reservations = () => {
       </div>
     </div>
     <div className="w-[571px] h-[465px] rounded-2xl">
-      <img src={reservations} alt="reservations image" className='w-full h-full object-fit rounded-2xl'/>
+      <img src={reservations} alt="reservations image" className=' rounded-2xl'/>
     </div>
   </div>
   )

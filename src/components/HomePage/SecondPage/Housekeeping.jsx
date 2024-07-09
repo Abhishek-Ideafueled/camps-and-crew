@@ -1,6 +1,6 @@
 import React from 'react'
 import { CiCircleCheck } from 'react-icons/ci';
-import housekeeping from '/housekeeping.png';
+import housekeeping from '/housekeeping.jpg';
 
 const Housekeeping = () => {
   return (
@@ -36,7 +36,7 @@ const Housekeeping = () => {
       </div>
     </div>
     <div className="w-[571px] h-[465px] rounded-2xl">
-      <img src={housekeeping} alt="housekeeping image" className='w-full h-full object-fit rounded-2xl'/>
+      <img src={housekeeping} alt="housekeeping image" className=' rounded-2xl'/>
     </div>
   </div>
   )

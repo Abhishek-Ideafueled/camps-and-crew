@@ -36,7 +36,7 @@ const RulesEngine = () => {
       </div>
     </div>
     <div className="w-[571px] h-[465px] rounded-2xl">
-      <img src={rulesEngine} alt="rules engine image" className='w-full h-full object-cover rounded-2xl'/>
+      <img src={rulesEngine} alt="rules engine image" className=' rounded-2xl'/>
     </div>
   </div>
   )
