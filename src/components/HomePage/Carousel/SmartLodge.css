@@ -1,0 +1,16 @@
+
+.banner-slider .slick-slider.slick-initialized .slick-dots{
+    bottom:150px;
+    right: 540px;
+    
+}
+
+.banner-slider .slick-slider.slick-initialized .slick-dots li button:before{
+    color: white;
+    opacity: 100%;
+}
+
+.banner-slider .slick-slider.slick-initialized .slick-dots li.slick-active button:before{
+    color: #63C1EC;
+    opacity: 100%;
+}

@@ -7,7 +7,7 @@ import smartlodge3 from '/smartlodge3.jpg';
 import smartlodge4 from '/smartlodge4.jpg';
 import smartlodge5 from '/smartlodge5.jpg';
 import home from '/home.jpg';
-import './Carousel.css';
+import './SmartLodge.css';
 
 const SmartLodge = () => {
 
@@ -28,7 +28,7 @@ const SmartLodge = () => {
   return (
     <div className="h-[620px] banner-slider">
         <Slider {...settings}>
-          <div className="relative py-[120px] px-28 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
             <img
               src={home}
               alt="home smartlodge"
@@ -49,14 +49,15 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
             <img
               src={smartlodge2}
               alt="second smartlodge"
               className="absolute inset-0 object-cover w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative flex flex-col xl:max-w-[1216px] w-full gap-[10px]">
+            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+              <div className='flex flex-col gap-[10px] w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -66,16 +67,18 @@ const SmartLodge = () => {
               <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
+              </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
             <img
               src={smartlodge3}
               alt="third smartlodge"
               className="absolute inset-0 object-cover w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative flex flex-col xl:max-w-[1216px] w-full gap-[10px]">
+            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+              <div className='flex flex-col gap-[10px] w-full '>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -84,17 +87,18 @@ const SmartLodge = () => {
               </h1>
               <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
-              </button>
+              </button></div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
             <img
               src={smartlodge4}
               alt="fourth smartlodge"
               className="absolute inset-0 object-cover w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative flex flex-col xl:max-w-[1216px] w-full gap-[10px]">
+            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+              <div className='flex flex-col gap-[10px] w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -104,16 +108,18 @@ const SmartLodge = () => {
               <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
+              </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
             <img
               src={smartlodge5}
               alt="fifth smartlodge"
               className="absolute inset-0 object-cover w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative flex flex-col xl:max-w-[1216px] w-full gap-[10px]">
+            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+              <div className='flex flex-col gap-[10px] w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -123,6 +129,7 @@ const SmartLodge = () => {
               <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
+              </div>
             </div>
           </div>
         </Slider>
