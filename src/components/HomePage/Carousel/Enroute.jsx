@@ -31,7 +31,7 @@ const Enroute = () => {
           <img
             src={enroute1}
             alt="main enroute"
-            className="absolute inset-0 object-cover w-full h-full"
+            className="absolute inset-0  w-full h-full"
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
@@ -52,7 +52,7 @@ const Enroute = () => {
           <img
             src={enroute2}
             alt="second enroute"
-            className="absolute inset-0 object-cover w-full h-full"
+            className="absolute inset-0  w-full h-full"
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
@@ -73,7 +73,7 @@ const Enroute = () => {
           <img
             src={enroute3}
             alt="third enroute"
-            className="absolute inset-0 object-cover w-full h-full"
+            className="absolute inset-0  w-full h-full"
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative w-full xl:max-w-[1216px] mx-auto">
@@ -94,7 +94,7 @@ const Enroute = () => {
           <img
             src={enroute4}
             alt="fourth enroute"
-            className="absolute inset-0 object-cover w-full h-full"
+            className="absolute inset-0  w-full h-full"
           />
           <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">

@@ -8,8 +8,7 @@ import b2gold from '/b2goldlogo2.png';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
-// import { FaArrowLeftLong } from 'react-icons/fa6';
-// import { HiArrowLongLeft, HiMiniArrowLongLeft } from 'react-icons/hi2';
+import './CaseStudies.css';
 
 const CaseStudies = () => {
 
@@ -56,7 +55,7 @@ const CaseStudies = () => {
           </div>
         </div>
         {/* <img src={blogcard} alt="blog card image" /> */}
-        <div className="w-[1216px] h-[512px] case-carousel mx-auto xl:w-full">
+        <div className="case-banner w-[1216px] h-[512px] case-carousel mx-auto xl:w-full">
           <Slider
             ref={(slider) => {
               sliderRef = slider;
@@ -148,7 +147,7 @@ const CaseStudies = () => {
               </div>
             </div>
           </Slider>
-          <div className="flex w-[152px] gap-8 relative bottom-24 left-[80%]">
+          {/* <div className="flex w-[152px] gap-8 relative bottom-24 left-[80%]">
             <button
               className="bg-custom-button flex items-center justify-center rounded-lg h-[60px] w-[60px]"
               onClick={previous}
@@ -171,7 +170,7 @@ const CaseStudies = () => {
                 ></path>
               </svg>
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

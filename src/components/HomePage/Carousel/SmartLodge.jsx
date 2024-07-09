@@ -32,7 +32,7 @@ const SmartLodge = () => {
             <img
               src={home}
               alt="home smartlodge"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto ">
@@ -53,7 +53,7 @@ const SmartLodge = () => {
             <img
               src={smartlodge2}
               alt="second smartlodge"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -74,7 +74,7 @@ const SmartLodge = () => {
             <img
               src={smartlodge3}
               alt="third smartlodge"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -94,7 +94,7 @@ const SmartLodge = () => {
             <img
               src={smartlodge4}
               alt="fourth smartlodge"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -115,7 +115,7 @@ const SmartLodge = () => {
             <img
               src={smartlodge5}
               alt="fifth smartlodge"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 w-full h-full"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
