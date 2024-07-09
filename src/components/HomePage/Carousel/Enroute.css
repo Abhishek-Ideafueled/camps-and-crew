@@ -1,6 +1,7 @@
 
 
 .banner-slider2 .slick-slider.slick-initialized .slick-dots{
+    position: absolute;
     bottom:120px;
     right: 550px;
     

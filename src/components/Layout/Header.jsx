@@ -62,7 +62,12 @@ const Header = () => {
         onClick={()=>setActiveLink("/")}
         >Home</Link>
         
-        <span className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' onClick={()=>setIsOpen(true)}><p >Solutions</p> <IoIosArrowDown /></span>
+        <span className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' 
+        // onClick={()=>setIsOpen(true)}
+        >
+          <p >Solutions</p> 
+          <IoIosArrowDown />
+          </span>
         <Link to="/company" className={`${activeLink ==="/company" ? "text-custom-blue border-b-[1px] border-custom-blue" :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/company")}
         >Company</Link>

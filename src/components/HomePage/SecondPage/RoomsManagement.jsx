@@ -36,7 +36,7 @@ const RoomsManagement = () => {
       </div>
     </div>
     <div className="w-[571px] h-full  rounded-2xl">
-      <img src={girlreading} alt="girl reading image" className='w-full h-full object-fit rounded-2xl'/>
+      <img src={girlreading} alt="girl reading image" className=' rounded-2xl'/>
     </div>
   </div>
   )
