@@ -19,7 +19,8 @@ const Header = () => {
 
   return (
     <>
-    <header className='flex justify-between h-[106px] px-28 py-4 sticky top-0 z-10 bg-white border-custom-blue border-b-[1px] w-full'>
+    <header className='bg-white w-full '>
+      <div className='flex justify-between h-[106px] px-28 py-4 sticky top-0 z-10 bg-white border-custom-blue border-b-[1px] w-full xl:max-w-[1216px] mx-auto'>
       <Link to='/home'> <img src={logo1} alt="" className='w-[115px] h-[74px]' /></Link>
      
       <div className='flex gap-12 justify-center items-center text-[#09425D] leading-[1.2rem]'>
@@ -39,6 +40,7 @@ const Header = () => {
     <div className='bg-[#5BC0ED] px-4 py-3 font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'>
        <button> BOOK A DEMO</button>
     </div>
+      </div>
       </div>
     </header>
     <Modal isOpen={isOpen} onClose={handleClose}>

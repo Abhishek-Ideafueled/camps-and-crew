@@ -50,7 +50,7 @@ const SecondPage = () => {
       </div>
     { active ===1 
         ?     
-        <div className="flex w-full px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+        <div className="flex w-full xl:max-w-[1216px] px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
         <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
@@ -75,7 +75,7 @@ const SecondPage = () => {
       </div> 
       :
 
-      <div className="flex w-full px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className="flex w-full xl:max-w-[1216px] px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
       <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>

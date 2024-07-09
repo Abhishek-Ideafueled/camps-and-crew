@@ -12,7 +12,7 @@ const Carousel = () => {
   return (
     <div className="w-full">
      { activeCarousel === "lodge" ? <SmartLodge/> : <Enroute/>}
-      <div className="flex justify-between px-28 py-5 text-custom-blue ">
+      <div className="flex justify-between px-28 py-5 text-custom-blue w-full xl:max-w-[1216px] mx-auto ">
         <div className="flex items-center gap-2 cursor-pointer" onClick={()=>setActiveCarousel("lodge")}>
           <BsArrowLeft />
           <p className="font-ttCommonProNormal font-semibold leading-[1.6rem]">
