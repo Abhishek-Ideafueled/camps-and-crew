@@ -5,7 +5,7 @@ import { FaRegEnvelope } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <div className='w-full bg-[#181C20] text-white font-ttCommonProRegular'>
+    <footer className='w-full bg-[#181C20] text-white font-ttCommonProRegular'>
       <div className='pt-14 pb-20 px-28 flex justify-between items-start flex-wrap gap-6'>
         <div className='flex flex-col w-[344px] gap-6'>
         <img src={logo2} alt="" className='w-[130px] h-[93px]' />
@@ -41,7 +41,7 @@ const Footer = () => {
         <span className='border-[#CAD5DE] border-r-[1px] px-2'> Copyright © 2024</span>
         <span className='px-2'>Privacy Policy</span>
       </div>
-    </div>
+    </footer>
   )
 }
 

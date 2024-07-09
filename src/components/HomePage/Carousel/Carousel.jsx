@@ -19,9 +19,12 @@ const Carousel = () => {
             SMARTLODGE
           </p>
         </div>
-        <div className="flex items-center gap-[6px]">
-          <FaCircle className={`${activeCarousel==="lodge" ? "text-custom-blue" : "text-white border-[1px] rounded-full"}`} />
-          <FaCircle className={`${activeCarousel==="enroute" ? "text-custom-blue" : "text-white border-[1px] rounded-full"}`}/>
+        <div className="flex items-center gap-[6px] cursor-pointer">
+          <FaCircle className={`${activeCarousel==="lodge" ? "text-custom-blue" : "text-white border-[1px] rounded-full"}`} 
+          onClick={()=>{setActiveCarousel("lodge")}}/>
+          <FaCircle className={`${activeCarousel==="enroute" ? "text-custom-blue" : "text-white border-[1px] rounded-full"}`}
+          onClick={()=>setActiveCarousel("enroute")}
+          />
         </div>
         <div className="flex items-center gap-2 cursor-pointer" onClick={()=>setActiveCarousel("enroute")}>
           <p className="font-ttCommonProNormal font-semibold leading-[1.6rem]">
