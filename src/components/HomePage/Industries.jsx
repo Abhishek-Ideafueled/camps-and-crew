@@ -7,7 +7,7 @@ import construction from '/construction.jpg';
 const Industries = () => {
   return (
     <div className="w-full">
-      <div className='flex flex-col py-20 px-28 gap-14 w-full xl:max-w-[1216px] mx-auto'>
+      <div className='flex flex-col py-20 px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto'>
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="text-[40px] text-custom-heading font-gilroy font-bold leading-[3rem]">Industries we serve</h2>
         <svg

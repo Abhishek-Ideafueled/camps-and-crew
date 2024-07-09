@@ -27,7 +27,7 @@ const SecondPage = () => {
 
   return (
   <div className=' w-full mx-auto'>
-    <div className="flex flex-col justify-center items-center gap-8 pt-[60px] pb-[80px] px-28">
+    <div className="flex flex-col justify-center items-center gap-8 pt-[60px] pb-[80px] px-28 xl:px-0">
       <div className="flex items-center gap-[2px] px-2 py-2 bg-[#F7F5F2] w-[386px] h-[85px] cursor-pointer">
         <button
           className={`rounded-lg w-[200px] h-[73px] ${
@@ -50,7 +50,7 @@ const SecondPage = () => {
       </div>
     { active ===1 
         ?     
-        <div className="flex w-full xl:max-w-[1216px] px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+        <div className="flex w-full xl:max-w-[1216px] px-8 mx-auto text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
         <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
@@ -75,7 +75,7 @@ const SecondPage = () => {
       </div> 
       :
 
-      <div className="flex w-full xl:max-w-[1216px] px-8 text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className="flex w-full xl:max-w-[1216px] px-8 mx-auto text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
       <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>
@@ -103,14 +103,16 @@ const SecondPage = () => {
       {/* For setting the navigation according to the selected tab at the top */}
     { active ===1
      ?
-    <div className='xl:max-w-[1216px] w-full'> {activeHeading ==="rooms" && <RoomsManagement/>}
+    <div className='xl:max-w-[1216px] w-full mx-auto'>
+       {activeHeading ==="rooms" && <RoomsManagement/>}
      {activeHeading ==="frontDesk" && <Frontdesk/>}
      {activeHeading ==="housekeeping" && <Housekeeping/>}
       {activeHeading ==="reporting" && <Reporting/>}
      {activeHeading ==="features" && <AllFeatures/>}
      </div> 
      :
-     <div className='xl:max-w-[1216px] w-full'> {activeHeading ==="transportation" && <Transportation/>}
+     <div className='xl:max-w-[1216px] w-full mx-auto'> 
+     {activeHeading ==="transportation" && <Transportation/>}
      {activeHeading ==="passenger" && <Passenger/>}
      {activeHeading ==="reservations" && <Reservations/>}
       {activeHeading ==="rulesEngine" && <RulesEngine/>}

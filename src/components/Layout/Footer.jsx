@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='w-full bg-[#181C20] text-white font-ttCommonProRegular'>
       <div className='w-full xl:max-w-[1216px] mx-auto'>
-      <div className='pt-14 pb-20 px-28 flex justify-between items-start flex-wrap gap-6'>
+      <div className='pt-14 pb-20 px-28 xl:px-0 flex justify-between items-start flex-wrap gap-6'>
         <div className='flex flex-col w-[344px] gap-6'>
         <img src={logo2} alt="" className='w-[130px] h-[93px]' />
         <p className='text-sm text-[#CAD5DE] font-ttCommonProRegular'>Camps & Crew simplifies crew and lodge management, partnering with housing providers, energy, and mining companies to streamline operations and reduce costs.</p>

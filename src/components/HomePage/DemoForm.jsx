@@ -10,7 +10,7 @@ import { BiSolidMessage } from 'react-icons/bi';
 const DemoForm = () => {
   return (
     <div className='w-full'>
-    <div className='py-20 px-28 w-full xl:max-w-[1216px] mx-auto '>
+    <div className='py-20 px-28 xl:px-0 w-full xl:max-w-[1216px] mx-auto '>
         {/* <div className='relative '>
             <img src={formbg} alt="" className='absolute inset-0 opacity-90 h-[786px] rounded-[26px] object-cover bg-[linear-gradient(90deg,_#053347_60%,_#053347_0%)]'/>
             <div className='relative p-10 h-[786px]'>  

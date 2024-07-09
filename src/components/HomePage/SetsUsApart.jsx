@@ -8,7 +8,7 @@ import cuttingedge from '/cutting-edge.png';
 const SetsUsApart = () => {
   return (
     <div className='bg-[#053347] text-white '>
-    <div className='flex flex-col  px-28 py-20  gap-14 w-full xl:max-w-[1216px] mx-auto'>
+    <div className='flex flex-col  px-28 xl:px-0 py-20  gap-14 w-full xl:max-w-[1216px] mx-auto'>
       <div className='flex flex-col gap-4 items-center'>
         <h1 className='text-[40px] font-gilroy font-bold'>What Sets Us Apart</h1>
         <svg

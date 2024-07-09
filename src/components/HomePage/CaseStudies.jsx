@@ -38,7 +38,7 @@ const CaseStudies = () => {
   return (
     <div className='w-full bg-[#F7F5F2] h-[854px]'>
   
-    <div className="flex flex-col py-20 px-28 gap-14 w-full xl:max-w-[1216px] mx-auto ">
+    <div className="flex flex-col py-20 px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto ">
       <div className="flex">
         <div className="flex flex-col gap-4 w-[70%]">
           <h2 className="text-h2 text-custom-heading font-gilroy font-bold">
@@ -94,7 +94,7 @@ const CaseStudies = () => {
               className="absolute inset-0 object-cover w-full h-full rounded-2xl"
             />
             <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
-            <div className="relative flex flex-col text-left mt-16 gap-4">
+            <div className="relative flex flex-col text-left mt-24 gap-4">
               <img src={civeo} alt="civeo logo" className="w-auto max-w-max" />
               <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold w-[70%]">
                 Civeo Speeds Up Check-In and Streamlines Camp Operations Across

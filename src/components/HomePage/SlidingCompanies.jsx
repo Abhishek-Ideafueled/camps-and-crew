@@ -71,7 +71,7 @@ const settings ={  dots: false,
         <div className='w-full xl:max-w-[1216px] mx-auto flex flex-col gap-14 py-20'>
 
       <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
-      <div className='w-full px-8'>
+      <div className='w-full px-8 xl:px-0'>
 <Slider {...settings}>
         <span><img src={b2gold} alt="b2gold logo" /></span>
       <span><img src={agincourtlogo} alt="agin court logo" /></span> 
