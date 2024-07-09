@@ -71,11 +71,11 @@ const settings ={  dots: false,
       <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
       <div className='w-full px-8'>
 <Slider {...settings}>
-        <span><img src={b2gold} alt="" /></span>
-      <span><img src={agincourtlogo} alt="" /></span> 
-      <span><img src={canadianenergy} alt="" /></span> 
-      <span><img src={permianlodging} alt="" /></span> 
-      <span> <img src={top5canada} alt="" /></span> 
+        <span><img src={b2gold} alt="b2gold logo" /></span>
+      <span><img src={agincourtlogo} alt="agin court logo" /></span> 
+      <span><img src={canadianenergy} alt="canadian energy logo" /></span> 
+      <span><img src={permianlodging} alt="permian lodging logo" /></span> 
+      <span> <img src={top5canada} alt="top 5 canada logo" /></span> 
         
         
        
