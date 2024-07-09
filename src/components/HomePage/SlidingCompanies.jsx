@@ -4,6 +4,8 @@ import agincourtlogo from '/agincourt-logo.png';
 import canadianenergy from '/canadian-energy.png';
 import permianlodging from '/permian-lodging.png';
 import top5canada from '/top-5-canada.png';
+import top5logo from '/top5logo.png';
+import sodexo1 from '/sodexo1.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -25,7 +27,7 @@ const SlidingCompanies = () => {
 
 const settings ={  dots: false,
             slidesToShow: 5,
-            slidesToScroll: 0.1,
+            slidesToScroll: 0.12,
             arrows: false,
             autoplay: true,
             autoplaySpeed: 0,
@@ -73,13 +75,16 @@ const settings ={  dots: false,
       <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
       <div className='w-full px-8 xl:px-0'>
 <Slider {...settings}>
-        <span><img src={b2gold} alt="b2gold logo" /></span>
-      <span><img src={agincourtlogo} alt="agin court logo" /></span> 
-      <span><img src={canadianenergy} alt="canadian energy logo" /></span> 
-      <span><img src={permianlodging} alt="permian lodging logo" /></span> 
-      <span> <img src={top5canada} alt="top 5 canada logo" /></span> 
-        
-        
+
+        <span className='justify-self-center'><img src={b2gold} alt="b2gold logo" /></span>
+      <span className='justify-self-center '><img src={agincourtlogo} alt="agin court logo" /></span> 
+      <span className='justify-self-center '><img src={canadianenergy} alt="canadian energy logo" /></span> 
+      <span className='justify-self-center '> <img src={top5logo} alt="top 5 global logo" /></span>  
+      <span className='justify-self-center '><img src={permianlodging} alt="permian lodging logo" /></span> 
+      <span className='justify-self-center '> <img src={sodexo1} alt="sodexo logo" /></span> 
+      <span className='justify-self-center '> <img src={top5canada} alt="top 5 canada logo" /></span> 
+     
+     
        
 </Slider>
       </div>
