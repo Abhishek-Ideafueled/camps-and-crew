@@ -7,7 +7,8 @@ import cuttingedge from '/cutting-edge.png';
 
 const SetsUsApart = () => {
   return (
-    <div className='flex flex-col bg-[#053347] px-28 py-20 text-white gap-14'>
+    <div className='bg-[#053347] text-white '>
+    <div className='flex flex-col  px-28 py-20  gap-14 w-full xl:max-w-[1216px] mx-auto'>
       <div className='flex flex-col gap-4 items-center'>
         <h1 className='text-[40px] font-gilroy font-bold'>What Sets Us Apart</h1>
         <svg
@@ -75,6 +76,7 @@ const SetsUsApart = () => {
             <p className='font-ttCommonProRegular font-normal'>We work with clients to ensure their implementations accommodate the unique, and often highly complex, requirements of their remote operations.</p>
         </div>
       </div>
+    </div>
     </div>
   )
 }

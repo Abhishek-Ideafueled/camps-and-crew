@@ -3,8 +3,8 @@ import video from '/video.png';
 
 const FifoOperations = () => {
   return (
-    <div className='bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0'>
-
+    <div className='bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full'>
+<div className='w-full xl:max-w-[1216px] mx-auto'>
         <div className=' flex flex-col gap-20 px-28'>
         <div className='text-center text-custom-heading font-gilroy font-bold'>
             <h2 className='text-h2 leading-[3rem]'>Streamlining FIFO Operations for 16 Years</h2>
@@ -26,7 +26,7 @@ const FifoOperations = () => {
       </div>
       <div className='flex px-28 pt-16 pb-10 gap-16'>
     <div className='w-[600px]'>
-    <img src={video} alt="insert video player here" className='object-cover w-full h-full' />
+    <img src={video} alt="insert video player here" className='object-cover w-full h-full rounded-2xl' />
     {/* <div className='relative'>
       <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40Z" fill="#EFBC43"/>
@@ -44,6 +44,7 @@ const FifoOperations = () => {
                 <p  className='font-ttCommonProNormal font-medium text-custom-body'>We work with companies in the mining, energy and construction sectors to automate and streamline their operations in order to reduce manual processes and the costs associated.</p>
     </div>
       </div>
+    </div>
     </div>
   )
 }

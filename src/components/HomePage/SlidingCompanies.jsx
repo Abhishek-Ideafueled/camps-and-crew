@@ -67,7 +67,9 @@ const settings ={  dots: false,
             ],}
 
   return (
-    <div className='flex flex-col gap-14 py-20 w-full'>
+    <div className=' w-full'>
+        <div className='w-full xl:max-w-[1216px] mx-auto flex flex-col gap-14 py-20'>
+
       <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
       <div className='w-full px-8'>
 <Slider {...settings}>
@@ -80,6 +82,7 @@ const settings ={  dots: false,
         
        
 </Slider>
+      </div>
       </div>
     </div>
   )

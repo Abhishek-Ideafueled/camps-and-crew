@@ -7,6 +7,7 @@ import civeo from '/civeo.png';
 import b2gold from '/b2goldlogo2.png';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
+import { Link } from 'react-router-dom';
 // import { FaArrowLeftLong } from 'react-icons/fa6';
 // import { HiArrowLongLeft, HiMiniArrowLongLeft } from 'react-icons/hi2';
 
@@ -35,7 +36,9 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="flex flex-col py-20 px-28 gap-14 bg-[#F7F5F2] h-[854px]">
+    <div className='w-full bg-[#F7F5F2] h-[854px]'>
+  
+    <div className="flex flex-col py-20 px-28 gap-14 w-full xl:max-w-[1216px] mx-auto ">
       <div className="flex">
         <div className="flex flex-col gap-4 w-[70%]">
           <h2 className="text-h2 text-custom-heading font-gilroy font-bold">
@@ -63,56 +66,56 @@ const CaseStudies = () => {
             <img
               src={case1}
               alt="case study one"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 object-cover w-full h-full rounded-2xl"
             />
-            <div className="absolute inset-0 bg-smart-lodge w-full h-full"></div>
-            <div className="relative flex flex-col pr-96 mt-40 gap-4">
+            <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
+            <div className="relative flex flex-col text-left mt-40 gap-4">
               <img
                 src={sodexo}
                 alt="sodexo logo"
-                className="w-auto max-w-max"
+                className="w-auto max-w-max rounded-2xl"
               />
-              <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold">
+              <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold w-[70%]">
                 Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive
                 Efficiencies at Cedar Valley Lodge
               </h2>
-              <span className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
+              <Link to='#' className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
                 READ STORY
                 <span>
                   <BsArrowRight />
                 </span>
-              </span>
+              </Link>
             </div>
           </div>
           <div className="relative pt-20 pl-8 pb-10 pr-8 h-[512px] w-full">
             <img
               src={case2}
               alt="case study two"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 object-cover w-full h-full rounded-2xl"
             />
-            <div className="absolute inset-0 bg-smart-lodge w-full h-full"></div>
-            <div className="relative flex flex-col pr-80 mt-28 gap-4">
+            <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
+            <div className="relative flex flex-col text-left mt-16 gap-4">
               <img src={civeo} alt="civeo logo" className="w-auto max-w-max" />
-              <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold">
+              <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold w-[70%]">
                 Civeo Speeds Up Check-In and Streamlines Camp Operations Across
                 North America with SmartLodge
               </h2>
-              <span className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
+              <Link to="#" className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
                 READ STORY
                 <span>
                   <BsArrowRight />
                 </span>
-              </span>
+              </Link>
             </div>
           </div>
-          <div className="relative pt-20 pl-8 pb-10 pr-8 h-[512px] w-full">
+          <div className="relative pt-20 pl-8 pb-10 pr-8 h-[512px] w-full rounded-2xl">
             <img
               src={case3}
               alt="case study three"
-              className="absolute inset-0 object-cover w-full h-full"
+              className="absolute inset-0 object-cover w-full h-full rounded-2xl"
             />
-            <div className="absolute inset-0 bg-smart-lodge w-full h-full"></div>
-            <div className="relative flex flex-col pr-80 mt-20 gap-4">
+            <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
+            <div className="relative flex flex-col pr-80 mt-16 gap-4">
               <img
                 src={b2gold}
                 alt="b2gold logo"
@@ -122,16 +125,16 @@ const CaseStudies = () => {
                 B2Gold Boosts Room Utilization and Streamlines Operations at
                 Fekola Mine Camps
               </h2>
-              <span className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
+              <Link to="#" className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold">
                 READ STORY
                 <span>
                   <BsArrowRight />
                 </span>
-              </span>
+              </Link>
             </div>
           </div>
         </Slider>
-        <div className='flex w-[152px] gap-8 relative bottom-24 left-[85%]'>
+        <div className='flex w-[152px] gap-8 relative bottom-24 left-[80%]'>
         <button className="bg-custom-button flex items-center justify-center rounded-lg h-[60px] w-[60px]" onClick={previous}>
         <BsArrowLeft />
         </button>
@@ -140,6 +143,7 @@ const CaseStudies = () => {
         </button>
       </div>
       </div>
+    </div>
     </div>
   );
 }
