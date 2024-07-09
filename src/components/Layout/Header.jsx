@@ -42,7 +42,7 @@ const Header = () => {
       </div>
     </header>
     <Modal isOpen={isOpen} onClose={handleClose}>
-      <>Helloooo</>
+      {/* <>Helloooo</> */}
       </Modal>
       
       </>

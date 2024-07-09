@@ -1,18 +1,56 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import ReactDOM from 'react-dom';
 import { AiOutlineFileSearch } from 'react-icons/ai';
 import { BsBullseye, BsFolder } from 'react-icons/bs';
 import { CgFileDocument } from 'react-icons/cg';
 
 const Modal = ({isOpen,onClose,children}) => {
+        
+
+        const [activeTab,setActiveTab] = useState("lodge");
+        const modalRef = useRef();
+
+        useEffect(()=>{
+          document.addEventListener('mousedown',handleClickOutside);
+
+          return ()=>{
+            document.removeEventListener('mousedown',handleClickOutside)
+          }
+        },[isOpen])
+
+
+        const handleClickOutside=(event)=>{
+          if (modalRef.current && !modalRef.current.contains(event.target)) {
+
+           onClose();
+      
+          }
+        }
+
+        useEffect(() => {
+          const handleKeyDown = (event) => {
+            if (event.key === "Escape") {
+              onClose();
+            }
+          };
+
+          document.addEventListener("keydown", handleKeyDown);
+
+          return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+          };
+        }, []);
+
         if(!isOpen) return null;
+
   return ReactDOM.createPortal(
-    <div className="fixed inset-0 w-[1200px] bg-white h-[550px] z-10 mx-auto flex mt-[106px] px-12 py-4 rounded-2xl">
+    <div className="fixed inset-0 w-[1200px] bg-white h-[550px] z-10 mx-auto flex mt-[106px] px-12 py-4 rounded-2xl" ref={modalRef}>
       <div className="flex flex-col w-1/2 gap-4 ">
         <h2 className="text-xl font-gilroy font-bold leading-6 text-[#053347]">Solutions</h2>
         <div className="grid gap-5">
-          <div className="flex items-center justify-between w-[509px] h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue">
-           <div className='w-[200px] h-[130px] '> <img
+          <div className="flex items-center justify-between w-[509px] h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer">
+           <div className='w-[200px] h-[130px]' > 
+            <img
               src="https://camps-crew-sigma.vercel.app/images/man-walking-down-row-between-camp-buildings.png"
               alt="man walking down row"
               className="h-full w-full object-cover rounded-lg"
@@ -29,7 +67,9 @@ const Modal = ({isOpen,onClose,children}) => {
             </div>
             
           </div>
-          <div className="flex items-center justify-between w-[509px] h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue">
+          <div className="flex items-center justify-between w-[509px] h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer"
+          onMouseEnter={()=>setActiveTab("enroute")} onMouseLeave={()=>setActiveTab("lodge")}
+          >
            <div className='w-[200px] h-[130px] '> <img
               src="https://camps-crew-sigma.vercel.app/images/enroute.png"
               alt="enroute "
@@ -51,11 +91,11 @@ const Modal = ({isOpen,onClose,children}) => {
       <div className="flex flex-col w-1/2 gap-2">
         <div className="flex gap-4">
           <h2 className="text-xl font-gilroy font-bold leading-6 text-[#053347]">Features</h2>
-          <span className="font-gilroy font-bold text-base bg-custom-blue rounded-3xl p-1">
-            Smart Lodge
+          <span className={`${activeTab ==="lodge"? "bg-custom-blue" : "bg-custom-button"} font-gilroy font-bold text-base  rounded-3xl p-1`}>
+            {activeTab ==="lodge" ? "Smart Lodge" :"EnRoute"}
           </span>
         </div>
-        {/* <div className='grid grid-cols-2 gap-4 rounded-2xl border-[1px] border-custom-blue p-5 h-[455px]'>
+    {   activeTab ==="lodge" &&  <div className='grid grid-cols-2 gap-4 rounded-2xl border-[1px] border-custom-blue p-5 h-[455px]'>
             <div className='flex flex-col w-[221px] gap-2 '>
                 <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><CgFileDocument /> <span>Rooms Management</span></p>
                 <p className='text-sm font-ttCommonProMedium text-custom-body'>Multiple ways to book rooms</p>
@@ -80,8 +120,8 @@ const Modal = ({isOpen,onClose,children}) => {
                 <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><BsFolder size={20}/> <span>Additional Features</span></p>
             </div>
             
-        </div>   */}
-        <div className='grid grid-cols-2 gap-4 rounded-2xl border-[1px] border-custom-blue p-5 h-[455px]' >
+        </div>  }
+       { activeTab ==="enroute" && <div className='grid grid-cols-2 gap-4 rounded-2xl border-[1px] border-custom-blue p-5 h-[480px]' >
         <div className='flex flex-col col-span-2 gap-2 '>
                 <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><CgFileDocument /> <span>Book and Manage Chartered Transportation</span></p>
                 <p className='text-sm font-ttCommonProMedium text-custom-body'>Manage seats on chartered air,ground or marine transportation</p>
@@ -90,10 +130,17 @@ const Modal = ({isOpen,onClose,children}) => {
             </div>
             <div className='flex flex-col w-[221px] gap-3 '>
                 <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><AiOutlineFileSearch size={20}/> <span>Flexible ways to book</span></p>
-                <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><AiOutlineFileSearch size={20}/> <span>System Integrations</span></p>
-                <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><BsFolder size={20}/> <span>Additional Features</span></p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Travel coordinators or end-users can be set up to book</p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Require approvals when needed</p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Customise and imhplement a robust rules engine</p>
             </div>
-        </div>
+            <div className='flex flex-col w-[221px] gap-2 '>
+                <p className='flex items-center gap-2 font-gilroy font-bold text-custom-heading'><BsBullseye size={20}/> <span>Book Commercial Travel</span></p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Access to rich GDS content</p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Book Flights, hotels or rental cars</p>
+                <p className='text-sm font-ttCommonProMedium text-custom-body'>Provide travellers with single itinerary for all bookings</p>
+            </div>
+        </div>}
       </div>
       
       {/* <button onClick={onClose}>close</button> */}
