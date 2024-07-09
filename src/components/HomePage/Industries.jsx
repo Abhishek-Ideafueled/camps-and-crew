@@ -9,7 +9,7 @@ const Industries = () => {
     <div className="w-full">
       <div className='flex flex-col py-20 px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto'>
       <div className="flex flex-col justify-center items-center gap-4">
-        <h2 className="text-[40px] text-custom-heading font-gilroy font-bold leading-[3rem]">Industries we serve</h2>
+        <h2 className="text-[40px] text-custom-heading font-gilroy font-bold leading-[3rem]">Industries We Serve</h2>
         <svg
           width="174"
           height="16"
@@ -45,7 +45,7 @@ const Industries = () => {
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
         <div className='flex flex-col '>
-            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-custom-blue border-t-[1px] border-r-[1px] border-l-[1px]'>
+            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
             <h3 className='text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Integrated Facilities Management</h3>
             <p className='text-base font-ttCommonProNormal text-custom-body font-normal leading-[1.6rem]'>Streamline the way you manage remote camps for your clients. Achieve higher room occupancy, automate cleaning assignments, track meals, get paid faster and more. </p>
        </div>
@@ -53,7 +53,7 @@ const Industries = () => {
        <div className='bg-integrated-img rounded-b-xl object-cover h-[300px]'></div>
         </div>
         <div className='flex flex-col'>
-            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-custom-blue border-t-[1px] border-r-[1px] border-l-[1px]'>
+            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
             <h3 className='text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Oil & Gas</h3>
             <p className='text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'>Increase room or bed utilization. Simplify daily activities for every department across one or multiple camps. Manage camp room and crew travel bookings in sync.</p>
        </div>
@@ -61,7 +61,7 @@ const Industries = () => {
        <div className='bg-oil-gas rounded-b-xl object-cover h-[300px]'></div>
         </div>
         <div className='flex flex-col'>
-            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-custom-blue border-t-[1px] border-r-[1px] border-l-[1px]'>
+            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
             <h3 className='text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Mining</h3>
             <p className='text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'> Discover how our technology can adapt to meet the changing needs of your project throughout its lifecycle. We offer a one-stop-shop for camp and FIFO travel management. </p>
        </div>
@@ -69,7 +69,7 @@ const Industries = () => {
        <div className='bg-mining rounded-b-xl object-cover h-[300px]'></div>
         </div>
         <div className='flex flex-col'>
-            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-custom-blue border-t-[1px] border-r-[1px] border-l-[1px]'>
+            <div className='flex flex-col gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
             <h3 className='text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Engineering and Construction</h3>
             <p className='text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'>Improve room utilization at your remote camps or within fixed room blocks allotted by your clients. Power your turnkey camps with best-of-breed camp management software. </p>
        </div>

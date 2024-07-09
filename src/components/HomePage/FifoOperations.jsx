@@ -13,7 +13,7 @@ const FifoOperations = () => {
             </h2>
           </div>
           <div className="flex justify-center items-center gap-24 px-28 xl:px-0">
-            <div>
+            <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
                 150K
               </div>
@@ -21,7 +21,7 @@ const FifoOperations = () => {
                 Rooms managed for clients operating remote camps and villages
               </span>
             </div>
-            <div>
+            <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
                 350K
               </div>
@@ -29,7 +29,7 @@ const FifoOperations = () => {
                 FIFO transportation reservations booked and managed annually
               </span>
             </div>
-            <div>
+            <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-16 text-custom-heading font-gilroyBold font-normal">
                 74
               </div>
@@ -45,7 +45,7 @@ const FifoOperations = () => {
             <img
               src={video}
               alt="insert video player here"
-              className="absolute inset-0 object-cover w-full h-full rounded-2xl"
+              className="absolute inset-0 object-fit w-full h-full rounded-2xl"
             />
             <div className="relative top-[40%] left-[45%]">
               <Link to="#">
@@ -96,7 +96,7 @@ const FifoOperations = () => {
               sectors to automate and streamline their operations in order to
               reduce manual processes and the costs associated.
             </p>
-            <Link className='text-custom-blue font-ttCommonProNormal font-semibold leading-[1.6rem]'>
+            <Link className='text-custom-blue w-[90px] hover:text-custom-body transition-colors duration-300 delay-100 font-ttCommonProRegular font-semibold leading-[1.6rem]'>
             READ MORE
             </Link>
           </div>

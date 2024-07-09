@@ -43,7 +43,7 @@ export default {
       'smart-lodge' : "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%)",
     },
     fontFamily: {
-      gilroy: ["Gilroy", "sans-serif"],
+      gilroy: ["Gilroy-Regular", "sans-serif"],
       circularStdMedium:["circular-std-medium","sans-serif"],
       gilroyBlack:["Gilroy-Black","sans-serif"],
       gilroyBlackItalic:["Gilroy-BlackItalic","sans-serif"],
@@ -57,7 +57,7 @@ export default {
       gilroyLightItalic:["Gilroy-LightItalic","sans-serif"],
       gilroyMedium:["Gilroy-Medium","sans-serif"],
       gilroyMediumItalic:["Gilroy-MediumItalic","sans-serif"],
-      gilroyRegular:["Gilroy-Regular","sans-serif"],
+      // gilroyRegular:["Gilroy-Regular","sans-serif"],
       gilroyRegularItalic:["Gilroy-RegularItalic","sans-serif"],
       gilroySemiBold:["Gilroy-SemiBold","sans-serif"],
       gilroySemiBoldItalic:["Gilroy-SemiBoldItalic","sans-serif"],

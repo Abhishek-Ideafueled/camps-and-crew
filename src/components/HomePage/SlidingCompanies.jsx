@@ -9,6 +9,7 @@ import sodexofull from '/sodexofull.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./SlidingCompanies.css";
 
 const SlidingCompanies = () => {
   // const settings = {
@@ -70,10 +71,10 @@ const settings ={  dots: false,
 
   return (
     <div className=' w-full'>
-        <div className='w-full xl:max-w-[1216px] mx-auto flex flex-col gap-14 py-20'>
+        <div className='w-full mx-auto flex flex-col gap-14 py-20'>
 
       <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
-      <div className='w-full px-8 xl:px-0'>
+      <div className='w-full px-8 xl:px-0 company-slider'>
 <Slider {...settings}>
 
         <span className='justify-self-center'><img src={b2gold} alt="b2gold logo" /></span>

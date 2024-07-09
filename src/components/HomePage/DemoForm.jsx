@@ -89,7 +89,7 @@ const DemoForm = () => {
                 <BiSolidMessage />
                 <textarea placeholder='Add Message' className='border-none outline-none text-black' rows="4"/>
                 </div>
-                <div className='bg-custom-button hover:bg-btn-hover flex items-center h-[54px]'>
+                <div className='bg-custom-button hover:bg-btn-hover flex items-center h-[54px] mt-5'>
                   <button className='w-full font-ttCommonProMedium'>CONTINUE</button>
                 </div>
                 </form>
