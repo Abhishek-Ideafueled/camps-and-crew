@@ -13,9 +13,9 @@ const Homepage = () => {
     <div className='w-full'>
       {/* <Carousel/> */}
       {/* <SecondPage/> */}
-      {/* <FifoOperations/>
-      <SlidingCompanies/>
-      <Industries/> */}
+      {/* <FifoOperations/> */}
+      {/* <SlidingCompanies/> */}
+      <Industries/> 
       {/* <CaseStudies/> */}
       <SetsUsApart/>
      <DemoForm/> 
