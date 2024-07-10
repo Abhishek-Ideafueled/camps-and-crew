@@ -1,8 +1,10 @@
 
 .banner-slider .slick-slider.slick-initialized .slick-dots{
     position: absolute;
-    bottom:110px;
-    right: 540px;
+    top: auto;
+    right: 550px;
+    bottom:50px;
+    left:auto ;
 }
 
 .banner-slider .slick-slider.slick-initialized .slick-dots li button:before{

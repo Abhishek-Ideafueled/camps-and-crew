@@ -26,13 +26,13 @@ const SmartLodge = () => {
       };
 
   return (
-    <div className="h-[620px] banner-slider">
+    <div className="banner-slider">
         <Slider {...settings}>
-          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <img
               src={home}
               alt="home smartlodge"
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full bottom-0"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto ">
@@ -49,11 +49,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <img
               src={smartlodge2}
               alt="second smartlodge"
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full bottom-0"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -70,11 +70,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <img
               src={smartlodge3}
               alt="third smartlodge"
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full bottom-0"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -90,11 +90,11 @@ const SmartLodge = () => {
               </button></div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <img
               src={smartlodge4}
               alt="fourth smartlodge"
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full bottom-0"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
@@ -111,11 +111,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <img
               src={smartlodge5}
               alt="fifth smartlodge"
-              className="absolute inset-0 w-full h-full"
+              className="absolute inset-0 w-full h-full bottom-0"
             />
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">

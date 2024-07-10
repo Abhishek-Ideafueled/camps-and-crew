@@ -25,15 +25,15 @@ const Enroute = () => {
       };
 
   return (
-    <div className="h-[620px] banner-slider2">
+    <div className="banner-slider2">
       <Slider {...settings}>
-        <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+        <div className="relative py-[120px] px-28 xl:px-0  text-white w-full">
           <img
             src={enroute1}
             alt="main enroute"
-            className="absolute inset-0  w-full h-full"
+            className="absolute inset-0   bottom-0"
           />
-          <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
+          <div className="absolute inset-0 w-full h-[620px] bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
             <div className='flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
@@ -48,15 +48,15 @@ const Enroute = () => {
             </div>
           </div>
         </div>
-        <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+        <div className="relative py-[120px] px-28 xl:px-0  text-white w-full">
           <img
             src={enroute2}
             alt="second enroute"
-            className="absolute inset-0  w-full h-full"
+            className="absolute inset-0 bottom-0"
           />
-          <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
+          <div className="absolute inset-0 h-[620px] bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
-            <div className='flex flex-col gap-8 w-full'>
+            <div className='flex flex-col gap-8 '>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
@@ -69,13 +69,13 @@ const Enroute = () => {
             </div>
           </div>
         </div>
-        <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+        <div className="relative py-[120px] px-28 xl:px-0  text-white w-full">
           <img
             src={enroute3}
             alt="third enroute"
-            className="absolute inset-0  w-full h-full"
+            className="absolute inset-0 bottom-0"
           />
-          <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
+          <div className="absolute inset-0 w-full h-[620px] bg-smart-lodge"></div>
           <div className="relative w-full xl:max-w-[1216px] mx-auto">
             <div className=' flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
@@ -90,13 +90,13 @@ const Enroute = () => {
             </div>
           </div>
         </div>
-        <div className="relative py-[120px] px-28 xl:px-0 h-[620px] text-white w-full">
+        <div className="relative py-[120px] px-28 xl:px-0  text-white w-full">
           <img
             src={enroute4}
             alt="fourth enroute"
-            className="absolute inset-0  w-full h-full"
+            className="absolute inset-0  bottom-0"
           />
-          <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
+          <div className="absolute inset-0 w-full h-[620px] bg-smart-lodge"></div>
           <div className="relative  w-full xl:max-w-[1216px] mx-auto ">
             <div className='flex flex-col gap-8 w-full'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
