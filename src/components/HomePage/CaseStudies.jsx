@@ -42,7 +42,7 @@ const CaseStudies = () => {
             <h2 className="text-h2 text-custom-heading font-gilroyBold font-bold">
               Case Studies
             </h2>
-            <p className="text-custom-body font-ttCommonProNormal font-medium leading-7">
+            <p className="text-custom-body text-lg font-ttCommonProNormal font-medium leading-7">
               Read about the ways our software empowers our clients to increase
               room utilization at camp, streamline housekeeping, manage rooms
               and travel in sync, and much more.
@@ -69,9 +69,9 @@ const CaseStudies = () => {
                 className="absolute inset-0 object-cover w-full h-full rounded-2xl"
               />
               <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
-              <div className="relative flex flex-col text-left mt-40 gap-4">
+              <div className="relative flex flex-col text-left mt-36 gap-4">
                 <img
-                  src={sodexo}
+                  src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
                   className="w-auto max-w-max rounded-2xl"
                 />
