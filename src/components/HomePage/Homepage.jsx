@@ -12,7 +12,7 @@ const Homepage = () => {
   return (
     <div className='w-full'>
       {/* <Carousel/> */}
-      <SecondPage/>
+      {/* <SecondPage/> */}
       {/* <FifoOperations/>
       <SlidingCompanies/>
       <Industries/> */}

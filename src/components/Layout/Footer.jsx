@@ -178,13 +178,13 @@ const Footer = () => {
               <div className="flex flex-col gap-3">
                 <Link
                   to="#"
-                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
                 >
                   Software to Manage Remote Workforce Camps
                 </Link>
                 <Link
                   to="#"
-                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
                 >
                   Online Booking Tool for FIFO Travel Logistics
                 </Link>
@@ -195,7 +195,7 @@ const Footer = () => {
               {/* <a href="#" className='hover:underline text-[#CAD5DE]'>Blog</a> */}
               <Link
                 to="#"
-                className="w-full hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                className="w-full hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
               >
                 Case Studies
               </Link>
@@ -204,11 +204,11 @@ const Footer = () => {
               <p className="font-gilroyBold font-normal">Company</p>
               <Link
                 to="#"
-                className="text-[#CAD5DE] hover:underline font-ttCommonProNormal font-normal leading-[1.6rem]"
+                className="text-[#CAD5DE] hover:underline font-ttCommonProNormal text-sm md:text-base font-normal leading-[1.6rem]"
               >
                 About us
               </Link>
-              <div className="flex gap-2 text-[#CAD5DE]">
+              <div className="flex gap-2 text-[#CAD5DE] text-sm md:text-base">
                 <BsTelephone className="mt-2" />
                 <div className="flex flex-col">
                   <Link
@@ -231,7 +231,7 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-              <div className="flex items-center text-[#CAD5DE] gap-2">
+              <div className="flex items-center text-[#CAD5DE] gap-2 text-sm md:text-base">
                 <FaRegEnvelope />
                 <Link to="#" className="hover:underline text-[#CAD5DE]">
                   info@campsandcrew.com
