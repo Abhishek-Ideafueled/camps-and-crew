@@ -38,6 +38,11 @@ export default {
       'smartlodge-3':"url(/Hero-Smartlodge-3.jpg)",
       'smartlodge-4':"url(/Hero-Smartlodge-4.jpg)",
       'smartlodge-5':"url(/Hero-Smartlodge-5.jpg)",
+      'enroute-1':"url(/Hero-Enroute-1.jpg)",
+      'enroute-2':"url(/Hero-Enroute-2.jpg)",
+      'enroute-3':"url(/Hero-Enroute-3.jpg)",
+      'enroute-4':"url(/Hero-Enroute-4.jpg)",
+      'bus-image': "url(/charter-bus-fifo-workers-passengers.jpg)",
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},

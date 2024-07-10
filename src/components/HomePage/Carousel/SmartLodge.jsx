@@ -26,7 +26,7 @@ const SmartLodge = () => {
       };
 
   return (
-    <div className="h-[620px] banner-slider">
+    <div className="banner-slider">
         <Slider {...settings}>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
             <div  className="absolute inset-0 w-full h-auto bottom-0 bg-remote-camp img-container" >
@@ -57,7 +57,7 @@ const SmartLodge = () => {
               alt="second smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
             /> */}
-            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-2 img-container' ></div>
+            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-2 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
@@ -79,7 +79,7 @@ const SmartLodge = () => {
               alt="third smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
             /> */}
-            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-3 img-container' ></div>
+            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full '>
@@ -100,7 +100,7 @@ const SmartLodge = () => {
               alt="fourth smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
             /> */}
-            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-4 img-container' ></div>
+            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-4 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
@@ -122,7 +122,7 @@ const SmartLodge = () => {
               alt="fifth smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
             /> */}
-            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-5 img-container' ></div>
+            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-5 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
