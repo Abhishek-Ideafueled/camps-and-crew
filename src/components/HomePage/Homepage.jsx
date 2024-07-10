@@ -17,7 +17,7 @@ const Homepage = () => {
       <SlidingCompanies/>
       <Industries/> */}
       {/* <CaseStudies/> */}
-      {/* <SetsUsApart/> */}
+      <SetsUsApart/>
      <DemoForm/> 
     </div>
   )
