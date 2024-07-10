@@ -39,7 +39,7 @@ const CaseStudies = () => {
       <div className="flex flex-col py-20 px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto ">
         <div className="flex">
           <div className="flex flex-col gap-4 w-[70%]">
-            <h2 className="text-h2 text-custom-heading font-gilroy font-bold">
+            <h2 className="text-h2 text-custom-heading font-gilroyBold font-bold">
               Case Studies
             </h2>
             <p className="text-custom-body font-ttCommonProNormal font-medium leading-7">
@@ -49,9 +49,9 @@ const CaseStudies = () => {
             </p>
           </div>
           <div className="flex items-center w-[30%] justify-end">
-            <span className="font-ttCommonProMedium text-custom-blue">
+            <Link to='#' className="font-ttCommonProMedium text-custom-blue hover:text-custom-body transition-colors duration-200 delay-200">
               VIEW ALL
-            </span>
+            </Link>
           </div>
         </div>
         {/* <img src={blogcard} alt="blog card image" /> */}

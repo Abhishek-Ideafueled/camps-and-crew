@@ -1,6 +1,9 @@
 .case-banner .slick-slider.slick-initialized .slick-arrow::before{
     position: absolute;   
-    top: 90%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
     background: #EFBC43;
     opacity:1;
     z-index: 10;
@@ -12,32 +15,25 @@
     background-position: center;
     content: '';
 }
-/* .slick-prev.slick-disabled, .slick-next.slick-disabled {
-    opacity: 1;
-    position: absolute; 
-    background: #F4D17E;
-    height: 60px;
-    width: 60px;
-    z-index: 2;
-    border-radius: 8px;
-    background-image: url('/arrow.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-    content: '';
-    display: none;
-} */
+.case-banner .slick-slider.slick-initialized .slick-arrow.slick-disabled::before {
+    background-color: #F4D17E;
+}
 
 
 .case-banner .slick-slider.slick-initialized .slick-arrow.slick-prev{
-    left: 990px;
+    left: auto;
+    top: auto;
+    bottom: 50px;
+    right: 150px;
     opacity: 1;
-    top: 400px;
     z-index: 1;
+
 }
 .case-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-    right: 70px;
+    right: 30px;
     opacity: 1;
-    top: 455px;
+    top: auto;
+    bottom: 30px;
     z-index: 1;
     rotate: 180deg;
 }
