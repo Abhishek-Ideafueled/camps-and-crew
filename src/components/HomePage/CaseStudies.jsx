@@ -73,7 +73,7 @@ const CaseStudies = () => {
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
-                  className="w-auto max-w-max rounded-2xl"
+                  className="w-auto max-w-max"
                 />
                 <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold w-[70%]">
                   Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive

@@ -16,3 +16,8 @@
     color: #63C1EC;
     opacity: 100%;
 }
+
+.img-container{
+    background-position:bottom 0 center;
+    background-size: 100%;
+}

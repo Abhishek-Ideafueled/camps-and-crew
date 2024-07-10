@@ -33,7 +33,11 @@ export default {
       'mining':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/mining.jpg)",
       'construction':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/construction.jpg)",
        'smart-lodge' : "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%)",
-
+      'remote-camp':"url(/Hero-Content.png)",
+      'smartlodge-2':"url(/Hero-Smartlodge-2.jpg)",
+      'smartlodge-3':"url(/Hero-Smartlodge-3.jpg)",
+      'smartlodge-4':"url(/Hero-Smartlodge-4.jpg)",
+      'smartlodge-5':"url(/Hero-Smartlodge-5.jpg)",
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
@@ -71,6 +75,9 @@ export default {
       ttCommonProNormal:["tt_commons_pro_normal","sans-serif"],
       ttCommonProRegular:["tt_commons_pro_regular","sans-serif"],
     },
+    backgroundPosition:{
+       
+    }
     },
    
   },

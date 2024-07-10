@@ -51,24 +51,24 @@ const SecondPage = () => {
     { active ===1 
         ?     
         <div className="flex w-full xl:max-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto justify-center ">
-        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
-        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("frontDesk")}}
         >Front Desk
         </div>
-        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("housekeeping")}}
         >
           Housekeeping
           </div>
-        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("reporting")}}
         >
           Reporting
           </div>
-        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("features")}}
         >All Features
         </div>

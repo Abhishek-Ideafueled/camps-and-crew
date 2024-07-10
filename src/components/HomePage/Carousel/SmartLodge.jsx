@@ -2,11 +2,11 @@ import React from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import smartlodge2 from '/smartlodge2.jpg';
-import smartlodge3 from '/smartlodge3.jpg';
-import smartlodge4 from '/smartlodge4.jpg';
-import smartlodge5 from '/smartlodge5.jpg';
-import home from '/home.jpg';
+// import smartlodge2 from '/smartlodge2.jpg';
+// import smartlodge3 from '/smartlodge3.jpg';
+// import smartlodge4 from '/smartlodge4.jpg';
+// import smartlodge5 from '/smartlodge5.jpg';
+// import home from '/home.jpg';
 import './SmartLodge.css';
 
 const SmartLodge = () => {
@@ -26,14 +26,16 @@ const SmartLodge = () => {
       };
 
   return (
-    <div className="banner-slider">
+    <div className="h-[620px] banner-slider">
         <Slider {...settings}>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <img
-              src={home}
+            <div  className="absolute inset-0 w-full h-auto bottom-0 bg-remote-camp img-container" >
+            {/* <img
+              src="/remote-camp-modular-buildings-exterior.jpg"
               alt="home smartlodge"
-              className="absolute inset-0 w-full h-full bottom-0"
-            />
+              className=''
+            /> */}
+            </div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto ">
               <div className='w-full flex flex-col gap-8'>
@@ -50,11 +52,12 @@ const SmartLodge = () => {
             </div>
           </div>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <img
+            {/* <img
               src={smartlodge2}
               alt="second smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
-            />
+            /> */}
+            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-2 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
@@ -71,11 +74,12 @@ const SmartLodge = () => {
             </div>
           </div>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <img
+            {/* <img
               src={smartlodge3}
               alt="third smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
-            />
+            /> */}
+            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-3 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full '>
@@ -91,11 +95,12 @@ const SmartLodge = () => {
             </div>
           </div>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <img
+            {/* <img
               src={smartlodge4}
               alt="fourth smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
-            />
+            /> */}
+            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-4 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
@@ -112,11 +117,12 @@ const SmartLodge = () => {
             </div>
           </div>
           <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <img
+            {/* <img
               src={smartlodge5}
               alt="fifth smartlodge"
               className="absolute inset-0 w-full h-full bottom-0"
-            />
+            /> */}
+            <div className='absolute inset-0 w-full h-full bottom-0 bg-smartlodge-5 img-container' ></div>
             <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
             <div className="relative  xl:max-w-[1216px] w-full mx-auto">
               <div className='flex flex-col gap-8 w-full'>
