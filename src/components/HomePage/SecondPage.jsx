@@ -50,50 +50,50 @@ const SecondPage = () => {
       </div>
     { active ===1 
         ?     
-        <div className="flex w-full xl:max-w-[1116px] mx-auto text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
-        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+        <div className="flex w-full xl:max-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto justify-center">
+        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
-        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("frontDesk")}}
         >Front Desk
         </div>
-        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("housekeeping")}}
         >
           Housekeeping
           </div>
-        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("reporting")}}
         >
           Reporting
           </div>
-        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
          onClick={()=>{setActiveHeading("features")}}
         >All Features
         </div>
       </div> 
       :
 
-      <div className="flex w-full xl:max-w-[1116px] mx-auto text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
-      <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5 text-center`}
+      <div className="flex w-full xl:max-w-[1116px] justify-center text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>
-      <div className={`${ activeHeading ==="passenger"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5  text-center`}
+      <div className={`${ activeHeading ==="passenger"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto  text-center`}
        onClick={()=>{setActiveHeading("passenger")}}
       >Passenger Manifests
       </div>
-      <div className={`${ activeHeading ==="reservations"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer  w-1/5 text-center`}
+      <div className={`${ activeHeading ==="reservations"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer  w-auto text-center`}
        onClick={()=>{setActiveHeading("reservations")}}
       >
         Rostered Reservations
         </div>
-      <div className={`${ activeHeading ==="travel"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer  w-1/5  text-center`}
+      <div className={`${ activeHeading ==="travel"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer  w-auto  text-center`}
        onClick={()=>{setActiveHeading("travel")}}
       >
         Commerical Travel
         </div>
-      <div className={`${ activeHeading ==="rulesEngine"?"text-custom-heading border-b-2 border-custom-blue":""} py-2 cursor-pointer w-1/5   text-center`}
+      <div className={`${ activeHeading ==="rulesEngine"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto   text-center`}
        onClick={()=>{setActiveHeading("rulesEngine")}}
       >Robust Rules Engine
       </div>
