@@ -20,4 +20,5 @@
 .img-container{
     background-position:bottom 0 center;
     background-size: 100%;
+    /* background-repeat: no-repeat; */
 }

@@ -23,7 +23,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white w-full sticky top-0 z-10 border-custom-blue border-b-[1px] flex flex-col items-start">
-        <div className="flex flex-row items-center justify-between min-h-[71px] px-28 py-4 xl:px-0  w-full xl:max-w-[1216px] mx-auto">
+        <div className="flex flex-row items-center justify-between min-h-[71px] transition-all duration-150 delay-150 px-28 py-4 xl:px-0  w-full xl:max-w-[1216px] mx-auto">
           <Link
             to="/home"
             className="w-[70px] h-[44px] lg:w-[115px] lg:h-[74px]"
@@ -86,7 +86,7 @@ const Header = () => {
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] leading-[1.2rem] px-28 pb-4"}`}>
+      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] leading-[1.2rem] px-28 pb-4 transition-all duration-450 delay-400"}`}>
       <nav className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm'>
         <Link to="/" className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/")}

@@ -10,13 +10,13 @@ const Carousel = () => {
 
 
   return (
-    <div className="w-full">
+    <div className="w-full min-h-[550px]">
      { activeCarousel === "lodge" ? <SmartLodge/> : <Enroute/>}
       <div className="flex justify-between px-28 xl:px-0 py-5 text-custom-blue w-full xl:max-w-[1216px] mx-auto ">
         <div className={`flex items-center gap-2 cursor-pointer ${activeCarousel ==="lodge" && "opacity-[50%]"}`}
         onClick={()=>setActiveCarousel("lodge")}>
           <BsArrowLeft />
-          <p className="font-ttCommonProRegular font-semibold leading-[1.6rem]">
+          <p className="font-ttCommonProRegular text-sm sm:text-base font-semibold leading-[1.6rem]">
             SMARTLODGE
           </p>
         </div>
@@ -29,7 +29,7 @@ const Carousel = () => {
         </div>
         <div className={`flex items-center gap-2 cursor-pointer ${activeCarousel ==="enroute" && "opacity-[50%]"}`}
         onClick={()=>setActiveCarousel("enroute")}>
-          <p className="font-ttCommonProRegular font-semibold leading-[1.6rem]">
+          <p className="font-ttCommonProRegular text-sm sm:text-base font-semibold leading-[1.6rem]">
             ENROUTE
           </p>
           <BsArrowRight />

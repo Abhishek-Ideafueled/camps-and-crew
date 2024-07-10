@@ -9,6 +9,7 @@ import Passenger from './SecondPage/Passenger';
 import Reservations from './SecondPage/Reservations';
 import RulesEngine from './SecondPage/RulesEngine';
 import Travel from './SecondPage/Travel';
+import './SecondPage.css';
 
 
 const SecondPage = () => {
@@ -50,7 +51,7 @@ const SecondPage = () => {
       </div>
     { active ===1 
         ?     
-        <div className="flex w-full xl:max-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto justify-center ">
+        <div className="flex w-full xl:max-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-x-auto justify-center scrollbar-none ">
         <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6  transition-all delay-150 duration-150 cursor-pointer w-auto text-center`}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
@@ -75,7 +76,7 @@ const SecondPage = () => {
       </div> 
       :
 
-      <div className="flex w-full xl:max-w-[1116px] justify-center text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-auto">
+      <div className="flex w-full xl:max-w-[1116px] justify-center text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-x-auto scrollbar-none">
       <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>

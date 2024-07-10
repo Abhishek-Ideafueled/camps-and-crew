@@ -4,10 +4,10 @@ import reporting from '/reporting.jpg';
 
 const Reporting = () => {
   return (
-    <div className="flex items-center shadow-lg  h-[465px] rounded-2xl">
-    <div className=" px-10 py-16  height-[420px] w-[645px]">
+    <div className="grid md:grid-cols-2 shadow-lg w-full min-h-[465px] md:h-[465px] rounded-2xl min-w-[516px] items-center">
+    <div className=" lg:px-10 p-6 lg:py-16  height-[420px] w-full md:max-w-[645px]">
       <div className="flex flex-col">
-        <div className="text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
+        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
         300+ reports with the essential data your staff need at every level of your organization
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
@@ -35,7 +35,7 @@ const Reporting = () => {
       LEARN MORE</button>
       </div>
     </div>
-    <div className="w-[571px] h-[465px] rounded-2xl">
+    <div className="max-w-[571px] h-full  rounded-2xl grid items-center">
       <img src={reporting} alt="reporting image" className=' rounded-2xl'/>
     </div>
   </div>

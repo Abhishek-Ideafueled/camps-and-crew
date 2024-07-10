@@ -42,10 +42,10 @@ const SmartLodge = () => {
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
+              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 The most flexible camp management system on the market
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal leading-[0.9rem] text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -64,10 +64,10 @@ const SmartLodge = () => {
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
+              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal  lg:leading-[3.6rem] max-w-[600px]">
                 Maximize room utilization before you buy, build or rent
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -86,10 +86,10 @@ const SmartLodge = () => {
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
+              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 Easy-to-use tools to book and assign rooms at your camp
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button></div>
             </div>
@@ -107,10 +107,10 @@ const SmartLodge = () => {
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
+              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 Technology to help your staff turn rooms faster than ever
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -129,10 +129,10 @@ const SmartLodge = () => {
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-h1 font-gilroyBold font-normal leading-[3.6rem] w-[600px]">
+              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 Designed to manage camps large or small, in any location
               </h1>
-              <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>

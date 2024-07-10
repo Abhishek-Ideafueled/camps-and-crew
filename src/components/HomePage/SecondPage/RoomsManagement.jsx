@@ -4,10 +4,10 @@ import { CiCircleCheck } from 'react-icons/ci';
 
 const RoomsManagement = () => {
   return (
-    <div className="flex items-center shadow-lg w-full h-[465px] rounded-2xl">
-    <div className=" px-10 py-16  height-[420px] w-[645px]">
+    <div className="grid md:grid-cols-2 shadow-lg w-full min-h-[465px] md:h-[465px] rounded-2xl min-w-[516px] items-center">
+    <div className=" lg:px-10 p-6 lg:py-16  height-[420px] w-full md:max-w-[645px]">
       <div className="flex flex-col">
-        <div className="text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
+        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
           Maximize the utilization of rooms at your remote camp
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
@@ -31,11 +31,11 @@ const RoomsManagement = () => {
             </span>
           </div>
         </div>
-     <button className='bg-custom-button hover:bg-btn-hover mt-4 w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
+     <button className='bg-custom-button hover:bg-btn-hover mt-4 max-w-[179px] h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     </div>
-    <div className="w-[571px] h-full  rounded-2xl">
+    <div className="max-w-[571px] h-full  rounded-2xl grid items-center">
       <img src={girlreading} alt="girl reading image" className=' rounded-2xl'/>
     </div>
   </div>
