@@ -73,8 +73,8 @@ const settings ={  dots: false,
     <div className=' w-full'>
         <div className='w-full mx-auto flex flex-col gap-14 py-20'>
 
-      <h3 className='text-center text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
-      <div className='w-full px-8 xl:px-0 company-slider'>
+      <h3 className='text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
+      <div className='w-full xl:px-0 company-slider'>
 <Slider {...settings}>
 
         <span className='justify-self-center'><img src={b2gold} alt="b2gold logo" /></span>

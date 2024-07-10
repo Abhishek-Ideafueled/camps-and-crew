@@ -14,7 +14,7 @@ const Homepage = () => {
       {/* <Carousel/> */}
       {/* <SecondPage/> */}
       {/* <FifoOperations/> */}
-      {/* <SlidingCompanies/> */}
+      <SlidingCompanies/>
       <Industries/> 
       {/* <CaseStudies/> */}
       <SetsUsApart/>
