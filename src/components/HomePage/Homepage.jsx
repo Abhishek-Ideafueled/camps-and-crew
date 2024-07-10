@@ -10,16 +10,16 @@ import DemoForm from './DemoForm';
 
 const Homepage = () => {
   return (
-    <>
+    <div className='w-full'>
       {/* <Carousel/> */}
       <SecondPage/>
-      <FifoOperations/>
+      {/* <FifoOperations/>
       <SlidingCompanies/>
-      <Industries/>
+      <Industries/> */}
       {/* <CaseStudies/> */}
-      <SetsUsApart/>
-      <DemoForm/>
-    </>
+      {/* <SetsUsApart/>
+      <DemoForm/> */}
+    </div>
   )
 }
 
