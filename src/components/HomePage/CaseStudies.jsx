@@ -97,7 +97,7 @@ const CaseStudies = () => {
                 className="absolute inset-0 object-cover w-full h-full rounded-2xl"
               />
               <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
-              <div className="relative flex flex-col text-left mt-24 gap-4">
+              <div className="relative flex flex-col text-left mt-28 gap-4">
                 <img
                   src={civeo}
                   alt="civeo logo"
