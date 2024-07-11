@@ -112,7 +112,7 @@ const SecondPage = () => {
      {activeHeading ==="features" && <AllFeatures/>}
      </div> 
      :
-     <div className='xl:max-w-[1216px] w-full mx-auto'> 
+     <div className='max-w-[540px] md:max-w-[696px] xl:max-w-[1216px] mx-auto'> 
      {activeHeading ==="transportation" && <Transportation/>}
      {activeHeading ==="passenger" && <Passenger/>}
      {activeHeading ==="reservations" && <Reservations/>}

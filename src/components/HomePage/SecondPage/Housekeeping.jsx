@@ -4,10 +4,10 @@ import housekeeping from '/housekeeping.jpg';
 
 const Housekeeping = () => {
   return (
-    <div className="grid md:grid-cols-2 shadow-lg w-full min-h-[465px] md:h-[465px] rounded-2xl min-w-[516px] items-center">
-    <div className="lg:px-10 p-6 lg:py-16  height-[420px] w-full md:max-w-[645px]">
-      <div className="flex flex-col">
-        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal leading-[1.8rem]">
+    <div className="grid grid-cols-1 md:grid-cols-2 shadow-lg min-h-[465px] mx-auto lg:h-[465px] rounded-2xl items-center">
+    <div className="flex flex-col lg:px-10 p-6 lg:py-16 min-h-[420px] max-w-[492px] md:max-w-[645px]">
+      {/* <div className="flex flex-col"> */}
+        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal lg:leading-[1.8rem]">
         Ensure rooms are cleaned on time to speed up room turnover and improve resident satisfaction
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
@@ -30,13 +30,13 @@ const Housekeeping = () => {
             Create and track maintenance tickets for rooms needing service
             </span>
           </div>
-        </div>
-     <button className='bg-custom-button hover:bg-btn-hover mt-4 w-[179px] h-[47px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text leading-[1.6rem]'>
+        {/* </div> */}
+     <button className='bg-custom-button hover:bg-btn-hover mt-4 max-w-[179px] h-[55px] md:h-[64px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text text-sm md:text-base  md:leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     </div>
-    <div className="max-w-[571px] h-full  rounded-2xl grid items-center">
-      <img src={housekeeping} alt="housekeeping image" className=' rounded-2xl'/>
+    <div className="max-w-[348px] lg:max-w-[571px] lg:h-full justify-self-center  rounded-2xl flex items-center">
+      <img src={housekeeping} alt="housekeeping image" className=' lg:rounded-2xl object-contain'/>
     </div>
   </div>
   )
