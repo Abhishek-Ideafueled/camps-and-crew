@@ -6,15 +6,15 @@ const FifoOperations = () => {
   return (
     <div className="bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
       <div className="w-full xl:max-w-[1216px] mx-auto">
-        <div className=" flex flex-col gap-20 px-28 xl:px-0">
+        <div className=" flex flex-col gap-20 px-3 mx-auto md:px-28 xl:px-0 border-[1px] border-b-[#D0D5DD]">
           <div className="text-center text-custom-heading font-gilroyBold font-bold">
-            <h2 className="text-h2 leading-[3rem]">
+            <h2 className="text-[26px] md:text-[32px] lg:text-h2 lg:leading-[3rem]">
               Streamlining FIFO Operations for 16 Years
             </h2>
           </div>
-          <div className="flex justify-center items-center gap-24 px-28 xl:px-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-3 sm:mx-auto lg:justify-center md:items-center gap-6 lg:gap-24 xl:px-0 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
+              <div className="text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
                 150K
               </div>
               <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
@@ -22,7 +22,7 @@ const FifoOperations = () => {
               </span>
             </div>
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
+              <div className="text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
                 350K
               </div>
               <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
@@ -30,7 +30,7 @@ const FifoOperations = () => {
               </span>
             </div>
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className="text-[50px] border-b-2 leading-[3.75rem] border-custom-button w-16 text-custom-heading font-gilroyBold font-normal">
+              <div className="text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-16 text-custom-heading font-gilroyBold font-normal">
                 74
               </div>
               <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
@@ -40,12 +40,12 @@ const FifoOperations = () => {
             </div>
           </div>
         </div>
-        <div className="flex px-28 xl:px-0 pt-16 pb-10 gap-16">
-          <div className="w-[600px] h-[415px] relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-3 max-w-[520px] md:max-w-[720px] lg:max-w-full mx-auto lg:px-28 xl:px-0 pt-16 pb-10 gap-4 lg:gap-16">
+          <div className="max-w-[600px] xl:w-[600px] min-h-[415px] relative">
             <img
               src={video}
               alt="insert video player here"
-              className="absolute inset-0 object-fit w-full h-full rounded-2xl"
+              className="absolute inset-0 object-fit w-full h-full rounded-2xl object-cover"
             />
             <div className="relative top-[40%] left-[45%] hover:opacity-90">
               <Link to="#">
@@ -75,23 +75,23 @@ const FifoOperations = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col w-[556px] gap-6">
-            <h3 className="text-2xl font-gilroyBold text-custom-heading font-normal leading-[1.8rem]">
+          <div className="flex flex-col max-w-[556px] gap-6">
+            <h3 className="text-xl md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
-            <p className="font-ttCommonProNormal font-medium text-custom-body leading-[1.6rem]">
+            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
               At Camps and Crew, we have set out to build best-of-breed
               technology that facilitates fly-in fly-out operations for travel
               coordinators, on-site camp staff, camp and project management, and
               everyone in-between.
             </p>
-            <p className="font-ttCommonProNormal font-medium text-custom-body leading-[1.6rem]">
+            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
               Over the years, we have developed a suite of software solutions to
               streamline all aspects of FIFO travel and remote camp management.
               Our solutions support all parties working to ensure remote crews
               are transported and housed safely and efficiently.
             </p>
-            <p className="font-ttCommonProNormal font-medium text-custom-body leading-[1.6rem]">
+            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
               We work with companies in the mining, energy and construction
               sectors to automate and streamline their operations in order to
               reduce manual processes and the costs associated.

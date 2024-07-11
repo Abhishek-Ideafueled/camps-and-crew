@@ -13,7 +13,7 @@ const Homepage = () => {
     <div className='w-full'>
       {/* <Carousel/> */}
       {/* <SecondPage/> */}
-      {/* <FifoOperations/> */}
+      <FifoOperations/>
       <SlidingCompanies/>
       <Industries/> 
       {/* <CaseStudies/> */}
