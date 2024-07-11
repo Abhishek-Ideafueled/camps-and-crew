@@ -77,13 +77,20 @@ const settings ={  dots: false,
       <div className='w-full xl:px-0 company-slider'>
 <Slider {...settings}>
 
-        <span className='justify-self-center'><img src={b2gold} alt="b2gold logo" /></span>
-      <span className='justify-self-center '><img src={agincourtlogo} alt="agin court logo" /></span> 
-      <span className='justify-self-center '><img src={canadianenergy} alt="canadian energy logo" /></span> 
-      <span className='justify-self-center '> <img src={top5logo} alt="top 5 global logo" /></span>  
-      <span className='justify-self-center '><img src={permianlodging} alt="permian lodging logo" /></span> 
-      <span className='justify-self-center '> <img src={sodexofull} alt="sodexo logo" /></span> 
-      <span className='justify-self-center '> <img src={top5canada} alt="top 5 canada logo" /></span> 
+      <span className='justify-self-center '>
+        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={b2gold} alt="b2gold logo" /></span>
+      <span className='justify-self-center '>
+        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={agincourtlogo} alt="agin court logo" /></span> 
+      <span className='justify-self-center '>
+        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={canadianenergy} alt="canadian energy logo" /></span> 
+      <span className='justify-self-center '>
+         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={top5logo} alt="top 5 global logo" /></span>  
+      <span className='justify-self-center '>
+        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={permianlodging} alt="permian lodging logo" /></span> 
+      <span className='justify-self-center '>
+         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={sodexofull} alt="sodexo logo" /></span> 
+      <span className='justify-self-center '>
+         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={top5canada} alt="top 5 canada logo" /></span> 
      
      
        

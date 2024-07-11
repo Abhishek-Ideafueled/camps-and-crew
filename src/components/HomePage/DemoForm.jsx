@@ -17,7 +17,7 @@ const DemoForm = () => {
                     <h2 className='text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]'>Streamline the Management of your Remote Operations</h2>
                     <p className='text-white text-2xl font-ttCommonProRegular font-normal leading-[2.4rem]'>See SmartLodge or EnRoute in action by filling out the form and we’ll be in touch very shortly.</p>
                 </div>
-                <div className=' bg-[#00000033] backdrop-blur-sm max-w-[488px] sm:w-[488px] lg:w-[488px] py-10 px-3 lg:py-9 lg:px-9  rounded-2xl'>
+                <div className=' bg-[#00000033] object-contain backdrop-blur-sm max-w-[488px] sm:w-[488px] lg:w-[488px] py-10 px-3 lg:py-9 lg:px-9  rounded-2xl'>
                 <form action="" className='flex gap-4 flex-col font-ttCommonProMedium' >
                 <h4 className='text-[20px] lg:text-[32px] text-white mb-5 text-center font-gilroyBold font-normal'>Book a Demo</h4>
                 <div className='bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg'>
