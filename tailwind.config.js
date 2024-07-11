@@ -26,7 +26,7 @@ export default {
       h3:'24px'
     },
     backgroundImage: 
-    {'home': "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/home.jpg')",
+    {'home': "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/remote-camp-modular-buildings-exterior.jpg')",
       'demo':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%), url('/formbg.jpg')",
       'integrated-img' :"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/integrated.jpg)",
       'oil-gas':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/oil-gas.jpg)",
@@ -34,10 +34,10 @@ export default {
       'construction':"linear-gradient(180deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.5) 100%),url(/construction.jpg)",
        'smart-lodge' : "linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%)",
       'remote-camp':"url(/Hero-Content.png)",
-      'smartlodge-2':"url(/Hero-Smartlodge-2.jpg)",
-      'smartlodge-3':"url(/Hero-Smartlodge-3.jpg)",
-      'smartlodge-4':"url(/Hero-Smartlodge-4.jpg)",
-      'smartlodge-5':"url(/Hero-Smartlodge-5.jpg)",
+      'smartlodge-2':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/aerial-large-remote-lodge-civeo-oil-sands.jpg')",
+      'smartlodge-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/camp-room-bed-side-table-chair.jpg')",
+      'smartlodge-4':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/camp-attendant-with-towels-in-hallway.jpg')",
+      'smartlodge-5':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/men-walking-alongside-modular-camp-buildings.jpg')",
       'enroute-1':"url(/Hero-Enroute-1.jpg)",
       'enroute-2':"url(/Hero-Enroute-2.jpg)",
       'enroute-3':"url(/Hero-Enroute-3.jpg)",

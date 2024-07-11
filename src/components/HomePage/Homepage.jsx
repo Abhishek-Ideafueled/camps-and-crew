@@ -16,7 +16,7 @@ const Homepage = () => {
       <FifoOperations/>
       <SlidingCompanies/>
       <Industries/> 
-      <CaseStudies/>
+      {/* <CaseStudies/> */}
       <SetsUsApart/>
      <DemoForm/> 
     </div>

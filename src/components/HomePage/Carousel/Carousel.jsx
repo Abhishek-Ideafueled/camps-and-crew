@@ -12,7 +12,7 @@ const Carousel = () => {
   return (
     <div className="w-full min-h-[550px]">
      { activeCarousel === "lodge" ? <SmartLodge/> : <Enroute/>}
-      <div className="flex justify-between px-28 xl:px-0 py-5 text-custom-blue w-full xl:max-w-[1216px] mx-auto ">
+      <div className="flex justify-between px-3 lg:px-28 xl:px-0 py-5 text-custom-blue w-full xl:max-w-[1216px] mx-auto ">
         <div className={`flex items-center gap-2 cursor-pointer ${activeCarousel ==="lodge" && "opacity-[50%]"}`}
         onClick={()=>setActiveCarousel("lodge")}>
           <BsArrowLeft />

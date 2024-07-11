@@ -26,18 +26,18 @@ const SmartLodge = () => {
       };
 
   return (
-    <div className="banner-slider">
+    <div className="banner-slider overflow-hidden">
         <Slider {...settings}>
-          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
-            <div  className="absolute inset-0 w-full h-auto bottom-0 bg-remote-camp img-container" >
+          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+            <div  className="absolute inset-0 h-auto bottom-0 bg-home img-container" >
             {/* <img
               src="/remote-camp-modular-buildings-exterior.jpg"
               alt="home smartlodge"
-              className=''
+              className='absolute inset-0 w-full h-auto bottom-0 img-container'
             /> */}
             </div>
-            <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative  xl:max-w-[1216px] w-full mx-auto ">
+            {/* <div className="absolute inset-0 w-full h-auto bg-smart-lodge"></div> */}
+            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px] ">
               <div className='w-full flex flex-col gap-8'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -51,11 +51,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          {/* <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
+          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
          
-            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-2 img-container' ></div>
-            <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+            <div className='absolute inset-0 h-auto bottom-0 img-container bg-smartlodge-2' ></div>
+            {/* <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div> */}
+            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
               <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -69,11 +69,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
+          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
           
-            <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
-            <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+            <div className='absolute inset-0 h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
+            {/* <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div> */}
+            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
               <div className='flex flex-col gap-8 w-full '>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -86,11 +86,11 @@ const SmartLodge = () => {
               </button></div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
+          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
           
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-4 img-container' ></div>
-            <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+            {/* <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div> */}
+            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
               <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -104,11 +104,11 @@ const SmartLodge = () => {
               </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-28 xl:px-0 text-white w-full">
+          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
         
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-5 img-container' ></div>
-            <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div>
-            <div className="relative  xl:max-w-[1216px] w-full mx-auto">
+            {/* <div className="absolute inset-0 w-full h-full bg-smart-lodge"></div> */}
+            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
               <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -121,7 +121,7 @@ const SmartLodge = () => {
               </button>
               </div>
             </div>
-          </div> */}
+          </div>
         </Slider>
       </div>
   )
