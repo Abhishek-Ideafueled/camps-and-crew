@@ -42,6 +42,9 @@ export default {
       'enroute-2':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/charter-bus-fifo-workers-passengers.jpg')",
       'enroute-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/man-camp-plane-parked-fbo.jpg')",
       'enroute-4':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/aisle-commercial-full-plane.jpg')",
+      'case-1':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case1.jpg')",
+      'case-2':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case2.jpg')",
+      'case-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case3.jpg')",
       'bus-image': "url(/charter-bus-fifo-workers-passengers.jpg)",
     },
     screens:{

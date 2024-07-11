@@ -37,3 +37,8 @@
     z-index: 1;
     rotate: 180deg;
 }
+
+.case-container{
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
