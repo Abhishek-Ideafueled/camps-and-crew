@@ -35,7 +35,7 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="w-full bg-[#F7F5F2] h-[854px]">
+    <div className="w-full bg-[#F7F5F2] h-[1054px]">
       <div className="flex flex-col py-0 lg:py-20 px-3 lg:px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto items-center">
         <div className="flex max-w-[516px] md:max-w-[720px] lg:max-w-[850px] xl:max-w-[1216px] justify-center">
           <div className="flex flex-col gap-4 w-full items-center md:items-start md:w-[70%]">
@@ -65,15 +65,15 @@ const CaseStudies = () => {
             }}
             {...settings}
           >
-            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 min-h-[512px] ">
+            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px] ">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
-              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-0 p-4 xl: gap-4">
+              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-lg md:text-xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
                   Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive
                   Efficiencies at Cedar Valley Lodge
                 </h2>
@@ -88,16 +88,16 @@ const CaseStudies = () => {
                 </Link>
               </div>
             </div>
-            {/* <div className="relative pt-20 pl-8 pb-10 pr-8 h-[512px] w-full">
+            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-2 case-container rounded-2xl" ></div>
-              <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
-              <div className="relative flex flex-col text-left mt-28 gap-4">
+             
+              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
                 <img
                   src={civeo}
                   alt="civeo logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold w-[70%]">
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
                   Civeo Speeds Up Check-In and Streamlines Camp Operations
                   Across North America with SmartLodge
                 </h2>
@@ -112,16 +112,16 @@ const CaseStudies = () => {
                 </Link>
               </div>
             </div>
-            <div className="relative pt-20 pl-8 pb-10 pr-8 h-[512px] w-full rounded-2xl">
+            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-3 case-container rounded-2xl" ></div>
-              <div className="absolute inset-0 bg-smart-lodge w-full h-full rounded-2xl"></div>
-              <div className="relative flex flex-col pr-80 mt-16 gap-4">
+            
+              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
                 <img
                   src={b2gold}
                   alt="b2gold logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-h2 leading-[3.0rem] text-white font-gilroyBold font-bold">
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
                   B2Gold Boosts Room Utilization and Streamlines Operations at
                   Fekola Mine Camps
                 </h2>
@@ -135,9 +135,17 @@ const CaseStudies = () => {
                   </span>
                 </Link>
               </div>
-            </div> */}
+            </div>
           </Slider>
         </div>
+        <div className="flex md:hidden items-center justify-center ">
+            <Link
+              to="#"
+              className="font-ttCommonProMedium text-custom-blue hover:text-custom-body transition-colors duration-200 delay-200"
+            >
+              VIEW ALL
+            </Link>
+          </div>
       </div>
     </div>
   );
