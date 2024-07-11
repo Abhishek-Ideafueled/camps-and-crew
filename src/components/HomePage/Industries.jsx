@@ -7,7 +7,7 @@ import construction from '/construction.jpg';
 const Industries = () => {
   return (
     <div className="w-full">
-      <div className='flex flex-col py-20 px-3 sm:px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto'>
+      <div className='flex flex-col py-20 px-3 lg:px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto'>
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 className="text-[30px] md:text-[32px] lg:text-[40px] text-custom-heading font-gilroyBold font-bold leading-[3rem]">Industries We Serve</h2>
         <svg
@@ -43,38 +43,38 @@ const Industries = () => {
           <path d="M144.582 0.722656L134.582 15.7227" stroke="#344054" />
         </svg>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
-        <div className='flex flex-col'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto md:max-w-[696px] lg:max-w-full'>
+        <div className='flex flex-col h-full max-w-[584px] '>
             <div className='flex flex-col  gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Integrated Facilities Management</h3>
-            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body font-normal leading-[1.6rem]'>Streamline the way you manage remote camps for your clients. Achieve higher room occupancy, automate cleaning assignments, track meals, get paid faster and more. </p>
+            <h3 className='text-xl lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Integrated Facilities Management</h3>
+            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body font-normal lg:leading-[1.6rem]'>Streamline the way you manage remote camps for your clients. Achieve higher room occupancy, automate cleaning assignments, track meals, get paid faster and more. </p>
        </div>
-       {/* <img src={integrated} alt="integrated facilities managment" className='rounded-b-xl' /> */}
-       <div className='bg-integrated-img rounded-b-xl object-cover h-[300px]'></div>
+       <img src={integrated} alt="integrated facilities managment" className='rounded-b-xl' />
+       {/* <div className='bg-integrated-img rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col'>
-            <div className='flex flex-col  gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
-            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Oil & Gas</h3>
-            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'>Increase room or bed utilization. Simplify daily activities for every department across one or multiple camps. Manage camp room and crew travel bookings in sync.</p>
+        <div className='flex flex-col h-full max-w-[584px]'>
+            <div className='flex flex-col  gap-4 p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px] h-full'>
+            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Oil & Gas</h3>
+            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'>Increase room or bed utilization. Simplify daily activities for every department across one or multiple camps. Manage camp room and crew travel bookings in sync.</p>
        </div>
-       {/* <img src={oilgas} alt="oil and gas image" className='rounded-b-xl' /> */}
-       <div className='bg-oil-gas rounded-b-xl object-cover h-[300px]'></div>
+       <img src={oilgas} alt="oil and gas image" className='rounded-b-xl' />
+       {/* <div className='bg-oil-gas rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col h-full max-w-[584px]'>
             <div className='flex flex-col gap-4  p-10 rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
-            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Mining</h3>
-            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'> Discover how our technology can adapt to meet the changing needs of your project throughout its lifecycle. We offer a one-stop-shop for camp and FIFO travel management. </p>
+            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Mining</h3>
+            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'> Discover how our technology can adapt to meet the changing needs of your project throughout its lifecycle. We offer a one-stop-shop for camp and FIFO travel management. </p>
        </div>
-       {/* <img src={mining} alt="mining image" className='rounded-b-xl' /> */}
-       <div className='bg-mining rounded-b-xl object-cover h-[300px]'></div>
+       <img src={mining} alt="mining image" className='rounded-b-xl' />
+       {/* <div className='bg-mining rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col h-full max-w-[584px]'>
             <div className='flex flex-col gap-4 p-10  rounded-t-xl border-[#D0D5DD] border-t-[1px] border-r-[1px] border-l-[1px]'>
-            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal leading-7'>Engineering and Construction</h3>
-            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body leading-[1.6rem] font-normal'>Improve room utilization at your remote camps or within fixed room blocks allotted by your clients. Power your turnkey camps with best-of-breed camp management software. </p>
+            <h3 className='text-xl text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Engineering and Construction</h3>
+            <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'>Improve room utilization at your remote camps or within fixed room blocks allotted by your clients. Power your turnkey camps with best-of-breed camp management software. </p>
        </div>
-       {/* <img src={construction} alt="engineering and construction" className='rounded-b-xl' /> */}
-       <div className='bg-construction rounded-b-xl object-cover h-[300px]'></div>
+       <img src={construction} alt="engineering and construction" className='rounded-b-xl' />
+       {/* <div className='bg-construction rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
       </div>
       </div>
