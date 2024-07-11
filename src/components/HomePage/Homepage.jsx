@@ -11,12 +11,12 @@ import DemoForm from './DemoForm';
 const Homepage = () => {
   return (
     <div className='w-full'>
-      {/* <Carousel/> */}
+      <Carousel/>
       <SecondPage/>
       <FifoOperations/>
       <SlidingCompanies/>
       <Industries/> 
-      {/* <CaseStudies/> */}
+      <CaseStudies/>
       <SetsUsApart/>
      <DemoForm/> 
     </div>
