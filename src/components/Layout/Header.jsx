@@ -3,8 +3,7 @@ import logo1 from '/logo1.png';
 import { IoIosArrowDown } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import Modal from '../HomePage/Modal';
-import { FaBars } from 'react-icons/fa';
-import { HiBars3, HiMiniBars3 } from 'react-icons/hi2';
+import { HiBars3} from 'react-icons/hi2';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -23,7 +22,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white w-full sticky top-0 z-10 border-custom-blue border-b-[1px] flex flex-col items-start">
-        <div className="flex flex-row items-center justify-between max-w-[720px] min-h-[71px] transition-all duration-150 delay-150 px-3 lg:px-28 py-4 xl:px-0  w-full xl:max-w-[1216px] mx-auto">
+        <div className="flex flex-row items-center justify-between max-w-[720px] lg:max-w-full min-h-[71px] transition-all duration-150 delay-150 px-3 lg:px-28 py-4 xl:px-0  w-full xl:max-w-[1216px] mx-auto">
           <Link
             to="/"
             className="w-[70px] h-[44px] lg:w-[115px] lg:h-[74px]"
