@@ -47,7 +47,7 @@ const FifoOperations = () => {
               alt="insert video player here"
               className="absolute inset-0 object-fit w-full h-full rounded-2xl object-cover"
             />
-            <div className="relative top-[40%] left-[45%] hover:opacity-90">
+            <div className="relative flex justify-center items-center h-full hover:opacity-90">
               <Link to="#">
               <svg
                 width="80"
