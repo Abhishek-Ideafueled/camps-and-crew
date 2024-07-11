@@ -77,7 +77,7 @@ const Header = () => {
               </Link>
             </nav>
             <button className="bg-[#5BC0ED] text-center w-[145px] h-[43px] px-4 py-3 font-ttCommonProRegular font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]">
-              {" "}
+              
               BOOK A DEMO
             </button>
           </div>
@@ -86,7 +86,7 @@ const Header = () => {
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] leading-[1.2rem] px-28 pb-4 transition-all duration-450 delay-400"}`}>
+      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start md:mx-auto leading-[1.2rem] px-3 ml-auto my-3 max-w-[720px] xl:max-w-[1216px] w-full lg:hidden pb-4 transition-all duration-450 delay-400"}`}>
       <nav className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm'>
         <Link to="/" className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/")}
