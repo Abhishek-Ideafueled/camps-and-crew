@@ -1,11 +1,26 @@
 
 
 .banner-slider2 .slick-slider.slick-initialized .slick-dots{
+   
     position: absolute;
-    bottom:50px;
-    right: 550px;
-    
+    display: none;
+    top: auto;
+    right: 0;
+    bottom: 50px;
+    left: 0;
+    margin: 0 auto;
+    /* max-width: 500px; */
+    max-width: 1216px;
+    /* border: 1px solid red;
+    background: red; */
+    display: flex !important;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 12px;
 }
+
+    
+
 
 .banner-slider2 .slick-slider.slick-initialized .slick-dots li button:before{
     color: white;
@@ -23,12 +38,34 @@
 }
 
 .img-container2{
-    background-position:bottom 0 center;
-    background-size: 100%;
+    /* background-position:bottom 0 center; */
     background-repeat: no-repeat;
+ background-size: cover !important;
 }
 
 .img-container3{
     background-size: cover;
 }
 
+@media only screen and (min-width: 1024px) {
+    .banner-slider2 .slick-slider.slick-initialized .slick-dots{
+       padding:0px 112px;
+       max-width: 1216px;
+       display: flex;
+       justify-content: start;
+       
+    }
+    
+  }
+
+  @media only screen and (min-width: 1280px) {
+    .banner-slider2 .slick-slider.slick-initialized .slick-dots{
+       padding: 0px 42px;
+       max-width: 1216px;
+       display: flex;
+       justify-content: start;
+       width: 1216px;
+       
+    }
+    
+  }

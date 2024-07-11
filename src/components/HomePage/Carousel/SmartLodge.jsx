@@ -30,13 +30,9 @@ const SmartLodge = () => {
         <Slider {...settings}>
           <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
             <div  className="absolute inset-0 h-auto bottom-0 bg-home img-container" >
-            {/* <img
-              src="/remote-camp-modular-buildings-exterior.jpg"
-              alt="home smartlodge"
-              className='absolute inset-0 w-full h-auto bottom-0 img-container'
-            /> */}
+         
             </div>
-            {/* <div className="absolute inset-0 w-full h-auto bg-smart-lodge"></div> */}
+          
             <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px] ">
               <div className='w-full flex flex-col gap-8'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
