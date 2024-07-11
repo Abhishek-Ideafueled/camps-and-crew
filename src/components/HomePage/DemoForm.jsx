@@ -11,7 +11,7 @@ const DemoForm = () => {
   return (
     <div className='w-full'>
     <div className='py-20 px-3 md:px-28 xl:px-0 w-full xl:max-w-[1216px] mx-auto '>
-      <div className='bg-demo w-full rounded-[26px]'>
+      <div className='bg-demo object-contain bg-no-repeat w-full rounded-[26px]'>
       <div className='p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center '>  
                 <div className='flex flex-col max-w-[608px] gap-2 right-4 items-center justify-center'>
                     <h2 className='text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]'>Streamline the Management of your Remote Operations</h2>
