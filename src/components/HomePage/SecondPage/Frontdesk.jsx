@@ -4,14 +4,14 @@ import frontdesk from '/frontdesk.jpg';
 
 const Frontdesk = () => {
   return (
-    <div className="flex flex-col md:flex-row shadow-custom-shadow min-h-[465px] mx-auto lg:h-[465px] rounded-2xl items-center">
+    <div className="grid grid-cols-1 md:grid-cols-2 shadow-custom-shadow min-h-[300px] mx-auto lg:h-[465px] rounded-2xl items-center">
     <div className=" flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] md:max-w-[645px]">
       {/* <div className="flex flex-col"> */}
-        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal lg:leading-[1.8rem]">
+        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading mb-4 font-gilroyBold font-normal lg:leading-[1.8rem]">
         Simplify check in and check out to reduce strain on your reception staff
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
-        <div className="flex flex-col py-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
+        <div className="flex flex-col mt-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
           <div className="flex gap-10 items-center">
             <CiCircleCheck className="text-custom-blue" />
             <span className="text-custom-body">
