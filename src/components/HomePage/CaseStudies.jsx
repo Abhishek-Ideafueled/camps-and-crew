@@ -67,13 +67,13 @@ const CaseStudies = () => {
           >
             <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px] ">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
-              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
+              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-32 lg:top-32 p-4 xl: gap-4">
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-full sm:max-w-[70%] md:w-[70%] lg:max-w-[70%]">
                   Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive
                   Efficiencies at Cedar Valley Lodge
                 </h2>
