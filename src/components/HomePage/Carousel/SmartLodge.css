@@ -4,7 +4,7 @@
     display: none;
     /* top: auto; */
     right: 0;
-    bottom: 80px;
+    bottom: 40px;
     left: 0;
     margin: 0 auto;
     /* max-width: 500px; */
@@ -61,12 +61,14 @@
   @media only screen and (min-width: 768px) {
     .banner-slider .slick-slider.slick-initialized .slick-dots{
         max-width:720px;
+        bottom: 60px;
     }
   }
 
   @media only screen and (min-width: 1024px) {
     .banner-slider .slick-slider.slick-initialized .slick-dots{
         max-width:960px;
+        bottom: 80px;
     }
   }
 

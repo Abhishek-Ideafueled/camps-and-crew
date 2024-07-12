@@ -29,11 +29,11 @@ const SmartLodge = () => {
   return (
     <div className="banner-slider overflow-hidden">
         <Slider {...settings}>
-          <div className="relative min-h-[620px] text-white w-full">
+          <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
             <div  className="absolute inset-0 h-auto bottom-0 bg-home img-container" >
          
             </div>
-          <div className='h-[620px] flex items-center justify-center'>
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
           <div className="relative main-container mx-auto ">
               <div className='w-full flex flex-col gap-8'>
                 <div className='flex flex-col gap-[10px]'>
@@ -52,73 +52,86 @@ const SmartLodge = () => {
           </div>
            
           </div>
-          {/* <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+           <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
          
             <div className='absolute inset-0 h-auto bottom-0 img-container bg-smartlodge-2' ></div>
-            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
+            <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+            <div className="relative main-container mx-auto">
               <div className='flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal  lg:leading-[3.6rem] max-w-[600px]">
-                Maximize room utilization before you buy, build or rent
+              <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal  lg:leading-[3.6rem] max-w-[600px]">
+                Maximize room <br /> utilization before <br /> you buy, build or rent
               </h1>
+              </div>
               <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
-            </div>
+            </div></div>
           </div>
-          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+          <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
           
             <div className='absolute inset-0 h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
-            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
+            <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+            <div className="relative main-container mx-auto">
               <div className='flex flex-col gap-8 w-full '>
+                <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-                Easy-to-use tools to book and assign rooms at your camp
+              <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+                Easy-to-use tools <br /> to book and assign <br /> rooms at your camp
               </h1>
+              </div>
               <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button></div>
             </div>
+            </div>
           </div>
-          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+          <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
           
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-4 img-container' ></div>
-            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
+            <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+            <div className="relative main-container mx-auto">
               <div className='flex flex-col gap-8 w-full'>
+                <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-                Technology to help your staff turn rooms faster than ever
+              <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+                Technology to help <br /> your staff turn rooms <br /> faster  than ever
               </h1>
+              </div>
               <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
+            </div>
             </div>
           </div>
-          <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+          <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
         
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-5 img-container' ></div>
-            <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
+            <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+            <div className="relative main-container mx-auto">
               <div className='flex flex-col gap-8 w-full'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
-              <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-                Designed to manage camps large or small, in any location
+              <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+                Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
               <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
             </div>
-          </div> */}
+            </div>
+          </div>
         </Slider>
       </div>
   )
