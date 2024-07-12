@@ -3,12 +3,13 @@ import logo2 from '/logo2.png';
 import { BsTelephone } from 'react-icons/bs';
 import { FaRegEnvelope } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
+import '../HomePage/Homepage.css';
 
 const Footer = () => {
   return (
     <footer className="w-full bg-[#181C20] text-white font-ttCommonProRegular">
-      <div className="w-full xl:max-w-[1216px] mx-auto">
-        <div className="pt-14 pb-20 px-28 xl:px-0 flex flex-col md:flex-row items-start gap-6">
+      <div className="main-container mx-auto ">
+        <div className="py-10 lg:pt-[60px] lg:pb-20 w-full xl:pb-20 flex flex-col md:flex-row items-start gap-6">
           <div className="flex flex-col max-w-[344px] gap-6">
             {/* <img src={logo2} alt="" className='w-[130px] h-[93px]' /> */}
             <svg
