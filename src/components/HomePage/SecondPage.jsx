@@ -27,8 +27,8 @@ const SecondPage = () => {
 
 
   return (
-  <div className='w-full mx-auto px-3 sm:py-10 sm:px-0'>
-    <div className="flex flex-col justify-center items-center gap-8 pt-[60px] pb-[80px]  md:max-w-[720px] lg:max-w-full mx-auto lg:px-28 xl:px-0">
+  <div className='w-full mx-auto px-3 sm:px-0'>
+    <div className="flex flex-col justify-center items-center gap-8 pt-10 lg:pt-[60px] pb-[80px]  md:max-w-[720px] lg:max-w-full mx-auto lg:px-28 xl:px-0">
       <div className="flex items-center gap-[2px] px-2 py-2 bg-[#F7F5F2] max-w-[386px] h-[85px] cursor-pointer">
         <button
           className={`rounded-lg w-[180px] sm:w-[200px] h-[73px] transition-all duration-50 delay-50 ${

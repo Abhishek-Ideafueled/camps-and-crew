@@ -4,6 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import Modal from '../HomePage/Modal';
 import { HiBars3} from 'react-icons/hi2';
+import '../HomePage/Homepage.css';
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -22,7 +23,7 @@ const Header = () => {
   return (
     <>
       <header className="bg-white w-full sticky top-0 z-10 lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
-        <div className="flex flex-row items-center justify-between max-w-[540px] md:max-w-[720px] lg:max-w-[960px] h-[74px] px-3 w-full xl:px-3 xl:py-0 xl:max-w-[1216px] mx-auto">
+        <div className="flex flex-row items-center justify-between main-container h-[74px] xl:py-0 mx-auto">
           <Link
             to="/"
             className="w-[70px] h-[44px] lg:w-[115px] lg:h-[74px]"
@@ -119,7 +120,7 @@ const Header = () => {
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start mx-auto md:mx-auto leading-[1.2rem] px-3 ml-auto my-3 max-w-[540px] md:max-w-[720px] xl:max-w-[1216px] w-full lg:hidden transition-all ease-in duration-450 delay-400"}`}>
+      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start mx-auto md:mx-auto leading-[1.2rem] ml-auto my-3 main-container lg:hidden transition-all ease-in duration-450 delay-400"}`}>
       <nav className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm'>
         <Link to="/" className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/")}
