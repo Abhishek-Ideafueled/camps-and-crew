@@ -64,8 +64,7 @@ const Header = () => {
 </svg>
 
           </Link>
-          <div
-            className={`hidden lg:flex lg:flex-row gap-12 justify-center items-center text-[#09425D] leading-[1.2rem]`}
+          <div className={`hidden lg:flex lg:flex-row gap-12 justify-center items-center text-[#09425D] leading-[1.2rem]`}
           >
             <nav className="flex flex-row gap-10 font-gilroyBold font-normal leading-5">
               <Link
@@ -120,7 +119,7 @@ const Header = () => {
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start mx-auto md:mx-auto leading-[1.2rem] px-3 ml-auto my-3 max-w-[540px] md:max-w-[720px] xl:max-w-[1216px] w-full lg:hidden transition-all duration-450 delay-400"}`}>
+      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start mx-auto md:mx-auto leading-[1.2rem] px-3 ml-auto my-3 max-w-[540px] md:max-w-[720px] xl:max-w-[1216px] w-full lg:hidden transition-all ease-in duration-450 delay-400"}`}>
       <nav className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm'>
         <Link to="/" className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}
         onClick={()=>setActiveLink("/")}
@@ -139,7 +138,7 @@ const Header = () => {
         onClick={()=>setActiveLink("/case-studies")}
         >Case Studies</Link>
       </nav>
-       <button className='bg-[#5BC0ED] flex items-center w-[139px] [54px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> BOOK A DEMO</button>
+       <button className='bg-[#5BC0ED] flex items-center justify-center w-[149px] [43px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> BOOK A DEMO</button>
     
       </div>
       </header>
