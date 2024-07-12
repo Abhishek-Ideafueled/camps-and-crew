@@ -9,6 +9,7 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import { Link } from 'react-router-dom';
 import './CaseStudies.css';
+import '../HomePage/Homepage.css';
 
 const CaseStudies = () => {
 
@@ -36,8 +37,9 @@ const CaseStudies = () => {
 
   return (
     <div className="w-full bg-[#F7F5F2] h-[1054px]">
-      <div className="flex flex-col py-0 lg:py-20 px-3 lg:px-28 xl:px-0 gap-14 w-full xl:max-w-[1216px] mx-auto items-center">
-        <div className="flex max-w-[516px] md:max-w-[720px] lg:max-w-[850px] xl:max-w-[1216px] justify-center">
+      <div className='main-container mx-auto'>
+      <div className="flex flex-col py-20  gap-14 w-full items-center">
+        <div className="flex w-full justify-center">
           <div className="flex flex-col gap-4 w-full items-center md:items-start md:w-[70%]">
             <h2 className="text-[32px] md:text-h2 text-custom-heading font-gilroyBold font-bold">
               Case Studies
@@ -58,23 +60,25 @@ const CaseStudies = () => {
           </div>
         </div>
         {/* <img src={blogcard} alt="blog card image" /> */}
-        <div className="case-banner w-full sm:max-w-[516px] md:max-w-[720px] lg:max-w-[850px] xl:max-w-[1216px] min-h-[512px] case-carousel mx-auto xl:w-full">
+        <div className="case-banner w-full min-h-[512px] case-carousel mx-auto">
           <Slider
             ref={(slider) => {
               sliderRef = slider;
             }}
             {...settings}
           >
-            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px] ">
+            <div className="relative h-[512px] ">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
-              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-32 lg:top-32 p-4 xl: gap-4">
+              <div className='h-full flex flex-col justify-end pb-5'>
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-full sm:max-w-[70%] md:w-[70%] lg:max-w-[70%]">
-                  Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive
+                
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-full">
+                  Sodexo Leverages SmartLodge to <br /> Lift Room Occupancy and Drive <br />
                   Efficiencies at Cedar Valley Lodge
                 </h2>
                 <Link
@@ -86,19 +90,21 @@ const CaseStudies = () => {
                     <BsArrowRight />
                   </span>
                 </Link>
+
+              </div>
               </div>
             </div>
-            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px]">
+            <div className="relative h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-2 case-container rounded-2xl" ></div>
-             
-              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
+              <div className='h-full flex flex-col justify-end pb-5'>
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src={civeo}
                   alt="civeo logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
-                  Civeo Speeds Up Check-In and Streamlines Camp Operations
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold">
+                  Civeo Speeds Up Check-In and <br /> Streamlines Camp Operations <br />
                   Across North America with SmartLodge
                 </h2>
                 <Link
@@ -111,18 +117,19 @@ const CaseStudies = () => {
                   </span>
                 </Link>
               </div>
+              </div>
             </div>
-            <div className="relative pt-20 lg:pl-8 lg:pb-10 lg:pr-8 h-[612px]">
+            <div className="relative h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-3 case-container rounded-2xl" ></div>
-            
-              <div className="relative flex flex-col text-left items-start top-[20px] sm:top-[70px] lg:top-20 p-4 xl: gap-4">
+              <div className='h-full flex flex-col  justify-end pb-5'>
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src={b2gold}
                   alt="b2gold logo"
                   className="w-auto max-w-max"
                 />
-                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold w-[50%] lg:max-w-[70%]">
-                  B2Gold Boosts Room Utilization and Streamlines Operations at
+                <h2 className="text-lg md:text-2xl lg:text-h2 lg:leading-[3.0rem] text-white font-gilroyBold font-bold">
+                  B2Gold Boosts Room <br /> Utilization and Streamlines <br /> Operations at
                   Fekola Mine Camps
                 </h2>
                 <Link
@@ -135,6 +142,7 @@ const CaseStudies = () => {
                   </span>
                 </Link>
               </div>
+              </div>
             </div>
           </Slider>
         </div>
@@ -146,6 +154,7 @@ const CaseStudies = () => {
               VIEW ALL
             </Link>
           </div>
+      </div>
       </div>
     </div>
   );
