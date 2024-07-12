@@ -36,9 +36,9 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="w-full bg-[#F7F5F2] h-[1054px]">
+    <div className="w-full bg-[#F7F5F2] h-[854px]">
       <div className='main-container mx-auto'>
-      <div className="flex flex-col py-20  gap-14 w-full items-center">
+      <div className="flex flex-col py-20 gap-14 w-full items-center">
         <div className="flex w-full justify-center">
           <div className="flex flex-col gap-4 w-full items-center md:items-start md:w-[70%]">
             <h2 className="text-[32px] md:text-h2 text-custom-heading font-gilroyBold font-bold">
