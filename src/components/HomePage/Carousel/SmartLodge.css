@@ -2,19 +2,20 @@
 .banner-slider .slick-slider.slick-initialized .slick-dots{
     position: absolute;
     display: none;
-    top: auto;
+    /* top: auto; */
     right: 0;
-    bottom: 50px;
+    bottom: 80px;
     left: 0;
     margin: 0 auto;
     /* max-width: 500px; */
-    max-width: 1216px;
+    width: 100%;
+    max-width: 540px;
     /* border: 1px solid red;
     background: red; */
     display: flex !important;
     justify-content: start;
     align-items: center;
-    padding: 0px 12px;
+    /* padding: 0px 12px; */
 }
 
 .banner-slider .slick-slider.slick-initialized .slick-dots li button:before{
@@ -33,7 +34,7 @@
  background-size: cover !important;
 }
 
-@media only screen and (min-width: 1024px) {
+/* @media only screen and (min-width: 1024px) {
     .banner-slider .slick-slider.slick-initialized .slick-dots{
        padding:0px 112px;
        max-width: 1216px;
@@ -54,4 +55,24 @@
        
     }
     
+  } */
+
+
+  @media only screen and (min-width: 768px) {
+    .banner-slider .slick-slider.slick-initialized .slick-dots{
+        max-width:720px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .banner-slider .slick-slider.slick-initialized .slick-dots{
+        max-width:960px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .banner-slider .slick-slider.slick-initialized .slick-dots{
+      width: 100%;
+        max-width:1216px;
+    }
   }
