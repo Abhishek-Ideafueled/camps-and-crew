@@ -10,6 +10,7 @@ import Reservations from './SecondPage/Reservations';
 import RulesEngine from './SecondPage/RulesEngine';
 import Travel from './SecondPage/Travel';
 import './SecondPage.css';
+import '../HomePage/Homepage.css';
 
 
 const SecondPage = () => {
@@ -27,8 +28,8 @@ const SecondPage = () => {
 
 
   return (
-  <div className='w-full mx-auto px-3 sm:px-0'>
-    <div className="flex flex-col justify-center items-center gap-8 pt-10 lg:pt-[60px] pb-[80px]  md:max-w-[720px] lg:max-w-full mx-auto lg:px-28 xl:px-0">
+  <div className='w-full mx-auto'>
+    <div className="flex flex-col justify-center items-center gap-8 pt-10 lg:pt-[60px] pb-[80px] main-container mx-auto">
       <div className="flex items-center gap-[2px] px-2 py-2 bg-[#F7F5F2] max-w-[386px] h-[85px] cursor-pointer">
         <button
           className={`rounded-lg w-[180px] sm:w-[200px] h-[73px] transition-all duration-50 delay-50 ${
@@ -104,7 +105,7 @@ const SecondPage = () => {
       {/* For setting the navigation according to the selected tab at the top */}
     { active ===1
      ?
-    <div className='max-w-[540px] md:max-w-[696px] xl:max-w-[1216px] mx-auto'>
+    <div className='main-container px-0 mx-auto'>
        {activeHeading ==="rooms" && <RoomsManagement/>}
      {activeHeading ==="frontDesk" && <Frontdesk/>}
      {activeHeading ==="housekeeping" && <Housekeeping/>}
@@ -112,7 +113,7 @@ const SecondPage = () => {
      {activeHeading ==="features" && <AllFeatures/>}
      </div> 
      :
-     <div className='max-w-[540px] md:max-w-[696px] xl:max-w-[1216px] mx-auto'> 
+     <div className='main-container px-0 mx-auto'> 
      {activeHeading ==="transportation" && <Transportation/>}
      {activeHeading ==="passenger" && <Passenger/>}
      {activeHeading ==="reservations" && <Reservations/>}

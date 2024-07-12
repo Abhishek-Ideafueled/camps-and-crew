@@ -11,6 +11,8 @@
     .main-container{
         max-width:720px;
     }
+
+
   }
 
   @media only screen and (min-width: 1024px) {
@@ -19,10 +21,13 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
     .main-container{
       width: 100%;
         max-width:1216px;
-    }
+        padding-left: 0;
+      padding-right: 0;
   }
+    }   
+   
 
