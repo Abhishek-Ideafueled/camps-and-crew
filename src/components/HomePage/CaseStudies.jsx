@@ -36,9 +36,9 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className="w-full bg-[#F7F5F2] h-[854px]">
+    <div className="w-full bg-[#F7F5F2] max-h-[854px]">
       <div className='main-container mx-auto'>
-      <div className="flex flex-col py-20 gap-14 w-full items-center">
+      <div className="flex flex-col py-10 lg:py-20 gap-14 w-full items-center">
         <div className="flex w-full justify-center">
           <div className="flex flex-col gap-4 w-full items-center md:items-start md:w-[70%]">
             <h2 className="text-[32px] md:text-h2 text-custom-heading font-gilroyBold font-bold">
@@ -60,16 +60,16 @@ const CaseStudies = () => {
           </div>
         </div>
         {/* <img src={blogcard} alt="blog card image" /> */}
-        <div className="case-banner w-full min-h-[512px] case-carousel mx-auto">
+        <div className="case-banner w-full max-h-[512px] case-carousel mx-auto">
           <Slider
             ref={(slider) => {
               sliderRef = slider;
             }}
             {...settings}
           >
-            <div className="relative h-[512px] ">
+            <div className="relative min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] ">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
-              <div className='h-full flex flex-col justify-end pb-5'>
+              <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col justify-end pb-5'>
               <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
@@ -94,9 +94,9 @@ const CaseStudies = () => {
               </div>
               </div>
             </div>
-            <div className="relative h-[512px]">
+            <div className="min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-2 case-container rounded-2xl" ></div>
-              <div className='h-full flex flex-col justify-end pb-5'>
+              <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col justify-end pb-5'>
               <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src={civeo}
@@ -119,9 +119,9 @@ const CaseStudies = () => {
               </div>
               </div>
             </div>
-            <div className="relative h-[512px]">
+            <div className="min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-3 case-container rounded-2xl" ></div>
-              <div className='h-full flex flex-col  justify-end pb-5'>
+              <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col  justify-end pb-5'>
               <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
                 <img
                   src={b2gold}

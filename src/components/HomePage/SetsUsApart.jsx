@@ -4,11 +4,13 @@ import homedomain from '/home-domain.png';
 import homeflexible from '/home-flexible.png';
 import homeone from '/home-one.png';
 import cuttingedge from '/cutting-edge.png';
+import './Homepage.css';
 
 const SetsUsApart = () => {
   return (
-    <div className='bg-[#053347] text-white '>
-    <div className='flex flex-col px-3 sm:px-28 md:px-10 xl:px-0 py-20  gap-14 w-full xl:max-w-[1216px] mx-auto'>
+    <div className='bg-[#053347] text-white'>
+      <div className='main-container mx-auto'>
+    <div className='flex flex-col py-20  gap-14 w-full'>
       <div className='flex flex-col gap-4 items-center'>
         <h1 className='text-[30px] md:text-[32px] lg:text-[40px] font-gilroyBold font-bold lg:leading-[3rem]'>What Sets Us Apart</h1>
         <svg
@@ -48,46 +50,47 @@ const SetsUsApart = () => {
         <div className='flex flex-col gap-5'>
             <img src={cuttingedge} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>Cutting-Edge Technology</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>Cutting-Edge Technology</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>We continually innovate to meet the ever-evolving requirements of our clients and their remote project operations. Our clients play an integral part in defining our product roadmap.</p>
         </div>
         </div>
         <div className='flex flex-col gap-5'>
             <img src={homeflexible} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>Flexible System Configurations</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>Flexible System Configurations</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>SmartLodge manages camps with varying requirements, large or small. Similarly, EnRoute is designed to book and manage FIFO travel and transportation logistics no matter how simple or complex.</p>
         </div>
         </div>
         <div className='flex flex-col gap-5'>
             <img src={homeone} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>One-Stop Shop for FIFO Operations</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>One-Stop Shop for FIFO Operations</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>Our platform provides a single source of truth for companies looking to manage their FIFO transportation bookings and remote camp operations all in one place.</p>
         </div>
         </div>
         <div className='flex flex-col gap-5'>
             <img src={homedomain} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>Deep Domain Knowledge</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>Deep Domain Knowledge</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>Our team is comprised of professionals with 74+ years combined experience across the hospitality, mining, energy, corporate travel and technology industries.</p>
         </div>
         </div>
         <div className='flex flex-col gap-5'>
             <img src={homedomain} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>Exceptional Support</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>Exceptional Support</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>Our support staff is available 24/7/365 via phone, live chat, or email to support our clients spread across 15 time zones and five continents.</p>
         </div>
         </div>
         <div className='flex flex-col gap-5'>
             <img src={problemsolve} alt="" className='w-auto max-w-max' />
             <div className='flex flex-col gap-4'>
-            <h3 className='text-xl lg:text-[24px] font-gilroyBold font-normal lg:leading-[1.8rem]'>Problem Solvers</h3>
+            <h3 className='text-xl lg:text-2xl font-gilroyBold font-normal lg:leading-[1.8rem]'>Problem Solvers</h3>
             <p className='font-ttCommonProRegular font-normal text-sm lg:text-base lg:leading-[1.58rem]'>We work with clients to ensure their implementations accommodate the unique, and often highly complex, requirements of their remote operations.</p>
         </div>
         </div>
       </div>
+    </div>
     </div>
     </div>
   )
