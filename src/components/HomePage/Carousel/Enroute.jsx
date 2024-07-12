@@ -27,71 +27,84 @@ const Enroute = () => {
   return (
     <div className="banner-slider2 overflow-hidden">
       <Slider {...settings}>
-        <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
-          <div className='absolute inset-0 h-auto bottom-0 bg-enroute-1 img-container' ></div>
-          <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px] ">
+        <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
+          <div className='absolute inset-0 h-auto bottom-0 bg-enroute-1 img-container2' ></div>
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+          <div className="relative main-container mx-auto">
             <div className='flex flex-col gap-8 w-full'>
+            <div className='flex flex-col gap-[10px]'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
-            <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-              A single system to book and manage all your FIFO transport
+            <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+              A single system  to book <br /> and manage all your <br /> FIFO transport
             </h1>
+            </div>
             <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
               SEE ALL FEATURES
             </button>
             </div>
-          </div>
+          </div></div>
         </div>
-        <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+        <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
         
           <div className='absolute inset-0 h-auto bottom-0 bg-enroute-2 img-container2' ></div>
-          <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px] ">
-            <div className='flex flex-col gap-8 '>
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+          <div className="relative main-container mx-auto ">
+            <div className='w-full flex flex-col gap-8 '>
+              <div className='flex flex-col gap-[10px]'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
-            <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-              Book and manage charter flights, buses and more
+            <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+              Book and manage <br /> charter flights, <br /> buses and more
             </h1>
+            </div>
             <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
               SEE ALL FEATURES
             </button>
             </div>
           </div>
+          </div>
         </div>
-        <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+        <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
         
-          <div className='absolute inset-0 h-auto bottom-0 bg-enroute-3 img-container' ></div>
-          <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px]">
+          <div className='absolute inset-0 h-auto bottom-0 bg-enroute-3 img-container2' ></div>
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+          <div className="relative main-container mx-auto ">
             <div className=' flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-[10px]'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
-            <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
-              Manage travel and rooms for your workers in one platform
-            </h1>
+            <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+              Manage travel and <br /> rooms for your workers <br /> in one platform
+            </h1></div>
             <button className="w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
               SEE ALL FEATURES
             </button>
             </div>
           </div>
+          </div>
         </div>
-        <div className="relative py-[120px] px-3 lg:px-28 xl:px-0 text-white w-full">
+        <div className="relative min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] text-white w-full">
          
           <div className='absolute inset-0 h-auto bottom-0 bg-enroute-4 img-container2' ></div>
-          <div className="relative px-3 max-w-[600px] xl:px-28  xl:max-w-[1216px] ">
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+          <div className="relative main-container mx-auto ">
             <div className='flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-[10px]'>
             <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
               | ENROUTE |
             </span>
-            <h1 className="text-[26px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
+            <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
               Book rich GDS content, all within policy
-            </h1>
+            </h1></div>
             <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
               SEE ALL FEATURES
             </button>
             </div>
+          </div>
           </div>
         </div>
       </Slider>
