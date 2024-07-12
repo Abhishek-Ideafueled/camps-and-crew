@@ -1,18 +1,19 @@
 import React from 'react';
 import video from '/video.png';
 import { Link } from 'react-router-dom';
+import '../HomePage/Homepage.css';
 
 const FifoOperations = () => {
   return (
-    <div className="bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
-      <div className="w-full xl:max-w-[1216px] mx-auto">
-        <div className=" flex flex-col gap-20 px-3 mx-auto md:px-28 xl:px-0 border-[1px] border-b-[#D0D5DD]">
+    <div className="relative bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
+      <div className=" main-container mx-auto">
+        <div className=" flex flex-col gap-20 w-full border-[1px] border-b-[#D0D5DD]">
           <div className="text-center text-custom-heading font-gilroyBold font-bold">
             <h2 className="text-[26px] md:text-[32px] lg:text-h2 lg:leading-[3rem]">
               Streamlining FIFO Operations for 16 Years
             </h2>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 px-3 sm:mx-auto lg:justify-center md:items-center gap-6 lg:gap-24 xl:px-0 md:pb-10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-center gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className="text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
                 150K
@@ -40,14 +41,14 @@ const FifoOperations = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 px-3 max-w-[520px] md:max-w-[720px] lg:max-w-full mx-auto lg:px-28 xl:px-0 pt-16 pb-10 gap-4 lg:gap-16">
-          <div className="max-w-[600px] xl:w-[600px] min-h-[415px] relative">
+        <div className="grid grid-cols-1 md:grid-cols-2 w-full pt-16 pb-10 gap-4 lg:gap-16">
+          <div className="max-w-[600px] xl:w-[600px] h-[340px] lg:min-h-[415px] relative">
             <img
               src={video}
               alt="insert video player here"
               className="absolute inset-0 object-fit w-full h-full rounded-2xl object-cover"
             />
-            <div className="relative flex justify-center items-center h-full hover:opacity-90">
+            <div className=" flex justify-center items-center h-full hover:opacity-90">
               <Link to="#">
               <svg
                 width="80"
@@ -75,7 +76,7 @@ const FifoOperations = () => {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col max-w-[556px] gap-6">
+          <div className="relative flex flex-col max-w-[556px] gap-6">
             <h3 className="text-xl md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
@@ -99,9 +100,25 @@ const FifoOperations = () => {
             <Link className='text-custom-blue w-[90px] hover:text-custom-body transition-colors duration-300 delay-100 font-ttCommonProRegular font-semibold leading-[1.6rem]'>
             READ MORE
             </Link>
+            
+
           </div>
         </div>
+        
       </div>
+      <div className='absolute right-0 bottom-0 opacity-50 sm:opacity-100'>
+            <svg width="161" height="209" viewBox="0 0 161 209" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_0_3)">
+<path d="M0 109H100V209H0V109Z" fill="#E1DED8"/>
+<path d="M100 100H200V201H100V100Z" fill="#E1DED8"/>
+<path d="M100 0H200V100H100V0Z" fill="#E1DED8"/>
+</g>
+<defs>
+<clipPath id="clip0_0_3">
+<rect width="161" height="209" fill="white"/>
+</clipPath>
+</defs>
+</svg></div>
     </div>
   );
 }
