@@ -4,7 +4,7 @@ import housekeeping from '/housekeeping.jpg';
 
 const Housekeeping = () => {
   return (
-    <div className="flex flex-col md:flex-row shadow-lg min-h-[300px] mx-auto lg:h-[465px] rounded-2xl items-center">
+    <div className="flex flex-col md:flex-row shadow-custom-shadow min-h-[300px] mx-auto lg:h-[465px] rounded-2xl items-center">
     <div className="flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] md:max-w-[645px]">
       {/* <div className="flex flex-col"> */}
         <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal lg:leading-[1.8rem]">

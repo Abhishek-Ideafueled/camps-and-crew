@@ -85,6 +85,9 @@ export default {
     },
     backgroundPosition:{
        
+    },
+    boxShadow: {
+      'custom-shadow': ' 0px 32px 64px -12px #10182824',
     }
     },
    
