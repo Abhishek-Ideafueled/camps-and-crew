@@ -9,13 +9,13 @@ const FifoOperations = () => {
     <div className="relative bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
       <div className=" main-container mx-auto">
         <div className=" flex flex-col gap-20 w-full border-[1px] border-b-[#D0D5DD]">
-          <div className="text-center text-custom-heading font-gilroyBold font-bold" data-aos="fade-down" data-aos-duration="1000">
+          <div className="text-center text-custom-heading font-gilroyBold font-bold" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400">
             <h2 className="text-[26px] md:text-[32px] lg:text-h2 lg:leading-[3rem]">
               Streamlining FIFO Operations for 16 Years
             </h2>
           </div>
           <div 
-          data-aos="fade-up" data-aos-duration="1000"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-center gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
@@ -51,7 +51,7 @@ const FifoOperations = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 w-full pt-16 pb-10 gap-4 lg:gap-16">
-          <div className="max-w-[600px] xl:w-[600px] h-[340px] lg:min-h-[415px] relative" data-aos="fade-right" data-aos-duration="2000">
+          <div className="max-w-[600px] xl:w-[600px] h-[340px] lg:min-h-[415px] relative" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
             <img
               src={video}
               alt="insert video player here"
@@ -85,7 +85,7 @@ const FifoOperations = () => {
               </Link>
             </div>
           </div>
-          <div className="relative flex flex-col max-w-[556px] gap-6" data-aos="fade-left" data-aos-duration="2000">
+          <div className="relative flex flex-col max-w-[556px] gap-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
             <h3 className="text-xl md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
