@@ -35,28 +35,6 @@
  /* background-position: center !important; */
 }
 
-/* @media only screen and (min-width: 1024px) {
-    .banner-slider .slick-slider.slick-initialized .slick-dots{
-       padding:0px 112px;
-       max-width: 1216px;
-       display: flex;
-       justify-content: start;
-       
-    }
-    
-  }
-
-  @media only screen and (min-width: 1280px) {
-    .banner-slider .slick-slider.slick-initialized .slick-dots{
-       padding: 0px 42px;
-       max-width: 1216px;
-       display: flex;
-       justify-content: start;
-       width: 1216px;
-       
-    }
-    
-  } */
 
 
   @media only screen and (min-width: 768px) {
@@ -79,3 +57,38 @@
         max-width:1216px;
     }
   }
+
+
+/* for creating circle loading  */
+
+.circle-bg {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgba(0, 0, 0, 0.05);
+  stroke-width: 2;
+  stroke-linecap: butt;
+}
+.circle-go {
+  fill: rgba(255, 255, 255, 0);
+  stroke: rgb(247, 255, 9);
+  stroke-width: 2;
+  stroke-linecap: round;
+	animation: progress 22s;
+	stroke-dasharray: 360px;
+	stroke-dashoffset: 360;
+}
+.circle-tx {
+  fill: #000;
+  stroke-width: 1;
+  font: bold 16px 'Arial';
+  text-anchor: middle;
+}
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 360;
+  }
+  
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -9,8 +9,22 @@ import Slider from "react-slick";
 // import home from '/home.jpg';
 import './SmartLodge.css';
 import '../Homepage.css';
+// import { afterMakingChange, beforeMakingChange } from './test';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const SmartLodge = () => {
+
+  useEffect(() => {
+  
+    AOS.init(
+      {
+        once:false
+      }
+    );
+    
+  
+}, []);
 
     const settings = {
         dots: true,
@@ -23,8 +37,17 @@ const SmartLodge = () => {
         autoplay:true,
         autoplaySpeed: 4000,
         cssEase: "ease-in-out",
-        pauseOnHover:false
+        pauseOnHover:false,
+        // beforeChange:(event, slick, currentSlide, nextSlide)=>{
+        //   ('.slider-dots-box button').html('');
+        // }
+        // beforeChange: beforeMakingChange,
+        // afterChange:afterMakingChange
+        
       };
+
+      AOS.refresh()
+      
 
   return (
     <div className="banner-slider overflow-hidden">
@@ -35,7 +58,7 @@ const SmartLodge = () => {
             </div>
           <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
           <div className="relative main-container mx-auto ">
-              <div className='w-full flex flex-col gap-8'>
+              <div className='w-full flex flex-col gap-8' data-aos="fade-up" data-aos-duration="2000">
                 <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -57,7 +80,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 h-auto bottom-0 img-container bg-smartlodge-2' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-8 w-full'data-aos="fade-up" data-aos-duration="2000">
               <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -77,7 +100,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full '>
+              <div className='flex flex-col gap-8 w-full ' data-aos="fade-up" data-aos-duration="2000">
                 <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -97,7 +120,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-4 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-8 w-full' data-aos="fade-up" data-aos-duration="2000">
                 <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -118,7 +141,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-5 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full'>
+              <div className='flex flex-col gap-8 w-full' data-aos="fade-up" data-aos-duration="2000">
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>

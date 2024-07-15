@@ -4,7 +4,9 @@ import checkmark from '/Checkmark.png';
 
 const AllFeatures = () => {
   return (
-    <div className=" grid sm:grid-cols-1 md:grid-cols-3 gap-5 mx-auto">
+    <div
+    data-aos="fade-zoom-in" data-aos-duration="2000"
+    className=" grid sm:grid-cols-1 md:grid-cols-3 gap-5 mx-auto">
       <div className='flex flex-col min-w-[176px] xl:max-w-[392px] lg:min-h-[265px] rounded-xl border-[1px] border-custom-blue py-10 px-5 gap-4'>
         <p className='text-2xl leading-7 font-gilroyBold font-normal text-custom-heading '>System Integrations</p>
         <hr className='border-[1px] border-[ #D0D5DD] w-[100px]'/>
