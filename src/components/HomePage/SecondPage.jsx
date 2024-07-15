@@ -41,7 +41,7 @@ const SecondPage = () => {
     <div className="flex flex-col justify-center items-center gap-8 pt-10 lg:pt-[60px] pb-[80px] main-container mx-auto"
      data-aos="fade-up"  data-aos-duration="1000"
     >
-      <div className="flex items-center gap-[2px] px-2 py-2 bg-[#F7F5F2] max-w-[386px] h-[85px] cursor-pointer"
+      <div className="flex items-center gap-[2px] px-2 py-2 bg-[#F7F5F2] max-w-[386px] h-[85px] cursor-pointer rounded-lg"
       >
         <button
           className={`rounded-lg w-[180px] sm:w-[200px] h-[73px] transition-all duration-50 delay-50 ${
