@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '/video.png';
+import video from '/video.jpg';
 import { Link } from 'react-router-dom';
 import '../HomePage/Homepage.css';
 import './FifoOperations.css';
@@ -55,7 +55,7 @@ const FifoOperations = () => {
             <img
               src={video}
               alt="insert video player here"
-              className="absolute inset-0 object-fit w-full h-full rounded-2xl object-cover"
+              className="absolute inset-0 bg-center w-full h-full rounded-2xl object-cover"
             />
             <div className="relative flex justify-center items-center h-full hover:opacity-90">
               <Link to="#">
