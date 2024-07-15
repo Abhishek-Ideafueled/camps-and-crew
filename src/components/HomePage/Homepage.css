@@ -28,6 +28,40 @@
         padding-left: 0;
       padding-right: 0;
   }
-    }   
+    }
+
+   
+    .active-arrow-right{
+      animation: arrowAnimation 1.5s infinite;
+
+    }
+
+    .active-arrow-left{
+      animation: arrowAnimationLeft 1.5s infinite;
+    }
+    
+  
+    @keyframes arrowAnimation {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(5px);
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
+  @keyframes arrowAnimationLeft {
+      0% {
+          transform: translateX(0);
+      }
+      50% {
+          transform: translateX(-5px);
+      }
+      100% {
+          transform: translateX(0);
+      }
+  }
    
 
