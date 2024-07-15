@@ -6,7 +6,7 @@ const Transportation = () => {
   return (
   
     <div className="flex flex-col md:flex-row justify-between shadow-custom-shadow min-h-[300px] mx-auto lg:h-[465px] rounded-2xl items-center">
-    <div className=" flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] md:max-w-[645px]">
+    <div className=" flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] lg:max-w-[645px]">
       {/* <div className="flex flex-col"> */}
         <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal lg:leading-[1.8rem]">
         Book and manage your charter flights, buses, or any mode of transport managed internally
@@ -36,7 +36,7 @@ const Transportation = () => {
       LEARN MORE</button>
       </div>
     {/* </div> */}
-    <div className="max-w-[348px] lg:max-w-[571px] lg:h-full justify-self-center  rounded-2xl flex items-center">
+    <div className="max-w-[348px] lg:max-w-[468px] xl:max-w-[571px] lg:h-full justify-self-center  rounded-2xl flex items-center">
       <img src={transportation} alt="chartered transportation image" className=' lg:rounded-2xl object-contain'/>
     </div>
   </div>

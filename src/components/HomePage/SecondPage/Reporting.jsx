@@ -5,9 +5,9 @@ import reporting from '/reporting.jpg';
 const Reporting = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between shadow-custom-shadow min-h-[300px] mx-auto lg:h-[465px] rounded-2xl items-center">
-    <div className=" flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] md:max-w-[645px]">
+    <div className=" flex flex-col lg:px-10 p-6 lg:py-16 min-h-[300px] max-w-[492px] lg:max-w-[645px]">
       {/* <div className="flex flex-col"> */}
-        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading py-4 font-gilroyBold font-normal lg:leading-[1.8rem]]">
+        <div className="text-lg md:text-xl lg:text-2xl text-custom-heading mb-4 font-gilroyBold font-normal lg:leading-[1.8rem]">
         300+ reports with the essential data your staff need at every level of your organization
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
@@ -35,7 +35,7 @@ const Reporting = () => {
       LEARN MORE</button>
       </div>
     {/* </div> */}
-    <div className="max-w-[348px] lg:max-w-[571px] lg:h-full justify-self-center  rounded-2xl flex items-center">
+    <div className="max-w-[348px] lg:max-w-[468px] xl:max-w-[571px] lg:h-full justify-self-center  rounded-2xl flex items-center">
       <img src={reporting} alt="reporting image" className=' lg:rounded-2xl object-contain'/>
     </div>
   </div>
