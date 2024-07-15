@@ -17,7 +17,7 @@ const DemoForm = () => {
   return (
     <div className="w-full main-container mx-auto">
       <div className="py-20 w-full">
-        <div className="bg-demo object-contain img-container3 w-full rounded-[26px]">
+        <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
           <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-10 ">
             <div className="flex flex-col max-w-[608px] gap-2 right-4 items-center justify-center">
               <h2 className=" text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]">
@@ -88,11 +88,13 @@ const DemoForm = () => {
                     </span> <IoIosArrowDown />
                   </div>
                   {showDropdown && (
-                    <div className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14">
-                      <p className='py-1 cursor-pointer' >Select Products of Interest</p>
-                      <p className='py-1 cursor-pointer' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
-                      <p className='py-1 cursor-pointer' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>
-                      <p className='py-1 cursor-pointer' onClick={()=>{setSelected("Both");setShowDropdown(false)}}>Both</p>
+                    <div 
+                    data-aos="zoom-in" data-aos-duration="300"
+                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 w-full max-w-[395px] sm:max-w-[460px] md:max-w-[288px] lg:w-[415px]">
+                      <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' >Select Products of Interest</p>
+                      <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
+                      <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>
+                      <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Both");setShowDropdown(false)}}>Both</p>
                     </div>
                   )}
                 </div>

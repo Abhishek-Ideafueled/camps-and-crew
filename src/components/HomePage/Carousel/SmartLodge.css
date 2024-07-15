@@ -5,7 +5,7 @@
     /* top: auto; */
     right: 0;
     bottom: 40px;
-    left: 0;
+    left: 0px;
     margin: 0 auto;
     /* max-width: 500px; */
     width: 100%;
@@ -21,6 +21,7 @@
 .banner-slider .slick-slider.slick-initialized .slick-dots li button:before{
     color: white;
     opacity: 100%;
+    
 }
 
 .banner-slider .slick-slider.slick-initialized .slick-dots li.slick-active button:before{
@@ -51,7 +52,7 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
     .banner-slider .slick-slider.slick-initialized .slick-dots{
       width: 100%;
         max-width:1216px;
@@ -61,34 +62,41 @@
 
 /* for creating circle loading  */
 
-.circle-bg {
-  fill: rgba(255, 255, 255, 0);
-  stroke: rgba(0, 0, 0, 0.05);
-  stroke-width: 2;
-  stroke-linecap: butt;
+.progress-round {
+    transform: rotate(-90deg);
+    position: relative;
+    left: -4px;
+    bottom: 4.5px;
 }
-.circle-go {
-  fill: rgba(255, 255, 255, 0);
-  stroke: rgb(247, 255, 9);
-  stroke-width: 2;
-  stroke-linecap: round;
-	animation: progress 22s;
-	stroke-dasharray: 360px;
-	stroke-dashoffset: 360;
+.circle-origin {
+    fill: transparent;
+    stroke: #CDECF9;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 125.664px;
+    stroke-dashoffset: 125.664px;
 }
-.circle-tx {
-  fill: #000;
-  stroke-width: 1;
-  font: bold 16px 'Arial';
-  text-anchor: middle;
+.slick-slider.slick-initialized .slick-dots li.slick-active .circle-origin {
+    animation: progress 18s;
 }
-
+.custom-pagination {
+    font-size: 0;
+}
+/* .odo_count p {
+    max-width: 250px;
+} */
+ 
+ 
 @keyframes progress {
-  from {
-    stroke-dashoffset: 360;
-  }
-  
-  to {
-    stroke-dashoffset: 0;
-  }
+    0% {
+        stroke-dashoffset: 125.664px;
+    }
+ 
+    90% {
+        stroke-dashoffset: 0;
+    }
+ 
+    100% {
+        stroke-dashoffset: -125.664px;
+    }
 }
