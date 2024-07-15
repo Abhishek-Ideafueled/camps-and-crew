@@ -135,12 +135,14 @@ const SmartLodge = () => {
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
               <div className='flex flex-col gap-8 w-full' data-aos="fade-up" data-aos-duration="2000">
+              <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
               <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
+              </div>
               <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>

@@ -28,20 +28,14 @@ const SlidingCompanies = () => {
 
 const settings ={  dots: false,
             slidesToShow: 5,
-            slidesToScroll: 0.12,
-            arrows: false,
+            slidesToScroll: 0.2,
             autoplay: true,
-            autoplaySpeed: 0,
-            speed: 300,
+            autoplaySpeed: 2000,
+            speed: 2000,
             infinite: true,
             cssEase: 'linear',
             pauseOnHover: true,
-            pauseOnFocus: true,
-            draggable: false,
-            swipe: false,
-            touchMove: false,
-            focusOnSelect: false,
-            accessibility: false,
+            pauseOnFocus: false,
             responsive: [
                 {
                     breakpoint: 1600,
@@ -67,14 +61,15 @@ const settings ={  dots: false,
                         slidesToShow: 2,
                     },
                 }
-            ],}
+            ],
+          }
 
   return (
     <div className=' w-full'>
         <div className='w-full mx-auto flex flex-col gap-14 py-20'>
 
       <h3 className='text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
-      <div className='w-full xl:px-0 company-slider'>
+      <div className='w-full xl:px-0 company-slider transition-transform delay-300 duration-300'>
 <Slider {...settings}>
 
       <span className='justify-self-center '>
