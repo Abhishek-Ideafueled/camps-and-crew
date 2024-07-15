@@ -11,6 +11,14 @@ import './Enroute.css';
 const Enroute = () => {
 
     const settings = {
+      customPaging: function(i) {
+        return (
+          <button>
+           <svg className="progress-round" width="18" height="18"><circle className="circle-origin" r="7" cx="9" cy="9"></circle></svg><span><b></b></span>
+          </button>
+        );
+      },
+        dotsClass: "slick-dots slick-thumb",
         dots: true,
         fade: true,
         infinite: true,
@@ -19,7 +27,7 @@ const Enroute = () => {
         slidesToScroll: 1,
         waitForAnimate: false,
         autoplay:true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
         cssEase: "ease-in-out",
         pauseOnHover:false
       };
