@@ -1,0 +1,30 @@
+@property --num-years {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-rooms {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-transport {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @keyframes counter {
+    from {
+      --num-rooms: 0;
+      --num-transport: 0;
+      --num-years: 0;
+    }
+    to {
+      --num-rooms:150;
+      --num-transport: 350;
+      --num-years: 74;
+    }
+  }
