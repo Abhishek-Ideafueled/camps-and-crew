@@ -28,24 +28,28 @@ const SlidingCompanies = () => {
         breakpoint: 1600,
         settings: {
           slidesToShow: 5,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1199,
         settings: {
           slidesToShow: 4,
+          slidesToScroll: 1,
         },
       },
       {
         breakpoint: 767,
         settings: {
           slidesToShow: 3,
+          slidesToScroll: 0.5,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 0.02,
         },
       }
     ],
@@ -60,39 +64,39 @@ const SlidingCompanies = () => {
         <div className='w-full company-slider h-[106px]'>
           <Slider {...settings}>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={b2gold} alt="b2gold logo" />
             </div>
             </div>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={agincourtlogo} alt="agin court logo" />
             </div>
             </div>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={canadianenergy} alt="canadian energy logo" />
             </div>
             </div>
             <div>
 
            
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={top5logo} alt="top 5 global logo" />
             </div>
             </div>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={permianlodging} alt="permian lodging logo" />
             </div>
             </div>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={sodexofull} alt="sodexo logo" />
             </div>
             </div>
             <div>
-            <div className='max-w-[317px]'>
+            <div className=''>
               <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={top5canada} alt="top 5 canada logo" />
             </div>
             </div>
