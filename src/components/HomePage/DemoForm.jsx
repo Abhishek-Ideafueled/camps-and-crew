@@ -8,22 +8,26 @@ import { FaHelmetSafety } from 'react-icons/fa6';
 import { BiSolidMessage } from 'react-icons/bi';
 import './Carousel/Enroute.css';
 import '../HomePage/Homepage.css';
+// import IntlTelInput from 'intl-tel-input/reactWithUtils';
+import IntlTelInput from './IntlTelInput';
 
 const DemoForm = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected,setSelected] = useState("");
+  const [number,setNumber] = useState();
+  const [isValid,setIsValid] = useState("");
 
   return (
     <div className="w-full main-container mx-auto">
       <div className="py-20 w-full">
         <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
-          <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-10 ">
+          <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
             <div className="flex flex-col max-w-[608px] gap-2 right-4 items-center justify-center">
               <h2 className=" text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]">
                 Streamline the Management of your Remote Operations
               </h2>
-              <p className="text-white text-xl lg:text-2xl font-ttCommonProRegular font-normal leading-[2.4rem]">
+              <p className="text-white text-xl lg:text-2xl font-ttCommonProRegular font-normal lg:leading-[2.4rem]">
                 See SmartLodge or EnRoute in action by filling out the form and
                 we’ll be in touch very shortly.
               </p>
@@ -33,7 +37,7 @@ const DemoForm = () => {
                 action=""
                 className="flex gap-4 flex-col font-ttCommonProMedium"
               >
-                <h4 className="text-xl sm:text-2xl lg:text-[32px] text-white mb-5 text-center font-gilroyBold font-normal">
+                <h4 className="text-xl sm:text-2xl lg:text-[32px] lg:leading-[2.4rem] text-white mb-5 text-center font-gilroyBold font-normal">
                   Book a Demo
                 </h4>
                 <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
@@ -58,7 +62,24 @@ const DemoForm = () => {
                     type="number"
                     placeholder="Phone Number"
                     className="border-[#D0D5DD] border-l-2 outline-none p-2 text-black"
+                  /> 
+                  {/* <IntlTelInput
+                  onChangeNumber={setNumber}
+                  onChangeValidity={setIsValid}
+                  initOptions={{
+                      initialCountry: "us",
+                      utilsScript: "path/to/utils.js",
+                  }}
                   />
+                  {/* <IntlTelInput
+  onChangeNumber={setNumber}
+  onChangeValidity={setIsValid}
+  // any initialisation options from the readme will work here
+  initOptions={{
+    initialCountry: "us",
+    utilsScript: "/intl-tel-input/js/utils.js?1720774106479",
+  }}
+/> */}
                 </div>
                 <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
                   <FaBuilding />
@@ -107,8 +128,8 @@ const DemoForm = () => {
                     rows="4"
                   />
                 </div>
-                <div className="bg-custom-button hover:bg-btn-hover flex items-center h-[54px] mt-5">
-                  <button className="w-full font-ttCommonProMedium">
+                <div className="bg-custom-button hover:bg-btn-hover flex items-center h-[54px] mt-5 rounded-[4px]">
+                  <button className="w-full font-ttCommonProNormal font-semibold">
                     CONTINUE
                   </button>
                 </div>

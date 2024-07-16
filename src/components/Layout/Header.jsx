@@ -110,7 +110,7 @@ const Header = () => {
                 Case Studies
               </Link>
             </nav>
-            <button className="bg-[#5BC0ED] text-center w-[145px] h-[54px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]">
+            <button className="bg-[#5BC0ED] text-nowrap text-center w-[145px] h-[54px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]">
               
               BOOK A DEMO
             </button>
