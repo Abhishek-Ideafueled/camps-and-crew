@@ -41,7 +41,7 @@ const CaseStudies = () => {
       <div className="flex flex-col py-10 lg:py-20 gap-6 md:gap-[40px] lg:gap-[60px] w-full items-center">
         <div className="flex w-full justify-center">
           <div className="flex flex-col gap-2 md:gap-4 w-full items-center md:items-start md:w-[70%]">
-            <h2 className="text-[32px] md:text-[36px] lg:text-h2 leading-[3rem] text-custom-heading font-gilroyBold font-bold">
+            <h2 className="text-[25px] sm:text-[32px] md:text-[32px] lg:text-h2 leading-[3rem] text-custom-heading font-gilroyBold font-bold">
               Case Studies
             </h2>
             <p className="text-custom-body text-sm md:text-base lg:text-lg font-ttCommonProNormal font-medium lg:leading-7">
