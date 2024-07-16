@@ -70,7 +70,7 @@ const CaseStudies = () => {
             <div className="relative min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] ">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
               <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col justify-end pb-5'>
-              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 py-4 px-8">
                 <img
                   src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
                   alt="sodexo logo"
@@ -97,7 +97,7 @@ const CaseStudies = () => {
             <div className="min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-2 case-container rounded-2xl" ></div>
               <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col justify-end pb-5'>
-              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 py-4 px-8">
                 <img
                   src={civeo}
                   alt="civeo logo"
@@ -122,7 +122,7 @@ const CaseStudies = () => {
             <div className="min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px]">
             <div  className="absolute inset-0 h-auto bottom-0 bg-case-3 case-container rounded-2xl" ></div>
               <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col  justify-end pb-5'>
-              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 p-4">
+              <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 py-4 px-8">
                 <img
                   src={b2gold}
                   alt="b2gold logo"
