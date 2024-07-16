@@ -38,13 +38,13 @@ const CaseStudies = () => {
   return (
     <div className="w-full bg-[#F7F5F2] max-h-[854px]">
       <div className='main-container mx-auto'>
-      <div className="flex flex-col py-10 lg:py-20 gap-14 w-full items-center">
+      <div className="flex flex-col py-10 lg:py-20 gap-6 md:gap-[40px] lg:gap-[60px] w-full items-center">
         <div className="flex w-full justify-center">
-          <div className="flex flex-col gap-4 w-full items-center md:items-start md:w-[70%]">
-            <h2 className="text-[32px] md:text-h2 text-custom-heading font-gilroyBold font-bold">
+          <div className="flex flex-col gap-2 md:gap-4 w-full items-center md:items-start md:w-[70%]">
+            <h2 className="text-[32px] md:text-[36px] lg:text-h2 leading-[3rem] text-custom-heading font-gilroyBold font-bold">
               Case Studies
             </h2>
-            <p className="text-custom-body text-sm md:text-lg font-ttCommonProNormal font-medium leading-7">
+            <p className="text-custom-body text-sm md:text-base lg:text-lg font-ttCommonProNormal font-medium lg:leading-7">
               Read about the ways our software empowers our clients to increase
               room utilization at camp, streamline housekeeping, manage rooms
               and travel in sync, and much more.
@@ -53,7 +53,7 @@ const CaseStudies = () => {
           <div className="hidden md:flex items-center w-[30%] justify-end">
             <Link
               to="#"
-              className="font-ttCommonProMedium text-custom-blue hover:text-custom-body transition-colors duration-200 delay-200"
+              className="font-ttCommonProMedium text-custom-blue text-sm lg:text-base hover:text-custom-body transition-colors duration-200 delay-200"
             >
               VIEW ALL
             </Link>
@@ -83,7 +83,7 @@ const CaseStudies = () => {
                 </h2>
                 <Link
                   to="#"
-                  className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold"
+                  className="flex items-center gap-2 text-sm md:text-base text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY
                   <span>
@@ -109,7 +109,7 @@ const CaseStudies = () => {
                 </h2>
                 <Link
                   to="#"
-                  className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold"
+                  className="flex items-center gap-2 text-sm md:text-base text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY
                   <span>
@@ -134,7 +134,7 @@ const CaseStudies = () => {
                 </h2>
                 <Link
                   to="#"
-                  className="flex items-center gap-2 text-white font-ttCommonProNormal font-semibold"
+                  className="flex items-center text-sm md:text-base gap-2 text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY
                   <span>
@@ -149,7 +149,7 @@ const CaseStudies = () => {
         <div className="flex md:hidden items-center justify-center ">
             <Link
               to="#"
-              className="font-ttCommonProMedium text-custom-blue hover:text-custom-body transition-colors duration-200 delay-200"
+              className="font-ttCommonProMedium text-sm text-custom-blue hover:text-custom-body transition-colors duration-200 delay-200"
             >
               VIEW ALL
             </Link>
