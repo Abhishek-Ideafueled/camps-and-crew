@@ -85,7 +85,7 @@
     }
   }
 
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1280px) {
     .banner-slider2 .slick-slider.slick-initialized .slick-dots{
       width: 100%;
         max-width:1216px;

@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import formbg from '/formbg.jpg';
-import { IoIosArrowDown, IoMdArrowDropdown, IoMdPerson } from 'react-icons/io';
+import { IoIosArrowDown, IoIosArrowUp, IoMdArrowDropdown, IoMdPerson } from 'react-icons/io';
 import { MdMail } from 'react-icons/md';
 import { GiSouthAfricaFlag } from 'react-icons/gi';
 import { FaBuilding } from 'react-icons/fa';
@@ -17,6 +17,24 @@ const DemoForm = () => {
   const [selected,setSelected] = useState("");
   const [number,setNumber] = useState();
   const [isValid,setIsValid] = useState("");
+  const dropDownRef = useRef();
+
+  useEffect(()=>{
+    document.addEventListener('mousedown',handleClickOutside);
+
+    return ()=>{
+      document.removeEventListener('mousedown',handleClickOutside)
+    }
+  },[showDropdown])
+
+
+  const handleClickOutside=(event)=>{
+    if (dropDownRef.current && !dropDownRef.current.contains(event.target)) {
+
+     setShowDropdown(false);
+
+    }
+  }
 
   return (
     <div className="w-full main-container mx-auto">
@@ -59,7 +77,7 @@ const DemoForm = () => {
                 <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
                   <GiSouthAfricaFlag /> <IoMdArrowDropdown />
                   <input
-                    type="number"
+                    type="text"
                     placeholder="Phone Number"
                     className="border-[#D0D5DD] border-l-2 outline-none p-2 text-black"
                   /> 
@@ -89,29 +107,32 @@ const DemoForm = () => {
                     className="border-none outline-none text-black"
                   />
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col max-w-full">
                   <div 
                   onClick={() => setShowDropdown(!showDropdown)}
-                  className="bg-white flex justify-between py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg cursor-pointer">
+                  className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg cursor-pointer">
                     <span
-                      className="flex gap-4 items-center"
+                      className="flex gap-4 items-center w-[98%]"
                       
                     >
                       <FaHelmetSafety />
                       <input
                         type="text"
                         placeholder="Select Products of Interest"
-                        className="border-none outline-none text-black max-w-[324px] cursor-pointer"
+                        className="border-none outline-none text-black w-full cursor-pointer"
                         value={selected}
-                        disabled
+                        readOnly
                       />
                      
-                    </span> <IoIosArrowDown />
+                    </span>
+                    <span className='justify-end transition-transform delay-150 duration-150'>{!showDropdown ? <IoIosArrowDown /> : <IoIosArrowUp />}</span> 
                   </div>
                   {showDropdown && (
+                    
                     <div 
+                    ref={dropDownRef}
                     data-aos="zoom-in" data-aos-duration="300"
-                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 w-full max-w-[395px] sm:max-w-[460px] md:max-w-[288px] lg:w-[415px]">
+                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 min-w-[236px]  max-w-[416px] sm:max-w-[460px] w-full md:max-w-[290px] xl:max-w-[416px] xl:w-full">
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' >Select Products of Interest</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>
