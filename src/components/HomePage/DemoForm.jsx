@@ -10,12 +10,14 @@ import './Carousel/Enroute.css';
 import '../HomePage/Homepage.css';
 // import IntlTelInput from 'intl-tel-input/reactWithUtils';
 import IntlTelInput from './IntlTelInput';
+import { PhoneInput } from 'react-international-phone';
+import 'react-international-phone/style.css';
 
 const DemoForm = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected,setSelected] = useState("");
-  const [number,setNumber] = useState();
+  const [phone,setPhone] = useState();
   const [isValid,setIsValid] = useState("");
   const dropDownRef = useRef();
 
@@ -58,7 +60,7 @@ const DemoForm = () => {
                 <h4 className="text-xl sm:text-2xl lg:text-[32px] lg:leading-[2.4rem] text-white mb-5 text-center font-gilroyBold font-normal">
                   Book a Demo
                 </h4>
-                <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
+                <div className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
                   <IoMdPerson />
                   <input
                     type="text"
@@ -66,7 +68,7 @@ const DemoForm = () => {
                     className="border-none outline-none text-black"
                   />
                 </div>
-                <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
+                <div className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
                   <MdMail />
                   <input
                     type="email"
@@ -74,32 +76,22 @@ const DemoForm = () => {
                     className="border-none outline-none text-black"
                   />
                 </div>
-                <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
-                  <GiSouthAfricaFlag /> <IoMdArrowDropdown />
+                <div className="custom-input bg-white flex px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
+                  {/* <GiSouthAfricaFlag /> <IoMdArrowDropdown />
                   <input
                     type="text"
                     placeholder="Phone Number"
                     className="border-[#D0D5DD] border-l-2 outline-none p-2 text-black"
-                  /> 
-                  {/* <IntlTelInput
-                  onChangeNumber={setNumber}
-                  onChangeValidity={setIsValid}
-                  initOptions={{
-                      initialCountry: "us",
-                      utilsScript: "path/to/utils.js",
-                  }}
-                  />
-                  {/* <IntlTelInput
-  onChangeNumber={setNumber}
-  onChangeValidity={setIsValid}
-  // any initialisation options from the readme will work here
-  initOptions={{
-    initialCountry: "us",
-    utilsScript: "/intl-tel-input/js/utils.js?1720774106479",
-  }}
-/> */}
+                  />  */}
+                 <PhoneInput
+        defaultCountry="us"
+        value={phone}
+        placeholder='phone number'
+        onChange={(phone) => setPhone(phone)}
+        className='w-full'
+      />
                 </div>
-                <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
+                <div className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
                   <FaBuilding />
                   <input
                     type="text"
@@ -110,7 +102,7 @@ const DemoForm = () => {
                 <div className="flex flex-col max-w-full">
                   <div 
                   onClick={() => setShowDropdown(!showDropdown)}
-                  className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg cursor-pointer">
+                  className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg cursor-pointer">
                     <span
                       className="flex gap-4 items-center w-[98%]"
                       
