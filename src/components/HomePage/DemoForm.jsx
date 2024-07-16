@@ -132,7 +132,7 @@ const DemoForm = () => {
                     <div 
                     ref={dropDownRef}
                     data-aos="zoom-in" data-aos-duration="300"
-                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 min-w-[236px]  max-w-[416px] sm:max-w-[460px] w-full md:max-w-[290px] xl:max-w-[416px] xl:w-full">
+                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 w-full max-w-[460px] md:max-w-[290px] xl:max-w-[416px] xl:w-full">
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' >Select Products of Interest</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>

@@ -72,7 +72,7 @@ const SmartLodge = () => {
                 The most flexible camp <br /> management system <br /> on the market
               </h1>
               </div>
-              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal leading-[0.9rem] text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal leading-[0.9rem] text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -94,7 +94,7 @@ const SmartLodge = () => {
                 Maximize room <br /> utilization before <br /> you buy, build or rent
               </h1>
               </div>
-              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProRegular text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -114,7 +114,7 @@ const SmartLodge = () => {
                 Easy-to-use tools <br /> to book and assign <br /> rooms at your camp
               </h1>
               </div>
-              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button></div>
             </div>
@@ -134,7 +134,7 @@ const SmartLodge = () => {
                 Technology to help <br /> your staff turn rooms <br /> faster  than ever
               </h1>
               </div>
-              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -155,7 +155,7 @@ const SmartLodge = () => {
                 Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
               </div>
-              <button className="max-w-[219px] h-[64px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
                 SEE ALL FEATURES
               </button>
               </div>

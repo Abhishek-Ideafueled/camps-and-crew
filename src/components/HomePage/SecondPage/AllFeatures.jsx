@@ -489,7 +489,7 @@ const AllFeatures = () => {
         <h3 className="text-h3 text-white font-gilroyBold leading-7 font-normal">
           See everything SmartLodge has to offer.
         </h3>
-        <button className="bg-custom-button hover:bg-btn-hover text-btn-text font-ttCommonProNormal font-semibold leading-[1.6rem] max-w-[248px] py-[19px] rounded-[4px]">
+        <button className="bg-custom-button hover:bg-btn-hover flex justify-center items-center text-btn-text font-ttCommonProNormal font-semibold font-sm lg:font-base lg:leading-[1.6rem] max-w-[248px] max-h-[64px] py-[19px] rounded-[4px]">
           TAKE ME TO SMARTLODGE
         </button>
       </div>
