@@ -1,4 +1,6 @@
 .company-slider .slick-slider.slick-initialized .slick-list .slick-slide{
         /* height: 106px; */
         /* width: 300px;  */
+        display: flex;
+        justify-content: center;
 } 

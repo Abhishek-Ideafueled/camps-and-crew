@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -14,6 +14,18 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const SmartLodge = () => {
+
+  const [currSlide,setCurrSlide] = useState(0);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+
+  useEffect(()=>{
+      AOS.refresh();
+  },[currSlide])
 
       const settings = {
         customPaging: function(i) {
@@ -35,7 +47,7 @@ const SmartLodge = () => {
         autoplaySpeed: 3500,
         cssEase: "ease-in-out",
         pauseOnHover:false,
-        
+        afterChange:(index) => setCurrSlide(index),
       };
 
       

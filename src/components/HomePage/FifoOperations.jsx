@@ -85,7 +85,7 @@ const FifoOperations = () => {
               </Link>
             </div>
           </div>
-          <div className="relative flex flex-col max-w-[556px] gap-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <div className="relative flex flex-col max-w-[556px] gap-6 z-10" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
             <h3 className="text-xl md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
@@ -115,7 +115,7 @@ const FifoOperations = () => {
         </div>
         
       </div>
-      <div className='absolute right-0 bottom-0 opacity-50 sm:opacity-100'>
+      <div className='absolute right-0 bottom-0 opacity-100 z-0'>
             <svg width="161" height="209" viewBox="0 0 161 209" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clipPath="url(#clip0_0_3)">
 <path d="M0 109H100V209H0V109Z" fill="#E1DED8"/>

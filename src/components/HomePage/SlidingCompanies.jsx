@@ -12,88 +12,96 @@ import "slick-carousel/slick/slick-theme.css";
 import "./SlidingCompanies.css";
 
 const SlidingCompanies = () => {
-  // const settings = {
-  //   dots: false,
-  //   fade: false,
-  //   infinite: true,
-  //   speed: 1000,
-  //   slidesToShow: 5,
-  //   slidesToScroll: 1,
-  //   waitForAnimate: false,
-  //   autoplay:true,
-  //   autoplaySpeed: 3000,
-  //   cssEase: 'ease-out',
-  //   pauseOnHover:false
-  // };
-
-const settings ={  dots: false,
-            slidesToShow: 5,
-            slidesToScroll: 0.2,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            speed: 2000,
-            infinite: true,
-            cssEase: 'linear',
-            pauseOnHover: true,
-            pauseOnFocus: false,
-            responsive: [
-                {
-                    breakpoint: 1600,
-                    settings: {
-                        slidesToShow: 5,
-                    },
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        slidesToShow: 4,
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                }
-            ],
-          }
+  const settings = {
+    dots: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 3000,
+    infinite: true,
+    cssEase: 'linear', 
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive: [
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
+      {
+        breakpoint: 1199,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      }
+    ],
+  };
 
   return (
-    <div className=' w-full'>
-        <div className='w-full mx-auto flex flex-col gap-14 py-20'>
+    <div className='w-full'>
+      <div className='w-full mx-auto flex flex-col gap-14 my-20'>
+        <h3 className='text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading'>
+          Trusted by Companies All Over the World
+        </h3>
+        <div className='w-full company-slider h-[106px]'>
+          <Slider {...settings}>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={b2gold} alt="b2gold logo" />
+            </div>
+            </div>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={agincourtlogo} alt="agin court logo" />
+            </div>
+            </div>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={canadianenergy} alt="canadian energy logo" />
+            </div>
+            </div>
+            <div>
 
-      <h3 className='text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading'>Trusted by Companies All Over the World</h3>
-      <div className='w-full xl:px-0 company-slider transition-transform delay-300 duration-300'>
-<Slider {...settings}>
-
-      <span className='justify-self-center '>
-        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={b2gold} alt="b2gold logo" /></span>
-      <span className='justify-self-center '>
-        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={agincourtlogo} alt="agin court logo" /></span> 
-      <span className='justify-self-center '>
-        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={canadianenergy} alt="canadian energy logo" /></span> 
-      <span className='justify-self-center '>
-         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={top5logo} alt="top 5 global logo" /></span>  
-      <span className='justify-self-center '>
-        <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={permianlodging} alt="permian lodging logo" /></span> 
-      <span className='justify-self-center '>
-         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={sodexofull} alt="sodexo logo" /></span> 
-      <span className='justify-self-center '>
-         <img className='max-w-[308px] max-h-[71px] lg:max-h-[108px] object-contain xl:w-full' src={top5canada} alt="top 5 canada logo" /></span> 
-     
-     
-       
-</Slider>
-      </div>
+           
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={top5logo} alt="top 5 global logo" />
+            </div>
+            </div>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={permianlodging} alt="permian lodging logo" />
+            </div>
+            </div>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={sodexofull} alt="sodexo logo" />
+            </div>
+            </div>
+            <div>
+            <div className='max-w-[317px]'>
+              <img className=' h-full lg:h-[108px] object-contain xl:w-[318px]' src={top5canada} alt="top 5 canada logo" />
+            </div>
+            </div>
+          </Slider>
+        </div>
+        
       </div>
     </div>
-  )
+  );
 }
 
-export default SlidingCompanies
+export default SlidingCompanies;
