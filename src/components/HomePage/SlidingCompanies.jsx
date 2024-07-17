@@ -74,7 +74,7 @@ const SlidingCompanies = () => {
               {
                 breakpoint: 1199,
                 settings: {
-                  slidesToShow: 1,
+                  slidesToShow: 2,
                 },
               },
               {
@@ -141,16 +141,16 @@ const SlidingCompanies = () => {
         </div> */}
         <div className="w-auto company-slider min-h-[106px]">
           <Slider {...settings}>
-            <div className="flex justify-between items-center">
-              <div className="w-auto flex">
+            <div className="inner-slides flex items-center">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img className="" src={b2gold} alt="b2gold logo" />
               </div>
 
-              <div className="w-auto flex">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img className="" src={agincourtlogo} alt="agin court logo" />
               </div>
 
-              <div className="w-auto flex">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img
                   className=""
                   src={canadianenergy}
@@ -158,35 +158,35 @@ const SlidingCompanies = () => {
                 />
               </div>
             </div>
-            <div className="flex justify-between items-center">
-              <div className="w-auto flex">
+            <div className=" inner-slides flex items-center">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img src={top5logo} alt="top 5 global logo" />
               </div>
-              <div className="w-auto flex">
-                <img src={sodexologo} alt="sodexo logo" />
+              <div className="w-[33.33%] sm:w-auto flex justify-center ">
+                <img  className="max-h-[80px]" src={sodexologo} alt="sodexo logo" />
               </div>
-              <div className="w-auto flex">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img src={top5canada} alt="top 5 canada logo" />
               </div>
             </div>
-            <div className="flex justify-between items-center">
-              <div className="w-auto flex">
+            <div className="inner-slides flex items-center">
+              <div className="w-[33.33%] sm:w-auto flex justify-center">
                 <img
-                  className=""
+                  className="max-h-[80px]"
                   src={permianlodging}
                   alt="permian lodging logo"
                 />
               </div>
 
-              <div className="w-auto flex">
+              <div className="w-[33.33%] sm:w-auto flex justify-center ">
                 <img
                   className=""
                   src={canadianenergy}
                   alt="canadian energy logo"
                 />
               </div>
-              <div className="w-auto flex">
-                <img className="" src={sodexologo} alt="sodexo logo" />
+              <div className="w-[33.33%] sm:w-auto flex justify-center ">
+                <img  className="max-h-[80px]" src={sodexologo} alt="sodexo logo" />
               </div>
             </div>
           </Slider>
