@@ -6,6 +6,7 @@ import permianlodging from '/permian-lodging.png';
 import top5canada from '/top-5-canada.png';
 import top5logo from '/top5logo.png';
 import sodexofull from '/sodexofull.png';
+import sodexologo from '/sodexo-logo.png';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -162,7 +163,7 @@ const SlidingCompanies = () => {
                 <img src={top5logo} alt="top 5 global logo" />
               </div>
               <div className="w-auto flex">
-                <img src={sodexofull} alt="sodexo logo" />
+                <img src={sodexologo} alt="sodexo logo" />
               </div>
               <div className="w-auto flex">
                 <img src={top5canada} alt="top 5 canada logo" />
@@ -185,7 +186,7 @@ const SlidingCompanies = () => {
                 />
               </div>
               <div className="w-auto flex">
-                <img className="" src={sodexofull} alt="sodexo logo" />
+                <img className="" src={sodexologo} alt="sodexo logo" />
               </div>
             </div>
           </Slider>
