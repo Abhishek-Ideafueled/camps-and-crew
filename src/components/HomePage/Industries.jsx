@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import integrated from '/integrated.jpg';
 import mining from '/mining.jpg';
 import oilgas from '/oil-gas.jpg';
 import construction from '/construction.jpg';
 import '../HomePage/Homepage.css';
+import Slider from 'react-slick';
 
 const Industries = () => {
+
+const settings=
+  {
+    dots: false,
+    autoplay:true,
+    speed:1000,
+    autoplaySpeed:2000,
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    vertical: true,
+    verticalSwiping: false,
+    swipeToSlide: false,
+  };
+
   return (
     <div className="main-container mx-auto">
       <div className='flex flex-col gap-14 py-20 '>
@@ -51,15 +67,22 @@ const Industries = () => {
         </svg></div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mx-auto md:max-w-[696px] lg:max-w-full' >
-        <div className='flex flex-col h-full justify-between max-w-[584px] border-[#D0D5DD] border-[1px] rounded-3xl'  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <div className='flex flex-col h-full justify-between max-w-[584px] hover:shadow-custom-shadow border-[#D0D5DD] border-[1px] rounded-3xl'  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <div className='flex flex-col gap-2 lg:gap-4  p-6 lg:p-10 '>
-            <h3 className='text-lg md:text-xl md:leading-6 lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Integrated Facilities Management</h3>
+            <h3 className='text-lg md:text-xl md:leading-6 lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>
+
+      <Slider {...settings}>
+        <div>Integrated Facilities Management</div>
+        <div>Camp Catering Companies</div>
+        <div>Workforce Accomodation Providers</div>
+      </Slider>
+            </h3>
             <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body font-normal lg:leading-[1.6rem]'>Streamline the way you manage remote camps for your clients. Achieve higher room occupancy, automate cleaning assignments, track meals, get paid faster and more. </p>
        </div>
        <img src={integrated} alt="integrated facilities managment" className='rounded-b-3xl' />
        {/* <div className='bg-integrated-img rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col h-full justify-between max-w-[584px] border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <div className='flex flex-col h-full justify-between max-w-[584px] hover:shadow-custom-shadow border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             <div className='flex flex-col gap-2 lg:gap-4  p-6 lg:p-10'>
             <h3 className='text-lg md:text-xl md:leading-6 lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Oil & Gas</h3>
             <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'>Increase room or bed utilization. Simplify daily activities for every department across one or multiple camps. Manage camp room and crew travel bookings in sync.</p>
@@ -67,7 +90,7 @@ const Industries = () => {
        <img src={oilgas} alt="oil and gas image" className='rounded-b-3xl' />
        {/* <div className='bg-oil-gas rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col h-full justify-between max-w-[584px] border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        <div className='flex flex-col h-full justify-between max-w-[584px] hover:shadow-custom-shadow border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             <div className='flex flex-col gap-2 lg:gap-4 p-6 lg:p-10 '>
             <h3 className='text-lg md:text-xl md:leading-6 lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Mining</h3>
             <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'> Discover how our technology can adapt to meet the changing needs of your project throughout its lifecycle. We offer a one-stop-shop for camp and FIFO travel management. </p>
@@ -75,7 +98,7 @@ const Industries = () => {
        <img src={mining} alt="mining image" className='rounded-b-3xl' />
        {/* <div className='bg-mining rounded-b-xl bg-center min-h-[300px]'></div> */}
         </div>
-        <div className='flex flex-col h-full justify-between max-w-[584px] border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+        <div className='flex flex-col h-full justify-between max-w-[584px] hover:shadow-custom-shadow border-[#D0D5DD] border-[1px] rounded-3xl' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <div className='flex flex-col gap-2 lg:gap-4 p-6 lg:p-10'>
             <h3 className='text-lg md:text-xl md:leading-6 lg:text-[24px] font-gilroyBold text-custom-heading font-normal lg:leading-7'>Engineering & Construction</h3>
             <p className='text-sm lg:text-base font-ttCommonProNormal text-custom-body lg:leading-[1.6rem] font-normal'>Improve room utilization at your remote camps or within fixed room blocks allotted by your clients. Power your turnkey camps with best-of-breed camp management software. </p>

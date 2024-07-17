@@ -104,10 +104,10 @@
 
 [data-animate] {
     opacity: 0;
-    transition: all 1s ease-out;
+    transition: all 1.5s ease-out;
   }
   [data-animate="bottom"] {
-    transform: translate3d(0, 15px, 0);
+    transform: translate3d(0, 25px, 0);
   }
   
   .slick-slider.slick-initialized .slick-active [data-animate] {
