@@ -24,7 +24,7 @@ const settings=
 
   return (
     <div className="main-container mx-auto">
-      <div className='flex flex-col gap-14 py-20 '>
+      <div className='flex flex-col gap-14 py-10 md:py-14 lg:py-20 '>
       <div className="flex flex-col justify-center items-center gap-4">
         <h2 
         data-aos="fade-down" data-aos-duration="1000"
