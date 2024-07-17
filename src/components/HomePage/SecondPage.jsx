@@ -67,24 +67,24 @@ const SecondPage = () => {
         <div 
          data-aos="fade-zoom-in"  data-aos-duration="2000"
         className="flex mx-auto text-nowrap max-w-inherit w-full md:max-w-[696px] lg:max-w-[741px] text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-x-auto justify-start scrollbar-none ">
-        <div className={`${ activeHeading ==="rooms"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="rooms"?"active text-custom-heading":"border-b-2 border-white"} custom-transition relative py-4 px-6 cursor-pointer w-auto text-center `}
         onClick={()=>{setActiveHeading("rooms")}}
         >Rooms Management</div>
-        <div className={`${ activeHeading ==="frontDesk"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="frontDesk"?"active text-custom-heading":"border-b-2 border-white"} custom-transition relative py-4 px-6 cursor-pointer w-auto text-center `}
          onClick={()=>{setActiveHeading("frontDesk")}}
         >Front Desk
         </div>
-        <div className={`${ activeHeading ==="housekeeping"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="housekeeping"?"active text-custom-heading":"border-b-2 border-white"} custom-transition relative py-4 px-6 cursor-pointer w-auto text-center `}
          onClick={()=>{setActiveHeading("housekeeping")}}
         >
           Housekeeping
           </div>
-        <div className={`${ activeHeading ==="reporting"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="reporting"?"active text-custom-heading":"border-b-2 border-white"} custom-transition relative py-4 px-6 cursor-pointer w-auto text-center `}
          onClick={()=>{setActiveHeading("reporting")}}
         >
           Reporting
           </div>
-        <div className={`${ activeHeading ==="features"?"text-custom-heading border-b-2 border-custom-blue":"border-b-2 border-white"} py-4 px-6 cursor-pointer w-auto text-center`}
+        <div className={`${ activeHeading ==="features"?"active text-custom-heading":"border-b-2 border-white"} custom-transition relative py-4 px-6 cursor-pointer w-auto text-center `}
          onClick={()=>{setActiveHeading("features")}}
         >All Features
         </div>
@@ -94,24 +94,24 @@ const SecondPage = () => {
       <div
       data-aos="fade-zoom-in" data-aos-duration="2000"
       className="flex mx-auto text-nowrap max-w-inherit w-full md:max-w-[696px] lg:max-w-[741px] xl:max-w-[1116px] justify-start text-[#97A7B5] font-gilroyBold font-normal leading-[1.2rem] overflow-x-auto scrollbar-none">
-      <div className={`${ activeHeading ==="transportation"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto text-center`}
+      <div className={`${ activeHeading ==="transportation"?"active text-custom-heading":"border-b-2 border-white"} relative custom-transition py-4 px-6 cursor-pointer w-auto text-center`}
       onClick={()=>{setActiveHeading("transportation")}}
       >Chartered Transportation</div>
-      <div className={`${ activeHeading ==="passenger"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto  text-center`}
+      <div className={`${ activeHeading ==="passenger"?"active text-custom-heading":"border-b-2 border-white"} relative custom-transition py-4 px-6 cursor-pointer w-auto  text-center`}
        onClick={()=>{setActiveHeading("passenger")}}
       >Passenger Manifests
       </div>
-      <div className={`${ activeHeading ==="reservations"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer  w-auto text-center`}
+      <div className={`${ activeHeading ==="reservations"?"active text-custom-heading":"border-b-2 border-white"} relative custom-transition py-4 px-6 cursor-pointer  w-auto text-center`}
        onClick={()=>{setActiveHeading("reservations")}}
       >
         Rostered Reservations
         </div>
-      <div className={`${ activeHeading ==="travel"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer  w-auto  text-center`}
+      <div className={`${ activeHeading ==="travel"?"active text-custom-heading":"border-b-2 border-white"} relative custom-transition py-4 px-6 cursor-pointer  w-auto  text-center`}
        onClick={()=>{setActiveHeading("travel")}}
       >
         Commerical Travel
         </div>
-      <div className={`${ activeHeading ==="rulesEngine"?"text-custom-heading border-b-2 border-custom-blue":""} py-4 px-6 cursor-pointer w-auto   text-center`}
+      <div className={`${ activeHeading ==="rulesEngine"?"active text-custom-heading":"border-b-2 border-white"} relative custom-transition py-4 px-6 cursor-pointer w-auto   text-center`}
        onClick={()=>{setActiveHeading("rulesEngine")}}
       >Robust Rules Engine
       </div>
