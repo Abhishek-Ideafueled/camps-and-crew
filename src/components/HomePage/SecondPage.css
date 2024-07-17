@@ -19,6 +19,7 @@
         height: 4px;
         background-color: #63C1EC;
         transition: .3s ease all;
+        overflow: hidden;
     }
 
     .custom-transition.active::before {
