@@ -92,9 +92,9 @@ const SlidingCompanies = () => {
   }
 
   return (
-    <div className='w-full'>
-      <div className='w-full mx-auto flex flex-col gap-14 my-20'>
-        <h3 className='text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading'>
+    <div className="w-full">
+      <div className="w-full mx-auto flex flex-col gap-14 my-20">
+        <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
           Trusted by Companies All Over the World
         </h3>
         {/* <div className='w-full company-slider h-[106px]'>
@@ -138,36 +138,56 @@ const SlidingCompanies = () => {
             </div>
           </Slider>
         </div> */}
-        <div className='w-auto company-slider min-h-[106px]'>
+        <div className="w-auto company-slider min-h-[106px]">
           <Slider {...settings}>
-          <div className='flex justify-between items-center'>
-            <div className='w-auto flex'><img className='' src={b2gold} alt="b2gold logo" /></div>          
-          
-            <div className='w-auto flex'><img className='' src={agincourtlogo} alt="agin court logo" /></div>
-          
-            <div className='w-auto flex'><img className='' src={canadianenergy} alt="canadian energy logo" /></div>
-          </div> 
-          <div className='flex justify-between items-center'>
-           
-            <div className='w-auto flex'>
-              <img src={top5logo} alt="top 5 global logo" />
-            </div>
-            <div className='w-auto flex'> 
-              <img src={sodexofull} alt="sodexo logo" /></div>
-            <div className='w-auto flex'>
-            <img  src={top5canada} alt="top 5 canada logo" />
-            </div>
+            <div className="flex justify-between items-center">
+              <div className="w-auto flex">
+                <img className="" src={b2gold} alt="b2gold logo" />
+              </div>
 
-          </div> 
-          <div className='flex justify-between items-center'>
-            <div className='w-auto flex'><img className='' src={permianlodging} alt="permian lodging logo" /></div>     
-          
-            
-          
-            <div className='w-auto flex'><img className='' src={canadianenergy} alt="canadian energy logo" /></div>
-            <div className='w-auto flex'><img className='' src={sodexofull} alt="sodexo logo" /></div>
-          </div> 
-          
+              <div className="w-auto flex">
+                <img className="" src={agincourtlogo} alt="agin court logo" />
+              </div>
+
+              <div className="w-auto flex">
+                <img
+                  className=""
+                  src={canadianenergy}
+                  alt="canadian energy logo"
+                />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="w-auto flex">
+                <img src={top5logo} alt="top 5 global logo" />
+              </div>
+              <div className="w-auto flex">
+                <img src={sodexofull} alt="sodexo logo" />
+              </div>
+              <div className="w-auto flex">
+                <img src={top5canada} alt="top 5 canada logo" />
+              </div>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="w-auto flex">
+                <img
+                  className=""
+                  src={permianlodging}
+                  alt="permian lodging logo"
+                />
+              </div>
+
+              <div className="w-auto flex">
+                <img
+                  className=""
+                  src={canadianenergy}
+                  alt="canadian energy logo"
+                />
+              </div>
+              <div className="w-auto flex">
+                <img className="" src={sodexofull} alt="sodexo logo" />
+              </div>
+            </div>
           </Slider>
         </div>
       </div>
