@@ -30,7 +30,7 @@
 @media only screen and (max-width: 640px) {
         .company-slider .slick-slider.slick-initialized .slick-list .slick-slide>div
         {
-               margin-right: 0;
+               margin-right: 40px;
                
         }
         .inner-slides{
