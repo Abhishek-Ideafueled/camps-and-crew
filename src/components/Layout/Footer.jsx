@@ -179,13 +179,13 @@ const Footer = () => {
               <div className="flex flex-col gap-3">
                 <Link
                   to="#"
-                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
+                  className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
                 >
                   Software to Manage Remote Workforce Camps
                 </Link>
                 <Link
                   to="#"
-                  className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
+                  className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
                 >
                   Online Booking Tool for FIFO Travel Logistics
                 </Link>
@@ -196,7 +196,7 @@ const Footer = () => {
               {/* <a href="#" className='hover:underline text-[#CAD5DE]'>Blog</a> */}
               <Link
                 to="#"
-                className="w-full hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
+                className="w-full hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem] text-sm md:text-base"
               >
                 Case Studies
               </Link>
@@ -205,7 +205,7 @@ const Footer = () => {
               <p className="font-gilroyBold font-normal">Company</p>
               <Link
                 to="#"
-                className="text-[#CAD5DE] hover:underline font-ttCommonProNormal text-sm md:text-base font-normal leading-[1.6rem]"
+                className="text-[#CAD5DE] hover:text-[#d4d5de] hover:underline font-ttCommonProNormal text-sm md:text-base font-normal leading-[1.6rem]"
               >
                 About us
               </Link>
@@ -214,19 +214,19 @@ const Footer = () => {
                 <div className="flex flex-col">
                   <Link
                     to="#"
-                    className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                    className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
                   >
                     USA : +1 6197983914
                   </Link>
                   <Link
                     to="#"
-                    className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                    className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
                   >
                     CA : +1 2898072990
                   </Link>
                   <Link
                     to="#"
-                    className="hover:underline text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
+                    className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE] font-ttCommonProNormal font-normal leading-[1.6rem]"
                   >
                     Global: +1 8002138556
                   </Link>
@@ -234,7 +234,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center text-[#CAD5DE] gap-2 text-sm md:text-base">
                 <FaRegEnvelope />
-                <Link to="#" className="hover:underline text-[#CAD5DE]">
+                <Link to="#" className="hover:underline hover:text-[#d4d5de] text-[#CAD5DE]">
                   info@campsandcrew.com
                 </Link>
               </div>
@@ -245,7 +245,7 @@ const Footer = () => {
           <span className="border-[#CAD5DE] border-r-[1px] px-2">
             Copyright © 2024
           </span>
-          <Link to="#" className="px-2 hover:underline">
+          <Link to="#" className="px-2 hover:underline hover:text-[#d4d5de]">
             Privacy Policy
           </Link>
         </div>

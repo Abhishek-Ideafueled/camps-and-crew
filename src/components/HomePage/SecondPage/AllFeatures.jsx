@@ -168,7 +168,7 @@ const AllFeatures = () => {
         </p>
         <hr className="border-[1px] border-[ #D0D5DD] w-[100px]" />
         <ul className="flex flex-col gap-4 font-ttCommonProNormal">
-          <li className="flex items-center justify-start gap-3 lg:gap-10">
+          <li className="flex items-center md:max-lg:items-start justify-start gap-3 lg:gap-10">
             <span className="w-[14px] h-[14px]">
               <svg
                 width="14"
@@ -204,7 +204,7 @@ const AllFeatures = () => {
               Track meal allowances manually or via key swipes
             </span>
           </li>
-          <li className="flex items-center justify-start gap-3 lg:gap-10">
+          <li className="flex items-center md:max-lg:items-start justify-start gap-3 lg:gap-10">
             <span className="w-[14px] h-[14px]">
               {" "}
               <svg
@@ -410,7 +410,7 @@ const AllFeatures = () => {
         </p>
         <hr className="border-[1px] border-[ #D0D5DD] w-[100px]" />
         <ul className="flex flex-col gap-4 font-ttCommonProNormal">
-          <li className="flex items-center justify-start gap-3 lg:gap-10">
+          <li className="flex items-center  justify-start gap-3 lg:gap-10">
             <span className="w-[14px] h-[14px]">
               <svg
                 width="14"
