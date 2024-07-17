@@ -100,3 +100,23 @@
         stroke-dashoffset: -125.664px;
     }
 }
+
+
+[data-animate] {
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  [data-animate="bottom"] {
+    transform: translate3d(0, 15px, 0);
+  }
+  
+  .slick-slider.slick-initialized .slick-active [data-animate] {
+    opacity: 1;
+    transform: none;
+}
+.slick-slider.slick-initialized .slick-active .slider-heading {
+    transition-delay: 0.6s;
+}
+.slick-slider.slick-initialized .slick-active .slider-desc {
+    transition-delay: 1s;
+}

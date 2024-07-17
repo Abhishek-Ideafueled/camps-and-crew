@@ -15,17 +15,6 @@ import "aos/dist/aos.css";
 
 const SmartLodge = () => {
 
-  const [currSlide,setCurrSlide] = useState(0);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, []);
-
-  useEffect(()=>{
-      AOS.refresh();
-  },[currSlide])
 
       const settings = {
         customPaging: function(i) {
@@ -47,7 +36,6 @@ const SmartLodge = () => {
         autoplaySpeed: 3500,
         cssEase: "ease-in-out",
         pauseOnHover:false,
-        afterChange:(index) => setCurrSlide(index),
       };
 
       
@@ -61,10 +49,12 @@ const SmartLodge = () => {
             <div  className="absolute inset-0 h-auto bottom-0 bg-home img-container" >
          
             </div>
-          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
+          <div className='min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center' data-aos="fade-up" data-aos-duration="1000">
           <div className="relative main-container mx-auto ">
-              <div className='w-full flex flex-col gap-8' data-aos="fade-up" data-aos-duration="2000">
-                <div className='flex flex-col gap-[10px]'>
+              <div className='w-full flex flex-col gap-8' 
+              // data-aos="fade-up" data-aos-duration="2000"
+                data-animate="bottom" >
+                <div className='flex flex-col gap-[10px] slider-heading'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
               </span>
@@ -72,7 +62,7 @@ const SmartLodge = () => {
                 The most flexible camp <br /> management system <br /> on the market
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal leading-[0.9rem] text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal leading-[0.9rem] text-sm lg:text-base font-semibold text-btn-text rounded-[4px] lg:leading-[1.55rem] slider-desc">
                 SEE ALL FEATURES
               </button>
               </div>
@@ -85,7 +75,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 h-auto bottom-0 img-container bg-smartlodge-2' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full'data-aos="fade-up" data-aos-duration="2000">
+              <div className='flex flex-col gap-8 w-full' data-animate="bottom" >
               <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -105,7 +95,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 h-auto bottom-0 bg-smartlodge-3 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full ' data-aos="fade-up" data-aos-duration="2000">
+              <div className='flex flex-col gap-8 w-full ' data-animate="bottom" >
                 <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -125,7 +115,7 @@ const SmartLodge = () => {
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-4 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full' data-aos="fade-up" data-aos-duration="2000">
+              <div className='flex flex-col gap-8 w-full' data-animate="bottom" >
                 <div className='flex flex-col gap-[10px]'>
               <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
                 | SMART LODGE |
@@ -146,16 +136,16 @@ const SmartLodge = () => {
             <div className='absolute inset-0 w-full h-auto bottom-0 bg-smartlodge-5 img-container' ></div>
             <div className=' min-h-[400px] sm:min-h-[550px] lg:min-h-[620px] flex items-center justify-center'>
             <div className="relative main-container mx-auto">
-              <div className='flex flex-col gap-8 w-full' data-aos="fade-up" data-aos-duration="2000">
-              <div className='flex flex-col gap-[10px]'>
-              <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem]">
+              <div className='flex flex-col gap-8 w-full' data-animate="bottom" >
+              <div className='flex flex-col gap-[10px] slider-heading'>
+              <span className="font-ttCommonProNormal font-semibold text-sm leading-[1.4rem] ">
                 | SMART LODGE |
               </span>
               <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
                 Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem]">
+              <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem] slider-desc">
                 SEE ALL FEATURES
               </button>
               </div>
