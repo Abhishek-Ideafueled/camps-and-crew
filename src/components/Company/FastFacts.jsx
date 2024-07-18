@@ -10,9 +10,9 @@ const FastFacts = () => {
     <div className='w-full min-h-[608px]'>
         <div className='main-container mx-auto py-10 md:py-20 lg:py-28'>
           <div className='flex flex-col w-full gap-[60px]'>
-            <div className='flex flex-col items-center gap-4'>
+            <div className='flex flex-col items-center gap-4' data-aos="fade-up">
                 <h1 className='font-gilroyMedium font-bold text-[25px] md:text-[32px] lg:text-[40px] text-custom-heading lg:leading-[3rem]'>Fast Facts</h1>
-                <svg width="174" height="16" viewBox="0 0 174 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div data-aos="fade-up" data-aos-delay="100"> <svg width="174" height="16" viewBox="0 0 174 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.584 0.722656L1.58396 15.7227" stroke="#647787"/>
 <path d="M46.584 0.722656L36.584 15.7227" stroke="#647787"/>
 <path d="M81.584 0.722656L71.584 15.7227" stroke="#647787"/>
@@ -37,12 +37,12 @@ const FastFacts = () => {
 <path d="M74.584 0.722656L64.584 15.7227" stroke="#647787"/>
 <path d="M109.584 0.722656L99.584 15.7227" stroke="#647787"/>
 <path d="M144.584 0.722656L134.584 15.7227" stroke="#647787"/>
-</svg>
+</svg></div>
 
 
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8'> 
-            <div className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
+            <div data-aos="fade-up" data-aos-delay="100" className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
               <div className='w-[70px] h-[70px]'>
             <img src={fifteenYears} alt="about rooms managed fifteen years"  className='w-full h-full'/>
               </div>
@@ -51,7 +51,7 @@ const FastFacts = () => {
               <p className='font-ttCommonProRegular font-normal text-custom-body'>Camp rooms managed for our clients over 15 years</p>
               </div>
             </div>
-            <div className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
+            <div data-aos="fade-up" data-aos-delay="200" className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
               <div className='w-[70px] h-[70px]'>
             <img src={managedGlobally} alt="about rooms managed globally"  className='w-full h-full'/>
               </div>
@@ -60,7 +60,7 @@ const FastFacts = () => {
               <p className='font-ttCommonProRegular font-normal text-custom-body'>Rooms managed across remote camps and villages globally</p>
               </div>
             </div>
-            <div className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
+            <div data-aos="fade-up" data-aos-delay="300" className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
               <div className='w-[70px] h-[70px]'>
             <img src={roomsTravel} alt="about rooms travel booking"  className='w-full h-full'/>
               </div>
@@ -69,7 +69,7 @@ const FastFacts = () => {
               <p className='font-ttCommonProRegular font-normal text-custom-body'>Room and travel bookings made monthly with our systems</p>
               </div>
             </div>
-            <div className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
+            <div data-aos="fade-up" data-aos-delay="400" className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-2 lg:p-4 xl:p-6 flex flex-col justify-between'>
               <div className='w-[70px] h-[70px]'>
             <img src={years32} alt="about 32 years in business"  className='w-full h-full'/>
               </div>
