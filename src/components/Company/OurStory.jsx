@@ -95,8 +95,8 @@ const OurStory = () => {
             <div className="absolute flex top-[40%] sm:top-[40%] md:top-[50%] left-[45%] sm:right-[40%] justify-center h-full hover:opacity-90">
               <Link to="#" className='w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]'>
               <svg
-                width="full"
-                height="full"
+                width="100%"
+                height="100%"
                 viewBox="0 0 80 80"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

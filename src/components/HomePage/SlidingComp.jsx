@@ -16,7 +16,7 @@ const SlidingComp = () => {
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
-        slidesToShow: 6,
+        slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
           {
