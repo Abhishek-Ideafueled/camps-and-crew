@@ -71,15 +71,15 @@ const SlidingComp = () => {
         <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5logo} alt="top 5 global logo" />
         </div>
-        <div className='single-slide'>
-        <img  className="h-[65px] sm:h-full" src={sodexologo} alt="sodexo logo" />
+        <div className='single-slide px-4 sm:px-0'>
+        <img  className="h-[65px] sm:h-[90px]" src={sodexologo} alt="sodexo logo" />
         </div >
         <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5canada} alt="top 5 canada logo" />
         </div>
-        <div className='single-slide'>
+        <div className='single-slide px-4 sm:px-0'>
         <img
-                  className="max-sm:h-[65px] sm:max-h-[80px] sm:mt-2"
+                  className="h-[65px] sm:h-[90px]"
                   src={permianlodging}
                   alt="permian lodging logo"
                 />
