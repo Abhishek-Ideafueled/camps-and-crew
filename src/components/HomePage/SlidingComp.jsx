@@ -7,6 +7,7 @@ import permianlodging from '/permian-lodging.png';
 import top5canada from '/top-5-canada.png';
 import top5logo from '/top5logo.png';
 import sodexologo from '/sodexo-logo.png';
+import './SlidingComp.css';
 
 const SlidingComp = () => {
 
@@ -51,34 +52,34 @@ const SlidingComp = () => {
         <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
           Trusted by Companies All Over the World
         </h3>
-            <div className='w-full h-[106px]'>
+            <div className='w-full h-[106px] comp-slider'>
       <Slider {...settings}>
-        <div className=''>
+        <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={b2gold} alt="b2gold logo" />
         </div>
-        <div>
+        <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={agincourtlogo} alt="agin court logo" />
 
         </div>
-        <div>
+        <div className='single-slide'>
         <img
-                 className='h-[65px] sm:h-full'
+                 className=' h-[65px] sm:h-full '
                   src={canadianenergy}
                   alt="canadian energy logo"
                 />
         </div>
-        <div>
+        <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5logo} alt="top 5 global logo" />
         </div>
-        <div>
+        <div className='single-slide'>
         <img  className="h-[65px] sm:h-full" src={sodexologo} alt="sodexo logo" />
-        </div>
-        <div>
+        </div >
+        <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5canada} alt="top 5 canada logo" />
         </div>
-        <div>
+        <div className='single-slide'>
         <img
-                  className="h-[65px] sm:h-full"
+                  className="max-sm:h-[65px] sm:max-h-[80px] sm:mt-2"
                   src={permianlodging}
                   alt="permian lodging logo"
                 />

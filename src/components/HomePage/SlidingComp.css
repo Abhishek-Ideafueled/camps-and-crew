@@ -1,0 +1,12 @@
+
+.comp-slider .slick-slider.slick-initialized .slick-list .slick-track{
+    display: flex !important;
+    align-items: center;
+}
+
+.comp-slider .slick-slider.slick-initialized .slick-list .slick-slide .single-slide{
+    display: flex !important;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+}
