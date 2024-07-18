@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import video from '/video.jpg';
 import { Link } from 'react-router-dom';
 import '../HomePage/Homepage.css';
 import './FifoOperations.css';
+import Odometer from 'react-odometerjs';
+import 'odometer/themes/odometer-theme-default.css';
 
 const FifoOperations = () => {
+
+  // const [value, setValue] = useState(1234);
+
+  //   useEffect(() => {
+  //       const timeoutId = setTimeout(() => setValue(150), 2000);
+  //       return () => {
+  //           clearTimeout(timeoutId);
+  //       };
+  //   }, []);'
+
+
+
   return (
     <div className="relative bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
       <div className=" main-container mx-auto">
@@ -16,12 +30,14 @@ const FifoOperations = () => {
           </div>
           <div 
           data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-center gap-6 lg:gap-24 md:pb-10">
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-start gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
               <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-rooms)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
               <span className="sr-only">150</span>
-                K </span>
+             {/* <span className='flex'> <Odometer value={value} format="(.ddd),dd" /> */}
+             K </span>
+                {/* </span> */}
               </div>
               <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
                 Rooms managed for clients operating remote camps and villages

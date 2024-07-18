@@ -9,6 +9,7 @@ import SetsUsApart from './SetsUsApart';
 import DemoForm from './DemoForm';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SlidingComp from './SlidingComp';
 
 const Homepage = () => {
 
@@ -25,6 +26,8 @@ const Homepage = () => {
       <SecondPage/>
       <FifoOperations/>
       <SlidingCompanies/>
+      
+       {/* <SlidingComp/> */}
       <Industries/> 
       <CaseStudies/>
       <SetsUsApart/>
