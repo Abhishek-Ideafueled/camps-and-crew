@@ -32,7 +32,7 @@ const FifoOperations = () => {
           data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-start gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
+              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
               <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-rooms)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
               <span className="sr-only">150</span>
              {/* <span className='flex'> <Odometer value={value} format="(.ddd),dd" /> */}
@@ -44,7 +44,7 @@ const FifoOperations = () => {
               </span>
             </div>
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-28 text-custom-heading font-gilroyBold font-normal">
+              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
               <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-transport)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
               <span className="sr-only">350</span>
                 
@@ -55,7 +55,7 @@ const FifoOperations = () => {
               </span>
             </div>
             <div className='flex flex-col gap-2 max-w-[247px]'>
-              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-16 text-custom-heading font-gilroyBold font-normal">
+              <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[38px] lg:w-[60px] text-custom-heading font-gilroyBold font-normal">
               <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-years)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
               <span className="sr-only">74</span></span>
               </div>
@@ -102,7 +102,7 @@ const FifoOperations = () => {
             </div>
           </div>
           <div className="relative flex flex-col max-w-[556px] gap-6 z-10" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
-            <h3 className="text-xl md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
+            <h3 className="text-xl text-center md:text-start md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
             <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">

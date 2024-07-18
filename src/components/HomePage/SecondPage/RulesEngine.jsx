@@ -13,8 +13,8 @@ const RulesEngine = () => {
         Implement a travel policy aligned with your organization’s needs
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
-        <div className="flex flex-col py-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
-          <div className="flex gap-10 items-start">
+        <div className="flex flex-col py-4 text-sm gap-1 md:gap-2 lg:gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
+          <div className="flex gap-5 sm:gap-10 ">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -50,7 +50,7 @@ const RulesEngine = () => {
             Set up single or multi-layer approvals, when required
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -86,7 +86,7 @@ const RulesEngine = () => {
             Define fields or reportable conditions required to book
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"

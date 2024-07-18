@@ -14,7 +14,7 @@ const Reporting = () => {
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
         <div className="flex flex-col py-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
-          <div className="flex gap-10 items-start">
+          <div className="flex gap-5 sm:gap-10">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -50,7 +50,7 @@ const Reporting = () => {
             View all camp residents in-house and all rooms scheduled for cleaning
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -86,7 +86,7 @@ const Reporting = () => {
             See historical or forecasted camp occupancy and much more
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
              <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"

@@ -13,8 +13,8 @@ const Passenger = () => {
         Monitor your workers at every step of their journey to and from camp
         </div>
         <hr className="w-24 text-[#D0D5DD]" />
-        <div className="flex flex-col py-4 text-sm gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
-          <div className="flex gap-10 items-start">
+        <div className="flex flex-col py-4 text-sm gap-1 md:gap-2 lg:gap-3 font-ttCommonProNormal font-normal leading-[1.4rem]">
+          <div className="flex gap-5 sm:gap-10">
             <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -50,7 +50,7 @@ const Passenger = () => {
             Track no-shows and go-shows at every leg of the journey
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
             <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
@@ -86,7 +86,7 @@ const Passenger = () => {
             Alerts for travel anomalies warn if any trip segments are out of sync
             </span>
           </div>
-          <div className="flex gap-10 items-center">
+          <div className="flex gap-5 sm:gap-10">
             <span className="w-[14px] h-[14px] mt-[5px]">
               <svg
                 width="14"
