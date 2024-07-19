@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white w-full fixed top-0 z-20 lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
+      <header className="bg-white w-full fixed top-0 z-20  lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
         <div className="flex flex-row items-center justify-between main-container h-[74px] xl:py-0 mx-auto">
           <Link
             to="/"
@@ -124,8 +124,8 @@ const Header = () => {
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : " flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto my-3 lg:hidden main-container mx-auto"}`}>
-      <ul className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm transition-all ease-linear delay-1000 duration-1000 '>
+    <div className={`${!showDropdown ? "h-0 opacity-0 my-0" : "h-[173px] opacity-100"} flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto my-3 lg:h-0 lg:opacity-0 main-container mx-auto transition-all delay-100 duration-300}`}>
+      <ul className='h-auto flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm '>
         <Link to="/" 
         onClick={()=>{setActiveLink("/"); closeDropdown();}}
         >
