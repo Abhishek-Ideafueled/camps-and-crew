@@ -6,6 +6,7 @@ import FastFacts from './FastFacts';
 import OurStory from './OurStory';
 import OurMission from './OurMission';
 import OurTeam from './OurTeam';
+import CompanyHistory from './CompanyHistory';
 
 const Company = () => {
   
@@ -24,6 +25,7 @@ const Company = () => {
       <OurStory/>
       <OurMission/>
       <OurTeam/>
+      <CompanyHistory/>
     </div>
   )
 }

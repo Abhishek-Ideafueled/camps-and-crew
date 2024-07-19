@@ -7,7 +7,7 @@ import './OurStory.css';
 const OurStory = () => {
   return (
     <div className="w-full ">
-      <div className="w-full bg-[#EAE8E3] py-10 md:py-20 lg:py-28">
+      <div className="w-full bg-[#EAE8E3] py-10 lg:py-20">
         <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px]">
           <div className="flex flex-col items-center gap-4">
             <h1

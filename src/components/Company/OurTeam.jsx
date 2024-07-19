@@ -47,10 +47,10 @@ const OurTeam = () => {
             </svg>
           </div>
         </div>
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 py-20 lg:py-28'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 py-10 lg:py-20'>
 
             <div data-aos="fade-up" data-aos-delay="100" 
-            className='col-span-1 md:col-span-2 flex flex-col md:flex-row gap-[25px] md:gap-5 xl:gap-[60px] items-center py-10 md:py-20 border-b-custom-button border-b-[1px]'>
+            className='col-span-1 md:col-span-2 flex flex-col md:flex-row gap-[25px] md:gap-10 lg:gap-[60px] items-center pb-10 md:pb-20 border-b-custom-button border-b-[1px]'>
                 <div className='w-[150px] h-[180px] md:w-[320px] md:h-[380px]'>
                 <img src="/beverly-mccabe-headshot.png" className=' object-cover' alt="beverly-mccabe-headshot" />
                 </div>
