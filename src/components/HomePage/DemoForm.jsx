@@ -142,7 +142,7 @@ const DemoForm = () => {
                   />
                 </div>
                 <div className="btn-orange flex items-center h-[54px] mt-5 rounded-[4px]">
-                  <button className="w-full font-ttCommonProNormal font-semibold">
+                  <button className="w-full ">
                     CONTINUE
                   </button>
                 </div>
