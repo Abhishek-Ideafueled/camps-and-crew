@@ -1,4 +1,4 @@
-.main-container{
+/* .main-container{
     width: 100%;
     max-width: 540px;
     padding-left: 20px;
@@ -7,7 +7,7 @@
 
 /* max-w-[540px] md:max-w-[720px] lg:max-w-[960px] */
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .main-container{
         max-width:720px;
     }
@@ -28,7 +28,7 @@
         padding-left: 0;
       padding-right: 0;
   }
-    }
+    }  */
 
    
     .active-arrow-right{

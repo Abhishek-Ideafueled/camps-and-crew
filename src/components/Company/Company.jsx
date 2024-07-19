@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import FastFacts from './FastFacts';
 import OurStory from './OurStory';
 import OurMission from './OurMission';
+import OurTeam from './OurTeam';
 
 const Company = () => {
   
@@ -22,6 +23,7 @@ const Company = () => {
       <FastFacts/>
       <OurStory/>
       <OurMission/>
+      <OurTeam/>
     </div>
   )
 }
