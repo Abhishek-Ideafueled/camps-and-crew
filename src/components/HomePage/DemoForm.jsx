@@ -141,7 +141,7 @@ const DemoForm = () => {
                     rows="4"
                   />
                 </div>
-                <div className="bg-custom-button hover:bg-btn-hover flex items-center h-[54px] mt-5 rounded-[4px]">
+                <div className="btn-orange flex items-center h-[54px] mt-5 rounded-[4px]">
                   <button className="w-full font-ttCommonProNormal font-semibold">
                     CONTINUE
                   </button>

@@ -134,3 +134,11 @@
     font-family: "tt_commons_pro_regular";
     src: url("/fonts/tt_commons_pro_regular.ttf");
   }
+
+  
+@layer components {
+  .btn-orange {
+    @apply bg-custom-button font-ttCommonProMedium font-semibold tracking-[0.8px] text-btn-text hover:bg-btn-hover;
+  }
+  /* ... */
+}

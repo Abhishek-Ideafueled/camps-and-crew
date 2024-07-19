@@ -123,7 +123,7 @@ const Transportation = () => {
             </span>
           </div>
         </div>
-     <button className='bg-custom-button hover:bg-btn-hover mt-4 max-w-[179px] h-[54px] rounded-[4px] font-ttCommonProNormal font-semibold text-btn-text text-sm md:text-base  md:leading-[1.6rem]'>
+     <button className='btn-orange mt-4 max-w-[179px] h-[54px] rounded-[4px] text-sm md:text-base  md:leading-[1.6rem]'>
       LEARN MORE</button>
       </div>
     {/* </div> */}

@@ -44,7 +44,7 @@ const CaseStudies = () => {
             <h2 className="text-[25px] sm:text-[32px] md:text-[32px] lg:text-h2 leading-[3rem] text-custom-heading font-gilroyBold font-bold">
               Case Studies
             </h2>
-            <p className="text-custom-body text-sm md:text-base lg:text-lg font-ttCommonProNormal font-medium lg:leading-7">
+            <p className="text-custom-body text-sm text-center md:text-start md:text-base lg:text-lg font-ttCommonProMedium font-medium lg:leading-7">
               Read about the ways our software empowers our clients to increase
               room utilization at camp, streamline housekeeping, manage rooms
               and travel in sync, and much more.

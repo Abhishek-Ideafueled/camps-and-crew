@@ -39,7 +39,7 @@ const FifoOperations = () => {
              K </span>
                 {/* </span> */}
               </div>
-              <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
+              <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
                 Rooms managed for clients operating remote camps and villages
               </span>
             </div>
@@ -50,7 +50,7 @@ const FifoOperations = () => {
                 
                 K</span>
               </div>
-              <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
+              <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
                 FIFO transportation reservations booked and managed annually
               </span>
             </div>
@@ -59,7 +59,7 @@ const FifoOperations = () => {
               <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-years)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
               <span className="sr-only">74</span></span>
               </div>
-              <span className="font-ttCommonProNormal font-normal leading-[1.55rem]">
+              <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
                 Years combined experience across mining, energy, travel and
                 hospitality
               </span>
@@ -106,24 +106,24 @@ const FifoOperations = () => {
             <h3 className="text-xl text-center md:text-start md:text-2xl font-gilroyBold text-custom-heading font-normal md:leading-[1.8rem]">
               About the company
             </h3>
-            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
+            <p className="font-ttCommonProMedium font-medium text-custom-body text-sm leading-[1.32rem] md:text-base lg:leading-[1.6rem]">
               At Camps and Crew, we have set out to build best-of-breed
               technology that facilitates fly-in fly-out operations for travel
               coordinators, on-site camp staff, camp and project management, and
               everyone in-between.
-            </p>
-            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
+            <br />
+            <br />
               Over the years, we have developed a suite of software solutions to
               streamline all aspects of FIFO travel and remote camp management.
               Our solutions support all parties working to ensure remote crews
               are transported and housed safely and efficiently.
-            </p>
-            <p className="font-ttCommonProNormal font-medium text-custom-body text-sm leading-[1.38rem] md:text-base lg:leading-[1.6rem]">
+            <br />
+            <br />
               We work with companies in the mining, energy and construction
               sectors to automate and streamline their operations in order to
               reduce manual processes and the costs associated.
             </p>
-            <Link className='text-custom-blue w-[90px] hover:text-custom-body transition-colors duration-300 delay-100 font-ttCommonProRegular font-semibold leading-[1.6rem]'>
+            <Link className='text-custom-blue w-[90px] hover:text-custom-body transition-colors duration-300 delay-100 font-ttCommonProRegular font-semibold text-sm md:text-base md:leading-[1.6rem]'>
             READ MORE
             </Link>
             

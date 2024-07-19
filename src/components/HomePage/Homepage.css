@@ -85,3 +85,16 @@
   height: 100%;
   border-left: 1px solid blue !important ;
 }
+
+@font-face {
+  font-family: "tt_commons_pro_normal";
+  src: url("/fonts/tt_commons_pro_normal.ttf");
+}
+
+/* .btn-orange{
+  background-color: #EFBC43 !important;
+  font-family: "tt_commons_pro_regular";
+  font-weight: 600;
+  letter-spacing: 0.8;
+  color: #060F1F;
+} */
