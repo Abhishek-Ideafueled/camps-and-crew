@@ -24,7 +24,7 @@ const Homepage = () => {
   }, []);
 
   return (
-    <div className='w-full overflow-hidden'>
+    <div className='w-full overflow-hidden mt-[75px] lg:mt-[106px]'>
       <Carousel/>
       <SecondPage/>
       <FifoOperations/>

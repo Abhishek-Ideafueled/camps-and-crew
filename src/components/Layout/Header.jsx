@@ -15,6 +15,10 @@ const Header = () => {
     setIsOpen(false);
   }
 
+  const closeDropdown=()=>{
+    setShowDropdown(!showDropdown);
+  }
+
   useEffect(()=>{
     let curr = window.location.pathname;
     setActiveLink(curr);
@@ -22,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white w-full sticky top-0 z-20 lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
+      <header className="bg-white w-full fixed top-0 z-20 lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
         <div className="flex flex-row items-center justify-between main-container h-[74px] xl:py-0 mx-auto">
           <Link
             to="/"
@@ -115,33 +119,40 @@ const Header = () => {
               BOOK A DEMO
             </button>
           </div>
-          <div className='block lg:hidden items-center' onClick={()=>setShowDropdown(!showDropdown)}>
+          <div className='block lg:hidden items-center' onClick={closeDropdown}>
           <HiBars3 size={30} className='' />
       </div>
         </div>
         
-      <div className={`${!showDropdown ? "hidden" : "flex flex-col gap-4 text-[#09425D] items-start mx-auto md:mx-auto leading-[1.2rem] ml-auto my-3 main-container lg:hidden transition-all ease-in duration-450 delay-400"}`}>
-      <nav className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm'>
-        <Link to="/" className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}
-        onClick={()=>setActiveLink("/")}
-        >Home</Link>
-        
-        <span className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' 
+      <div className={`${!showDropdown ? "hidden" : " flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto my-3 lg:hidden main-container mx-auto"}`}>
+      <ul className='flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm transition-all ease-linear delay-1000 duration-1000 '>
+        <Link to="/" 
+        onClick={()=>{setActiveLink("/"); closeDropdown();}}
+        >
+          <li className={`${activeLink ==="/" ? "text-custom-blue " :""} hover:text-custom-blue cursor-pointer`}>Home</li>
+          </Link>
+        <Link>
+        <li className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' 
         // onClick={()=>setIsOpen(true)}
         >
           <p >Solutions</p> 
           <IoIosArrowDown />
-          </span>
-        <Link to="/company" className={`${activeLink ==="/company" ? "text-custom-blue" :""} hover:text-custom-blue cursor-pointer`}
-        onClick={()=>setActiveLink("/company")}
-        >Company</Link>
-        <Link to="/case-studies" className={`${activeLink ==="/case-studies" ? "text-custom-blue" :""} hover:text-custom-blue cursor-pointer`}
-        onClick={()=>setActiveLink("/case-studies")}
-        >Case Studies</Link>
-      </nav>
+          </li>
+          </Link>
+        <Link to="/company" 
+        onClick={()=>{setActiveLink("/company"); closeDropdown();}}
+        >
+          <li className={`${activeLink ==="/company" ? "text-custom-blue" :""} hover:text-custom-blue cursor-pointer`}>Company</li>
+          </Link>
+        <Link to="/case-studies"
+        
+        onClick={()=>{setActiveLink("/case-studies"); closeDropdown();}}
+        >
+          <li className={`${activeLink ==="/case-studies" ? "text-custom-blue" :""} hover:text-custom-blue cursor-pointer`}>Case Studies</li>
+          </Link>
+      </ul>
        <button className='bg-[#5BC0ED] flex items-center justify-center w-[149px] [43px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> BOOK A DEMO</button>
-    
-      </div>
+       </div>
       </header>
       <Modal isOpen={isOpen} onClose={handleClose}>
         {/* <>Helloooo</> */}
