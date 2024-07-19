@@ -1,6 +1,45 @@
 import React from 'react'
+import Slider from 'react-slick';
 
 const CompanyHistory = () => {
+
+  const settings = {
+    dots: false,
+    fade: false,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    pauseOnHover:false,
+    // responsive: [
+    //     {
+    //       breakpoint: 1600,
+    //       settings: {
+    //         slidesToShow:3.5,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 1199,
+    //       settings: {
+    //         slidesToShow: 2.2,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 767,
+    //       settings: {
+    //         slidesToShow: 1,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 480,
+    //       settings: {
+    //         slidesToShow: 1,
+    //       },
+    //     }
+    //   ],
+  };
+
   return (
     <div className="w-full bg-[#053347]">
       <div className="main-container mx-auto flex flex-col gap-[60px] py-10 lg:py-20 w-full">
@@ -48,6 +87,17 @@ const CompanyHistory = () => {
 Discover the milestones that have shaped our journey in developing robust solutions for remote FIFO operations. Below you can read more about the product launches and major feature releases we unveiled along the way.
 </span>
 
+        </div>
+        <div className='history-cards'>
+        <Slider{...settings} >
+        <div className='slider-outer'>
+          <div className='relative'>
+        <div className='absolute inset-0 bg-history-1 w-full h-auto bottom-0'></div>
+        {/* <img src="/fifo-travelers-wait-to-board-charter-plane.jpg" alt="" /> */}
+          </div>
+
+        </div>
+        </Slider>
         </div>
       </div>
     </div>

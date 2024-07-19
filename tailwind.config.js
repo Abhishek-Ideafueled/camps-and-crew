@@ -47,6 +47,8 @@ export default {
       'case-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case3.jpg')",
       'bus-image': "url(/charter-bus-fifo-workers-passengers.jpg)",
       'video-image': "url(/smart-video-player.jpg)",
+      'history-1':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-travelers-wait-to-board-charter-plane.jpg')",
+      
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
