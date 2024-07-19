@@ -145,7 +145,7 @@ const SmartLodge = () => {
                 Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] leading-[1.55rem] slider-desc">
+              <button className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
                 SEE ALL FEATURES
               </button>
               </div>

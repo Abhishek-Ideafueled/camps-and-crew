@@ -50,7 +50,7 @@ const Enroute = () => {
               A single system  to book <br /> and manage all your <br /> FIFO transport
             </h1>
             </div>
-            <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem] slider-desc">
+            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
             </button>
             </div>
@@ -72,7 +72,7 @@ const Enroute = () => {
               Book and manage <br /> charter flights, <br /> buses and more
             </h1>
             </div>
-            <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem] slider-desc">
+            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
             </button>
             </div>
@@ -94,7 +94,7 @@ const Enroute = () => {
             <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
               Manage travel and <br /> rooms for your workers <br /> in one platform
             </h1></div>
-            <button className="w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem] slider-desc">
+            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
             </button>
             </div>
@@ -116,7 +116,7 @@ const Enroute = () => {
             <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
               Book rich GDS content, all within policy
             </h1></div>
-            <button className="max-w-[219px] h-[54px] bg-custom-button hover:bg-btn-hover text-center font-ttCommonProNormal font-semibold text-btn-text rounded-[4px] leading-[1.55rem] slider-desc">
+            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
             </button>
             </div>
