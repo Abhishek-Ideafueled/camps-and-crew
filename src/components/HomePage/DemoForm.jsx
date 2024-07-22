@@ -94,7 +94,7 @@ const DemoForm = () => {
                     className="border-none outline-none text-black"
                   />
                 </div>
-                <div className="flex flex-col max-w-full">
+                <div className="flex flex-col max-w-full relative">
                   <div 
                   onClick={() => setShowDropdown(!showDropdown)}
                   className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg cursor-pointer">
@@ -118,7 +118,7 @@ const DemoForm = () => {
                     <div 
                     ref={dropDownRef}
                     data-aos="zoom-in" data-aos-duration="300"
-                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 max-w-md:w-[80%] max-w-[460px] md:max-w-[288px] lg:max-w-[324px] xl:max-w-[416px] xl:w-full">
+                    className="absolute z-10 bg-white flex flex-col px-2 py-3 rounded-lg top-14 w-full">
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' >Select Products of Interest</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>
