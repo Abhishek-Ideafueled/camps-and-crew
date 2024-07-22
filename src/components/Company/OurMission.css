@@ -22,7 +22,7 @@
 }
 
 
-.mission-slides .swiper.swiper-initialized .swiper-horizontal .swiper-backface-hidden{
-    overflow-x: auto !important;
-    background: #000;
+div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    /* overflow-x: auto !important; */
+    overflow: unset;
 }
