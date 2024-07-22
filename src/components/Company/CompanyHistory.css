@@ -1,0 +1,5 @@
+.history-cards .slick-slider.slick-initialized .slick-track{
+    display: flex !important;
+    gap: 20px !important;
+ }
+ 

@@ -8,36 +8,36 @@ const CompanyHistory = () => {
     fade: false,
     infinite: false,
     speed: 1000,
-    slidesToShow: 1,
+    slidesToShow: 2.5,
     slidesToScroll: 1,
     cssEase: "linear",
     pauseOnHover:false,
-    // responsive: [
-    //     {
-    //       breakpoint: 1600,
-    //       settings: {
-    //         slidesToShow:3.5,
-    //       },
-    //     },
-    //     {
-    //       breakpoint: 1199,
-    //       settings: {
-    //         slidesToShow: 2.2,
-    //       },
-    //     },
-    //     {
-    //       breakpoint: 767,
-    //       settings: {
-    //         slidesToShow: 1,
-    //       },
-    //     },
-    //     {
-    //       breakpoint: 480,
-    //       settings: {
-    //         slidesToShow: 1,
-    //       },
-    //     }
-    //   ],
+    responsive: [
+        {
+          breakpoint: 1600,
+          settings: {
+            slidesToShow:3.5,
+          },
+        },
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow:3.2,
+          },
+        },
+        {
+          breakpoint: 1280,
+          settings: {
+            slidesToShow: 2,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
   };
 
   return (
@@ -83,21 +83,222 @@ const CompanyHistory = () => {
               </svg>
             </div>
           </div>
-          <span className='font-ttCommonProNormal font-medium text-lg leading-7 text-white'>
-Discover the milestones that have shaped our journey in developing robust solutions for remote FIFO operations. Below you can read more about the product launches and major feature releases we unveiled along the way.
-</span>
-
+          <span className="font-ttCommonProNormal font-medium text-lg leading-7 text-white">
+            Discover the milestones that have shaped our journey in developing
+            robust solutions for remote FIFO operations. Below you can read more
+            about the product launches and major feature releases we unveiled
+            along the way.
+          </span>
         </div>
-        <div className='history-cards'>
-        <Slider{...settings} >
-        <div className='slider-outer'>
-          <div className='relative'>
-        <div className='absolute inset-0 bg-history-1 w-full h-auto bottom-0'></div>
-        {/* <img src="/fifo-travelers-wait-to-board-charter-plane.jpg" alt="" /> */}
-          </div>
+        <div className="history-cards">
+          <Slider {...settings}>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2023
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-1 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        August 2023
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                        The company launches the ability for charter plane
+                        pilots and bus drivers to check workers in as they board
+                        planes or buses with EnRoute.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2022
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-2 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        September 2022
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      Roster booking capabilities launch, enabling clients to book rooms or travel reservations weeks or months out for workers on rotating rosters.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2021
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-3 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        April 2021
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      EnRoute goes live managing FIFO travel for workers at a remote mine in Western Africa--our first EnRoute deployment in the region.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2018
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-4 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        July 2018
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      One of Indonesia’s premier mining companies installs SmartLodge at 15+ worksite lodging facilities at a large-scale mine in Indonesia.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2017
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-5 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        July 2017
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      EnRoute rolls out the ability to book commercial travel content, inclusive of commercial flights, hotels and rental cars.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2016
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-6 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        July 2016
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      EnRoute launches and enables FIFO transportation coordinators to book and manage charter air, ground transportation and marine vessels.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2015
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-7 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        February 2015
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      Mobile Housekeeping launches, enabling cleaners to update room status from a mobile device as they complete walkdowns or cleanings.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2013
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-8 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        June 2013
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      Construction firm implements SmartLodge at their remote camps at a hydroelectric dam construction project in Manitoba, Canada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  2007
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-9 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                       March 2007
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      The company installs the first version of SmartLodge at a remote camp serving the Canadian oil sands in Fort McMurray, Alberta, Canada.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="slider-outer w-[340px] h-[469px]">
+              <div className="flex flex-col">
+                <h2 className="text-h2 text-custom-button font-gilroyBold">
+                  1997
+                </h2>
+                <div className="relative">
+                  <div className="absolute inset-0 bg-history-10 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                  <div className="w-[340px] h-[405px]">
+                    <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                      <span className="font-gilroyBold font-normal text-white text-2xl ">
+                        June 1997
+                      </span>
+                      <p className="font-ttCommonProNormal text-white text-xl">
+                      Camps & Crew’s parent company, Innfinity Software Systems, releases a now-retired version of SmartLodge for hotels properties.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-        </div>
-        </Slider>
+          </Slider>
+          {/* <div className='w-[300px] h-[400px]'>
+        <div className=' bg-history-10 w-full h-full bottom-0'></div>
+        </div> */}
         </div>
       </div>
     </div>

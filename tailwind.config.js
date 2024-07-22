@@ -47,8 +47,17 @@ export default {
       'case-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case3.jpg')",
       'bus-image': "url(/charter-bus-fifo-workers-passengers.jpg)",
       'video-image': "url(/smart-video-player.jpg)",
-      'history-1':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-travelers-wait-to-board-charter-plane.jpg')",
-      
+      'history-1':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-workers-board-chartered-bus.jpg')",
+      'history-2':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-travelers-wait-to-board-charter-plane.jpg')",
+      'history-3':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-mining-worker-rides-bus-western-africa.jpg')",
+      'history-4':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-workers-mess-hall-mining-project-indonesia.jpg')",
+      'history-5':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/commercial-plane-lands-busy-tarmac.jpg')",
+      'history-6':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-workers-board-charter-plane.jpg')",
+      'history-7':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/housekeeper-changes-sheets-camp-room.jpg')",
+      'history-8':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/canadian-hydroelectric-construction-project-aerial-perspective.jpg')",
+      'history-9':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/canadian-oil-sands-remote-camp.jpg')",
+      'history-10':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/hotel-bed-with-pillows-and-sheets.jpg')",
+
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
