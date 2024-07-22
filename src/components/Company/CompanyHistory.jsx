@@ -45,7 +45,7 @@ const CompanyHistory = () => {
       <div className="main-container mx-auto flex flex-col gap-[60px] py-10 lg:py-20 w-full">
         <div className="flex flex-col gap-6 items-center">
           <div className="flex flex-col gap-4 items-center">
-            <h1 className="font-gilroy font-bold text-h2 text-white">
+            <h1 className="font-gilroyBold text-h2 leading-[3rem] text-white">
               Company History
             </h1>
             <div className="">
