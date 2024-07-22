@@ -8,6 +8,8 @@ import OurMission from './OurMission';
 import OurTeam from './OurTeam';
 import CompanyHistory from './CompanyHistory';
 import OurSolutions from './OurSolutions';
+import SlidingComp from '../HomePage/SlidingComp';
+import DemoForm from '../HomePage/DemoForm';
 
 const Company = () => {
   
@@ -28,6 +30,8 @@ const Company = () => {
       <OurTeam/>
       <CompanyHistory/>
       <OurSolutions/>
+      <SlidingComp/>
+      <DemoForm/>
     </div>
   )
 }
