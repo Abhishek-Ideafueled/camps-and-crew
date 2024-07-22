@@ -1,10 +1,6 @@
-.mission-banner .slick-slider.slick-initialized .slick-arrow::before{
-    position: absolute;   
-    /* top: 0;
-    bottom: 0;
-    left: 0;
-    right:0; */
+.btn-prev, .btn-next{
     background: #EFBC43;
+    color: white;
     opacity:1;
     z-index: 10;
     height: 60px;
@@ -15,119 +11,18 @@
     background-position: center;
     content: '';
 }
-.mission-banner .slick-slider.slick-initialized .slick-arrow.slick-disabled::before {
-    background-color: #F4D17E;
-}
 
 
-.mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev{
-    /* left: 400px; */
-    top: auto;
-    bottom: -50px;
-    /* right: auto; */
-    opacity: 1;
-    z-index: 1;
-
-}
-.mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-    /* right: 380px; */
-    opacity: 1;
-    top: auto;
-    /* bottom: -70px; */
-    z-index: 1;
+.btn-next{
     rotate: 180deg;
 }
 
-.mission-banner .slick-slider.slick-initialized .slick-track{
-   display: flex !important;
-   gap: 20px !important;
+.swiper-button-disabled{
+    background-color: #F4D17E !important;
 }
 
 
-@media only screen and (max-width: 768px) {
-    .mission-banner .slick-slider.slick-initialized .slick-arrow::before{
-      height: 50px;
-      width: 50px;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: 200px;
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -60px;
-        right: 180px;
-    }
-  }
-
-  @media only screen and (max-width: 540px) {
-    .mission-banner .slick-slider.slick-initialized .slick-arrow::before{
-      height: 50px;
-      width: 50px;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: 40%;
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -60px;
-        right: 35%;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-   
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: auto;
-        transform:translateX(50%);
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -60px;
-        right: 200px;
-    }
-  }
-
-
-  
-  @media only screen and (min-width: 767px) {
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: 50%;
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -70px;
-        right: 35%;
-    }
-  }
-  @media only screen and (min-width: 767px) {
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: 40%;
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -70px;
-        right: 40%;
-    }
-  }
-
-  @media only screen and (min-width: 1280px) {
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-prev {
-        left: 50%;
-    top: auto;
-    bottom: -50px;
-    right: auto;
-    }
-    .mission-banner .slick-slider.slick-initialized .slick-arrow.slick-next{
-        bottom: -70px;
-        right: 38%;
-    }
-  }
+.mission-slides .swiper.swiper-initialized .swiper-horizontal .swiper-backface-hidden{
+    overflow-x: auto !important;
+    background: #000;
+}

@@ -4,12 +4,12 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import FastFacts from './FastFacts';
 import OurStory from './OurStory';
-import OurMission from './OurMission';
 import OurTeam from './OurTeam';
 import CompanyHistory from './CompanyHistory';
 import OurSolutions from './OurSolutions';
 import SlidingComp from '../HomePage/SlidingComp';
 import DemoForm from '../HomePage/DemoForm';
+import OurMissionSwiper from './OurMissionSwiper';
 
 const Company = () => {
   
@@ -26,7 +26,8 @@ const Company = () => {
       <CompanyHeader/>
       <FastFacts/>
       <OurStory/>
-      <OurMission/>
+      {/* <OurMission/> */}
+<OurMissionSwiper/>
       <OurTeam/>
       <CompanyHistory/>
       <OurSolutions/>
