@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const OurSolutions = () => {
   return (
-    <div className="relative w-full h-[1576px] md:h-[1036px] lg:h-[1116px]">
+    <div className="relative w-full h-[1790px] md:h-[1036px] lg:h-[1116px]">
       <div className="main-container mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-[60px]">
           <div className="flex flex-col gap-4 items-center">
@@ -45,7 +45,7 @@ const OurSolutions = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[250px] md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[120px] md:gap-8">
             <div className=" flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[636px] max-h-[830px]">
               <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl md:min-h-[570px] lg:min-h-[615px]">
                 <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
@@ -62,17 +62,17 @@ const OurSolutions = () => {
                   SEE ALL FEATURES
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-full flex items-center justify-center">
+              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
                 <img
-                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] sm:w-full md:max-w-[309px] lg:max-w-[419px] xl:max-w-[521px] justify-self-center"
+                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full sm:w-full md:max-w-[309px] lg:max-w-[419px] xl:max-w-[521px] justify-self-center"
                   src="/smartlodge-product-video-workforce-camp-software.gif"
                   alt=""
                 />
-                <div className="relative inset-0 top-[100%] md:top-[40px] lg:top-[60px] xl:top-[100px] flex justify-center items-center h-full hover:placeholder-opacity-80">
+                <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <Link to="#">
                     <svg
-                      width="80"
-                      height="80"
+                      width="100%"
+                      height="100%"
                       viewBox="0 0 80 80"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -114,17 +114,17 @@ const OurSolutions = () => {
                   SEE ALL FEATURES
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-full flex items-center justify-center">
+              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
                 <img
-                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] sm:w-full md:max-w-[309px] lg:max-w-[419px] xl:max-w-[521px] justify-self-center"
+                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full sm:w-full md:max-w-[309px] lg:max-w-[419px] xl:max-w-[521px] justify-self-center"
                   src="/fifo-mining-worker-rides-bus-western-africa-small.jpg"
                   alt=""
                 />
-                <div className="relative inset-0 top-[100%] md:top-[40px] lg:top-[60px] xl:top-[100px] flex justify-center items-center h-full opacity-80">
+                <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center opacity-80">
                   <Link to="#">
                     <svg
-                      width="80"
-                      height="80"
+                      width="100%"
+                      height="100%"
                       viewBox="0 0 80 80"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
