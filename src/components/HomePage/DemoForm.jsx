@@ -43,7 +43,7 @@ const DemoForm = () => {
       <div className="py-20 w-full">
         <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
           <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
-            <div className="flex flex-col max-w-[608px] gap-2 right-4 items-center justify-center">
+            <div className="flex flex-col md:max-w-[312px] lg:max-w-[404px] xl:max-w-[608px] gap-2 right-4 items-center justify-center">
               <h2 className=" text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]">
                 Streamline the Management of your Remote Operations
               </h2>
@@ -77,12 +77,7 @@ const DemoForm = () => {
                   />
                 </div>
                 <div className="custom-input bg-white flex px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
-                  {/* <GiSouthAfricaFlag /> <IoMdArrowDropdown />
-                  <input
-                    type="text"
-                    placeholder="Phone Number"
-                    className="border-[#D0D5DD] border-l-2 outline-none p-2 text-black"
-                  />  */}
+
                  <PhoneInput
         defaultCountry="us"
         value={phone}
@@ -120,16 +115,15 @@ const DemoForm = () => {
                     <span className='justify-end transition-transform delay-150 duration-150'>{!showDropdown ? <IoIosArrowDown /> : <IoIosArrowUp />}</span> 
                   </div>
                   {showDropdown && (
-                    
                     <div 
                     ref={dropDownRef}
                     data-aos="zoom-in" data-aos-duration="300"
-                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 w-full max-w-[460px] md:max-w-[290px] xl:max-w-[416px] xl:w-full">
+                    className="absolute z-2 bg-white flex flex-col px-2 py-3 rounded-lg mt-14 max-w-md:w-[80%] max-w-[460px] md:max-w-[288px] lg:max-w-[324px] xl:max-w-[416px] xl:w-full">
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' >Select Products of Interest</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Camp Management Software [SmartLodge]"); setShowDropdown(false)}}>Camp Management Software [SmartLodge]</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("FIFO Travel Booking Tool [EnRoute]");setShowDropdown(false)}}>FIFO Travel Booking Tool [EnRoute]</p>
                       <p className='py-1 cursor-pointer hover:bg-[#f6f6f6]' onClick={()=>{setSelected("Both");setShowDropdown(false)}}>Both</p>
-                    </div>
+                    </div> 
                   )}
                 </div>
                 <div className="bg-white flex py-3 px-4 border-[1px] border-[#D0D5DD] gap-3 text-[#43597A] rounded-lg">
