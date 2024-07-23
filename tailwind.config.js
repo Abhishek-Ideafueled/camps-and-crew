@@ -18,6 +18,7 @@ export default {
         'btn-text':'#060F1F',
         'custom-blue':'#63C1EC',
         'industryGradient':'#04253400',
+        'custom-gray':'#CAD5DE'
 
     }, 
     fontSize:{

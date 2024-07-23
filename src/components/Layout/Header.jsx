@@ -31,6 +31,7 @@ const Header = () => {
           <Link
             to="/"
             className="w-[70px] h-[44px] lg:w-[115px] lg:h-[74px]"
+            onClick={()=>setActiveLink("/")}
           >
             {/* <img src="/camps_crew_logo2.png" alt="" /> */}
             <svg width="100%" height="100%" viewBox="0 0 103 74" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,7 +125,7 @@ const Header = () => {
       </div>
         </div>
         
-    <div className={`${!showDropdown ? "h-0 opacity-0 my-0" : "h-[173px] opacity-100 my-3"} flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto lg:h-0 lg:opacity-0 main-container mx-auto transition-all delay-100 duration-400}`}>
+    <div className={`${!showDropdown ? "h-[0px] opacity-0 my-0" : "h-[173px] opacity-100 my-3"} flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto lg:h-0 lg:opacity-0 main-container mx-auto transition-all delay-100 duration-400}`}>
       <ul className='h-auto flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm '>
         <Link to="/" 
         onClick={()=>{setActiveLink("/"); closeDropdown();}}

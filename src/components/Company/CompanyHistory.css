@@ -1,5 +1,78 @@
-.history-cards .slick-slider.slick-initialized .slick-track{
+.history-cards .slick-slider.slick-initialized .slick-track {
     display: flex !important;
-    gap: 20px !important;
+    gap: 10px !important;
+    overflow-x: auto;
+    padding-bottom: 10px;
  }
  
+
+ .history-cards .slick-slider .slick-list{
+    overflow: unset;
+ }
+ 
+ ::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {    
+     background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  
+  .history-nav {
+    max-width: 100px;
+  
+  }
+  
+  .history-nav .slick-initialized .slick-slide{
+    width: 100%;
+    text-align: center;
+  }
+
+  .history-nav .slick-slider.slick-initialized .slick-track{
+    
+    width: 66px;
+  }
+
+  .history-nav .slick-slider.slick-initialized .slick-arrow::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 24px;
+    width: 24px;
+  }
+
+  .history-nav .slick-slider.slick-initialized .slick-arrow.slick-prev{
+    left: auto;
+    top: -20px;
+    bottom: auto;
+    rotate: 90deg;
+    opacity: 1;
+    z-index: 1;
+
+}
+.history-nav .slick-slider.slick-initialized .slick-arrow.slick-next{
+    right: auto;
+    opacity: 1;
+    top: auto;
+    bottom:-20px;
+    z-index: 1;
+    rotate: 90deg;
+}
+
+.history-nav .slick-slide .slick-active .slick-current{
+    color: #344054;
+}

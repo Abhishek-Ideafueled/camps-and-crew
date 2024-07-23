@@ -1,44 +1,73 @@
-import React from 'react'
 import Slider from 'react-slick';
+import './CompanyHistory.css';
+import { useEffect, useRef, useState } from 'react';
 
 const CompanyHistory = () => {
+
+
+  const [nav1, setNav1] = useState(null);
+  const [nav2, setNav2] = useState(null);
+  let sliderRef1 = useRef(null);
+  let sliderRef2 = useRef(null);
+
+  useEffect(() => {
+    setNav1(sliderRef1);
+    setNav2(sliderRef2);
+    console.log("useeffect running")
+  }, []);
 
   const settings = {
     dots: false,
     fade: false,
+    arrows:false,
     infinite: false,
     speed: 1000,
     slidesToShow: 2.5,
     slidesToScroll: 1,
     cssEase: "linear",
     pauseOnHover:false,
-    responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow:3.5,
-          },
-        },
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow:3.2,
-          },
-        },
-        {
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 2,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+    swipeToSlide:false,
+    vertical:false,
+    // responsive: [
+    //     {
+    //       breakpoint: 1600,
+    //       settings: {
+    //         slidesToShow:3.5,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 1400,
+    //       settings: {
+    //         slidesToShow:3.2,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 1280,
+    //       settings: {
+    //         slidesToShow: 2,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 767,
+    //       settings: {
+    //         slidesToShow: 2,
+    //       },
+    //     },
+    //   ],
   };
+
+  const settings2={
+    dots: false,
+    fade: false,
+    infinite: false,
+    speed: 1000,
+    slidesToShow: 9,
+    slidesToScroll: 1,
+    cssEase: "linear",
+    pauseOnHover:false,
+    focusOnSelect:true,
+    vertical:true,
+  }
 
   return (
     <div className="w-full bg-[#053347]">
@@ -90,8 +119,34 @@ const CompanyHistory = () => {
             along the way.
           </span>
         </div>
-        <div className="history-cards">
-          <Slider {...settings}>
+        <div className='' style={{float:"left", width:"100%"}}>
+        <div style={{float:"left", width:"150px"}} className='history-nav font-ttCommonProRegular text-xl text-custom-gray leading-8'>
+            <Slider {...settings2}  asNavFor={nav1}
+        ref={slider => (sliderRef2 = slider)} >
+            <div>2023</div>
+            <div>2022</div>
+            <div>2021</div>
+            <div>2018</div>
+            <div>2017</div>
+            <div>2016</div>
+            <div>2015</div>
+            <div>2013</div>
+            <div>2007</div>
+            <div>1997</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            </Slider>
+
+          
+          
+        </div>
+        <div style={{float:"left", width:"calc(100% - 150px)"}} className="history-cards">
+          <Slider {...settings} asNavFor={nav2} ref={slider => (sliderRef1 = slider)} >
             <div className="slider-outer w-[340px] h-[469px]">
               <div className="flex flex-col">
                 <h2 className="text-h2 text-custom-button font-gilroyBold">
@@ -296,10 +351,10 @@ const CompanyHistory = () => {
             </div>
 
           </Slider>
-          {/* <div className='w-[300px] h-[400px]'>
-        <div className=' bg-history-10 w-full h-full bottom-0'></div>
-        </div> */}
+          </div>
         </div>
+       
+          
       </div>
     </div>
   );
