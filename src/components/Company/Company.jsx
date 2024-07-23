@@ -10,6 +10,7 @@ import OurSolutions from './OurSolutions';
 import SlidingComp from '../HomePage/SlidingComp';
 import DemoForm from '../HomePage/DemoForm';
 import OurMissionSwiper from './OurMissionSwiper';
+import Historydemo from './Historydemo';
 
 const Company = () => {
   
@@ -30,6 +31,7 @@ const Company = () => {
 <OurMissionSwiper/>
       <OurTeam/>
       <CompanyHistory/>
+      {/* <Historydemo/> */}
       <OurSolutions/>
       <SlidingComp/>
       <DemoForm/>

@@ -2,72 +2,62 @@ import Slider from 'react-slick';
 import './CompanyHistory.css';
 import { useEffect, useRef, useState } from 'react';
 
-const CompanyHistory = () => {
+const Historydemo = () => {
 
+    const settings = {
+        dots: true,
+        fade: false,
+        arrows:true,
+        infinite: false,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        cssEase: "linear",
+        pauseOnHover:false,
+        swipeToSlide:false,
+        vertical:false,
+        // responsive: [
+        //     {
+        //       breakpoint: 1600,
+        //       settings: {
+        //         slidesToShow:3.5,
+        //       },
+        //     },
+        //     {
+        //       breakpoint: 1400,
+        //       settings: {
+        //         slidesToShow:3.2,
+        //       },
+        //     },
+        //     {
+        //       breakpoint: 1280,
+        //       settings: {
+        //         slidesToShow: 2,
+        //       },
+        //     },
+        //     {
+        //       breakpoint: 767,
+        //       settings: {
+        //         slidesToShow: 2,
+        //       },
+        //     },
+        //   ],
+      };
+    
+      const settings2={
+        dots: false,
+        fade: false,
+        infinite: false,
+        speed: 1000,
+        slidesToShow: 9,
+        slidesToScroll: 1,
+        cssEase: "linear",
+        pauseOnHover:false,
+        focusOnSelect:true,
+        vertical:true,
+      }
+    
 
-  const [nav1, setNav1] = useState(null);
-  const [nav2, setNav2] = useState(null);
-  let sliderRef1 = useRef(null);
-  let sliderRef2 = useRef(null);
-
-  useEffect(() => {
-    setNav1(sliderRef1);
-    setNav2(sliderRef2);
-    console.log("useeffect running");
-  }, []);
-
-  const settings = {
-    dots: false,
-    fade: false,
-    arrows:false,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 3,
-    swipe:false,
-    slidesToScroll: 1,
-    cssEase: "linear",
-    pauseOnHover:false,
-    swipeToSlide:false,
-    vertical:false,
-    responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow:3.5,
-          },
-        },
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow:3.2,
-          },
-        },
-        {
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 2.5,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
-  };
-
-  const settings2={
-    dots: false,
-    fade: false,
-    infinite: false,
-    speed: 1000,
-    slidesToShow: 9,
-    slidesToScroll: 1,
-    pauseOnHover:false,
-    focusOnSelect:true,
-    vertical:true,
-  }
 
   return (
     <div className="w-full bg-[#053347]">
@@ -119,10 +109,9 @@ const CompanyHistory = () => {
             along the way.
           </span>
         </div>
-        <div className='relative w-full'>
-        <div  className='absolute top-32 history-nav z-10 font-ttCommonProRegular text-xl text-custom-gray leading-8'>
-            <Slider {...settings2}  asNavFor={nav1}
-        ref={slider => (sliderRef2 = slider)} >
+        <div className='flex items-center gap-10'>
+        <div  className='history-nav z-10 font-ttCommonProRegular text-xl text-custom-gray leading-8'>
+            <Slider {...settings2}>
             <div>2023</div>
             <div>2022</div>
             <div>2021</div>
@@ -133,20 +122,19 @@ const CompanyHistory = () => {
             <div>2013</div>
             <div>2007</div>
             <div>1997</div>
-            {/* <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
-            <div></div> */}
-            </Slider>
+            <div></div>
+            <div></div>
 
-          
+            </Slider>
           
         </div>
-        <div className="history-cards ml-[150px] overflow-x-auto">
-          <Slider {...settings} asNavFor={nav2} ref={slider => (sliderRef1 = slider)} >
+        <div className="history-cards flex gap-10 overflowx-x-auto ">
+         <Slider {...settings}>
             <div className="slider-outer w-[340px] h-[469px]">
               <div className="flex flex-col">
                 <h2 className="text-h2 text-custom-button font-gilroyBold">
@@ -159,7 +147,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         August 2023
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                         The company launches the ability for charter plane
                         pilots and bus drivers to check workers in as they board
                         planes or buses with EnRoute.
@@ -181,7 +169,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         September 2022
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       Roster booking capabilities launch, enabling clients to book rooms or travel reservations weeks or months out for workers on rotating rosters.
                       </p>
                     </div>
@@ -201,7 +189,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         April 2021
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       EnRoute goes live managing FIFO travel for workers at a remote mine in Western Africa--our first EnRoute deployment in the region.
                       </p>
                     </div>
@@ -221,7 +209,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         July 2018
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       One of Indonesia’s premier mining companies installs SmartLodge at 15+ worksite lodging facilities at a large-scale mine in Indonesia.
                       </p>
                     </div>
@@ -241,7 +229,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         July 2017
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       EnRoute rolls out the ability to book commercial travel content, inclusive of commercial flights, hotels and rental cars.
                       </p>
                     </div>
@@ -261,7 +249,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         July 2016
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       EnRoute launches and enables FIFO transportation coordinators to book and manage charter air, ground transportation and marine vessels.
                       </p>
                     </div>
@@ -281,7 +269,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         February 2015
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       Mobile Housekeeping launches, enabling cleaners to update room status from a mobile device as they complete walkdowns or cleanings.
                       </p>
                     </div>
@@ -301,7 +289,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         June 2013
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       Construction firm implements SmartLodge at their remote camps at a hydroelectric dam construction project in Manitoba, Canada.
                       </p>
                     </div>
@@ -321,7 +309,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                        March 2007
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       The company installs the first version of SmartLodge at a remote camp serving the Canadian oil sands in Fort McMurray, Alberta, Canada.
                       </p>
                     </div>
@@ -341,7 +329,7 @@ const CompanyHistory = () => {
                       <span className="font-gilroyBold font-normal text-white text-2xl ">
                         June 1997
                       </span>
-                      <p className="font-ttCommonProRegular text-white text-xl">
+                      <p className="font-ttCommonProNormal text-white text-xl">
                       Camps & Crew’s parent company, Innfinity Software Systems, releases a now-retired version of SmartLodge for hotels properties.
                       </p>
                     </div>
@@ -349,8 +337,7 @@ const CompanyHistory = () => {
                 </div>
               </div>
             </div>
-
-          </Slider>
+            </Slider>
           </div>
         </div>
        
@@ -360,4 +347,4 @@ const CompanyHistory = () => {
   );
 }
 
-export default CompanyHistory
+export default Historydemo
