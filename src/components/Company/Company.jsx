@@ -30,8 +30,8 @@ const Company = () => {
       {/* <OurMission/> */}
 <OurMissionSwiper/>
       <OurTeam/>
-      <CompanyHistory/>
-      {/* <Historydemo/> */}
+      {/* <CompanyHistory/> */}
+      <Historydemo/>
       <OurSolutions/>
       <SlidingComp/>
       <DemoForm/>

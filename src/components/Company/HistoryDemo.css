@@ -1,0 +1,29 @@
+/* .history-nav .swiper.swiper-initialized .swiper-vertical{
+    height: 400px !important;
+} */
+
+.history-nav .swiper.swiper-initialized.swiper-vertical{
+    height: 469px;
+}
+.history-nav .swiper.swiper-initialized.swiper-vertical .swiper-wrapper{
+    padding: 40px 20px;
+}
+
+div.swiper.swiper-initialized.swiper-horizontal{
+    padding: 20px 0px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.history-nav .swiper-button-disabled{
+    background-color: transparent !important;
+}

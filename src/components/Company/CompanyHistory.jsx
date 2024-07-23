@@ -67,6 +67,8 @@ const CompanyHistory = () => {
     pauseOnHover:false,
     focusOnSelect:true,
     vertical:true,
+    swipe:true,
+    swipeToSlide:true,
   }
 
   return (
@@ -133,19 +135,19 @@ const CompanyHistory = () => {
             <div>2013</div>
             <div>2007</div>
             <div>1997</div>
-            {/* <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
             <div></div>
-            <div></div> */}
+            <div></div>
+            <div></div>
             </Slider>
 
           
           
         </div>
-        <div className="history-cards ml-[150px] overflow-x-auto">
+        <div className="history-cards ml-[150px] w-full overflow-x-auto">
           <Slider {...settings} asNavFor={nav2} ref={slider => (sliderRef1 = slider)} >
             <div className="slider-outer w-[340px] h-[469px]">
               <div className="flex flex-col">
