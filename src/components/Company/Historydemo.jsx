@@ -218,12 +218,12 @@ const Historydemo = () => {
               <SwiperSlide>
                 <div></div>
               </SwiperSlide>
-              <SwiperSlide>
+               <SwiperSlide>
                 <div></div>
               </SwiperSlide>
-              <SwiperSlide>
+              {/*<SwiperSlide>
                 <div></div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               {/* <div className="w-full flex justify-center gap-4 mt-12">
         <div className="btn-prev" ref={prevRef}>        
         </div>
@@ -251,7 +251,7 @@ const Historydemo = () => {
               </div>
             </Swiper>
           </div>
-          <div className="relative history-card overflow-x-auto no-scrollbar">
+          <div className="relative history-card overflow-hidden no-scrollbar">
             <div className="absolute top-0 bg-[#053347] font-gilroyBold text-custom-button text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center">
               {arr.filter((v, i) => (v ? i === currIndex : ""))}
             </div>
@@ -522,10 +522,10 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className='hidden '>
+              {/* <SwiperSlide className=''>
    <div className=" slider-outer w-[340px] h-[469px]">
     </div>
-   </SwiperSlide>
+   </SwiperSlide> */}
    {/* <SwiperSlide>
    <div className="slider-outer w-[340px] h-[469px]">
     </div>

@@ -105,7 +105,7 @@ const OurSolutions = () => {
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] lg:text-[32px] font-gilroyBold lg:leading-[2.4rem] text-custom-heading">
                   An Online Booking Tool to Manage ERM Travel and FIFO Logistics
                 </div>
-                <span className="font-ttCommonProNormal md:pt-[30px] lg:pt-0 text-custom-body text-base lg:text-xl lg:leading-8">
+                <span className="font-ttCommonProNormal md:pt-[28px] lg:pt-0 text-custom-body text-base lg:text-xl lg:leading-8">
                   Learn how EnRoute simplifies and streamlines the ways that
                   companies book and manage transportation for their fly-in
                   fly-out workers.
