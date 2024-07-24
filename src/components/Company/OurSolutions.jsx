@@ -6,7 +6,7 @@ const OurSolutions = () => {
       <div className="main-container mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-[40px] lg:gap-[60px]">
           <div className="flex flex-col gap-4 items-center">
-            <h2 className="font-gilroyBold leading-[3rem] text-custom-heading text-h2">
+            <h2 className="font-gilroyBold text-[25px] md:text-[32px] lg:leading-[3rem] text-custom-heading lg:text-h2">
               Our Solutions
             </h2>
             <span>

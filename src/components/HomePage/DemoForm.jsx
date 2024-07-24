@@ -42,9 +42,9 @@ const DemoForm = () => {
     <div className="w-full main-container mx-auto">
       <div className="py-10 lg:py-20 w-full">
         <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
-          <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
+          <div className="px-5 py-8 md:py-10  lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
             <div className="flex flex-col md:max-w-[312px] lg:max-w-[404px] xl:max-w-[608px] gap-2 right-4 items-center justify-center">
-              <h2 className=" text-[32px] leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]">
+              <h2 className="text-[25px] md:text-[32px] md:leading-10 lg:text-[44px] text-custom-button font-gilroyBold font-normal lg:leading-[3.3rem]">
                 Streamline the Management of your Remote Operations
               </h2>
               <p className="text-white text-xl lg:text-2xl font-ttCommonProRegular font-normal lg:leading-[2.4rem]">
