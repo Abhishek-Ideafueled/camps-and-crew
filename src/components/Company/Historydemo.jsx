@@ -27,13 +27,62 @@ const Historydemo = () => {
     swiper2Ref.current.controller.control = swiper1Ref.current;
   }, []);
 
-  
 
+  
+  // const [pix,setPix] = useState();
+
+  // useEffect(()=>{
+    
+  //   window.addEventListener('resize',()=>{
+  //     let n;
+  //     if(window.innerWidth < 900)
+  //     {
+  //       n= (window.innerWidth - 100) 
+  //     }
+      
+  //     setPix(n);
+  //   })
+
+  //   return ()=>{
+  //     window.removeEventListener('resize');
+  //   }
+  // },[])
+
+
+  const [marginLeft, setMarginLeft] = useState('0px');
+  const containerRef = useRef(null);
+  const slidersRef = useRef([]);
+
+  useEffect(() => {
+    const updateDivsMargins = () => {
+      if (containerRef.current) {
+        const newMarginLeft = window.getComputedStyle(containerRef.current).marginLeft;
+        setMarginLeft(newMarginLeft);
+      }
+    };
+
+    if (window.innerWidth > 300) {
+      updateDivsMargins();
+      window.addEventListener('resize', updateDivsMargins);
+    }
+
+    return () => {
+      window.removeEventListener('resize', updateDivsMargins);
+    };
+  }, []);
+
+  useEffect(() => {
+    slidersRef.current.forEach(slider => {
+      if (slider) {
+        slider.style.marginLeft = marginLeft;
+      }
+    });
+  }, [marginLeft]);
 
   return (
     <div className="w-full bg-[#053347]">
       <div className=" flex flex-col gap-[60px] py-10 lg:py-20 w-full">
-        <div className="main-container mx-auto flex flex-col gap-6 items-center">
+        <div className="main-container mx-auto flex flex-col gap-6 items-center" ref={containerRef}>
           <div className="flex flex-col gap-4 items-center">
             <h1 className="font-gilroyBold text-[25px] md:text-[32px] lg:text-h2 lg:leading-[3rem] text-white">
               Company History
@@ -80,7 +129,9 @@ const Historydemo = () => {
             along the way.
           </span>
         </div>
-        <div className=" hidden md:flex md:justify-center md:items-center w-auto ml-[50px] gap-4">
+        <div 
+        // style={{marginLeft:pix}}
+         ref={(el) => slidersRef.current[0] = el} className={`slider__larger hidden md:flex md:justify-center md:items-center w-auto gap-4`}>
           <div className=" history-nav font-ttCommonProRegular text-xl text-custom-gray leading-8">
             <Swiper
               noSwiping={true}
@@ -471,11 +522,11 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              {/* <SwiperSlide>
-   <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide className='hidden '>
+   <div className=" slider-outer w-[340px] h-[469px]">
     </div>
    </SwiperSlide>
-   <SwiperSlide>
+   {/* <SwiperSlide>
    <div className="slider-outer w-[340px] h-[469px]">
     </div>
    </SwiperSlide> */}
