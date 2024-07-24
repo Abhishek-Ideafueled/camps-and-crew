@@ -80,7 +80,7 @@ const Historydemo = () => {
             along the way.
           </span>
         </div>
-        <div className="relative hidden md:block">
+        <div className="relative hidden md:block w-auto">
           <div className="absolute  history-nav top-0 font-ttCommonProRegular text-xl text-custom-gray leading-8">
             <Swiper
               noSwiping={true}

@@ -43,3 +43,7 @@ div.swiper.swiper-initialized.swiper-horizontal{
     background-color: #63C1EC;
     
 }
+
+.history-card .swiper-slide.swiper-slide{
+    width: auto !important;
+}
