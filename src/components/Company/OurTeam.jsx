@@ -5,9 +5,9 @@ const OurTeam = () => {
   return (
     <div className="w-full">
       <div className="main-container mx-auto flex flex-col">
-        <div className="flex flex-col gap-4 items-center pt-[80px] pb-[60px]">
+        <div className="flex flex-col gap-4 items-center pt-[40px] lg:pt-[80px] pb-[60px]">
           <h1
-            className="text-h2 leading-[3rem] text-custom-heading font-gilroyBold font-bold"
+            className="text-[25px] md:text-[32px] lg:text-h2 lg:leading-[3rem] text-custom-heading font-gilroyBold font-bold"
             data-aos="fade-up"
           >
             Our Management Team

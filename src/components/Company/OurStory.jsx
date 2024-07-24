@@ -11,7 +11,7 @@ const OurStory = () => {
         <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px]">
           <div className="flex flex-col items-center gap-4">
             <h1
-              className="font-gilroyMedium font-bold text-[32px] lg:text-[40px] lg:leading-[3rem] text-custom-heading"
+              className="font-gilroyMedium font-bold text-[25px] md:text-[32px] lg:text-[40px] lg:leading-[3rem] text-custom-heading"
               data-aos="fade-down"
             >
               Our Story

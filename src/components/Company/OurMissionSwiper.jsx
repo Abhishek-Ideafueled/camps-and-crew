@@ -17,11 +17,11 @@ const OurMissionSwiper = () => {
   console.log(endofSlide);
 
   return (
-    <div className='w-full h-[757px] md:h-[850px]'>
+    <div className='w-full min-h-[757px] md:h-[850px]'>
     <div className='main-container mx-auto py-10 md:py-20 lg:py-28 flex flex-col gap-[24px] md:gap-[40px] lg:gap-[60px]'>
         <div className='flex flex-col gap-6 items-center'>
-                <div className='flex flex-col gap-4 items-center'>
-                <h1 className='font-gilroyBold text-custom-heading sm:text-[25px] md:text-[32px] lg:text-[40px] lg:leading-[3rem]'>
+                <div className='flex flex-col gap-4 items-center '>
+                <h1 className='font-gilroyBold text-custom-heading text-center text-[25px] md:text-[32px] lg:text-[40px] lg:leading-[3rem]'>
                     Our Mission and Values
                     </h1>
                 <div data-aos="fade-up" data-aos-delay="100">
@@ -63,7 +63,7 @@ const OurMissionSwiper = () => {
                 </p>
                 </div>
         </div>
-        <div className="mission-slides">
+        <div className="mission-slides hidden md:block">
       <Swiper
       modules={[Navigation]}
         spaceBetween={20}
@@ -81,10 +81,7 @@ const OurMissionSwiper = () => {
           swiper.navigation.update();
         }}
       breakpoints={
-       { 320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
+       { 
         767: {
           slidesPerView: 2,
           spaceBetween: 20
@@ -178,6 +175,78 @@ const OurMissionSwiper = () => {
         <div className="btn-next" ref={nextRef}></div>
         </div>
       </Swiper>
+      </div>
+      {/* CONTAINER FOR BELOW MEDIUM SCREEN */}
+      <div className="flex flex-col md:hidden gap-5">
+     
+          <div className="">
+            <div className="w-auto flex flex-col h-auto border-[#CDD5DF] border-[1px] gap-[32px] sm:gap-[24px] md:gap-[60px] p-6">
+              <div className="">
+                <img src={innovate} alt="about innovation icon" />
+              </div>
+              <div className="flex flex-col gap-6">
+                <h2 className="font-gilroyBold text-custom-heading text-xl">
+                  Innovation
+                </h2>
+                <p className="font-ttCommonProMedium text-custom-body text-sm font-medium">
+                  We consistently strive to challenge ourselves, seeking
+                  innovative ways to help our clients more efficiently manage
+                  their fly-in fly-out operations. We are fortunate to work with
+                  clients that bring vast expertise and often serve as the
+                  driving force behind new product development.
+                </p>
+              </div>
+            </div>
+          </div>
+                 
+          <div className="">
+            <div className="w-auto flex flex-col h-auto border-[#CDD5DF] border-[1px] gap-[32px] sm:gap-[24px] md:gap-[60px] p-6">
+              <div className="">
+                <img src={service} alt="about service icon" />
+              </div>
+              <div className="flex flex-col gap-6">
+                <h2 className="font-gilroyBold text-custom-heading text-xl">
+                  Services
+                </h2>
+                <p className="font-ttCommonProMedium text-custom-body text-sm font-medium">
+                We work hand-in-hand with every client to ensure our deployments meet their unique operational requirements--no matter how complex. For more immediate ongoing assistance, we provide our clients with access to round-the-clock support, 24 hours a day, 7 days a week, 365 days a year.
+                </p>
+              </div>
+            </div>
+          </div>
+       
+          <div className="">
+            <div className="w-auto flex flex-col h-auto border-[#CDD5DF] border-[1px] gap-[32px] sm:gap-[24px] md:gap-[60px] p-6">
+              <div className="">
+                <img src={flexibility} alt="about flexibility icon" />
+              </div>
+              <div className="flex flex-col gap-6">
+                <h2 className="font-gilroyBold text-custom-heading text-xl">
+                  Flexibility
+                </h2>
+                <p className="font-ttCommonProMedium text-custom-body text-sm font-medium">
+                Remote operations large and small face operationally complex challenges. This is why we have architected SmartLodge and EnRoute to be highly configurable. The architecture of our technology enables us to continuously adapt to the evolving operational requirements of our clients and to quickly take live new features and functionalities.
+                </p>
+              </div>
+            </div>
+          </div>
+       
+          <div className="">
+            <div className="w-auto flex flex-col h-auto border-[#CDD5DF] border-[1px] gap-[32px] sm:gap-[24px] md:gap-[60px] p-6">
+              <div className="">
+                <img src={openness} alt="about openness icon" />
+              </div>
+              <div className="flex flex-col gap-6">
+                <h2 className="font-gilroyBold text-custom-heading text-xl">
+                 Openness
+                </h2>
+                <p className="font-ttCommonProMedium text-custom-body text-sm font-medium">
+                We embrace the power of shared knowledge and collaboration. Our commitment to openness is reflected in our receptivity to learning from our clients, who bring unique expertise and insights to our partnership. Equally, we value the diverse knowledge and skills of our team, encouraging the exchange of new ideas and perspectives.
+                </p>
+              </div>
+            </div>
+          </div>
+
       </div>
       </div>
     </div>
