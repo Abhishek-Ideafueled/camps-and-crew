@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from 'react-slick';
 import b2gold from '/b2gold.png';
 import agincourtlogo from '/agincourt-logo.png';
@@ -10,6 +10,13 @@ import sodexologo from '/sodexo-logo.png';
 import './SlidingComp.css';
 
 const SlidingComp = () => {
+    const [bgColor,setBgColor] = useState("");
+  useEffect(()=>{
+      if(window.location.pathname==="/company")
+      {
+        setBgColor("notWhite");
+      }
+  },[])
 
   const settings={
         speed: 5000,
@@ -47,7 +54,7 @@ const SlidingComp = () => {
   }
 
   return (
-    <div className='w-full'>
+    <div className={`w-full ${bgColor==="notWhite"? "bg-[#FCFBF8]":""}`}>
         <div className="w-full mx-auto flex flex-col gap-14 my-10 sm:my-20">
         <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
           Trusted by Companies All Over the World

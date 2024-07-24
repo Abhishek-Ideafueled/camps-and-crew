@@ -125,7 +125,8 @@ const Header = () => {
       </div>
         </div>
         
-   {showDropdown && <div className={`${!showDropdown ? "h-[0px] opacity-0 my-0" : "h-[173px] opacity-100 my-3"} flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto lg:h-0 lg:opacity-0 main-container mx-auto transition-all delay-100 duration-400}`}>
+   {showDropdown && 
+   <div className={`${!showDropdown ? "h-[0px] opacity-0 my-0" : "h-[173px] opacity-100 my-3"} flex flex-col gap-4 text-[#09425D] w-full items-start md:mx-auto leading-[1.2rem] ml-auto lg:h-0 lg:opacity-0 main-container mx-auto transition-all delay-100 duration-400}`}>
       <ul className='h-auto flex flex-col gap-2  font-gilroyBold font-normal leading-5 text-sm '>
         <Link to="/" 
         onClick={()=>{setActiveLink("/"); closeDropdown();}}
@@ -153,7 +154,8 @@ const Header = () => {
           </Link>
       </ul>
        <button className='bg-[#5BC0ED] flex items-center justify-center w-[149px] [43px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> BOOK A DEMO</button>
-       </div>}
+       </div>
+       }
       </header>
       <Modal isOpen={isOpen} onClose={handleClose}>
         {/* <>Helloooo</> */}

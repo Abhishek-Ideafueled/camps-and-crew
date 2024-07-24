@@ -15,13 +15,18 @@ const Historydemo = () => {
   const swiper1Ref = useRef();
   const swiper2Ref = useRef();
 
+  const arr=["2023","2022","2021","2018","2017","2016","2015","2013","2007","1997"]
+
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [currIndex,setCurrIndex] = useState(0);
 
   useEffect(() => {
     swiper1Ref.current.controller.control = swiper2Ref.current;
     swiper2Ref.current.controller.control = swiper1Ref.current;
   }, []);
+
+
 
 
   return (
@@ -67,7 +72,7 @@ const Historydemo = () => {
               </svg>
             </div>
           </div>
-          <span className="font-ttCommonProNormal font-medium text-lg leading-7 text-white">
+          <span className="font-ttCommonProNormal font-medium text-lg leading-7 text-center max-w-[892px] text-white">
             Discover the milestones that have shaped our journey in developing
             robust solutions for remote FIFO operations. Below you can read more
             about the product launches and major feature releases we unveiled
@@ -78,9 +83,10 @@ const Historydemo = () => {
         <div  className='absolute  history-nav top-0 font-ttCommonProRegular text-xl text-custom-gray leading-8'>
         
             <Swiper 
-             slidesPerView="7"
+              noSwiping={true}
+             slidesPerView="8"
              spaceBetween={5}
-             mousewheel={true}
+             mousewheel={false}
              direction="vertical"
              modules={[Navigation,Controller,Pagination]}
              pagination={{
@@ -91,11 +97,15 @@ const Historydemo = () => {
              onSwiper={(swiper) => {
               swiper1Ref.current = swiper;
             }}
+            slideToClickedSlide={true}
             onInit={(swiper) => {
               swiper.params.navigation.prevEl = prevRef.current;
               swiper.params.navigation.nextEl = nextRef.current;
               swiper.navigation.init();
               swiper.navigation.update();
+            }}
+            onSlideChange={(swiper)=>{
+              setCurrIndex(swiper.activeIndex);
             }}
             >
               <div className='absolute top-0 left-5 button-previous bg-[#053347] z-10 w-10 h-10 flex items-center justify-center' ref={prevRef}>
@@ -113,6 +123,10 @@ const Historydemo = () => {
               <SwiperSlide><div>2013</div></SwiperSlide>
               <SwiperSlide><div>2007</div></SwiperSlide>
               <SwiperSlide> <div>1997</div></SwiperSlide>
+              <SwiperSlide> <div></div></SwiperSlide>
+              <SwiperSlide> <div></div></SwiperSlide>
+              <SwiperSlide> <div></div></SwiperSlide>
+              <SwiperSlide> <div></div></SwiperSlide>
               <SwiperSlide> <div></div></SwiperSlide>
               {/* <div className="w-full flex justify-center gap-4 mt-12">
         <div className="btn-prev" ref={prevRef}>        
@@ -133,7 +147,11 @@ const Historydemo = () => {
             </Swiper>
           
         </div>
-        <div className="history-card ml-[100px] overflow-x-auto no-scrollbar">
+        <div className="relative history-card ml-[100px] overflow-x-auto no-scrollbar">
+
+          <div className='absolute top-0 bg-[#053347] font-gilroyBold text-custom-button text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center'>
+            {arr.filter((v,i)=> v ? i=== currIndex: "")}
+            </div>
          <Swiper 
         modules={[Navigation,Controller,Pagination,Scrollbar]}
          spaceBetween={20}
@@ -141,7 +159,6 @@ const Historydemo = () => {
          pagination={{
           clickable: true
         }}
-         onSlideChange={() => console.log("slide change")}
          onSwiper={(swiper) => {
           swiper2Ref.current = swiper;
         }}
@@ -167,7 +184,8 @@ const Historydemo = () => {
        }
        }
          >
-          <SwiperSlide> <div className="slider-outer w-[340px] h-[469px]">
+          <SwiperSlide> 
+            <div className="slider-outer w-[340px] h-[469px]">
               <div className="flex flex-col">
                 <h2 className="text-h2 text-custom-button font-gilroyBold">
                   2023
@@ -188,7 +206,8 @@ const Historydemo = () => {
                   </div>
                 </div>
               </div>
-            </div></SwiperSlide>
+            </div>
+            </SwiperSlide>
           <SwiperSlide>
           <div className="slider-outer w-[340px] h-[469px]">
               <div className="flex flex-col">
@@ -388,7 +407,14 @@ const Historydemo = () => {
               </div>
             </div>
           </SwiperSlide>
-   
+   {/* <SwiperSlide>
+   <div className="slider-outer w-[340px] h-[469px]">
+    </div>
+   </SwiperSlide>
+   <SwiperSlide>
+   <div className="slider-outer w-[340px] h-[469px]">
+    </div>
+   </SwiperSlide> */}
             </Swiper>
           </div>
         </div>

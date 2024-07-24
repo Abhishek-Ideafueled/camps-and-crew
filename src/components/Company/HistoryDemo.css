@@ -10,7 +10,7 @@
 }
 
 div.swiper.swiper-initialized.swiper-horizontal{
-    padding: 20px 0px;
+    padding-bottom: 30px;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -26,4 +26,20 @@ div.swiper.swiper-initialized.swiper-horizontal{
 
 .history-nav .swiper-button-disabled{
     background-color: transparent !important;
+}
+
+.history-nav .swiper-slide.swiper-slide-active{
+    color: #EFBC43;
+}
+
+.history-card .swiper-scrollbar.swiper-scrollbar-horizontal{
+    background: rgb(255,255,255,10%); 
+    height: 10px;
+    padding: 2px 0px;
+    opacity: 90%;
+}
+
+.history-card .swiper-scrollbar-drag{
+    background-color: #63C1EC;
+    
 }
