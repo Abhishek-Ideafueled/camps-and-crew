@@ -27,7 +27,7 @@ const Historydemo = () => {
     swiper2Ref.current.controller.control = swiper1Ref.current;
   }, []);
 
-
+  
 
 
   return (
@@ -242,7 +242,7 @@ const Historydemo = () => {
                       2023
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-1 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-1 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -266,7 +266,7 @@ const Historydemo = () => {
                       2022
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-2 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-2 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -290,7 +290,7 @@ const Historydemo = () => {
                       2021
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-3 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-3 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -314,7 +314,7 @@ const Historydemo = () => {
                       2018
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-4 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-4 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -338,7 +338,7 @@ const Historydemo = () => {
                       2017
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-5 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-5 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -362,7 +362,7 @@ const Historydemo = () => {
                       2016
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-6 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-6 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -386,7 +386,7 @@ const Historydemo = () => {
                       2015
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-7 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-7 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -410,7 +410,7 @@ const Historydemo = () => {
                       2013
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-8 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-8 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -434,7 +434,7 @@ const Historydemo = () => {
                       2007
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-9 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-9 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
@@ -458,7 +458,7 @@ const Historydemo = () => {
                       1997
                     </h2>
                     <div className="relative">
-                      <div className="absolute inset-0 bg-history-10 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="absolute bg-cover bg-history-10 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
                       <div className="w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">

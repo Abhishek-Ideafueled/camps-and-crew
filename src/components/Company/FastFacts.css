@@ -1,0 +1,38 @@
+@property --num-fifyears {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-roomsremote {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-monthly {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  @property --num-yearsth {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+
+  @keyframes counter {
+    from {
+      --num-fifyears: 0;
+      --num-roomsremote: 0;
+      --num-monthly: 0;
+      --num-yearsth:0
+    }
+    to {
+      --num-fifyears:300;
+      --num-roomsremote: 150;
+      --num-monthly: 200;
+      --num-yearsth:32;
+    }
+  }

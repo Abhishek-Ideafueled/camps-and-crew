@@ -4,6 +4,7 @@ import fifteenYears from '/about-rooms-managed-fifteen-years-icon.png';
 import managedGlobally from '/about-rooms-managed-globally-icon.png';
 import roomsTravel from '/about-rooms-travel-booking-system.png'
 import years32 from '/about-32-years-business-icon.png'
+import './FastFacts.css';
 
 const FastFacts = () => {
   return (
@@ -47,7 +48,12 @@ const FastFacts = () => {
             <img src={fifteenYears} alt="about rooms managed fifteen years"  className='w-full h-full'/>
               </div>
               <div className='flex flex-col gap-2'>
-                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>300K</h1>
+                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
+                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-fifyears)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
+              <span className="sr-only">300</span>
+                
+                K</span>
+                </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Camp rooms managed for our clients over 15 years</p>
               </div>
             </div>
@@ -56,7 +62,12 @@ const FastFacts = () => {
             <img src={managedGlobally} alt="about rooms managed globally"  className='w-full h-full'/>
               </div>
               <div className='flex flex-col gap-2'>
-                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>150K</h1>
+                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
+                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-roomsremote)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
+              <span className="sr-only">150</span>
+                
+                K</span>
+                  </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Rooms managed across remote camps and villages globally</p>
               </div>
             </div>
@@ -65,7 +76,12 @@ const FastFacts = () => {
             <img src={roomsTravel} alt="about rooms travel booking"  className='w-full h-full'/>
               </div>
               <div className='flex flex-col gap-2'>
-                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>200K</h1>
+                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
+                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-monthly)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
+              <span className="sr-only">200</span>
+                
+                K</span>
+                  </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Room and travel bookings made monthly with our systems</p>
               </div>
             </div>
@@ -74,7 +90,12 @@ const FastFacts = () => {
             <img src={years32} alt="about 32 years in business"  className='w-full h-full'/>
               </div>
               <div className='flex flex-col gap-2'>
-                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>32</h1>
+                <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
+                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-yearsth)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
+              <span className="sr-only">32</span>
+                
+                </span>
+                  </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Years in business – founded in August of 1992</p>
               </div>
             </div>
