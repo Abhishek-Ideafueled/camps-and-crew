@@ -80,7 +80,7 @@ const Historydemo = () => {
             along the way.
           </span>
         </div>
-        <div className=" hidden md:flex md:justify-center md:items-center w-auto md:ml-[10%] lg:ml-[8%] gap-4">
+        <div className=" hidden md:flex md:justify-center md:items-center w-auto ml-[50px] gap-4">
           <div className=" history-nav font-ttCommonProRegular text-xl text-custom-gray leading-8">
             <Swiper
               noSwiping={true}
@@ -207,7 +207,7 @@ const Historydemo = () => {
             <Swiper
               modules={[Navigation, Controller, Pagination, Scrollbar]}
               spaceBetween={20}
-              slidesPerView={2.2}
+              slidesPerView="auto"
               pagination={{
                 clickable: true,
               }}
@@ -216,24 +216,20 @@ const Historydemo = () => {
               }}
               observer={true}
               scrollbar={{ draggable: true }}
-              breakpoints={{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-                767: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                1000: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                1240: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                },
-              }}
+              // breakpoints={{
+              //   767: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 10,
+              //   },
+              //   1000: {
+              //     slidesPerView: 2,
+              //     spaceBetween: 10,
+              //   },
+              //   1240: {
+              //     slidesPerView: 3,
+              //     spaceBetween: 20,
+              //   },
+              // }}
             >
               <SwiperSlide>
                 <div className="slider-outer w-[340px] h-[469px]">
