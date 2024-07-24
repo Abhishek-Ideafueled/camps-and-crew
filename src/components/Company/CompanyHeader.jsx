@@ -1,5 +1,6 @@
 import React from 'react';
 import '../HomePage/Homepage.css';
+import './CompanyHeader.css';
 
 
 const CompanyHeader = () => {
@@ -7,7 +8,33 @@ const CompanyHeader = () => {
 
 
   return (
-    <div className='w-full bg-[#053347] sm:h-[505px] lg:h-[606px]'>
+    <div className='w-full bg-[#053347] sm:h-[505px] lg:h-[606px] relative overflow-hidden'>
+      <div className="line-animation">
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+            <div className="line-animation__line">
+              <div className="line-animation__glow"></div>
+              <div className="line-animation__glow-2"></div>
+            </div>
+        </div>
         <div className='main-container mx-auto'>
        <div className='flex flex-col gap-5 lg:gap-10 w-full py-10 sm:py-20 lg:py-[120px] items-center' data-aos="fade-up" data-aos-duration="1000">
         <div className='flex flex-col w-full gap-4 md:gap-6 items-center'>
