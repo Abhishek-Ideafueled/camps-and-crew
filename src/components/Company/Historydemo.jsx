@@ -32,8 +32,8 @@ const Historydemo = () => {
 
   return (
     <div className="w-full bg-[#053347]">
-      <div className="main-container mx-auto flex flex-col gap-[60px] py-10 lg:py-20 w-full">
-        <div className="flex flex-col gap-6 items-center">
+      <div className=" flex flex-col gap-[60px] py-10 lg:py-20 w-full">
+        <div className="main-container mx-auto flex flex-col gap-6 items-center">
           <div className="flex flex-col gap-4 items-center">
             <h1 className="font-gilroyBold text-h2 leading-[3rem] text-white">
               Company History
@@ -80,8 +80,8 @@ const Historydemo = () => {
             along the way.
           </span>
         </div>
-        <div className="relative hidden md:block w-auto">
-          <div className="absolute  history-nav top-0 font-ttCommonProRegular text-xl text-custom-gray leading-8">
+        <div className=" hidden md:flex md:justify-center md:items-center w-auto md:ml-[10%] lg:ml-[8%] gap-4">
+          <div className=" history-nav font-ttCommonProRegular text-xl text-custom-gray leading-8">
             <Swiper
               noSwiping={true}
               slidesPerView="8"
@@ -200,7 +200,7 @@ const Historydemo = () => {
               </div>
             </Swiper>
           </div>
-          <div className="relative history-card ml-[100px] overflow-x-auto no-scrollbar">
+          <div className="relative history-card overflow-x-auto no-scrollbar">
             <div className="absolute top-0 bg-[#053347] font-gilroyBold text-custom-button text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center">
               {arr.filter((v, i) => (v ? i === currIndex : ""))}
             </div>
@@ -486,7 +486,7 @@ const Historydemo = () => {
             </Swiper>
           </div>
         </div>
-        <div className='md:hidden'>
+        <div className='md:hidden main-container mx-auto'>
               <HistoryCards/>
         </div>
       </div>

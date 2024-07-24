@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const OurSolutions = () => {
   return (
-    <div className="relative w-full h-[1790px] md:h-[1036px] lg:h-[1116px]">
+    <div className="relative w-full max-h-[1650px] md:h-[1036px] lg:h-[1116px]">
       <div className="main-container mx-auto py-10 lg:py-20">
-        <div className="flex flex-col gap-[60px]">
+        <div className="flex flex-col gap-[40px] lg:gap-[60px]">
           <div className="flex flex-col gap-4 items-center">
             <h2 className="font-gilroyBold leading-[3rem] text-custom-heading text-h2">
               Our Solutions
@@ -45,7 +45,7 @@ const OurSolutions = () => {
             </span>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[120px] md:gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-8">
             <div className=" flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[636px] max-h-[830px]">
               <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl md:min-h-[570px] lg:min-h-[615px]">
                 <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
@@ -105,7 +105,7 @@ const OurSolutions = () => {
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] lg:text-[32px] font-gilroyBold lg:leading-[2.4rem] text-custom-heading">
                   An Online Booking Tool to Manage ERM Travel and FIFO Logistics
                 </div>
-                <span className="font-ttCommonProNormal md:mt-6 lg:mt-0 text-custom-body text-base lg:text-xl lg:leading-8">
+                <span className="font-ttCommonProNormal md:pt-[30px] lg:pt-0 text-custom-body text-base lg:text-xl lg:leading-8">
                   Learn how EnRoute simplifies and streamlines the ways that
                   companies book and manage transportation for their fly-in
                   fly-out workers.

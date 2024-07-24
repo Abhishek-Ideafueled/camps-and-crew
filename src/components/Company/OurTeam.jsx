@@ -47,7 +47,7 @@ const OurTeam = () => {
             </svg>
           </div>
         </div>
-        <div className='w-full grid grid-cols-1 md:grid-cols-2 py-10 lg:py-20'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 pb-10 lg:pt-20'>
 
             <div data-aos="fade-up" data-aos-delay="100" 
             className='col-span-1 md:col-span-2 flex flex-col md:flex-row gap-[25px] md:gap-10 lg:gap-[60px] items-center pb-10 md:pb-20 border-b-custom-button border-b-[1px]'>

@@ -85,11 +85,11 @@ const OurStory = () => {
         </div>
       </div>
       <div className='w-full'>
-      <div className="relative" data-aos="fade-up">
+      <div className="relative w-full" data-aos="fade-up">
             <img
               src={video}
               alt="insert video player here"
-              className=""
+              className="w-full"
             />
             {/* <div className='bg-video-image video-image absolute inset-0 w-full h-full'></div> */}
             <div className="absolute flex top-[40%] sm:top-[40%] md:top-[50%] left-[45%] sm:right-[40%] justify-center h-full hover:opacity-90">

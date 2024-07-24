@@ -40,7 +40,7 @@ const DemoForm = () => {
 
   return (
     <div className="w-full main-container mx-auto">
-      <div className="py-20 w-full">
+      <div className="py-10 lg:py-20 w-full">
         <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
           <div className="p-4 lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
             <div className="flex flex-col md:max-w-[312px] lg:max-w-[404px] xl:max-w-[608px] gap-2 right-4 items-center justify-center">

@@ -55,7 +55,7 @@ const SlidingComp = () => {
 
   return (
     <div className={`w-full ${bgColor==="notWhite"? "bg-[#FCFBF8]":""}`}>
-        <div className="w-full mx-auto flex flex-col gap-14 my-10 sm:my-20">
+        <div className="w-full mx-auto flex flex-col gap-14 py-10 sm:py-20">
         <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
           Trusted by Companies All Over the World
         </h3>
