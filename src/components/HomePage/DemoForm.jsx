@@ -10,14 +10,17 @@ import './Carousel/Enroute.css';
 import '../HomePage/Homepage.css';
 // import IntlTelInput from 'intl-tel-input/reactWithUtils';
 import IntlTelInput from './IntlTelInput';
-import { PhoneInput } from 'react-international-phone';
-import 'react-international-phone/style.css';
+// import { PhoneInput } from 'react-international-phone';
+// import 'react-international-phone/style.css';
+import 'react-phone-number-input/style.css'
+import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input';
+import { formatPhoneNumberIntl } from 'react-phone-number-input'
 
 const DemoForm = () => {
 
   const [showDropdown, setShowDropdown] = useState(false);
   const [selected,setSelected] = useState("");
-  const [phone,setPhone] = useState();
+  const [phone,setPhone] = useState("");
   const [isValid,setIsValid] = useState("");
   const dropDownRef = useRef();
 
@@ -37,6 +40,9 @@ const DemoForm = () => {
 
     }
   }
+  
+
+ console.log(phone)
 
   return (
     <div className="w-full main-container mx-auto">
@@ -79,11 +85,14 @@ const DemoForm = () => {
                 <div className="custom-input bg-white flex px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
 
                  <PhoneInput
-        defaultCountry="us"
+                 placeholder="Phone Number"
+        defaultCountry="US"
         value={phone}
-        placeholder='phone number'
-        onChange={(phone) => setPhone(phone)}
-        className='w-full'
+        onChange={setPhone}
+        international={true}
+        displayFormat={formatPhoneNumber}
+addInternationalOption={false}
+
       />
                 </div>
                 <div className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
