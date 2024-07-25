@@ -155,9 +155,9 @@ const Historydemo = () => {
                 swiper.navigation.init();
                 swiper.navigation.update();
               }}
-              onSlideChange={(swiper) => {
-                setCurrIndex(swiper.activeIndex);
-              }}
+              // onSlideChange={(swiper) => {
+              //   setCurrIndex(swiper.activeIndex);
+              // }}
             >
               <div
                 className="absolute top-0 left-5 button-previous bg-[#053347] z-10 w-12 h-10 flex items-center justify-center"
@@ -268,6 +268,9 @@ const Historydemo = () => {
               }}
               observer={true}
               scrollbar={{ draggable: true }}
+              onSlideChange={(swiper) => {
+                setCurrIndex(swiper.activeIndex);
+              }}
               // breakpoints={{
               //   767: {
               //     slidesPerView: 2,
@@ -523,10 +526,10 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className=''>
+              {/* <SwiperSlide className=''>
    <div className=" slider-outer w-[340px] h-[469px]">
     </div>
-   </SwiperSlide>
+   </SwiperSlide> */}
    {/* <SwiperSlide>
    <div className="slider-outer w-[340px] h-[469px]">
     </div>
