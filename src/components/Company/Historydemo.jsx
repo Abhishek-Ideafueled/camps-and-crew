@@ -221,9 +221,10 @@ const Historydemo = () => {
                <SwiperSlide>
                 <div></div>
               </SwiperSlide>
-              {/*<SwiperSlide>
+              <SwiperSlide>
                 <div></div>
-              </SwiperSlide> */}
+              </SwiperSlide>
+              
               {/* <div className="w-full flex justify-center gap-4 mt-12">
         <div className="btn-prev" ref={prevRef}>        
         </div>
@@ -522,10 +523,10 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              {/* <SwiperSlide className=''>
+              <SwiperSlide className=''>
    <div className=" slider-outer w-[340px] h-[469px]">
     </div>
-   </SwiperSlide> */}
+   </SwiperSlide>
    {/* <SwiperSlide>
    <div className="slider-outer w-[340px] h-[469px]">
     </div>
