@@ -40,6 +40,10 @@ const DemoForm = () => {
 
     }
   }
+
+  const formatPhoneNumber=(value)=>{
+    setPhone(value);
+  }
   
 
  console.log(phone)
@@ -88,9 +92,9 @@ const DemoForm = () => {
                  placeholder="Phone Number"
         defaultCountry="US"
         value={phone}
-        onChange={setPhone}
-        international={true}
-        displayFormat={formatPhoneNumber}
+        onChange={formatPhoneNumber}
+        international={false}
+        // displayFormat={formatPhoneNumber}
 addInternationalOption={false}
 
       />
