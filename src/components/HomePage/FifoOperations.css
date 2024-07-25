@@ -1,30 +1,17 @@
-@property --num-years {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @property --num-rooms {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @property --num-transport {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @keyframes counter {
-    from {
-      --num-rooms: 0;
-      --num-transport: 0;
-      --num-years: 0;
-    }
-    to {
-      --num-rooms:150;
-      --num-transport: 350;
-      --num-years: 74;
-    }
-  }
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/fonts/Gilroy-Bold.otf");
+}
+
+.odometer-inside{
+  color: #08425D;
+  font-family: Gilroy-Bold;
+  font-weight: bold;
+  margin-right:0;
+  text-wrap: nowrap;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner{
+  left:-2px !important;
+}

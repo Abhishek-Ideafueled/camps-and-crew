@@ -13,7 +13,8 @@ const FastFacts = () => {
           <div className='flex flex-col w-full gap-[60px]'>
             <div className='flex flex-col items-center gap-4' data-aos="fade-up">
                 <h1 className='font-gilroyMedium font-bold text-[25px] md:text-[32px] lg:text-[40px] text-custom-heading lg:leading-[3rem]'>Fast Facts</h1>
-               <div data-aos="fade-up" data-aos-delay="100"> <svg width="174" height="16" viewBox="0 0 174 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <div data-aos="fade-up" data-aos-delay="100"> 
+                <svg width="174" height="16" viewBox="0 0 174 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.584 0.722656L1.58396 15.7227" stroke="#647787"/>
 <path d="M46.584 0.722656L36.584 15.7227" stroke="#647787"/>
 <path d="M81.584 0.722656L71.584 15.7227" stroke="#647787"/>

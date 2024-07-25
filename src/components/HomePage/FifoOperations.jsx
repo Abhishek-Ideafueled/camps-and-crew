@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import video from '/smart-video-player.jpg';
 import { Link } from 'react-router-dom';
 import '../HomePage/Homepage.css';
@@ -8,15 +8,42 @@ import 'odometer/themes/odometer-theme-default.css';
 
 const FifoOperations = () => {
 
-  // const [value, setValue] = useState(1234);
+  const [firstValue, setFirstValue] = useState(0);
+  const [secondValue, setSecondValue] = useState(0);
+  const [thirdValue, setThirdValue] = useState(0);
 
-  //   useEffect(() => {
-  //       const timeoutId = setTimeout(() => setValue(150), 2000);
-  //       return () => {
-  //           clearTimeout(timeoutId);
-  //       };
-  //   }, []);'
+    const containerRef = useRef(null);
+    
+    const setOdo=(entries)=>{
+      const [entry] = entries ;
+      if(entry.isIntersecting)
+        {
+          setFirstValue(150);
+          setSecondValue(350);
+          setThirdValue(74);
+        
+        }
+        else{
+          setFirstValue(0);
+          setSecondValue(0);
+          setThirdValue(0);
+        }
+    }
+const options ={
+  root:null,
+  rootMargin:'0px',
+  threshhold:1.0
+}
 
+useEffect(()=>{
+    const observer  = new IntersectionObserver(setOdo, options);
+
+    if(containerRef.current) observer.observe(containerRef.current);
+
+    return ()=>{
+      observer.disconnect();
+    }
+},[])
 
 
   return (
@@ -33,21 +60,21 @@ const FifoOperations = () => {
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-start gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
-              <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-rooms)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">150</span>
-             {/* <span className='flex'> <Odometer value={value} format="(.ddd),dd" /> */}
+              
+             <span className='flex items-center justify-center'>
+               <Odometer value={firstValue} format="ddd" />
              K </span>
-                {/* </span> */}
+               
               </div>
               <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
                 Rooms managed for clients operating remote camps and villages
               </span>
             </div>
-            <div className='flex flex-col gap-2 max-w-[247px]'>
+            <div className='flex flex-col gap-2 max-w-[247px]' ref={containerRef}>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
-              <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-transport)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">350</span>
-                
+              
+                <span className='flex items-center justify-center'>
+               <Odometer value={secondValue} format="ddd" />
                 K</span>
               </div>
               <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
@@ -56,8 +83,9 @@ const FifoOperations = () => {
             </div>
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[38px] lg:w-[60px] text-custom-heading font-gilroyBold font-normal">
-              <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-years)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">74</span></span>
+              
+              <span className='flex items-center justify-center'>
+               <Odometer value={thirdValue} format="ddd" /></span>
               </div>
               <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
                 Years combined experience across mining, energy, travel and
