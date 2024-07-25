@@ -1,38 +1,16 @@
-@property --num-fifyears {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @property --num-roomsremote {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @property --num-monthly {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
-  
-  @property --num-yearsth {
-    syntax: "<integer>";
-    initial-value: 0;
-    inherits: false;
-  }
+/* @font-face {
+  font-family: "Gilroy-Bold";
+  src: url("/fonts/Gilroy-Bold.otf");
+}
 
-  @keyframes counter {
-    from {
-      --num-fifyears: 0;
-      --num-roomsremote: 0;
-      --num-monthly: 0;
-      --num-yearsth:0
-    }
-    to {
-      --num-fifyears:300;
-      --num-roomsremote: 150;
-      --num-monthly: 200;
-      --num-yearsth:32;
-    }
-  }
+.odometer-inside{
+  color: #08425D;
+  font-family: Gilroy-Bold;
+  font-weight: bold;
+  margin-right:0;
+  text-wrap: nowrap;
+}
+
+.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-default .odometer-digit .odometer-digit-inner{
+  left:-2px !important;
+} */

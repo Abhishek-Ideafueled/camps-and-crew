@@ -1,12 +1,54 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../HomePage/Homepage.css';
 import fifteenYears from '/about-rooms-managed-fifteen-years-icon.png';
 import managedGlobally from '/about-rooms-managed-globally-icon.png';
 import roomsTravel from '/about-rooms-travel-booking-system.png'
 import years32 from '/about-32-years-business-icon.png'
 import './FastFacts.css';
+import ReactOdometer from 'react-odometerjs';
 
 const FastFacts = () => {
+
+  const [firstValue, setFirstValue] = useState(0);
+  const [secondValue, setSecondValue] = useState(0);
+  const [thirdValue, setThirdValue] = useState(0);
+  const [fourthValue, setFourthValue] = useState(0);
+
+    const gridRef = useRef(null);
+    
+    const setOdo=(entries)=>{
+      const [entry] = entries ;
+      if(entry.isIntersecting)
+        {
+          setFirstValue(300);
+          setSecondValue(150);
+          setThirdValue(200);
+          setFourthValue(32)
+        
+        }
+        else{
+          setFirstValue(0);
+          setSecondValue(0);
+          setThirdValue(0);
+          setFourthValue(0)
+        }
+    }
+const options ={
+  root:null,
+  rootMargin:'0px',
+  threshhold:1.0
+}
+
+useEffect(()=>{
+    const observer  = new IntersectionObserver(setOdo, options);
+
+    if(gridRef.current) observer.observe(gridRef.current);
+
+    return ()=>{
+      observer.disconnect();
+    }
+},[])
+
   return (
     <div className='w-full min-h-[608px]'>
         <div className='main-container mx-auto py-10 md:py-20 lg:py-28'>
@@ -43,16 +85,15 @@ const FastFacts = () => {
 
 
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8'> 
+            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8' ref={gridRef}> 
             <div data-aos="fade-up" data-aos-delay="100" className='col-span-1 lg:max-w-[280px] h-[250px] md:h-[300px] lg:h-[350px] border-[1px] border-[#CDD5DF] p-6 lg:p-4 xl:p-6 flex flex-col justify-between'>
               <div className='w-[70px] h-[70px]'>
             <img src={fifteenYears} alt="about rooms managed fifteen years"  className='w-full h-full'/>
               </div>
               <div className='flex flex-col gap-2'>
                 <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
-                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-fifyears)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">300</span>
-                
+                <span className='flex items-start'>
+               <ReactOdometer value={firstValue} format="ddd" />
                 K</span>
                 </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Camp rooms managed for our clients over 15 years</p>
@@ -64,9 +105,8 @@ const FastFacts = () => {
               </div>
               <div className='flex flex-col gap-2'>
                 <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
-                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-roomsremote)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">150</span>
-                
+                <span className='flex items-start'>
+               <ReactOdometer value={secondValue} format="ddd" />
                 K</span>
                   </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Rooms managed across remote camps and villages globally</p>
@@ -78,9 +118,8 @@ const FastFacts = () => {
               </div>
               <div className='flex flex-col gap-2'>
                 <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
-                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-monthly)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">200</span>
-                
+                <span className='flex items-start'>
+               <ReactOdometer value={thirdValue} format="ddd" />
                 K</span>
                   </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Room and travel bookings made monthly with our systems</p>
@@ -92,9 +131,9 @@ const FastFacts = () => {
               </div>
               <div className='flex flex-col gap-2'>
                 <h1 className='font-gilroyBold text-[32px] leading-8 lg:text-[50px] font-normal lg:leading-[60px] text-custom-heading'>
-                <span className="flex animate-[counter_3s_ease-out_forwards] tabular-nums [counter-set:_num_var(--num-yearsth)] before:content-[counter(num)] before:left-[calc(0.4em * var(--n, 1))]">
-              <span className="sr-only">32</span>
-                
+                <span className='flex items-start'>
+               <ReactOdometer value={fourthValue} format="ddd" />
+            
                 </span>
                   </h1>
               <p className='font-ttCommonProRegular leading-[22px] font-normal text-custom-body'>Years in business – founded in August of 1992</p>

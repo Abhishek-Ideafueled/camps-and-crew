@@ -56,12 +56,12 @@ useEffect(()=>{
             </h2>
           </div>
           <div 
-          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" ref={containerRef}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:mx-auto lg:justify-center md:items-start gap-6 lg:gap-24 md:pb-10">
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
               
-             <span className='flex items-center justify-center'>
+             <span className='flex items-start justify-center'>
                <Odometer value={firstValue} format="ddd" />
              K </span>
                
@@ -70,10 +70,10 @@ useEffect(()=>{
                 Rooms managed for clients operating remote camps and villages
               </span>
             </div>
-            <div className='flex flex-col gap-2 max-w-[247px]' ref={containerRef}>
+            <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[75px] lg:w-[120px] text-custom-heading font-gilroyBold font-normal">
               
-                <span className='flex items-center justify-center'>
+                <span className='flex items-start justify-center'>
                <Odometer value={secondValue} format="ddd" />
                 K</span>
               </div>
@@ -84,7 +84,7 @@ useEffect(()=>{
             <div className='flex flex-col gap-2 max-w-[247px]'>
               <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[38px] lg:w-[60px] text-custom-heading font-gilroyBold font-normal">
               
-              <span className='flex items-center justify-center'>
+              <span className='flex items-start justify-center'>
                <Odometer value={thirdValue} format="ddd" /></span>
               </div>
               <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
