@@ -13,7 +13,8 @@ import '../HomePage/Homepage.css';
 // import 'react-international-phone/style.css';
 import 'react-phone-number-input/style.css'
 import PhoneInput, { formatPhoneNumber } from 'react-phone-number-input';
-import { formatPhoneNumberIntl } from 'react-phone-number-input'
+import { formatPhoneNumberIntl } from 'react-phone-number-input';
+import './Homepage.css';
 
 const DemoForm = () => {
 

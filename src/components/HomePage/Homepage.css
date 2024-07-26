@@ -98,3 +98,7 @@
   letter-spacing: 0.8;
   color: #060F1F;
 } */
+
+.PhoneInputInput{
+  outline: none;
+}
