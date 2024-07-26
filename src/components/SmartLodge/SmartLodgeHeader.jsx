@@ -52,7 +52,7 @@ const SmartLodgeHeader = () => {
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   {/* <Link to="https://www.youtube.com/embed/5rt33ZISw9c"> */}
-                   <span onClick={openModal}>
+                   <span onClick={openModal} className='cursor-pointer'>
                     <svg
                       width="100%"
                       height="100%"
