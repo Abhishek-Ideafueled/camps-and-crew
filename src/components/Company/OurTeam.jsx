@@ -3,7 +3,7 @@ import React from 'react';
 
 const OurTeam = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-[#FCFBF8]">
       <div className="main-container mx-auto flex flex-col">
         <div className="flex flex-col gap-4 items-center pt-[40px] lg:pt-[80px] pb-[60px]">
           <h1

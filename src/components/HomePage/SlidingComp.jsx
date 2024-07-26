@@ -27,15 +27,9 @@ const SlidingComp = (props) => {
         slidesToScroll: 1,
         responsive: [
           {
-            breakpoint: 1600,
+            breakpoint: 480,
             settings: {
-              slidesToShow:6 ,
-            },
-          },
-          {
-            breakpoint: 1199,
-            settings: {
-              slidesToShow: 5,
+              slidesToShow: 3,
             },
           },
           {
@@ -45,11 +39,18 @@ const SlidingComp = (props) => {
             },
           },
           {
-            breakpoint: 480,
+            breakpoint: 1199,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 5,
             },
-          }
+          },
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow:5 ,
+            },
+          },
+          
         ],
   }
 

@@ -17,7 +17,7 @@ const OurMissionSwiper = () => {
   console.log(endofSlide);
 
   return (
-    <div className='w-full min-h-[757px] md:h-[850px]'>
+    <div className='w-full min-h-[757px] md:h-[850px] bg-[#FAFAFA]'>
     <div className='main-container mx-auto py-10 md:py-20 lg:py-28 flex flex-col gap-[24px] md:gap-[40px] lg:gap-[60px]'>
         <div className='flex flex-col gap-6 items-center'>
                 <div className='flex flex-col gap-4 items-center '>
@@ -91,7 +91,7 @@ const OurMissionSwiper = () => {
           spaceBetween: 20
         },
         1240:{
-          slidesPerView: 3.5,
+          slidesPerView: 3,
           spaceBetween: 20
         }
       }
