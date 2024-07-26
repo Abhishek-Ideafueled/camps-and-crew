@@ -2,8 +2,8 @@ import React from 'react';
 
 const ElevatingEfficiency = () => {
   return (
-    <div className='w-full'>
-        <div className='main-container mx-auto py-20 flex flex-col gap-[60px]'>
+    <div className='w-full relative'>
+        <div className='main-container mx-auto py-20 flex flex-col gap-[60px] '>
             <div className='flex flex-col gap-4 items-center'>
             <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
@@ -46,8 +46,8 @@ const ElevatingEfficiency = () => {
               </svg>
               </span>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3'>
-            <div className='flex flex-col gap-[60px]'>
+            <div className='grid grid-cols-1 md:grid-cols-3 z-10'>
+            <div className='flex flex-col gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-maximize-room-bed-utilization-icon.png" alt="" />
                 </span>
@@ -60,7 +60,7 @@ const ElevatingEfficiency = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-[60px]'>
+            <div className='flex flex-col gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-streamline-workflows-icon.png" alt="" />
                 </span>
@@ -73,7 +73,7 @@ const ElevatingEfficiency = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-[60px]'>
+            <div className='flex flex-col gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-reduce-admin-workloads-icon.png" alt="" />
                 </span>
@@ -89,6 +89,21 @@ const ElevatingEfficiency = () => {
             
             </div>
            
+        </div>
+        <div className='absolute bottom-0 left-0 '>
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_0_3)">
+<path d="M200 100H100V200H200V100Z" fill="#ECE7E0"/>
+<path d="M100 100H0V200H100V100Z" fill="#ECE7E0"/>
+<path d="M100 0H0V100H100V0Z" fill="#ECE7E0"/>
+</g>
+<defs>
+<clipPath id="clip0_0_3">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
         </div>
       
     </div>
