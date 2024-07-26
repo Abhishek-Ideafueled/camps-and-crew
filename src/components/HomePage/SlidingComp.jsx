@@ -9,7 +9,7 @@ import top5logo from '/top5logo.png';
 import sodexologo from '/sodexo-logo.png';
 import './SlidingComp.css';
 
-const SlidingComp = () => {
+const SlidingComp = (props) => {
     const [bgColor,setBgColor] = useState("");
   useEffect(()=>{
       if(window.location.pathname==="/company")
@@ -56,9 +56,9 @@ const SlidingComp = () => {
   return (
     <div className={`w-full ${bgColor==="notWhite"? "bg-[#FCFBF8]":""}`}>
         <div className="w-full mx-auto flex flex-col gap-14 py-10 sm:py-20">
-        <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
+       {props.showHeading && <h3 className="text-center text-lg sm:text-xl md:text-2xl font-gilroyBold font-normal text-custom-heading">
           Trusted by Companies All Over the World
-        </h3>
+        </h3>}
             <div className='w-full h-[106px] comp-slider'>
       <Slider {...settings}>
         <div className='single-slide'>
