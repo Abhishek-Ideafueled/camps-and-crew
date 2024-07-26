@@ -109,7 +109,7 @@ const OurStory = () => {
             <img
               src={video}
               alt="insert video player here"
-              className="w-full"
+              className="w-full max-h-[600px]"
             />
             {/* <div className='bg-video-image video-image absolute inset-0 w-full h-full'></div> */}
             <div className="absolute flex top-[40%] sm:top-[40%] md:top-[50%] left-[45%] sm:right-[40%] justify-center h-full hover:opacity-90">
