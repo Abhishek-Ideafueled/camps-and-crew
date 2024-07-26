@@ -18,7 +18,8 @@ export default {
         'btn-text':'#060F1F',
         'custom-blue':'#63C1EC',
         'industryGradient':'#04253400',
-        'custom-gray':'#CAD5DE'
+        'custom-gray':'#CAD5DE',
+        'custom-back':'#053347',
 
     }, 
     fontSize:{
@@ -62,6 +63,7 @@ export default {
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
+      'smalls':'540px',
       'superxl':'1400px'
     },
     gradientColorStops:{

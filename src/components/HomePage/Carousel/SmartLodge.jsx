@@ -12,6 +12,7 @@ import '../Homepage.css';
 // import { afterMakingChange, beforeMakingChange } from './test';
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from 'react-router-dom';
 
 const SmartLodge = () => {
 
@@ -62,8 +63,10 @@ const SmartLodge = () => {
                 The most flexible camp <br /> management system <br /> on the market
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center leading-[0.9rem] text-sm lg:text-base rounded-[4px] lg:leading-[1.55rem] slider-desc">
-                SEE ALL FEATURES
+              <button
+              
+              className="max-w-[219px] h-[54px] btn-orange text-center leading-[0.9rem] text-sm lg:text-base rounded-[4px] lg:leading-[1.55rem] slider-desc">
+              <Link to='/software-for-workforce-camp'>  SEE ALL FEATURES </Link>
               </button>
               </div>
             </div>
@@ -84,8 +87,10 @@ const SmartLodge = () => {
                 Maximize room <br /> utilization before <br /> you buy, build or rent
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center leading-[0.9rem] text-sm lg:text-base rounded-[4px] lg:leading-[1.55rem]">
-                SEE ALL FEATURES
+              <button
+              
+              className="max-w-[219px] h-[54px] btn-orange text-center leading-[0.9rem] text-sm lg:text-base rounded-[4px] lg:leading-[1.55rem]">
+              <Link to='/software-for-workforce-camp'>  SEE ALL FEATURES </Link>
               </button>
               </div>
             </div></div>
@@ -104,8 +109,10 @@ const SmartLodge = () => {
                 Easy-to-use tools <br /> to book and assign <br /> rooms at your camp
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] leading-[0.9rem] text-sm lg:text-base lg:leading-[1.55rem]">
-                SEE ALL FEATURES
+              <button
+              
+              className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] leading-[0.9rem] text-sm lg:text-base lg:leading-[1.55rem]">
+              <Link to='/software-for-workforce-camp'>  SEE ALL FEATURES </Link>
               </button></div>
             </div>
             </div>
@@ -124,8 +131,10 @@ const SmartLodge = () => {
                 Technology to help <br /> your staff turn rooms <br /> faster  than ever
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] leading-[0.9rem] text-sm lg:text-base lg:leading-[1.55rem]">
-                SEE ALL FEATURES
+              <button
+              
+              className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] leading-[0.9rem] text-sm lg:text-base lg:leading-[1.55rem]">
+              <Link to='/software-for-workforce-camp'>  SEE ALL FEATURES </Link>
               </button>
               </div>
             </div>
@@ -145,8 +154,10 @@ const SmartLodge = () => {
                 Designed to manage <br /> camps large or small, <br /> in any location
               </h1>
               </div>
-              <button className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
-                SEE ALL FEATURES
+              <button
+              
+              className="max-w-[219px] h-[54px] btn-orange text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
+              <Link to='/software-for-workforce-camp'>  SEE ALL FEATURES </Link>
               </button>
               </div>
             </div>
