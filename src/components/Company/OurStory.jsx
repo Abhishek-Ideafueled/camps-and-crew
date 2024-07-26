@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../HomePage/Homepage.css';
 import video from '/smart-video-player.jpg';
 import { Link } from 'react-router-dom';
 import './OurStory.css';
+import YoutubeModal from '../YoutubeModal';
 
 const OurStory = () => {
+  const [isOpen,setIsOpen] = useState(false);
+
+  const openModal=()=>{
+    setIsOpen(true);
+  }
+  
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  
+     return () => { document.body.style.overflow = 'unset' }
+  }, [isOpen]);
+  
+  
+  const closeModal=()=>{
+    setIsOpen(false);
+  }
+  
+
   return (
+    <>
     <div className="w-full ">
       <div className="w-full bg-[#EAE8E3] py-10 lg:py-20">
         <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px]">
@@ -93,7 +113,7 @@ const OurStory = () => {
             />
             {/* <div className='bg-video-image video-image absolute inset-0 w-full h-full'></div> */}
             <div className="absolute flex top-[40%] sm:top-[40%] md:top-[50%] left-[45%] sm:right-[40%] justify-center h-full hover:opacity-90">
-              <Link to="#" className='w-[60px] h-[60px] sm:w-[80px] sm:h-[80px]'>
+              <span onClick={openModal} className='w-[60px] h-[60px] sm:w-[80px] sm:h-[80px] cursor-pointer'>
               <svg
                 width="100%"
                 height="100%"
@@ -117,11 +137,22 @@ const OurStory = () => {
                   </clipPath>
                 </defs>
               </svg>
-              </Link>
+              </span>
             </div>
           </div>
           </div>
     </div>
+    {
+isOpen && <YoutubeModal closeModal={closeModal}>
+ 
+  <iframe  
+  className='w-full h-full'
+  src="https://www.youtube.com/embed/twhxbcasA-4?si=12mwYTCzjySjGpx7" frameBorder="0"
+  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen
+  ></iframe>
+</YoutubeModal>
+    }
+    </>
   );
 }
 

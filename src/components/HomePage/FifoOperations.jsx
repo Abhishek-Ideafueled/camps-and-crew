@@ -122,7 +122,7 @@ const closeModal=()=>{
             />
             
             <div className="relative flex justify-center items-center h-full hover:opacity-90">
-              <span onClick={openModal}>
+              <span onClick={openModal} className='cursor-pointer'>
               <svg
                 width="80"
                 height="80"

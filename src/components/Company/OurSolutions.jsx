@@ -1,7 +1,29 @@
 import { Link } from "react-router-dom";
+import YoutubeModal from "../YoutubeModal";
+import { useEffect, useState } from "react";
 
 const OurSolutions = () => {
+
+  const [isOpen,setIsOpen] = useState(false);
+
+  const openModal=()=>{
+    setIsOpen(true);
+  }
+  
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+  
+     return () => { document.body.style.overflow = 'unset' }
+  }, [isOpen]);
+  
+  
+  const closeModal=()=>{
+    setIsOpen(false);
+  }
+  
+
   return (
+    <>
     <div className="relative w-full max-h-[1650px] md:h-[1036px] lg:h-[1116px]">
       <div className="main-container mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-[40px] lg:gap-[60px]">
@@ -69,7 +91,7 @@ const OurSolutions = () => {
                   alt=""
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
-                  <Link to="#">
+                  <span className="cursor-pointer" onClick={openModal}>
                     <svg
                       width="100%"
                       height="100%"
@@ -93,7 +115,7 @@ const OurSolutions = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
+                  </span>
                 </div>
               </div>
             </div>
@@ -173,6 +195,17 @@ const OurSolutions = () => {
         </svg>
       </div>
     </div>
+    {
+isOpen && <YoutubeModal closeModal={closeModal}>
+ 
+  <iframe  
+  className='w-full h-full'
+  src="https://www.youtube.com/embed/5rt33ZISw9c" frameBorder="0"
+  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen
+  ></iframe>
+</YoutubeModal>
+    }
+    </>
   );
 };
 
