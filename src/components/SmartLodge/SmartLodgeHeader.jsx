@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
+import YoutubeModal from '../YoutubeModal';
 
 const SmartLodgeHeader = () => {
+  const [isOpen,setIsOpen] = useState(false);
+
+  const openModal=()=>{
+    setIsOpen(true);
+  }
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "unset";
+
+     return () => { document.body.style.overflow = 'unset' }
+  }, [isOpen]);
+
+
+  const closeModal=()=>{
+    setIsOpen(false);
+  }
+
   return (
-    <div className="w-full bg-custom-back h-full min-h-[580px] py-10 lg:py-20">
+    <>
+    <div className=" w-full bg-custom-back h-full min-h-[580px] py-10 lg:py-20">
       <div className="main-container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full items-center">
           <div className="flex flex-col gap-8 ">
@@ -32,7 +51,8 @@ const SmartLodgeHeader = () => {
                   alt=""
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
-                  <Link to="#">
+                  {/* <Link to="https://www.youtube.com/embed/5rt33ZISw9c"> */}
+                   <span onClick={openModal}>
                     <svg
                       width="100%"
                       height="100%"
@@ -56,13 +76,23 @@ const SmartLodgeHeader = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
+                    </span>
+                  {/* </Link> */}
                 </div>
               </div>
           </div>
         </div>
       </div>
     </div>
+    {
+isOpen && <YoutubeModal closeModal={closeModal}>
+ 
+  <iframe  
+  className='w-full h-full'
+  src="https://www.youtube.com/embed/5rt33ZISw9c" frameBorder="0"></iframe>
+</YoutubeModal>
+    }
+    </>
   )
 }
 

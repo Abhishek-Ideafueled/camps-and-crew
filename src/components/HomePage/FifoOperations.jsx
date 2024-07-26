@@ -5,6 +5,7 @@ import '../HomePage/Homepage.css';
 import './FifoOperations.css';
 import Odometer from 'react-odometerjs';
 import 'odometer/themes/odometer-theme-default.css';
+import YoutubeModal from '../YoutubeModal';
 
 const FifoOperations = () => {
 
@@ -45,8 +46,26 @@ useEffect(()=>{
     }
 },[])
 
+const [isOpen,setIsOpen] = useState(false);
+
+const openModal=()=>{
+  setIsOpen(true);
+}
+
+useEffect(() => {
+  document.body.style.overflow = isOpen ? "hidden" : "unset";
+
+   return () => { document.body.style.overflow = 'unset' }
+}, [isOpen]);
+
+
+const closeModal=()=>{
+  setIsOpen(false);
+}
+
 
   return (
+    <>
     <div className="relative bg-[#EAE8E3] pt-20 pr-0 pb-10 pl-0 w-full">
       <div className=" main-container mx-auto">
         <div className=" flex flex-col gap-20 w-full border-[1px] border-b-[#D0D5DD]">
@@ -103,7 +122,7 @@ useEffect(()=>{
             />
             
             <div className="relative flex justify-center items-center h-full hover:opacity-90">
-              <Link to="#">
+              <span onClick={openModal}>
               <svg
                 width="80"
                 height="80"
@@ -127,7 +146,7 @@ useEffect(()=>{
                   </clipPath>
                 </defs>
               </svg>
-              </Link>
+              </span>
             </div>
           </div>
           <div className="relative flex flex-col max-w-[556px] gap-6 z-10" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
@@ -174,6 +193,17 @@ useEffect(()=>{
 </defs>
 </svg></div>
     </div>
+    {
+isOpen && <YoutubeModal closeModal={closeModal}>
+ 
+  <iframe  
+  className='w-full h-full'
+  src="https://www.youtube.com/embed/twhxbcasA-4?si=12mwYTCzjySjGpx7" frameBorder="0"
+  title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowfullscreen
+  ></iframe>
+</YoutubeModal>
+    }
+    </>
   );
 }
 
