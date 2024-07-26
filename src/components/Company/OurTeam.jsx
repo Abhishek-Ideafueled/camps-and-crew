@@ -65,7 +65,7 @@ const OurTeam = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="150"
-             className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 md:mt-20 mr-5'>
+             className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 lg:mt-20 mr-5'>
                 <div className='w-[130px] h-[160px] md:w-[220px] md:h-[260px]'>
                 <img src="/jon-miller-headshot-chief-operating-officer.png" className='object-cover' alt="jon-miller-headshot-chief-operating-officer" />
                 </div>
@@ -80,7 +80,7 @@ const OurTeam = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="200"
-             className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 md:mt-20 ml-5'>
+             className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 lg:mt-20 ml-5'>
                 <div className='w-[130px] h-[160px] md:w-[220px] md:h-[260px]'>
                 <img src="/mark-lunetta-headshot-chief-technology-officer.png" className=' object-cover' alt="mark-lunetta-headshot-chief-technology-officer" />
                 </div>
@@ -95,7 +95,7 @@ const OurTeam = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="250" 
-            className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 md:mt-20 mr-5'>
+            className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 mr-5'>
                 <div className='w-[130px] h-[160px] md:w-[220px] md:h-[260px]'>
                 <img src="/jon-carmody-headshot-chief-software-architect.png" className=' object-cover' alt="jon-carmody-headshot-chief-software-architect" />
                 </div>
@@ -110,7 +110,7 @@ const OurTeam = () => {
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-delay="300" 
-            className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 md:mt-20 ml-5'>
+            className='col-span-1 flex flex-col lg:flex-row gap-[25px] items-center justify-center mt-10 ml-5'>
                 <div className='w-[130px] h-[160px] md:w-[220px] md:h-[260px]'>
                 <img src="/cei-sullivan-headshot-director-training-implementation.png" className=' object-cover' alt="cei-sullivan-headshot-director-training-implementation" />
                 </div>

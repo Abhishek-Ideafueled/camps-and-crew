@@ -25,7 +25,7 @@ const OurSolutions = () => {
   return (
     <>
     <div className="relative w-full max-h-[1650px] md:h-[1036px] lg:h-[1116px]">
-      <div className="main-container mx-auto py-10 lg:py-20">
+      <div className=" w-full px-5 max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1290px] xl:px-0 mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-[40px] lg:gap-[60px]">
           <div className="flex flex-col gap-4 items-center">
             <h2 className="font-gilroyBold text-[25px] md:text-[32px] lg:leading-[3rem] text-custom-heading lg:text-h2">
@@ -68,7 +68,7 @@ const OurSolutions = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] md:gap-8">
-            <div className=" flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[636px] max-h-[830px]">
+            <div className=" flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[633px] max-h-[830px]">
               <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl md:min-h-[570px] lg:min-h-[615px]">
                 <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
@@ -119,18 +119,21 @@ const OurSolutions = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[636px] z-10 max-h-[830px]">
+            <div className="flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[633px] z-10 max-h-[830px]">
               <div className="flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl  md:min-h-[570px] lg:min-h-[615px]">
                 <button className="bg-custom-button font-gilroyBold w-[85px] h-[35px] rounded-full">
                   Enroute
                 </button>
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] lg:text-[32px] font-gilroyBold lg:leading-[2.4rem] text-custom-heading">
                   An Online Booking Tool to Manage ERM Travel and FIFO Logistics
+                  <span className="hidden xl:block"><br/>
+                  </span>
                 </div>
                 <span className="font-ttCommonProNormal md:pt-[28px] lg:pt-0 text-custom-body text-base lg:text-xl lg:leading-8">
                   Learn how EnRoute simplifies and streamlines the ways that
                   companies book and manage transportation for their fly-in
                   fly-out workers.
+                  
                 </span>
                 <button className="btn-orange w-[219px] h-[58px] py-4 rounded">
                   SEE ALL FEATURES
