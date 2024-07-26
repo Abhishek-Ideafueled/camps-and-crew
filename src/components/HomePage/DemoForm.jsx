@@ -9,7 +9,6 @@ import { BiSolidMessage } from 'react-icons/bi';
 import './Carousel/Enroute.css';
 import '../HomePage/Homepage.css';
 // import IntlTelInput from 'intl-tel-input/reactWithUtils';
-import IntlTelInput from './IntlTelInput';
 // import { PhoneInput } from 'react-international-phone';
 // import 'react-international-phone/style.css';
 import 'react-phone-number-input/style.css'

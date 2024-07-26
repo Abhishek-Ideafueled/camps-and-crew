@@ -9,49 +9,18 @@ import 'swiper/css/scrollbar';
 import HistoryCards from './HistoryCards';
 
 const Historydemo = () => {
-  // const [endofSlide,setEndOfSlide] = useState(false);
-  // const prevRef = useRef(null);
-  // const nextRef = useRef(null);
 
-  const swiper1Ref = useRef();
-  const swiper2Ref = useRef();
 
-  const arr=["2023","2022","2021","2018","2017","2016","2015","2013","2007","1997"]
 
-  const prevRef = useRef(null);
-  const nextRef = useRef(null);
   const [currIndex,setCurrIndex] = useState(0);
 
-  useEffect(() => {
-    swiper1Ref.current.controller.control = swiper2Ref.current;
-    swiper2Ref.current.controller.control = swiper1Ref.current;
-  }, []);
-
-
-  
-  // const [pix,setPix] = useState();
-
-  // useEffect(()=>{
-    
-  //   window.addEventListener('resize',()=>{
-  //     let n;
-  //     if(window.innerWidth < 900)
-  //     {
-  //       n= (window.innerWidth - 100) 
-  //     }
-      
-  //     setPix(n);
-  //   })
-
-  //   return ()=>{
-  //     window.removeEventListener('resize');
-  //   }
-  // },[])
 
 
   const [marginLeft, setMarginLeft] = useState('0px');
   const containerRef = useRef(null);
   const slidersRef = useRef([]);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   useEffect(() => {
     const updateDivsMargins = () => {
@@ -79,10 +48,35 @@ const Historydemo = () => {
     });
   }, [marginLeft]);
 
+  const verticalSwiperRef = useRef(null);
+  const horizontalSwiperRef = useRef(null);
+
+  // const years = Array.from({ length: 11 }, (_, i) => 2023 - i);
+
+  const years =["2023","2022","2021","2018","2017","2016","2015","2013","2007","1997"];
+
+
+  useEffect(() => {
+    if (verticalSwiperRef.current && horizontalSwiperRef.current) {
+      verticalSwiperRef.current.controller.control = horizontalSwiperRef.current;
+      horizontalSwiperRef.current.controller.control = verticalSwiperRef.current;
+    }
+  }, [verticalSwiperRef, horizontalSwiperRef]);
+
+  const handleVerticalSlideClick = (index) => {
+    if (horizontalSwiperRef.current) {
+      horizontalSwiperRef.current.slideTo(index);
+    }
+  };
+
+
   return (
     <div className="w-full bg-[#053347]">
       <div className=" flex flex-col gap-[60px] py-10 lg:py-20 w-full">
-        <div className="main-container mx-auto flex flex-col gap-6 items-center" ref={containerRef}>
+        <div
+          className="main-container mx-auto flex flex-col gap-6 items-center"
+          ref={containerRef}
+        >
           <div className="flex flex-col gap-4 items-center">
             <h1 className="font-gilroyBold text-[25px] md:text-[32px] lg:text-h2 lg:leading-[3rem] text-white">
               Company History
@@ -129,38 +123,40 @@ const Historydemo = () => {
             along the way.
           </span>
         </div>
-        <div 
-        // style={{marginLeft:pix}}
-         ref={(el) => slidersRef.current[0] = el} className={`slider__larger hidden md:flex md:justify-center md:items-center w-auto gap-4`}>
-          <div className=" history-nav font-ttCommonProRegular text-xl text-custom-gray leading-8">
+        <div
+          // style={{marginLeft:pix}}
+          ref={(el) => (slidersRef.current[0] = el)}
+          className={`slider__larger hidden md:flex md:items-center w-auto gap-4`}
+        >
+          <div className='relative h-[465px] flex flex-col justify-center'>
+          <div className="w-[66px] mb-[17px] history-year h-[400px] font-ttCommonProRegular text-xl text-custom-gray leading-8">
             <Swiper
-              noSwiping={true}
-              slidesPerView="8"
-              spaceBetween={5}
-              mousewheel={false}
               direction="vertical"
+              onSwiper={(swiper) => {
+                verticalSwiperRef.current = swiper;
+              }}
+              spaceBetween={10}
+              slidesPerView={8}
+              mousewheel={true}
               modules={[Navigation, Controller, Pagination]}
+              freeMode={true}
               pagination={{
                 clickable: true,
               }}
-              observer={true}
-              navigation={true}
-              onSwiper={(swiper) => {
-                swiper1Ref.current = swiper;
-              }}
-              slideToClickedSlide={true}
+              className="h-full"
+              controller={{ control: horizontalSwiperRef.current }}
               onInit={(swiper) => {
                 swiper.params.navigation.prevEl = prevRef.current;
                 swiper.params.navigation.nextEl = nextRef.current;
                 swiper.navigation.init();
                 swiper.navigation.update();
               }}
-              // onSlideChange={(swiper) => {
-              //   setCurrIndex(swiper.activeIndex);
-              // }}
+              navigation={{
+                enabled:true
+              }}
             >
               <div
-                className="absolute top-0 left-5 button-previous bg-[#053347] z-10 w-12 h-10 flex items-center justify-center"
+                className="absolute top-0  left-3 button-previous bg-transparent z-10 w-12 h-5 flex items-center justify-center"
                 ref={prevRef}
               >
                 <svg
@@ -179,60 +175,60 @@ const Historydemo = () => {
                   />
                 </svg>
               </div>
-              <SwiperSlide>
-                <div className="cursor-pointer">2023</div>
+              {years.map((year, index) => (
+                <SwiperSlide
+                  key={index}
+                  onClick={() => handleVerticalSlideClick(index)}
+                >
+                  <div className="py-4 text-center cursor-pointer">{year}</div>
+                </SwiperSlide>
+              ))}
+
+              <SwiperSlide
+                key={10}
+                onClick={() => handleVerticalSlideClick(10)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2022</div>
+              <SwiperSlide
+                key={11}
+                onClick={() => handleVerticalSlideClick(11)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2021</div>
+              <SwiperSlide
+                key={12}
+                onClick={() => handleVerticalSlideClick(12)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2018</div>
+              <SwiperSlide
+                key={13}
+                onClick={() => handleVerticalSlideClick(13)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2017</div>
+              <SwiperSlide
+                key={14}
+                onClick={() => handleVerticalSlideClick(14)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2016</div>
+              <SwiperSlide
+                key={15}
+                onClick={() => handleVerticalSlideClick(15)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2015</div>
+              <SwiperSlide
+                key={16}
+                onClick={() => handleVerticalSlideClick(16)}
+              >
+                <div className="cursor-pointer">{""}</div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2013</div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">2007</div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="cursor-pointer">1997</div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div></div>
-              </SwiperSlide>
-               <SwiperSlide>
-                <div></div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div></div>
-              </SwiperSlide>
-              
-              {/* <div className="w-full flex justify-center gap-4 mt-12">
-        <div className="btn-prev" ref={prevRef}>        
-        </div>
-        <div className="btn-next" ref={nextRef}></div>
-        </div> */}
               <div
                 ref={nextRef}
-                className="absolute bottom-0 left-4 button-next w-12 h-10 z-10 bg-[#053347] flex items-center justify-center"
+                className="absolute bottom-0 left-3 button-next w-12 h-5 z-10 bg-transparent flex items-center justify-center"
               >
                 <svg
                   width="15"
@@ -251,50 +247,64 @@ const Historydemo = () => {
                 </svg>
               </div>
             </Swiper>
+            
           </div>
-          <div className="relative history-card overflow-hidden no-scrollbar">
+          </div>
+
+          <div className="h-full w-full relative history-card overflow-hidden no-scrollbar ">
             <div className="absolute top-0 bg-[#053347] font-gilroyBold text-custom-button text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center">
-              {arr.filter((v, i) => (v ? i === currIndex : ""))}
+              {years.filter((v, i) => (v ? i === currIndex : ""))}
             </div>
             <Swiper
-              modules={[Navigation, Controller, Pagination, Scrollbar]}
-              spaceBetween={20}
-              slidesPerView="auto"
+              onSwiper={(swiper) => {
+                horizontalSwiperRef.current = swiper;
+              }}
+              spaceBetween={50}
+              scrollbar={{ draggable: true }}
+              slidesPerView={3}
               pagination={{
                 clickable: true,
               }}
-              onSwiper={(swiper) => {
-                swiper2Ref.current = swiper;
-              }}
-              observer={true}
-              scrollbar={{ draggable: true }}
+              modules={[Navigation, Controller, Pagination,Scrollbar]}
+              navigation={true}
+              className="h-full"
               onSlideChange={(swiper) => {
                 setCurrIndex(swiper.activeIndex);
               }}
-              // breakpoints={{
-              //   767: {
-              //     slidesPerView: 2,
-              //     spaceBetween: 10,
-              //   },
-              //   1000: {
-              //     slidesPerView: 2,
-              //     spaceBetween: 10,
-              //   },
-              //   1240: {
-              //     slidesPerView: 3,
-              //     spaceBetween: 20,
-              //   },
-              // }}
+              controller={{ control: verticalSwiperRef.current }}
+              breakpoints={{
+                767: {
+                  slidesPerView: 2.1,
+                  spaceBetween: 10,
+                },
+                1064: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 10,
+                },
+                1240: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+                1400: {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+                1600: {
+                  slidesPerView: 4,
+                  spaceBetween: 10,
+                },
+              }}
             >
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+          
+              <SwiperSlide key={0}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2023
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-1 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-1 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             August 2023
@@ -310,15 +320,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={1}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2022
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-2 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-2 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             September 2022
@@ -334,15 +344,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={2}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2021
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-3 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-3 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             April 2021
@@ -358,15 +368,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={3}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2018
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-4 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-4 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             July 2018
@@ -382,15 +392,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={4}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2017
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-5 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-5 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             July 2017
@@ -406,15 +416,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={5}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2016
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-6 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-6 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             July 2016
@@ -430,15 +440,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={6}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2015
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-7 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-7 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             February 2015
@@ -454,15 +464,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={7}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2013
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-8 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-8 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             June 2013
@@ -478,15 +488,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={8}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       2007
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-9 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-9 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             March 2007
@@ -502,15 +512,15 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="slider-outer w-[340px] h-[469px]">
+              <SwiperSlide key={9}>
+                <div className="slider-outer w-auto h-auto">
                   <div className="flex flex-col">
                     <h2 className="text-h2 text-custom-button font-gilroyBold">
                       1997
                     </h2>
                     <div className="relative">
-                      <div className="absolute bg-cover bg-history-10 w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
-                      <div className="w-[340px] h-[405px]">
+                      <div className="absolute bg-cover bg-history-10 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                      <div className="w-full max-w-[340px] h-[405px]">
                         <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
                           <span className="font-gilroyBold font-normal text-white text-2xl ">
                             June 1997
@@ -526,19 +536,24 @@ const Historydemo = () => {
                   </div>
                 </div>
               </SwiperSlide>
-              {/* <SwiperSlide className=''>
-   <div className=" slider-outer w-[340px] h-[469px]">
-    </div>
-   </SwiperSlide> */}
-   {/* <SwiperSlide>
-   <div className="slider-outer w-[340px] h-[469px]">
-    </div>
-   </SwiperSlide> */}
+              <SwiperSlide key={10}>
+                <div className="p-4 text-center"></div>
+              </SwiperSlide>
+              <SwiperSlide key={11}>
+                <div className="p-4 text-center"></div>
+              </SwiperSlide>
+             
+              <SwiperSlide key={12} className='hidden superxl:block'>
+                <div className="p-4 text-center"></div>
+              </SwiperSlide>
+              {/* <SwiperSlide key={13} className='hidden xl:block'>
+                <div className="p-4 text-center">gdfgdfggd</div>
+              </SwiperSlide> */}
             </Swiper>
           </div>
         </div>
-        <div className='md:hidden main-container mx-auto'>
-              <HistoryCards/>
+        <div className="md:hidden main-container mx-auto">
+          <HistoryCards />
         </div>
       </div>
     </div>

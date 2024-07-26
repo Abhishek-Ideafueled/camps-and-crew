@@ -62,6 +62,7 @@ export default {
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
+      'superxl':'1400px'
     },
     gradientColorStops:{
       'industryGradient':'#04253400',

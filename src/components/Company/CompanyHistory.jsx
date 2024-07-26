@@ -29,32 +29,32 @@ const CompanyHistory = () => {
     pauseOnHover:false,
     swipeToSlide:false,
     vertical:false,
-    responsive: [
-        {
-          breakpoint: 1600,
-          settings: {
-            slidesToShow:3.5,
-          },
-        },
-        {
-          breakpoint: 1400,
-          settings: {
-            slidesToShow:3.2,
-          },
-        },
-        {
-          breakpoint: 1280,
-          settings: {
-            slidesToShow: 2.5,
-          },
-        },
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1,
-          },
-        },
-      ],
+    // responsive: [
+    //     {
+    //       breakpoint: 1600,
+    //       settings: {
+    //         slidesToShow:3.5,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 1400,
+    //       settings: {
+    //         slidesToShow:3.2,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 1280,
+    //       settings: {
+    //         slidesToShow: 2.5,
+    //       },
+    //     },
+    //     {
+    //       breakpoint: 767,
+    //       settings: {
+    //         slidesToShow: 2,
+    //       },
+    //     },
+    //   ],
   };
 
   const settings2={
@@ -72,9 +72,9 @@ const CompanyHistory = () => {
   }
 
   return (
-    <div className="w-full bg-[#053347]">
-      <div className="main-container mx-auto flex flex-col gap-[60px] py-10 lg:py-20 w-full z-10">
-        <div className="flex flex-col gap-6 items-center">
+    <div className="w-full bg-[#053347] overflow-x-auto">
+      <div className=" mx-auto flex flex-col gap-[60px] py-10 lg:py-20 w-full z-10">
+        <div className="main-container flex flex-col gap-6 items-center">
           <div className="flex flex-col gap-4 items-center">
             <h1 className="font-gilroyBold text-h2 leading-[3rem] text-white">
               Company History
@@ -121,7 +121,7 @@ const CompanyHistory = () => {
             along the way.
           </span>
         </div>
-        <div className='relative w-full'>
+        <div className='relative w-full '>
         <div  className='absolute top-32 history-nav z-10 font-ttCommonProRegular text-xl text-custom-gray leading-8'>
             <Slider {...settings2}  asNavFor={nav1}
         ref={slider => (sliderRef2 = slider)} >
@@ -351,7 +351,7 @@ const CompanyHistory = () => {
                 </div>
               </div>
             </div>
-
+        
           </Slider>
           </div>
         </div>

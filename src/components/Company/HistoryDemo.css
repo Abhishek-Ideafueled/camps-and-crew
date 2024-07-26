@@ -24,11 +24,15 @@ div.swiper.swiper-initialized.swiper-horizontal{
     scrollbar-width: none;  /* Firefox */
 }
 
-.history-nav .swiper-button-disabled{
+.history-year .swiper-button-disabled{
     background-color: transparent !important;
 }
 
-.history-nav .swiper-slide.swiper-slide-active{
+/* .history-nav .swiper-slide.swiper-slide-active{
+    color: #EFBC43;
+} */
+
+.history-year .swiper-slide.swiper-slide-active{
     color: #EFBC43;
 }
 
@@ -44,6 +48,14 @@ div.swiper.swiper-initialized.swiper-horizontal{
     
 }
 
-.history-card .swiper-slide.swiper-slide{
+.history-card .swiper.swiper-initialized.swiper-horizontal{
     width: auto !important;
+    /* max-width: 340px !important; */
+    /* overflow: unset; */
+    
 }
+
+.history-year .swiper.swiper-initialized.swiper-vertical{
+        position: inherit;
+}
+
