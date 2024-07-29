@@ -2,6 +2,7 @@
 import SmartLodgeHeader from "./SmartLodgeHeader";
 import SlidingComp from "../HomePage/SlidingComp";
 import ElevatingEfficiency from "./ElevatingEfficiency";
+import LodgingSlider from "./LodgingSlider";
 
 const SmartLodgeMain = () => {
   return (
@@ -9,6 +10,7 @@ const SmartLodgeMain = () => {
       <SmartLodgeHeader/>
       <SlidingComp showHeading={false}/>
       <ElevatingEfficiency/>
+      <LodgingSlider/>
     </div>
   );
 }
