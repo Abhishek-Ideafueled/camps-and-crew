@@ -4,6 +4,7 @@ import SlidingComp from "../HomePage/SlidingComp";
 import ElevatingEfficiency from "./ElevatingEfficiency";
 import LodgingSlider from "./LodgingSlider";
 import LodgingSliderSlick from "./LodgingSliderSlick";
+import RoomsManagement from "./RoomsManagement";
 
 const SmartLodgeMain = () => {
   return (
@@ -13,6 +14,7 @@ const SmartLodgeMain = () => {
       <ElevatingEfficiency/>
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
+      <RoomsManagement/>
     </div>
   );
 }
