@@ -1,5 +1,7 @@
-import { Autoplay, Navigation, Pagination } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './LodgingSlider.css';
 
 const LodgingSlider = () => {
 
@@ -28,19 +30,58 @@ const LodgingSlider = () => {
             url:"work-accommodation-camp-sunset-texas.jpg",            
             alt:"Side view of a portable modular structure in the Permian Basin, Texas."
         },
-        // { id:6,
-        //     url:"work-accommodation-camp-sunset-texas.jpg",            
-        //     alt:"Side view of a portable modular structure in the Permian Basin, Texas."
-        // },
+        { id:6,
+            url:"snow-covered-workforce-camp-canada.jpg",            
+            alt:"Rows of workforce camp buildings in a cold climate with snow on the ground outside."
+        },
         
 
 
     ]
 
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 5000, 
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0, 
+        cssEase: 'linear',
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 320,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+            },
+          },
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow:5 ,
+            },
+          },
+          
+        ],
+      };
+
   return (
     <div className='w-full h-[673px] flex flex-col gap-[60px] py-20'>
     <div className="main-container mx-auto flex flex-col gap-6 items-center">
-    <h2 className="text-h2 font-gilroyBold leading-[48px] text-custom-heading">
+    <h2 className="text-[25px] leading-8 text-center md:text-[32px] md:leading-10 lg:text-[36px] lg:leading-[45px] xl:text-h2 font-gilroyBold xl:leading-[48px] text-custom-heading">
         For Workforce Lodging Anywhere, Any Size
         </h2>
         <span>
@@ -79,41 +120,36 @@ const LodgingSlider = () => {
 </svg>
 
         </span>
-        <div className="font-ttCommonProNormal text-custom-body text-lg font-medium">
+        <div className="font-ttCommonProMedium text-custom-body text-base md:text-lg font-medium text-center">
         Seamlessly oversee your workforce camp with unparalleled efficiency, regardless of location or size.
         </div>
     </div>
-    <div className="w-full lodging-slider">
-    <Swiper
-    loop={true}
-    speed={5000}
-    autoplay={{
-        delay: 0,
-        disableOnInteraction: false
-    }}
-      slidesPerView="3"
-      modules={[Autoplay, Pagination, Navigation]}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-    >
-      {imgArr.map((item)=>  
-            
-            (<SwiperSlide  key={item.id}>
-                <div className="flex items-center h-[260px] w-[320px]">
-                <div>
-                    <img src={item.url} alt={item.alt} />
-                </div>
-
+    <div className="w-full lodging-slick">
+        <Slider {...settings}>
+          {imgArr.map((item, index) => (
+            <div
+              key={item.id}
+              className="lodging-outer flex justify-center  h-[320px] w-[260px]"
+            >
+              <div className="lodging-inner flex items-center justify-center">
+                {index % 2 === 0 ? (
+                  <img
+                    src={item.url}
+                    alt={item.alt}
+                    className="object-cover h-[320px] w-[260px] rounded-2xl"
+                  />
+                ) : (
+                  <img
+                    src={item.url}
+                    alt={item.alt}
+                    className="h-[240px] w-[260px] object-cover rounded-2xl"
+                  />
+                )}
+              </div>
             </div>
-           
-           
-        </SwiperSlide> ))}
-
-    </Swiper>
-
-    </div>
+          ))}
+        </Slider>
+      </div>
     </div>
   )
 }

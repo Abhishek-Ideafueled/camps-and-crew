@@ -1,0 +1,12 @@
+.lodging-slick .slick-slider.slick-initialized .slick-list .slick-track{
+    display: flex !important;
+    /* background: #000; */
+    gap: 20px;
+
+}
+
+.lodging-slick .slick-slider.slick-initialized .slick-list .slick-slide .lodging-outer{
+    display: flex !important;
+    /* background: #000; */
+
+}
