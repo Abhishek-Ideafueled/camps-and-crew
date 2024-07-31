@@ -32,9 +32,9 @@ const RoomsManagement = () => {
                     <div className="flex flex-col" key={item.id} onClick={()=>setActive({id:item.id, isActive: !active.isActive})}>
                     <div className="font-gilroyBold text-custom-heading text-xl leading-[24px] flex items-center justify-between h-[56px]">
                       {item.title}
-                     <span ><IoIosArrowDown /></span> 
+                     <span className={`${active.id===item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${active.id!==item.id ||active.isActive ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100'}`}>
+                   <div className={`${active.id!==item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100'}`}>
                                               {item.desc}
                     </div>
                   </div>
@@ -44,12 +44,12 @@ const RoomsManagement = () => {
                 </div>
 
               </div>
-            <div className="h-[480px] max-w-[588px]">
-                {active.id===1 && <img className="w-full h-full rounded-2xl" src="/reporting.jpg"/>}
-                {active.id===2 && <img className="w-full h-full rounded-2xl" src="/women-corporate-office-working-computers.jpg"/>}
-                {active.id===3 && <img className="w-full h-full rounded-2xl" src="/workers-walk-towards-lobby-mining-camp.jpg"/>}
-                {active.id===4 && <img className="w-full h-full rounded-2xl" src="/worker-quarters-remote-mining-camp.jpg"/>}
-                {active.id===5 && <img className="w-full h-full rounded-2xl" src="/workforce-loding-permian-basin-texas-sunset.jpg"/>}
+            <div className="h-[480px] max-w-[588px] relative">
+                 <img className={`${active.id===1 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500  rounded-2xl`} src="/reporting.jpg"/>
+                 <img className={`${active.id===2 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/women-corporate-office-working-computers.jpg"/>
+                 <img className={`${active.id===3 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/workers-walk-towards-lobby-mining-camp.jpg"/>
+                 <img className={`${active.id===4 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/worker-quarters-remote-mining-camp.jpg"/>
+                 <img className={`${active.id===5 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/workforce-loding-permian-basin-texas-sunset.jpg"/>
             </div>
             </div>
              
