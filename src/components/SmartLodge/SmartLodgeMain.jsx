@@ -5,6 +5,7 @@ import ElevatingEfficiency from "./ElevatingEfficiency";
 import LodgingSlider from "./LodgingSlider";
 import LodgingSliderSlick from "./LodgingSliderSlick";
 import RoomsManagement from "./RoomsManagement";
+import RoomsManagementSecond from "./RoomsManagementSecond";
 
 const SmartLodgeMain = () => {
   return (
@@ -15,6 +16,7 @@ const SmartLodgeMain = () => {
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
       <RoomsManagement/>
+      <RoomsManagementSecond/>
     </div>
   );
 }

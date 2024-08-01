@@ -5,7 +5,6 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const RoomsManagement = () => {
 
-  // const [active,setActive] = useState({id:1,isActive:false});
 
     const [activeId, setActiveId] = useState(1);
     const [ activeImageId,setActiveImageId] = useState(1);
@@ -20,6 +19,7 @@ const RoomsManagement = () => {
     };
 
   return (
+    <>
     <div className='w-full py-20'>
         <div className='main-container mx-auto flex flex-col gap-10 items-center'>
             <div className='flex flex-col gap-6 items-center'>
@@ -69,7 +69,10 @@ const RoomsManagement = () => {
             </div>
              
         </div>
+
     </div>
+    
+    </>
   )
 }
 

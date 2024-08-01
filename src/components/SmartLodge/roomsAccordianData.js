@@ -21,3 +21,27 @@ export const roomAccordianData =[
     desc:"Give department leads, contractors or other authorized parties the ability to forecast the number of rooms they will need in the coming weeks or months, to better predict room utilization across your camp or asset."
 },
 ]
+
+export const roomAccordianData2 =[
+    {id:1,
+        title:"Permanent Rooms",
+        desc:"Designate “permanent” or “regular” rooms within SmartLodge. Assign those rooms to specific guests. You can allow or dis-allow those rooms to be booked while the primary occupant is not at camp."
+
+    },
+    {id:2,
+        title:"Multi-Occupancy Dormitories",
+        desc:"Rooms with two or more beds can easily be set up in the system for projects with large bunkhouses or communal sleeping quarters."
+
+    },
+    {id:3,
+        title:"Jack and Jill Connected Rooms",
+        desc:"Manage interconnected rooms with shared en-suite bathrooms. Utilize visual room blocking tools to ensure workers of the same gender are assigned to connected rooms."
+
+    },
+    {id:4,
+        title:"Mixed Shift or Hot Bedding",
+        desc:"The system is equipped to host two workers in the same room, with the flexibility to set up the room with one or two beds. SmartLodge can also assist staff in ensuring guests sharing a room are on opposite shifts (dayshift and nightshift)."
+
+    },
+
+]
