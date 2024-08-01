@@ -6,6 +6,7 @@ import LodgingSlider from "./LodgingSlider";
 import LodgingSliderSlick from "./LodgingSliderSlick";
 import RoomsManagement from "./RoomsManagement";
 import RoomsManagementSecond from "./RoomsManagementSecond";
+import Reception from "./Reception";
 
 const SmartLodgeMain = () => {
   return (
@@ -17,6 +18,7 @@ const SmartLodgeMain = () => {
       {/* <LodgingSliderSlick/> */}
       <RoomsManagement/>
       <RoomsManagementSecond/>
+      <Reception/>
     </div>
   );
 }

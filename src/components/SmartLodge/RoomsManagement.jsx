@@ -49,7 +49,7 @@ const RoomsManagement = () => {
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100'}`}>
+                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100'} border-b-[#CDD5DF] border-b-[1px]`}>
                                               {item.desc}
                     </div>
                   </div>
