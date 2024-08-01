@@ -37,12 +37,12 @@ const Reception = () => {
     ]
 
   return (
-    <div className="w-full bg-[#FCFBF8] py-10 lg:py-20">
-        <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px]">
-        <h2 className='self-center text-[25px] md:text-[32px] lg:text-[36px] lg:leading-[45px] xl:text-h2 text-custom-heading font-gilroyBold xl:leading-[3rem] border-b-4 border-b-custom-button'>
+    <div className="w-full relative bg-[#FCFBF8] py-10 lg:py-20">
+        <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px] ">
+        <h2 className='self-center heading-h2 border-b-4 border-b-custom-button'>
         Reception & Front Desk
                 </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-8 z-10">
     <div className="flex flex-col gap-6 px-6 py-8">
         <div className="font-gilroyBold font-normal text-custom-heading text-[26px] leading-[32px] md:text-[32px] md:leading-[38px]">
             Seamless Arrivals & Departures for Guests
@@ -67,6 +67,21 @@ const Reception = () => {
             </div>
     </div>))}
     </div>
+
+        </div>
+        <div className="absolute left-0 bottom-0 z-0">
+        <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clipPath="url(#clip0_82_47)">
+<path d="M200 100H100V200H200V100Z" fill="#ECE7E0"/>
+<path d="M100 100H0V200H100V100Z" fill="#ECE7E0"/>
+<path d="M100 0H0V100H100V0Z" fill="#ECE7E0"/>
+</g>
+<defs>
+<clipPath id="clip0_82_47">
+<rect width="200" height="200" fill="white"/>
+</clipPath>
+</defs>
+</svg>
 
         </div>
     </div>

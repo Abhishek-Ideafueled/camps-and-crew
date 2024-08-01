@@ -104,6 +104,7 @@ export default {
     },
     boxShadow: {
       'custom-shadow': ' 0px 32px 64px -12px #10182824',
+      'custom-shadow2':'0px 8px 8px -4px rgba(16, 24, 40, 0.03), 0px 20px 24px -4px rgba(16, 24, 40, 0.08)'
     },
   },
    
