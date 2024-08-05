@@ -10,6 +10,7 @@ import Reception from "./Reception";
 import CheckInAndOut from "./CheckInAndOut";
 import ReceptionAndSupport from "./ReceptionAndSupport";
 import Testimonials from "./Testimonials";
+import Housekeeping from "./Housekeeping";
 
 const SmartLodgeMain = () => {
   return (
@@ -25,6 +26,7 @@ const SmartLodgeMain = () => {
       <CheckInAndOut/>
       <ReceptionAndSupport/>
       <Testimonials/>
+      <Housekeeping/>
     </div>
   );
 }
