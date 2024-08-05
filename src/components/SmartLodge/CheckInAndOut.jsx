@@ -87,17 +87,17 @@ const CheckInAndOut = () => {
         <div className="flex main-container mx-auto text-nowrap overflow-x-auto gap-6 lg:gap-8 font-gilroyBold text-base md:text-lg md:leading-6 lg:text-xl lg:leading-6 no-scrollbar">
         <div 
         onClick={()=>setActiveTab("mobile")}
-        className={`${activeTab === 'mobile' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center  w-[140px] md:w-[181px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'mobile' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[140px] md:w-[181px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
           Mobile Check In
         </div>
         <div
            onClick={()=>setActiveTab("kiosk")}
-        className={`${activeTab === 'kiosk' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'kiosk' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
         Kiosk Check In and Check Out
         </div>
         <div 
            onClick={()=>setActiveTab("automatic")}
-        className={`${activeTab === 'automatic' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'automatic' ? 'text-custom-heading border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
         Automatic Key Activation
         </div>
         </div>

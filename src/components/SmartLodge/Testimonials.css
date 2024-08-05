@@ -1,0 +1,24 @@
+/* .testimonial-slider .swiper.swiper-initialized .swiper-slide{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+} */
+
+.testimonials-slider .slick-slider.slick-initialized{
+    width: 100% !important;
+
+}
+
+
+
+.testimonials-slider .slick-slider.slick-initialized .slick-slide.slick-active div{
+    width: 100%;
+    /* display: flex;
+    justify-content: center;
+    justify-self: center; */
+    opacity: 100%;
+}
+
+/* .testimonials-slider .slick-slider.slick-initialized .slick-slide.slick-active .slick-center .slick-current{
+    background-color: black;
+} */
