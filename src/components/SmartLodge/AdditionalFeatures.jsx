@@ -63,7 +63,7 @@ const AdditionalFeatures = () => {
                 <div className="flex flex-col gap-8 w-[384px]" >
                   <div>
                     <img
-                      className="rounded-2xl "
+                      className="rounded-2xl w-[384px] h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
