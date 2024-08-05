@@ -13,6 +13,7 @@ import Testimonials from "./Testimonials";
 import Housekeeping from "./Housekeeping";
 import MobileHousekeeping from "./MobileHousekeeping";
 import Reports from "./Reports";
+import SystemIntegrations from "./SystemIntegrations";
 
 const SmartLodgeMain = () => {
   return (
@@ -31,6 +32,7 @@ const SmartLodgeMain = () => {
       <Housekeeping/>
       <MobileHousekeeping/>
       <Reports/>
+      <SystemIntegrations/>
     </div>
   );
 }
