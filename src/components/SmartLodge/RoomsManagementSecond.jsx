@@ -32,13 +32,15 @@ const RoomsManagementSecond = () => {
             <div
               className="flex flex-col cursor-pointer"
               key={item.id}
-              onClick={() => handleAccordionClick(item.id)}
+              
             >
               <div className={`${
                     activeId === item.id
                       ? "opacity-100"
                       : "opacity-50"
-                  } font-gilroyBold text-custom-heading text-lg leading-[22px] lg:text-xl lg:leading-[24px] flex items-center justify-between h-[56px]`}>
+                  } font-gilroyBold text-custom-heading text-lg leading-[22px ] z-10 lg:text-xl lg:leading-[24px] flex items-center justify-between h-[56px]`}
+                  onClick={() => handleAccordionClick(item.id)}
+                  >
                 <span className="flex items-center gap-3">
                     <FaCircleCheck className="text-[#189AD2]"  size={30} />{item.title}</span>
                 <span
@@ -55,7 +57,7 @@ const RoomsManagementSecond = () => {
                 className={`${
                   activeId !== item.id
                     ? "z-0 h-0 bg-transparent text-transparent "
-                    : "font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100"
+                    : "font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2"
                 } border-b-[#CDD5DF] border-b-[1px]`}
               >
                 {item.desc}

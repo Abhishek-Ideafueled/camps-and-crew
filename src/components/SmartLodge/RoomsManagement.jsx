@@ -43,13 +43,15 @@ const RoomsManagement = () => {
                   roomAccordianData.map((item)=>(
                     <div className="flex flex-col cursor-pointer" key={item.id} 
                     // onClick={()=>setActive({id:item.id, isActive: !active.isActive})}
-                    onClick={() => handleAccordionClick(item.id)}
+                   
                     >
-                    <div className="font-gilroyBold text-custom-heading text-lg lg:text-xl leading-[24px] flex items-center justify-between h-[56px]">
+                    <div
+                     onClick={() => handleAccordionClick(item.id)}
+                    className="font-gilroyBold text-custom-heading text-lg lg:text-xl z-10 leading-[24px] flex items-center justify-between h-[56px]">
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100'} border-b-[#CDD5DF] border-b-[1px]`}>
+                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2'}  border-b-[#CDD5DF] border-b-[1px]`}>
                                               {item.desc}
                     </div>
                   </div>

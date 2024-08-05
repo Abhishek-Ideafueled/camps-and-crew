@@ -7,6 +7,7 @@ const ReceptionAndSupport = () => {
 
     const [activeId, setActiveId] = useState(1);
   const [activeImageId, setActiveImageId] = useState(1);
+  const [activeColor,setActiveColor] = useState(1);
 
   const handleAccordionClick = (id) => {
     if (activeId === id) {
@@ -16,6 +17,10 @@ const ReceptionAndSupport = () => {
       setActiveImageId(id);
     }
   };
+
+  const handleActiveColor=(id)=>{
+    setActiveColor(id);
+  }
 
   return (
     <div className="w-full bg-custom-back">
@@ -35,21 +40,21 @@ const ReceptionAndSupport = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10 items-center">
 
-            <div className="flex flex-col px-6 bg-custom-heading">
+            <div className="flex flex-col bg-custom-heading">
             {receptionAccordianData.map((item)=>(
                <div 
-            //    className={   `${activeId === item.id ? 'bg-[#0F658D]' : ''} flex flex-col cursor-pointer`} 
-               className="flex flex-col cursor-pointer"
+               className={   `${activeColor === item.id ? 'bg-[#0F658D]' : ''} flex flex-col cursor-pointer`} 
+            //    className="flex flex-col cursor-pointer"
                key={item.id} 
                
                >
                <div
-                onClick={() => handleAccordionClick(item.id)}
+                onClick={() => {handleAccordionClick(item.id); setActiveColor(item.id)}}
                className="font-gilroyBold text-white text-lg z-10 lg:text-xl leading-[24px] flex items-center justify-between h-[72px] p-6">
                  {item.title}
                 <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                </div>
-              <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-white text-base transition-all duration-300 delay-100 px-6 pb-6'} border-b-[0.5px] border-black/80`}>
+              <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-white text-base transition-all duration-300 delay-100 px-6 pb-6'} border-b-[0.5px] border-[#00000080] border-opacity-10`}>
                                          {item.desc}
                </div>
              </div>
