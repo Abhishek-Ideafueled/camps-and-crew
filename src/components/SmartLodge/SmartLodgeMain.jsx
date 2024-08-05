@@ -12,6 +12,7 @@ import ReceptionAndSupport from "./ReceptionAndSupport";
 import Testimonials from "./Testimonials";
 import Housekeeping from "./Housekeeping";
 import MobileHousekeeping from "./MobileHousekeeping";
+import Reports from "./Reports";
 
 const SmartLodgeMain = () => {
   return (
@@ -29,6 +30,7 @@ const SmartLodgeMain = () => {
       <Testimonials/>
       <Housekeeping/>
       <MobileHousekeeping/>
+      <Reports/>
     </div>
   );
 }
