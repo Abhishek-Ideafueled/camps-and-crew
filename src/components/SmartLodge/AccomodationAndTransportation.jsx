@@ -89,6 +89,10 @@ const AccomodationAndTransportation = () => {
               </div>
             </div>
             </div>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">Speak to sales</button>
+              <button className="uppercase font-ttCommonProNormal font-semibold text-custom-blue hover:border-custom-button border-custom-blue border-[1px] py-4 px-10 rounded">checkout enroute</button>
+            </div>
         </div>
       
     </div>
