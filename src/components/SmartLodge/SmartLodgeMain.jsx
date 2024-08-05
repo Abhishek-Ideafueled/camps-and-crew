@@ -3,11 +3,12 @@ import SmartLodgeHeader from "./SmartLodgeHeader";
 import SlidingComp from "../HomePage/SlidingComp";
 import ElevatingEfficiency from "./ElevatingEfficiency";
 import LodgingSlider from "./LodgingSlider";
-import LodgingSliderSlick from "./LodgingSliderSlick";
+// import LodgingSliderSlick from "./LodgingSliderSlick";
 import RoomsManagement from "./RoomsManagement";
 import RoomsManagementSecond from "./RoomsManagementSecond";
 import Reception from "./Reception";
 import CheckInAndOut from "./CheckInAndOut";
+import ReceptionAndSupport from "./ReceptionAndSupport";
 
 const SmartLodgeMain = () => {
   return (
@@ -21,6 +22,7 @@ const SmartLodgeMain = () => {
       <RoomsManagementSecond/>
       <Reception/>
       <CheckInAndOut/>
+      <ReceptionAndSupport/>
     </div>
   );
 }

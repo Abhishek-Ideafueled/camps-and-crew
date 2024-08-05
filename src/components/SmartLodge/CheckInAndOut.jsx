@@ -13,7 +13,7 @@ const CheckInAndOut = () => {
            <h2 className="heading-h2">
            Automate Check In and Check Out
            </h2>
-           <p className="font-ttCommonProNormal font-medium text-lg text-custom-body ">
+           <p className="font-ttCommonProNormal font-medium text-base leading-6 md:text-lg md:leading-6 text-custom-body ">
            SmartLodge offers optional automation features to further expedite check ins and check outs for camps managing large group arrivals and departures. Ideal for camps housing large workforces.
            </p>
         </div>

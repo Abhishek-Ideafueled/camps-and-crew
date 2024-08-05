@@ -45,7 +45,7 @@ const RoomsManagement = () => {
                     // onClick={()=>setActive({id:item.id, isActive: !active.isActive})}
                     onClick={() => handleAccordionClick(item.id)}
                     >
-                    <div className="font-gilroyBold text-custom-heading text-xl leading-[24px] flex items-center justify-between h-[56px]">
+                    <div className="font-gilroyBold text-custom-heading text-lg lg:text-xl leading-[24px] flex items-center justify-between h-[56px]">
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
