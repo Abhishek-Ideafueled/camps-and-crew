@@ -91,7 +91,10 @@ const AdditionalFeatures = () => {
                       onClick={()=>handleAccordionClick(item.id)}
                       className="flex justify-center cursor-pointer text-custom-body"
                     >
-                     <IoIosArrowDown />
+                      <span 
+                      className={`${readMore === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'} w-[24px] h-[24px]`}
+                      ><IoIosArrowDown className='' /></span>
+                     
                     </div>
                   </div>
               </div>  </SwiperSlide> 

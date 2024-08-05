@@ -15,6 +15,7 @@ import MobileHousekeeping from "./MobileHousekeeping";
 import Reports from "./Reports";
 import SystemIntegrations from "./SystemIntegrations";
 import AdditionalFeatures from "./AdditionalFeatures";
+import SmartLodgeFastFacts from "./SmartLodgeFastFacts";
 
 const SmartLodgeMain = () => {
   return (
@@ -35,6 +36,7 @@ const SmartLodgeMain = () => {
       <Reports/>
       <SystemIntegrations/>
       <AdditionalFeatures/>
+      <SmartLodgeFastFacts/>
     </div>
   );
 }
