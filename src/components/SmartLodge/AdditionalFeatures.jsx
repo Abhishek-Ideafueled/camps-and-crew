@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { featuresArr } from './AdditionalFeaturesData';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
+import './AdditionalFeatures.css';
+import { IoIosArrowDown } from 'react-icons/io';
 
 const AdditionalFeatures = () => {
 
@@ -30,7 +32,7 @@ const AdditionalFeatures = () => {
           <Swiper 
           modules={[Navigation]}
           spaceBetween={20}
-          slidesPerView={3}
+          slidesPerView="3"
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           observer={true}
@@ -41,7 +43,11 @@ const AdditionalFeatures = () => {
             swiper.navigation.update();
           }}
         breakpoints={
-         { 
+         {360:{
+          slidesPerView:1,
+          spaceBetween:20
+         }, 
+
           767: {
             slidesPerView: 2,
             spaceBetween: 20
@@ -60,10 +66,10 @@ const AdditionalFeatures = () => {
            
               {featuresArr.map((item) => (
                 <SwiperSlide key={item.id}>
-                <div className="flex flex-col gap-8 w-[384px]" >
+                <div className="flex flex-col gap-8 w-full max-w-[250px] lg:max-w-[384px]" >
                   <div>
                     <img
-                      className="rounded-2xl w-[384px] h-[300px] object-cover"
+                      className="rounded-2xl max-w-[384px] max-h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
@@ -75,7 +81,7 @@ const AdditionalFeatures = () => {
                     <h3 className="text-2xl leading-[28px] font-gilroyBold text-custom-heading">
                       {item.title}
                     </h3>
-                    <p>
+                    <p className='font-ttCommonProRegular text-custom-body text-base leading-[25px]'>
                       {readMore === item.id
                         ? item.body
                         : `${item.body.substring(0, 150)}...`}
@@ -83,9 +89,9 @@ const AdditionalFeatures = () => {
 
                     <div
                       onClick={()=>handleAccordionClick(item.id)}
-                      className="text-center"
+                      className="flex justify-center cursor-pointer text-custom-body"
                     >
-                      Read More
+                     <IoIosArrowDown />
                     </div>
                   </div>
               </div>  </SwiperSlide> 

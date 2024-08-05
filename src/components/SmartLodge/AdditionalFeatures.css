@@ -1,0 +1,9 @@
+.features-slider .swiper-backface-hidden .swiper-slide{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.features-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    overflow: hidden;
+}
