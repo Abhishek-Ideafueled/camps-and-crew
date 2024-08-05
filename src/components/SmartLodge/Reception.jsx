@@ -39,7 +39,7 @@ const Reception = () => {
   return (
     <div className="w-full relative bg-[#FCFBF8] py-10 lg:py-20">
         <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px] ">
-        <h2 className='self-center heading-h2 border-b-4 border-b-custom-button'>
+        <h2 className='self-center heading-h2 border-b-[8px] border-b-custom-button'>
         Reception & Front Desk
                 </h2>
     <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-8 z-10">

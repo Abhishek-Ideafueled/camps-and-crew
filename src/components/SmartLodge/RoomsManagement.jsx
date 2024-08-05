@@ -23,7 +23,7 @@ const RoomsManagement = () => {
     <div className='w-full py-20'>
         <div className='main-container mx-auto flex flex-col gap-10 items-center'>
             <div className='flex flex-col gap-6 items-center'>
-                <h2 className='text-[25px] md:text-[32px] lg:text-[36px] lg:leading-[45px] xl:text-h2 text-custom-heading font-gilroyBold xl:leading-[3rem] border-b-4 border-b-custom-button'>
+                <h2 className='text-[25px] md:text-[32px] lg:text-[36px] lg:leading-[45px] xl:text-h2 text-custom-heading font-gilroyBold xl:leading-[3rem] border-b-[8px] border-b-custom-button'>
                 Rooms Management
                 </h2>
                 <span className='text-base md:text-lg text-custom-body font-ttCommonProMedium text-center'>
