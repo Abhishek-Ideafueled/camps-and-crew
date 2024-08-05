@@ -1,0 +1,110 @@
+import { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+
+
+const MobileHousekeeping = () => {
+
+    const [activeId, setActiveId] = useState(1);
+    const [ activeImageId,setActiveImageId] = useState(1);
+    
+    const handleAccordionClick = (id) => {
+      if (activeId === id) {
+        setActiveId(null);
+      } else {
+        setActiveId(id);
+        setActiveImageId(id);
+      }
+    };
+
+    const HousekeepingArr = [
+        {
+            id:1,
+            title:"Real-Time Room Status Updates After Each Cleaning",
+            desc:"With a phone or tablet, housekeeping staff can mark rooms as vacant and clean immediately after finishing a cleaning. Updated room statuses are immediately viewable to front desk staff, enabling them to assign rooms as soon as they are ready.",
+
+        },
+        {
+            id:2,
+            title:"Conduct Walkdowns Using a Mobile Device",
+            desc:"With a phone or tablet, housekeepers conducting daily room inspections can log if rooms are vacant or occupied and if they require cleaning.",
+            
+        },
+        {
+            id:3,
+            title:"Log Rooms Requiring Maintenance from a Mobile Device",
+            desc:"Using a mobile device, housekeepers can quickly log maintenance tickets for rooms with damage or in need of repairs. Additionally, administrators can enable cleaning staff to capture and attach photos of the damage directly to these tickets from the device’s camera..",
+            
+        },
+        {
+            id:4,
+            title:"Monitor Housekeeper Productivity and Safety",
+            desc:"Supervisors gain immediate insight into their team's progress during a shift, ensuring cleanings are completed efficiently. If updates from cleaning staff pause unexpectedly, supervisors have the option to check in with their staff at that time.",
+            
+        }
+    ]
+
+  return (
+    <div className="w-full">
+        <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[60px]">
+            <div className="flex flex-col max-w-[959px] items-center text-center ">
+                <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] ">
+                HOUSEKEEPING AND MAINTENANCE
+                </span>
+                <h2 className="heading-h2 pb-6 pt-4">
+                Mobile Housekeeping for Faster Room Turnover
+                </h2>
+                <p className="sub-heading">
+                Equip your cleaning staff with mobile devices to fast-track room cleaning and maintenance ticket resolution.Minimize latency between the time a room is cleaned and later assigned to the next guest.
+                </p>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 w-full items-center'>
+
+              <div className='py-[35px] max-w-[588px]'>
+
+                <div className='font-gilroyBold text-[25px] md:text-[32px] leading-[38px] text-custom-heading mb-6 '>
+                Flexible Ways to Book Your Rooms
+                </div>
+                <div className='flex flex-col'>
+                 {
+                  HousekeepingArr.map((item)=>(
+                    <div className="flex flex-col cursor-pointer" key={item.id}                   
+                    >
+                    <div
+                     onClick={() => handleAccordionClick(item.id)}
+                    className="font-gilroyBold text-custom-heading text-lg lg:text-xl z-10 leading-[24px] flex items-center justify-between h-[56px]">
+                      {item.title}
+                     <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
+                    </div>
+                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2'}  border-b-[#CDD5DF] border-b-[1px]`}>
+                                              {item.desc}
+                    </div>
+                  </div>
+                  ))
+                 }
+
+                </div>
+
+              </div>
+            <div className="h-[480px] max-w-[588px] relative">
+                 <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500  rounded-2xl`}
+                  alt="Remote camp attendant studies a tablet in a bedroom recently cleaned by her."
+                  src="/housekeeper-studies-tablet-worker-room.jpg"/>
+                 <img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+                  alt="Housekeeper in a bedroom constructed of modular construction studies a tablet she holds."
+                  src="/housekeeper-bedroom-fly-in-fly-out-camp.jpg"/>
+                 <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+                  alt="Maintenance staff fixes a drawer."
+                  src="/maintenance-worker-fixes-drawers.jpg"/>
+                 <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+                  alt="Cleaning person rummages through cleaning supplies in the hallway of a remote camp with multiple bedroom doors open and illuminated."
+                  src="/housekeeping.jpg"/>
+                 
+            </div>
+            </div>
+        </div>
+      
+    </div>
+  )
+}
+
+export default MobileHousekeeping
