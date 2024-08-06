@@ -3,7 +3,7 @@ import { FaCircleCheck } from "react-icons/fa6"
 
 const Reports = () => {
   return (
-    <div className="w-full bg-[#FAFAFA]" id="reports">
+    <div className="w-full bg-[#FAFAFA]" >
         <div className="main-container mx-auto flex flex-col items-center gap-[60px] py-10 lg:py-20">
             <div className="flex flex-col items-center text-center max-w-[959px]">
 <h2  className='heading-h2 border-b-[8px] border-b-custom-button'>

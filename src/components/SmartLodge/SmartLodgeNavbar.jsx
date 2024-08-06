@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const SmartLodgeNavbar = () => {
+const SmartLodgeNavbar = ({activeNav}) => {
     const [activeId,setActiveId] = useState("");
     const [showNav,setShowNav] = useState();
 
@@ -16,17 +16,18 @@ const SmartLodgeNavbar = () => {
      
       useEffect(()=>{
         const handleShowNav=()=>{
-            if(window.scrollY >= 2300)
+            if(window.scrollY >=2300)
             {
                 setShowNav(true);
             }else setShowNav(false);
+            setActiveId(activeNav);
         }
 
         window.addEventListener("scroll",handleShowNav);
 return ()=>{
     window.removeEventListener("scroll",handleShowNav)
 }
-    },[])
+    },[activeNav])
 
   return (
     <div className={`${showNav ? 'w-full bg-custom-back z-30 h-[74px] lg:h-[106px]' : 'w-0 h-0 z-0 bg-transparent'} fixed top-0 `}>
@@ -53,7 +54,7 @@ return ()=>{
        </li></Link>
        <Link href="/#systemIntegrations" onClick={()=>handleClickScroll("systemIntegrations")}>
        <li className={`${activeId ==="systemIntegrations"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
-       System Inegrations
+       System Integrations
        </li></Link>
        <Link href="/#features" onClick={()=>handleClickScroll("features")}>
        <li className={`${activeId ==="features"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>

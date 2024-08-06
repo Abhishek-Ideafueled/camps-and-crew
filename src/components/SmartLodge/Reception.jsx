@@ -37,7 +37,7 @@ const Reception = () => {
     ]
 
   return (
-    <div className="w-full relative bg-[#FCFBF8] py-10 lg:py-20" id="reception">
+    <div className="w-full relative bg-[#FCFBF8] py-10 lg:py-20">
         <div className="main-container mx-auto flex flex-col gap-[30px] md:gap-[60px] ">
         <h2 className='self-center heading-h2 border-b-[8px] border-b-custom-button'>
         Reception & Front Desk

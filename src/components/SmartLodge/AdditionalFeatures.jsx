@@ -23,7 +23,7 @@ const AdditionalFeatures = () => {
     // let textBody= "Guest profile configuration is fully customizable. Track fields such as: First Name, Last Name, Company, Department, Point of Hire, Rotation, Permanent Room Assignment, Contact Info, etc. Guest profile data may be imported into SmartLodge during implementation or bi-directionally synced on an ongoing basis."
 
   return (
-    <div className="w-full" id='features'>
+    <div className="w-full" >
       <div className="main-container mx-auto flex flex-col items-center gap-[60px] py-10 lg:py-20">
         <h2 className="heading-h2 border-b-[8px] border-b-custom-button">
           Additional Features

@@ -19,13 +19,13 @@ import SmartLodgeFastFacts from "./SmartLodgeFastFacts";
 import AccomodationAndTransportation from "./AccomodationAndTransportation";
 import FAQs from "./FAQs";
 import DemoForm from "../HomePage/DemoForm";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Aos from "aos";
 import SmartLodgeNavbar from "./SmartLodgeNavbar";
 
 const SmartLodgeMain = () => {
 
-  
+  const [activeNav,setActiveNav] = useState("");
   useEffect(()=>{
     Aos.init(
       {duration:1000,
@@ -33,6 +33,21 @@ const SmartLodgeMain = () => {
       }
     );
 },[])
+
+useEffect(() => {
+  const targetSections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        setActiveNav(entry.target.getAttribute("id")); 
+      }
+    });
+  });
+  targetSections.forEach((section) => {
+    observer.observe(section);
+  });
+}, []);
 
 
   return (
@@ -43,18 +58,35 @@ const SmartLodgeMain = () => {
       <ElevatingEfficiency/>
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
-      <SmartLodgeNavbar/>
-      <RoomsManagement/>
-      <RoomsManagementSecond/>
-      <Reception/>
+      <SmartLodgeNavbar activeNav={activeNav}/>
+      <section id="roomsManagement">
+        <RoomsManagement/>
+        <RoomsManagementSecond/>
+      </section>
+      <section id="reception">
+        <Reception/>
       <CheckInAndOut/>
       <ReceptionAndSupport/>
       <Testimonials/>
-      <Housekeeping/>
+      </section>
+      
+      <section id="housekeeping">
+  <Housekeeping/>
       <MobileHousekeeping/>
-      <Reports/>
-      <SystemIntegrations/>
-      <AdditionalFeatures/>
+      </section>
+      
+      <section id="reports">
+          <Reports/>
+      </section>
+    
+    <section  id="systemIntegrations">
+<SystemIntegrations/>
+    </section>
+    
+      <section id='features'>
+<AdditionalFeatures/>
+      </section>
+      
       <SmartLodgeFastFacts/>
       <AccomodationAndTransportation/>
       <FAQs/>

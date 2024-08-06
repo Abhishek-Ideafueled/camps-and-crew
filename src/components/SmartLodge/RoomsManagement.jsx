@@ -20,7 +20,7 @@ const RoomsManagement = () => {
 
   return (
     
-    <div className='w-full py-20' id="roomsManagement">
+    <div className='w-full py-20'>
         <div className='main-container mx-auto flex flex-col gap-10 items-center'>
             <div className='flex flex-col gap-6 items-center'>
                 <h2 className='text-[25px] md:text-[32px] lg:text-[36px] lg:leading-[45px] xl:text-h2 text-custom-heading font-gilroyBold xl:leading-[3rem] border-b-[8px] border-b-custom-button'>
