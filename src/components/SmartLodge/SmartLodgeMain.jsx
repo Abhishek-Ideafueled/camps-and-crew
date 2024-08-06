@@ -25,7 +25,7 @@ import SmartLodgeNavbar from "./SmartLodgeNavbar";
 
 const SmartLodgeMain = () => {
 
-  const [activeNav,setActiveNav] = useState("");
+  // const [activeNav,setActiveNav] = useState("");
   useEffect(()=>{
     Aos.init(
       {duration:1000,
@@ -34,20 +34,24 @@ const SmartLodgeMain = () => {
     );
 },[])
 
-useEffect(() => {
-  const targetSections = document.querySelectorAll("section");
+// useEffect(() => {
+//   const targetSections = document.querySelectorAll("section");
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setActiveNav(entry.target.getAttribute("id")); 
-      }
-    });
-  });
-  targetSections.forEach((section) => {
-    observer.observe(section);
-  });
-}, []);
+//   const observer = new IntersectionObserver((entries) => {
+//     entries.forEach((entry) => {
+//       if (entry.isIntersecting) {
+//         setActiveNav(entry.target.getAttribute("id")); 
+//       }
+//     });
+//   });
+//   targetSections.forEach((section) => {
+//     observer.observe(section);
+//   });
+
+//   return ()=>{
+//     observer.disconnect();
+//   }
+// }, []);
 
 
   return (
@@ -58,7 +62,7 @@ useEffect(() => {
       <ElevatingEfficiency/>
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
-      <SmartLodgeNavbar activeNav={activeNav}/>
+      <SmartLodgeNavbar/>
       <section id="roomsManagement">
         <RoomsManagement/>
         <RoomsManagementSecond/>

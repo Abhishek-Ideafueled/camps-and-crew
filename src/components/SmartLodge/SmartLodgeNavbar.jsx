@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
-const SmartLodgeNavbar = ({activeNav}) => {
+const SmartLodgeNavbar = () => {
     const [activeId,setActiveId] = useState("");
     const [showNav,setShowNav] = useState();
 
@@ -20,14 +20,31 @@ const SmartLodgeNavbar = ({activeNav}) => {
             {
                 setShowNav(true);
             }else setShowNav(false);
-            setActiveId(activeNav);
+            // setActiveId(activeNav);
         }
 
         window.addEventListener("scroll",handleShowNav);
 return ()=>{
     window.removeEventListener("scroll",handleShowNav)
 }
-    },[activeNav])
+    },[])
+
+
+    useEffect(() => {
+      const targetSections = document.querySelectorAll("section");
+    
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveId(entry.target.getAttribute("id"));
+            
+          }
+        });
+      });
+      targetSections.forEach((section) => {
+        observer.observe(section);
+      });
+    }, []);
 
   return (
     <div className={`${showNav ? 'w-full bg-custom-back z-30 h-[74px] lg:h-[106px]' : 'w-0 h-0 z-0 bg-transparent'} fixed top-0 `}>
@@ -35,29 +52,29 @@ return ()=>{
          <ul className='flex items-center overflow-x-auto text-nowrap lg:text-wrap no-scrollbar'>
 
        <Link href="/#roomsManagement" onClick={()=>handleClickScroll("roomsManagement")}>
-       <li className={`${activeId ==="roomsManagement"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="roomsManagement"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
        Rooms Management
        </li></Link>
        <Link href="/#reception" onClick={()=>handleClickScroll("reception")}>
-       <li className={`${activeId ==="reception"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="reception"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
        Reception & Front Desk
        </li></Link>
        <Link href="/#housekeeping" onClick={()=>handleClickScroll("housekeeping")}>
-       <li className={`${activeId ==="housekeeping"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="housekeeping"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
      
        Housekeeping & Maintenance
                         
        </li></Link>
        <Link href="/#reports" onClick={()=>handleClickScroll("reports")}>
-       <li className={`${activeId ==="reports"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="reports"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
       Reporting & Analytics
        </li></Link>
        <Link href="/#systemIntegrations" onClick={()=>handleClickScroll("systemIntegrations")}>
-       <li className={`${activeId ==="systemIntegrations"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="systemIntegrations"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
        System Integrations
        </li></Link>
        <Link href="/#features" onClick={()=>handleClickScroll("features")}>
-       <li className={`${activeId ==="features"? 'text-custom-button border-b-custom-button border-b-[4px]' : 'text-white'} text-base font-gilroyBold px-3 text-center`}>
+       <li className={`${activeId ==="features"? 'text-custom-button border-b-custom-button ' : 'border-b-transparent text-white'} transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center`}>
       Additional Features
        </li></Link>
          </ul>
