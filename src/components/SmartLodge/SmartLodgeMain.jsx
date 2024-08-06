@@ -18,8 +18,22 @@ import AdditionalFeatures from "./AdditionalFeatures";
 import SmartLodgeFastFacts from "./SmartLodgeFastFacts";
 import AccomodationAndTransportation from "./AccomodationAndTransportation";
 import FAQs from "./FAQs";
+import DemoForm from "../HomePage/DemoForm";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const SmartLodgeMain = () => {
+
+  
+  useEffect(()=>{
+    Aos.init(
+      {duration:1000,
+        easing: "ease-in-out",
+      }
+    );
+},[])
+
+
   return (
     <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
       <SmartLodgeHeader/>
@@ -41,6 +55,7 @@ const SmartLodgeMain = () => {
       <SmartLodgeFastFacts/>
       <AccomodationAndTransportation/>
       <FAQs/>
+      <DemoForm/>
     </div>
   );
 }

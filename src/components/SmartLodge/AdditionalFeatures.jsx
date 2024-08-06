@@ -32,7 +32,7 @@ const AdditionalFeatures = () => {
           <Swiper 
           modules={[Navigation]}
           spaceBetween={20}
-          slidesPerView="3"
+          slidesPerView="auto"
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
           observer={true}
@@ -42,26 +42,26 @@ const AdditionalFeatures = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-        breakpoints={
-         {360:{
-          slidesPerView:1,
-          spaceBetween:20
-         }, 
+        // breakpoints={
+        //  {360:{
+        //   slidesPerView:1,
+        //   spaceBetween:20
+        //  }, 
 
-          767: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          1000: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          1240:{
-            slidesPerView: 3,
-            spaceBetween: 20
-          }
-        }
-        }
+        //   767: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20
+        //   },
+        //   1000: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 20
+        //   },
+        //   1240:{
+        //     slidesPerView: 3,
+        //     spaceBetween: 20
+        //   }
+        // }
+        // }
           >
            
               {featuresArr.map((item) => (

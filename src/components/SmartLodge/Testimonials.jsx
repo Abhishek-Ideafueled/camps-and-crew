@@ -1,20 +1,15 @@
 
 import './Testimonials.css';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { useRef } from 'react';
 
 const Testimonials = () => {
 
-    const settings={
-        className: "center",
-        centerMode: true,
-        infinite: true,
-        // centerPadding: "60px",
-        slidesToShow: 1,
-        speed: 500,
-    }
-
+    const prevRef = useRef(null);
+    const nextRef = useRef(null);
 
 
   return (
@@ -69,53 +64,160 @@ const Testimonials = () => {
             </svg>
           </span>
         </div>
-
-            
       </div>
-      <div className='testimonials-slider w-full'>
-        <Slider {...settings}>
-            <div className='max-w-[973px] px-4'>
-            <div className='flex flex-col w-full rounded-2xl opacity-50 bg-[#ECE7E0] p-10 gap-8'>
-                <p className='font-ttCommonProRegular text-2xl leading-[38px] text-custom-body'>
-                Besides dealing with rooms and travel, Camps & Crew has become an important information hub for many departments – Accounting, Construction, Food Services, Housekeeping and Laundry, Safety and Security are all using SmartLodge data for planning and day-to-day operations.
-                </p>
-                <div className='flex flex-col gap-[7px]'>
-                <h3 className='font-gilroyBold text-xl leading-6 text-custom-heading'>Group Lead, Mine Site Operations</h3>
-                <span className='font-ttCommonProNormal'>
-                Brucejack Mine, British Columbia, Canada
-                </span>
-                </div>
-            </div>  
-            </div>
-            <div className='max-w-[973px] px-4'>
-            <div className='flex flex-col w-full rounded-2xl opacity-50 bg-[#ECE7E0] p-10 gap-8'>
-                <p className='font-ttCommonProRegular text-2xl leading-[38px] text-custom-body'>
-                The check in process and our housekeeping operations are probably the areas where we’ve seen the greatest benefit with the system. The ability to create custom charge sheets has also been a game-changer for our billing department. Our time to reconcile bills with paying clients has gone from a matter of weeks to hours.
-                </p>
-                <div className='flex flex-col gap-[7px]'>
-                <h3 className='font-gilroyBold text-xl leading-6 text-custom-heading'>Workforce Accommodations Lead - Canada</h3>
-                <span className='font-ttCommonProNormal'>
-                Integrated Facilities Management Company
-                </span>
-                </div>
-            </div>  
-            </div>
-            <div className='max-w-[973px] px-4'>
-            <div className='flex flex-col w-full rounded-2xl opacity-50 bg-[#ECE7E0] p-10 gap-8'>
-                <p className='font-ttCommonProRegular text-2xl leading-[38px] text-custom-body'>
-                The system’s Batch Check Ins and Check Outs feature makes managing large work crews efficient, even with changing schedules and travel delays. The system has also greatly helped us to simplify the admin work required to make sure rooms get cleaned on time for our workers and contractors staying on-site.
-                </p>
-                <div className='flex flex-col gap-[7px]'>
-                <h3 className='font-gilroyBold text-xl leading-6 text-custom-heading'>Camp & Hospitality Services Manager</h3>
-                <span className='font-ttCommonProNormal'>
-                Remote Mine Located in Western Africa
-                </span>
-                </div>
-            </div>  
-            </div>
-        </Slider>
+      <div className="testimonials-slider w-full">
+<Swiper
+        slidesPerView="auto"
+        spaceBetween={20}
+        centeredSlides={true}
+        modules={[Pagination, Navigation]}
+        className="mySwiper"
+        loop={true}
+        onInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+          swiper.navigation.init();
+          swiper.navigation.update();
+        }}
+      >
 
-       </div>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  Besides dealing with rooms and travel, Camps & Crew has become
+                  an important information hub for many departments –
+                  Accounting, Construction, Food Services, Housekeeping and
+                  Laundry, Safety and Security are all using SmartLodge data for
+                  planning and day-to-day operations.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Group Lead, Mine Site Operations
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Brucejack Mine, British Columbia, Canada
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  The check in process and our housekeeping operations are
+                  probably the areas where we’ve seen the greatest benefit with
+                  the system. The ability to create custom charge sheets has
+                  also been a game-changer for our billing department. Our time
+                  to reconcile bills with paying clients has gone from a matter
+                  of weeks to hours.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Workforce Accommodations Lead - Canada
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Integrated Facilities Management Company
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  The system’s Batch Check Ins and Check Outs feature makes
+                  managing large work crews efficient, even with changing
+                  schedules and travel delays. The system has also greatly
+                  helped us to simplify the admin work required to make sure
+                  rooms get cleaned on time for our workers and contractors
+                  staying on-site.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Camp & Hospitality Services Manager
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Remote Mine Located in Western Africa
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  Besides dealing with rooms and travel, Camps & Crew has become
+                  an important information hub for many departments –
+                  Accounting, Construction, Food Services, Housekeeping and
+                  Laundry, Safety and Security are all using SmartLodge data for
+                  planning and day-to-day operations.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Group Lead, Mine Site Operations
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Brucejack Mine, British Columbia, Canada
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  The check in process and our housekeeping operations are
+                  probably the areas where we’ve seen the greatest benefit with
+                  the system. The ability to create custom charge sheets has
+                  also been a game-changer for our billing department. Our time
+                  to reconcile bills with paying clients has gone from a matter
+                  of weeks to hours.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Workforce Accommodations Lead - Canada
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Integrated Facilities Management Company
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="w-full px-4">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                  The system’s Batch Check Ins and Check Outs feature makes
+                  managing large work crews efficient, even with changing
+                  schedules and travel delays. The system has also greatly
+                  helped us to simplify the admin work required to make sure
+                  rooms get cleaned on time for our workers and contractors
+                  staying on-site.
+                </p>
+                <div className="flex flex-col gap-[7px] max-h-[]">
+                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                    Camp & Hospitality Services Manager
+                  </h3>
+                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                    Remote Mine Located in Western Africa
+                  </span>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          <div className="w-full flex justify-center gap-4 mt-12">
+        <div className="btn-prev" ref={prevRef}>         
+        </div>
+        <div className="btn-next" ref={nextRef}></div>
+        </div>
+        </Swiper>
+      </div>
     </div>
   );
 }

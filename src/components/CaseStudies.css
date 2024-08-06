@@ -1,0 +1,34 @@
+.test-slider .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* .test-slider .swiper .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #000;
+  } */
+  
+  .test-slider .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: red;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 973px;
+    opacity: 0.5;
+    /* width: 973px !important; */
+  }
+  
+ 
+  .test-slider .swiper-slide.swiper-slide-active{
+ 
+  opacity: 1;
+  }
+  
