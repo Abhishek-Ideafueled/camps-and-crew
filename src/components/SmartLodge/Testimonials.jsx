@@ -91,7 +91,7 @@ const Testimonials = () => {
                   Laundry, Safety and Security are all using SmartLodge data for
                   planning and day-to-day operations.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Group Lead, Mine Site Operations
                   </h3>
@@ -113,7 +113,7 @@ const Testimonials = () => {
                   to reconcile bills with paying clients has gone from a matter
                   of weeks to hours.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Workforce Accommodations Lead - Canada
                   </h3>
@@ -135,7 +135,7 @@ const Testimonials = () => {
                   rooms get cleaned on time for our workers and contractors
                   staying on-site.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Camp & Hospitality Services Manager
                   </h3>
@@ -156,7 +156,7 @@ const Testimonials = () => {
                   Laundry, Safety and Security are all using SmartLodge data for
                   planning and day-to-day operations.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Group Lead, Mine Site Operations
                   </h3>
@@ -178,7 +178,7 @@ const Testimonials = () => {
                   to reconcile bills with paying clients has gone from a matter
                   of weeks to hours.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Workforce Accommodations Lead - Canada
                   </h3>
@@ -200,7 +200,7 @@ const Testimonials = () => {
                   rooms get cleaned on time for our workers and contractors
                   staying on-site.
                 </p>
-                <div className="flex flex-col gap-[7px] max-h-[]">
+                <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
                   <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
                     Camp & Hospitality Services Manager
                   </h3>
