@@ -38,7 +38,7 @@ const Housekeeping = () => {
     ]
 
   return (
-    <div className="w-full relative bg-[#FCFBF8]">
+    <div className="w-full relative bg-[#FCFBF8]" id="housekeeping">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[60px]">
         <h2 className="self-center heading-h2 border-b-[8px] border-b-custom-button">
           Housekeeping and Maintenance

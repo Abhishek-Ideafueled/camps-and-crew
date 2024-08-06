@@ -21,6 +21,7 @@ import FAQs from "./FAQs";
 import DemoForm from "../HomePage/DemoForm";
 import { useEffect } from "react";
 import Aos from "aos";
+import SmartLodgeNavbar from "./SmartLodgeNavbar";
 
 const SmartLodgeMain = () => {
 
@@ -36,11 +37,13 @@ const SmartLodgeMain = () => {
 
   return (
     <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
+      
       <SmartLodgeHeader/>
       <SlidingComp showHeading={false}/>
       <ElevatingEfficiency/>
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
+      <SmartLodgeNavbar/>
       <RoomsManagement/>
       <RoomsManagementSecond/>
       <Reception/>
