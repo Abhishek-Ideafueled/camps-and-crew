@@ -50,7 +50,7 @@ const FAQs = () => {
 
   return (
     <div className="w-full bg-[#F7F5F2]">
-      <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[76px]">
+      <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[76px]">
         <div className="flex flex-col gap-4 items-center text-center">
           <h2 className="heading-h2">FAQs</h2>
           <span>
@@ -100,7 +100,7 @@ const FAQs = () => {
             </svg>
           </span>
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 max-w-[800px] mx-auto">
             {faqArr.map((item)=>(
                 <div className="bg-[#ECE7E0] flex flex-col" key={item.id}>
                     <div className="flex justify-between p-4 items-start z-10" onClick={()=>handleAccordionClick(item.id)}>

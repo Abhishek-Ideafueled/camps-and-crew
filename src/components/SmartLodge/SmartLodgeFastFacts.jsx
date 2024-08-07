@@ -46,7 +46,7 @@ useEffect(()=>{
   return (
     <div className="w-full bg-[#EAE8E3]">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px]">
-            <h2 className="heading-h2">SmartLodge Fast Facts</h2>
+            <h2 className="heading-h2 text-center">SmartLodge Fast Facts</h2>
             <div  ref={gridRef}
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:mx-auto md:items-start gap-4 md:gap-0 lg:gap-8 md:pb-10 w-full">
             <div className='flex flex-col gap-2 max-w-[247px]'>

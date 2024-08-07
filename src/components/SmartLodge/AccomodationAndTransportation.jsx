@@ -5,11 +5,11 @@ import { Link } from "react-router-dom"
 const AccomodationAndTransportation = () => {
   return (
     <div className="w-full">
-        <div className="main-container mx-auto flex flex-col gap-[60px] py-10 lg:py-20 items-center">
+        <div className="main-container mx-auto flex flex-col gap-[30px] lg:gap-[60px] py-10 lg:py-20 items-center">
             <div className="flex flex-col gap-4 max-w-[994px] text-center">
             <div className="flex flex-col gap-2 items-center pb-2">
           <span  className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]"> COMBINED PLATFORM</span> 
-            <div className="flex items-center">
+            <div className="flex items-center gap-2">
             <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full text-custom-back">
                   SmartLodge
                 </button> <FaPlus size={24} />
