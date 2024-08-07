@@ -42,39 +42,39 @@ const AdditionalFeatures = () => {
             swiper.navigation.init();
             swiper.navigation.update();
           }}
-        // breakpoints={
-        //  {360:{
-        //   slidesPerView:1,
-        //   spaceBetween:20
-        //  }, 
+        breakpoints={
+         {360:{
+          slidesPerView:1,
+          spaceBetween:20
+         }, 
 
-        //   767: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20
-        //   },
-        //   1000: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 20
-        //   },
-        //   1240:{
-        //     slidesPerView: 3,
-        //     spaceBetween: 20
-        //   }
-        // }
-        // }
+          767: {
+            slidesPerView: 2,
+            spaceBetween: 20
+          },
+          1000: {
+            slidesPerView: 3,
+            spaceBetween: 20
+          },
+          1240:{
+            slidesPerView: 3,
+            spaceBetween: 20
+          }
+        }
+        }
           >
            
               {featuresArr.map((item) => (
                 <SwiperSlide key={item.id}>
-                <div className="flex flex-col gap-8 w-full max-w-[250px] lg:max-w-[384px]" >
-                  <div>
+                <div className="flex flex-col gap-8 w-full" >
+                  <div className='w-full h-full'>
                     <img
-                      className="rounded-2xl max-w-[384px] max-h-[300px] object-cover"
+                      className="rounded-2xl w-full max-h-[300px] h-full min-h-[195px] lg:min-h-[258px] xl:min-h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
                   </div>
-                  <div className="flex flex-col gap-4 bg-[#F9FAFB] p-6 rounded-2xl">
+                  <div className="flex flex-col gap-4 bg-[#F9FAFB] p-6 rounded-2xl w-full">
                     <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] uppercase">
                       {item.subTitle}
                     </span>
