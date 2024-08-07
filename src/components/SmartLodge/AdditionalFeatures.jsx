@@ -69,13 +69,14 @@ const AdditionalFeatures = () => {
                 <div className="flex flex-col gap-8 w-full" >
                   <div className='w-full h-full'>
                     <img
-                      className="rounded-2xl w-full max-h-[300px] h-full min-h-[195px] lg:min-h-[258px] xl:min-h-[300px] object-cover"
+                      className="rounded-2xl w-full h-full max-h-[300px] lg:min-h-[258px] xl:min-h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
                   </div>
-                  <div className="flex flex-col gap-4 bg-[#F9FAFB] p-6 rounded-2xl w-full">
-                    <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] uppercase">
+                  <div className="flex flex-col justify-between bg-[#F9FAFB] p-6 rounded-2xl w-full h-full min-h-[282px] lg:min-h-[351px] xl:min-h-[282px]">
+                   <div className='flex flex-col gap-4'>
+                     <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] uppercase">
                       {item.subTitle}
                     </span>
                     <h3 className="text-2xl leading-[28px] font-gilroyBold text-custom-heading">
@@ -86,7 +87,7 @@ const AdditionalFeatures = () => {
                         ? item.body
                         : `${item.body.substring(0, 150)}...`}
                     </p>
-
+                    </div>
                     <div
                       onClick={()=>handleAccordionClick(item.id)}
                       className="flex justify-center cursor-pointer text-custom-body"
@@ -97,6 +98,7 @@ const AdditionalFeatures = () => {
                      
                     </div>
                   </div>
+
               </div>  </SwiperSlide> 
               ))}
             <div className="w-full flex justify-center gap-4 mt-12">

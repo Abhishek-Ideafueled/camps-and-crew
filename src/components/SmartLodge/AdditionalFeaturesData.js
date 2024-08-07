@@ -66,7 +66,7 @@ export const featuresArr = [
         {
             id:9,
             subTitle:"crew scheduling",
-            url:"/fifo-worker-dispatch-control-center.jpg",
+            url:"/fifo-worker-dispatch-control-center.png",
             alt:"FIFO worker holds a dispatch device while working at a desk with multiple computers.",
             title:"Superintendent Schedule",
             body:"The Superintendent Schedule includes detailed information such as employee name, number, shift, rotation, craft, location, and future daily room bookings. This comprehensive tool empowers superintendents with a panoramic view of crew rotations, facilitating accurate projections of on-site presence of specific staff, departments, or crews. Leveraging this report, superintendents can ensure the necessary accommodations are reserved and that the correct personnel from each department will be present on-site during all future rotations."
