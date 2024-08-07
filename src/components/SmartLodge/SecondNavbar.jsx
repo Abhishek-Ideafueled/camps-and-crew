@@ -1,10 +1,11 @@
 import { useEffect, useRef } from "react";
 import "./SecondNavbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
+import useNavbarVisibility from "./useNavbarVisibility";
 
-const SecondNavbar = ({ isVisible }) => {
+const SecondNavbar = ({}) => {
   const navRef = useRef();
-
+  const isVisible = useNavbarVisibility();
   useEffect(() => {
     const handleScroll = () => {
       const activeLink = document.querySelector('.active');
