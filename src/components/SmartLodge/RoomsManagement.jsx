@@ -31,9 +31,9 @@ const RoomsManagement = () => {
                 additional accommodations for your remote crews.
                 </span>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-full'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 w-full '>
 
-              <div className='py-[35px] max-w-[588px]'>
+              <div className='py-[35px] max-w-[588px] mx-auto'>
 
                 <div className='font-gilroyBold text-[25px] md:text-[32px] leading-[38px] text-custom-heading mb-6 '>
                 Flexible Ways to Book Your Rooms
@@ -61,7 +61,7 @@ const RoomsManagement = () => {
                 </div>
 
               </div>
-            <div className="h-[480px] max-w-[588px] relative">
+            <div className="h-[480px] max-w-[588px] relative w-full mx-auto">
                  <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500  rounded-2xl`} src="/reporting.jpg"/>
                  <img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/women-corporate-office-working-computers.jpg"/>
                  <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/workers-walk-towards-lobby-mining-camp.jpg"/>

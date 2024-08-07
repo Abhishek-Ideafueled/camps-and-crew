@@ -18,7 +18,7 @@ const RoomsManagementSecond = () => {
 
   return (
     <div className="w-full bg-custom-back py-20">
-      <div className="main-container mx-auto grid grid-cols-1 md:grid-cols-2 items-center">
+      <div className="main-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 items-center">
         <div className="md:w-[393px] lg:w-[513px] xl:w-[666px] min-h-[498px] flex flex-col p-6 lg:py-10 lg:px-12 bg-white rounded-2xl z-10">
           <div className="flex flex-col gap-4 mb-6">
             <div className="text-[#189AD2] font-ttCommonProMedium text-sm leading-[22px] font-semibold tracking-[0.56px]">

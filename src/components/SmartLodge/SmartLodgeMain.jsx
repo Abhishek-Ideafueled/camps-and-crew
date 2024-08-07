@@ -37,7 +37,8 @@ const SmartLodgeMain = () => {
 
 useEffect(()=>{
   const handleShowNav=()=>{
-      if(window.scrollY >=2250 && window.scrollY <=12000)
+      if(window.scrollY >=2250 )
+        // && window.scrollY <=12000)
       {
           setIsVisible(true);
       }else setIsVisible(false);
