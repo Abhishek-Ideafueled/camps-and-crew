@@ -9,14 +9,14 @@ const Reports = () => {
 <h2  className='heading-h2 border-b-[8px] border-b-custom-button'>
     300+ Reports
 </h2>
-<p className="sub-headind">
+<p className="sub-heading">
 Provide teams supporting your workforce accommodations with robust reporting to facilitate strategic decision-making, boost operational efficiency and heighten guest satisfaction.
 </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10">
-                <div className="">
+                <div className="w-full h-full">
                     <img 
-                    className="rounded-2xl w-full h-full"
+                    className="rounded-2xl object-cover h-full"
                     src="aerial-remote-workforce-camp.jpg" 
                     alt="Aerial photograph of workforce lodging placed on a grassy field with trees and sky framing the photo." />
                 </div>
