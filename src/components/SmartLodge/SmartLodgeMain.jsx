@@ -22,10 +22,11 @@ import DemoForm from "../HomePage/DemoForm";
 import { useEffect, useState } from "react";
 import Aos from "aos";
 import SmartLodgeNavbar from "./SmartLodgeNavbar";
+import SecondNavbar from "./SecondNavbar";
 
 const SmartLodgeMain = () => {
 
-  // const [activeNav,setActiveNav] = useState("");
+  const [isVisible,setIsVisible] = useState("");
   useEffect(()=>{
     Aos.init(
       {duration:1000,
@@ -34,35 +35,34 @@ const SmartLodgeMain = () => {
     );
 },[])
 
-// useEffect(() => {
-//   const targetSections = document.querySelectorAll("section");
+useEffect(()=>{
+  const handleShowNav=()=>{
+      if(window.scrollY >=2250 && window.scrollY <=12000)
+      {
+          setIsVisible(true);
+      }else setIsVisible(false);
+    }
 
-//   const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         setActiveNav(entry.target.getAttribute("id")); 
-//       }
-//     });
-//   });
-//   targetSections.forEach((section) => {
-//     observer.observe(section);
-//   });
+      window.addEventListener("scroll",handleShowNav);
+      return ()=>{
+          window.removeEventListener("scroll",handleShowNav)
+      }
 
-//   return ()=>{
-//     observer.disconnect();
-//   }
-// }, []);
+      
+  },[])
+
 
 
   return (
     <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
-      
+      <SecondNavbar isVisible={isVisible}/>
       <SmartLodgeHeader/>
       <SlidingComp showHeading={false}/>
       <ElevatingEfficiency/>
       <LodgingSlider/>
       {/* <LodgingSliderSlick/> */}
-      <SmartLodgeNavbar/>
+      {/* <SmartLodgeNavbar/> */}
+     
       <section id="roomsManagement">
         <RoomsManagement/>
         <RoomsManagementSecond/>
