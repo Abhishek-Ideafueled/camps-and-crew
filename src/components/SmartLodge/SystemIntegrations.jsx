@@ -12,19 +12,21 @@ const SystemIntegrations = () => {
                 SmartLodge seamlessly integrates with various external systems, ensuring efficient data synchronization and communication across all operations.
                 </span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8">
-                    <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
-                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">HRIS Systems</h3>
-                        <span className="flex flex-wrap gap-2 lg:gap-4">
-                            <img src="/adp-logo.png" alt="adp logo" />
-                            <img src="/oracle-logo.png" alt="oracle logo" />
-                            <img src="/sap-logo.png" alt="sap logo" />
-                            <img src="/workday-logo.png" alt="workday logo" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+                    <div className="p-6 rounded-2xl gap-3 md:gap-10 flex flex-col justify-between bg-[#FAFAFA]">
+                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">HRIS Systems</h3>
+                        <span className="grid grid-cols-3 gap-4">
+                            <span>  <img src="/adp-logo.png" alt="adp logo" className="w-full h-full" /></span>
+                            <span> <img src="/oracle-logo.png" alt="oracle logo" className="w-full h-full" /></span>
+                            <span><img src="/sap-logo.png" alt="sap logo" className="w-full h-full" /></span>
+                            <span>  <img src="/workday-logo.png" alt="workday logo" className="w-full h-full" /></span>
+                                                    
+                          
                         </span>
                     </div>
-                    <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
-                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Electronic Key Systems</h3>
-                        <span className="flex flex-wrap gap-2 lg:gap-4">
+                    <div className="p-6 rounded-2xl gap-3 md:gap-10 flex flex-col justify-between bg-[#FAFAFA]">
+                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Electronic Key Systems</h3>
+                        <span className="grid grid-cols-3 gap-4">
                             <img src="/assa-abloy-logo.png" alt="assa abloy logo" />
                             <img src="/consec-logo.png" alt="consec logo" />
                             <img src="/hco-logo.png" alt="hco logo" />
@@ -32,18 +34,18 @@ const SystemIntegrations = () => {
                             <img src="/salto-logo.png" alt="salto logo" />
                         </span>
                     </div>
-                    <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
-                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Accounting Systems</h3>
-                        <span className="flex flex-wrap gap-2 lg:gap-4">
+                    <div className="p-6 rounded-2xl gap-3 md:gap-10 flex flex-col justify-between bg-[#FAFAFA]">
+                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Accounting Systems</h3>
+                        <span className="grid grid-cols-3 gap-4">
                             <img src="/jd-edwards-logo.png" alt="jd-edwards logo" />
                             <img src="/oracleNetsuite-logo.png" alt="oracleNetsuite logo" />                            
                             <img src="/quickbooks-logo.png" alt="quickbooks logo" />
                             <img src="/sap-logo.png" alt="sap logo" />
                         </span>
                     </div>
-                    <div className="p-6 rounded-2xl gap-10 h-full flex flex-col justify-between bg-[#FAFAFA]">
-                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Point of Sale Systems</h3>
-                        <span className="flex flex-wrap gap-2 lg:gap-4">
+                    <div className="p-6 rounded-2xl gap-3 md:gap-10 h-full flex flex-col justify-between bg-[#FAFAFA]">
+                        <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Point of Sale Systems</h3>
+                        <span className="grid grid-cols-3 gap-4">
                             <img src="/agilsys-logo.png" alt="agilsys logo" />
                             <img src="/ncr-logo.png" alt="ncr logo" />
                             <img src="/squirell-logo.png" alt="squirell logo" />
