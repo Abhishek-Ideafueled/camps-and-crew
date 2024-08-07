@@ -8,3 +8,18 @@
     overflow: hidden;
 }
 
+ @media only screen and (max-width: 440px) {
+    .features-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden .swiper-wrapper{
+       height: 800px;
+    }
+
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    .features-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden .swiper-wrapper{
+      /* height: 900px; */
+    }
+
+
+  }

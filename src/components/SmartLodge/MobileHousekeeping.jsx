@@ -85,7 +85,7 @@ const MobileHousekeeping = () => {
                 </div>
 
               </div>
-            <div className="h-[270px] md:h-[480px] max-w-[588px] relative w-full mx-auto flex items-center">
+            <div className="h-[270px] sm:mt-8 md:mt-0 md:h-[480px] max-w-[588px] relative w-full mx-auto flex items-center">
              
 <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500  rounded-2xl`}
                   alt="Remote camp attendant studies a tablet in a bedroom recently cleaned by her."
