@@ -48,7 +48,7 @@ return ()=>{
 
   return (
     <div className={`${showNav ? 'w-full bg-custom-back z-30 h-[74px] lg:h-[106px]' : 'w-0 h-0 z-0 bg-transparent'} fixed top-0 `}>
-        <div className='main-container mx-auto flex items-center h-full'>
+        <div className='main-container mx-auto flex items-center h-full justify-center'>
          <ul className='flex items-center overflow-x-auto text-nowrap lg:text-wrap no-scrollbar'>
 
        <Link href="/#roomsManagement" onClick={()=>handleClickScroll("roomsManagement")}>
