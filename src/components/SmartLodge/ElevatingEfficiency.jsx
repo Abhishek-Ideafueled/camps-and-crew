@@ -3,7 +3,7 @@ import React from 'react';
 const ElevatingEfficiency = () => {
   return (
     <div className='w-full relative'>
-        <div className='main-container mx-auto py-20 flex flex-col gap-[60px] '>
+        <div className='main-container mx-auto py-20 flex flex-col gap-[60px] lg:px-28 xl:px-0 '>
             <div className='flex flex-col gap-4 items-center'>
             <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
@@ -66,7 +66,7 @@ const ElevatingEfficiency = () => {
                 </span>
                 <div className="flex flex-col gap-6">
                 <h2 className="font-gilroyBold text-custom-heading text-2xl">
-                Maximize Room or Bed Utilization at Camp
+                Streamline Workflows Across Your Organization
                 </h2>
                 <p className="font-ttCommonProNormal text-custom-body text-sm">
                 SmartLodge enables you to achieve up to 98% room utilization during periods of peak demand. Realize the greatest return on your investment by ensuring your rooms don’t go unoccupied.
@@ -79,7 +79,7 @@ const ElevatingEfficiency = () => {
                 </span>
                 <div className="flex flex-col gap-6">
                 <h2 className="font-gilroyBold text-custom-heading text-2xl">
-                Maximize Room or Bed Utilization at Camp
+                Reduce Administrative Workloads
                 </h2>
                 <p className="font-ttCommonProNormal text-custom-body text-sm">
                 SmartLodge enables you to achieve up to 98% room utilization during periods of peak demand. Realize the greatest return on your investment by ensuring your rooms don’t go unoccupied.

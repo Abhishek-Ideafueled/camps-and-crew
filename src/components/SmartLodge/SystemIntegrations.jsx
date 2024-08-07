@@ -27,29 +27,41 @@ const SystemIntegrations = () => {
                     <div className="p-6 rounded-2xl gap-3 md:gap-10 flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Electronic Key Systems</h3>
                         <span className="grid grid-cols-3 gap-4">
-                            <img src="/assa-abloy-logo.png" alt="assa abloy logo" />
-                            <img src="/consec-logo.png" alt="consec logo" />
-                            <img src="/hco-logo.png" alt="hco logo" />
-                            <img src="/rbh-logo.png" alt="rbh logo" />
-                            <img src="/salto-logo.png" alt="salto logo" />
+                            <span> <img src="/assa-abloy-logo.png" alt="assa abloy logo" className="w-full h-full" /></span>
+                            <span>    <img src="/consec-logo.png" alt="consec logo" className="w-full h-full"/></span>
+                            <span> <img src="/hco-logo.png" alt="hco logo" className="w-full h-full"/></span>
+                            <span> <img src="/rbh-logo.png" alt="rbh logo" className="w-full h-full" /></span>
+                           <span>  <img src="/salto-logo.png" alt="salto logo" className="w-full h-full"/></span>
+                        
+                           
+                           
+                           
                         </span>
                     </div>
                     <div className="p-6 rounded-2xl gap-3 md:gap-10 flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Accounting Systems</h3>
                         <span className="grid grid-cols-3 gap-4">
-                            <img src="/jd-edwards-logo.png" alt="jd-edwards logo" />
-                            <img src="/oracleNetsuite-logo.png" alt="oracleNetsuite logo" />                            
-                            <img src="/quickbooks-logo.png" alt="quickbooks logo" />
-                            <img src="/sap-logo.png" alt="sap logo" />
+                            <span> <img src="/jd-edwards-logo.png" alt="jd-edwards logo" className="w-full h-full"/></span>
+                            <span>  <img src="/oracleNetsuite-logo.png" alt="oracleNetsuite logo" className="w-full h-full" /></span>
+                            <span> <img src="/quickbooks-logo.png" alt="quickbooks logo" className="w-full h-full" /></span>
+                            <span>  <img src="/sap-logo.png" alt="sap logo" className="w-full h-full" /></span>
+                           
+                                                       
+                            
+                           
                         </span>
                     </div>
                     <div className="p-6 rounded-2xl gap-3 md:gap-10 h-full flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading text-center md:text-start">Point of Sale Systems</h3>
                         <span className="grid grid-cols-3 gap-4">
-                            <img src="/agilsys-logo.png" alt="agilsys logo" />
-                            <img src="/ncr-logo.png" alt="ncr logo" />
-                            <img src="/squirell-logo.png" alt="squirell logo" />
-                            <img src="/world-vector-logo.png" alt="world-vector logo" />
+                            <span><img src="/agilsys-logo.png" alt="agilsys logo" className="w-full h-full" /></span>
+                            <span> <img src="/ncr-logo.png" alt="ncr logo" className="w-full h-full" /></span>
+                            <span> <img src="/squirell-logo.png" alt="squirell logo" className="w-full h-full" /></span>
+                            <span> <img src="/world-vector-logo.png" alt="world-vector logo" className="w-full h-full" /></span>
+                            
+                           
+                           
+                           
                         </span>
                     </div>
             </div>
