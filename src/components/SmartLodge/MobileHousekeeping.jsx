@@ -32,7 +32,7 @@ const MobileHousekeeping = () => {
         {
             id:3,
             title:"Log Rooms Requiring Maintenance from a Mobile Device",
-            desc:"Using a mobile device, housekeepers can quickly log maintenance tickets for rooms with damage or in need of repairs. Additionally, administrators can enable cleaning staff to capture and attach photos of the damage directly to these tickets from the device’s camera..",
+            desc:"Using a mobile device, housekeepers can quickly log maintenance tickets for rooms with damage or in need of repairs. Additionally, administrators can enable cleaning staff to capture and attach photos of the damage directly to these tickets from the device’s camera.",
             
         },
         {
@@ -45,7 +45,7 @@ const MobileHousekeeping = () => {
 
   return (
     <div className="w-full">
-        <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[60px]">
+        <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]">
             <div className="flex flex-col max-w-[959px] items-center text-center ">
                 <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] ">
                 HOUSEKEEPING AND MAINTENANCE
@@ -57,7 +57,7 @@ const MobileHousekeeping = () => {
                 Equip your cleaning staff with mobile devices to fast-track room cleaning and maintenance ticket resolution.Minimize latency between the time a room is cleaned and later assigned to the next guest.
                 </p>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 w-full items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 w-full items-center md:h-[480px]'>
 
               <div className='py-[35px] max-w-[588px] mx-auto'>
 
@@ -85,19 +85,30 @@ const MobileHousekeeping = () => {
                 </div>
 
               </div>
-            <div className="h-[480px] max-w-[588px] relative w-full">
-                 <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500  rounded-2xl`}
+            <div className="h-[480px] max-w-[588px] relative w-full mx-auto flex items-center">
+             
+<img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500  rounded-2xl`}
                   alt="Remote camp attendant studies a tablet in a bedroom recently cleaned by her."
                   src="/housekeeper-studies-tablet-worker-room.jpg"/>
-                 <img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+             
+             
+<img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
                   alt="Housekeeper in a bedroom constructed of modular construction studies a tablet she holds."
                   src="/housekeeper-bedroom-fly-in-fly-out-camp.jpg"/>
-                 <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+             
+             
+                 <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
                   alt="Maintenance staff fixes a drawer."
                   src="/maintenance-worker-fixes-drawers.jpg"/>
-                 <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+               
+               
+                <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
                   alt="Cleaning person rummages through cleaning supplies in the hallway of a remote camp with multiple bedroom doors open and illuminated."
                   src="/housekeeping.jpg"/>
+               
+                 
+                
+                 
                  
             </div>
             </div>
