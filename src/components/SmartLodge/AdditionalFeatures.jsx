@@ -43,7 +43,7 @@ const AdditionalFeatures = () => {
             swiper.navigation.update();
           }}
         breakpoints={
-         {360:{
+         {340:{
           slidesPerView:1,
           spaceBetween:20
          }, 

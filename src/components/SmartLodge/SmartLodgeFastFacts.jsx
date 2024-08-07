@@ -86,7 +86,7 @@ useEffect(()=>{
             <div className=" text-[32px] leading-8 lg:text-[50px] border-b-2 lg:leading-[3.75rem] border-custom-button w-[95px] lg:w-[150px] text-custom-heading font-gilroyBold font-normal">
               
               <span className='flex items-start justify-center'>
-               <Odometer value={fourthValue} format="ddd" /> Sec.</span>
+               <Odometer value={fourthValue} format="ddd" /> <span className='invisible text-sm'>a</span> Sec.</span>
               </div>
               <span className="font-ttCommonProNormal text-custom-body font-normal leading-[1.55rem]">
               Average check in time for camps enabled with Kiosk Check In

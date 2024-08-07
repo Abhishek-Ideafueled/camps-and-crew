@@ -3,7 +3,7 @@ import React from 'react';
 const ElevatingEfficiency = () => {
   return (
     <div className='w-full relative'>
-        <div className='main-container mx-auto py-20 flex flex-col gap-[60px] lg:px-28 xl:px-0 '>
+        <div className='main-container mx-auto py-20 flex flex-col gap-[30px] lg:gap-[60px] lg:px-28 xl:px-0 '>
             <div className='flex flex-col gap-4 items-center'>
             <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
@@ -46,7 +46,7 @@ const ElevatingEfficiency = () => {
               </svg>
               </span>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 z-10'>
+            <div className='grid grid-cols-1 md:grid-cols-3 z-10 gap-4 lg:gap-8'>
             <div className='flex flex-col gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-maximize-room-bed-utilization-icon.png" alt="" />
