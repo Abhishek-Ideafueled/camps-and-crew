@@ -2,7 +2,7 @@
 
 const SystemIntegrations = () => {
   return (
-    <div className="w-full bg-custom-back h-[100vh]">
+    <div className="w-full bg-custom-back xl:h-[100vh]">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[60px]">
             <div className="flex flex-col gap-6 items-center max-w-[959px] text-center">
                 <h2 className="heading-h2 border-custom-blue border-[6px] text-white rounded-2xl py-3 px-6">
@@ -15,7 +15,7 @@ const SystemIntegrations = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8">
                     <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">HRIS Systems</h3>
-                        <span className="grid grid-flow-col gap-2 lg:gap-4">
+                        <span className="flex flex-wrap gap-2 lg:gap-4">
                             <img src="/adp-logo.png" alt="adp logo" />
                             <img src="/oracle-logo.png" alt="oracle logo" />
                             <img src="/sap-logo.png" alt="sap logo" />
@@ -24,7 +24,7 @@ const SystemIntegrations = () => {
                     </div>
                     <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Electronic Key Systems</h3>
-                        <span className="grid grid-flow-col gap-2 lg:gap-4">
+                        <span className="flex flex-wrap gap-2 lg:gap-4">
                             <img src="/assa-abloy-logo.png" alt="assa abloy logo" />
                             <img src="/consec-logo.png" alt="consec logo" />
                             <img src="/hco-logo.png" alt="hco logo" />
@@ -34,7 +34,7 @@ const SystemIntegrations = () => {
                     </div>
                     <div className="p-6 rounded-2xl gap-10 flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Accounting Systems</h3>
-                        <span className="grid grid-flow-col gap-2 lg:gap-4">
+                        <span className="flex flex-wrap gap-2 lg:gap-4">
                             <img src="/jd-edwards-logo.png" alt="jd-edwards logo" />
                             <img src="/oracleNetsuite-logo.png" alt="oracleNetsuite logo" />                            
                             <img src="/quickbooks-logo.png" alt="quickbooks logo" />
@@ -43,7 +43,7 @@ const SystemIntegrations = () => {
                     </div>
                     <div className="p-6 rounded-2xl gap-10 h-full flex flex-col justify-between bg-[#FAFAFA]">
                         <h3 className="text-[25px] lg:text-[32px] lg:leading-[40px] font-gilroyBold text-custom-heading">Point of Sale Systems</h3>
-                        <span className="grid grid-flow-col gap-2 lg:gap-4">
+                        <span className="flex flex-wrap gap-2 lg:gap-4">
                             <img src="/agilsys-logo.png" alt="agilsys logo" />
                             <img src="/ncr-logo.png" alt="ncr logo" />
                             <img src="/squirell-logo.png" alt="squirell logo" />
