@@ -84,7 +84,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   Besides dealing with rooms and travel, Camps & Crew has become
                   an important information hub for many departments –
                   Accounting, Construction, Food Services, Housekeeping and
@@ -105,7 +105,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   The check in process and our housekeeping operations are
                   probably the areas where we’ve seen the greatest benefit with
                   the system. The ability to create custom charge sheets has
@@ -127,7 +127,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   The system’s Batch Check Ins and Check Outs feature makes
                   managing large work crews efficient, even with changing
                   schedules and travel delays. The system has also greatly
@@ -149,7 +149,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   Besides dealing with rooms and travel, Camps & Crew has become
                   an important information hub for many departments –
                   Accounting, Construction, Food Services, Housekeeping and
@@ -170,7 +170,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   The check in process and our housekeeping operations are
                   probably the areas where we’ve seen the greatest benefit with
                   the system. The ability to create custom charge sheets has
@@ -192,7 +192,7 @@ const Testimonials = () => {
           <SwiperSlide>
             <div className="w-full px-4">
               <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
                   The system’s Batch Check Ins and Check Outs feature makes
                   managing large work crews efficient, even with changing
                   schedules and travel delays. The system has also greatly

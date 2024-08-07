@@ -42,7 +42,7 @@ const Reception = () => {
         <h2 className='self-center heading-h2 border-b-[8px] border-b-custom-button'>
         Reception & Front Desk
                 </h2>
-    <div className="grid grid-cols-1 md:grid-cols-3 md:gap-3 lg:gap-8 z-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 lg:gap-8 z-10">
     <div className="flex flex-col gap-6 px-6 py-8">
         <div className="font-gilroyBold font-normal text-custom-heading text-[26px] leading-[32px] md:text-[32px] md:leading-[38px]">
             Seamless Arrivals & Departures for Guests
@@ -53,7 +53,7 @@ const Reception = () => {
 
     </div>
 
-  {  receptionArr.map((item)=>(<div key={item.id} className="flex flex-col gap-[30px] md:gap-[60px] py-6 px-4 md:px-6 md:py-8">
+  {  receptionArr.map((item)=>(<div key={item.id} className="flex flex-col gap-[30px] md:gap-[60px] py-6 px-4 md:px-6 md:py-8 bg-white">
         <span>
             <img src={item.iconUrl} alt={item.iconUrl} />
         </span>

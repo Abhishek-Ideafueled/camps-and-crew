@@ -59,7 +59,7 @@ const MobileHousekeeping = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-10 w-full items-center'>
 
-              <div className='py-[35px] max-w-[588px]'>
+              <div className='py-[35px] max-w-[588px] mx-auto'>
 
                 <div className='font-gilroyBold text-[25px] md:text-[32px] leading-[38px] text-custom-heading mb-6 '>
                 Flexible Ways to Book Your Rooms
@@ -75,7 +75,7 @@ const MobileHousekeeping = () => {
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2'}  border-b-[#CDD5DF] border-b-[1px]`}>
+                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2 w-[90%]'}  border-b-[#CDD5DF] border-b-[1px]`}>
                                               {item.desc}
                     </div>
                   </div>
@@ -85,7 +85,7 @@ const MobileHousekeeping = () => {
                 </div>
 
               </div>
-            <div className="h-[480px] max-w-[588px] relative">
+            <div className="h-[480px] max-w-[588px] relative w-full">
                  <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500  rounded-2xl`}
                   alt="Remote camp attendant studies a tablet in a bedroom recently cleaned by her."
                   src="/housekeeper-studies-tablet-worker-room.jpg"/>

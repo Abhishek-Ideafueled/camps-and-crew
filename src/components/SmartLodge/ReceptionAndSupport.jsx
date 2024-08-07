@@ -26,15 +26,15 @@ const ReceptionAndSupport = () => {
     <div className="w-full bg-custom-back">
         <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[60px]">
 
-        <div className="flex flex-col items-center gap-4 text-center max-w-[618px]">
+        <div className="flex flex-col items-center gap-4 text-center max-w-[959px]">
         <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">
             RECEPTION & FRONT DESK
             </span>
-        <h2 className="heading-h2 text-white">
+        <h2 className="heading-h2 text-white max-w-[618px]">
         Increase Collaboration Between Reception and Supporting Teams
         </h2>
-        <p className="font-ttCommonProNormal font-medium text-base leading-6 md:text-lg md:leading-6 text-white ">
-           SmartLodge offers optional automation features to further expedite check ins and check outs for camps managing large group arrivals and departures. Ideal for camps housing large workforces.
+        <p className="font-ttCommonProNormal font-medium text-base leading-6 md:text-lg md:leading-[28px] text-white max-w-[650px]">
+        SmartLodge automates the flow of room status and room reservation databetween the front desk staff and other teams working to support camp operations.
            </p>
         </div>
 
@@ -61,22 +61,22 @@ const ReceptionAndSupport = () => {
 
             ))}
             </div>
-            <div className="relative w-full max-w-[500px] lg:max-w-[500px] xl:max-w-[662px] h-[300px] md:h-[350px] lg:h-[414px]">
+            <div className="relative w-full max-w-[500px] lg:max-w-[500px] xl:max-w-[662px] h-[300px] md:h-[350px] lg:h-[414px] mx-auto">
                {receptionImages.map((item)=>(
-                 <div className={`${activeImageId===item.id ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 grid grid-cols-3 gap-4`} key={item.id}>
-                        <div className="col-span-2 row-span-2">
+                 <div className={`${activeImageId===item.id ? 'opacity-100 ':'opacity-0'} absolute inset-0 w-full h-full transition-all duration-500 grid grid-cols-3  gap-4`} key={item.id}>
+                        <div className="col-span-2 row-span-2 flex items-center">
                         <img src={item.url1} 
-                         className="rounded-2xl h-full bg-center"
+                         className="rounded-2xl h-full md:h-auto xl:h-full "
                         alt={item.url1} />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-span-1 flex md:mb-4 xl:mb-0 items-end">
                         <img src={item.url2} 
-                            className="rounded-2xl h-full  bg-center "
+                            className="rounded-2xl h-full md:h-auto xl:h-full "
                             alt={item.alt2} />
                         </div>
-                        <div className="col-span-1">
+                        <div className="col-span-1 flex items-start">
                         <img src={item.url3} 
-                            className="rounded-2xl h-full  bg-center"
+                            className="rounded-2xl h-full md:h-auto xl:h-full"
                             alt={item.alt3} />
                         </div> 
                         </div>
