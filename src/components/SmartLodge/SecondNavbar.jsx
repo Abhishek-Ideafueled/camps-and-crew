@@ -30,7 +30,7 @@ const SecondNavbar = ({}) => {
       {isVisible && (
         <div className=" w-full fixed top-0 z-30 bg-custom-back text-white h-[76px] lg:h-[106px] flex items-center">
           <nav
-            className="flex text-nowrap xl:justify-between overflow-x-auto no-scrollbar main-container mx-auto"
+            className="flex text-nowrap xl:justify-between overflow-x-auto no-scrollbar main-container mx-auto h-full items-center"
             ref={navRef}
           >
             <Link
