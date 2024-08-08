@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { receptionAccordianData,receptionImages } from "./receptionAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -9,6 +9,7 @@ const ReceptionAndSupport = () => {
     const [activeId, setActiveId] = useState(1);
   const [activeImageId, setActiveImageId] = useState(1);
   const [activeColor,setActiveColor] = useState(1);
+  const contentRef = useRef();
 
   const handleAccordionClick = (id) => {
     if (activeId === id) {
@@ -55,7 +56,14 @@ const ReceptionAndSupport = () => {
                  {item.title}
                 <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                </div>
-              <div className={`${activeId !== item.id ? 'z-0 h-0 opacity-0 pb-0 transition-all duration-200': 'h-full opacity-100 transition-all duration-300'} px-6 w-full`}>
+               <div
+                                        ref={contentRef}
+                                        className={`${activeId === item.id ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} 
+                                            overflow-hidden transition-all duration-300 px-6 w-full`}
+                                        style={{
+                                            maxHeight: activeId === item.id ? `${contentRef.current?.scrollHeight}px` : '0',
+                                        }}
+                                    >
               <div className="text-white font-ttCommonProNormal text-base w-[95%] pb-6">
                                          {item.desc}
                                          </div>

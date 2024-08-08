@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
 
@@ -32,13 +32,14 @@ const FAQs = () => {
         {
             id:5,
             title:"How can SmartLodge elevate the wellbeing of workers staying at camp?",
-            desc:"SmartLodge elevates the experience of camp residents by complementing the tangible amenities your facility might already offer, such as nutritious meals, fitness facilities, recreation facilities, or lounges to unwind. Our software streamlines the important intangible aspects of the experience--ensuring guests can check in to their rooms swiftly, that their rooms are cleaned in a timely manner, that their maintenance requests are seen too-naming just a few ways. Our technology empowers companies to provide a positive experience at camp, ensuring workers feel comfortable, rested, and ready for work.",
+            desc:"SmartLodge elevates the experience of camp residents by complementing the tangible amenities your facility might already offer, such as nutritious meals, fitness facilities, recreation facilities, or lounges to unwind. Our software streamlines the important intangible aspects of the experience-ensuring guests can check in to their rooms swiftly, that their rooms are cleaned in a timely manner, that their maintenance requests are seen too-naming just a few ways. Our technology empowers companies to provide a positive experience at camp, ensuring workers feel comfortable, rested, and ready for work.",
 
         },
     ]
 
     
     const [activeId, setActiveId] = useState(0);
+    const contentRef = useRef();
 
     const handleAccordionClick = (id) => {
       if (activeId === id) {
@@ -110,9 +111,16 @@ const FAQs = () => {
                         <FaMinus className={` ${activeId === item.id ? ' h-0 w-0 rotate-360 transition-all duration-300':'h-full w-full rotate-540 transition-all duration-300'} absolute inset-0`} /> */}
                         </div>
                     </div>
-                    <div className={`${activeId !== item.id ? 'z-0 h-0 opacity-0 ': 'h-full opacity-100 '} transition-all duration-300 pb-4 px-4 w-full`}>
+                    <div
+                                        ref={contentRef}
+                                        className={`${activeId === item.id ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} 
+                                            overflow-hidden transition-all duration-300 px-4`}
+                                        style={{
+                                            maxHeight: activeId === item.id ? `${contentRef.current?.scrollHeight}px` : '0',
+                                        }}
+                                    >
                     
-                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
+                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4">
                       {item.desc}
                     </div>
                     </div>
