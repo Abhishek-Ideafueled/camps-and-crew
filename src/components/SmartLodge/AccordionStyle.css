@@ -1,3 +1,49 @@
 .desc-container{
     transition: height .7s ease-in-out;
 }
+
+.accordion-btns {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    background: transparent;
+    top: 50%;
+    /* left: 50%; */
+    right: 0;
+    transform: translate(-50%, -50%) rotate(0deg);
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.4s cubic-bezier(0.2, 0.6, 0.3, 1.1);
+  }
+  
+  .accordion-btns:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 2px;
+    width: 50%;
+    background: #08425D;
+  }
+  
+  .accordion-btns:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 2px;
+    background: #08425D;
+  }
+  
+  .accordion-btns.btn-clicked {
+    transform: translate(-50%, -50%) rotate(360deg);
+    background: transparent;
+  }
+  
+  .accordion-btns.btn-clicked:before {
+    width: 0;
+  }

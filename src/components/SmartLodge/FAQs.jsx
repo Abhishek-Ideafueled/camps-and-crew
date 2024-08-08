@@ -103,12 +103,18 @@ const FAQs = () => {
         <div className="flex flex-col gap-4 max-w-[800px] mx-auto">
             {faqArr.map((item)=>(
                 <div className="bg-[#ECE7E0] flex flex-col" key={item.id}>
-                    <div className="flex justify-between p-4 items-start z-10" onClick={()=>handleAccordionClick(item.id)}>
-                        <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6">{item.title}</h4>
-                        <span className="p-2 w-[24px] h-[24px]">{activeId === item.id?<FaPlus /> :<FaMinus />}</span>
+                    <div className="flex justify-between p-4 items-start z-10 relative" onClick={()=>handleAccordionClick(item.id)}>
+                        <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] sm:w-full ">{item.title}</h4>
+                        <div className={`accordion-btns ${activeId === item.id ? 'btn-clicked' : ''}  p-2 w-[24px] h-[24px] flex items-center`}> 
+                          {/* <FaPlus className={` ${activeId === item.id ? ' h-full w-full rotate-360 transition-all duration-300':' h-0 w-0 rotate-360 transition-all duration-600'} absolute inset-0`}/> 
+                        <FaMinus className={` ${activeId === item.id ? ' h-0 w-0 rotate-360 transition-all duration-300':'h-full w-full rotate-540 transition-all duration-300'} absolute inset-0`} /> */}
+                        </div>
                     </div>
-                    <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-4 pl-4 pr-7'}`}>
-                    {item.desc}
+                    <div className={`${activeId !== item.id ? 'z-0 h-0 opacity-0 ': 'h-full opacity-100 '} transition-all duration-300 pb-4 px-4 w-full`}>
+                    
+                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
+                      {item.desc}
+                    </div>
                     </div>
             </div>
             ))}            

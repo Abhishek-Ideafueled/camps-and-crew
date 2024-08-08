@@ -12,7 +12,7 @@ import './SlidingComp.css';
 const SlidingComp = (props) => {
     const [bgColor,setBgColor] = useState("");
   useEffect(()=>{
-      if(window.location.pathname==="/company")
+      if(window.location.pathname==="/company" || window.location.pathname ==="/software-for-workforce-camp")
       {
         setBgColor("notWhite");
       }
