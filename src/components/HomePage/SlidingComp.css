@@ -12,10 +12,13 @@
 }
 
 
- /* @media only screen and (min-width: 1400px) {
-    .comp-slider .slick-slider.slick-initialized .slick-list .slick-slide{
-        width: auto;
+ @media only screen and (min-width: 1280px) {
+    .comp-slider .slick-slider.slick-initialized div .slick-slide{
+        
+        /* background: #000; */
+        /* max-width: 260px !important; */
     }
 
 
-  } */
+
+  }

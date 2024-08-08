@@ -20,6 +20,7 @@ const SlidingComp = (props) => {
 
   const settings={
         speed: 5000,
+        infinite:true,
         autoplay: true,
         autoplaySpeed: 0,
         cssEase: 'linear',
@@ -45,9 +46,9 @@ const SlidingComp = (props) => {
             },
           },
           {
-            breakpoint: 1600,
+            breakpoint: 2200,
             settings: {
-              slidesToShow:7 ,
+              slidesToShow:6 ,
             },
           },
           
