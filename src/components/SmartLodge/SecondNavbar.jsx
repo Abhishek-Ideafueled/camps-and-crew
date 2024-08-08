@@ -39,7 +39,8 @@ const SecondNavbar = ({}) => {
               spy={true}
               smooth={true}
               duration={200}
-              className="custom-transition relative text-base border-b-[2px] font-gilroyBold px-3 text-center border-b-transparent"
+              offset={-150}
+              className="custom-transition relative cursor-pointer text-base border-b-[2px] font-gilroyBold px-3 text-center border-b-transparent"
             >
               <div className="h-full">Rooms Management</div>
             </Link>
@@ -47,50 +48,55 @@ const SecondNavbar = ({}) => {
             <Link
               to="reception"
               activeClass="active"
-              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative cursor-pointer border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
+              offset={-150}
             >
               Reception & Front Desk
             </Link>
             <Link
               to="housekeeping"
               activeClass="active"
-              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative cursor-pointer border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
+              offset={-150}
             >
               Housekeeping & Maintenance
             </Link>
             <Link
               to="reports"
               activeClass="active"
-              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative cursor-pointer border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
+              offset={-150}
             >
               Reporting & Analytics
             </Link>
             <Link
               to="systemIntegrations"
               activeClass="active"
-              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative cursor-pointer border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
+              offset={-150}
             >
               System Integrations
             </Link>
             <Link
               to="features"
               activeClass="active"
-              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative cursor-pointer border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
+              offset={-150}
             >
               Additional Features
             </Link>

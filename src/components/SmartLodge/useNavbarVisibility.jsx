@@ -9,6 +9,7 @@ const useNavbarVisibility = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
+      console.log(currentScrollPosition);
       setScrollingDown(currentScrollPosition > lastKnownScrollPosition);
       setLastKnownScrollPosition(currentScrollPosition);
     };
@@ -36,25 +37,25 @@ const useNavbarVisibility = () => {
           //   setIsVisible(false);
           // }
         }
-      //  if (entry.target.id === 'reception') {
-      //       if (entry.isIntersecting) {
-      //         setIsVisible(true);
-      //       } 
-      //     }
-      //    if (entry.target.id === 'housekeeping') {
-      //       if (entry.isIntersecting) {
-      //         setIsVisible(true);
-      //       } 
-      //     }
-      //    if (entry.target.id === 'reports') {
-      //       if (entry.isIntersecting) {
-      //         setIsVisible(true);
-      //       } 
-      //     } if (entry.target.id === 'systemIntegrations') {
-      //     if (entry.isIntersecting) {
-      //       setIsVisible(true);
-      //     }
-      //   }
+       if (entry.target.id === 'reception') {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            } 
+          }
+         if (entry.target.id === 'housekeeping') {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            } 
+          }
+         if (entry.target.id === 'reports') {
+            if (entry.isIntersecting) {
+              setIsVisible(true);
+            } 
+          } if (entry.target.id === 'systemIntegrations') {
+          if (entry.isIntersecting) {
+            setIsVisible(true);
+          }
+        }
          if (entry.target.id === 'features') {
             if (entry.isIntersecting) {
               setIsVisible(true);
