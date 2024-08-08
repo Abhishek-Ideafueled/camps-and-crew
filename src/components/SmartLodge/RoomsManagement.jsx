@@ -51,7 +51,7 @@ const RoomsManagement = () => {
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${activeId !== item.id ? ' h-0 opacity-0 z-0': ' pb-2 opacity-100 transition-all duration-400'} w-full `}>
+                   <div className={`${activeId !== item.id ? ' h-0 opacity-0 z-0': ' pb-2 opacity-100 '} w-full transition-all duration-400 `}>
                          <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
                                 {item.desc}  
                                     </div>     

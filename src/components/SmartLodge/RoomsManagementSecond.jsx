@@ -57,8 +57,8 @@ const RoomsManagementSecond = () => {
                 className={`${
                   activeId !== item.id
                     ? "z-0 h-0 opacity-0 "
-                    : "opacity-100 transition-all duration-400 pb-2"
-                }  w-full`}
+                    : "opacity-100  pb-2"
+                }  w-full transition-all duration-400`}
               >
                   <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
                 {item.desc}

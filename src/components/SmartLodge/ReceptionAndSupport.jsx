@@ -2,6 +2,7 @@ import { useState } from "react";
 import { receptionAccordianData,receptionImages } from "./receptionAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link, animateScroll as scroll } from "react-scroll";
+import './AccordionStyle.css';
 
 const ReceptionAndSupport = () => {
 
@@ -43,19 +44,21 @@ const ReceptionAndSupport = () => {
             <div className="flex flex-col bg-custom-heading">
             {receptionAccordianData.map((item)=>(
                <div 
-               className={   `${activeColor === item.id ? 'bg-[#0F658D]' : ''} flex flex-col cursor-pointer`} 
+               className={   `${activeColor === item.id ? 'bg-[#0F658D]' : ''} flex flex-col cursor-pointer border-b-[0.5px] border-[#00000080] border-opacity-10 transition-all duration-200`} 
             //    className="flex flex-col cursor-pointer"
                key={item.id} 
                
                >
                <div
                 onClick={() => {handleAccordionClick(item.id); setActiveColor(item.id)}}
-               className="font-gilroyBold text-white text-lg z-10 lg:text-xl leading-[24px] flex items-center justify-between h-[72px] p-6">
+               className="font-gilroyBold text-white text-lg z-10 lg:text-xl leading-[24px] flex items-center justify-between h-[72px] p-6 ">
                  {item.title}
                 <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                </div>
-              <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-white text-base transition-all duration-300 delay-100 pl-6 pb-6 pr-10'} border-b-[0.5px] border-[#00000080] border-opacity-10`}>
+              <div className={`${activeId !== item.id ? 'z-0 h-0 opacity-0 pb-0 transition-all duration-200': 'h-full opacity-100 transition-all duration-300'} px-6 w-full`}>
+              <div className="text-white font-ttCommonProNormal text-base w-[95%] pb-6">
                                          {item.desc}
+                                         </div>
                </div>
              </div>
 
