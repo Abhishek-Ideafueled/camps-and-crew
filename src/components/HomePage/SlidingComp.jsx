@@ -26,6 +26,8 @@ const SlidingComp = (props) => {
         cssEase: 'linear',
         slidesToShow: 3,
         slidesToScroll: 1,
+        pauseOnHover:true,
+        pauseOnFocus:true,
         responsive: [
           {
             breakpoint: 480,
@@ -92,6 +94,15 @@ const SlidingComp = (props) => {
                   src={permianlodging}
                   alt="permian lodging logo"
                 />
+        </div>
+        <div className='single-slide'>
+        <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/denali-universal-services.png" alt="denali universal services logo" />
+        </div>
+        <div className='single-slide'>
+        <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/cotton-logistics.png" alt="cotton logistics logo" />
+        </div>
+        <div className='single-slide'>
+        <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/right-choice-camps-catering.png" alt="right choice camps catering logo" />
         </div>
       </Slider>
             </div>
