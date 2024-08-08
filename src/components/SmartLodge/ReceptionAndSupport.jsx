@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { receptionAccordianData,receptionImages } from "./receptionAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const ReceptionAndSupport = () => {
 
@@ -85,7 +85,7 @@ const ReceptionAndSupport = () => {
           
         </div>
         <button className="btn-orange h-[58px] w-[213px] rounded-lg">
-              REQUEST A DEMO
+         <Link to="demoForm">REQUEST A DEMO</Link>     
            </button>
         </div>
       

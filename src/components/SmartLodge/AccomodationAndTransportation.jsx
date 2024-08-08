@@ -1,6 +1,7 @@
 import { FaPlus } from "react-icons/fa6"
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const AccomodationAndTransportation = () => {
   return (
@@ -90,7 +91,9 @@ const AccomodationAndTransportation = () => {
             </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">Speak to sales</button>
+              <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">
+              <Link to="demoForm"> Speak to sales</Link> 
+                </button>
               <button className="uppercase font-ttCommonProNormal font-semibold text-custom-blue hover:border-custom-button border-custom-blue border-[1px] py-4 px-10 rounded">checkout enroute</button>
             </div>
         </div>

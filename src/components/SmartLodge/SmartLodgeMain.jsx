@@ -54,6 +54,7 @@ const SmartLodgeMain = () => {
         <RoomsManagement/>
         <RoomsManagementSecond/>
       </section>
+      
       <section id="reception">
         <Reception/>
       <CheckInAndOut/>
@@ -77,13 +78,18 @@ const SmartLodgeMain = () => {
       <section id='features'>
 <AdditionalFeatures/>
       </section>
+
+
       <section id='afterlast'>
         <SmartLodgeFastFacts/>
       <AccomodationAndTransportation/>
       <FAQs/>
-      <DemoForm/>
-      </section>
       
+      </section>
+      <section id="demoForm">
+            <DemoForm/>  
+      </section>
+
     </div>
   );
 }
