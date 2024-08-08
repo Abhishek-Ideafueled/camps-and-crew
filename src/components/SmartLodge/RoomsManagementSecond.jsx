@@ -30,7 +30,7 @@ const RoomsManagementSecond = () => {
           </div>
           {roomAccordianData2.map((item) => (
             <div
-              className="flex flex-col cursor-pointer"
+              className="flex flex-col cursor-pointer border-b-[#CDD5DF] border-b-[1px]"
               key={item.id}
               
             >
@@ -56,11 +56,13 @@ const RoomsManagementSecond = () => {
               <div
                 className={`${
                   activeId !== item.id
-                    ? "z-0 h-0 bg-transparent text-transparent "
-                    : "font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2 pr-4"
-                } border-b-[#CDD5DF] border-b-[1px]`}
+                    ? "z-0 h-0 opacity-0 "
+                    : "opacity-100 transition-all duration-400 delay-100 pb-2"
+                }  w-full`}
               >
+                  <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
                 {item.desc}
+                </div>
               </div>
             </div>
           ))}
