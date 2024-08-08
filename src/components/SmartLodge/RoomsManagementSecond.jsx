@@ -57,7 +57,7 @@ const RoomsManagementSecond = () => {
                 className={`${
                   activeId !== item.id
                     ? "z-0 h-0 opacity-0 "
-                    : "opacity-100 transition-all duration-400 delay-100 pb-2"
+                    : "opacity-100 transition-all duration-400 pb-2"
                 }  w-full`}
               >
                   <div className="text-custom-body font-ttCommonProNormal text-base w-[95%]">
@@ -67,7 +67,7 @@ const RoomsManagementSecond = () => {
             </div>
           ))}
         </div>
-        <div className="h-[250px] md:h-[638px] max-w-[666px] relative z-0 md:ml-[-60px]">
+        <div className="h-[250px] md:h-[638px] max-w-[666px] relative z-0 md:ml-[-100px] xl:ml-[-30px]">
                  <img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} object-cover absolute inset-0 w-full h-full transition-all duration-500 bg-custom-back  rounded-2xl`} src="/permanent-room-remote-camp-canada.jpg" alt="Bedroom of a worker at an oil sands camp in Fort McMurray, Canada." />
                  <img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} object-cover absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/bunkhouse-multiple-beds-remote-mining-camp-housing.jpg" alt="Bunk beds in a shared worker dormitory with windows looking onto a savannah."/>
                  <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} object-cover absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`} src="/remote-camp-room-jack-and-jill-room.jpg" alt="A bedroom with a bed, private sink and desk at a mining camp."/>

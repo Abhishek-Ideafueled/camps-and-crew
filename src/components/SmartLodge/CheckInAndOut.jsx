@@ -20,10 +20,10 @@ const CheckInAndOut = () => {
  
         {activeTab ==="mobile" && <div className="grid grid-cols-1 md:grid-cols-2 items-center">
             <img 
-            className="h-[400px] md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
+            className="h-[400px] object-cover md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
             src="/fifo-worker-checks-phone-riding-bus.jpg" 
             alt="Fly-in fly-out worker texts on cellphone while riding a bus with a snowy climate visible from bus window." />
-            <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-80px] max-w-[642px] max-h-[470px]">
+            <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-50px] max-w-[642px] max-h-[470px]">
                 <div className="flex flex-col gap-1 lg:gap-4 items-center md:items-start">
                 <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">CHECK IN BEFORE ARRIVAL</span>
                 <div className="font-gilroyBold font-normal text-custom-heading text-[26px] leading-[32px] md:text-[32px] md:leading-[38px]">
@@ -44,10 +44,10 @@ const CheckInAndOut = () => {
             {
               activeTab ==="kiosk" &&  <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <img 
-              className="h-[400px] md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
+              className="h-[400px] object-cover md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
               src="/fifo-workers-check-in-kiosks-remote-camp.jpg" 
               alt="Workers use kiosks to check in at a lobby located an oil sands camp in Fort McMurray, Canada." />
-              <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-80px] max-w-[642px] max-h-[470px]">
+              <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-50px] max-w-[642px] max-h-[470px]">
                   <div className="flex flex-col gap-1 lg:gap-4 items-center md:items-start">
                   <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">BYPASS RECEPTION</span>
                   <div className="font-gilroyBold font-normal text-custom-heading text-[26px] leading-[32px] md:text-[32px] md:leading-[38px]">
@@ -67,10 +67,10 @@ const CheckInAndOut = () => {
              {
               activeTab ==="automatic" &&  <div className="grid grid-cols-1 md:grid-cols-2 items-center">
               <img 
-              className="h-[400px] md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
+              className="h-[400px] object-cover md:h-[505px] lg:h-[565px] w-[642px] rounded-2xl"
               src="/guests-check-in-kiosks-lobby.jpg" 
               alt="Person taps a electronic keycard at a kiosk awaiting activation of the card." />
-              <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-80px] max-w-[642px] max-h-[470px]">
+              <div className="flex flex-col gap-4 lg:gap-6 p-6 lg:py-10 lg:px-12 shadow-custom-shadow2 rounded-2xl bg-white ml-0 md:ml-[-50px] lg:ml-[-50px] max-w-[642px] max-h-[470px]">
                   <div className="flex flex-col gap-1 lg:gap-4 items-center md:items-start">
                   <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">TAP YOUR CARD AND GO</span>
                   <div className="font-gilroyBold font-normal text-custom-heading text-[26px] leading-[32px] md:text-[32px] md:leading-[38px]">
