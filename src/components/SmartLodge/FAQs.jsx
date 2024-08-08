@@ -107,7 +107,7 @@ const FAQs = () => {
                         <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6">{item.title}</h4>
                         <span className="p-2 w-[24px] h-[24px]">{activeId === item.id?<FaPlus /> :<FaMinus />}</span>
                     </div>
-                    <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-4 px-4'}`}>
+                    <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-4 pl-4 pr-7'}`}>
                     {item.desc}
                     </div>
             </div>

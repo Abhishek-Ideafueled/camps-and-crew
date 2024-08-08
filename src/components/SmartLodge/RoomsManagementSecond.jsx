@@ -57,7 +57,7 @@ const RoomsManagementSecond = () => {
                 className={`${
                   activeId !== item.id
                     ? "z-0 h-0 bg-transparent text-transparent "
-                    : "font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2"
+                    : "font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2 pr-4"
                 } border-b-[#CDD5DF] border-b-[1px]`}
               >
                 {item.desc}

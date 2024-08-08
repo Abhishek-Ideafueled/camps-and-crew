@@ -54,7 +54,7 @@ const ReceptionAndSupport = () => {
                  {item.title}
                 <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                </div>
-              <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-white text-base transition-all duration-300 delay-100 px-6 pb-6'} border-b-[0.5px] border-[#00000080] border-opacity-10`}>
+              <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-white text-base transition-all duration-300 delay-100 pl-6 pb-6 pr-10'} border-b-[0.5px] border-[#00000080] border-opacity-10`}>
                                          {item.desc}
                </div>
              </div>
