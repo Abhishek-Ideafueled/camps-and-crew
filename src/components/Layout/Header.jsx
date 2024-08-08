@@ -24,6 +24,14 @@ const Header = () => {
     setActiveLink(curr);
   },[])
 
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
   return (
     <>
       <header className="bg-white w-full fixed top-0 z-20  lg:h-[106px] border-[#D0D5DD] border-b-[1px] flex flex-col items-start justify-center">
@@ -117,7 +125,7 @@ const Header = () => {
             </nav>
             <button className="bg-[#5BC0ED] text-nowrap text-center w-[145px] h-[54px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]">
               
-              BOOK A DEMO
+           <Link href="#demoForm" onClick={handleClickScroll}>BOOK A DEMO</Link>   
             </button>
           </div>
           <div className='block lg:hidden items-center' onClick={closeDropdown}>
