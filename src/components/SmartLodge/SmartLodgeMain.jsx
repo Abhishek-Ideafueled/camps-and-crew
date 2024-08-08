@@ -21,12 +21,10 @@ import FAQs from "./FAQs";
 import DemoForm from "../HomePage/DemoForm";
 import { useEffect, useState } from "react";
 import Aos from "aos";
-import SmartLodgeNavbar from "./SmartLodgeNavbar";
 import SecondNavbar from "./SecondNavbar";
 
 const SmartLodgeMain = () => {
 
-  const [isVisible,setIsVisible] = useState("");
   useEffect(()=>{
     Aos.init(
       {duration:1000,
@@ -35,35 +33,23 @@ const SmartLodgeMain = () => {
     );
 },[])
 
-useEffect(()=>{
-  const handleShowNav=()=>{
-      if(window.scrollY >=2250 )
-        // && window.scrollY <=12000)
-      {
-          setIsVisible(true);
-      }else setIsVisible(false);
-    }
-
-      window.addEventListener("scroll",handleShowNav);
-      return ()=>{
-          window.removeEventListener("scroll",handleShowNav)
-      }
-
-      
-  },[])
 
 
 
   return (
     <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
-      <SecondNavbar isVisible={isVisible}/>
+      <SecondNavbar/>
       <SmartLodgeHeader/>
+      <section id="beforerooms">
+
+     
       <SlidingComp showHeading={false}/>
       <ElevatingEfficiency/>
       <LodgingSlider/>
+
+ </section>
       {/* <LodgingSliderSlick/> */}
-      {/* <SmartLodgeNavbar/> */}
-     
+
       <section id="roomsManagement">
         <RoomsManagement/>
         <RoomsManagementSecond/>
@@ -91,11 +77,13 @@ useEffect(()=>{
       <section id='features'>
 <AdditionalFeatures/>
       </section>
-      
-      <SmartLodgeFastFacts/>
+      <section id='afterlast'>
+        <SmartLodgeFastFacts/>
       <AccomodationAndTransportation/>
       <FAQs/>
       <DemoForm/>
+      </section>
+      
     </div>
   );
 }
