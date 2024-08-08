@@ -30,25 +30,23 @@ const useNavbarVisibility = () => {
             setIsVisible(false);
           }
         }
-        else if (entry.target.id === 'reception') {
+       if (entry.target.id === 'reception') {
             if (entry.isIntersecting) {
               setIsVisible(true);
             } 
           }
-          else if (entry.target.id === 'housekeeping') {
+         if (entry.target.id === 'housekeeping') {
             if (entry.isIntersecting) {
               setIsVisible(true);
             } 
           }
-          else if (entry.target.id === 'reports') {
+         if (entry.target.id === 'reports') {
             if (entry.isIntersecting) {
               setIsVisible(true);
             } 
-          } else if (entry.target.id === 'systemIntegrations') {
+          } if (entry.target.id === 'systemIntegrations') {
           if (entry.isIntersecting) {
             setIsVisible(true);
-          } else if (!scrollingDown && !entry.isIntersecting) {
-            setIsVisible(false);
           }
         }
         else if (entry.target.id === 'features') {
