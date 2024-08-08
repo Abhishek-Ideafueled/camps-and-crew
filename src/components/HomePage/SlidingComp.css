@@ -10,3 +10,12 @@
     width: auto;
     align-items: center;
 }
+
+
+ /* @media only screen and (min-width: 1400px) {
+    .comp-slider .slick-slider.slick-initialized .slick-list .slick-slide{
+        width: auto;
+    }
+
+
+  } */

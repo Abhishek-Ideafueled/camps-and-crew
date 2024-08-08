@@ -3,7 +3,7 @@ import React from 'react';
 const ElevatingEfficiency = () => {
   return (
     <div className='w-full relative'>
-        <div className='main-container mx-auto py-20 flex flex-col gap-[30px] lg:gap-[60px] lg:px-28 xl:px-0 '>
+        <div className='main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] lg:px-28 xl:px-0 '>
             <div className='flex flex-col gap-4 items-center'>
             <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
