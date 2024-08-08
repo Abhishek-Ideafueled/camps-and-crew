@@ -9,7 +9,7 @@ const useNavbarVisibility = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPosition = window.scrollY;
-      console.log(currentScrollPosition);
+      // console.log(currentScrollPosition);
       setScrollingDown(currentScrollPosition > lastKnownScrollPosition);
       setLastKnownScrollPosition(currentScrollPosition);
     };
