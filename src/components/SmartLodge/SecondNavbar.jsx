@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import "./SecondNavbar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import useNavbarVisibility from "./useNavbarVisibility";
+import './SecondNavbar.css';
 
 const SecondNavbar = ({}) => {
   const navRef = useRef();
@@ -38,7 +39,7 @@ const SecondNavbar = ({}) => {
               spy={true}
               smooth={true}
               duration={200}
-              className=" transition-all duration-350 text-base border-b-[4px] font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative text-base border-b-[2px] font-gilroyBold px-3 text-center border-b-transparent"
             >
               <div className="h-full">Rooms Management</div>
             </Link>
@@ -46,7 +47,7 @@ const SecondNavbar = ({}) => {
             <Link
               to="reception"
               activeClass="active"
-              className=" transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
@@ -56,7 +57,7 @@ const SecondNavbar = ({}) => {
             <Link
               to="housekeeping"
               activeClass="active"
-              className=" transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
@@ -66,7 +67,7 @@ const SecondNavbar = ({}) => {
             <Link
               to="reports"
               activeClass="active"
-              className=" transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
@@ -76,7 +77,7 @@ const SecondNavbar = ({}) => {
             <Link
               to="systemIntegrations"
               activeClass="active"
-              className=" transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
@@ -86,7 +87,7 @@ const SecondNavbar = ({}) => {
             <Link
               to="features"
               activeClass="active"
-              className=" transition-all duration-350 border-b-[4px] text-base font-gilroyBold px-3 text-center border-b-transparent"
+              className="custom-transition relative border-b-[2px] text-base font-gilroyBold px-3 text-center border-b-transparent"
               spy={true}
               smooth={true}
               duration={200}
