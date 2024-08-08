@@ -42,7 +42,7 @@ const SlidingComp = (props) => {
           {
             breakpoint: 1199,
             settings: {
-              slidesToShow: 5,
+              slidesToShow: 4,
             },
           },
           {
