@@ -69,7 +69,7 @@ const LodgingSlider = () => {
             },
           },
           {
-            breakpoint: 1600,
+            breakpoint: 2200,
             settings: {
               slidesToShow:6 ,
             },
