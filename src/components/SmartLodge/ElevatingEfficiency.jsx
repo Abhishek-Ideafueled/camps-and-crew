@@ -47,7 +47,7 @@ const ElevatingEfficiency = () => {
               </span>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 z-10 gap-4 lg:gap-8'>
-            <div className='flex flex-col gap-[60px] p-6'>
+            <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-maximize-room-bed-utilization-icon.png" alt="" />
                 </span>
@@ -60,7 +60,7 @@ const ElevatingEfficiency = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-[60px] p-6'>
+            <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-streamline-workflows-icon.png" alt="" />
                 </span>
@@ -73,7 +73,7 @@ const ElevatingEfficiency = () => {
                 </p>
               </div>
             </div>
-            <div className='flex flex-col gap-[60px] p-6'>
+            <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
                 <span>
                <img src="/smartlodge-reduce-admin-workloads-icon.png" alt="" />
                 </span>
