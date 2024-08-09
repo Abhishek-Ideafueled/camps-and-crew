@@ -67,14 +67,14 @@ const AdditionalFeatures = () => {
               {featuresArr.map((item) => (
                 <SwiperSlide key={item.id}>
                 <div className="flex flex-col gap-8 w-full" >
-                  <div className='w-full h-full'>
+                  <div className='w-full max-h-fit'>
                     <img
                       className="rounded-2xl w-full h-full max-h-[300px] lg:min-h-[258px] xl:min-h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
                   </div>
-                  <div className="flex flex-col justify-between bg-[#F9FAFB] p-6 rounded-2xl w-full h-full min-h-[282px] lg:min-h-[351px] xl:min-h-[282px]">
+                  <div className="flex flex-col justify-between bg-[#F9FAFB] p-6 rounded-2xl w-full h-full max-h-max min-h-[282px] lg:min-h-[351px] xl:min-h-[282px]">
                    <div className='flex flex-col gap-4'>
                      <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] uppercase">
                       {item.subTitle}

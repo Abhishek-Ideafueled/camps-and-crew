@@ -4,6 +4,7 @@ import LogoSection from './LogoSection';
 import JourneyManagement from './JourneyManagement';
 import CharteredTransportation from './CharteredTransportation';
 import CharterResources from './CharterResources';
+import TravelManifest from './TravelManifest';
 
 const EnrouteMain = () => {
   return (
@@ -13,6 +14,7 @@ const EnrouteMain = () => {
           <JourneyManagement/>
           <CharteredTransportation/>
           <CharterResources/>
+          <TravelManifest/>
     </div>
   )
 }

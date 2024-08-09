@@ -1,0 +1,19 @@
+.travel-slider .swiper-backface-hidden .swiper-slide{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.travel-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+    overflow: hidden;
+}
+
+ @media only screen and (max-width: 2200px) {
+    .travel-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden .swiper-wrapper{
+       /* height: 800px; */
+            /* max-height: fit-content; */
+    }
+
+
+  }
