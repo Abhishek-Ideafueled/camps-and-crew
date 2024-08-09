@@ -3,6 +3,7 @@ import EnrouteHero from './EnrouteHero';
 import LogoSection from './LogoSection';
 import JourneyManagement from './JourneyManagement';
 import CharteredTransportation from './CharteredTransportation';
+import CharterResources from './CharterResources';
 
 const EnrouteMain = () => {
   return (
@@ -11,6 +12,7 @@ const EnrouteMain = () => {
           <LogoSection/>
           <JourneyManagement/>
           <CharteredTransportation/>
+          <CharterResources/>
     </div>
   )
 }

@@ -15,7 +15,7 @@ const EnrouteHero = () => {
               Book and Manage All Modes of Transport for your FIFO Travelers
               </span>
             </div>
-            <div className="flex flex-col smalls:flex-row items-center gap-4 lg:gap-8 w-full justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-8 w-full justify-center lg:justify-start">
               <div className="btn-orange w-full max-w-[210px] lg:w-[187px] cursor-pointer flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white transition-all duration-300 text-btn-text">
            <Link to="demoForm">BOOK A DEMO</Link>     
               </div>
