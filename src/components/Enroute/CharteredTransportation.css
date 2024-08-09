@@ -1,0 +1,15 @@
+/* .enroute-sliders .enroute-upwards .slick-slider.slider-vertical{
+    display: flex !important;
+    justify-content: center;
+    height: 500px;
+    align-items: center;
+    background: #000;
+} */
+
+.enroute-sliders .enroute-upwards .slick-slider.slick-vertical.slick-initialized{
+    height: 100%;
+}
+
+.enroute-sliders .enroute-downwards .slick-slider.slick-vertical.slick-initialized{
+    height: 100%;
+}
