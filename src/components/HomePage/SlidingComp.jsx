@@ -79,7 +79,7 @@ const SlidingComp = (props) => {
                   alt="canadian energy logo"
                 />
         </div>
-        <div className='single-slide'>
+        <div className='single-slide px-4 lg:px-0'>
         <img className='max-h-[106px] object-cover' src="/right-choice-camps-catering.png" alt="right choice camps catering logo" />
         </div>
         <div className='single-slide'>
@@ -102,7 +102,7 @@ const SlidingComp = (props) => {
         <div className='single-slide'>
         <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/denali-universal-services.png" alt="denali universal services logo" />
         </div>
-        <div className='single-slide px-4'>
+        <div className='single-slide px-4 lg:px-0'>
         <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/cotton-logistics.png" alt="cotton logistics logo" />
         </div>
         
