@@ -2,6 +2,7 @@ import React from 'react'
 import EnrouteHero from './EnrouteHero';
 import LogoSection from './LogoSection';
 import JourneyManagement from './JourneyManagement';
+import CharteredTransportation from './CharteredTransportation';
 
 const EnrouteMain = () => {
   return (
@@ -9,6 +10,7 @@ const EnrouteMain = () => {
           <EnrouteHero/>
           <LogoSection/>
           <JourneyManagement/>
+          <CharteredTransportation/>
     </div>
   )
 }
