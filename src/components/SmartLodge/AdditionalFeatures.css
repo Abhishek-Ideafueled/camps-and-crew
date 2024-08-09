@@ -11,7 +11,7 @@
 
  @media only screen and (max-width: 440px) {
     .features-slider div.swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden .swiper-wrapper{
-       height: 800px;
+       /* height: 800px; */
     }
 
 

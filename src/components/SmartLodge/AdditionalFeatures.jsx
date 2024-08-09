@@ -74,7 +74,7 @@ const AdditionalFeatures = () => {
                       alt={item.alt}
                     />
                   </div>
-                  <div className="flex flex-col justify-between bg-[#F9FAFB] p-6 rounded-2xl w-full h-full max-h-max min-h-[282px] lg:min-h-[351px] xl:min-h-[282px]">
+                  <div className="flex flex-col justify-between bg-[#F9FAFB] p-6 rounded-2xl w-full h-full max-h-max min-h-[335px] smalls:min-h-[250px] lg:min-h-[351px] xl:min-h-[282px]">
                    <div className='flex flex-col gap-4'>
                      <span className="font-ttCommonProNormal font-semibold text-custom-blue text-sm leading-[22.4px] uppercase">
                       {item.subTitle}
