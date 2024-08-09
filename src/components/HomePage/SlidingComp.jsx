@@ -80,11 +80,15 @@ const SlidingComp = (props) => {
                 />
         </div>
         <div className='single-slide'>
+        <img className='max-h-[106px] object-cover' src="/right-choice-camps-catering.png" alt="right choice camps catering logo" />
+        </div>
+        <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5logo} alt="top 5 global logo" />
         </div>
         <div className='single-slide px-4 lg:px-0'>
         <img  className="h-[65px] sm:h-[90px]" src={sodexologo} alt="sodexo logo" />
         </div >
+        
         <div className='single-slide'>
         <img className='h-[65px] sm:h-full' src={top5canada} alt="top 5 canada logo" />
         </div>
@@ -98,12 +102,10 @@ const SlidingComp = (props) => {
         <div className='single-slide'>
         <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/denali-universal-services.png" alt="denali universal services logo" />
         </div>
-        <div className='single-slide'>
+        <div className='single-slide px-4'>
         <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/cotton-logistics.png" alt="cotton logistics logo" />
         </div>
-        <div className='single-slide'>
-        <img className='h-[65px] sm:h-full sm:max-h-[106px] object-cover' src="/right-choice-camps-catering.png" alt="right choice camps catering logo" />
-        </div>
+        
       </Slider>
             </div>
         </div>
