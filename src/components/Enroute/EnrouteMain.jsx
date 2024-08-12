@@ -5,6 +5,7 @@ import JourneyManagement from './JourneyManagement';
 import CharteredTransportation from './CharteredTransportation';
 import CharterResources from './CharterResources';
 import TravelManifest from './TravelManifest';
+import PassengerCheckIn from './PassengerCheckIn';
 
 const EnrouteMain = () => {
   return (
@@ -15,6 +16,7 @@ const EnrouteMain = () => {
           <CharteredTransportation/>
           <CharterResources/>
           <TravelManifest/>
+          <PassengerCheckIn/>
     </div>
   )
 }
