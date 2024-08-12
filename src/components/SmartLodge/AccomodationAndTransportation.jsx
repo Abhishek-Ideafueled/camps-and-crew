@@ -1,9 +1,20 @@
 import { FaPlus } from "react-icons/fa6"
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom"
 
-import { Link, animateScroll as scroll } from "react-scroll";
+
 
 const AccomodationAndTransportation = () => {
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
+
   return (
     <div className="w-full">
         <div className="main-container mx-auto flex flex-col gap-[30px] lg:gap-[60px] py-10 lg:py-20 items-center">
@@ -91,10 +102,13 @@ const AccomodationAndTransportation = () => {
             </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">
-              <Link to="demoForm"> Speak to sales</Link> 
-                </button>
-              <button className="uppercase font-ttCommonProNormal font-semibold text-custom-blue hover:border-custom-button border-custom-blue border-[1px] py-4 px-10 rounded">checkout enroute</button>
+             <Link href="#demoForm" onClick={handleClickScroll}>  <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">
+              Speak to sales 
+                </button></Link>
+                <Link to="/fifo-travel-online-booking-tool">
+                <button className="uppercase font-ttCommonProNormal font-semibold text-custom-blue hover:border-custom-button border-custom-blue border-[1px] py-4 px-10 rounded">checkout enroute</button>
+                </Link>
+             
             </div>
         </div>
       

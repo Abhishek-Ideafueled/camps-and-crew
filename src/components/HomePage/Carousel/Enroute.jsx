@@ -7,6 +7,7 @@ import Slider from "react-slick";
 // import enroute4 from '/enroute4.jpg';
 // import enroute1 from '/enroute1.jpg';
 import './Enroute.css';
+import { Link } from 'react-router-dom';
 
 const Enroute = () => {
 
@@ -50,9 +51,10 @@ const Enroute = () => {
               A single system  to book <br /> and manage all your <br /> FIFO transport
             </h1>
             </div>
-            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
+            <Link to="/fifo-travel-online-booking-tool"> <div className="flex items-center justify-center max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
-            </button>
+            </div>
+            </Link>
             </div>
           </div></div>
         </div>
@@ -72,9 +74,10 @@ const Enroute = () => {
               Book and manage <br /> charter flights, <br /> buses and more
             </h1>
             </div>
-            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
+            <Link to="/fifo-travel-online-booking-tool"> <div className="flex items-center justify-center max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
-            </button>
+            </div>
+            </Link>
             </div>
           </div>
           </div>
@@ -94,9 +97,10 @@ const Enroute = () => {
             <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
               Manage travel and <br /> rooms for your workers <br /> in one platform
             </h1></div>
-            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
+            <Link to="/fifo-travel-online-booking-tool"> <div className="flex items-center justify-center max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
-            </button>
+            </div>
+            </Link>
             </div>
           </div>
           </div>
@@ -116,9 +120,10 @@ const Enroute = () => {
             <h1 className="text-[26px] md:text-[37px] lg:text-h1 font-gilroyBold font-normal lg:leading-[3.6rem] max-w-[600px]">
               Book rich GDS content, all within policy
             </h1></div>
-            <button className="max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
+            <Link to="/fifo-travel-online-booking-tool"> <div className="flex items-center justify-center max-w-[219px] h-[54px] btn-orange  text-center rounded-[4px] text-sm lg:text-base lg:leading-[1.55rem] slider-desc">
               SEE ALL FEATURES
-            </button>
+            </div>
+            </Link>
             </div>
           </div>
           </div>

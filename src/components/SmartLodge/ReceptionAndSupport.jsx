@@ -24,6 +24,15 @@ const ReceptionAndSupport = () => {
     setActiveColor(id);
   }
 
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
+
   return (
     <div className="w-full bg-custom-back">
         <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[60px]">
@@ -95,9 +104,9 @@ const ReceptionAndSupport = () => {
            </div>
           
         </div>
-        <button className="btn-orange h-[58px] w-[213px] rounded-lg">
-         <Link to="demoForm">REQUEST A DEMO</Link>     
-           </button>
+         <Link to="demoForm" onClick={handleClickScroll}><button className="btn-orange h-[58px] w-[213px] rounded-lg">
+        REQUEST A DEMO   
+           </button></Link>  
         </div>
       
     </div>

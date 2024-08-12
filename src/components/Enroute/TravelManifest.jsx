@@ -21,9 +21,9 @@ const TravelManifest = () => {
         }
             };
 
-            TravelManifestData.map((item)=>(
-                console.log(item.title)
-            ))
+            // TravelManifestData.map((item)=>(
+            //     console.log(item.title)
+            // ))
 
   return (
     <div className="w-full">

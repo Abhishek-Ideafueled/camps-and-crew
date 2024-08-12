@@ -21,6 +21,15 @@ const SmartLodgeHeader = () => {
     setIsOpen(false);
   }
 
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
+
   
 
   return (
@@ -38,12 +47,12 @@ const SmartLodgeHeader = () => {
               </span>
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-8 w-full justify-center lg:justify-start">
-              <div className="btn-orange w-full max-w-[210px] lg:w-[187px] cursor-pointer flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white transition-all duration-300 text-btn-text">
-           <Link to="demoForm">BOOK A DEMO</Link>     
-              </div>
-              <div className="font-ttCommonProNormal font-semibold cursor-pointer w-full max-w-[210px] lg:w-[187px] flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white hover:text-btn-text hover:border-white transition-all duration-300 text-custom-button border-[1px] border-custom-button">
-              <Link to="demoForm"> SPEAK TO SALES</Link>
-              </div>
+            <Link to="demoForm" onClick={handleClickScroll}><div className="btn-orange w-full max-w-[210px] lg:w-[187px] cursor-pointer flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white transition-all duration-300 text-btn-text">
+           BOOK A DEMO     
+              </div></Link>
+             <Link to="demoForm" onClick={handleClickScroll}>  <div className="font-ttCommonProNormal font-semibold cursor-pointer w-full max-w-[210px] lg:w-[187px] flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white hover:text-btn-text hover:border-white transition-all duration-300 text-custom-button border-[1px] border-custom-button">
+              SPEAK TO SALES
+              </div></Link>
             </div>
           </div>
           <div className="w-full max-w-[588px] h-[340px] lg:h-[420px] justify-self-center">

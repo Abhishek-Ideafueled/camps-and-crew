@@ -49,7 +49,7 @@ const DemoForm = () => {
  console.log(phone)
 
   return (
-    <div className="w-full main-container mx-auto">
+    <div className="w-full main-container mx-auto" id='demoForm'>
       <div className="py-10 lg:py-20 w-full">
         <div className="bg-demo object-contain img-container3 w-full rounded-[26px]" data-aos="fade-up" data-aos-duration="1000">
           <div className="px-5 py-8 md:py-10  lg:p-10 min-h-[786px] flex flex-col md:flex-row justify-center items-center gap-6 lg:gap-10 ">
