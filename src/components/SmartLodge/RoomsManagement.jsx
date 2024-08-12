@@ -1,11 +1,20 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { roomAccordianData } from "./roomsAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
 
 const RoomsManagement = () => {
   const [activeId, setActiveId] = useState(1);
   const [activeImageId, setActiveImageId] = useState(1);
-  const contentRef = useRef(null);
+  const [heights, setHeights] = useState([]);
+  const contentRefs = useRef([]);
+
+  useEffect(() => {
+    const calculatedHeights = contentRefs.current.map(
+      (el) => el.scrollHeight
+    );
+    setHeights(calculatedHeights);
+  }, []);
+
 
   const handleAccordionClick = (id) => {
     if (activeId === id) {
@@ -35,7 +44,7 @@ const RoomsManagement = () => {
               Flexible Ways to Book Your Rooms
             </div>
             <div className="flex flex-col">
-              {roomAccordianData.map((item) => (
+              {roomAccordianData.map((item,index) => (
                 <div
                   className="flex flex-col cursor-pointer transition-all duration-450 border-b-[#CDD5DF] border-b-[1px]"
                   key={item.id}
@@ -54,20 +63,20 @@ const RoomsManagement = () => {
                     </span>
                   </div>
                   <div
-                    ref={contentRef}
-                    className={`${
-                      activeId === item.id
-                        ? "max-h-[1000px] opacity-100"
-                        : "max-h-0 opacity-0"
-                    } 
-                                            overflow-hidden transition-all duration-300`}
-                    style={{
-                      maxHeight:
-                        activeId === item.id
-                          ? `${contentRef.current?.scrollHeight}px`
-                          : "0",
-                    }}
-                  >
+                ref={(el) => (contentRefs.current[index] = el)}
+                className={`${
+                  activeId === item.id
+                    ? "max-h-[1000px] opacity-100"
+                    : "max-h-0 opacity-0"
+                } 
+                                            overflow-hidden transition-all duration-300 ease-in-out`}
+                style={{
+                  maxHeight:
+                    activeId === item.id
+                      ? `${heights[index]}px`
+                      : "0",
+                }}
+              >
                     <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-2">
                       {item.desc}
                     </div>

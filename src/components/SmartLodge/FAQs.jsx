@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
 
 
@@ -38,8 +38,16 @@ const FAQs = () => {
     ]
 
     
-    const [activeId, setActiveId] = useState(0);
-    const contentRef = useRef();
+    const [activeId, setActiveId] = useState(1);
+    const [heights, setHeights] = useState([]);
+  const contentRefs = useRef([]);
+
+  useEffect(() => {
+    const calculatedHeights = contentRefs.current.map(
+      (el) => el.scrollHeight
+    );
+    setHeights(calculatedHeights);
+  }, []);
 
     const handleAccordionClick = (id) => {
       if (activeId === id) {
@@ -102,25 +110,30 @@ const FAQs = () => {
           </span>
         </div>
         <div className="flex flex-col gap-4 max-w-[800px] mx-auto">
-            {faqArr.map((item)=>(
+            {faqArr.map((item,index)=>(
                 <div className="bg-[#ECE7E0] flex flex-col" key={item.id}>
                     <div className="flex justify-between p-4 items-start z-10 relative" onClick={()=>handleAccordionClick(item.id)}>
                         <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] sm:w-full ">{item.title}</h4>
                         <div className={`accordion-btns ${activeId === item.id ? 'btn-clicked' : ''}  p-2 w-[24px] h-[24px] flex items-center`}> 
-                          {/* <FaPlus className={` ${activeId === item.id ? ' h-full w-full rotate-360 transition-all duration-300':' h-0 w-0 rotate-360 transition-all duration-600'} absolute inset-0`}/> 
-                        <FaMinus className={` ${activeId === item.id ? ' h-0 w-0 rotate-360 transition-all duration-300':'h-full w-full rotate-540 transition-all duration-300'} absolute inset-0`} /> */}
                         </div>
                     </div>
                     <div
-                                        ref={contentRef}
-                                        className={`${activeId === item.id ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} 
-                                            overflow-hidden transition-all duration-300 px-4`}
-                                        style={{
-                                            maxHeight: activeId === item.id ? `${contentRef.current?.scrollHeight}px` : '0',
-                                        }}
-                                    >
+                ref={(el) => (contentRefs.current[index] = el)}
+                className={`${
+                  activeId === item.id
+                    ? "max-h-[1000px] opacity-100"
+                    : "max-h-0 opacity-0"
+                } 
+                                            overflow-hidden transition-all duration-300 ease-in-out`}
+                style={{
+                  maxHeight:
+                    activeId === item.id
+                      ? `${heights[index]}px`
+                      : "0",
+                }}
+              >
                     
-                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4">
+                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4 px-4">
                       {item.desc}
                     </div>
                     </div>

@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { roomAccordianData2 } from "./roomsAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaCircleCheck } from "react-icons/fa6";
@@ -6,7 +6,15 @@ import { FaCircleCheck } from "react-icons/fa6";
 const RoomsManagementSecond = () => {
   const [activeId, setActiveId] = useState(1);
   const [activeImageId, setActiveImageId] = useState(1);
-  const contentRef = useRef(null);
+  const [heights, setHeights] = useState([]);
+  const contentRefs = useRef([]);
+
+  useEffect(() => {
+    const calculatedHeights = contentRefs.current.map(
+      (el) => el.scrollHeight
+    );
+    setHeights(calculatedHeights);
+  }, []);
 
   const handleAccordionClick = (id) => {
     if (activeId === id) {
@@ -29,10 +37,9 @@ const RoomsManagementSecond = () => {
               Flexible Ways to Set Up Your Rooms
             </div>
           </div>
-          {roomAccordianData2.map((item) => (
+          {roomAccordianData2.map((item, index) => (
             <div
-              className="flex flex-col cursor-pointer "
-              //  border-b-[#CDD5DF] border-b-[1px]"
+              className="flex flex-col cursor-pointer"
               key={item.id}
             >
               <div
@@ -48,25 +55,25 @@ const RoomsManagementSecond = () => {
                 <span
                   className={`${
                     activeId === item.id
-                      ? "rotate-180 transition-all duration-500"
-                      : "transition-all duration-300"
+                      ? "rotate-180 transition-transform duration-500 ease-in-out"
+                      : "transition-transform duration-300 ease-in-out"
                   }`}
                 >
                   <IoIosArrowDown />
                 </span>
               </div>
               <div
-                ref={contentRef}
+                ref={(el) => (contentRefs.current[index] = el)}
                 className={`${
                   activeId === item.id
                     ? "max-h-[1000px] opacity-100"
                     : "max-h-0 opacity-0"
                 } 
-                                            overflow-hidden transition-all duration-300`}
+                                            overflow-hidden transition-all duration-300 ease-in-out`}
                 style={{
                   maxHeight:
                     activeId === item.id
-                      ? `${contentRef.current?.scrollHeight}px`
+                      ? `${heights[index]}px`
                       : "0",
                 }}
               >
@@ -81,28 +88,28 @@ const RoomsManagementSecond = () => {
           <img
             className={`${
               activeImageId === 1 ? "opacity-100 " : "opacity-0"
-            } object-cover absolute inset-0 w-full h-full transition-all duration-500 bg-custom-back  rounded-2xl`}
+            } object-cover absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out bg-custom-back  rounded-2xl`}
             src="/permanent-room-remote-camp-canada.jpg"
             alt="Bedroom of a worker at an oil sands camp in Fort McMurray, Canada."
           />
           <img
             className={`${
               activeImageId === 2 ? "opacity-100 " : "opacity-0"
-            } object-cover absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+            } object-cover absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out rounded-2xl`}
             src="/bunkhouse-multiple-beds-remote-mining-camp-housing.jpg"
             alt="Bunk beds in a shared worker dormitory with windows looking onto a savannah."
           />
           <img
             className={`${
               activeImageId === 3 ? "opacity-100 " : "opacity-0"
-            } object-cover absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+            } object-cover absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out rounded-2xl`}
             src="/remote-camp-room-jack-and-jill-room.jpg"
             alt="A bedroom with a bed, private sink and desk at a mining camp."
           />
           <img
             className={`${
               activeImageId === 4 ? "opacity-100 " : "opacity-0"
-            } object-cover absolute inset-0 w-full h-full transition-all duration-500 rounded-2xl`}
+            } object-cover absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out rounded-2xl`}
             src="/two-double-beds-camp-room-cross-shifts.jpg"
             alt="Two matching beds in a shared room for workers."
           />
