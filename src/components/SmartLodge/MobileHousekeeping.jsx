@@ -62,9 +62,6 @@ const MobileHousekeeping = () => {
 
               <div className='py-[35px] max-w-[588px] mx-auto'>
 
-                <div className='font-gilroyBold text-[25px] md:text-[32px] leading-[38px] text-custom-heading mb-6 '>
-                Flexible Ways to Book Your Rooms
-                </div>
                 <div className='flex flex-col'>
                  {
                   HousekeepingArr.map((item)=>(
@@ -97,22 +94,22 @@ const MobileHousekeeping = () => {
               </div>
             <div className="h-[270px] sm:mt-8 md:mt-0 md:h-[480px] max-w-[588px] relative w-full mx-auto flex items-center">
              
-<img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500  rounded-2xl`}
+<img className={`${activeImageId===1 ? 'opacity-100 ':'opacity-0'} absolute w-full max-h-[370px] md:max-h-full md:h-auto transition-all duration-500  rounded-2xl`}
                   alt="Remote camp attendant studies a tablet in a bedroom recently cleaned by her."
                   src="/housekeeper-studies-tablet-worker-room.jpg"/>
              
              
-<img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+<img className={`${activeImageId===2 ? 'opacity-100 ':'opacity-0'} absolute w-full max-h-[370px] md:max-h-full md:h-auto transition-all duration-500 rounded-2xl`}
                   alt="Housekeeper in a bedroom constructed of modular construction studies a tablet she holds."
                   src="/housekeeper-bedroom-fly-in-fly-out-camp.jpg"/>
              
              
-                 <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+                 <img className={`${activeImageId===3 ? 'opacity-100 ':'opacity-0'} absolute w-full max-h-[370px] md:max-h-full md:h-auto transition-all duration-500 rounded-2xl`}
                   alt="Maintenance staff fixes a drawer."
                   src="/maintenance-worker-fixes-drawers.jpg"/>
                
                
-                <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+                <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute w-full max-h-[370px] md:max-h-full md:h-auto transition-all duration-500 rounded-2xl`}
                   alt="Cleaning person rummages through cleaning supplies in the hallway of a remote camp with multiple bedroom doors open and illuminated."
                   src="/housekeeping.jpg"/>
                
