@@ -20,7 +20,7 @@ const RoomsManagementSecond = () => {
   return (
     <div className="w-full bg-custom-back py-20">
       <div className="main-container mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 items-center">
-        <div className="md:w-[393px] lg:w-[513px] xl:w-[666px] min-h-[498px] flex flex-col p-6 lg:py-10 lg:px-12 bg-white rounded-2xl z-10">
+        <div className="md:w-[393px] lg:w-[513px] xl:w-[666px] min-h-[520px] max-h-max flex flex-col p-6 lg:py-10 lg:px-12 bg-white rounded-2xl z-10">
           <div className="flex flex-col gap-4 mb-6">
             <div className="text-[#189AD2] font-ttCommonProMedium text-sm leading-[22px] font-semibold tracking-[0.56px]">
               ROOMS MANAGEMENT
@@ -31,7 +31,8 @@ const RoomsManagementSecond = () => {
           </div>
           {roomAccordianData2.map((item) => (
             <div
-              className="flex flex-col cursor-pointer border-b-[#CDD5DF] border-b-[1px]"
+              className="flex flex-col cursor-pointer"
+              //  border-b-[#CDD5DF] border-b-[1px]"
               key={item.id}
               
             >
@@ -56,7 +57,7 @@ const RoomsManagementSecond = () => {
               </div>
               <div
                                         ref={contentRef}
-                                        className={`${activeId === item.id ? 'max-h-[1000px] opacity-100' : 'max-h-0 opacity-0'} 
+                                        className={`${activeId === item.id ? 'max-h-max opacity-100' : 'max-h-0 opacity-0'} 
                                             overflow-hidden transition-all duration-300`}
                                         style={{
                                             maxHeight: activeId === item.id ? `${contentRef.current?.scrollHeight}px` : '0',

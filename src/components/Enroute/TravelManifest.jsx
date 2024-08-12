@@ -149,7 +149,7 @@ const TravelManifest = () => {
                 <div className="flex flex-col gap-8 w-full" >
                   <div className='w-full max-h-fit'>
                     <img
-                      className="rounded-2xl w-full h-full max-h-[300px] lg:min-h-[258px] xl:min-h-[300px] object-cover"
+                      className="rounded-2xl w-full h-full max-h-[300px] md:max-h-[280px]  lg:min-h-[258px] lg:max-h-[287px] xl:min-h-[300px] object-cover"
                       src={item.url}
                       alt={item.alt}
                     />
