@@ -111,7 +111,7 @@ const MobileHousekeeping = () => {
                
                 <img className={`${activeImageId===4 ? 'opacity-100 ':'opacity-0'} absolute w-full max-h-[370px] md:max-h-full md:h-auto transition-all duration-500 rounded-2xl`}
                   alt="Cleaning person rummages through cleaning supplies in the hallway of a remote camp with multiple bedroom doors open and illuminated."
-                  src="/housekeeping.jpg"/>
+                  src="/housekeeper-remote-camp-corridor-2.jpg"/>
                
                  
                 
