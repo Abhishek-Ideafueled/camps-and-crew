@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
 
@@ -6,6 +6,7 @@ const MobileHousekeeping = () => {
 
     const [activeId, setActiveId] = useState(1);
     const [ activeImageId,setActiveImageId] = useState(1);
+    const contentRef = useRef();
     
     const handleAccordionClick = (id) => {
       if (activeId === id) {
@@ -67,7 +68,7 @@ const MobileHousekeeping = () => {
                 <div className='flex flex-col'>
                  {
                   HousekeepingArr.map((item)=>(
-                    <div className="flex flex-col cursor-pointer" key={item.id}                   
+                    <div className="flex flex-col cursor-pointer border-b-[#CDD5DF] border-b-[1px]" key={item.id}                   
                     >
                     <div
                      onClick={() => handleAccordionClick(item.id)}
@@ -75,8 +76,17 @@ const MobileHousekeeping = () => {
                       {item.title}
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
-                   <div className={`${activeId !== item.id ? 'z-0 h-0 bg-transparent text-transparent ': 'font-ttCommonProNormal text-custom-body text-base transition-all duration-300 delay-100 pb-2 w-[90%]'}  border-b-[#CDD5DF] border-b-[1px]`}>
-                                              {item.desc}
+                    <div
+                                        ref={contentRef}
+                                        className={`${activeId === item.id ? 'max-h-max opacity-100' : 'max-h-0 opacity-0'} 
+                                            overflow-hidden transition-all duration-300`}
+                                        style={{
+                                            maxHeight: activeId === item.id ? `${contentRef.current?.scrollHeight}px` : '0',
+                                        }}
+                                    >
+                   <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-2">
+                                            {item.desc}
+                                        </div>
                     </div>
                   </div>
                   ))
