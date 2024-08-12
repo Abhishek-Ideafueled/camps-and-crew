@@ -42,7 +42,7 @@ const PassengerCheckIn = () => {
             </span>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 w-full'>
-                    <div className='bg-transparent h-full max-w-[384px] xl:w-[384px]'>
+                    <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
                         <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl'>
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
@@ -56,6 +56,42 @@ const PassengerCheckIn = () => {
                             </h3>
                             <span className='font-ttCommonProRegular text-custom-body text-base leading-[25.6px]'>
                             Equipped with a mobile phone or tablet, authorized personnel conducting check-in can efficiently record passengers as they board.
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
+                        <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl mt-[60px]'>
+                            <div className='w-full flex items-center gap-10'>
+                                <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
+                                        02
+                                </div>
+                                <div className='bg-[#CDD5DF] w-full max-w-[204px] h-[1px]'></div>
+                            </div>
+                            <div className='flex flex-col gap-6'>
+                            <h3 className='text-lg leading-[22px] lg:text-2xl lg:leading-[28.8px] text-custom-heading font-gilroyBold'>
+                            Authorized Personnel Log No-Shows and Go-Shows
+                            </h3>
+                            <span className='font-ttCommonProRegular text-custom-body text-base leading-[25.6px]'>
+                            Authorized Personnel record absent passengers as no-shows, and with proper authorization, permit unlisted passengers to board after necessary verification.
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
+                        <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl mt-[120px]'>
+                            <div className='w-full flex items-center gap-10'>
+                                <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
+                                        03
+                                </div>
+                                <div className='bg-[#CDD5DF] w-full max-w-[204px] h-[1px]'></div>
+                            </div>
+                            <div className='flex flex-col gap-6'>
+                            <h3 className='text-lg leading-[22px] lg:text-2xl lg:leading-[28.8px] text-custom-heading font-gilroyBold'>
+                            Designated Teams Have Access to Live Manifests Updated in Real-Time
+                            </h3>
+                            <span className='font-ttCommonProRegular text-custom-body text-base leading-[25.6px]'>
+                            After boarding is complete, travel teams, camp staff and/or travel management (TMC) staff can view all boarded passengers, inclusive of no-shows and go-shows.
                             </span>
                             </div>
                         </div>
