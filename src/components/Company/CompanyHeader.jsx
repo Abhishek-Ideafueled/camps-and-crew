@@ -1,7 +1,7 @@
 import React from 'react';
 import '../HomePage/Homepage.css';
 import './CompanyHeader.css';
-
+import { Link as ScrollLink } from "react-scroll";
 
 const CompanyHeader = () => {
 
@@ -48,8 +48,13 @@ const CompanyHeader = () => {
             </div>
         </div>
         <div className='flex flex-col items-center sm:flex-row gap-4 md:gap-8 font-ttCommonProRegular font-semibold' data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-           <button className='h-[49px] lg:h-[58px] w-[210px] lg:w-[202px] rounded bg-custom-button hover:bg-white transition-all duration-300 text-btn-text'>SPEAK TO SALES</button>
-           <button  className='h-[49px] lg:h-[58px] bg-transparent w-[210px] rounded lg:w-[177px] hover:bg-white hover:text-btn-text hover:border-white transition-all duration-300 text-custom-button border-[1px] border-custom-button'>CONTACT US</button>
+           <button className='h-[49px] lg:h-[58px] w-[210px] lg:w-[202px] rounded bg-custom-button hover:bg-white transition-all duration-300 text-btn-text'>
+           <ScrollLink to='demoForm'> SPEAK TO SALES</ScrollLink>
+           
+            </button>
+           <button  className='h-[49px] lg:h-[58px] bg-transparent w-[210px] rounded lg:w-[177px] hover:bg-white hover:text-btn-text hover:border-white transition-all duration-300 text-custom-button border-[1px] border-custom-button'>
+           <ScrollLink to='demoForm'> CONTACT US</ScrollLink>
+            </button>
         </div>
        </div>
        </div>

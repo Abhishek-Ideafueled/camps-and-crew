@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Modal from '../HomePage/Modal';
 import { HiBars3} from 'react-icons/hi2';
 import '../HomePage/Homepage.css';
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("");
@@ -24,13 +25,7 @@ const Header = () => {
     setActiveLink(curr);
   },[])
 
-  const handleClickScroll = () => {
-    const element = document.getElementById('demoForm');
 
-    if (element) {
-      element.scrollIntoView({ behavior: "instant" });
-    }
-  };
 
   return (
     <>
@@ -125,7 +120,7 @@ const Header = () => {
             </nav>
             <button className="bg-[#5BC0ED] text-nowrap text-center w-[145px] h-[54px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]">
               
-           <Link href="#demoForm" onClick={handleClickScroll}>BOOK A DEMO</Link>   
+           <ScrollLink to='demoForm'>BOOK A DEMO</ScrollLink>
             </button>
           </div>
           <div className='block lg:hidden items-center' onClick={closeDropdown}>
@@ -161,7 +156,10 @@ const Header = () => {
           <li className={`${activeLink ==="/case-studies" ? "text-custom-blue" :""} hover:text-custom-blue cursor-pointer`}>Case Studies</li>
           </Link>
       </ul>
-       <button className='bg-[#5BC0ED] flex items-center justify-center w-[149px] [43px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> BOOK A DEMO</button>
+       <button className='bg-[#5BC0ED] flex items-center justify-center w-[149px] [43px] px-4 py-[14px] font-ttCommonProNormal font-semibold rounded-[4px] leading-[1.58rem] text-[#09425D] hover:bg-[#53abd1]'> 
+        {/* BOOK A DEMO */}
+        <ScrollLink to='demoForm'>BOOK A DEMO</ScrollLink> 
+        </button>
        </div>
        }
       </header>

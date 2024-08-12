@@ -81,7 +81,7 @@ const OurSolutions = () => {
                   streamlines camp management for remote project operators.
                 </span>
                 <button className="btn-orange w-[219px] h-[58px] py-4 rounded">
-                  SEE ALL FEATURES
+                 <Link to="/software-for-workforce-camp">SEE ALL FEATURES</Link> 
                 </button>
               </div>
               <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
@@ -136,7 +136,8 @@ const OurSolutions = () => {
                   
                 </span>
                 <button className="btn-orange w-[219px] h-[58px] py-4 rounded">
-                  SEE ALL FEATURES
+                <Link to="/fifo-travel-online-booking-tool">  SEE ALL FEATURES</Link>
+                
                 </button>
               </div>
               <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
