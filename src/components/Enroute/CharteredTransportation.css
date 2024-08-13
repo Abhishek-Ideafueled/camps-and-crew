@@ -13,3 +13,13 @@
 .enroute-sliders .enroute-downwards .slick-slider.slick-vertical.slick-initialized{
     height: 100% !important;
 }
+
+.enroute-sliders .enroute-upwards .slick-slide{
+   display: flex;
+   justify-content: center;
+}
+
+.enroute-sliders .enroute-downwards .slick-slide{
+    display: flex;
+    justify-content: center;
+ }

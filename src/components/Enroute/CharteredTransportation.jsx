@@ -33,13 +33,13 @@ const CharteredTransportation = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:2.5 ,
+              slidesToShow:3 ,
             },
           },
           
@@ -75,13 +75,13 @@ const CharteredTransportation = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:2.5 ,
+              slidesToShow:3 ,
             },
           },
           
@@ -94,9 +94,9 @@ const CharteredTransportation = () => {
 
   return (
     <div className='w-full bg-custom-back min-h-[726px] text-white'>
-        <div className='main-container mx-auto'>
-    <div className='flex flex-col md:flex-row gap-5 lg:gap-10'>
-        <div className='py-10 lg:py-20 max-w-[568px]'>
+        <div className='main-container mx-auto h-full'>
+    <div className='flex flex-col md:flex-row gap-5 lg:gap-10 w-full'>
+        <div className='py-10 lg:py-20 max-w-[568px] w-full'>
                 <div className='flex flex-col gap-6'>
                     <div className='flex flex-col gap-2 heading-h2 text-white'>
                     <span className='border-b-4 border-b-custom-button max-w-fit'>
@@ -152,61 +152,61 @@ const CharteredTransportation = () => {
                     </div>
                 </div>
         </div>
-        <div className='enroute-sliders flex gap-2 md:gap-8 w-full h-full mx-auto'>
-                <div className='enroute-upwards w-1/2 h-full'>
+        <div className='enroute-sliders flex gap-2 md:gap-8 max-w-[608px] h-full mx-auto w-full'>
+                <div className='enroute-upwards w-1/2 h-full flex justify-center'>
                     <Slider {...settings}>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="fifo-workers-deplane-tarmac-western-australia.jpg" alt="fifo-workers-deplane-tarmac-western-australia" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="female-fifo-worker-smiles-listens-music-plane.png" alt="female-fifo-worker-smiles-listens-music-plane" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="commercial-plane-hallway-rows-seats.jpg" alt="commercial-plane-hallway-rows-seats" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="fifo-workers-take-ferry-remote-project.jpg" alt="fifo-workers-take-ferry-remote-project" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="man-airport-terminal-texting.jpg" alt="man-airport-terminal-texting" />
                             </div>
                     </Slider>
                 </div>
-                <div className='enroute-downwards w-1/2 h-full'>
+                <div className='enroute-downwards w-1/2 h-full flex justify-center'>
                     <Slider {...settings2}>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="air-canada-planes-parked-gates.jpg" alt="air-canada-planes-parked-gates" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="fifo-workers-boarding-bus.jpg" alt="fifo-workers-boarding-bus" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="female-fifo-workers-seated-plane-window.jpg" alt="female-fifo-workers-seated-plane-window" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="charter-buses-parked-snowy-parking-lot.jpg" alt="charter-buses-parked-snowy-parking-lot" />
                             </div>
-                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]'>
+                            <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
-                             className='rounded-2xl'
+                             className='rounded-2xl h-[315px] object-cover'
                              src="hotel-bed-open-door-sunny.jpg" alt="hotel-bed-open-door-sunny" />
                             </div>
                     </Slider>
