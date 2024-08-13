@@ -33,13 +33,13 @@ const CommercialContent = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:2.5 ,
+              slidesToShow:3 ,
             },
           },
           
@@ -75,13 +75,13 @@ const CommercialContent = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 3,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:2.5 ,
+              slidesToShow:3 ,
             },
           },
           
@@ -203,52 +203,52 @@ const CommercialContent = () => {
                     alt="fifo-workers-take-ferry-remote-project"
                   />
                 </div>
-                <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
+                {/* <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
                     className="rounded-2xl h-[315px] object-cover"
                     src="fifo-workers-take-ferry-remote-project.jpg"
-                    alt="fifo-workers-take-ferry-remote-project"
+                    alt="fifo-workers-take-ferry-remote-project" 
                   />
-                </div>
+                </div> */}
               </Slider>
             </div>
             <div className="enroute-downwards w-1/2 h-full">
               <Slider {...settings2}>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl"
-                    src="air-canada-planes-parked-gates.jpg"
-                    alt="air-canada-planes-parked-gates"
+                    className="rounded-2xl h-[315px] object-cover"
+                    src="parking-lot-workforce-camp.jpg"
+                    alt="parking-lot-workforce-camp"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl"
-                    src="fifo-workers-boarding-bus.jpg"
-                    alt="fifo-workers-boarding-bus"
+                    className="rounded-2xl h-[315px] object-cover"
+                    src="fifo-worker-driving-to-camp-dido.jpg"
+                    alt="fifo-worker-driving-to-camp-dido"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl"
-                    src="female-fifo-workers-seated-plane-window.jpg"
-                    alt="female-fifo-workers-seated-plane-window"
+                    className="rounded-2xl h-[315px] object-cover"
+                    src="man-entering-hotel-room.jpg"
+                    alt="man-entering-hotel-room"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl"
-                    src="charter-buses-parked-snowy-parking-lot.jpg"
-                    alt="charter-buses-parked-snowy-parking-lot"
-                  />
-                </div>
-                <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
-                  <img
-                    className="rounded-2xl"
-                    src="hotel-bed-open-door-sunny.jpg"
+                    className="rounded-2xl h-[315px] object-cover"
+                    src="hotel-bed-open-door-sunny2.jpg"
                     alt="hotel-bed-open-door-sunny"
                   />
                 </div>
+                {/* <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
+                  <img
+                    className="rounded-2xl h-[315px] object-cover"
+                    src="hotel-bed-open-door-sunny.jpg"
+                    alt="hotel-bed-open-door-sunny"
+                  />
+                </div> */}
               </Slider>
             </div>
           </div>
