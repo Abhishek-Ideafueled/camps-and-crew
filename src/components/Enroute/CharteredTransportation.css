@@ -7,9 +7,9 @@
 } */
 
 .enroute-sliders .enroute-upwards .slick-slider.slick-vertical.slick-initialized{
-    height: 100%;
+    height: 100% !important;
 }
 
 .enroute-sliders .enroute-downwards .slick-slider.slick-vertical.slick-initialized{
-    height: 100%;
+    height: 100% !important;
 }
