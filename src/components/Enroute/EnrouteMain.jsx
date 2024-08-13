@@ -6,6 +6,7 @@ import CharteredTransportation from './CharteredTransportation';
 import CharterResources from './CharterResources';
 import TravelManifest from './TravelManifest';
 import PassengerCheckIn from './PassengerCheckIn';
+import RealTimeCheckIn from './RealTimeCheckIn';
 
 const EnrouteMain = () => {
   return (
@@ -17,6 +18,7 @@ const EnrouteMain = () => {
           <CharterResources/>
           <TravelManifest/>
           <PassengerCheckIn/>
+          <RealTimeCheckIn/>
     </div>
   )
 }
