@@ -9,6 +9,7 @@ import PassengerCheckIn from './PassengerCheckIn';
 import RealTimeCheckIn from './RealTimeCheckIn';
 import ManageBussing from './ManageBussing';
 import CommercialContent from './CommercialContent';
+import RichContent from './RichContent';
 
 const EnrouteMain = () => {
   return (
@@ -23,6 +24,7 @@ const EnrouteMain = () => {
           <RealTimeCheckIn/>
           <ManageBussing/>
           <CommercialContent/>
+          <RichContent/>
     </div>
   )
 }
