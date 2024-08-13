@@ -56,7 +56,7 @@ const RealTimeCheckIn = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 w-full items-center">
           <div className="py-2 md:py-[35px] max-w-[588px] mx-auto h-full">
-            <div className="flex flex-col w-full h-full">
+            <div className="flex flex-col w-full h-full justify-center">
               {RealTimeAccordionData.map((item, index) => (
                 <div
                   className="flex flex-col cursor-pointer transition-all duration-450 border-b-[#CDD5DF] border-b-[1px]"
