@@ -8,7 +8,7 @@ const PassengerCheckIn = () => {
             <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">
                 CHARTERED TRANSPORTAION
               </span>
-            <h2 className='heading-h2 text-white'>
+            <h2 className='heading-h2 text-white text-center'>
             Passenger Check In for Chartered Modes of Transportation
             </h2>
             <span>
@@ -43,7 +43,7 @@ const PassengerCheckIn = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 w-full'>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl'>
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl'>
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         01
@@ -61,7 +61,7 @@ const PassengerCheckIn = () => {
                         </div>
                     </div>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl mt-[60px]'>
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[60px]'>
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         02
@@ -79,7 +79,7 @@ const PassengerCheckIn = () => {
                         </div>
                     </div>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-[60px] px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl mt-[120px]'>
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[120px]'>
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-custom-blue text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         03
