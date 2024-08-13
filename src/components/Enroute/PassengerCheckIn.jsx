@@ -6,7 +6,7 @@ const PassengerCheckIn = () => {
         <div className='main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]'>
             <div className='flex flex-col w-full gap-4 items-center max-w-[655px]'>
             <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">
-                CHARTERED TRANSPORTAION
+                CHARTERED TRANSPORTATION
               </span>
             <h2 className='heading-h2 text-white text-center'>
             Passenger Check In for Chartered Modes of Transportation

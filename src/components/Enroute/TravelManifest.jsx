@@ -32,7 +32,7 @@ const TravelManifest = () => {
           <div className="flex flex-col gap-6 items-center max-w-[959px] text-center">
             <div className="flex flex-col gap-4 max-w-[540px] items-center text-center">
               <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">
-                CHARTERED TRANSPORTAION
+                CHARTERED TRANSPORTATION
               </span>
               <h2 className="heading-h2">
                 Full Control Center for Travel Manifest Management
