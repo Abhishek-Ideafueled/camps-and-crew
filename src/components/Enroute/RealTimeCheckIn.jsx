@@ -9,12 +9,21 @@ const RealTimeCheckIn = () => {
     const [activeImageId, setActiveImageId] = useState(1);
     const [heights, setHeights] = useState([]);
     const contentRefs = useRef([]);
-  
-    useEffect(() => {
+
+    const calculatedHeights=()=>{
       const calculatedHeights = contentRefs.current.map(
         (el) => el.scrollHeight
       );
       setHeights(calculatedHeights);
+    }
+  
+    useEffect(() => {
+      
+      calculatedHeights();
+
+      window.addEventListener('resize', calculatedHeights);
+      return () => window.removeEventListener('resize', calculatedHeights);
+
     }, []);
   
   
@@ -28,14 +37,14 @@ const RealTimeCheckIn = () => {
     };
 
   return (
-    <div className="w-full bg-custom-back">
+    <div className="w-full bg-custom-back max-h-max">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]">
         <div className="flex flex-col w-full gap-4 items-center max-w-[959px]">
           <span className="text-custom-blue font-ttCommonProRegular font-semibold text-sm leading-[22px]">
             CHARTERED TRANSPORTATION
           </span>
           <h2 className="heading-h2 text-white text-center max-w-[637px]">
-            Passenger Check In for Chartered Modes of Transportation
+          Real-Time Check In For End-to-End Journey Management
           </h2>
           <span className="sub-heading text-white text-center pt-2">
             The Passenger Check In functionality offered by EnRoute provides
@@ -46,7 +55,7 @@ const RealTimeCheckIn = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 w-full items-center">
-          <div className="py-2 md:py-[35px] max-w-[588px] mx-auto">
+          <div className="py-2 md:py-[35px] max-w-[588px] mx-auto h-full">
             <div className="flex flex-col w-full h-full">
               {RealTimeAccordionData.map((item, index) => (
                 <div
@@ -73,13 +82,13 @@ const RealTimeCheckIn = () => {
                         ? "max-h-[1000px] opacity-100"
                         : "max-h-0 opacity-0"
                     } 
-                                            overflow-hidden transition-all duration-300 ease-in-out`}
+                           max-h-max                 overflow-hidden transition-all duration-300 ease-in-out`}
                     style={{
                       maxHeight:
                         activeId === item.id ? `${heights[index]}px` : "0",
                     }}
                   >
-                    <ul className="flex flex-col gap-2 md:gap-4 text-white font-ttCommonProNormal text-base w-[95%] pb-2">
+                    <ul className="flex flex-col gap-2 md:gap-4 text-white font-ttCommonProNormal text-base w-[95%] pb-4">
                       <li className="flex items-center gap-3">
                         <span className="w-6 h-6">
                           {/* <FaCircleCheck className="text-[#189AD2] "  size={24}/> */}
