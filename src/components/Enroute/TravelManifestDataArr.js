@@ -47,7 +47,7 @@ export const TravelManifestData = [
     {
         id:7,
 
-        url:"man-airport-terminal-texting.jpg",
+        url:"man-airport-terminal-texting2.jpg",
         alt:"man in an airport terminal texting",
         title:"Automatically Send Itinerary Updates to Passengers",
         body:"Keeps passengers informed about their itinerary in real-time, ensuring they are always updated on changes. This includes delivering timely notifications about any transportation delays, route modifications, or cancellations. In addition, passengers will be promptly informed if they are transferred from one mode of transport to another, or if their waitlist status changes."
