@@ -5,26 +5,32 @@ import { FaCircleCheck } from 'react-icons/fa6';
 
 const RealTimeCheckIn = () => {
 
-    const [activeId, setActiveId] = useState(1);
+    const [activeId, setActiveId] = useState(0);
     const [activeImageId, setActiveImageId] = useState(1);
     const [heights, setHeights] = useState([]);
     const contentRefs = useRef([]);
 
-    const calculatedHeights=()=>{
-      const calculatedHeights = contentRefs.current.map(
-        (el) => el.scrollHeight
-      );
+    const calculateHeights=()=>{
+      const calculatedHeights = 
+        contentRefs.current.map((el) => el?.scrollHeight || 0);
       setHeights(calculatedHeights);
     }
   
     useEffect(() => {
       
-      calculatedHeights();
+      window.addEventListener('resize', calculateHeights);
+    // window.addEventListener('load', calculateHeights); 
 
-      window.addEventListener('resize', calculatedHeights);
-      return () => window.removeEventListener('resize', calculatedHeights);
+    return () => {
+      window.removeEventListener('resize', calculateHeights);
+      // window.removeEventListener('load', calculateHeights);
+    };
 
     }, []);
+
+    useEffect(() => {
+      calculateHeights(); 
+    }, [activeId]);
   
   
     const handleAccordionClick = (id) => {
@@ -88,7 +94,7 @@ const RealTimeCheckIn = () => {
                         activeId === item.id ? `${heights[index]}px` : "0",
                     }}
                   >
-                    <ul className="flex flex-col gap-2 md:gap-4 text-white font-ttCommonProNormal text-base w-[95%] pb-4">
+                    <ul className="flex flex-col gap-2 md:gap-4 text-white font-ttCommonProNormal text-base max-h-max w-[95%] pb-4">
                       <li className="flex items-center gap-3">
                         <span className="w-6 h-6">
                           {/* <FaCircleCheck className="text-[#189AD2] "  size={24}/> */}
