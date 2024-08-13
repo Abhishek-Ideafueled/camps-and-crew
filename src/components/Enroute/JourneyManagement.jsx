@@ -47,7 +47,7 @@ const JourneyManagement = () => {
           </span>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-3 z-10 gap-4 lg:gap-8'>
-        <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
+        <div className='flex flex-col gap-[30px] md:gap-[60px] p-4 lg:p-6'>
             <span>
            <img src="/enroute-manifest-mgmt-icon.png" alt="enroute manifest management icon" />
             </span>
@@ -60,7 +60,7 @@ const JourneyManagement = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
+        <div className='flex flex-col gap-[30px] md:gap-[60px] p-4 lg:p-6'>
             <span>
             <img src="/enroute-travel-roster-icon.png" alt="enroute travel roster icon " />
             </span>
@@ -73,7 +73,7 @@ const JourneyManagement = () => {
             </p>
           </div>
         </div>
-        <div className='flex flex-col gap-[30px] md:gap-[60px] p-6'>
+        <div className='flex flex-col gap-[30px] md:gap-[60px] p-4 lg:p-6'>
             <span>
            <img src="/enroute-utilization-transportation-icon.png" alt="enroute utilization transportation icon " />
             </span>
