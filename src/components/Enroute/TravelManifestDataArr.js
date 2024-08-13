@@ -31,7 +31,7 @@ export const TravelManifestData = [
     {
         id:5,
 
-        url:"/charter-buses-parked-snowy-parking-lot.jpg",
+        url:"/charter-buses-parked-snowy-parking-lot2.jpg",
         alt:"charter buses parked in a snowy parking lot",
         title:"Move Passengers to an Alternate Flight or Bus",
         body:"Travel coordinators can efficiently relocate passengers between charter transport services, whether it's for rescheduling non-essential workers, accommodating individual or bulk passenger shifts due to unexpected weather or mechanical problems, or addressing staffing issues like unavailability of pilots or bus drivers."

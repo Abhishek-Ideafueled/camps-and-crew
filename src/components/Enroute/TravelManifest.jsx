@@ -178,7 +178,7 @@ const TravelManifest = () => {
 
               </div>  </SwiperSlide> 
               ))}
-            <div className="w-full flex justify-center gap-4 lg:mt-4">
+            <div className="w-full flex justify-center gap-4 pt-4 lg:mt-4">
         <div className="btn-prev" ref={prevRef}>         
         </div>
         <div className="btn-next" ref={nextRef}></div>
