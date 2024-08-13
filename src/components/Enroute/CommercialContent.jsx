@@ -7,7 +7,7 @@ const CommercialContent = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 5000,
+        speed: 10000,
         slidesToShow: 2.5,
         slidesToScroll: 1,
         autoplay: true,
@@ -49,7 +49,7 @@ const CommercialContent = () => {
       const settings2 = {
         dots: false,
         infinite: true,
-        speed: 5000,
+        speed: 10000,
         slidesToShow: 2.5,
         slidesToScroll: 1,
         autoplay: true,
