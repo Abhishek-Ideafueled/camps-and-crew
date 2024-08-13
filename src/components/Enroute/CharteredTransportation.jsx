@@ -33,13 +33,13 @@ const CharteredTransportation = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.5,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:3 ,
+              slidesToShow:2.5,
             },
           },
           
@@ -75,13 +75,13 @@ const CharteredTransportation = () => {
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.5,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:3 ,
+              slidesToShow:2.5,
             },
           },
           
