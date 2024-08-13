@@ -16,7 +16,7 @@ const WorkWithTMC = () => {
                 </h2>
 
             </div>
-            <div className='pt-6 sub-heading text-center max-w-[959px] mx-auto'>
+            <div className='pt-2 md:pt-4 lg:pt-6 sub-heading text-center max-w-[959px] mx-auto'>
             EnRoute integrates seamlessly into your existing workflows, strengthening the relationship between your internal travel teams and your travel management company (TMC) and facilitating true end-to-end journey management in the process.
             </div>
         </div>
