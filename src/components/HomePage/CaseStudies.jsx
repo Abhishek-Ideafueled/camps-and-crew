@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import case1 from '/case1.jpg';
 import case2 from '/case2.jpg';
 import case3 from '/case3.jpg';
-import sodexo from '/sodexo.png';
+import sodexo from '/sodexo-logo2.png';
 import civeo from '/civeo.png';
 import b2gold from '/b2goldlogo2.png';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
@@ -72,7 +72,7 @@ const CaseStudies = () => {
               <div className='min-h-[406px] md:max-h-[412px] lg:h-[512px] lg:max-h-[512px] flex flex-col justify-end pb-5'>
               <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 py-4 px-8">
                 <img
-                  src="https://camps-crew-sigma.vercel.app/images/case_study_partner/sodexo-logo.png"
+                  src={sodexo}
                   alt="sodexo logo"
                   className="w-auto max-w-max"
                 />

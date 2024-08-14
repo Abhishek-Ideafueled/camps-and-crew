@@ -6,9 +6,9 @@ const JourneyManagement = () => {
     <div className='main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] lg:px-28 xl:px-0 '>
         <div className='flex flex-col gap-4 items-center'>
         <button className="bg-custom-button font-gilroyBold w-[85px] h-[35px] rounded-full">
-              Enroute
+              EnRoute
             </button>
-            <h2 className="font-gilroyBold text-center text-[25px] md:text-[32px] lg:leading-[3rem] text-custom-heading lg:text-h2">
+            <h2 className="heading-h2 text-center">
             Streamlining Journey Management for FIFO Travelers
         </h2>
         <span>

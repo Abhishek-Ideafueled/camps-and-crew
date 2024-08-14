@@ -74,7 +74,7 @@ const CaseStudiesSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="min-h-[406px] md:max-h-[412px] lg:min-h-[510px] lg:max-h-[600px] w-full">
+            <div className=" min-h-[406px] md:max-h-[412px] lg:min-h-[510px] lg:max-h-[600px] w-full">
               <div className="absolute inset-0 h-auto bottom-0 bg-case-1 case-container rounded-2xl"></div>
               <div className="min-h-[406px] md:max-h-[412px] lg:min-h-[510px] lg:max-h-[600px] flex flex-col justify-end pb-5">
                 <div className="relative flex flex-col text-left justify-between items-start min-h-[243px] gap-6 py-4 px-8">
@@ -95,7 +95,6 @@ const CaseStudiesSlider = () => {
                   >
                     READ STORY
                     <span className="hover:ml-1 transition-all duration-250">
-                      {/* <BsArrowRight /> */}
                       <svg
                         width="22"
                         height="12"
