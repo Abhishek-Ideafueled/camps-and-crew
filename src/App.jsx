@@ -6,7 +6,7 @@ import Layout from './components/Layout/Layout';
 import Company from './components/Company/Company';
 import SmartLodgeMain from './components/SmartLodge/SmartLodgeMain';
 import EnrouteMain from './components/Enroute/EnrouteMain';
-// import CaseStudies from './components/CaseStudies'
+import CaseStudiesMain from './components/CaseStudies/CaseStudiesMain';
 
 function App() {
 
@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage/>} />
       <Route path="/company" element={<Company/>} />
-      {/* <Route path="/case-studies" element={<CaseStudies/>} /> */}
+      <Route path="/case-studies" element={<CaseStudiesMain/>} />
        <Route path="/software-for-workforce-camp" element={<SmartLodgeMain/>} />
        <Route path="/fifo-travel-online-booking-tool" element={<EnrouteMain/>} />
     </Routes>

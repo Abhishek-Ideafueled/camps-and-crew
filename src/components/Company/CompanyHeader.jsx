@@ -17,7 +17,7 @@ const CompanyHeader = () => {
   };
 
   return (
-    <div className='w-full bg-[#053347] sm:h-[505px] lg:h-[606px] relative overflow-hidden'>
+    <div className='w-full bg-custom-back sm:h-[505px] lg:h-[606px] relative overflow-hidden'>
       <div className="line-animation">
             <div className="line-animation__line">
               <div className="line-animation__glow"></div>
