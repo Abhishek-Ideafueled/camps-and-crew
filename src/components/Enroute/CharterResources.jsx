@@ -62,7 +62,7 @@ const CharterResources = () => {
                     </div>
                 </div>
              </div>
-             <div className='flex flex-col gap-[30px] md:gap-[60px]'>
+             <div className='flex flex-col gap-[30px] md:gap-[60px] md:mt-6'>
                 <span>
                     <img src="enroute-seat-capacity-icon.png" alt="enroute-seat-capacity-icon" />
                 </span>
@@ -84,7 +84,7 @@ const CharterResources = () => {
                     </div>
                 </div>
              </div>
-             <div className='flex flex-col gap-[30px] md:gap-[60px]'>
+             <div className='flex flex-col gap-[30px] md:gap-[60px] md:mt-6'>
                 <span>
                     <img src="/enroute-comprehensive-costing-icon.png" alt="enroute-comprehensive-costing-icon" />
                 </span>
