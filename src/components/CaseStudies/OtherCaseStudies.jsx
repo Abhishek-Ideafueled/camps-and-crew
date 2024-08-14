@@ -180,7 +180,7 @@ const OtherCaseStudies = () => {
                 
                 <h2 className="text-base leading-[20px] text-wrap sm:text-lg sm:leading-[24px] lg:text-xl lg:leading-[24px] text-white font-gilroyBold font-bold w-full">
                
-                Sodexo Partners with Camps & Crew to Streamline FIFO Transport Logistics and Camp Management for Remote<br className='block md:hidden lg:block' /> Hydroelectric Project
+                Sodexo Partners with Camps & Crew to Streamline<br className='block md:hidden lg:block' /> FIFO Transport Logistics and Camp Management for Remote<br className='block md:hidden lg:block' /> Hydroelectric Project
                 {/* <br className='block md:hidden lg:block' />Revenue and Manage Occupancy of
                 <br className='block md:hidden lg:block' />
                 Workforce Camps and Commercial Properties */}
