@@ -69,7 +69,7 @@ const JourneyManagement = () => {
             Automate Travel Bookings for Workers on Roster Rotations
             </h2>
             <p className="font-ttCommonProNormal text-custom-body text-sm">
-            Streamline workflows by automating bookings for rotating crews--ideal for travel teams managing transportation for large workforces.
+            Streamline workflows by automating bookings for rotating crews-ideal for travel teams managing transportation for large workforces.
             </p>
           </div>
         </div>

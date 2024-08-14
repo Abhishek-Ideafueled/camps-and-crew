@@ -114,7 +114,7 @@ const CharteredTransportation = () => {
                     <div className='flex flex-col gap-4'>
                     <div className='flex items-center gap-2'>
                         <img src="/enroute-charter-air-icon.png" alt="enroute charter air icon" />
-                        <span className='font-ttCommonProMedium font-medium text-xl text-white leading-[32px]'>
+                        <span className='font-ttCommonProRegular font-medium text-xl text-white leading-[32px]'>
                         Charter Air
                         </span>
                         
@@ -127,7 +127,7 @@ const CharteredTransportation = () => {
                     <div className='flex flex-col gap-4'>
                     <div className='flex items-center gap-2'>
                         <img src="/enroute-ground-transport-icon.png" alt="enroute ground transport icon" />
-                        <span className='font-ttCommonProMedium font-medium text-xl text-white leading-[32px]'>
+                        <span className='font-ttCommonProRegular font-medium text-xl text-white leading-[32px]'>
                         Ground Transportation
                         </span>
                         
@@ -140,7 +140,7 @@ const CharteredTransportation = () => {
                     <div className='flex flex-col gap-4'>
                     <div className='flex items-center gap-2'>
                         <img src="/enroute-marine-vessels-icons.png" alt="enroute marine vessels icons" />
-                        <span className='font-ttCommonProMedium font-medium text-xl text-white leading-[32px]'>
+                        <span className='font-ttCommonProRegular font-medium text-xl text-white leading-[32px]'>
                         Marine Vessels
                         </span>
                         
