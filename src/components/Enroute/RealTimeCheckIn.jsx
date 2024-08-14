@@ -50,7 +50,7 @@ const RealTimeCheckIn = () => {
             CHARTERED TRANSPORTATION
           </span>
           <h2 className="heading-h2 text-white text-center max-w-[637px]">
-          Real-Time Check In For End-to-End Journey Management
+          Real-Time Check In For <br />End-to-End Journey Management
           </h2>
           <span className="sub-heading text-white text-center pt-2">
             The Passenger Check In functionality offered by EnRoute provides
@@ -231,7 +231,8 @@ const RealTimeCheckIn = () => {
               className={`${
                 activeImageId === 3 ? "opacity-100 " : "opacity-0"
               } absolute w-full h-auto transition-all duration-500 rounded-2xl`}
-              src="/reporting.jpg"
+              src="/camp-staff-remote-workforce-lodge.jpg"
+              alt='camp-staff-remote-workforce-lodge'
             />
             <img
               className={`${
