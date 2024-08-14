@@ -1,7 +1,17 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
+
 
 const EnrouteHero = () => {
+
+  const handleClickScroll=()=>{
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  }
+
   return (
     <div className='w-full bg-custom-back min-h-[600px] py-10 lg:py-20'>
         <div className="main-container mx-auto">
@@ -17,10 +27,10 @@ const EnrouteHero = () => {
             </div>
             <div className="flex flex-col sm:flex-row items-center gap-4 lg:gap-8 w-full justify-center lg:justify-start">
               <div className="btn-orange w-full max-w-[210px] lg:w-[187px] cursor-pointer flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white transition-all duration-300 text-btn-text">
-           <Link to="demoForm">BOOK A DEMO</Link>     
+           <Link href="#demoForm" onClick={handleClickScroll}>BOOK A DEMO</Link>     
               </div>
               <div className="font-ttCommonProNormal font-semibold cursor-pointer w-full max-w-[210px] lg:w-[187px] flex items-center justify-center h-[58px] rounded-[4px] hover:bg-white hover:text-btn-text hover:border-white transition-all duration-300 text-custom-button border-[1px] border-custom-button">
-              <Link to="demoForm"> SPEAK TO SALES</Link>
+              <Link href="#demoForm" onClick={handleClickScroll}> SPEAK TO SALES</Link>
               </div>
             </div>
           </div>
