@@ -1,3 +1,5 @@
+
+/* styles for case studies logo slider */
 .case-studies-slider .slick-slider.slick-initialized .slick-list .slick-track{
     display: flex !important;
     align-items: center;
@@ -11,14 +13,60 @@
     height: 65px;
 }
 
-
- @media only screen and (min-width: 1280px) {
-    .case-studies-slider .slick-slider.slick-initialized div .slick-slide{
-        
-        /* background: #000; */
-        /* max-width: 260px !important; */
-    }
+/* styles for case studies swiper slider */
 
 
-
+.case-studies-swiper.swiper {
+   width: auto;
+    height: 100%;
   }
+
+.case-studies-swiper .swiper-slide {
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px !important;
+    width: auto !important;
+  }
+  
+ 
+  .case-studies-swiper .swiper-slide.swiper-slide-active{
+ 
+/* width: 80%; */
+  }
+
+  @media only screen and (max-width: 640px) {
+    .case-studies-swiper .swiper-slide{
+        width: 100%;
+       max-width:650px !important;
+       
+   }
+   /* .case-studies-swiper .swiper-slide div{
+    height: 633px;
+   } */
+ }
+ 
+
+   @media only screen and (max-width: 1023px) {
+     .case-studies-swiper .swiper-slide{
+        width: 100%;
+        max-width:782px;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .case-studies-swiper .swiper-slide{
+        width: 100%;
+        min-width: 750px !important;
+       max-width:1000px !important;
+   }
+ }
+ /* @media only screen and (min-width: 1024px) {
+    .case-studies-swiper .swiper-slide{
+        width: 100%;
+       max-width:1000px;
+   }
+ } */
+  

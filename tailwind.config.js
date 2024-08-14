@@ -47,6 +47,7 @@ export default {
       'case-1':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case1.jpg')",
       'case-2':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case2.jpg')",
       'case-3':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%), url('/case3.jpg')",
+      'case-4':"linear-gradient(90deg, rgba(4, 37, 52, 0.56) 0%, rgba(4, 37, 52, 0) 101.02%),url('/sodexo-sella-ness-camp-entrance.png')",
       'bus-image': "url(/charter-bus-fifo-workers-passengers.jpg)",
       'video-image': "url(/smart-video-player.jpg)",
       'history-1':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/fifo-workers-board-chartered-bus.jpg')",

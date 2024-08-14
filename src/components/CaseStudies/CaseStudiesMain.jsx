@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import CaseStudiesHero from "./CaseStudiesHero"
 import Aos from "aos";
+import CaseStudiesSlider from "./CaseStudiesSlider";
 
 
 
@@ -17,6 +18,7 @@ const CaseStudies = () => {
   return (
       <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
             <CaseStudiesHero/>
+            <CaseStudiesSlider/>
       </div>
   )
 }
