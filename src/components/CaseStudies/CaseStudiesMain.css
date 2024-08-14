@@ -1,5 +1,6 @@
 
 /* styles for case studies logo slider */
+
 .case-studies-slider .slick-slider.slick-initialized .slick-list .slick-track{
     display: flex !important;
     align-items: center;
@@ -37,10 +38,17 @@
 /* width: 80%; */
   }
 
+  @media only screen and (max-width: 440px) {
+    .case-studies-swiper .swiper-slide{
+       
+       max-width:302px !important;
+       
+   }
+  }
   @media only screen and (max-width: 640px) {
     .case-studies-swiper .swiper-slide{
-        width: 100%;
-       max-width:650px !important;
+       
+       max-width:650px ;
        
    }
    /* .case-studies-swiper .swiper-slide div{
@@ -51,14 +59,14 @@
 
    @media only screen and (max-width: 1023px) {
      .case-studies-swiper .swiper-slide{
-        width: 100%;
+       
         max-width:782px;
     }
   }
 
   @media only screen and (min-width: 1024px) {
     .case-studies-swiper .swiper-slide{
-        width: 100%;
+       
         min-width: 750px !important;
        max-width:1000px !important;
    }
