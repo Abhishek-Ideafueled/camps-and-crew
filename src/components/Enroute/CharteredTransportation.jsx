@@ -152,7 +152,7 @@ const CharteredTransportation = () => {
                     </div>
                 </div>
         </div>
-        <div className='enroute-sliders flex gap-2 md:gap-8 max-w-[608px] h-full mx-auto w-full'>
+        <div className='enroute-sliders flex gap-2 md:gap-4 max-w-[608px] h-full mx-auto w-full'>
                 <div className='enroute-upwards w-1/2 h-full flex justify-center'>
                     <Slider {...settings}>
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
@@ -187,27 +187,27 @@ const CharteredTransportation = () => {
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
                              className='rounded-2xl h-[315px] object-cover'
-                             src="air-canada-planes-parked-gates.jpg" alt="air-canada-planes-parked-gates" />
+                             src="air-canada-planes-parked-gates.png" alt="air-canada-planes-parked-gates" />
                             </div>
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
                              className='rounded-2xl h-[315px] object-cover'
-                             src="fifo-workers-boarding-bus.jpg" alt="fifo-workers-boarding-bus" />
+                             src="fifo-workers-boarding-bus.png" alt="fifo-workers-boarding-bus" />
                             </div>
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
                              className='rounded-2xl h-[315px] object-cover'
-                             src="female-fifo-workers-seated-plane-window.jpg" alt="female-fifo-workers-seated-plane-window" />
+                             src="female-fifo-workers-seated-plane-window.png" alt="female-fifo-workers-seated-plane-window" />
                             </div>
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
                              className='rounded-2xl h-[315px] object-cover'
-                             src="charter-buses-parked-snowy-parking-lot.jpg" alt="charter-buses-parked-snowy-parking-lot" />
+                             src="charter-buses-parked-snowy-parking-lot.png" alt="charter-buses-parked-snowy-parking-lot" />
                             </div>
                             <div className='max-w-[246px] md:max-w-[156px] lg:max-w-[288px] lg:w-[216px] xl:max-w-[288px]'>
                              <img 
                              className='rounded-2xl h-[315px] object-cover'
-                             src="hotel-bed-open-door-sunny.jpg" alt="hotel-bed-open-door-sunny" />
+                             src="hotel-bed-open-door-sunny.png" alt="hotel-bed-open-door-sunny" />
                             </div>
                     </Slider>
                 </div>
