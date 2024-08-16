@@ -60,7 +60,7 @@ const RealTimeCheckIn = () => {
           </span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 w-full items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 w-full ">
           <div className="py-2 md:py-[35px] max-w-[588px] mx-auto h-full">
             <div className="flex flex-col w-full h-full justify-center">
               {RealTimeAccordionData.map((item, index) => (
@@ -212,32 +212,32 @@ const RealTimeCheckIn = () => {
               ))}
             </div>
           </div>
-          <div className="h-[450px] lg:h-[523px] max-w-[588px] relative w-full mx-auto flex items-center">
+          <div className="h-[300px] sm:h-[450px] lg:h-[523px] max-w-[588px] relative w-full mx-auto flex mt-10">
             <img
               className={`${
                 activeImageId === 1 ? "opacity-100 " : "opacity-0"
-              } absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+              } absolute w-full max-h-[300px] h-auto sm:max-h-[450px] lg:max-h-[523px] object-cover sm:h-full transition-all duration-500 rounded-2xl`}
               src="/female-fifo-workers-seated-plane-window2.jpg"
               alt="female-fifo-workers-seated-plane-window"
             />
             <img
               className={`${
                 activeImageId === 2 ? "opacity-100 " : "opacity-0"
-              } absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+              } absolute w-full max-h-[300px] h-auto sm:max-h-[450px] lg:max-h-[523px] object-cover sm:h-full transition-all duration-500 rounded-2xl`}
               src="/fifo-workers-boarding-bus2.jpg"
               alt='fifo-workers-boarding-bus2'
             />
             <img
               className={`${
                 activeImageId === 3 ? "opacity-100 " : "opacity-0"
-              } absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+              } absolute w-full max-h-[300px] h-auto sm:max-h-[450px] lg:max-h-[523px] object-cover sm:h-full transition-all duration-500 rounded-2xl`}
               src="/camp-staff-remote-workforce-lodge.jpg"
               alt='camp-staff-remote-workforce-lodge'
             />
             <img
               className={`${
                 activeImageId === 4 ? "opacity-100 " : "opacity-0"
-              } absolute w-full h-auto transition-all duration-500 rounded-2xl`}
+              } absolute w-full max-h-[300px] h-auto sm:max-h-[450px] lg:max-h-[523px] object-cover sm:h-full transition-all duration-500 rounded-2xl`}
               src="/woman-typing-cell-phone-window-seat-plane.jpg"
               alt='woman-typing-cell-phone-window-seat-plane'
             />
