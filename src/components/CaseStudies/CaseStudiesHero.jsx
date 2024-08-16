@@ -104,7 +104,7 @@ const CaseStudiesHero = () => {
 
         </div> */}
         <div className='single-slide'>
-        <img className='object-cover' src="/white-petroplex.png" alt="white-petroplex logo" />
+        <img className='' src="/white-petroplex.png" alt="white-petroplex logo" />
         </div>
        
         <div className='single-slide'>
