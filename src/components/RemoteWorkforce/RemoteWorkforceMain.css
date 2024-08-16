@@ -1,0 +1,19 @@
+/* WorkForce Hero slider styles */
+
+.remote-sliders .remote-upwards .slick-slider.slick-vertical.slick-initialized{
+    height: 100% !important;
+}
+
+.remote-sliders .remote-downwards .slick-slider.slick-vertical.slick-initialized{
+    height: 100% !important;
+}
+
+.remote-sliders .remote-upwards .slick-slide{
+   display: flex;
+   justify-content: center;
+}
+
+.remote-sliders .remote-downwards .slick-slide{
+    display: flex;
+    justify-content: center;
+ }
