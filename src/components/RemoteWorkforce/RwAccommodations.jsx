@@ -1,17 +1,17 @@
 import React from 'react'
-import { HiArrowRight, HiOutlineArrowRight } from 'react-icons/hi2'
+import { HiArrowRight } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
 
 const RwAccommodations = () => {
   return (
-    <div className='w-full min-h-[636px]'>
+    <div className='w-full max-h-max'>
         <div className='grid grid-cols-1 md:grid-cols-2 h-full items-center px-3 md:px-0'>
-            <div className='w-full max-h-[636px] h-full'>
+            <div className='w-full md:min-h-[550px] max-h-[636px] h-full'>
                 <img
                 className='object-cover w-full h-full'
                 src="aerial-large-remote-lodge-civeo-oil-sands.jpg" alt="aerial-large-remote-lodge-civeo-oil-sands" />
             </div>
-            <div className='bg-white rounded-2xl p-6 lg:py-[60px] lg:px-10 flex flex-col gap-6 max-h-[460px] md:ml-[-45px] max-w-[700px]'>
+            <div className='bg-white rounded-2xl p-6 lg:py-[60px] lg:px-10 flex flex-col gap-4 shadow-rw-card-shadow lg:gap-6 md:max-h-[493px] lg:max-h-[460px] md:ml-[-45px] max-w-[700px]'>
                     <h2 className='heading-h2 text-center md:text-start'>
                     17 Years Serving the Workforce Accommodations Industry
                     </h2>
