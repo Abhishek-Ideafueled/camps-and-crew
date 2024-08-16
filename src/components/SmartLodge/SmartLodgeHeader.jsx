@@ -42,7 +42,7 @@ const SmartLodgeHeader = () => {
               <span className="text-custom-blue font-ttCommonProRegular tracking-[0.8px] font-semibold text-sm leading-[1.4rem]">
                 SOFTWARE FOR WORKFORCE ACCOMMODATION
               </span>
-              <span className="font-gilroyBold text-white text-[30px] md:text-[32px] lg:text-[50px] lg:leading-[3.8rem]">
+              <span className=" text-white heading-h1">
                 Flexible Software to Manage Your Remote Workforce Lodging
               </span>
             </div>
