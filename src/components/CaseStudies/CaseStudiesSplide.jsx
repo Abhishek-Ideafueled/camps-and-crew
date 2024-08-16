@@ -24,26 +24,23 @@ const CaseStudiesSplide = () => {
             perMove: 1,
             arrows: false,
             pagination: false,
-            rewind:false,
-            speed: 1,
+            rewind: false,
+            speed: 0.5,
             breakpoints: {
               2024: {
                 perPage: 6,
-               
               },
-              1280:{
-                perPage:4,
+              1280: {
+                perPage: 4,
               },
-              1024:{
-                perPage:4,
+              1024: {
+                perPage: 4,
               },
               767: {
                 perPage: 2,
-            
               },
               640: {
                 perPage: 2,
-          
               },
             },
             autoScroll: {
@@ -51,7 +48,6 @@ const CaseStudiesSplide = () => {
               pauseOnHover: true,
               pauseOnFocus: true,
             },
-          
           }}
           extensions={{ AutoScroll }}
           aria-label="My Favorite Images"
@@ -59,48 +55,41 @@ const CaseStudiesSplide = () => {
         >
           <SplideSlide>
             <div className="single-slide">
- <img
-              className=""
-              src="white-civeo.png"
-              alt="Image 1"
-            />
+              <img className="" src="white-civeo.png" alt="Image 1" />
             </div>
-           
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center"> <img
-              className=""
-              src="white-petroplex.png"
-              alt="Image 2"
-            />
-
+            <div className="flex justify-center items-center">
+              <img className="" src="white-petroplex.png" alt="Image 2" />
             </div>
-           
           </SplideSlide>
           <SplideSlide>
-          <div className="single-slide"> <img
-              className=""
-              src="/white-b2gold.png"
-              alt="b2gold logo white"
-            /></div>
-           
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-b2gold.png"
+                alt="b2gold logo white"
+              />
+            </div>
           </SplideSlide>
 
           <SplideSlide>
-          <div className="single-slide"><img
-              className=" "
-              src="/white-anokiigamig.png"
-              alt="white-anokiigamig logo"
-            /></div>
-            
+            <div className="single-slide">
+              <img
+                className=" "
+                src="/white-anokiigamig.png"
+                alt="white-anokiigamig logo"
+              />
+            </div>
           </SplideSlide>
           <SplideSlide>
-          <div className="single-slide"><img
-              className="object-cover h-[65px]"
-              src="/white-agincourt-resources.png"
-              alt="white-agincourt-resources logo"
-            /></div>
-           
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-agincourt-resources.png"
+                alt="white-agincourt-resources logo"
+              />
+            </div>
           </SplideSlide>
           <SplideSlide>
             <div className="single-slide">
@@ -111,23 +100,33 @@ const CaseStudiesSplide = () => {
               />
             </div>
           </SplideSlide>
-        
+
           <SplideSlide>
-          <div className="single-slide"><img
-              className=""
-              src="/white-denali-universal-services.png"
-              alt="white denali universal services logo"
-            /></div>
-            
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-denali-universal-services.png"
+                alt="white denali universal services logo"
+              />
+            </div>
           </SplideSlide>
           <SplideSlide>
-          <div className="single-slide">
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-sodexo.png"
+                alt="white-sodexo logo"
+              />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide"> 
             <img
-              className="object-cover h-[65px]"
-              src="/white-sodexo.png"
-              alt="white-sodexo logo"
-            /></div>
-           
+                  className=""
+                  src="/white-permian-lodging.png"
+                  alt="white permian lodging logo"
+                />
+            </div>
           </SplideSlide>
         </Splide>
       </div>

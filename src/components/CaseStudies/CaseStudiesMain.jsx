@@ -21,7 +21,7 @@ const CaseStudies = () => {
   return (
       <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
             <CaseStudiesHero/>
-            <CaseStudiesSplide/>
+            {/* <CaseStudiesSplide/> */}
             <CaseStudiesSlider/>
             <OtherCaseStudies/>
             <DemoForm/>
