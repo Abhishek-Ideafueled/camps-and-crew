@@ -19,7 +19,7 @@ const CharterResources = () => {
             </div>
             <div className='max-w-[588px] grid grid-cols-1 md:grid-cols-2 gap-10'>
              <div className='flex flex-col gap-[30px] md:gap-[60px]'>
-                <span>
+                <span className='w-10 h-10'>
                     <img src="enroute-transportation-routes-icon.png" alt="enroute-transportation-routes-icon" />
                 </span>
                 <div className='flex flex-col gap-4  md:gap-6'>
@@ -41,7 +41,7 @@ const CharterResources = () => {
                 </div>
              </div>
              <div className='flex flex-col gap-[30px] md:gap-[60px]'>
-                <span>
+             <span className='w-10 h-10'>
                     <img src="enroute-schedules-for-routes-icon.png" alt="enroute-schedules-for-routes-icon" />
                 </span>
                 <div className='flex flex-col gap-4  md:gap-6'>
@@ -63,7 +63,7 @@ const CharterResources = () => {
                 </div>
              </div>
              <div className='flex flex-col gap-[30px] md:gap-[60px] md:mt-6'>
-                <span>
+             <span className='w-10 h-10'>
                     <img src="enroute-seat-capacity-icon.png" alt="enroute-seat-capacity-icon" />
                 </span>
                 <div className='flex flex-col gap-4  md:gap-6'>
@@ -85,10 +85,10 @@ const CharterResources = () => {
                 </div>
              </div>
              <div className='flex flex-col gap-[30px] md:gap-[60px] md:mt-6'>
-                <span>
+             <span className='w-10 h-10'>
                     <img src="/enroute-comprehensive-costing-icon.png" alt="enroute-comprehensive-costing-icon" />
                 </span>
-                <div className='flex flex-col gap-4 :md:gap-6'>
+                <div className='flex flex-col gap-4 md:gap-6'>
                     <h3 className='font-gilroyBold text-xl leading-[20px] lg:text-2xl lg:leading-[28.8px] text-custom-heading'>
                     Comprehensive Costing of Charter Resources
                     </h3>
