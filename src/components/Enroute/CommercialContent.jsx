@@ -21,25 +21,25 @@ const CommercialContent = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1.2,
             },
           },
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1.2,
             },
           },
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 3,
+              slidesToShow:2.5,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:3 ,
+              slidesToShow:2.5 ,
             },
           },
           
@@ -63,25 +63,25 @@ const CommercialContent = () => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1.2,
             },
           },
           {
             breakpoint: 767,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 1.2,
             },
           },
           {
             breakpoint: 1280,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2.5,
             },
           },
           {
             breakpoint: 2200,
             settings: {
-              slidesToShow:3 ,
+              slidesToShow:2.5 ,
             },
           },
           
