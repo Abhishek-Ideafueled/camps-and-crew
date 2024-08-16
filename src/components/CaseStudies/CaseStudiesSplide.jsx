@@ -59,7 +59,7 @@ const CaseStudiesSplide = () => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center mt-5">
               <img className="" src="white-petroplex.png" alt="Image 2" />
             </div>
           </SplideSlide>
