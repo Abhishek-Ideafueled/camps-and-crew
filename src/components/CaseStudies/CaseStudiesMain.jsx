@@ -5,6 +5,7 @@ import CaseStudiesSlider from "./CaseStudiesSlider";
 import OtherCaseStudies from "./OtherCaseStudies";
 import DemoForm from '../HomePage/DemoForm';
 import CaseStudiesSplide from "./CaseStudiesSplide";
+import DemoSiderSwiper from "./DemoSiderSwiper";
 
 
 
@@ -23,6 +24,7 @@ const CaseStudies = () => {
             <CaseStudiesHero/>
             {/* <CaseStudiesSplide/> */}
             <CaseStudiesSlider/>
+            {/* <DemoSiderSwiper/> */}
             <OtherCaseStudies/>
             <DemoForm/>
       </div>

@@ -1,0 +1,18 @@
+.demo-swiper.swiper {
+    width: 100%; /* Let the Swiper container use the full width */
+    height: 100%;
+  }
+  
+  .demo-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Use full available width */
+    max-width: 1000px; /* Prevent overflow */
+  }
+  
+  @media only screen and (max-width: 1280px) {
+    .demo-swiper .swiper-slide {
+      max-width: 80vw !important;
+    }
+  }

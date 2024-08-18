@@ -18,8 +18,9 @@
 
 
 .case-studies-swiper.swiper {
-   width: auto;
+   /* width: auto; */
     height: 100%;
+    width: 100%;
   }
 
 .case-studies-swiper .swiper-slide {
@@ -28,36 +29,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     max-width: 1000px !important;
-    width: auto !important;
+    /* width: auto !important; */
   }
   
  
-  .case-studies-swiper .swiper-slide.swiper-slide-active{
- 
-/* width: 80%; */
-  }
 
-  @media only screen and (max-width: 440px) {
+  @media only screen and (max-width: 1280px) {
     .case-studies-swiper .swiper-slide{
        
-       max-width:302px !important;
+      max-width: 80vw !important;
        
    }
   }
-  @media only screen and (max-width: 640px) {
-    .case-studies-swiper .swiper-slide{
-       
-       max-width:650px ;
-       
-   }
-   /* .case-studies-swiper .swiper-slide div{
-    height: 633px;
-   } */
- }
+
  
 
-   @media only screen and (max-width: 1023px) {
+   /* @media only screen and (max-width: 1023px) {
      .case-studies-swiper .swiper-slide{
        
         max-width:782px;
@@ -70,13 +59,8 @@
         min-width: 750px !important;
        max-width:1000px !important;
    }
- }
- /* @media only screen and (min-width: 1024px) {
-    .case-studies-swiper .swiper-slide{
-        width: 100%;
-       max-width:1000px;
-   }
  } */
+
   
 
  /* CASE STUDIES SPLIDE STYLES */

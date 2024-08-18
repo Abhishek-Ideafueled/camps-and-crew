@@ -1,27 +1,22 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import case1 from '/case1.jpg';
-import case2 from '/case2.jpg';
-import case3 from '/case3.jpg';
+import React, { useRef } from 'react'
+import { Link } from 'react-router-dom';
+import { Navigation, Pagination } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import sodexo from '/sodexo-logo2.png';
 import civeo from '/civeo.png';
 import b2gold from '/b2goldlogo2.png';
-import { Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import { useRef } from 'react';
-import './CaseStudiesMain.css';
+// import './CaseStudiesMain.css';
+import './DemoSlider.css';
 
-const CaseStudiesSlider = () => {
+const DemoSiderSwiper = () => {
 
     const prevRef = useRef(null);
     const nextRef = useRef(null);
 
   return (
-    <div className="w-full">
-      <div className="case-studies-swiper pt-20">
-        <Swiper
+    <div className='w-full demo-swiper'>
+       <Swiper
           slidesPerView="auto"
           spaceBetween={20}
           centeredSlides={true}
@@ -195,13 +190,12 @@ const CaseStudiesSlider = () => {
           
           
           <div className="w-full flex justify-center gap-4 mt-12">
-            <div className="btn-prev cursor-pointer" ref={prevRef}></div>
-            <div className="btn-next cursor-pointer" ref={nextRef}></div>
+            <div className="btn-prev" ref={prevRef}></div>
+            <div className="btn-next" ref={nextRef}></div>
           </div>
         </Swiper>
-      </div>
     </div>
-  );
+  )
 }
 
-export default CaseStudiesSlider
+export default DemoSiderSwiper
