@@ -52,7 +52,7 @@ const ElevatingEfficiency = () => {
                <img src="/smartlodge-maximize-room-bed-utilization-icon.png" alt="" />
                 </span>
                 <div className="flex flex-col gap-6">
-                <h2 className="font-gilroyBold text-custom-heading text-2xl">
+                <h2 className="font-gilroyBold text-custom-heading text-xl lg:text-2xl lg:leading-[28.8px]">
                 Maximize Room or Bed Utilization at Camp
                 </h2>
                 <p className="font-ttCommonProNormal text-custom-body text-sm">
@@ -65,7 +65,7 @@ const ElevatingEfficiency = () => {
                <img src="/smartlodge-streamline-workflows-icon.png" alt="" />
                 </span>
                 <div className="flex flex-col gap-6">
-                <h2 className="font-gilroyBold text-custom-heading text-2xl">
+                <h2 className="font-gilroyBold text-custom-heading text-xl lg:text-2xl lg:leading-[28.8px]">
                 Streamline Workflows Across Your Organization
                 </h2>
                 <p className="font-ttCommonProNormal text-custom-body text-sm">
@@ -78,7 +78,7 @@ const ElevatingEfficiency = () => {
                <img src="/smartlodge-reduce-admin-workloads-icon.png" alt="" />
                 </span>
                 <div className="flex flex-col gap-6">
-                <h2 className="font-gilroyBold text-custom-heading text-2xl">
+                <h2 className="font-gilroyBold text-custom-heading text-xl lg:text-2xl lg:leading-[28.8px]">
                 Reduce Administrative Workloads
                 </h2>
                 <p className="font-ttCommonProNormal text-custom-body text-sm">
