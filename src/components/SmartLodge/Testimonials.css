@@ -31,23 +31,23 @@
   opacity: 1;
   }
 
-  @media only screen and (max-width: 640px) {
+  @media only screen and (max-width: 1023px) {
     .testimonials-slider .swiper-slide{
-        width: 100%;
-       max-width:325px !important;
+        /* width: 100%; */
+       max-width: 70vw !important;
        
    }
    .testimonials-slider .swiper-slide div{
-    height: 633px;
+    height: 550px;
    }
  }
  
 
-   @media only screen and (max-width: 1024px) {
+   /* @media only screen and (max-width: 1024px) {
      .testimonials-slider .swiper-slide{
         max-width:625px;
     }
-  }
+  } */
 
   @media only screen and (min-width: 1024px) {
     .testimonials-slider .swiper-slide{

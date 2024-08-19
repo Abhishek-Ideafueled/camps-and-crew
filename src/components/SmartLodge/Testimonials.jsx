@@ -82,9 +82,9 @@ const Testimonials = () => {
       >
 
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   Besides dealing with rooms and travel, Camps & Crew has become
                   an important information hub for many departments –
                   Accounting, Construction, Food Services, Housekeeping and
@@ -92,10 +92,10 @@ const Testimonials = () => {
                   planning and day-to-day operations.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Group Lead, Mine Site Operations
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Brucejack Mine, British Columbia, Canada
                   </span>
                 </div>
@@ -103,9 +103,9 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   The check in process and our housekeeping operations are
                   probably the areas where we’ve seen the greatest benefit with
                   the system. The ability to create custom charge sheets has
@@ -114,10 +114,10 @@ const Testimonials = () => {
                   of weeks to hours.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Workforce Accommodations Lead - Canada
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Integrated Facilities Management Company
                   </span>
                 </div>
@@ -125,9 +125,9 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   The system’s Batch Check Ins and Check Outs feature makes
                   managing large work crews efficient, even with changing
                   schedules and travel delays. The system has also greatly
@@ -136,10 +136,10 @@ const Testimonials = () => {
                   staying on-site.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Camp & Hospitality Services Manager
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Remote Mine Located in Western Africa
                   </span>
                 </div>
@@ -147,9 +147,9 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   Besides dealing with rooms and travel, Camps & Crew has become
                   an important information hub for many departments –
                   Accounting, Construction, Food Services, Housekeeping and
@@ -157,10 +157,10 @@ const Testimonials = () => {
                   planning and day-to-day operations.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Group Lead, Mine Site Operations
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Brucejack Mine, British Columbia, Canada
                   </span>
                 </div>
@@ -168,9 +168,9 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   The check in process and our housekeeping operations are
                   probably the areas where we’ve seen the greatest benefit with
                   the system. The ability to create custom charge sheets has
@@ -179,10 +179,10 @@ const Testimonials = () => {
                   of weeks to hours.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Workforce Accommodations Lead - Canada
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Integrated Facilities Management Company
                   </span>
                 </div>
@@ -190,9 +190,9 @@ const Testimonials = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="w-full px-4">
-              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] p-10 sm:gap-8 justify-between sm:justify-start">
-                <p className="font-ttCommonProRegular text-start text-lg md:text-xl md:leading-6 lg:text-2xl lg:leading-[38px] text-custom-body">
+            <div className="w-full">
+              <div className="flex flex-col w-full rounded-2xl bg-[#ECE7E0] py-8 px-6 sm:p-10 gap-4 sm:gap-8 justify-between sm:justify-start">
+                <p className="font-ttCommonProRegular text-start text-base sm:text-lg lg:text-xl lg:leading-6 xl:text-2xl xl:leading-[38px] text-custom-body">
                   The system’s Batch Check Ins and Check Outs feature makes
                   managing large work crews efficient, even with changing
                   schedules and travel delays. The system has also greatly
@@ -201,10 +201,10 @@ const Testimonials = () => {
                   staying on-site.
                 </p>
                 <div className="flex flex-col gap-[7px] max-h-[100px] text-start">
-                  <h3 className="font-gilroyBold text-xl leading-6 text-custom-heading">
+                  <h3 className="font-gilroyBold text-lg sm:text-xl sm:leading-6 text-custom-heading">
                     Camp & Hospitality Services Manager
                   </h3>
-                  <span className="font-ttCommonProNormal text-base leading-[25px]">
+                  <span className="font-ttCommonProNormal text-sm sm:text-base sm:leading-[25px]">
                     Remote Mine Located in Western Africa
                   </span>
                 </div>

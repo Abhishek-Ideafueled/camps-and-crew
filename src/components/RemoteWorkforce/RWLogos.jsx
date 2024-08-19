@@ -11,7 +11,7 @@ const RWLogos = () => {
                 <div className='h-[60px] flex justify-center'>
             <img src="/civeo-color.png" alt="" className='h-[60px] object-contain' />
                 </div>
-                <div className='h-[60px] '>
+                <div className='h-[60px] pt-5'>
                 <img src="/petroplex-logo.png" alt=""  className='mx-auto' />
                 </div>
                 <div className='h-[60px] flex justify-center'>
