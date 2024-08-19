@@ -81,49 +81,6 @@ const CaseStudiesHero = () => {
             </h1>
                 </div>
         </div>
-        {/* <div className='w-full case-studies-slider pt-10 sm:pt-0'>
-        <Slider {...settings}>
-        <div className='single-slide'>
-        <img className='object-cover h-[65px]' src="/white-b2gold.png" alt="b2gold logo white" />
-        </div>
-        <div className='single-slide md:px-8'>
-        <img className='object-cover w-full h-[65px]' src="/white-anokiigamig.png" alt="white-anokiigamig logo" />
-        </div>
-        <div className='single-slide'>
-        <img className='object-cover h-[65px]' src="/white-agincourt-resources.png" alt="white-agincourt-resources logo" />
-
-        </div>
-        <div className='single-slide'>
-        <img
-                 className=' object-cover h-[65px] '
-                  src="/white-civeo.png"
-                  alt="white-civeo logo"
-                />
-        </div>
-        <div className='single-slide'>
-        <img className='' src="/white-petroplex.png" alt="white-petroplex logo" />
-        </div>
-       
-        <div className='single-slide'>
-        <img className='object-cover h-[65px]' src="/white-denali-universal-services.png" alt="white denali universal services logo" />
-        </div>
-        <div className='single-slide px-4 xl:px-0'>
-        <img  className="object-cover" src="/white-sodexo.png" alt="white-sodexo logo" />
-        </div >
-        <div className='single-slide'>
-        <img
-                  className="h-[65px] object-cover"
-                  src="/white-permian-lodging.png"
-                  alt="white permian lodging logo"
-                />
-        </div> 
-       
-        <div className='single-slide'>
-        <img className='object-cover h-[65px]' src="/white-cotton-logistics.png" alt="white cotton logistics logo" />
-        </div>
-        
-      </Slider>
-        </div> */}
         <CaseStudiesSplide/>
     </div>
   )
