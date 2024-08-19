@@ -155,6 +155,9 @@
   .sub-heading{
     @apply font-ttCommonProMedium font-medium text-base leading-6 md:text-lg md:leading-[28.8px] text-custom-body;
   }
+  .card-heading{
+    @apply font-gilroyBold text-custom-heading text-lg leading-[22px] md:text-xl md:leading-6 lg:text-2xl lg:leading-[28.8px] font-normal;
+  }
   /* ... */
 }
 
