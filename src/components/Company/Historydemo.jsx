@@ -136,13 +136,14 @@ const Historydemo = () => {
                 verticalSwiperRef.current = swiper;
               }}
               spaceBetween={10}
+              
               slidesPerView={8}
               mousewheel={true}
               modules={[Navigation, Controller, Pagination]}
               freeMode={true}
-              pagination={{
-                clickable: true,
-              }}
+              // pagination={{
+              //   clickable: true,
+              // }}
               className="h-full"
               controller={{ control: horizontalSwiperRef.current }}
               onInit={(swiper) => {
@@ -262,9 +263,9 @@ const Historydemo = () => {
               spaceBetween={50}
               scrollbar={{ draggable: true }}
               slidesPerView={3}
-              pagination={{
-                clickable: true,
-              }}
+              // pagination={{
+              //   clickable: true,
+              // }}
               modules={[Navigation, Controller, Pagination,Scrollbar]}
               navigation={true}
               className="h-full"

@@ -5,6 +5,7 @@ import RwAccommodations from './RwAccommodations';
 import Testimonials from '../SmartLodge/Testimonials';
 import RwTechnology from './RwTechnology';
 import RwSmartLodgePurpose from './RwSmartLodgePurpose';
+import RwYearMain from './RwYearMain';
 
 const RemoteWorkforceMain = () => {
 
@@ -16,6 +17,7 @@ const RemoteWorkforceMain = () => {
       <Testimonials/>
       <RwTechnology/>
       <RwSmartLodgePurpose/>
+      <RwYearMain/>
     </div>
   )
 }
