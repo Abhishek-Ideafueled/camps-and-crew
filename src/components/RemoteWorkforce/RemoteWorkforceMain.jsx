@@ -3,6 +3,7 @@ import RemoteWorkforceHero from './RemoteWorkforceHero';
 import RWLogos from './RWLogos';
 import RwAccommodations from './RwAccommodations';
 import Testimonials from '../SmartLodge/Testimonials';
+import RwTechnology from './RwTechnology';
 
 const RemoteWorkforceMain = () => {
 
@@ -12,6 +13,7 @@ const RemoteWorkforceMain = () => {
       <RWLogos/>
       <RwAccommodations/>
       <Testimonials/>
+      <RwTechnology/>
     </div>
   )
 }
