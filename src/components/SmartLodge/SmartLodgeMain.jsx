@@ -1,4 +1,3 @@
-
 import SmartLodgeHeader from "./SmartLodgeHeader";
 import SlidingComp from "../HomePage/SlidingComp";
 import ElevatingEfficiency from "./ElevatingEfficiency";
@@ -24,74 +23,60 @@ import Aos from "aos";
 import SecondNavbar from "./SecondNavbar";
 
 const SmartLodgeMain = () => {
-
-  useEffect(()=>{
-    Aos.init(
-      {duration:1000,
-        easing: "ease-in-out",
-      }
-    );
-},[])
-
-
-
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
 
   return (
     <div className="w-full overflow-hidden mt-[75px] lg:mt-[106px]">
-      <SecondNavbar/>
-      <SmartLodgeHeader/>
+      <SecondNavbar />
+      <SmartLodgeHeader />
       <section id="beforerooms">
-
-     
-      <SlidingComp showHeading={false}/>
-      <ElevatingEfficiency/>
-      <LodgingSlider/>
-
- </section>
+        <SlidingComp showHeading={false} />
+        <ElevatingEfficiency />
+        <LodgingSlider />
+      </section>
       {/* <LodgingSliderSlick/> */}
 
       <section id="roomsManagement">
-        <RoomsManagement/>
-        <RoomsManagementSecond/>
+        <RoomsManagement />
+        <RoomsManagementSecond />
       </section>
-      
+
       <section id="reception">
-        <Reception/>
-      <CheckInAndOut/>
-      <ReceptionAndSupport/>
-      <Testimonials/>
+        <Reception />
+        <CheckInAndOut />
+        <ReceptionAndSupport />
+        <Testimonials />
       </section>
-      
+
       <section id="housekeeping">
-  <Housekeeping/>
-      <MobileHousekeeping/>
+        <Housekeeping />
+        <MobileHousekeeping />
       </section>
-      
+
       <section id="reports">
-          <Reports/>
-      </section>
-    
-    <section  id="systemIntegrations">
-<SystemIntegrations/>
-    </section>
-    
-      <section id='features'>
-<AdditionalFeatures/>
+        <Reports />
       </section>
 
+      <section id="systemIntegrations">
+        <SystemIntegrations />
+      </section>
 
-      <section id='afterlast'>
-        <SmartLodgeFastFacts/>
-      <AccomodationAndTransportation/>
-      <FAQs/>
-      
+      <section id="features">
+        <AdditionalFeatures />
+      </section>
+
+      <section id="afterlast">
+        <SmartLodgeFastFacts />
+        <AccomodationAndTransportation />
+        <FAQs />
       </section>
       <section id="demoForm">
-            <DemoForm/>  
+        <DemoForm />
       </section>
-
     </div>
   );
-}
+};
 
-export default SmartLodgeMain
+export default SmartLodgeMain;

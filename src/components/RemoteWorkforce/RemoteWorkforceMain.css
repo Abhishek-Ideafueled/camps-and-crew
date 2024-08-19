@@ -1,4 +1,4 @@
-/* WorkForce Hero slider styles */
+/*///////////////////////////////////////// WorkForce Hero slider styles //////////////////// */
 
 .remote-sliders .remote-upwards .slick-slider.slick-vertical.slick-initialized{
     height: 100% !important;
@@ -17,3 +17,29 @@
     display: flex;
     justify-content: center;
  }
+
+
+ /*////////////////////////////////////////// WORKFORCE NAVBAR STYLES /////////////////////////////*/
+
+ .active{
+    color: #EFBC43;
+}
+
+
+/* .custom-transition::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #EFBC43;
+    transition: .3s ease all;
+    overflow: hidden;
+}
+
+.custom-transition.active::before {
+    width: 100%;
+} */
+

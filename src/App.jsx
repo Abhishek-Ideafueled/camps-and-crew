@@ -8,6 +8,7 @@ import SmartLodgeMain from './components/SmartLodge/SmartLodgeMain';
 import EnrouteMain from './components/Enroute/EnrouteMain';
 import CaseStudiesMain from './components/CaseStudies/CaseStudiesMain';
 import RemoteWorkforceMain from './components/RemoteWorkforce/RemoteWorkforceMain';
+import Testing from './components/Testing';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
        <Route path="/software-for-workforce-camp" element={<SmartLodgeMain/>} />
        <Route path="/fifo-travel-online-booking-tool" element={<EnrouteMain/>} />
     <Route path="/camp-management-and-catering-companies" element={<RemoteWorkforceMain/>} />
+    <Route path="/testing" element={<Testing/>} />
     </Routes>
    
    </Layout>
