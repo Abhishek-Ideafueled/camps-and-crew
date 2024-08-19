@@ -37,11 +37,15 @@
        max-width: 70vw !important;
        
    }
-   .testimonials-slider .swiper-slide div{
-    height: 550px;
-   }
+   
  }
- 
+
+@media only screen and (max-width: 767px){
+  .testimonials-slider .swiper-slide div{
+  height: 500px;
+ }
+  
+}
 
    /* @media only screen and (max-width: 1024px) {
      .testimonials-slider .swiper-slide{
