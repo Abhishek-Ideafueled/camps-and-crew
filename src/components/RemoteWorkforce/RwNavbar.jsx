@@ -10,8 +10,9 @@ const RwNavbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const activeLink = document.querySelector('.active');
-      setCurrIndex(activeLink.textContent);
+    
       if (activeLink && navRef.current) {
+        setCurrIndex(activeLink.textContent);
         navRef.current.scrollTo({
           left: activeLink.offsetLeft - navRef.current.offsetWidth / 2 + activeLink.offsetWidth / 2,
           behavior: 'smooth',

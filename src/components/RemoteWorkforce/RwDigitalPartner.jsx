@@ -463,7 +463,7 @@ const RwDigitalPartner = () => {
               </li>
             </ul>
           </div>
-          <div className="w-full h-full flex items-center justify-center">
+          <div className="w-full h-full flex items-center justify-center order-first lg:order-last">
 <img className="rounded-2xl w-auto h-auto"
  src="/woman-orders-food-mobile-app.jpg"
   alt="Person reviews daily menu options provided by the camp catering company at a workforce housing facility." />
