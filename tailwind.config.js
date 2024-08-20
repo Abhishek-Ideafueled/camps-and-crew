@@ -69,7 +69,10 @@ export default {
       'history-9':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/canadian-oil-sands-remote-camp.jpg')",
       'history-10':"linear-gradient(90deg, rgba(5, 51, 71, 0.6) 0%, rgba(5, 51, 71, 0) 100%),url('/hotel-bed-with-pillows-and-sheets.jpg')",
       'card-gradient':"linear-gradient(90deg, rgba(4, 37, 52, 0) 0%, rgba(4, 37, 52, 0.48) 100%)",
-'card-gradient2':"linear-gradient(90deg, rgba(4, 37, 52, 0.48) 0%, rgba(4, 37, 52, 0) 100%)"
+'card-gradient2':"linear-gradient(90deg, rgba(4, 37, 52, 0.48) 0%, rgba(4, 37, 52, 0) 100%)",
+      'rw-case-1':"url(/Lodge-Properties-Front-Desk.png)",
+      'rw-case-2':"url(/right-choice-camps-catering-aerial.jpg)",
+      'rw-case-3':"url(/case1.jpg)"
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},

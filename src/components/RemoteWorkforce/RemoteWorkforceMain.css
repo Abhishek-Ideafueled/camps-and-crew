@@ -43,3 +43,18 @@
     width: 100%;
 } */
 
+
+/* /////////////////////////////////////////////////RW CASE STUDY STYLES ////////////////////////////////////// */
+
+
+.rw-card-container:hover a{
+    color: #060F1F;
+}
+
+.rw-card-container:hover .bg-grad{
+   opacity: 0.5;
+}
+
+.rw-card-container:hover path{
+    fill: #060F1F;
+}

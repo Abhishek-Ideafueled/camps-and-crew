@@ -13,6 +13,7 @@ import RwProjectBids from './RwProjectBids';
 import RwLms from './RwLms';
 import DemoForm from '../HomePage/DemoForm';
 import Aos from 'aos';
+import RwCaseStudy from './RwCaseStudy';
 
 const RemoteWorkforceMain = () => {
 
@@ -39,7 +40,8 @@ const RemoteWorkforceMain = () => {
         <RwRemoteProjects/>        
         </section> 
         <RwProjectBids/>
-        <RwLms/>    
+        <RwLms/>
+        <RwCaseStudy/>    
       <DemoForm/>
     </div>
   )
