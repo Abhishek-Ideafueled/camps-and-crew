@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./RemoteWorkforceMain.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import useRwNavVis from "./useRwNavVis";
@@ -6,9 +6,11 @@ import useRwNavVis from "./useRwNavVis";
 const RwNavbar = () => {
   const navRef = useRef();
   const isVisible = useRwNavVis();
+  const [currIndex,setCurrIndex] = useState(0);
   useEffect(() => {
     const handleScroll = () => {
       const activeLink = document.querySelector('.active');
+      setCurrIndex(activeLink.textContent);
       if (activeLink && navRef.current) {
         navRef.current.scrollTo({
           left: activeLink.offsetLeft - navRef.current.offsetWidth / 2 + activeLink.offsetWidth / 2,
@@ -24,8 +26,16 @@ const RwNavbar = () => {
     };
   }, []);
 
+  const years =["2024","2022","2020","2019","2018","2017","2016","2015","2014","2013"];
+
   return (
     <>
+  {
+        isVisible && ( <div className="main-container mx-auto fixed top-16 py-3 px-5 h-[64px] z-30  bg-custom-back text-custom-button md:hidden flex items-center">
+<p className="font-gilroyBold text-[40px] leading-[40px]">{years.filter((v, i) => (v ? v === currIndex : ""))}</p>
+            </div>)
+    }
+
       {isVisible && (
         <div className=" w-full fixed bottom-0 z-30  text-btn-text bg-white h-[55px] md:hidden flex items-center">
           <nav

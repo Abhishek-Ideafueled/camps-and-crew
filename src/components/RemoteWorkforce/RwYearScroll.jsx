@@ -6,14 +6,14 @@ const RwYearScroll = () => {
       <section id='2024'>
         <div className='flex flex-col gap-4'>
   <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 SMS Guest Messaging Rolls Out in the Permian Basin
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 SMS messaging enables tailored communications and real-time updates, enhancing guest experiences and bolstering safety at camp.
                 </div>
             </div>
@@ -26,14 +26,14 @@ const RwYearScroll = () => {
             </div>
         </div>
         <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 Digital Role Call Streamlines Response During Muster Events
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Camp staff can take roll call digitally via mobile devices during musters, ensuring quick accounting of all personnel and swift evacuation, if required.
                 </div>
             </div>
@@ -46,14 +46,14 @@ const RwYearScroll = () => {
             </div>
         </div>
         <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
                 </div> 
                 <div className='card-heading'>
                 Custom Reservation Screens Expedite Training of New Users
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 A customizable reservation screen interface was first introduced at an Indonesian mining project, making booking rooms and training faster than ever.
                 </div>
             </div>
@@ -69,14 +69,14 @@ const RwYearScroll = () => {
         </section>    
         <section id='2022'>
         <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 Mobile Check-In Further Speeds Up Arrival Process
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Mobile check-in rolls out in Alberta, allowing guests to pre-register via email, reducing wait times and easing front desk workloads during group arrivals.
                 </div>
             </div>
@@ -92,14 +92,14 @@ const RwYearScroll = () => {
         <section id='2020'>
           <div className='flex flex-col gap-4'>
 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 Automated Bookings for FIFO Workers on Roster Rotations
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 This feature automates bookings for rotational workers, reducing administrative tasks and ensuring essential personnel are on-site when required.
                 </div>
             </div>
@@ -112,14 +112,14 @@ const RwYearScroll = () => {
             </div>
         </div>
         <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 Approval Workflows Facilitate Bookings for a Canadian Mine
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Customizable approval workflows ensure compliance and streamline the reservation process for large organizations booking FIFO travel or rooms.
                 </div>
             </div>
@@ -137,14 +137,14 @@ const RwYearScroll = () => {
         <section id='2019'>
           <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div> 
                 <div className='card-heading'>
                 Cleaning Teams Use Mobile Devices to Manage Daily Tasks
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Cleaning and camp maintenance is streamlined with mobile devices, enabling swift occupancy checks, task delegation, and maintenance ticket creation.
                 </div>
             </div>
@@ -157,14 +157,14 @@ const RwYearScroll = () => {
             </div>
         </div>
         <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
                <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Integration
                 </div> 
                 <div className='card-heading'>
                 Dining App Showcases Catering Options and Tracks Orders
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 The system integrates into a propriety app that allows guests to view menus and pre-order meals, streamlining daily food service and billing for meals.
                 </div>
             </div>
@@ -181,14 +181,14 @@ const RwYearScroll = () => {
         <section id='2018'>
           <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
                 </div> 
                 <div className='card-heading'>
                 Permanent Room Assignments Hold Rooms for FIFO Workers
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 This update enables users to create permanent room assignments for rotational workers--first leveraged by users at a Canadian oil sands camps.
                 </div>
             </div>
@@ -205,14 +205,14 @@ const RwYearScroll = () => {
         <section id='2017'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
               Integration
                 </div> 
                 <div className='card-heading'>
                 Integration with Energy Mgmt. System Lowers Operating Costs
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 The first integration with an energy management system rolls out in 2017, reducing energy costs for a camp services provider located in the Nordics.
                 </div>
             </div>
@@ -229,14 +229,14 @@ const RwYearScroll = () => {
         <section id='2016'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
               Integration
                 </div> 
                 <div className='card-heading'>
                 SmartLodge Integrates into First HRIS System via API
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 The Engineering team rolls out an API integration with an enterprise HR system, ensuring accurate profile data management and seamless flow of data.
                 </div>
             </div>
@@ -253,14 +253,14 @@ const RwYearScroll = () => {
         <section id='2015'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
                 </div>
                 <div className='card-heading'>
                 Kiosk Check In Drastically Reduces Check In Wait Times
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Self-service kiosks streamline check-in at a lodge in Western Canada, offering immediate key activation and a seamless arrival experience for camp guests.
                 </div>
             </div>
@@ -277,14 +277,14 @@ const RwYearScroll = () => {
         <section id='2014'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Integration
                 </div>
                 <div className='card-heading'>
                 Direct Key System Integration Enhances Check In and Billing
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 This integration powers automatic key activation during check-in and tracks all key swipes across camp to produce a precise tally of billable meals.
                 </div>
             </div>
@@ -301,14 +301,14 @@ const RwYearScroll = () => {
         <section id='2013'>
         <div className='flex flex-col gap-4'>
           <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
-            <div className='flex flex-col gap-4 h-[258px]'>
+            <div className='flex flex-col gap-4'>
             <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
                 </div> 
                 <div className='card-heading'>
                 Multi-Site Management for Hotels and Camps
                 </div>
-                <div className='font-ttCommonProRegular text-custom-body text-base'>
+                <div className='font-ttCommonProRegular text-custom-body smalls:text-base text-sm'>
                 Originally developed for hotels in 2007 and adapted for camps, this update allows efficient management of multiple camps from a single system.
                 </div>
             </div>
