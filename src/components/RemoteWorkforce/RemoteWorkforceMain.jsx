@@ -9,6 +9,7 @@ import RwYearMain from './RwYearMain';
 import RwNavbar from './RwNavbar';
 import RwDigitalPartner from './RwDigitalPartner';
 import RwRemoteProjects from './RwRemoteProjects';
+import RwProjectBids from './RwProjectBids';
 
 const RemoteWorkforceMain = () => {
 
@@ -29,6 +30,7 @@ const RemoteWorkforceMain = () => {
       <section id="after-year">
         <RwDigitalPartner/>
         <RwRemoteProjects/>
+        <RwProjectBids/>
         </section>     
       
     </div>
