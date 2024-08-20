@@ -7,6 +7,7 @@ import RwTechnology from './RwTechnology';
 import RwSmartLodgePurpose from './RwSmartLodgePurpose';
 import RwYearMain from './RwYearMain';
 import RwNavbar from './RwNavbar';
+import RwDigitalPartner from './RwDigitalPartner';
 
 const RemoteWorkforceMain = () => {
 
@@ -23,7 +24,10 @@ const RemoteWorkforceMain = () => {
       </section>
       <section id='year-main'>
       <RwYearMain/>  
-      </section>      
+      </section> 
+      <section id="after-year">
+        <RwDigitalPartner/>
+        </section>     
       
     </div>
   )

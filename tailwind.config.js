@@ -20,7 +20,7 @@ export default {
         'industryGradient':'#04253400',
         'custom-gray':'#CAD5DE',
         'custom-back':'#053347',
-
+        'second-blue':'#189AD2'
     }, 
     fontSize:{
       h1: '48px',

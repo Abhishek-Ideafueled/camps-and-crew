@@ -85,7 +85,7 @@ const useRwNavVis = () => {
                   setIsVisible(true);
                 }
               }
-          else  if (entry.target.id === 'afteryear') {
+          else  if (entry.target.id === 'after-year') {
               if (entry.isIntersecting) {
                 setIsVisible(false);
               }
@@ -109,7 +109,7 @@ const useRwNavVis = () => {
       const ninthSection = document.getElementById('2015');
       const tenthSection = document.getElementById('2014');
       const lastSection = document.getElementById('2013');
-      const afterLastSection = document.getElementById('afteryear');
+      const afterLastSection = document.getElementById('after-year');
   
       if (beforeFirstSection) observer.observe(beforeFirstSection);
       if (firstSection) observer.observe(firstSection);
