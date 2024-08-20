@@ -85,7 +85,7 @@ const useRwNavVis = () => {
                   setIsVisible(true);
                 }
               }
-          else  if (entry.target.id === 'after-year') {
+         if (entry.target.id === 'after-year') {
               if (entry.isIntersecting) {
                 setIsVisible(false);
               }

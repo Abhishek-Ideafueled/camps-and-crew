@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import RemoteWorkforceHero from './RemoteWorkforceHero';
 import RWLogos from './RWLogos';
 import RwAccommodations from './RwAccommodations';
@@ -10,8 +10,15 @@ import RwNavbar from './RwNavbar';
 import RwDigitalPartner from './RwDigitalPartner';
 import RwRemoteProjects from './RwRemoteProjects';
 import RwProjectBids from './RwProjectBids';
+import RwLms from './RwLms';
+import DemoForm from '../HomePage/DemoForm';
+import Aos from 'aos';
 
 const RemoteWorkforceMain = () => {
+
+  useEffect(() => {
+    Aos.init({ duration: 1000, easing: "ease-in-out" });
+  }, []);
 
   return (
     <div className='mt-[76px] lg:mt-[106px] w-full overflow-hidden'>
@@ -29,10 +36,11 @@ const RemoteWorkforceMain = () => {
       </section> 
       <section id="after-year">
         <RwDigitalPartner/>
-        <RwRemoteProjects/>
+        <RwRemoteProjects/>        
+        </section> 
         <RwProjectBids/>
-        </section>     
-      
+        <RwLms/>    
+      <DemoForm/>
     </div>
   )
 }

@@ -115,7 +115,7 @@ const RwProjectBids = () => {
                     </div>
             </div>
        <div className='w-full flex justify-center'>
-       <Link to="demoForm" onClick={handleClickScroll}> 
+       <Link href="#demoForm" onClick={handleClickScroll}> 
         <div className='btn-orange w-[203px] flex items-center justify-center py-[19px] rounded'>
         CONTACT SALES
         </div>
