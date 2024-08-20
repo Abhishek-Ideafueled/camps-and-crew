@@ -331,18 +331,18 @@ const RwDigitalPartner = () => {
         </Splide>
       </div>
             </div>
-            <div className='flex flex-col justify-center py-[60px] pl-[100px] pr-[60px]'>
+            <div className='flex flex-col justify-center pt-[30px] md:py-[60px] md:pl-[100px] md:pr-[60px]'>
                 <span className='font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]'>
                 |  INTEGRATIONS  |
                 </span>
-                <h2 className='font-gilroyBold pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]'>
+                <h2 className='font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]'>
                     SmartLodge Plugs Into <br />
                 Your Digital Ecosystem</h2>
-                <p className='pt-4 pb-5 font-ttCommonProNormal text-base text-custom-body leading-[25.4px]'>
+                <p className='pt-4 md:pb-5 font-ttCommonProNormal text-base text-custom-body leading-[25.4px]'>
                 No matter your stack, SmartLodge can integrate into the systems your organization already has in place. Some examples include:
                 </p>
-                <hr className='bg-[#97A7B5] w-1/2' />
-                <ul className='flex flex-col gap-4 pt-5'>
+                <hr className='bg-[#97A7B5] w-1/2 hidden md:block' />
+                <ul className='flex flex-col gap-4 pt-3 md:pt-5'>
                     <li className='flex items-center gap-2'>
                     <span className='text-custom-blue w-6 h-6'><GoCheckCircle size={24} /></span>
                     <p className='font-ttCommonProNormal text-custom-body text-base'>HR, HRIS and ERP systems</p>
@@ -369,6 +369,9 @@ const RwDigitalPartner = () => {
                     </li>
                 </ul>
             </div>
+        </div>
+        <div className='grid grid-cols-1 lg:grid-cols-2'>
+
         </div>
       </div>
     </div>
