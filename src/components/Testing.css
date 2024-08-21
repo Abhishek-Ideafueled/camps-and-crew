@@ -24,7 +24,7 @@ div.swiper.swiper-initialized.swiper-horizontal{
     scrollbar-width: none;  /* Firefox */
 }
 
-.history-year .swiper-button-disabled{
+.rw-year-nav .swiper-button-disabled{
     background-color: transparent !important;
 }
 
@@ -32,7 +32,7 @@ div.swiper.swiper-initialized.swiper-horizontal{
     color: #EFBC43;
 } */
 
-.history-year .swiper-slide.swiper-slide-active{
+.rw-year-nav .swiper-slide.swiper-slide-active{
     color: #10688E;
     font-weight: 600;
 }
@@ -56,7 +56,7 @@ div.swiper.swiper-initialized.swiper-horizontal{
     
 }
 
-.history-year .swiper.swiper-initialized.swiper-vertical{
+.rw-year-nav .swiper.swiper-initialized.swiper-vertical{
         position: inherit;
 }
 

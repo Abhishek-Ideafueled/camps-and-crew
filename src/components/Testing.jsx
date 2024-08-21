@@ -30,9 +30,49 @@ const Testing = () => {
   };
 
   return (
-    <div className='mt-[200px] main-container mx-auto'>
-     <div className='w-full items-center'>
-     <div className="h-full w-full relative history-card overflow-hidden no-scrollbar ">
+    <div className='mt-[200px]'>
+     <div className='w-full items-center relative'>
+      <div
+                ref={nextRef}
+                className="absolute top-[50%] cursor-pointer right-0 -rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
+              >
+                <svg
+                  width="15"
+                  height="8"
+                  viewBox="0 0 15 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5 1L7.5 7L13.5 1"
+                    stroke="#000"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <div
+                ref={prevRef}
+                className="absolute top-[50%] left-0 cursor-pointer rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
+              >
+                <svg
+                  width="15"
+                  height="8"
+                  viewBox="0 0 15 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5 1L7.5 7L13.5 1"
+                    stroke="#000"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+     <div className="main-container mx-auto relative history-card overflow-hidden no-scrollbar ">
             <div className="absolute top-0 font-gilroyBold text-custom-heading text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center">
               {years.filter((v, i) => (v ? i === currIndex : ""))}
             </div>
@@ -48,10 +88,16 @@ const Testing = () => {
               //   clickable: true,
               // }}
               modules={[Navigation, Controller, Pagination,Scrollbar]}
-              navigation={true}
+              // navigation={true}
               className="h-full mt-20"
               onSlideChange={(swiper) => {
                 setCurrIndex(swiper.activeIndex);
+              }}
+              onInit={(swiper) => {
+                swiper.params.navigation.prevEl = prevRef.current;
+                swiper.params.navigation.nextEl = nextRef.current;
+                swiper.navigation.init();
+                swiper.navigation.update();
               }}
               // controller={{ control: verticalSwiperRef.current }}
               breakpoints={{
@@ -420,7 +466,7 @@ const Testing = () => {
               </SwiperSlide> */}
             </Swiper>
           </div>
-          <div className="w-auto my-[17px] history-year h-auto font-ttCommonProRegular text-xl text-custom-gray leading-8">
+          <div className="w-auto my-[17px] rw-year-nav h-auto font-ttCommonProRegular text-xl text-custom-gray leading-8">
             
             <Swiper
               direction="horizontal"
@@ -429,7 +475,7 @@ const Testing = () => {
               }}
               spaceBetween={10}
               
-              slidesPerView={8}
+              slidesPerView={10}
               mousewheel={true}
               modules={[Navigation, Controller, Pagination]}
               freeMode={true}
@@ -438,12 +484,12 @@ const Testing = () => {
               // }}
               className="h-full"
               controller={{ control: horizontalSwiperRef.current }}
-              onInit={(swiper) => {
-                swiper.params.navigation.prevEl = prevRef.current;
-                swiper.params.navigation.nextEl = nextRef.current;
-                swiper.navigation.init();
-                swiper.navigation.update();
-              }}
+              // onInit={(swiper) => {
+              //   swiper.params.navigation.prevEl = prevRef.current;
+              //   swiper.params.navigation.nextEl = nextRef.current;
+              //   swiper.navigation.init();
+              //   swiper.navigation.update();
+              // }}
               // navigation={{
               //   enabled:true
               // }}
@@ -501,7 +547,7 @@ const Testing = () => {
               >
                 <div className="cursor-pointer">{""}</div>
               </SwiperSlide> */}
-              <div
+              {/* <div
                 ref={nextRef}
                 className="absolute top-5 right-0 -rotate-90 button-next w-12 h-5 z-10 bg-transparent flex items-center justify-center"
               >
@@ -520,7 +566,7 @@ const Testing = () => {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </div>
+              </div> */}
             </Swiper>
             
           </div>   
