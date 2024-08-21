@@ -4,10 +4,10 @@ import './RemoteWorkforceMain.css';
 
 const RwCaseStudy = () => {
   return (
-    <div className="w-full">
+    <div className="w-full bg-custom-heading">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] items-center">
         <div className="flex flex-col items-center gap-4">
-          <h2 className="heading-h2 max-w-[500px]">Case Study</h2>
+          <h2 className="heading-h2 max-w-[500px] text-white">Case Study</h2>
           <span>
             <svg
               width="173"
@@ -188,19 +188,17 @@ const RwCaseStudy = () => {
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10">
-        <div className="flex flex-col bg-rw-case-3 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
-            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-90 bg-grad"></div>
-            <h3 className="card-heading text-[#060F1F] z-10">
+        <div className="flex flex-col border-custom-blue hover:bg-opacity-50 border hover:border-transparent bg-custom-heading hover:bg-rw-case-3 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
+            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-0 bg-grad"></div>
+             <div className='flex flex-col h-full justify-between'>
+              <span className='h-[50px]'>
+                <img className='object-cover' src="/white-sodexo.png" alt="white-sodexo" />
+              </span>
+            <h4 className='card-heading text-white pt-2'>
+
             Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive Efficiencies at Cedar Valley Lodge
-            </h3>
-            <div className="flex flex-col gap-1 z-10">
-              <p className="text-[26px] font-gilroyBold text-[#060F1F]">
-                Solution Implemented
-              </p>
-              <button className="bg-custom-button font-gilroyBold w-[120px] h-[35px] rounded-full">
-                SmartLodge
-              </button>
-            </div>
+                            
+            </h4>
             <Link
               to="#"
               className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base text-white z-10 max-w-max"
@@ -221,21 +219,17 @@ const RwCaseStudy = () => {
                 </svg>
               </span>
             </Link>
-          </div>
-          <div className="flex flex-col bg-rw-case-1 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
-            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-90 bg-grad"></div>
-            <h3 className="card-heading text-[#060F1F] z-10">
-              Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive
-              Efficiencies at Cedar Valley Lodge
-            </h3>
-            <div className="flex flex-col gap-1 z-10">
-              <p className="text-[26px] font-gilroyBold text-[#060F1F]">
-                Solution Implemented
-              </p>
-              <button className="bg-custom-button font-gilroyBold w-[120px] h-[35px] rounded-full">
-                SmartLodge
-              </button>
             </div>
+          </div>
+          <div className="flex flex-col border-custom-blue border hover:border-transparent bg-custom-heading hover:bg-rw-case-1 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
+            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-0 bg-grad"></div>
+            <div className='flex flex-col justify-between h-full'>
+            <span className='w-[98px] h-[50px]'>
+              <img src="/white-civeo.png" alt="white-civeo" />
+              </span>           
+            <h4 className='card-heading text-white'>
+            Civeo Speeds Up Check-In and Streamlines Camp Operations Across North America with SmartLodge
+            </h4>
             <Link
               to="#"
               className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base text-white z-10 max-w-max"
@@ -256,20 +250,19 @@ const RwCaseStudy = () => {
                 </svg>
               </span>
             </Link>
+            </div>
           </div>
-          <div className="flex flex-col bg-rw-case-2 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
-            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-90 bg-grad"></div>
-            <h3 className="card-heading text-[#060F1F] z-10">
+          <div className="flex flex-col border-custom-blue border hover:border-transparent bg-custom-heading hover:bg-rw-case-2 h-full lg:min-h-[480px] p-10 relative justify-between rw-card-container">
+            <div className="absolute inset-0 w-full h-full bg-[#5BC0ED99] opacity-0 bg-grad"></div>
+            <div className='flex flex-col justify-between h-full'>
+            <span className='h-[50px]'>
+              <img
+              className='object-cover'
+              src="/white-right-choice-camps-catering.png" alt="white-right-choice-camps-catering" />
+              </span>           
+            <h4 className='card-heading text-white' >
             Edmonton-Based Right Choice Camps & Catering Streamlines Operations and Billing for Network of Remote Lodges
-            </h3>
-            <div className="flex flex-col gap-1 z-10">
-              <p className="text-[26px] font-gilroyBold text-[#060F1F]">
-                Solution Implemented
-              </p>
-              <button className="bg-custom-button font-gilroyBold w-[120px] h-[35px] rounded-full">
-                SmartLodge
-              </button>
-            </div>
+            </h4>
             <Link
               to="#"
               className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base text-white z-10 max-w-max"
@@ -290,6 +283,7 @@ const RwCaseStudy = () => {
                 </svg>
               </span>
             </Link>
+            </div>
           </div>
         </div>
         <div className='flex w-full justify-center'>
