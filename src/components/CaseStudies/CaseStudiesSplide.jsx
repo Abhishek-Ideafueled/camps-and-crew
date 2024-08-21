@@ -111,7 +111,7 @@ const CaseStudiesSplide = () => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="single-slide">
+            <div className="single-slide px-5">
               <img
                 className=""
                 src="/white-sodexo.png"

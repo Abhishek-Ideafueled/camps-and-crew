@@ -30,7 +30,7 @@ const Testing = () => {
               spaceBetween={10}
               scrollbar={{ draggable: true }}
               slidesPerView="auto"
-              // slidesPerGroup="auto"
+              // slidesPerGroup={3}
               // pagination={{
               //   clickable: true,
               // }}
@@ -65,7 +65,7 @@ const Testing = () => {
               // }}
             >
           
-              <SwiperSlide key={0} style={{"width:"}}>
+              <SwiperSlide key={0}>
                 <div className="slider-outer flex gap-4 h-auto">
                   <div className="flex flex-col">
                    
