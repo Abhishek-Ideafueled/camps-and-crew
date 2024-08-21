@@ -40,8 +40,10 @@ const RwLms = () => {
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]">
         <div className="flex flex-col gap-6 items-center max-w-[718px] text-center ">
           <div className="flex flex-col items-center gap-4">
-            <h2 className="heading-h2 max-w-[650px]">
-              Empowering Employees with a Learning Management System (LMS)
+            <h2 className="heading-h2">
+              Empowering Employees with a
+              <br />
+               Learning Management System (LMS)
             </h2>
             <span>
               <svg

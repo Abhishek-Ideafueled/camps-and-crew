@@ -33,7 +33,8 @@ div.swiper.swiper-initialized.swiper-horizontal{
 } */
 
 .history-year .swiper-slide.swiper-slide-active{
-    color: #EFBC43;
+    color: #10688E;
+    font-weight: 600;
 }
 
 .history-card .swiper-scrollbar.swiper-scrollbar-horizontal{
