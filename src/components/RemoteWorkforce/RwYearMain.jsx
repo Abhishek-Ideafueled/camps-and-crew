@@ -2,6 +2,7 @@ import React from 'react'
 import RwYearSlider from './RwYearSlider';
 import RwYearScroll from './RwYearScroll';
 import { Link } from 'react-router-dom';
+import Testing from '../Testing';
 
 const RwYearMain = () => {
 
@@ -49,8 +50,10 @@ const RwYearMain = () => {
             SmartLodge into the robust platform it is today. Below is a timeline highlighting select milestones of this collaborative journey.
             </span>
             </div>
+            </div>
             <div className='hidden md:block'>
             {/* <RwYearSlider/> */}
+            <Testing/>
             </div>
             <div className='md:hidden'>
             <RwYearScroll/>
@@ -61,7 +64,7 @@ const RwYearMain = () => {
             LEARN MORE ABOUT OUR HISTORY
             </div>
             </Link>
-        </div>
+        
         </div>
     </div>
   )
