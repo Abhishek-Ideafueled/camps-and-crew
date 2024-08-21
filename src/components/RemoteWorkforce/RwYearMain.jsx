@@ -47,7 +47,7 @@ const RwYearMain = () => {
             </span>
             </div>
             <div className='hidden md:block'>
-            <RwYearSlider/>
+            {/* <RwYearSlider/> */}
             </div>
             <div className='md:hidden'>
             <RwYearScroll/>

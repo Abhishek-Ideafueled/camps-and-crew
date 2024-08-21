@@ -29,6 +29,8 @@ const Testing = () => {
     }
   };
 
+  console.log(currIndex);
+
   return (
     <div className='mt-[200px] main-container mx-auto'>
      <div className='w-full items-center'>
@@ -41,7 +43,7 @@ const Testing = () => {
                 horizontalSwiperRef.current = swiper;
               }}
               spaceBetween={10}
-              scrollbar={{ draggable: true }}
+              // scrollbar={{ draggable: true }}
               slidesPerView={2.5}
               // slidesPerGroup={3}
               // pagination={{
@@ -54,28 +56,20 @@ const Testing = () => {
                 setCurrIndex(swiper.activeIndex);
               }}
               // controller={{ control: verticalSwiperRef.current }}
-              // breakpoints={{
-              //   767: {
-              //     slidesPerView: 2.1,
-              //     spaceBetween: 10,
-              //   },
-              //   1064: {
-              //     slidesPerView: 2.5,
-              //     spaceBetween: 10,
-              //   },
-              //   1240: {
-              //     slidesPerView: 3,
-              //     spaceBetween: 10,
-              //   },
-              //   1400: {
-              //     slidesPerView: 4,
-              //     spaceBetween: 10,
-              //   },
-              //   1600: {
-              //     slidesPerView: 4,
-              //     spaceBetween: 10,
-              //   },
-              // }}
+              breakpoints={{
+                767: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1024: {
+                  slidesPerView: 2.5,
+                  spaceBetween: 10,
+                },
+                // 1400: {
+                //   slidesPerView: 3,
+                //   spaceBetween: 10,
+                // },
+              }}
             >
           
               <SwiperSlide key={0}>
@@ -102,7 +96,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={0}>
+              <SwiperSlide key={1}>
               <div className="slider-outer h-[559px]">
               <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -126,7 +120,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={0}>
+              <SwiperSlide key={2}>
               <div className="slider-outer h-[559px]">
                    
               <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
@@ -151,7 +145,7 @@ const Testing = () => {
         </div>
                  </div>
               </SwiperSlide>
-              <SwiperSlide key={1}>
+              <SwiperSlide key={3}>
                 <div className="slider-outer h-[559px]">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -176,7 +170,7 @@ const Testing = () => {
                  
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={2}>
+              <SwiperSlide key={4}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -200,7 +194,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={2}>
+              <SwiperSlide key={5}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
                 <div className='flex flex-col gap-4'>
@@ -224,7 +218,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={3}>
+              <SwiperSlide key={6}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -248,7 +242,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={3}>
+              <SwiperSlide key={7}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -272,7 +266,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={4}>
+              <SwiperSlide key={8}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -296,7 +290,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={5}>
+              <SwiperSlide key={9}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -320,7 +314,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={6}>
+              <SwiperSlide key={10}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -344,7 +338,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={7}>
+              <SwiperSlide key={11}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -368,7 +362,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={8}>
+              <SwiperSlide key={12}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -392,7 +386,7 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={9}>
+              <SwiperSlide key={13}>
                 <div className="slider-outer w-auto h-auto">
                 <div className='flex flex-col gap-6 py-6 px-10 max-w-max max-h-max bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
@@ -416,19 +410,20 @@ const Testing = () => {
         </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide key={10}>
+              <SwiperSlide key={14}>
                 <div className="p-4 text-center"></div>
               </SwiperSlide>
-              <SwiperSlide key={11}>
+              <SwiperSlide key={15} >
                 <div className="p-4 text-center"></div>
               </SwiperSlide>
              
-              <SwiperSlide key={12} className='hidden superxl:block'>
+              {/* <SwiperSlide key={16} className='hidden superxl:block'>
                 <div className="p-4 text-center"></div>
-              </SwiperSlide>
+              </SwiperSlide> */}
             </Swiper>
           </div>
           <div className="w-auto my-[17px] history-year h-auto font-ttCommonProRegular text-xl text-custom-gray leading-8">
+            
             <Swiper
               direction="horizontal"
               onSwiper={(swiper) => {
@@ -455,36 +450,18 @@ const Testing = () => {
               //   enabled:true
               // }}
             >
-              <div
-                className="absolute top-5 -rotate-90 left-0 button-previous bg-transparent z-10 w-12 h-5 flex items-center justify-center"
-                ref={prevRef}
-              >
-                <svg
-                  width="15"
-                  height="8"
-                  viewBox="0 0 15 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13.5 7L7.5 1L1.5 7"
-                    stroke="#CAD5DE"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
+             
               {years.map((year, index) => (
               <SwiperSlide
                   key={index}
                   onClick={() => handleVerticalSlideClick(index)}
+                  className={`${ year - years[index-1]!==0? "":"hidden"} `}
                 >
-                  <div className="py-4 text-center cursor-pointer font-ttCommonProRegular text-[#3D7F9E]">{ year} </div>
+                  <div className={`py-4 swiper-no-swiping text-center cursor-pointer font-ttCommonProRegular ${year === years[currIndex] ? "font-semibold text-[#10688E]" :""} text-[#3D7F9E]`}>{ year} </div>
                 </SwiperSlide>
               ))}
 
-              <SwiperSlide
+              {/* <SwiperSlide
                 key={10}
                 onClick={() => handleVerticalSlideClick(10)}
               >
@@ -525,7 +502,7 @@ const Testing = () => {
                 onClick={() => handleVerticalSlideClick(16)}
               >
                 <div className="cursor-pointer">{""}</div>
-              </SwiperSlide>
+              </SwiperSlide> */}
               <div
                 ref={nextRef}
                 className="absolute top-5 right-0 -rotate-90 button-next w-12 h-5 z-10 bg-transparent flex items-center justify-center"
