@@ -29,8 +29,6 @@ const Testing = () => {
     }
   };
 
-  console.log(currIndex);
-
   return (
     <div className='mt-[200px] main-container mx-auto'>
      <div className='w-full items-center'>

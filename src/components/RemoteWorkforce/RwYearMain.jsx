@@ -4,6 +4,9 @@ import RwYearScroll from './RwYearScroll';
 import { Link } from 'react-router-dom';
 
 const RwYearMain = () => {
+
+
+
   return (
     <div className='w-full bg-[#F5F3EF]'>
         <div className='main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] items-center'>
