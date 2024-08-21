@@ -3,8 +3,6 @@ import React, { useState } from "react";
 const RwYearScroll = () => {
 
   const [loadContent,setLoadContent] = useState(0);
-
-  console.log(loadContent)
   
   return (
     <div className="w-full flex flex-col gap-4">
