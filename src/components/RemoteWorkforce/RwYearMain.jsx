@@ -9,8 +9,8 @@ const RwYearMain = () => {
 
 
   return (
-    <div className='w-full bg-[#F5F3EF]'>
-        <div className='main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] items-center'>
+    <div className='w-full bg-[#F5F3EF] py-10 lg:py-20'>
+        <div className='main-container mx-auto  flex flex-col gap-[30px] lg:gap-[60px] items-center'>
         <div className='flex flex-col gap-6 items-center max-w-[900px] text-center '>
                 <div className='flex flex-col items-center gap-4'>
             <h2 className='heading-h2'>
