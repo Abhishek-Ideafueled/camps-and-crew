@@ -48,12 +48,28 @@ const RwFaqs = () => {
     const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
 
-  useEffect(() => {
-    const calculatedHeights = contentRefs.current.map(
-      (el) => el.scrollHeight
-    );
+  const calculateHeights=()=>{
+    const calculatedHeights = 
+      contentRefs.current.map((el) => el?.scrollHeight || 0);
     setHeights(calculatedHeights);
+  }
+
+  useEffect(() => {
+      
+    window.addEventListener('resize', calculateHeights);
+  // window.addEventListener('load', calculateHeights); 
+
+  return () => {
+    window.removeEventListener('resize', calculateHeights);
+    // window.removeEventListener('load', calculateHeights);
+  };
+
   }, []);
+
+  useEffect(() => {
+    calculateHeights(); 
+  }, [activeId]);
+
 
     const handleAccordionClick = (id) => {
       if (activeId === id) {
@@ -116,14 +132,22 @@ const RwFaqs = () => {
           </span>
         </div>
         <div className="flex flex-col gap-4 max-w-[800px] mx-auto">
-            {faqArr.map((item,index)=>(
-                <div className="bg-[#ECE7E0] flex flex-col" key={item.id}>
-                    <div className="flex justify-between p-4 items-start z-10 relative" onClick={()=>handleAccordionClick(item.id)}>
-                        <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] md:pr-6 sm:w-full ">{item.title}</h4>
-                        <div className={`accordion-btns ${activeId === item.id ? 'btn-clicked' : ''}  p-2 w-[24px] h-[24px] flex items-center`}> 
-                        </div>
-                    </div>
-                    <div
+          {faqArr.map((item, index) => (
+            <div className="bg-[#ECE7E0] flex flex-col rounded-2xl" key={item.id}>
+              <div
+                className="flex justify-between p-4 items-start z-10 relative"
+                onClick={() => handleAccordionClick(item.id)}
+              >
+                <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] md:pr-6 sm:w-full ">
+                  {item.title}
+                </h4>
+                <div
+                  className={`accordion-btns ${
+                    activeId === item.id ? "btn-clicked" : ""
+                  }  p-2 w-[24px] h-[24px] flex items-center`}
+                ></div>
+              </div>
+              <div
                 ref={(el) => (contentRefs.current[index] = el)}
                 className={`${
                   activeId === item.id
@@ -132,20 +156,15 @@ const RwFaqs = () => {
                 } 
                                             overflow-hidden transition-all duration-300 ease-in-out`}
                 style={{
-                  maxHeight:
-                    activeId === item.id
-                      ? `${heights[index]}px`
-                      : "0",
+                  maxHeight: activeId === item.id ? `${heights[index]}px` : "0",
                 }}
               >
-                    
-                    <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4 px-4">
-                      {item.desc}
-                    </div>
-                    </div>
+                <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4 px-4">
+                  {item.desc}
+                </div>
+              </div>
             </div>
-            ))}            
-
+          ))}
         </div>
       </div>
     </div>

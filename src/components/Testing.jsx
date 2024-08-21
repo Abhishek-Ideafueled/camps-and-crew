@@ -65,8 +65,8 @@ const Testing = () => {
               // }}
             >
           
-              <SwiperSlide key={0}>
-                <div className="slider-outer flex gap-4 w-auto h-auto">
+              <SwiperSlide key={0} style={{"width:"}}>
+                <div className="slider-outer flex gap-4 h-auto">
                   <div className="flex flex-col">
                    
                     <div className="relative">
@@ -124,7 +124,7 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={1}>
-                <div className="slider-outer w-auto h-auto">
+                <div className="slider-outer w-auto flex gap-4 h-auto">
                   <div className="flex flex-col">
                    
                     <div className="relative">
@@ -143,6 +143,24 @@ const Testing = () => {
                       </div>
                     </div>
                   </div>
+                  <div className="flex flex-col">
+                   
+                   <div className="relative">
+                     <div className="absolute bg-cover bg-history-2 w-full max-w-[340px] h-[405px] bottom-0 rounded-2xl border-[#5BC0EC] border-[1px]"></div>
+                     <div className="w-full max-w-[340px] h-[405px]">
+                       <div className="relative flex flex-col p-6 justify-end gap-4 w-full h-full">
+                         <span className="font-gilroyBold font-normal text-white text-2xl ">
+                           September 2022
+                         </span>
+                         <p className="font-ttCommonProNormal text-white text-xl">
+                           Roster booking capabilities launch, enabling clients
+                           to book rooms or travel reservations weeks or months
+                           out for workers on rotating rosters.
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide key={2}>
