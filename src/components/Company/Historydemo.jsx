@@ -152,9 +152,9 @@ const Historydemo = () => {
                 swiper.navigation.init();
                 swiper.navigation.update();
               }}
-              navigation={{
-                enabled:true
-              }}
+              // navigation={{
+              //   enabled:true
+              // }}
             >
               <div
                 className="absolute top-0  left-3 button-previous bg-transparent z-10 w-12 h-5 flex items-center justify-center"
@@ -267,7 +267,7 @@ const Historydemo = () => {
               //   clickable: true,
               // }}
               modules={[Navigation, Controller, Pagination,Scrollbar]}
-              navigation={true}
+              // navigation={true}
               className="h-full"
               onSlideChange={(swiper) => {
                 setCurrIndex(swiper.activeIndex);
