@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useLayoutEffect } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import { useLocation } from 'react-router-dom';
@@ -11,6 +11,10 @@ const Layout = (props) => {
   // useEffect(() => {
   //   window.scrollTo({ top: 0, behavior: "instant" });
   // }, [pathName]);
+
+//   useLayoutEffect(() => {
+//     window.scrollTo(0, 0)
+// });
 
   return (
     <>

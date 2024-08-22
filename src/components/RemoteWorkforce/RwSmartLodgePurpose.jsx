@@ -90,7 +90,7 @@ const RwSmartLodgePurpose = () => {
                </div>
         </div>
         <div className='w-full flex items-center justify-center mt-12'>
-            <Link to="/software-for-workforce-camp" className='max-w-max z-10'>
+            <Link to="/software-for-workforce-camp" className='max-w-max z-10' reloadDocument>
             <div className='btn-orange px-6 smalls:px-10 py-[19px] rounded'>
             SEE ALL SMARTLODGE FEATURES
             </div>

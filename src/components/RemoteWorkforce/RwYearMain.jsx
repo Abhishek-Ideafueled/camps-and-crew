@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useLayoutEffect } from 'react'
 import RwYearSlider from './RwYearSlider';
 import RwYearScroll from './RwYearScroll';
 import { Link } from 'react-router-dom';
 import Testing from '../Testing';
 
 const RwYearMain = () => {
+
 
 
 
@@ -59,7 +60,7 @@ const RwYearMain = () => {
             <RwYearScroll/>
             </div>
             <div className='w-full flex items-center justify-center mt-5'>
-            <Link to="/software-for-workforce-camp" className='max-w-max z-10'>
+            <Link to="/company" className='max-w-max z-10' reloadDocument={true}>
             <div className='btn-orange px-6 smalls:px-10 py-[19px] rounded'>
             LEARN MORE ABOUT OUR HISTORY
             </div>

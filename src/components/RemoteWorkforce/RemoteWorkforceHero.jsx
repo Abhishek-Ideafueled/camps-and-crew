@@ -116,7 +116,7 @@ const RemoteWorkforceHero = () => {
             </p>
         </div>
         <div className='w-full'>
-            <Link className='flex w-[203px]' href="#demoForm" onClick={handleClickScroll}>
+            <Link className='flex w-[203px]' onClick={handleClickScroll}>
                     <div className='btn-orange w-[203px] h-[64px] flex items-center px-10 text-nowrap rounded'>CONTACT SALES</div>
             </Link>
         </div>
