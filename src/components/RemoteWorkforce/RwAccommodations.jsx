@@ -3,6 +3,11 @@ import { HiArrowRight } from 'react-icons/hi2'
 import { Link } from 'react-router-dom'
 
 const RwAccommodations = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
+
   return (
     <div className='w-full max-h-max'>
         <div className='grid grid-cols-1 md:grid-cols-2 h-full items-center px-3 md:px-0'>
@@ -21,8 +26,8 @@ const RwAccommodations = () => {
                     We partner closely with our clients to enable them to address the unique needs of each project and to deliver superior service 
                     to their clients.
                     </p>
-                    <Link to="#">
-                    <span className='w-full hover:text-[#5BC0ED] text-custom-blue hover:opacity-70 font-ttCommonProNormal font-medium flex items-center gap-1'>
+                   <div onClick={scrollToTop}> <Link to="/company" >
+                    <span  className='w-full hover:text-[#5BC0ED] text-custom-blue hover:opacity-70 font-ttCommonProNormal font-medium flex items-center gap-1'>
                         Learn more about the company
                         <span>
                         {/* <HiArrowRight /> */}
@@ -40,7 +45,7 @@ const RwAccommodations = () => {
             </svg>
                         </span>
                         </span>
-                    </Link>
+                    </Link></div>
             </div>
         </div>
       

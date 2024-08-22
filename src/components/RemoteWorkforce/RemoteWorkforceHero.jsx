@@ -90,6 +90,15 @@ const RemoteWorkforceHero = () => {
     rtl:true
   };
 
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
   return (
     <div className='w-full bg-[#f7f5f2]'>
         <div className='main-container mx-auto'>
@@ -107,7 +116,7 @@ const RemoteWorkforceHero = () => {
             </p>
         </div>
         <div className='w-full'>
-            <Link className='flex w-[203px]'>
+            <Link className='flex w-[203px]' href="#demoForm" onClick={handleClickScroll}>
                     <div className='btn-orange w-[203px] h-[64px] flex items-center px-10 text-nowrap rounded'>CONTACT SALES</div>
             </Link>
         </div>
