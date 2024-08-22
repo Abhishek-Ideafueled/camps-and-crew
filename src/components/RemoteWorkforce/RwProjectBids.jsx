@@ -14,7 +14,7 @@ const RwProjectBids = () => {
   return (
     <div className='w-full bg-[#F7F5F2]'>
       <div className='main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]'> 
-      <div className='flex flex-col gap-6 items-center max-w-[1008px] text-center '>
+      <div className='flex flex-col gap-6 items-center max-w-[1020px] text-center '>
                 <div className='flex flex-col items-center gap-4'>
             <h2 className='heading-h2 max-w-[500px]'>
             Ready to Assist with 
@@ -50,9 +50,7 @@ const RwProjectBids = () => {
             </span>
                 </div>
             <span className='sub-heading'>
-            Since 2007, we have had the privilege of working with our workforce accommodation partners across the globe to shape 
-            SmartLodge into the robust platform it is today. Below is a timeline highlighting select milestones of this collaborative journey.
-            </span>
+            We understand the critical role a reliable camp management system plays in your bid for managing new projects. We are ready to support you in securing new business and have outlined below how we can work together, even if we haven’t partnered before.</span>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 w-full'>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
