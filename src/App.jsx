@@ -22,7 +22,7 @@ function App() {
        <Route path="/software-for-workforce-camp" element={<SmartLodgeMain/>} />
        <Route path="/fifo-travel-online-booking-tool" element={<EnrouteMain/>} />
     <Route path="/camp-management-and-catering-companies" element={<RemoteWorkforceMain/>} />
-    <Route path="/testing" element={<Testing/>} />
+    {/* <Route path="/testing" element={<Testing/>} /> */}
     </Routes>
    
    </Layout>

@@ -16,8 +16,8 @@ const Testimonials = () => {
     <div className="w-full">
       <div className="main-containter mx-auto py-10 lg:py-20">
         <div className="flex flex-col gap-4 items-center">
-          <h2 className="heading-h2">Words from our Clients</h2>
-          <span>
+          <h2 className="heading-h2" data-aos="fade-up">Words from our Clients</h2>
+          <span data-aos="fade-up" data-aos-delay="100">
             <svg
               width="174"
               height="17"
@@ -65,7 +65,7 @@ const Testimonials = () => {
           </span>
         </div>
       </div>
-      <div className="testimonials-slider w-full">
+      <div className="testimonials-slider w-full" data-aos="fade-up" data-aos-delay="100">
 <Swiper
         slidesPerView="auto"
         spaceBetween={20}

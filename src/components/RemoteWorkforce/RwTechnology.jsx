@@ -88,7 +88,9 @@ const RwTechnology = () => {
             </span>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8'>
-            {  technologyArr.map((item)=>(<div key={item.id} className="flex flex-col gap-[30px] md:gap-[60px] py-6 px-4 md:px-6 md:py-8">
+            {  technologyArr.map((item)=>(<div key={item.id}
+            data-aos="fade-up" data-aos-delay="100"
+            className="flex flex-col gap-[30px] md:gap-[60px] py-6 px-4 md:px-6 md:py-8">
         <span className='w-[40px] h-[48px]'>
             <img src={item.iconUrl} alt={item.iconUrl} />
         </span>

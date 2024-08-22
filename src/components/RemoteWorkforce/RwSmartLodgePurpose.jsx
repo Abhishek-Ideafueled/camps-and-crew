@@ -26,7 +26,9 @@ const RwSmartLodgePurpose = () => {
     <div className='w-full bg-custom-back max-h-max relative'>
         <div className='main-container mx-auto py-10 lg:py-20'>
         <div className='w-[90%] mx-auto flex flex-col items-center text-center gap-8 md:gap-0'>
-            <div className='bg-[#EAE8E3] flex flex-col gap-6 md:gap-10 lg:pt-[60px] px-6 pt-6 pb-8 md:pb-[160px] lg:px-20 lg:py-[180px] rounded-2xl'>
+            <div
+            data-aos="fade-up"
+            className='bg-[#EAE8E3] flex flex-col gap-6 md:gap-10 lg:pt-[60px] px-6 pt-6 pb-8 md:pb-[160px] lg:px-20 lg:py-[180px] rounded-2xl'>
                 <div className='flex items-center border-[1px] border-custom-blue rounded-full max-w-max pl-3 h-[60px] mx-auto' >
                    <h3 className='text-custom-heading pr-3 font-gilroyBold  text-base smalls:text-lg smalls:leading-[24px] md:text-xl md:leading-[24px] xl:text-2xl xl:leading-[28.8px]'>
                    A Deeper Look At
@@ -46,7 +48,9 @@ const RwSmartLodgePurpose = () => {
                 billing, detailed reporting and more. Watch the video below for a quick overview of the system. 
                </span>
             </div>
-            <div className='w-[90%] h-[160px] smalls:h-[260px] md:h-[364px] max-h-[560px] lg:h-[560px] mt-0 md:mt-[-100px] z-10'>           
+            <div
+             data-aos="fade-up"  data-aos-delay="100"
+            className='w-[90%] h-[160px] smalls:h-[260px] md:h-[364px] max-h-[560px] lg:h-[560px] mt-0 md:mt-[-100px] z-10'>           
             <div className="relative px-14 w-full h-full flex items-center justify-center">
                 <img
                   className="absolute inset-0 rounded-2xl w-full h-full sm:w-full justify-self-center"

@@ -201,7 +201,8 @@ const RwRemoteProjects = () => {
         </div>
      
       <div className='relative w-full h-full'>
-      {activeTab ==='mining' && <div className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      {activeTab ==='mining' && <div  data-aos="fade-up" 
+      className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -271,7 +272,8 @@ const RwRemoteProjects = () => {
             </Link>
       </div>
       </div>}
-      {activeTab ==='oil' && <div className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      {activeTab ==='oil' && <div data-aos="fade-up" 
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -341,7 +343,8 @@ const RwRemoteProjects = () => {
             </Link>
       </div>
       </div>}
-      {activeTab ==='construction' && <div className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      {activeTab ==='construction' && <div data-aos="fade-up" 
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -410,7 +413,8 @@ const RwRemoteProjects = () => {
             </Link>
       </div>
       </div>}
-      {activeTab ==='disaster' && <div className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      {activeTab ==='disaster' && <div data-aos="fade-up" 
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -479,7 +483,8 @@ const RwRemoteProjects = () => {
             </Link>
       </div>
       </div>}
-      {activeTab ==='govt' && <div className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      {activeTab ==='govt' && <div data-aos="fade-up" 
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'

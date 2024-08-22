@@ -351,7 +351,9 @@ const RwDigitalPartner = () => {
               </Splide>
             </div>
           </div>
-          <div className="flex flex-col justify-center pt-[30px] md:py-[60px] md:pl-[100px] md:pr-[60px]">
+          <div
+           data-aos="fade-up"
+          className="flex flex-col justify-center pt-[30px] md:py-[60px] md:pl-[100px] md:pr-[60px]">
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
               | INTEGRATIONS |
             </span>
@@ -417,7 +419,7 @@ const RwDigitalPartner = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 md:gap-8 lg:gap-0">
-          <div className="flex flex-col justify-center md:pl-[60px] md:pr-[100px]">
+          <div className="flex flex-col justify-center md:pl-[60px] md:pr-[100px]"  data-aos="fade-up"  data-aos-delay="100">
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
               | CUSTOM APPLICATIONS |
             </span>

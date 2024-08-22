@@ -13,10 +13,10 @@ const RwYearMain = () => {
         <div className='main-container mx-auto  flex flex-col gap-[30px] lg:gap-[60px] items-center'>
         <div className='flex flex-col gap-6 items-center max-w-[900px] text-center '>
                 <div className='flex flex-col items-center gap-4'>
-            <h2 className='heading-h2'>
+            <h2 className='heading-h2'  data-aos="fade-down">
             Building SmartLodge Alongside Our Clients
             </h2>
-            <span>
+            <span  data-aos="fade-up"  data-aos-delay="100">
             <svg width="173" height="16" viewBox="0 0 173 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11.5 1)" stroke="#647787"/>
 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46.5 1)" stroke="#647787"/>
