@@ -207,12 +207,12 @@ const RwRemoteProjects = () => {
                 className='rounded-2xl object-cover h-auto w-auto'
                 src="/mining-workers-near-bulldozer-open-pit-mine.jpg" alt="Workers in safety vests at a mining site." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 md:gap-8'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             MINING
             </span>
-            <h2 className="font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
+            <h2 className="font-gilroyBold text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
             Supporting Remote Mining Projects
             </h2>
             </div>
@@ -221,7 +221,8 @@ const RwRemoteProjects = () => {
             Additionally, SmartLodge offers various value-added features to ensure your clients’ accommodation and
              safety needs are always met. SmartLodge enables you and your clients to:
             </p>
-            <ul className="flex flex-col gap-4 pt-3 md:pt-5">
+            <hr className='hidden md:block w-[40%] border-custom-blue border-[1px]' />
+            <ul className="flex flex-col gap-4">
             <li className="flex gap-2">
                 <span className="text-custom-blue w-6 h-6 mt-[5px]">
                   <GoCheckCircle size={24} />
@@ -276,12 +277,12 @@ const RwRemoteProjects = () => {
                 className='rounded-2xl object-cover h-auto w-auto'
                 src="/workers-walks-facility-upstream-oil-gas.jpg" alt="Engineers in protective gear at an oil and gas facility." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 md:gap-8'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             OIL & GAS
             </span>
-            <h2 className="font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
+            <h2 className="font-gilroyBold text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
             Serving Remote Oil & Gas Projects
             </h2>
             </div>
@@ -291,7 +292,8 @@ const RwRemoteProjects = () => {
             The system offers specialized features that ensure your clients' 
             lodging needs are always met. These features give you and your clients the ability to:
             </p>
-            <ul className="flex flex-col gap-4 pt-3 md:pt-5">
+            <hr className='hidden md:block w-[40%] border-custom-blue border-[1px]' />
+            <ul className="flex flex-col gap-4">
             <li className="flex gap-2">
                 <span className="text-custom-blue w-6 h-6 mt-[5px]">
                   <GoCheckCircle size={24} />
@@ -345,12 +347,12 @@ const RwRemoteProjects = () => {
                 className='rounded-2xl object-cover h-auto w-auto'
                 src="/worker-holds-tablet-remote-infrastructure-construction.jpg" alt="Construction worker using a tablet at a project site." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 md:gap-8'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             ENGINEERING & CONSTRUCTION
             </span>
-            <h2 className="font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
+            <h2 className="font-gilroyBold text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
             Serving Remote Engineering Projects
             </h2>
             </div>
@@ -359,7 +361,8 @@ const RwRemoteProjects = () => {
             SmartLodge has been architected to assist your clients in adhering to their project timelines,
              efficiently guiding them to project completion. With SmartLodge, you and your clients can:
             </p>
-            <ul className="flex flex-col gap-4 pt-3 md:pt-5">
+            <hr className='hidden md:block w-[40%] border-custom-blue border-[1px]' />
+            <ul className="flex flex-col gap-4">
             <li className="flex gap-2">
                 <span className="text-custom-blue w-6 h-6 mt-[5px]">
                   <GoCheckCircle size={24} />
@@ -413,12 +416,12 @@ const RwRemoteProjects = () => {
                 className='rounded-2xl object-cover h-auto w-auto'
                 src="/relief-housing-tents-displaced-community.jpg" alt="Temporary housing units set up for disaster relief." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 md:gap-8'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             DISASTER RELIEF
             </span>
-            <h2 className="font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
+            <h2 className="font-gilroyBold text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
             Supporting Disaster Relief Industry Projects
             </h2>
             </div>
@@ -427,7 +430,8 @@ const RwRemoteProjects = () => {
              SmartLodge equips our partners with advanced technology to most effectively accommodate communities in crisis. 
             With SmartLodge, our clients can:
             </p>
-            <ul className="flex flex-col gap-4 pt-3 md:pt-5">
+            <hr className='hidden md:block w-[40%] border-custom-blue border-[1px]' />
+            <ul className="flex flex-col gap-4">
             <li className="flex gap-2">
                 <span className="text-custom-blue w-6 h-6 mt-[5px]">
                   <GoCheckCircle size={24} />
@@ -481,12 +485,12 @@ const RwRemoteProjects = () => {
                 className='rounded-2xl object-cover h-auto w-auto'
                 src="/tents-government-training-facility.jpg" alt="Row of tents at a government training facility." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 md:gap-8'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             GOVERNMENT
             </span>
-            <h2 className="font-gilroyBold pt-2 md:pt-3 text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
+            <h2 className="font-gilroyBold text-custom-heading text-[25px] leading-[32px] md:text-[32px] md:leading-[38.4px]">
             Supporting Government Industry Projects
             </h2>
             </div>
@@ -495,7 +499,8 @@ const RwRemoteProjects = () => {
             government facilities throughout North America and Europe.
              Our technology has facilitated the management of diverse government-run accommodations, including:
             </p>
-            <ul className="flex flex-col gap-4 pt-3 md:pt-5">
+            <hr className='hidden md:block w-[40%] border-custom-blue border-[1px]' />
+            <ul className="flex flex-col gap-4">
             <li className="flex gap-2">
                 <span className="text-custom-blue w-6 h-6 mt-[5px]">
                   <GoCheckCircle size={24} />
