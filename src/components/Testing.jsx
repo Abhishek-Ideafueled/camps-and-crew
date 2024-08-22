@@ -466,7 +466,7 @@ const Testing = () => {
               </SwiperSlide> */}
             </Swiper>
           </div>
-          <div className="main-container mx-auto my-[17px] rw-year-nav h-auto font-ttCommonProRegular text-xl text-custom-gray leading-8">
+          <div className="main-container mx-auto my-[17px] rw-year-nav h-auto">
             
             <Swiper
               direction="horizontal"
@@ -501,7 +501,7 @@ const Testing = () => {
                   onClick={() => handleVerticalSlideClick(index)}
                   className={`${ year - years[index-1]!==0? "":"hidden"} `}
                 >
-                  <div className={`py-4 swiper-no-swiping text-center cursor-pointer font-ttCommonProRegular ${year === years[currIndex] ? "font-semibold text-[#10688E]" :"font-normal"}  text-[#3D7F9E]`}>{ year} </div>
+                  <div className={`py-4 swiper-no-swiping text-center text-base leading-[30px] lg:text-xl lg:leading-[32px] cursor-pointer font-ttCommonProRegular ${year === years[currIndex] ? "font-semibold text-[#10688E]" :"font-normal"}  text-[#3D7F9E]`}>{ year} </div>
                 </SwiperSlide>
               ))}
 
