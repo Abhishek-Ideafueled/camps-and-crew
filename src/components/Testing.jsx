@@ -501,7 +501,7 @@ const Testing = () => {
                   onClick={() => handleVerticalSlideClick(index)}
                   className={`${ year - years[index-1]!==0? "":"hidden"} `}
                 >
-                  <div className={`py-4 swiper-no-swiping text-center cursor-pointer font-ttCommonProRegular ${year === years[currIndex] ? "font-semibold text-[#10688E]" :""} text-[#3D7F9E]`}>{ year} </div>
+                  <div className={`py-4 swiper-no-swiping text-center cursor-pointer font-ttCommonProRegular ${year === years[currIndex] ? "font-semibold text-[#10688E]" :"font-normal"}  text-[#3D7F9E]`}>{ year} </div>
                 </SwiperSlide>
               ))}
 

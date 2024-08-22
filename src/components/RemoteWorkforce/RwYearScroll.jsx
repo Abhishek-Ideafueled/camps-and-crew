@@ -5,6 +5,7 @@ const RwYearScroll = () => {
   const [loadContent,setLoadContent] = useState(0);
   
   return (
+    <div className="main-container mx-auto">
     <div className="w-full flex flex-col gap-4">
      
       <section id="2024">
@@ -417,6 +418,7 @@ const RwYearScroll = () => {
          className='font-gilroyBold text-custom-back w-full text-center underline'>
          Show Less
          </div>: " "}
+    </div>
     </div>
   );
 };
