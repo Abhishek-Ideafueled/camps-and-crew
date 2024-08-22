@@ -55,17 +55,26 @@
     display: none;
 }
 
-.rw-card-container:hover h4{
+/* .rw-card-container:hover h4{
     color: #060F1F;
     z-index: 10;
-    margin-top: -100%;
+    margin-top: -50%;
     transition: all 0.2s linear;
     transition-delay: 100ms;
+} */
+
+.rw-card-container:hover .part-white{
+    opacity: 0;
+}
+
+.rw-card-container:hover .dark-part{
+    opacity: 1;
 }
 
 .rw-card-container:hover a{
     color: #060F1F;
 }
+
 
 .rw-card-container:hover .bg-grad{
    opacity: 0.9;
