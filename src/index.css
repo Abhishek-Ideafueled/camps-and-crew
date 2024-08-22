@@ -158,6 +158,10 @@
   .card-heading{
     @apply font-gilroyBold text-custom-heading text-lg leading-[22px] md:text-xl md:leading-6 lg:text-2xl lg:leading-[28.8px] font-normal;
   }
+
+  .slider-btn-container{
+    @apply w-full px-5 max-w-[550px] md:max-w-[730px] lg:max-w-[970px] xl:max-w-[1336px] xl:px-0
+  }
   /* ... */
 }
 

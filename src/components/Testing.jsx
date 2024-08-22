@@ -31,7 +31,7 @@ const Testing = () => {
 
   return (
     <div className=''>
-     <div className='w-full items-center relative slider-nav-container'>
+     <div className='w-full items-center relative slider-nav-container slider-btn-container mx-auto'>
       <div
                 ref={nextRef}
                 className="absolute top-[50%] cursor-pointer right-0 -rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
