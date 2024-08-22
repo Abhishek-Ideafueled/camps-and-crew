@@ -96,7 +96,7 @@ const DemoForm = () => {
         international={false}
         // displayFormat={formatPhoneNumber}
 addInternationalOption={false}
-
+        limitMaxLength={true}
       />
                 </div>
                 <div className="bg-white flex py-3 px-4 h-[50px] border-[1px] border-[#D0D5DD] items-center gap-3 text-[#43597A] rounded-lg">
