@@ -33,8 +33,8 @@ const AdditionalFeatures = () => {
           modules={[Navigation]}
           spaceBetween={20}
           slidesPerView="auto"
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
+          // onSwiper={(swiper) => console.log(swiper)}
           observer={true}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;

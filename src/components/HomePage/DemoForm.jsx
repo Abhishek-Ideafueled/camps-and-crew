@@ -46,7 +46,7 @@ const DemoForm = () => {
   }
   
 
- console.log(phone)
+
 
   return (
     <div className="w-full main-container mx-auto" id='demoForm'>
