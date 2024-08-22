@@ -7,8 +7,8 @@ const RwCaseStudy = () => {
     <div className="w-full bg-custom-heading">
       <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] items-center">
         <div className="flex flex-col items-center gap-4">
-          <h2 className="heading-h2 max-w-[500px] text-white">Case Study</h2>
-          <span>
+          <h2 className="heading-h2 max-w-[500px] text-white" data-aos="fade-down">Case Study</h2>
+          <span data-aos="fade-up" data-aos-delay="100">
             <svg
               width="173"
               height="16"

@@ -16,11 +16,11 @@ const RwProjectBids = () => {
       <div className='main-container mx-auto py-10 lg:py-20 flex flex-col items-center gap-[30px] lg:gap-[60px]'> 
       <div className='flex flex-col gap-6 items-center max-w-[1020px] text-center '>
                 <div className='flex flex-col items-center gap-4'>
-            <h2 className='heading-h2 max-w-[500px]'>
+            <h2 className='heading-h2 max-w-[500px]' data-aos="fade-down" >
             Ready to Assist with 
             Project Bids
             </h2>
-            <span>
+            <span data-aos="fade-up">
             <svg width="173" height="16" viewBox="0 0 173 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 11.5 1)" stroke="#647787"/>
 <line y1="-0.5" x2="18.0278" y2="-0.5" transform="matrix(-0.5547 0.83205 0.83205 0.5547 46.5 1)" stroke="#647787"/>
@@ -52,9 +52,11 @@ const RwProjectBids = () => {
             <span className='sub-heading'>
             We understand the critical role a reliable camp management system plays in your bid for managing new projects. We are ready to support you in securing new business and have outlined below how we can work together, even if we haven’t partnered before.</span>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 w-full'>
-                    <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-8 w-full'  >
+                    <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]' >
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl' 
+                        data-aos="fade-up" data-aos-delay="100"
+                        >
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-[#189AD2] text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         01
@@ -73,7 +75,9 @@ const RwProjectBids = () => {
                         </div>
                     </div>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[60px]'>
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[60px]'
+                        data-aos="fade-up" data-aos-delay="100"
+                        >
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-[#189AD2] text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         02
@@ -92,7 +96,9 @@ const RwProjectBids = () => {
                         </div>
                     </div>
                     <div className='bg-transparent h-full w-full md:max-w-[384px] xl:w-[384px]'>
-                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[120px]'>
+                        <div className='flex flex-col py-10 px-6 lg:py-[60px] lg:px-10 gap-[30px] lg:gap-[60px] bg-white rounded-2xl md:mt-[120px]'
+                        data-aos="fade-up" data-aos-delay="100"
+                        >
                             <div className='w-full flex items-center gap-10'>
                                 <div className='w-[60px] h-[60px] py-[15px] px-[18px] flex items-center justify-center bg-[#189AD2] text-white font-gilroyBold text-2xl leading-[28.8px] rounded-full'>
                                         03
