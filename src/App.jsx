@@ -9,6 +9,7 @@ import EnrouteMain from './components/Enroute/EnrouteMain';
 import CaseStudiesMain from './components/CaseStudies/CaseStudiesMain';
 import RemoteWorkforceMain from './components/RemoteWorkforce/RemoteWorkforceMain';
 import Testing from './components/Testing';
+import MiningMain from './components/Mining/MiningMain';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
        <Route path="/fifo-travel-online-booking-tool" element={<EnrouteMain/>} />
     <Route path="/camp-management-and-catering-companies" element={<RemoteWorkforceMain/>} />
     {/* <Route path="/testing" element={<Testing/>} /> */}
+    <Route path="/mining-camp-accommodation-fifo-travel" element={<MiningMain/>} />
     </Routes>
    
    </Layout>

@@ -6,44 +6,6 @@ import CaseStudiesSplide from './CaseStudiesSplide';
 
 const CaseStudiesHero = () => {
 
-  //   const settings={
-  //       speed: 8000,
-  //       infinite:true,
-  //       autoplay: true,
-  //       autoplaySpeed: 0,
-  //       cssEase: 'linear',
-  //       slidesToShow: 3,
-  //       slidesToScroll: 1,
-  //       pauseOnHover:true,
-  //       pauseOnFocus:true,
-  //       responsive: [
-  //         {
-  //           breakpoint: 480,
-  //           settings: {
-  //             slidesToShow: 2,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 767,
-  //           settings: {
-  //             slidesToShow: 3,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 1300,
-  //           settings: {
-  //             slidesToShow: 4,
-  //           },
-  //         },
-  //         {
-  //           breakpoint: 2200,
-  //           settings: {
-  //             slidesToShow:5 ,
-  //           },
-  //         },
-          
-  //       ],
-  // }
 
 
   return (

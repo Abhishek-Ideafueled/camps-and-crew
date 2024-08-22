@@ -4,20 +4,12 @@ import "@splidejs/react-splide/css";
 import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const CaseStudiesSplide = () => {
-  // const options = {
-  //   type: "loop",
-  //   gap: "1rem",
-  //   autoplay: true,
-  //   pauseOnHover: false,
-  //   resetProgress: false,
-  //   perPage:3,
-  // };
+
 
   return (
     <div className="w-full bg-custom-back py-20">
       <div className="case-studies-splide">
         <Splide
-          //  options={options}
           options={{
             type: "loop",
             perPage: 4,

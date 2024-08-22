@@ -41,7 +41,7 @@ const RemoteWorkforceHero = () => {
       {
         breakpoint: 2200,
         settings: {
-          slidesToShow:1.6 ,
+          slidesToShow:1.8 ,
         },
       },
       
@@ -82,7 +82,7 @@ const RemoteWorkforceHero = () => {
       {
         breakpoint: 2200,
         settings: {
-          slidesToShow:1.6 ,
+          slidesToShow:1.8 ,
         },
       },
       
