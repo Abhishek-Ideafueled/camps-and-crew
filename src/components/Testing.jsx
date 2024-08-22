@@ -31,7 +31,7 @@ const Testing = () => {
 
   return (
     <div className=''>
-     <div className='w-full items-center relative'>
+     <div className='w-full items-center relative slider-nav-container'>
       <div
                 ref={nextRef}
                 className="absolute top-[50%] cursor-pointer right-0 -rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
@@ -72,7 +72,7 @@ const Testing = () => {
                   />
                 </svg>
               </div>
-     <div className="main-container mx-auto relative history-card overflow-hidden no-scrollbar ">
+     <div className="main-container mx-auto relative rw-history-card overflow-hidden no-scrollbar ">
             <div className="absolute top-0 font-gilroyBold text-custom-heading text-h2 leading-[3rem] z-10 h-[60px] w-28 flex justify-center items-center">
               {years.filter((v, i) => (v ? i === currIndex : ""))}
             </div>
@@ -82,7 +82,7 @@ const Testing = () => {
               }}
               spaceBetween={10}
               // scrollbar={{ draggable: true }}
-              slidesPerView={2.5}
+              slidesPerView={3}
               // slidesPerGroup={3}
               // pagination={{
               //   clickable: true,
@@ -106,19 +106,19 @@ const Testing = () => {
                   spaceBetween: 10,
                 },
                 1024: {
-                  slidesPerView: 2.5,
+                  slidesPerView: 3,
                   spaceBetween: 10,
                 },
-                // 1400: {
-                //   slidesPerView: 3,
-                //   spaceBetween: 10,
-                // },
+                1400: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
               }}
             >
           
               <SwiperSlide key={0}>
-                <div className="slider-outer h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -141,8 +141,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={1}>
-              <div className="slider-outer h-[559px]">
-              <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+              <div className="slider-outer h-[559px] max-w-[390px]">
+              <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -165,9 +165,9 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={2}>
-              <div className="slider-outer h-[559px]">
+              <div className="slider-outer h-[559px] max-w-[390px]">
                    
-              <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+              <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
@@ -190,8 +190,8 @@ const Testing = () => {
                  </div>
               </SwiperSlide>
               <SwiperSlide key={3}>
-                <div className="slider-outer h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -215,8 +215,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={4}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -239,8 +239,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={5}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full border-[1px] border-[#D0D5DD] bg-white shadow-rw-slide-shadow rounded-2xl items-center'>
                 <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -263,8 +263,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={6}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -287,8 +287,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={7}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
                <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Integration
@@ -311,8 +311,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={8}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
@@ -335,8 +335,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={9}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
               Integration
@@ -359,8 +359,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={10}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
               Integration
@@ -383,8 +383,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={11}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-blue rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Feature Release
@@ -407,8 +407,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={12}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-button rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-btn-text font-base leading-[18px] font-normal'>
                Integration
@@ -431,8 +431,8 @@ const Testing = () => {
                 </div>
               </SwiperSlide>
               <SwiperSlide key={13}>
-                <div className="slider-outer w-auto h-[559px]">
-                <div className='flex flex-col gap-6 py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
+                <div className="slider-outer w-auto h-[559px] max-w-[390px]">
+                <div className='flex flex-col justify-between py-6 px-10 max-w-max h-full bg-white border-[1px] border-[#D0D5DD] shadow-rw-slide-shadow rounded-2xl items-center'>
             <div className='flex flex-col gap-4'>
             <div className='bg-custom-heading rounded-full w-[149px] flex items-center justify-center py-2 px-[14px] font-gilroyBold text-white font-base leading-[18px] font-normal'>
                Major Update
@@ -460,8 +460,8 @@ const Testing = () => {
               <SwiperSlide key={15} >
                 <div className="p-4 text-center"></div>
               </SwiperSlide>
-             
-              {/* <SwiperSlide key={16} className='hidden superxl:block'>
+{/*              
+              <SwiperSlide key={16} className='hidden superxl:block'>
                 <div className="p-4 text-center"></div>
               </SwiperSlide> */}
             </Swiper>

@@ -37,21 +37,28 @@ div.swiper.swiper-initialized.swiper-horizontal{
     font-weight: 600;
 }
 
-.history-card .swiper-scrollbar.swiper-scrollbar-horizontal{
+.rw-history-card .swiper-scrollbar.swiper-scrollbar-horizontal{
     background: rgb(255,255,255,10%); 
     height: 10px;
     padding: 2px 0px;
     opacity: 90%;
 }
 
-.history-card .swiper-scrollbar-drag{
+.rw-history-card .swiper-scrollbar-drag{
     background-color: #63C1EC;
     
 }
 
-.history-card .swiper.swiper-initialized.swiper-horizontal{
+.rw-history-card .swiper.swiper-initialized.swiper-horizontal{
     width: auto !important;
     /* max-width: 340px !important; */
+    /* overflow: unset; */
+    
+}
+
+.rw-history-card .swiper.swiper-initialized.swiper-horizontal .swiper-slide{
+    width: auto;
+    /* max-width: 390px; */
     /* overflow: unset; */
     
 }
@@ -60,3 +67,6 @@ div.swiper.swiper-initialized.swiper-horizontal{
         position: inherit;
 }
 
+.slider-nav-container .swiper-button-disabled{
+    background: white !important;
+}
