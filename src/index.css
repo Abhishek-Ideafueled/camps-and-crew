@@ -140,12 +140,12 @@
   .btn-orange {
     @apply bg-custom-button font-ttCommonProMedium font-semibold tracking-[0.8px] text-btn-text hover:bg-btn-hover;
   }
-  /* .main-container{
-    @apply w-full px-5 max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1216px] xl:px-0
-  } */
   .main-container{
-    @apply w-full px-5 xl:max-w-[1216px] xl:px-0;
+    @apply w-full px-5 max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1216px] xl:px-0
   }
+  /* .main-container{
+    @apply w-full px-5 xl:max-w-[1216px] xl:px-0;
+  } */
   .heading-h1{
     @apply font-gilroyBold font-bold text-custom-heading text-[30px] leading-[35px] md:text-[32px] md:leading-[37px] lg:text-[40px] lg:leading-[46px] xl:text-[50px] xl:leading-[60px];
   }

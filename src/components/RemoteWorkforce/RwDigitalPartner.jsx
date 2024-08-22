@@ -205,12 +205,11 @@ const RwDigitalPartner = () => {
                 options={{
                   type: "loop",
                   direction: "rtl",
-                  perPage: 3,
+                  perPage: 3.5,
                   perMove: 1,
                   arrows: false,
                   pagination: false,
                   rewind: false,
-                  speed: 0.5,
                   breakpoints: {
                     1280: {
                       perPage: 3,
@@ -219,20 +218,23 @@ const RwDigitalPartner = () => {
                       perPage: 4,
                     },
                     767: {
-                      perPage: 2,
+                      perPage: 3,
                     },
                     640: {
+                      perPage: 3,
+                    },
+                    500: {
                       perPage: 2,
                     },
                   },
                   autoScroll: {
-                    speed: 1,
+                    speed: 0.6,
                     pauseOnHover: true,
                     pauseOnFocus: true,
                   },
                 }}
                 extensions={{ AutoScroll }}
-                aria-label="My Favorite Images"
+                aria-label="fgjskhgkls"
                 // hasTrack={false}
               >
                 <SplideSlide>
@@ -277,12 +279,12 @@ const RwDigitalPartner = () => {
               <Splide
                 options={{
                   type: "loop",
-                  perPage: 3,
+                  perPage: 3.5,
                   perMove: 1,
                   arrows: false,
                   pagination: false,
                   rewind: false,
-                  speed: 0.5,
+                  speed: 10000,
                   breakpoints: {
                     1280: {
                       perPage: 3,
@@ -291,14 +293,17 @@ const RwDigitalPartner = () => {
                       perPage: 4,
                     },
                     767: {
-                      perPage: 2,
+                      perPage: 3,
                     },
                     640: {
+                      perPage: 3,
+                    },
+                    500: {
                       perPage: 2,
                     },
                   },
                   autoScroll: {
-                    speed: 1,
+                    speed: 0.6,
                     pauseOnHover: true,
                     pauseOnFocus: true,
                   },
