@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './MiningMain.css';
+import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
-const MiningHero = () => {
-
-    
+const MiningHero = () => { 
   
  
 
@@ -31,6 +32,124 @@ const MiningHero = () => {
         Designed to meet the unique demands of remote mining projects, we leverage <br className='hidden xl:block' /> years of experience to build software solutions that streamline the way mining <br className='hidden xl:block' /> companies manage transportation and housing for their workforces.
             </div>
         </div>
+    <Link className='max-w-max ' href="#demoForm" onClick={handleClickScroll}>
+        <div className='btn-orange flex items-center justify-center py-[14px] px-4'>
+      CONTACT SALES
+        </div></Link>
+        <div className="case-studies-splide">
+        <Splide
+          options={{
+            type: "loop",
+            perPage: 4,
+            perMove: 1,
+            arrows: false,
+            pagination: false,
+            rewind: false,
+            speed: 0.5,
+            breakpoints: {
+              2024: {
+                perPage: 6,
+              },
+              1280: {
+                perPage: 4,
+              },
+              1024: {
+                perPage: 4,
+              },
+              767: {
+                perPage: 2,
+              },
+              640: {
+                perPage: 2,
+              },
+            },
+            autoScroll: {
+              speed: 1,
+              pauseOnHover: true,
+              pauseOnFocus: true,
+            },
+          }}
+          extensions={{ AutoScroll }}
+          aria-label="My Favorite Images"
+          // hasTrack={false}
+        >
+          <SplideSlide>
+            <div className="single-slide">
+              <img className="" src="white-civeo.png" alt="Image 1" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="flex justify-center items-center mt-5">
+              <img className="" src="white-petroplex.png" alt="Image 2" />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-b2gold.png"
+                alt="b2gold logo white"
+              />
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=" "
+                src="/white-anokiigamig.png"
+                alt="white-anokiigamig logo"
+              />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-agincourt-resources.png"
+                alt="white-agincourt-resources logo"
+              />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=" "
+                src="/white-civeo.png"
+                alt="white-civeo logo"
+              />
+            </div>
+          </SplideSlide>
+
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=""
+                src="/white-denali-universal-services.png"
+                alt="white denali universal services logo"
+              />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide px-5">
+              <img
+                className=""
+                src="/white-sodexo.png"
+                alt="white-sodexo logo"
+              />
+            </div>
+          </SplideSlide>
+          <SplideSlide>
+            <div className="single-slide"> 
+            <img
+                  className=""
+                  src="/white-permian-lodging.png"
+                  alt="white permian lodging logo"
+                />
+            </div>
+          </SplideSlide>
+        </Splide>
+      </div>
         </div>
       
     </div>

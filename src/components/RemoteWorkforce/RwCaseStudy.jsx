@@ -225,7 +225,7 @@ const RwCaseStudy = () => {
             </h4>
             <Link
               to="#"
-              className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
+              className="flex items-center gap-2 hover:gap-4 transition-all duration-150 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
             >
               <p>READ STORY</p>
               <span>
@@ -279,7 +279,7 @@ const RwCaseStudy = () => {
             </h4>
             <Link
               to="#"
-              className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
+              className="flex items-center gap-2 hover:gap-4 transition-all duration-150 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
             >
               <p>READ STORY</p>
               <span>
@@ -335,7 +335,7 @@ const RwCaseStudy = () => {
             </h4>
             <Link
               to="#"
-              className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
+              className="flex items-center gap-2  hover:gap-4 transition-all duration-150 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
             >
               <p>READ STORY</p>
               <span>
