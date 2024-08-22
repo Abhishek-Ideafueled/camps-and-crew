@@ -248,7 +248,7 @@ const RwRemoteProjects = () => {
                 </p>
               </li>
             </ul>
-            <Link to="#" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
+            <Link to="/software-for-workforce-camp" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
                 <p className='font-ttCommonProRegular font-medium text-sm leading-[22px]'>
                     See all SmartLodge features
                     </p>
@@ -317,7 +317,7 @@ const RwRemoteProjects = () => {
                 </p>
               </li>
             </ul>
-            <Link to="#" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
+            <Link to="/software-for-workforce-camp" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
                 <p className='font-ttCommonProRegular font-medium text-sm leading-[22px]'>
                     See all SmartLodge features
                     </p>
@@ -385,7 +385,7 @@ const RwRemoteProjects = () => {
                 </p>
               </li>
             </ul>
-            <Link to="#" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
+            <Link to="/software-for-workforce-camp" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
                 <p className='font-ttCommonProRegular font-medium text-sm leading-[22px]'>
                     See all SmartLodge features
                     </p>
@@ -453,7 +453,7 @@ const RwRemoteProjects = () => {
                 </p>
               </li>
             </ul>
-            <Link to="#" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
+            <Link to="/software-for-workforce-camp" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
                 <p className='font-ttCommonProRegular font-medium text-sm leading-[22px]'>
                     See all SmartLodge features
                     </p>
@@ -521,7 +521,7 @@ const RwRemoteProjects = () => {
                 </p>
               </li>
             </ul>
-            <Link to="#" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
+            <Link to="/software-for-workforce-camp" className='flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70'>
                 <p className='font-ttCommonProRegular font-medium text-sm leading-[22px]'>
                     See all SmartLodge features
                     </p>
