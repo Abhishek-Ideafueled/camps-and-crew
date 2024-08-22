@@ -34,7 +34,7 @@ const Testing = () => {
      <div className='w-full items-center relative slider-nav-container slider-btn-container mx-auto'>
       <div
                 ref={nextRef}
-                className="absolute top-[50%] cursor-pointer right-0 -rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
+                className="absolute top-[45%] cursor-pointer right-0 -rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
               >
                 <svg
                   width="15"
@@ -54,7 +54,7 @@ const Testing = () => {
               </div>
               <div
                 ref={prevRef}
-                className="absolute top-[50%] left-0 cursor-pointer rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
+                className="absolute top-[45%] left-0 cursor-pointer rotate-90 button-next w-12 h-5 z-10 bg-white flex items-center justify-center"
               >
                 <svg
                   width="15"
