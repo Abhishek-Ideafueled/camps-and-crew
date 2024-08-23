@@ -162,6 +162,10 @@
   .slider-btn-container{
     @apply w-full px-5 max-w-[550px] md:max-w-[730px] lg:max-w-[970px] xl:max-w-[1336px] xl:px-0
   }
+
+  .custom-caption{
+    @apply font-ttCommonProRegular font-semibold text-sm leading-[22px] text-custom-blue;
+  }
   /* ... */
 }
 
