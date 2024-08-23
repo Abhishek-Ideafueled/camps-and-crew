@@ -1,2 +1,11 @@
-/*///////////////////////////////////////// mINING HERO SLIDER STYLES////////////////////// //////////////////// */
+/*///////////////////////////////////////// MINING HERO SPLIDE SLIDER STYLES////////////////////// //////////////////// */
 
+
+                                    .mining-hero-splide .single-slide{
+                                        display: flex;
+                                        justify-content: center;
+                                        width: auto;
+                                        height: 142px;
+                                        /* align-items: center; */
+                                       }
+                                      
