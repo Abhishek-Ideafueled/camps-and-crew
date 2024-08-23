@@ -43,3 +43,14 @@
         overflow: hidden;
        }
   } */
+
+
+     /*///////////////////////////////////////// MINING SOFTWARE SOLUTION STYLES////////////////////// //////////////////// */
+
+
+      .gif-container:hover .card-gif{
+        opacity: 1;
+      }
+      .gif-container:hover .card-thumb{
+        opacity: 0;
+      }

@@ -125,12 +125,15 @@ const MiningSoftwareSolutions = () => {
                   </Link>
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
+              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
                 <img
-                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
-                  src="/fifo-mining-worker-rides-bus-western-africa-small.jpg"
+                  className="absolute inset-0 card-thumb rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
+                  src="/EnRoute_thumb.png"
                   alt=""
                 />
+                <img 
+                className='absolute inset-0 card-gif opacity-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center'
+                src="/enroute-product-video.gif" alt="" />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <span className='cursor-pointer' onClick={()=>openModal("enroute")}>
                     <svg
@@ -166,9 +169,9 @@ const MiningSoftwareSolutions = () => {
                   SmartLodge
                 </button>
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] superxl:text-[32px] font-gilroyBold superxl:leading-[2.4rem] text-custom-heading">
-                  A mine camp management <br /> solution
+                  A mine camp management <br /> 
                   <span className="flex items-center gap-2">
-                  for
+                <p className='flex items-center text-nowrap'>solution for</p> 
                     <div className="text-slider ">
                       <Slider {...settings}>
                         <span>
@@ -221,12 +224,15 @@ const MiningSoftwareSolutions = () => {
                   </Link>
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
+              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
                 <img
-                  className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
+                  className="card-gif absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
                   src="/smartlodge-product-video-workforce-camp-software.gif"
-                  alt=""
+                  alt="custom poster"
                 />
+                <img  
+                className='card-thumb absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center'
+                src="/SmartLodge_thumb.png" alt="custom poster" />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <span className="cursor-pointer" onClick={()=>openModal("smartlodge")}>
                     <svg
