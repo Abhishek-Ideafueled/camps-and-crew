@@ -48,6 +48,8 @@ const MiningHero = () => {
             pagination: false,
             rewind: false,
             speed: 0.5,
+            drag: false,
+            dragAngleThreshold: 0,
             breakpoints: {
               2024: {
                 perPage: 5.5,
@@ -76,8 +78,8 @@ const MiningHero = () => {
             },
             autoScroll: {
               speed: 0.6,
-              pauseOnHover: true,
-              pauseOnFocus: true,
+              pauseOnHover: false,
+              pauseOnFocus: false,
             },
           }}
           extensions={{ AutoScroll }}

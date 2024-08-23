@@ -1,11 +1,21 @@
 /*///////////////////////////////////////// MINING HERO SPLIDE SLIDER STYLES////////////////////// //////////////////// */
 
+.mining-hero-splide .single-slide {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: 142px;
+  /* align-items: center; */
+}
 
-                                    .mining-hero-splide .single-slide{
-                                        display: flex;
-                                        justify-content: center;
-                                        width: auto;
-                                        height: 142px;
-                                        /* align-items: center; */
-                                       }
-                                      
+/*///////////////////////////////////////// MINING LOGO SPLIDE SLIDER STYLES////////////////////// //////////////////// */
+
+
+.mining-logo-splide .single-slide{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 71px;
+    /* align-items: center; */
+   }
+  
