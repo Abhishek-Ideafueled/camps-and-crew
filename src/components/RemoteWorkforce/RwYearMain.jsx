@@ -7,6 +7,10 @@ import Testing from '../Testing';
 const RwYearMain = () => {
 
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
+
 
 
   return (
@@ -60,12 +64,15 @@ const RwYearMain = () => {
             <RwYearScroll/>
             </div>
             <div className='w-full flex items-center justify-center mt-5'>
-            <Link to="/company" className='max-w-max z-10' reloadDocument={true}>
+              <div className='max-w-max' onClick={scrollToTop}>
+
+              
+            <Link to="/company" className='max-w-max z-10'>
             <div className='btn-orange px-6 smalls:px-10 py-[19px] rounded'>
             LEARN MORE ABOUT OUR HISTORY
             </div>
             </Link>
-        
+        </div>
         </div>
     </div>
   )

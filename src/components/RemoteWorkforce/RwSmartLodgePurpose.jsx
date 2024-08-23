@@ -21,6 +21,10 @@ const RwSmartLodgePurpose = () => {
       setIsOpen(false);
     }
 
+    const scrollToTop = () => {
+      window.scrollTo(0, 0)
+  }
+
   return (
     <>
     <div className='w-full bg-custom-back max-h-max relative'>
@@ -90,11 +94,12 @@ const RwSmartLodgePurpose = () => {
                </div>
         </div>
         <div className='w-full flex items-center justify-center mt-12'>
-            <Link to="/software-for-workforce-camp" className='max-w-max z-10' reloadDocument>
+        <div className='max-w-max' onClick={scrollToTop}>
+           <Link to="/software-for-workforce-camp" className='max-w-max z-10'>
             <div className='btn-orange px-6 smalls:px-10 py-[19px] rounded'>
             SEE ALL SMARTLODGE FEATURES
             </div>
-            </Link>
+            </Link> </div>  
         </div>
         </div>
       <div className='absolute right-0 bottom-0 z-0'>
