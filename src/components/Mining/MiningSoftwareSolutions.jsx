@@ -40,6 +40,14 @@ const MiningSoftwareSolutions = () => {
     arrows:false,
   };
 
+  const scrollHandler = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
   return (
     <>
       <div className="w-full bg-custom-back relative">
@@ -78,7 +86,7 @@ const MiningSoftwareSolutions = () => {
         <div className="main-container mx-auto py-10 lg:py-20 flex flex-col gap-[30px] lg:gap-[60px] items-center">
           <div className="flex flex-col items-center gap-6 z-10">
             <h2 className="heading-h2 text-white text-center">
-              Software Solutions to Manage FIFO Transport{" "}
+              Software Solutions to Manage FIFO Transport
               <br className="hidden md:block" /> and Mining Camp Accommodation
             </h2>
             <span className="sub-heading text-white text-center">
@@ -218,7 +226,7 @@ const MiningSoftwareSolutions = () => {
                     </div>
                   </span>
                 </div>
-                <button className="btn-orange w-[296px] h-[58px] py-4 rounded">
+                <button className="btn-orange bg-[#5BC0ED] hover:bg-[#4aadd8] w-[296px] h-[58px] py-4 rounded">
                   <Link to="/software-for-workforce-camp">
                     SEE ALL SMARTLODGE FEATURES
                   </Link>
@@ -263,6 +271,11 @@ const MiningSoftwareSolutions = () => {
               </div>
             </div>
           </div>
+         <Link href="#demoForm" className='max-w-max' onClick={scrollHandler}>
+         <div className='btn-orange hover:bg-transparent border-[1px] border-transparent hover:text-white transition-all duration-200 hover:border-white flex items-center justify-center px-4 py-[14px]'>
+            CONTACT SALES
+         </div>
+         </Link>
         </div>
       </div>
       {isOpen === true && play === "enroute" && (
