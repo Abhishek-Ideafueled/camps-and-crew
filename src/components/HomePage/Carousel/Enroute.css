@@ -11,7 +11,7 @@
     margin: 0 auto;
     /* max-width: 500px; */
     width: 100%;
-    /* max-width: 540px; */
+    max-width: 540px;
     /* border: 1px solid red;
     background: red; */
     display: flex !important;
@@ -81,14 +81,14 @@
 
   @media only screen and (min-width: 768px) {
     .banner-slider2 .slick-slider.slick-initialized .slick-dots{
-        /* max-width:720px; */
+        max-width:720px;
         bottom: 60px;
     }
   }
 
   @media only screen and (min-width: 1024px) {
     .banner-slider2 .slick-slider.slick-initialized .slick-dots{
-        /* max-width:960px; */
+        max-width:960px;
         bottom: 80px;
     }
   }
