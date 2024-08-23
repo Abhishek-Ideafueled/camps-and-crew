@@ -19,3 +19,27 @@
     /* align-items: center; */
    }
   
+
+   /*///////////////////////////////////////// MINING TEXT SLICK SLIDER STYLES////////////////////// //////////////////// */
+
+   .text-slider{
+    max-width: max-content;
+    overflow: hidden;
+   }
+
+   .text-slider .slick-slide{
+    text-wrap: nowrap;
+    max-width: max-content;
+   }
+
+   .text-slider .slick-slide .slick-active.slick-current{
+    border-bottom: 1px solid red;
+   }
+
+   
+  /* @media only screen and (max-width: 1024px) {
+    .text-slider{
+        max-width: min-content;
+        overflow: hidden;
+       }
+  } */

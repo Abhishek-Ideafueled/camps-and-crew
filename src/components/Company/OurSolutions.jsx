@@ -122,7 +122,7 @@ const OurSolutions = () => {
             <div className="flex flex-col items-center md:max-w-[336px] lg:max-w-[456px] xl:max-w-[633px] z-10 max-h-[830px]">
               <div className="flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl  md:min-h-[570px] lg:min-h-[615px]">
                 <button className="bg-custom-button font-gilroyBold w-[85px] h-[35px] rounded-full">
-                  Enroute
+                  EnRoute
                 </button>
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] lg:text-[32px] font-gilroyBold lg:leading-[2.4rem] text-custom-heading">
                   An Online Booking Tool to Manage ERM Travel and FIFO Logistics
