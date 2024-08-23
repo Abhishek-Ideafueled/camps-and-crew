@@ -4,6 +4,7 @@ import MiningLogoSplide from './MiningLogoSplide';
 import MiningTechnology from './MiningTechnology';
 import Testimonials from '../SmartLodge/Testimonials';
 import Aos from 'aos';
+import MiningWorkforceManagement from './MiningWorkforceManagement';
 
 const MiningMain = () => {
 
@@ -18,6 +19,7 @@ const MiningMain = () => {
         <MiningLogoSplide/>
         <MiningTechnology/>
         <Testimonials/>
+        <MiningWorkforceManagement/>
     </div>
   )
 }
