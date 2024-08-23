@@ -7,9 +7,11 @@ import './MiningMain.css';
 const MiningSoftwareSolutions = () => {
 
     const [isOpen,setIsOpen] = useState(false);
+    const [play,setPlay] = useState("");
 
-  const openModal=()=>{
-    setIsOpen(true);
+  const openModal=(pid)=>{
+   setIsOpen(true);
+   setPlay(pid);
   }
   
   useEffect(() => {
@@ -90,15 +92,15 @@ const MiningSoftwareSolutions = () => {
             </span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[32px] md:gap-8">
-            <div className="flex flex-col items-center w-full max-w-[500px] lg:max-w-[588px]  z-10 max-h-max">
-              <div className="flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl w-full">
+            <div className="flex flex-col items-center w-full max-w-[500px] lg:max-w-[588px] z-10 max-h-max">
+              <div className="flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 min-h-[430px] superxl:min-h-[459px] rounded-2xl w-full">
                 <button className="bg-custom-button font-gilroyBold w-[85px] h-[35px] rounded-full">
                   EnRoute
                 </button>
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] superxl:text-[32px] font-gilroyBold superxl:leading-[2.4rem] text-custom-heading">
-                  A FIFO travel booking engine <br />{" "}
+                  A FIFO travel booking engine <br />
                   <span className="flex items-center gap-2">
-                    for{" "}
+                    for
                     <div className="text-slider ">
                       <Slider {...settings}>
                         <div className=" border-b-custom-button border-[1px]">
@@ -119,7 +121,6 @@ const MiningSoftwareSolutions = () => {
                 </div>
                 <button className="btn-orange w-[286px] h-[58px] py-4 rounded">
                   <Link to="/fifo-travel-online-booking-tool">
-                    {" "}
                     SEE ALL ENROUTE FEATURES
                   </Link>
                 </button>
@@ -130,8 +131,8 @@ const MiningSoftwareSolutions = () => {
                   src="/fifo-mining-worker-rides-bus-western-africa-small.jpg"
                   alt=""
                 />
-                <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center opacity-80">
-                  <Link to="#">
+                <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
+                  <span className='cursor-pointer' onClick={()=>openModal("enroute")}>
                     <svg
                       width="100%"
                       height="100%"
@@ -155,16 +156,16 @@ const MiningSoftwareSolutions = () => {
                         </clipPath>
                       </defs>
                     </svg>
-                  </Link>
+                  </span>
                 </div>
               </div>
             </div>
             <div className=" flex flex-col items-center w-full max-w-[500px] lg:max-w-[588px] max-h-max">
-              <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 rounded-2xl w-full">
+              <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 min-h-[430px] superxl:min-h-[459px] pb-28 rounded-2xl w-full">
                 <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
                 </button>
-                <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] lg:text-[32px] font-gilroyBold lg:leading-[2.4rem] text-custom-heading">
+                <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] superxl:text-[32px] font-gilroyBold superxl:leading-[2.4rem] text-custom-heading">
                   A mine camp management <br /> solution
                   <span className="flex items-center gap-2">
                   for
@@ -227,7 +228,7 @@ const MiningSoftwareSolutions = () => {
                   alt=""
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
-                  <span className="cursor-pointer" onClick={openModal}>
+                  <span className="cursor-pointer" onClick={()=>openModal("smartlodge")}>
                     <svg
                       width="100%"
                       height="100%"
@@ -258,11 +259,24 @@ const MiningSoftwareSolutions = () => {
           </div>
         </div>
       </div>
-      {isOpen && (
+      {isOpen === true && play === "enroute" && (
         <YoutubeModal closeModal={closeModal}>
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/5rt33ZISw9c"
+            src="https://www.youtube.com/embed/EYw2a7mco6U?si=-rIp2dB4H7N9jzkN"
+            frameBorder="0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </YoutubeModal>
+      )}
+        {isOpen === true && play !== "enroute" && (
+        <YoutubeModal closeModal={closeModal}>
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/5rt33ZISw9c?si=xeAu4ZHUUwkhIejc"
             frameBorder="0"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
