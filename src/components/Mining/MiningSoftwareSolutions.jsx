@@ -108,7 +108,7 @@ const MiningSoftwareSolutions = () => {
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] superxl:text-[32px] font-gilroyBold superxl:leading-[2.4rem] text-custom-heading">
                   A FIFO travel booking engine <br />
                   <span className="flex items-center gap-2">
-                    for
+                    for 
                     <div className="text-slider ">
                       <Slider {...settings}>
                         <div className=" border-b-custom-button border-[1px]">
@@ -179,7 +179,8 @@ const MiningSoftwareSolutions = () => {
                 <div className="text-xl leading-6 md:text-2xl md:leading-[1.8rem] superxl:text-[32px] font-gilroyBold superxl:leading-[2.4rem] text-custom-heading">
                   A mine camp management <br /> 
                   <span className="flex items-center gap-2">
-                <p className='flex items-center text-nowrap'>solution for</p> 
+                <p className='flex items-center text-nowrap'>solution for</p>
+                <br className='hidden lg:block xl:hidden'/> 
                     <div className="text-slider ">
                       <Slider {...settings}>
                         <span>

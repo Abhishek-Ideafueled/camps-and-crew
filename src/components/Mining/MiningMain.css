@@ -23,13 +23,16 @@
    /*///////////////////////////////////////// MINING TEXT SLICK SLIDER STYLES////////////////////// //////////////////// */
 
    .text-slider{
-    max-width: max-content;
+    width: 100%;
+    display: block !important;
     overflow: hidden;
    }
 
-   .text-slider .slick-slide{
+   .text-slider .slick-slide div{
+    display: inline-block !important;
     text-wrap: nowrap;
     max-width: max-content;
+    /* border-bottom: 1px solid red; */
    }
 
    .text-slider .slick-slide .slick-active.slick-current{
