@@ -42,7 +42,7 @@ const LodgingSlider = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 5000, 
+        speed: 8000, 
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
@@ -51,30 +51,59 @@ const LodgingSlider = () => {
         pauseOnHover: false,
         responsive: [
           {
-            breakpoint: 320,
+            breakpoint: 400,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1.4,
             },
           },
           {
-            breakpoint: 767,
+            breakpoint: 640,
+            settings: {
+              slidesToShow: 2.4,
+            },
+          },
+          {
+            breakpoint: 850,
             settings: {
               slidesToShow: 3,
             },
           },
           {
-            breakpoint: 1199,
+            breakpoint: 1150,
             settings: {
-              slidesToShow: 4,
+              slidesToShow:4 ,
             },
           },
           {
-            breakpoint: 2200,
+            breakpoint: 1250,
+            settings: {
+              slidesToShow:4.5 ,
+            },
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow:5 ,
+            },
+          },
+          {
+            breakpoint: 1550,
+            settings: {
+              slidesToShow:5.5 ,
+            },
+          },
+          {
+            breakpoint: 1850,
             settings: {
               slidesToShow:6 ,
             },
           },
-          
+          {
+            breakpoint: 2250,
+            settings: {
+              slidesToShow:8,
+            },
+          },
         ],
       };
 
