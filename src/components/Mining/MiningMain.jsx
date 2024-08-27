@@ -10,6 +10,8 @@ import MiningSeamlessIntegration from './MiningSeamlessIntegration';
 import MiningLifeCycle from './MiningLifeCycle';
 import MiningDeepExpertise from './MiningDeepExpertise';
 import MiningCaseStudies from './MiningCaseStudies';
+import MiningFaqs from './MiningFaqs';
+import DemoForm from '../HomePage/DemoForm';
 
 const MiningMain = () => {
 
@@ -30,6 +32,8 @@ const MiningMain = () => {
         <MiningLifeCycle/>
         <MiningDeepExpertise/>
         <MiningCaseStudies/>
+        <MiningFaqs/>
+        <DemoForm/>
     </div>
   )
 }
