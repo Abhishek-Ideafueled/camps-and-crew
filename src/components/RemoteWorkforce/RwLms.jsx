@@ -41,9 +41,7 @@ const RwLms = () => {
         <div className="flex flex-col gap-6 items-center max-w-[718px] text-center ">
           <div className="flex flex-col items-center gap-4">
             <h2 className="heading-h2">
-              Empowering Employees with a
-              <br />
-               Learning Management System (LMS)
+              Empowering Employees with a <br className='hidden sm:block'/>Learning Management System (LMS)
             </h2>
             <span>
               <svg

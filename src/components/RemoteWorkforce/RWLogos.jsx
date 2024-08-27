@@ -7,7 +7,7 @@ const RWLogos = () => {
             <h3 className='font-gilroyBold font-normal text-xl leading-6 md:text-[22px] md:leading-[27px] lg:text-2xl lg:leading-[28.8px]'>
             Trusted by Camp Services Companies Globally
             </h3>
-            <div className='grid grid-cols-3 lg:grid-cols-7 gap-4 lg:gap-20'>
+            <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-6 lg:gap-8 xl:justify-between'>
                 <div className='h-[60px] flex justify-center'>
             <img src="/civeo-color.png" alt="" className='h-[60px] object-contain' />
                 </div>
@@ -26,7 +26,7 @@ const RWLogos = () => {
                 <div className='h-[60px] flex justify-center'>
                 <img src="/cotton-logistics.png" alt=""  className='h-[60px] object-contain'/>
                 </div>
-                <div className='h-[60px] col-span-3 flex justify-center mt-5 lg:mt-0 lg:col-span-1'>
+                <div className='h-[60px] col-span-2 md:col-span-3 flex justify-center mt-5 lg:mt-0 lg:col-span-1'>
                 <img src="/right-choice-camps-catering.png" alt=""  className='h-[60px] object-contain' />
                 </div>
             </div>
