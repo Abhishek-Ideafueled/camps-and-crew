@@ -20,6 +20,10 @@ const OurSolutions = () => {
   const closeModal=()=>{
     setIsOpen(false);
   }
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
   
 
   return (
@@ -80,9 +84,10 @@ const OurSolutions = () => {
                   Watch the teaser below to learn how SmartLodge automates and
                   streamlines camp management for remote project operators.
                 </span>
-                <button className="btn-orange w-[219px] h-[58px] py-4 rounded">
-                 <Link to="/software-for-workforce-camp">SEE ALL FEATURES</Link> 
-                </button>
+                <div className="btn-orange w-[219px] h-[58px] py-4 rounded" onClick={scrollToTop}>
+                
+                 <Link to="/software-for-workforce-camp" className="w-full h-full flex justify-center">SEE ALL FEATURES</Link> 
+                </div>
               </div>
               <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
                 <img
@@ -135,10 +140,10 @@ const OurSolutions = () => {
                   fly-out workers.
                   
                 </span>
-                <button className="btn-orange w-[219px] h-[58px] py-4 rounded">
-                <Link to="/fifo-travel-online-booking-tool">  SEE ALL FEATURES</Link>
+                <div className="btn-orange w-[219px] h-[58px] py-4 rounded" onClick={scrollToTop}>
+                <Link to="/fifo-travel-online-booking-tool" className="w-full h-full flex justify-center">  SEE ALL FEATURES</Link>
                 
-                </button>
+                </div>
               </div>
               <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center">
                 <img
