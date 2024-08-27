@@ -72,7 +72,10 @@ export default {
 'card-gradient2':"linear-gradient(90deg, rgba(4, 37, 52, 0.48) 0%, rgba(4, 37, 52, 0) 100%)",
       'rw-case-1':"url(/Lodge-Properties-Front-Desk.png)",
       'rw-case-2':"url(/right-choice-camps-catering-aerial.jpg)",
-      'rw-case-3':"url(/cedar-valley-lodge-dormitories-grassy-patch-springtime2.png)"
+      'rw-case-3':"url(/cedar-valley-lodge-dormitories-grassy-patch-springtime2.png)",
+      'mining-case-1':"url(/Agincourt-case-study.png)",
+      'mining-case-2':"url(/b2gold-case-study.png)",
+      'mining-case-3':"url(/newgold-case-study.png)",
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
