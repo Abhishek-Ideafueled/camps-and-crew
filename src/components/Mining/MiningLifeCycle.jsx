@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import HeadingPattern from "../Icons/HeadingPattern"
 import { GoCheckCircle } from "react-icons/go"
 import { useState } from "react";
+import './MiningMain.css';
 
 
 const MiningLifeCycle = () => {
@@ -424,22 +425,22 @@ and Fluctuating Workforce
         <div className="flex main-container mx-auto text-nowrap overflow-x-auto gap-6 lg:gap-8 font-gilroyBold text-base md:text-lg md:leading-6 lg:text-xl lg:leading-6 no-scrollbar">
         <div 
         onClick={()=>setActiveTab("explore")}
-        className={`${activeTab === 'explore' ? 'text-custom-heading border-b-[4px] border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[140px] md:w-[181px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'explore' ? 'text-custom-heading active ':'text-[#97A7B5] border-[#97A7B5]'} relative mining-transition border-b-[1px] text-center cursor-pointer  w-[140px] md:w-[181px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
          Exploration
         </div>
         <div
            onClick={()=>setActiveTab("construction")}
-        className={`${activeTab === 'construction' ? 'text-custom-heading border-b-[4px] border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'construction' ? 'text-custom-heading active ':'text-[#97A7B5] border-[#97A7B5]'} relative mining-transition border-b-[1px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
        Construction
         </div>
         <div 
            onClick={()=>setActiveTab("production")}
-        className={`${activeTab === 'production' ? 'text-custom-heading border-b-[4px] border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'production' ? 'text-custom-heading active ':'text-[#97A7B5] border-[#97A7B5]'} relative mining-transition border-b-[1px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
        Production
         </div>
         <div 
            onClick={()=>setActiveTab("shutdowns")}
-        className={`${activeTab === 'shutdowns' ? 'text-custom-heading border-b-[4px] border-custom-blue':'text-[#97A7B5] border-[#97A7B5]'} border-b-[2px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
+        className={`${activeTab === 'shutdowns' ? 'text-custom-heading active ':'text-[#97A7B5] border-[#97A7B5]'} relative mining-transition border-b-[1px] text-center cursor-pointer  w-[263px] lg:w-[308px] xl:w-[384px] h-[56px]  lg:px-2 xl:px-6 py-3 lg:py-4`}> 
      Planned Shutdowns
         </div>
         </div>
