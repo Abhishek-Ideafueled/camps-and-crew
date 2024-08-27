@@ -5,7 +5,7 @@ import { FaCircleCheck } from 'react-icons/fa6';
 
 const RealTimeCheckIn = () => {
 
-    const [activeId, setActiveId] = useState(0);
+    const [activeId, setActiveId] = useState(1);
     const [activeImageId, setActiveImageId] = useState(1);
     const [heights, setHeights] = useState([]);
     const contentRefs = useRef([]);
@@ -16,21 +16,9 @@ const RealTimeCheckIn = () => {
       setHeights(calculatedHeights);
     }
   
-    useEffect(() => {
-      
-      window.addEventListener('resize', calculateHeights);
-    // window.addEventListener('load', calculateHeights); 
-
-    return () => {
-      window.removeEventListener('resize', calculateHeights);
-      // window.removeEventListener('load', calculateHeights);
-    };
-
-    }, []);
-
-    useEffect(() => {
-      calculateHeights(); 
-    }, [activeId]);
+    setTimeout(()=>{
+      calculateHeights();
+  },0)
   
   
     const handleAccordionClick = (id) => {
