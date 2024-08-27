@@ -8,6 +8,7 @@ import MiningWorkforceManagement from './MiningWorkforceManagement';
 import MiningSoftwareSolutions from './MiningSoftwareSolutions';
 import MiningSeamlessIntegration from './MiningSeamlessIntegration';
 import MiningLifeCycle from './MiningLifeCycle';
+import MiningDeepExpertise from './MiningDeepExpertise';
 
 const MiningMain = () => {
 
@@ -26,6 +27,7 @@ const MiningMain = () => {
         <MiningSoftwareSolutions/>
         <MiningSeamlessIntegration/>
         <MiningLifeCycle/>
+        <MiningDeepExpertise/>
     </div>
   )
 }
