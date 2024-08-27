@@ -102,7 +102,7 @@ const AccomodationAndTransportation = () => {
             </div>
             </div>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-             <Link href="#demoForm" onClick={handleClickScroll}>  <button className="btn-orange py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">
+             <Link href="#demoForm" onClick={handleClickScroll}>  <button className="btn-orange w-full py-4 px-10 hover:bg-custom-back hover:text-white uppercase rounded">
               Speak to sales 
                 </button></Link>
                 <Link to="/fifo-travel-online-booking-tool">

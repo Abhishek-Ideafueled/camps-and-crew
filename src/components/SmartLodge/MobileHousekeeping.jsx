@@ -83,7 +83,7 @@ const MobileHousekeeping = () => {
                     <div
                      onClick={() => handleAccordionClick(item.id)}
                     className="font-gilroyBold text-custom-heading text-lg lg:text-xl z-10 leading-[24px] flex items-center justify-between h-[56px]">
-                      {item.title}
+                     <span className="pr-2">{item.title}</span> 
                      <span className={`${activeId === item.id ? 'rotate-180 transition-all duration-500' : 'transition-all duration-300'}`}><IoIosArrowDown /></span> 
                     </div>
                     <div
