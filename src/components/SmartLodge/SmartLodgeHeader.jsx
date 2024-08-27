@@ -60,7 +60,7 @@ const SmartLodgeHeader = () => {
                 <img
                   className="absolute inset-0 rounded-2xl w-full h-full sm:w-full justify-self-center"
                   src="/smartlodge-product-video-workforce-camp-software.gif"
-                  alt=""
+                  alt="smartlodge-product-video-workforce-camp-software"
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   

@@ -88,7 +88,7 @@ const OurSolutions = () => {
                 <img
                   className="absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full sm:w-full md:max-w-[309px] lg:max-w-[419px] xl:max-w-[521px] justify-self-center"
                   src="/smartlodge-product-video-workforce-camp-software.gif"
-                  alt=""
+                  alt="smartlodge-product-video-workforce-camp-software"
                 />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <span className="cursor-pointer" onClick={openModal}>
