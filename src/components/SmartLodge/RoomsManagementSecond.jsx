@@ -44,7 +44,7 @@ const RoomsManagementSecond = () => {
           </div>
           {roomAccordianData2.map((item, index) => (
             <div
-              className="flex flex-col cursor-pointer"
+              className="flex flex-col cursor-pointer gap-3 sm:gap-0"
               key={item.id}
             >
               <div

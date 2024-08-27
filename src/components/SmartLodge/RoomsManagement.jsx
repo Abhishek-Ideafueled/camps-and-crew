@@ -55,8 +55,8 @@ const RoomsManagement = () => {
             Rooms Management
           </h2>
           <span className="text-base md:text-lg text-custom-body font-ttCommonProMedium text-center">
-            Achieve nearly 100% room utilization before you build, buy, or rent{" "}
-            <br />
+            Achieve nearly 100% room utilization before you build, buy, or rent
+            <br className="hidden sm:block"/>
             additional accommodations for your remote crews.
           </span>
         </div>
