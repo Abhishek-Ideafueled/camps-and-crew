@@ -204,9 +204,9 @@ const RwRemoteProjects = () => {
       <div className='relative w-full h-full'>
       {activeTab ==='mining' && <div  data-aos="fade-up" 
       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
-            <div className='w-full h-auto flex items-center justify-center'>
+            <div className='w-full max-h-[334px] lg:max-h-full lg:h-auto flex items-center justify-center'>
                 <img 
-                className='rounded-2xl object-cover h-auto w-auto'
+                className='rounded-2xl object-cover h-full w-full'
                 src="/mining-workers-near-bulldozer-open-pit-mine.jpg" alt="Workers in safety vests at a mining site." />
             </div>
             <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
@@ -277,9 +277,9 @@ const RwRemoteProjects = () => {
       </div>}
       {activeTab ==='oil' && <div data-aos="fade-up" 
        className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
-            <div className='w-full h-auto flex items-center justify-center'>
+            <div className='w-full  max-h-[334px] lg:max-h-full lg:h-auto flex items-center justify-center'>
                 <img 
-                className='rounded-2xl object-cover h-auto w-auto'
+                className='rounded-2xl object-cover h-full w-full'
                 src="/workers-walks-facility-upstream-oil-gas.jpg" alt="Engineers in protective gear at an oil and gas facility." />
             </div>
             <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
@@ -350,7 +350,7 @@ const RwRemoteProjects = () => {
       </div>}
       {activeTab ==='construction' && <div data-aos="fade-up" 
        className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
-            <div className='w-full h-auto flex items-center justify-center'>
+            <div className='w-full  max-h-[334px] lg:max-h-full lg:h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-full w-full'
                 src="/worker-holds-tablet-remote-infrastructure-construction.jpg" alt="Construction worker using a tablet at a project site." />
@@ -422,9 +422,9 @@ const RwRemoteProjects = () => {
       </div>}
       {activeTab ==='disaster' && <div data-aos="fade-up" 
        className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
-            <div className='w-full h-auto flex items-center justify-center'>
+            <div className='w-full  max-h-[334px] lg:max-h-full lg:h-auto flex items-center justify-center'>
                 <img 
-                className='rounded-2xl object-cover h-auto w-auto'
+                className='rounded-2xl object-cover h-full w-full'
                 src="/relief-housing-tents-displaced-community.jpg" alt="Temporary housing units set up for disaster relief." />
             </div>
             <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
@@ -494,9 +494,9 @@ const RwRemoteProjects = () => {
       </div>}
       {activeTab ==='govt' && <div data-aos="fade-up" 
        className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
-            <div className='w-full h-auto flex items-center justify-center'>
+            <div className='w-full  max-h-[334px] lg:max-h-full lg:h-auto flex items-center justify-center'>
                 <img 
-                className='rounded-2xl object-cover h-auto w-auto'
+                className='rounded-2xl object-cover h-full w-full'
                 src="/tents-government-training-facility.jpg" alt="Row of tents at a government training facility." />
             </div>
             <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
