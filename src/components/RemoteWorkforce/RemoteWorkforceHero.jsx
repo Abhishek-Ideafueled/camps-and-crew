@@ -117,7 +117,7 @@ const RemoteWorkforceHero = () => {
         </div>
         <div className='w-full'>
             <Link className='flex w-[203px]' onClick={handleClickScroll}>
-                    <div className='btn-orange w-[203px] h-[64px] flex items-center px-10 text-nowrap rounded'>CONTACT SALES</div>
+                    <div className='btn-orange w-[203px] h-[64px] flex justify-center items-center px-10 text-nowrap rounded'>CONTACT SALES</div>
             </Link>
         </div>
         </div>
@@ -127,28 +127,28 @@ const RemoteWorkforceHero = () => {
               <Slider {...settings}>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="/rw-slider-01.png"
                     alt="woman-backpack-looks-onto-plane-airport"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="rw-slider-02.png"
                     alt="people-seated-rows-commercial-plane"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover "
+                    className="rounded-2xl h-auto object-cover "
                     src="rw-slider-03.png"
                     alt="man-rolls-suitcase-baggage-carousel-area"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="rw-slider-04.png"
                     alt="fifo-workers-take-ferry-remote-project"
                   />
@@ -159,28 +159,28 @@ const RemoteWorkforceHero = () => {
               <Slider {...settings2}>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="/rw-slider-05.png"
                     alt="parking-lot-workforce-camp"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="/rw-slider-06.png"
                     alt="fifo-worker-driving-to-camp-dido"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="/rw-slider-07.png"
                     alt="man-entering-hotel-room"
                   />
                 </div>
                 <div className="max-w-[246px] md:max-w-[156px] lg:max-w-[216px] xl:max-w-[288px]">
                   <img
-                    className="rounded-2xl h-[315px] object-cover"
+                    className="rounded-2xl h-auto object-cover"
                     src="/rw-slider-06.png"
                     alt="hotel-bed-open-door-sunny"
                   />

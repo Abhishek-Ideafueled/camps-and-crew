@@ -94,7 +94,7 @@ const RwSmartLodgePurpose = () => {
                </div>
         </div>
         <div className='w-full flex items-center justify-center mt-12'>
-        <div className='max-w-max' onClick={scrollToTop}>
+        <div className='max-w-max z-10' onClick={scrollToTop}>
            <Link to="/software-for-workforce-camp" className='max-w-max z-10'>
             <div className='btn-orange px-6 smalls:px-10 py-[19px] rounded'>
             SEE ALL SMARTLODGE FEATURES
@@ -108,6 +108,7 @@ const RwSmartLodgePurpose = () => {
 <rect x="80" y="160" width="80" height="80" transform="rotate(-90 80 160)" fill="#004461"/>
 <rect y="160" width="80" height="80" transform="rotate(-90 0 160)" fill="#004461"/>
 </svg>
+
 
       </div>
     </div>
