@@ -15,21 +15,6 @@ const RoomsManagementSecond = () => {
     setHeights(calculatedHeights);
   }
 
-  // useEffect(() => {
-    
-  //   window.addEventListener('resize', calculateHeights);
-  // window.addEventListener('load', calculateHeights); 
-
-  // return () => {
-  //   window.removeEventListener('resize', calculateHeights);
-  //   window.removeEventListener('load', calculateHeights);
-  // };
-
-  // }, []);
-
-  // useEffect(() => {
-  //   calculateHeights(); 
-  // }, [activeId]);
 
   setTimeout(()=>{
       calculateHeights();

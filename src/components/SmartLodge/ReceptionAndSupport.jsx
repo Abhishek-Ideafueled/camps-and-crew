@@ -12,12 +12,17 @@ const ReceptionAndSupport = () => {
   const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
 
-  useEffect(() => {
-    const calculatedHeights = contentRefs.current.map(
-      (el) => el.scrollHeight
-    );
+  const calculateHeights=()=>{
+    const calculatedHeights = 
+      contentRefs.current.map((el) => el?.scrollHeight || 0);
     setHeights(calculatedHeights);
-  }, []);
+  }
+
+    
+  setTimeout(()=>{
+    calculateHeights();
+},0)
+
 
   const handleAccordionClick = (id) => {
     if (activeId === id) {
