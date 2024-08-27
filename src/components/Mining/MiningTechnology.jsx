@@ -17,7 +17,11 @@ const MiningTechnology = () => {
                     Our Technology Supports Remote Mining Projects Across the Globe
                     </h2>
                     <p className='font-ttCommonProNormal text-[#414E58] text-base lg:text-lg lg:leading-[28px]'>
-                    From Northern Canada to West Africa to Indonesia, our technology supports mining companies globally in transporting and housing their fly-in fly-out workforces. Our experience working in diverse geographies has guided the development of our software, ensuring our solutions comprehensively tackle the logistical and operational challenges faced by the mining industry. By automating critical processes, we help mining companies achieve greater efficiency, reduce costs, and enhance the safety of their remote operations.
+                    From Northern Canada to Indonesia to Western Australia, our technology supports mining companies globally in transporting and housing their fly-in fly-out workforces.
+                     Our experience working in diverse geographies has guided the development of our software, 
+                     ensuring our solutions comprehensively tackle the logistical and operational challenges faced by the mining industry.
+                      By automating critical processes,
+                     we help mining companies achieve greater efficiency, reduce costs, and enhance the safety of their remote operations.
                     </p>
                    {/* <div onClick={scrollToTop}> <Link to="/company" >
                     <span  className='w-full hover:text-[#5BC0ED] text-custom-blue hover:opacity-70 font-ttCommonProNormal font-medium flex items-center gap-1'>

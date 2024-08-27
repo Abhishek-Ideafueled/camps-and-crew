@@ -20,10 +20,7 @@ const MiningLifeCycle = () => {
             <HeadingPattern />
           </span>
           <p className="sub-heading pt-2">
-            From exploration to shutdowns, our solutions offer robust features
-            that empower teams to <br className="hidden lg:block" /> manage
-            transport and accommodations throughout every phase of your mining
-            project.
+          From exploration to shutdowns, our solutions offer robust features that empower teams <br className="hidden lg:block" /> managing transport and accommodations throughout every phase of your mining project.
           </p>
         </div>
         <div className="relative w-full h-full">

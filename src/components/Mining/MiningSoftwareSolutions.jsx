@@ -90,13 +90,10 @@ const MiningSoftwareSolutions = () => {
               <br className="hidden md:block" /> and Mining Camp Accommodation
             </h2>
             <span className="sub-heading text-white text-center">
-              For many years, we've continuously iterated upon our technology to
-              develop a market-leading camp management system able to support
-              remote projects across industries. SmartLodge is designed to
-              comprehensively support remote accommodation providers, covering
-              everything from front desk and housekeeping to meal tracking,
-              billing, detailed reporting and more. Watch the video below for a
-              quick overview of the system.
+            For years, we've continuously refined our technology to deliver specialized solutions for managing 
+            FIFO travel logistics and mine site accommodations. EnRoute streamlines the often complex travel arrangements for FIFO workers,
+             while SmartLodge offers comprehensive management of camp operations.
+             Watch the videos below to discover how these solutions can optimize the way you transport and house your personnel.
             </span>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[32px] md:gap-8">

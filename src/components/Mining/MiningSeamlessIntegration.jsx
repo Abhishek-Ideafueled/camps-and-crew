@@ -89,10 +89,11 @@ const MiningSeamlessIntegration = () => {
             </h3>
            <p className='font-ttCommonProNormal text-base text-custom-body leading-[25.6px]'>
 
-           We make it simple for your travel group, workforce housing team,
-            and contracted camp management staff to quickly learn and use our application. 
-            Our comprehensive training and support resources ensure a smooth onboarding process,
-             enabling your staff to maximize the benefits of our technology from day one.
+           If you work with a third-party provider to manage your accommodations, rest assured we can seamlessly support your camp staff.
+            We have extensive experience partnering with camp and catering companies, workforce accommodations providers,
+             and integrated facilities management firms. We leverage the expertise we have gained over the years to develop technology
+              that delivers streamlined workflows, automated processes, 
+           and enhanced service delivery for any team managing your mine site accommodations.
                                 
            </p>
            </div>
