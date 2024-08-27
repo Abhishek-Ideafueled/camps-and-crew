@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { FaMinus, FaPlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const RwFaqs = () => {
@@ -35,40 +36,35 @@ const RwFaqs = () => {
             desc:"While we encourage clients to leverage our robust application in its current form--developed through our many years of experience working in the fly-in fly-out space--we are committed to achieving excellence for our clients. As such, we are open to developing new or unique functionalities for clients with specific requirements. Our leadership team acknowledges that client-driven innovation has significantly shaped our solutions over the years and will continue to do so. While we are receptive to requests for custom development, we generally recommend first maximizing the value of our software’s existing feature set.",
 
         },
-        {
-            id:6,
-            title:"Do you offer a software solution to manage FIFO transportation?",
-            desc:"In addition to managing camp services, our technology also supports the coordination of all transportation modes required to move workers to and from a remote site. Our FIFO travel booking engine, EnRoute, allows camp management and catering companies to offer additional value-added services to their clients by facilitating the management of workers' travel arrangements. To learn more about EnRoute, click here.",
+        // {
+        //     id:6,
+        //     title:"Do you offer a software solution to manage FIFO transportation?",
+        //     desc:"In addition to managing camp services, our technology also supports the coordination of all transportation modes required to move workers to and from a remote site. Our FIFO travel booking engine, EnRoute, allows camp management and catering companies to offer additional value-added services to their clients by facilitating the management of workers' travel arrangements. To learn more about EnRoute, click here.",
 
-        },
+        // },
     ]
 
     
     const [activeId, setActiveId] = useState(1);
     const [heights, setHeights] = useState([]);
+    const [lastHeight, setLastHeight] = useState();
+    const lastRef = useRef(null);
+
   const contentRefs = useRef([]);
 
   const calculateHeights=()=>{
     const calculatedHeights = 
       contentRefs.current.map((el) => el?.scrollHeight || 0);
     setHeights(calculatedHeights);
+    const cal = lastRef.current?.scrollHeight;
+    setLastHeight(cal);
   }
 
-  useEffect(() => {
-      
-    window.addEventListener('resize', calculateHeights);
-  // window.addEventListener('load', calculateHeights); 
+ 
 
-  return () => {
-    window.removeEventListener('resize', calculateHeights);
-    // window.removeEventListener('load', calculateHeights);
-  };
-
-  }, []);
-
-  useEffect(() => {
+  setTimeout(() => {
     calculateHeights(); 
-  }, [activeId]);
+  }, 0);
 
 
     const handleAccordionClick = (id) => {
@@ -165,6 +161,41 @@ const RwFaqs = () => {
               </div>
             </div>
           ))}
+           <div className="bg-[#ECE7E0] flex flex-col rounded-2xl">
+              <div
+                className="flex justify-between p-4 items-start z-10 relative"
+                onClick={() => handleAccordionClick(6)}
+              >
+                <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] md:pr-6 sm:w-full ">
+                Do you offer a software solution to manage FIFO transportation?
+                </h4>
+                <div
+                  className={`accordion-btns ${
+                    activeId === 6 ? "btn-clicked" : ""
+                  }  p-2 w-[24px] h-[24px] flex items-center`}
+                ></div>
+              </div>
+              <div
+                ref={lastRef.current}
+                className={`${
+                  activeId === 6
+                    ? "max-h-[1000px] opacity-100"
+                    : "max-h-0 opacity-0"
+                } 
+                                            overflow-hidden transition-all duration-300 ease-in-out`}
+                style={{
+                  maxHeight: activeId === 6 ? `${lastHeight}px`:"",
+                }}
+              >
+                <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-4 px-4">
+                In addition to managing camp services, our technology also supports the coordination of
+                 all transportation modes required to move workers to and from a remote site. Our FIFO travel booking engine,
+                  EnRoute, allows camp management and catering companies to offer additional value-added services to their clients by
+                   facilitating the management of workers' travel arrangements. 
+                   To learn more about EnRoute, <Link to="/fifo-travel-online-booking-tool" reloadDocument className="underline">click here.</Link> 
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
