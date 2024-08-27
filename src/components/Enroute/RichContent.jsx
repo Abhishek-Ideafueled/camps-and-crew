@@ -91,7 +91,7 @@ const RichContent = () => {
                                     : "0",
                               }}
                       >
-     <div className="text-custom-body font-ttCommonProNormal text-base w-[95%] pb-2">
+     <div className="text-custom-body font-ttCommonProNormal text-base w-[92%] pb-2">
                               {item.desc}
                           </div>
       </div>

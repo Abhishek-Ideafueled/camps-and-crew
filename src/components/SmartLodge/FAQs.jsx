@@ -114,7 +114,7 @@ const calculateHeights=()=>{
         </div>
         <div className="flex flex-col gap-4 max-w-[800px] mx-auto">
             {faqArr.map((item,index)=>(
-                <div className="bg-[#ECE7E0] flex flex-col" key={item.id}>
+                <div className="bg-[#ECE7E0] flex flex-col rounded-2xl" key={item.id}>
                     <div className="flex justify-between p-4 items-start z-10 relative" onClick={()=>handleAccordionClick(item.id)}>
                         <h4 className="text-custom-heading font-gilroyBold text-lg lg:text-xl lg:leading-6 w-[90%] sm:w-full ">{item.title}</h4>
                         <div className={`accordion-btns ${activeId === item.id ? 'btn-clicked' : ''}  p-2 w-[24px] h-[24px] flex items-center`}> 
