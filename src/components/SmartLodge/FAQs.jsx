@@ -42,12 +42,15 @@ const FAQs = () => {
     const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
 
-  useEffect(() => {
-    const calculatedHeights = contentRefs.current.map(
-      (el) => el.scrollHeight
-    );
-    setHeights(calculatedHeights);
-  }, []);
+  setTimeout(()=>{
+    calculateHeights();
+},0)
+
+const calculateHeights=()=>{
+  const calculatedHeights = 
+    contentRefs.current.map((el) => el?.scrollHeight || 0);
+  setHeights(calculatedHeights);
+}
 
     const handleAccordionClick = (id) => {
       if (activeId === id) {
