@@ -3,17 +3,40 @@ import { roomAccordianData } from "./roomsAccordianData";
 import { IoIosArrowDown } from "react-icons/io";
 
 const RoomsManagement = () => {
-  const [activeId, setActiveId] = useState(1);
+  const [activeId, setActiveId] = useState(0);
   const [activeImageId, setActiveImageId] = useState(1);
   const [heights, setHeights] = useState([]);
   const contentRefs = useRef([]);
 
-  useEffect(() => {
-    const calculatedHeights = contentRefs.current.map(
-      (el) => el.scrollHeight
-    );
+  // useEffect(() => {
+  //   const calculatedHeights = contentRefs.current.map(
+  //     (el) => el.scrollHeight
+  //   );
+  //   setHeights(calculatedHeights);
+  // }, []);
+
+  const calculateHeights=()=>{
+    const calculatedHeights = 
+      contentRefs.current.map((el) => el?.scrollHeight || 0);
     setHeights(calculatedHeights);
+  }
+
+  useEffect(() => {
+    
+    window.addEventListener('resize', calculateHeights);
+  window.addEventListener('load', calculateHeights); 
+
+  return () => {
+    window.removeEventListener('resize', calculateHeights);
+    window.removeEventListener('load', calculateHeights);
+  };
+
   }, []);
+
+  useEffect(() => {
+    calculateHeights(); 
+  }, [activeId]);
+
 
 
   const handleAccordionClick = (id) => {
