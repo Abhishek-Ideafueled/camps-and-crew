@@ -202,7 +202,7 @@ const RwRemoteProjects = () => {
      
       <div className='relative w-full h-full'>
       {activeTab ==='mining' && <div  data-aos="fade-up" 
-      className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+      className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -275,7 +275,7 @@ const RwRemoteProjects = () => {
       </div>
       </div>}
       {activeTab ==='oil' && <div data-aos="fade-up" 
-       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -348,13 +348,13 @@ const RwRemoteProjects = () => {
       </div>
       </div>}
       {activeTab ==='construction' && <div data-aos="fade-up" 
-       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
-                className='rounded-2xl object-cover h-auto w-auto'
+                className='rounded-2xl object-cover h-full w-full'
                 src="/worker-holds-tablet-remote-infrastructure-construction.jpg" alt="Construction worker using a tablet at a project site." />
             </div>
-            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6'>
+            <div className='flex flex-col p-8 lg:px-10 lg:py-16 gap-6 xl:max-h-[640px]'>
                 <div className='flex flex-col gap-4'>
             <span className="font-ttCommonProRegular font-semibold text-second-blue text-sm leading-[22px]">
             ENGINEERING & CONSTRUCTION
@@ -420,7 +420,7 @@ const RwRemoteProjects = () => {
       </div>
       </div>}
       {activeTab ==='disaster' && <div data-aos="fade-up" 
-       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
@@ -492,7 +492,7 @@ const RwRemoteProjects = () => {
       </div>
       </div>}
       {activeTab ==='govt' && <div data-aos="fade-up" 
-       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto`}>
+       className={` transition-all duration-300 grid grid-cols-1 lg:grid-cols-2 mx-auto shadow-mining-card-shadow bg-white rounded-2xl`}>
             <div className='w-full h-auto flex items-center justify-center'>
                 <img 
                 className='rounded-2xl object-cover h-auto w-auto'
