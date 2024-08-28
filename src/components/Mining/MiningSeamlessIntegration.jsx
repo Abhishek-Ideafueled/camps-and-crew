@@ -20,7 +20,7 @@ const MiningSeamlessIntegration = () => {
           </p>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-center'>
-                <div className=''>
+                <div className='flex items-center justify-center lg:max-w-[500px]'>
                 <img
                 className='w-auto h-auto object-cover rounded-2xl'
                 src="/front-desk-agent-mining-camp.jpg" alt="Receptionist at remote camp works at computer" />
@@ -80,7 +80,7 @@ const MiningSeamlessIntegration = () => {
             <div className='order-first lg:order-last'>
                 <img src="/logosCard.png" alt="logo card" />
             </div>
-            <div className='flex flex-col gap-4'>
+            <div className='flex flex-col gap-4 lg:max-w-[500px]'>
             <span className='custom-caption'>
             | CAMP MANAGEMENT |
             </span>
@@ -99,7 +99,7 @@ const MiningSeamlessIntegration = () => {
            </div>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          <div className="w-full flex flex-col gap-[60px] justify-center">
+          <div className="w-full flex flex-col gap-[60px] justify-center pt-5">
             <div className="digital-partner-splide">
               <Splide
                 //  options={options}
