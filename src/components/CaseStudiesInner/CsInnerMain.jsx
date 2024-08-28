@@ -9,7 +9,7 @@ const CsInnerMain = () => {
   }, []);
 
   return (
-    <div className='w-full overflow-x-hidden mt-[76px] lg:mt-[106px] '>
+    <div className='w-full overflow-hidden mt-[76px] lg:mt-[106px] '>
       
     </div>
   )

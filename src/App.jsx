@@ -10,6 +10,7 @@ import CaseStudiesMain from './components/CaseStudies/CaseStudiesMain';
 import RemoteWorkforceMain from './components/RemoteWorkforce/RemoteWorkforceMain';
 import Testing from './components/Testing';
 import MiningMain from './components/Mining/MiningMain';
+import CsSodexoDrivesMain from './components/CaseStudiesInner/CsSodexoDrives/CsSodexoDrivesMain';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
     <Route path="/camp-management-and-catering-companies" element={<RemoteWorkforceMain/>} />
     {/* <Route path="/testing" element={<Testing/>} /> */}
     <Route path="/mining-camp-accommodation-fifo-travel" element={<MiningMain/>} />
+    <Route path="/sodexo-implements-smartlodge-sella-ness-accommodation-camp" element={<CsSodexoDrivesMain/>}/>
     </Routes>
    
    </Layout>

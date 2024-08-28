@@ -96,8 +96,8 @@ const MiningSoftwareSolutions = () => {
              Watch the videos below to discover how these solutions can optimize the way you transport and house your personnel.
             </span>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[32px] md:gap-8">
-            <div className="flex flex-col items-center w-full max-w-[500px] lg:max-w-[588px] z-10 max-h-max">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-4 xl:gap-6 md:gap-8">
+            <div className="flex flex-col items-center w-full max-w-[500px] lg:max-w-[636px] z-10 max-h-max">
               <div className="flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 pb-28 min-h-[430px] superxl:min-h-[459px] rounded-2xl w-full">
                 <button className="bg-custom-button font-gilroyBold w-[85px] h-[35px] rounded-full">
                   EnRoute
@@ -130,14 +130,14 @@ const MiningSoftwareSolutions = () => {
                   </Link>
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
+              <div className="relative mt-[-70px]  w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
                 <img
-                  className="absolute inset-0 card-thumb rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
+                  className="absolute inset-0 card-thumb rounded-2xl w-[90%] max-w-[585px] h-full object-cover justify-self-center"
                   src="/EnRoute_thumb.png"
                   alt=""
                 />
                 <img 
-                className='absolute inset-0 card-gif opacity-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center'
+                className='absolute inset-0 card-gif opacity-0 rounded-2xl w-[90%] max-w-[585px] h-full object-cover justify-self-center'
                 src="/enroute-product-video.gif" alt="" />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <span className='cursor-pointer' onClick={()=>openModal("enroute")}>
@@ -168,7 +168,7 @@ const MiningSoftwareSolutions = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex flex-col items-center w-full max-w-[500px] lg:max-w-[588px] max-h-max">
+            <div className=" flex flex-col items-center w-full max-w-[500px] lg:max-w-[636px] max-h-max">
               <div className=" flex flex-col gap-10 bg-[#EAE8E3] px-6 lg:px-14 pt-6 lg:pt-14 min-h-[430px] superxl:min-h-[459px] pb-28 rounded-2xl w-full">
                 <button className="bg-custom-blue font-gilroyBold w-[120px] h-[35px] rounded-full">
                   SmartLodge
@@ -230,14 +230,14 @@ const MiningSoftwareSolutions = () => {
                   </Link>
                 </button>
               </div>
-              <div className="relative mt-[-70px] px-14 w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
+              <div className="relative mt-[-70px] w-full h-[250px] lg:h-[300px] flex items-center justify-center gif-container">
                 <img
-                  className="card-gif absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center"
+                  className="card-gif absolute inset-0 rounded-2xl w-[90%] max-w-[585px] h-full object-cover justify-self-center"
                   src="/smartlodge-product-video-workforce-camp-software.gif"
                   alt="custom poster"
                 />
                 <img  
-                className='card-thumb absolute inset-0 rounded-2xl w-[90%] max-w-[470px] h-full object-cover justify-self-center'
+                className='card-thumb absolute inset-0 rounded-2xl w-[90%] max-w-[585px] h-full object-cover justify-self-center'
                 src="/SmartLodge_thumb.png" alt="custom poster" />
                 <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px] flex justify-center items-center hover:opacity-80">
                   <span className="cursor-pointer" onClick={()=>openModal("smartlodge")}>

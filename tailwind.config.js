@@ -76,6 +76,7 @@ export default {
       'mining-case-1':"url(/Agincourt-case-study.png)",
       'mining-case-2':"url(/b2gold-case-study.png)",
       'mining-case-3':"url(/newgold-case-study.png)",
+      'case-studies-innner':"linear-gradient(180deg, #053347 0%, #053347 82.8%, #5BC0EC 82.81%)",
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},

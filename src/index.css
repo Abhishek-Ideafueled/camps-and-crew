@@ -166,6 +166,10 @@
   .custom-caption{
     @apply font-ttCommonProRegular font-semibold text-sm leading-[22px] text-custom-blue;
   }
+
+  .cs-heading{
+    @apply font-gilroyBold font-bold text-[25.6px] leading-[32px] md:text-[32px] md:leading-[38.4px] text-white;
+  }
   /* ... */
 }
 
