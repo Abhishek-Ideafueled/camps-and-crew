@@ -72,9 +72,8 @@ const MiningFaqs = () => {
               answer: (
                 <>
                   Yes, our software is designed to support mining companies operating both single and multiple projects. 
-                  Whether you're managing a single camp or coordinating mining camp accommodation across multiple sites, 
-                  <Link className='underline' to="/software-for-workforce-camp" reloadDocument>SmartLodge</Link> can be configured to provide robust site-level management as well as comprehensive global oversight.
-                  <Link className='underline' to="/fifo-travel-online-booking-tool" reloadDocument>EnRoute</Link> is also highly configurable, ensuring that workers are efficiently transported to the right location,
+                  Whether you're managing a single camp or coordinating mining camp accommodation across multiple sites, <Link className='underline' to="/software-for-workforce-camp" reloadDocument>SmartLodge</Link> can be configured to
+                   provide robust site-level management as well as comprehensive global oversight. <Link className='underline' to="/fifo-travel-online-booking-tool" reloadDocument>EnRoute</Link> is also highly configurable, ensuring that workers are efficiently transported to the right location,
                     whether within one camp or across multiple projects.
                 </>
               ),

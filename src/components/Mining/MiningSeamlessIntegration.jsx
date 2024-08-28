@@ -77,7 +77,7 @@ const MiningSeamlessIntegration = () => {
                 </div>
         </div>
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 items-center '>
-            <div className='order-first lg:order-last'>
+            <div className='order-first lg:order-last mb-5 lg:mb-0'>
                 <img src="/logosCard.png" alt="logo card" />
             </div>
             <div className='flex flex-col gap-4 lg:max-w-[500px]'>

@@ -14,7 +14,7 @@ const MiningLifeCycle = () => {
       <div className="main-container mx-auto flex flex-col items-center gap-[30px] lg:gap-[60px] py-10 lg:py-20">
         <div className="flex flex-col gap-4 items-center text-center">
           <h2 className="heading-h2">
-            Essential Tools for FIFO Teams <br />
+            Essential Tools for FIFO Teams <br className="hidden md:block" />
             Over the Lifecycle of Your Mine
           </h2>
           <span>
@@ -159,8 +159,8 @@ and Fluctuating Workforce
                   </li>
                 </ul>
                 <div className="flex flex-wrap justify-between pt-6 gap-2 lg:gap-0">
-                <Link
-                  to="/software-for-workforce-camp"
+             <div>   <Link
+                  to="/fifo-travel-online-booking-tool"
                   reloadDocument
                   className="flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70"
                 >
@@ -181,7 +181,7 @@ and Fluctuating Workforce
                       />
                     </svg>
                   </span>
-                </Link>
+                </Link></div>
                 
                 <Link
                   to="/software-for-workforce-camp"
@@ -264,7 +264,7 @@ and Fluctuating Workforce
                 </ul>
                 <div className="flex flex-wrap justify-between pt-6 gap-2 lg:gap-0">
                 <Link
-                  to="/software-for-workforce-camp"
+                  to="/fifo-travel-online-booking-tool"
                   reloadDocument
                   className="flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70"
                 >
@@ -370,7 +370,7 @@ and Fluctuating Workforce
                 </ul>
                 <div className="flex flex-wrap justify-between pt-6 gap-2 lg:gap-0">
                 <Link
-                  to="/software-for-workforce-camp"
+                  to="/fifo-travel-online-booking-tool"
                   reloadDocument
                   className="flex items-center gap-1 hover:text-[#5BC0ED] transition-all duration-200 text-custom-blue hover:opacity-70"
                 >

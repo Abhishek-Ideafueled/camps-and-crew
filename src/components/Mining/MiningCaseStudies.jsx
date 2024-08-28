@@ -355,7 +355,7 @@ const MiningCaseStudies = () => {
           </div>
         </div>
         <div className='flex w-full justify-center'>
-            <Link to="#" className='max-w-max'>
+            <Link to="/case-studies" reloadDocument className='max-w-max'>
             <div className='btn-orange py-[19px] w-[268px] flex items-center justify-center rounded'>
            SEE ALL CASE STUDIES
             </div>

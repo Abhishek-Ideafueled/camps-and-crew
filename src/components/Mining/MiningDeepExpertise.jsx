@@ -60,8 +60,8 @@ const MiningDeepExpertise = () => {
             <HeadingPattern/>
           </span>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-4 lg:gap-6 lg:max-h-[400px]' >
-            <div className='flex flex-col'>
+        <div className='grid grid-cols-1 md:grid-cols-2 items-center gap-4 lg:gap-8 lg:max-h-[400px]' >
+            <div className='flex flex-col md:w-[95%] lg:w-[90%]'>
               <h2 className='font-gilroyBold text-custom-heading text-[28px] leading-[35px] xl:text-[32px] xl:leading-[40px]'>
 Meet Cei Sullivan,
               </h2>
