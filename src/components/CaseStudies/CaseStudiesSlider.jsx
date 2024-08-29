@@ -50,7 +50,7 @@ const CaseStudiesSlider = () => {
                   SmartLodge Drives Up Room <br /> Occupancy and Streamlines <br /> Billing at Sella Ness Camp
                   </h2>
                   <Link
-                    to="#"
+                    to="/sodexo-implements-smartlodge-sella-ness-accommodation-camp" reloadDocument
                     className="flex items-center text-sm md:text-base gap-2 hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                   >
                     READ STORY

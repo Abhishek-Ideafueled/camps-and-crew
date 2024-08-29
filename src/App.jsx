@@ -26,6 +26,7 @@ function App() {
     <Route path="/camp-management-and-catering-companies" element={<RemoteWorkforceMain/>} />
     {/* <Route path="/testing" element={<Testing/>} /> */}
     <Route path="/mining-camp-accommodation-fifo-travel" element={<MiningMain/>} />
+    {/* Case Studies Inner links */}
     <Route path="/sodexo-implements-smartlodge-sella-ness-accommodation-camp" element={<CsSodexoDrivesMain/>}/>
     </Routes>
    
