@@ -29,7 +29,7 @@ const MiningSoftwareSolutions = () => {
   {
     dots: false,
     autoplay:true,
-    speed:1000,
+    speed:500,
     autoplaySpeed:2000,
     infinite: true,
     slidesToShow: 1,
@@ -43,7 +43,7 @@ const MiningSoftwareSolutions = () => {
   {
     dots: false,
     autoplay:true,
-    speed:1000,
+    speed:500,
     autoplaySpeed:2000,
     infinite: true,
     slidesToShow: 1,
@@ -122,16 +122,16 @@ const MiningSoftwareSolutions = () => {
                     for 
                     <div className="text-slider-enroute">
                       <Slider {...settings}>
-                        <p className="">
+                        <p className="border-b-custom-button border-[2px] max-w-max">
                           authorized contractors
                         </p>
-                        <p className="">
+                        <p className="border-b-custom-button border-[2px] max-w-max">
                           travel coordinators
                         </p>
-                        <p className="">
+                        <p className="border-b-custom-button border-[2px] max-w-max">
                           logistics teams
                         </p>
-                        <p className="">
+                        <p className="border-b-custom-button border-[2px] max-w-max">
                           transport operators
                         </p>
                       </Slider>
@@ -195,42 +195,42 @@ const MiningSoftwareSolutions = () => {
                     <div className="text-slider overflow-hidden ">
                       <Slider {...settings2}>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             front desk staff
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             housekeeping
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             maintenance
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             kitchen staff
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             accounting
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             central teams
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             contracted camp staff
                           </p>
                         </span>
                         <span>
-                          <p className=" ">
+                          <p className="border-b-[2px] border-custom-blue max-w-max">
                             catering companies
                           </p>
                         </span>
