@@ -51,7 +51,18 @@ const MiningHero = () => {
             drag: false,
             dragAngleThreshold: 0,
             breakpoints: {
-              2024: {
+              2300: {
+                perPage: 8,
+              },
+              2100: {
+                perPage: 7,
+              },
+              1900: {
+                perPage: 6.5,
+              },
+              1800: {
+                perPage: 6,
+              }, 1650: {
                 perPage: 5.5,
               },
               1400: {

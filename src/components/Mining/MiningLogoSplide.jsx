@@ -115,7 +115,7 @@ const MiningLogoSplide = () => {
           <SplideSlide>
             <div className="single-slide">
               <img
-                className=" object-cover"
+                className="px-2 object-cover"
                 src="/centerra-gold.png"
                 alt="centerra-gold logo"
               />
