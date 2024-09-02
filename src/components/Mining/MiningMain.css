@@ -58,6 +58,14 @@
         opacity: 0;
       }
 
+      .text-slider-enroute .slick-slide.slick-active p{
+        border-bottom: 2px solid #EFBC43;
+        max-width: max-content;
+      }
+
+      .text-slider .slick-slide.slick-active div{
+        border-bottom: 2px solid #63C1EC;
+      }
 
       /* //////////////////////////////////MINING LIFECYCLE STYLES /////////////////////////////////////*/
 

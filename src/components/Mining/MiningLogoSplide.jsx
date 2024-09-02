@@ -84,14 +84,15 @@ const MiningLogoSplide = () => {
             </div>
           </SplideSlide>
           <SplideSlide>
-            <div className="single-slide">
+            <div className="single-slide lg:px-6">
               <img
-                className=" object-cover"
-                src="/tata-steel.png"
-                alt="tata-steel logo"
+                className="w-auto "
+                src="/centerra-gold.png"
+                alt="centerra-gold logo"
               />
             </div>
           </SplideSlide>
+         
           <SplideSlide>
             <div className="single-slide">
               <img
@@ -101,7 +102,15 @@ const MiningLogoSplide = () => {
               />
             </div>
           </SplideSlide>
-         
+          <SplideSlide>
+            <div className="single-slide">
+              <img
+                className=" object-cover"
+                src="/tata-steel.png"
+                alt="tata-steel logo"
+              />
+            </div>
+          </SplideSlide>
 
           <SplideSlide>
             <div className="single-slide">
@@ -112,15 +121,7 @@ const MiningLogoSplide = () => {
               />
             </div>
           </SplideSlide>
-          <SplideSlide>
-            <div className="single-slide">
-              <img
-                className="px-2 object-cover"
-                src="/centerra-gold.png"
-                alt="centerra-gold logo"
-              />
-            </div>
-          </SplideSlide>
+         
           <SplideSlide>
             <div className="single-slide">
               <img

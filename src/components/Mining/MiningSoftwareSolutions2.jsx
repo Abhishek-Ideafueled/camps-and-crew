@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import YoutubeModal from '../YoutubeModal';
 import Slider from 'react-slick';
 import './MiningMain.css';
+import { Splide, SplideSlide,SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
 
 const MiningSoftwareSolutions = () => {
 
@@ -25,34 +28,6 @@ const MiningSoftwareSolutions = () => {
     setIsOpen(false);
   }
 
-  const settings=
-  {
-    dots: false,
-    autoplay:true,
-    speed:1000,
-    autoplaySpeed:2000,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: false,
-    swipeToSlide: false,
-    arrows:false,
-  };
-  const settings2=
-  {
-    dots: false,
-    autoplay:true,
-    speed:1000,
-    autoplaySpeed:2000,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    vertical: true,
-    verticalSwiping: false,
-    swipeToSlide: false,
-    arrows:false,
-  };
 
   const scrollHandler = () => {
     const element = document.getElementById('demoForm');
@@ -120,21 +95,68 @@ const MiningSoftwareSolutions = () => {
                   A FIFO travel booking engine <br />
                   <span className="flex items-center gap-2">
                     for 
-                    <div className="text-slider-enroute">
-                      <Slider {...settings}>
-                        <p className="">
+                    <div className="text-slider-enroute mt-2">
+                    <Splide
+          options={{
+            type: "loop",
+            perPage: 1,
+            perMove: 1,
+            arrows: false,
+            pagination: false,
+            rewind: false,
+            drag: false,
+            dragAngleThreshold: 0,
+            speed: 0.1,
+            autoplay:true,
+            direction:'ttb',
+            height:'31px',
+            // breakpoints: {
+            //   2024: {
+            //     perPage: 5.5,
+            //   },
+            //   1400: {
+            //     perPage: 5,
+            //   },
+            //   1280: {
+            //     perPage: 4,
+            //   },
+            //   1024: {
+            //     perPage: 3.5,
+            //   },
+            //   900: {
+            //     perPage: 3,
+            //   },
+            //   767: {
+            //     perPage: 2.5,
+            //   },
+            //   640: {
+            //     perPage: 2,
+            //   },
+            //   500: {
+            //     perPage: 1.5,
+            //   },
+            // },
+          }}
+          aria-label="Mining logo images"
+          // hasTrack={false}
+        >
+              <SplideSlide> <p className="">
                           authorized contractors
-                        </p>
-                        <p className="">
+                        </p></SplideSlide>
+              <SplideSlide><p className="">
                           travel coordinators
-                        </p>
-                        <p className="">
+                        </p></SplideSlide>
+              <SplideSlide>  <p className="">
                           logistics teams
-                        </p>
-                        <p className="">
+                        </p></SplideSlide>
+              <SplideSlide>   <p className="">
                           transport operators
-                        </p>
-                      </Slider>
+                        </p></SplideSlide>
+                       
+                        
+                      </Splide>
+                     
+                     
                     </div>
                   </span>
                 </div>
@@ -193,7 +215,7 @@ const MiningSoftwareSolutions = () => {
                 <p className='flex items-center text-nowrap'>solution for</p>
                 <br className='hidden lg:block xl:hidden'/> 
                     <div className="text-slider overflow-hidden ">
-                      <Slider {...settings2}>
+                      {/* <Slider {...settings2}>
                         <span>
                           <p className=" ">
                             front desk staff
@@ -234,7 +256,7 @@ const MiningSoftwareSolutions = () => {
                             catering companies
                           </p>
                         </span>
-                      </Slider>
+                      </Slider> */}
                     </div>
                   </span>
                 </div>

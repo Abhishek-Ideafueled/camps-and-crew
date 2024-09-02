@@ -6,6 +6,7 @@ import Testimonials from '../SmartLodge/Testimonials';
 import Aos from 'aos';
 import MiningWorkforceManagement from './MiningWorkforceManagement';
 import MiningSoftwareSolutions from './MiningSoftwareSolutions';
+import MiningSoftwareSolutions2 from './MiningSoftwareSolutions2';
 import MiningSeamlessIntegration from './MiningSeamlessIntegration';
 import MiningLifeCycle from './MiningLifeCycle';
 import MiningDeepExpertise from './MiningDeepExpertise';
@@ -28,6 +29,7 @@ const MiningMain = () => {
         <Testimonials/>
         <MiningWorkforceManagement/>
         <MiningSoftwareSolutions/>
+        {/* <MiningSoftwareSolutions2/> */}
         <MiningSeamlessIntegration/>
         <MiningLifeCycle/>
         <MiningDeepExpertise/>
