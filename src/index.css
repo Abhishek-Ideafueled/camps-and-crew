@@ -175,6 +175,14 @@
       @apply font-gilroyBold font-bold text-[32px] leading-[38.4px] 2xl:text-[36px] 2xl:leading-[120%] ;
     
   }
+
+  .cs-heading{
+    @apply font-gilroyBold font-bold text-2xl leading-[28.8px] text-custom-heading;
+  }
+
+  .cs-body{
+    @apply font-ttCommonProNormal text-custom-body text-base leading-[25.6px];
+  }
   /* ... */
 }
 

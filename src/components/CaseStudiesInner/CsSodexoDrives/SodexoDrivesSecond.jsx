@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom'
 const SodexoDrivesSecond = () => {
   return (
     <div className='w-full'>
-        <div className='main-container mx-auto py-10 lg:py-20 grid grid-cols-3 lg:gap-12'>
+        <div className='main-container mx-auto py-10 lg:py-20 grid  grid-cols-1 lg:grid-cols-3 lg:gap-12'>
         <div className='col-span-1 sticky top-0 z-20 h-auto self-start'>
-        <div className='max-w-[384px] max-h-[282px] bg-white border-[1px] border-custom-blue shadow-cs-inner-shadow p-6 rounded-2xl flex flex-col gap-6'>
+        <div className='w-full lg:max-w-[384px] max-h-max bg-white border-[1px] border-custom-blue shadow-cs-inner-shadow p-6 rounded-2xl flex flex-col'>
           <h3 className='text-xl leading-[120%] lg:text-[32px] 2xl:text-[36px] font-gilroyBold text-custom-heading '>
           Request a Demo
           </h3>
-          <span className='font-ttCommonProNormal text-sm leading-[120%] lg:text-base text-custom-body'>
+          <span className='font-ttCommonProNormal text-sm leading-[120%] lg:text-base text-custom-body pt-2 xl:pt-6'>
           Get in touch to see how our technology can be tailored to meet the unique requirements of your remote operations.
           </span>
-          <div className='w-full mx-auto'>
+          <div className='w-full mx-auto mt-4 xl:mt-10'>
             <Link to="#" className='btn-orange w-full h-[54px] flex gap-2 items-center justify-center py-[14px] px-4'>
             Contact sales 
             <span>
@@ -26,7 +26,7 @@ const SodexoDrivesSecond = () => {
           </div>
         </div>
         </div>
-        <div className='col-span-2 flex flex-col'>
+        <div className='col-span-1 lg:col-span-2 flex flex-col'>
         <div className='flex items-center gap-4 h-[160px] border-b-[#E6E6E6] border-b-[1px]'>
             <span className='w-20 h-20'>
               <img className='w-auto h-auto rounded-e-2xl' src="/alya-snyder.png" alt="user-pic" />
@@ -38,6 +38,139 @@ const SodexoDrivesSecond = () => {
                 </p>
             </div>
         </div>
+
+        <span className='custom-caption mt-16'>
+        AT A GLANCE
+        </span>
+        <h4 className='cs-heading mt-6'>
+        Sodexo partners with Camps & Crew to simplify room allocation, optimize room utilization, and ensure total accuracy in billing at a Scotland workforce lodge site.
+        </h4>
+        <span className='custom-caption mt-12'>
+        ABOUT THE CLIENT
+        </span>
+        <h4 className='cs-heading mt-6'>
+        Meet Sodexo: An integrated services provider offering best-in-class remote accommodations
+        </h4>
+        <p className='cs-body mt-4'>
+        Sodexo is a food services and facilities management company dedicated to providing a 
+        superior experience for their clients across a wide variety of industries including energy, 
+        mining, education, and health. With its wide range of services, Sodexo provides comprehensive catering 
+        and facilities management services that meet the unique needs of each industry. They go above and beyond 
+        by seamlessly managing camp room reservations, crew check-ins, housekeeping, maintenance, and on-site dining,
+         allowing their clients to focus on their core business while enjoying top-notch support services.
+        </p>
+
+        <div className='mt-12'>
+          <img src="/sodexo-chef-cuts-food-industrial-kitchen.jpg" alt="sodexo-chef-cuts-food-industrial-kitchen" />
+        </div>
+
+        <span className='custom-caption mt-12'>
+        ABOUT THE PROJECT
+        </span>
+
+        <h4 className='cs-heading mt-6'>
+        Sella Ness camp houses hundred of crew workers staffed at high-profile energy project in the Shetland Islands
+        </h4>
+
+        <p className='cs-body mt-4'>
+        The Shetland Islands in Scotland have become a hub for energy projects in Scotland. 
+        The Sella Ness Shetland Gas Project is a natural gas processing plant owned jointly by Total E&P UK and Dong E&P. 
+        The plant operates at a processing capacity of 500 million cubic feet of gas per day,
+         making it a vital part of the region's energy infrastructure. A key factor of the project’s success is the Sella Ness Camp,
+         a Sodexo-run camp that provides a home-away-from-home for workers staffed at the project.
+        </p>
+
+        <span className='custom-caption mt-12'>
+        ABOUT THE CAMP OPERATIONS
+        </span>
+
+        <h4 className='cs-heading mt-6'>
+        Sodexo tasked to manage a 426-room camp serving the Shetland Gas Plant located on the Shetland Islands
+        </h4>
+        <p className='cs-body mt-4'>
+        Sodexo took over the management of the Sella Ness codge, located in the Shetland Islands of Scotland, in June 2018. 
+        With its remote location and unique logistical challenges,
+         accommodations for the Shetland Islands project demands a high level of operational efficiency 
+         and attention to detail that Sodexo is positioned to deliver in the region.
+        </p>
+        <p className='cs-body mt-4'> At the Sella Ness camp, Sodexo is responsible for:</p> 
+        <ul className='cs-body pl-8' style={{ listStyleType: 'disc' }}>        
+      <li >Managing the room reservations and room allocation of 426 camp rooms for various incoming work crews</li>
+      <li>Maximizing room occupancy at the camp, a top priority during periods of peak demand</li>
+      <li>Overseeing daily front- and back-of-house operations on-site, including check-in and check-out, dining, housekeeping, and routine property maintenance</li>
+      <li>Providing detailed and accurate billing to its client, the project operators of the Shetland Gas Plant</li>
+        </ul>
+
+        <div className='mt-12'>
+          <img src="/sella-ness-camp-room-interior.jpg" alt="sella-ness-camp-room-interior" />
+        </div>
+
+        <span className='custom-caption mt-12'>
+        THE CHALLENGE
+        </span>
+
+        <h4 className='cs-heading mt-6'>
+        Legacy systems used for room allocation left rooms underutilized and made accurate billing difficult to produce for paying clients
+        </h4>
+        <p className='cs-body mt-4'>
+        Sodexo faced numerous challenges related to the camp management at Sella Ness due to the outdated disparate systems they had in place. These systems failed to provide efficient room allocation tooling, robust occupancy reporting, or reliable bills for clients. The fragmented systems in place were ill-equipped to handle the demands of a camp regularly managing a high volume of room reservations created, modified or canceled, as is standard in for remote camps of this size.
+        </p>
+        <p className='cs-body mt-4'>
+        The specific challenges Sodexo faced included:
+
+
+
+
+
+        </p>
+        <ul className='cs-body pl-8' style={{ listStyleType: 'disc' }}>        
+      <li>The inability to see which room nights had not yet been blocked</li>
+      <li>No simple way to allocate room types based on staff type or seniority level</li>
+      <li>A lack of visibility into real-time availability of rooms for a given timeframe, resulting in suboptimal room utilization</li>
+      <li>A broken line of communication between the front desk and housekeeping staff that slowed room turnover down during times of high occupancy</li>
+       <li>Invoices that did not provide a complete audit trail of reservation bookings and related modifications, which prompted many questions from the client when they received their bill</li>
+        </ul>
+
+        <div className='mt-12'>
+        <img src="/sella-ness-camp-accommodation-aerial-shot-buildings.jpg" alt="sella-ness-camp-accommodation-aerial-shot-buildings" />
+        </div>
+
+        <span className='mt-12 custom-caption'>
+        THE SOLUTION
+        </span>
+
+        <h4 className='mt-6 cs-heading'>
+        SmartLodge increases room occupancy and ensures maximum billing accuracy at Sella Ness Lodge
+        </h4>
+
+        <p className='mt-4 cs-body'>
+        After implementing the Camps & Crew Smartlodge system at the Sella Ness camp, Sodexo successfully drove up room occupancy and streamlined billing. Both outcomes were of great benefit to both Sodexo and its paying client.
+        <br />
+        <br />
+       <Link to="/software-for-workforce-camp" reloadDocument className='underline hover:text-custom-blue'>SmartLodge</Link>  has facilitated camp management for staff at Sella Ness in various ways and enabled Sodexo to more easily achieve their KPI’s for the camp. The system’s impact includes:
+       <ul className='cs-body pl-8' style={{ listStyleType: 'disc' }}>        
+        <li> <span className='font-ttCommonProNormal font-semibold'>A reduction in empty room nights,</span> attributable to visual room assignment tooling offered by SmartLodge. 
+          The user interface of the system, which consists of a digital “tape chart”, gives the front desk staff a means to see
+           all rooms that have already been blocked and those that have not. Drag-and-drop functionality ensures existing room 
+           reservations awaiting assignment to a specific room can be efficiently blocked out. That same user interface also
+            ensures front desk staff can easily block crew workers into room types that correspond to their staff type and/or seniority.</li>
+        <li> <span className='font-ttCommonProNormal font-semibold'>Room occupancy has increased up to 95%</span> on average, 
+          when Sella Ness has experienced peak demand. Camp staff have achieved this high rate of occupancy by
+           leveraging SmartLodge to streamline room bookings and 
+          by utilizing room inventory reporting to monitor cancellations or modifications made to existing room reservations.</li>
+        <li><span className='font-ttCommonProNormal font-semibold'>The rate of room turnover by housekeeping doubled</span> thanks
+           to the system’s housekeeping module, which assigns daily workloads to housekeepers 
+           and facilitates faster communication between the housekeeping staff and the front desk.
+            SmartLodge enables housekeeping staff to mark when rooms are cleaned from a mobile device and
+           ensures that room status data is immediately reflected in the room assignment user interface.</li>
+        <li><span className='font-ttCommonProNormal font-semibold'>Improved billing accuracy,</span> powered by invoices that detail every service day logged for every camp
+           resident that stays on-site. By tightening the management of room reservations using SmartLodge, Sodexo 
+           has gained access to a comprehensive audit trail of all reservation activity in the system. Reservation activity 
+           includes all room cancellations, modifications,
+           no-shows, and other billable activities that occurred while a camp resident is on-site.</li>
+       </ul>
+
+        </p>
         </div>
         </div>
     </div>
