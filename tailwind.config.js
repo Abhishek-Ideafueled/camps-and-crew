@@ -78,6 +78,7 @@ export default {
       'mining-case-3':"url('/newgold-case-study.png')",
       'case-studies-innner':"linear-gradient(180deg, #053347 0%, #053347 82.8%, #5BC0EC 82.81%)",
       'cs-hero-img':"url('/sodexo-sella-ness-camp-entrance2.png')",
+      'cs-hero-img2':"url('/cedar-valley-lodge-dormitories-grassy-patch-springtime.png')",
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},

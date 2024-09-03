@@ -2,16 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Sticky from '../Sticky'
 
-const SodexoDrivesSecond = () => {
-
-  const handleClickScroll = () => {
-    const element = document.getElementById('demoForm');
-
-    if (element) {
-      element.scrollIntoView({ behavior: "instant" });
-    }
-  };
-
+const SodexoLeveragesSecond = () => {
   return (
     <div className="w-full h-full">
       <div className="main-container mx-auto py-10 lg:py-20 grid  grid-cols-1 lg:grid-cols-3 lg:gap-12">
@@ -24,9 +15,9 @@ const SodexoDrivesSecond = () => {
               Get in touch to see how our technology can be tailored to meet the
               unique requirements of your remote operations.
             </span>
-            <div className="w-full mx-auto mt-4 xl:mt-10" onClick={handleClickScroll}>
+            <div className="w-full mx-auto mt-4 xl:mt-10">
               <Link
-                to="#demoForm"
+                to="#"
                 className="btn-orange w-full h-[54px] flex gap-2 items-center justify-center py-[14px] px-4"
               >
                 Contact sales
@@ -266,4 +257,4 @@ const SodexoDrivesSecond = () => {
   );
 }
 
-export default SodexoDrivesSecond
+export default SodexoLeveragesSecond
