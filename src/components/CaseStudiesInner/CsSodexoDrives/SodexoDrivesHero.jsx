@@ -25,7 +25,7 @@ const SodexoDrivesHero = () => {
                   alt="sodexo-logo"
                 />
               </span>
-              <h3 className="cs-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
+              <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
                 Sodexo Drives Up Room Occupancy and Streamlines Billing at Sella
                 Ness Lodge
               </h3>

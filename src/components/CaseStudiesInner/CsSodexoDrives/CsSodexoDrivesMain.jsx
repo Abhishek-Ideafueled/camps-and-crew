@@ -3,6 +3,7 @@ import SodexoDrivesHero from './SodexoDrivesHero'
 import Aos from 'aos';
 import SodexoDrivesSecond from './SodexoDrivesSecond';
 import './CsSodexoDrivesMain.css';
+import DemoForm from '../../HomePage/DemoForm';
 
 const CsSodexoDrivesMain = () => {
 
@@ -12,9 +13,10 @@ const CsSodexoDrivesMain = () => {
 
 
   return (
-    <div className='overflow-hidden w-full mt-[76px] lg:mt-[106px] '>
+    <div className=' w-full mt-[76px] lg:mt-[106px] '>
       <SodexoDrivesHero/>
       <SodexoDrivesSecond/>
+      <DemoForm/>
     </div>
   )
 }
