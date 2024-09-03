@@ -16,7 +16,7 @@ const SodexoDrivesHero = () => {
             <div className="lg:absolute scLg:static scLg:w-[526px] bg-cs-hero-img bg-center bg-cover min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
           </div>
 
-          <div className="flex flex-col max-w-[600px] 2xl:max-w-[800px] 2xl:min-w-[700px] items-center self-start py-5">
+          <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start py-5">
             <div className="flex flex-col lg:h-[344px] w-full">
               <span className="h-[29px] lg:h-full">
                 <img
@@ -57,7 +57,7 @@ const SodexoDrivesHero = () => {
         <div className="main-container hidden lg:flex mx-auto gap-8">
           <div className='cs-back-image'></div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] 2xl:max-w-[800px] 2xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
+          <div className="grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
             <div className="flex flex-col">
               <span className="font-gilroyBold text-custom-heading text-xl">
                 PROJECT TYPES

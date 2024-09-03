@@ -12,6 +12,7 @@ import Testing from './components/Testing';
 import MiningMain from './components/Mining/MiningMain';
 import CsSodexoDrivesMain from './components/CaseStudiesInner/CsSodexoDrives/CsSodexoDrivesMain';
 import CsSodexoLeveragesMain from './components/CaseStudiesInner/CsSodexoLeverages/CsSodexoLeveragesMain';
+import CsCiveoMain from './components/CaseStudiesInner/CsCiveo/CsCiveoMain';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
     {/* Case Studies Inner links */}
     <Route path="/sodexo-implements-smartlodge-sella-ness-accommodation-camp" element={<CsSodexoDrivesMain/>}/>
     <Route path="/sodexo-canada-implements-smartlodge-cedar-valley-lodge" element={<CsSodexoLeveragesMain/>}/>
+    <Route path='/civeo-implements-smartlodge-camps-north-america' element={<CsCiveoMain/>} />
     </Routes>
    
    </Layout>

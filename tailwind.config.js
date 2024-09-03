@@ -79,6 +79,8 @@ export default {
       'case-studies-innner':"linear-gradient(180deg, #053347 0%, #053347 82.8%, #5BC0EC 82.81%)",
       'cs-hero-img':"url('/sodexo-sella-ness-camp-entrance2.png')",
       'cs-hero-img2':"url('/cedar-valley-lodge-dormitories-grassy-patch-springtime.jpg')",
+      'cs-hero-img3':"url('/case2.jpg')",
+      
     },
     screens:{
       'xs': {'min':'320px','max':'640px'},
