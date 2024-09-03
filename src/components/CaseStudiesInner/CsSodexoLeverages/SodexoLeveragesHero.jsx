@@ -13,7 +13,7 @@ const SodexoLeveragesHero = () => {
       <div className="w-full bg-custom-back h-[700px] smalls:h-[700px] md:h-[600px] lg:h-[450px] pt-10">
         <div className="flex flex-col-reverse lg:gap-8 lg:flex-row main-container w-full mx-auto">
           <div className="relative cs-back-image">
-            <div className="lg:absolute scLg:static scLg:w-[526px] bg-cs-hero-img bg-center bg-cover min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
+            <div className="lg:absolute scLg:static scLg:w-[526px] cs-img-container min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
           </div>
 
           <div className="flex flex-col max-w-[600px] 2xl:max-w-[800px] 2xl:min-w-[700px] items-center self-start py-5">
@@ -26,26 +26,25 @@ const SodexoLeveragesHero = () => {
                 />
               </span>
               <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
-                Sodexo Drives Up Room Occupancy and Streamlines Billing at Sella
-                Ness Lodge
+              Sodexo Leverages SmartLodge to Lift Room Occupancy and Drive Efficiencies at Cedar Valley Lodge
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">95%</span>
+                  <span className="cs-nums text-custom-button">98%</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                    Average room occupancy <br /> during peak demand
+                  Room occupancy reached <br /> during peak demand
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">2X</span>
+                  <span className="cs-nums text-custom-button">1100+</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                    Increase in the rate of <br /> room turnover
+                  Room cleanings managed <br /> daily by SmartLodge
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">95%</span>
+                  <span className="cs-nums text-custom-button">4500</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                    Accuracy of charge sheets <br /> provided to paying client
+                  Rooms managed across <br /> Cedar Valley Lodge
                   </span>
                 </div>
               </div>

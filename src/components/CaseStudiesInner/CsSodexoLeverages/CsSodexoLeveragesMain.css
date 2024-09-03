@@ -25,4 +25,17 @@
     }
     
   }
+
+  .cs-hero-img2{
+    opacity: 50%;
+  }
  
+
+  .cs-img-container{
+    width: 100%; /* Adjust width as needed */
+     /* Adjust height as needed */
+    background-image: url('/cedar-valley-lodge-dormitories-grassy-patch-springtime.jpg');
+    background-position: right; /* Positions the image to the right and bottom */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-size: cover; 
+  }
