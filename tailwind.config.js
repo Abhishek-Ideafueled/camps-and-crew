@@ -82,7 +82,8 @@ export default {
       'xs': {'min':'320px','max':'640px'},
       // 'smalls':'540px',
       'smalls':{'min': '540px', 'max': '767px'},
-      'superxl':'1400px'
+      'superxl':'1400px',
+      'scLg':'1920px'
     },
     gradientColorStops:{
       'industryGradient':'#04253400',

@@ -168,7 +168,12 @@
   }
 
   .cs-heading{
-    @apply font-gilroyBold font-bold text-[25.6px] leading-[32px] md:text-[32px] md:leading-[38.4px] text-white;
+    @apply font-gilroyBold font-bold text-[25.6px] leading-[32px] md:text-[32px] md:leading-[38.4px] 2xl:text-[36px] 2xl:leading-[120%] text-white;
+  }
+  .cs-nums{
+    
+      @apply font-gilroyBold font-bold text-[32px] leading-[38.4px] 2xl:text-[36px] 2xl:leading-[120%] ;
+    
   }
   /* ... */
 }
