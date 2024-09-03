@@ -12,6 +12,7 @@ const CsSodexoDrivesMain = () => {
   return (
     <div className='overflow-hidden w-full mt-[76px] lg:mt-[106px] '>
       <SodexoDrivesHero/>
+      <SodexoDrivesSecond/>
     </div>
   )
 }

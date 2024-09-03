@@ -83,7 +83,7 @@ export default {
       // 'smalls':'540px',
       'smalls':{'min': '540px', 'max': '767px'},
       'superxl':'1400px',
-      'scLg':'1920px'
+      'scLg':'1921px'
     },
     gradientColorStops:{
       'industryGradient':'#04253400',
