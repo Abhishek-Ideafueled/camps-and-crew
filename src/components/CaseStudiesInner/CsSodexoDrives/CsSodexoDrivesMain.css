@@ -1,0 +1,28 @@
+/* ////////////////////////////////////////////////////////HERO SECTION STYLES ///////////////////////////////////// */
+
+.cs-back-image{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .cs-back-image{
+        width: calc(100% - 600px);
+    }
+    
+  }
+
+  @media only screen and (min-width: 1281px) {
+    .cs-back-image{
+        width: calc(100% - 800px);
+    }
+    
+  }
+
+  @media only screen and (min-width: 1921px) {
+    .cs-back-image{
+        width: 526px;
+    }
+    
+  }
+ 
