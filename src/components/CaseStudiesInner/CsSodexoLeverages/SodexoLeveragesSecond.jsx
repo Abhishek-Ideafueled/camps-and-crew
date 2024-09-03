@@ -2,6 +2,15 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const SodexoLeveragesSecond = () => {
+
+  const handleClickScroll = () => {
+    const element = document.getElementById('demoForm');
+
+    if (element) {
+      element.scrollIntoView({ behavior: "instant" });
+    }
+  };
+
   return (
     <div className="w-full h-full">
       <div className="main-container mx-auto py-10 lg:py-20 grid  grid-cols-1 lg:grid-cols-3 lg:gap-12">
@@ -14,9 +23,12 @@ const SodexoLeveragesSecond = () => {
               Get in touch to see how our technology can be tailored to meet the
               unique requirements of your remote operations.
             </span>
-            <div className="w-full mx-auto mt-4 xl:mt-10">
+            <div
+              className="w-full mx-auto mt-4 xl:mt-10"
+              onClick={handleClickScroll}
+            >
               <Link
-                to="#"
+                to="#demoForm"
                 className="btn-orange w-full h-[54px] flex gap-2 items-center justify-center py-[14px] px-4"
               >
                 Contact sales
@@ -60,9 +72,10 @@ const SodexoLeveragesSecond = () => {
 
           <span className="custom-caption mt-16">AT A GLANCE</span>
           <h4 className="cs-heading mt-6">
-            Sodexo partners with Camps & Crew to simplify room allocation,
-            optimize room utilization, and ensure total accuracy in billing at a
-            Scotland workforce lodge site.
+            Sodexo streamlines operations at Cedar Valley Lodge by leveraging
+            SmartLodge to maximize room occupancy, streamline check-ins and
+            meals management, and to facilitate various other daily camp
+            operations.
           </h4>
           <span className="custom-caption mt-12">ABOUT THE CLIENT</span>
           <h4 className="cs-heading mt-6">
@@ -92,19 +105,22 @@ const SodexoLeveragesSecond = () => {
           <span className="custom-caption mt-12">ABOUT THE PROJECT</span>
 
           <h4 className="cs-heading mt-6">
-            Sella Ness camp houses hundred of crew workers staffed at
-            high-profile energy project in the Shetland Islands
+            Historic large-scale energy project takes shape in Kitimat, British
+            Columbia
           </h4>
 
           <p className="cs-body mt-4">
-            The Shetland Islands in Scotland have become a hub for energy
-            projects in Scotland. The Sella Ness Shetland Gas Project is a
-            natural gas processing plant owned jointly by Total E&P UK and Dong
-            E&P. The plant operates at a processing capacity of 500 million
-            cubic feet of gas per day, making it a vital part of the region's
-            energy infrastructure. A key factor of the project’s success is the
-            Sella Ness Camp, a Sodexo-run camp that provides a
-            home-away-from-home for workers staffed at the project.
+            The LNG Canada Project in Kitimat, British Columbia, is a joint
+            venture between JGC Corporation and Fluor Corporation, representing
+            the largest energy investment in Canadian history. Tasked with
+            constructing a state-of-the-art liquefied natural gas (LNG) export
+            terminal, this project marks a significant step towards supplying
+            cleaner energy to Asian markets. At its core, the project features a
+            comprehensive LNG processing facility, storage, and marine terminals
+            on 400 hectares. The project operator partnered with Sodexo Canada
+            to oversee and manage operations at Cedar Valley Lodge, the
+            accommodation facility built to house the large workforce at the
+            site.
           </p>
 
           <span className="custom-caption mt-12">
@@ -112,144 +128,143 @@ const SodexoLeveragesSecond = () => {
           </span>
 
           <h4 className="cs-heading mt-6">
-            Sodexo tasked to manage a 426-room camp serving the Shetland Gas
-            Plant located on the Shetland Islands
+            Sodexo tasked to manage a 4,500-room camp serving remote LNG project
           </h4>
           <p className="cs-body mt-4">
-            Sodexo took over the management of the Sella Ness codge, located in
-            the Shetland Islands of Scotland, in June 2018. With its remote
-            location and unique logistical challenges, accommodations for the
-            Shetland Islands project demands a high level of operational
-            efficiency and attention to detail that Sodexo is positioned to
-            deliver in the region.
+            Since Cedar Valley Lodge (CVL) began welcoming its first guests in
+            July 2020, Sodexo has been at the forefront, delivering unparalleled
+            hospitality, food, and maintenance services. Despite the unforeseen
+            delays caused by the COVID-19 pandemic, CVL reached full operational
+            status by July 2021, showcasing Sodexo's adaptability and commitment
+            to the project’s success.
           </p>
           <p className="cs-body mt-4">
-            {" "}
-            At the Sella Ness camp, Sodexo is responsible for:
+          At the Cedar Valley Lodge, Sodexo is responsible for:
+
+
+
+
           </p>
           <ul className="cs-body pl-8" style={{ listStyleType: "disc" }}>
             <li>
-              Managing the room reservations and room allocation of 426 camp
-              rooms for various incoming work crews
+            Efficiently managing accommodations for 4,500 workers, ensuring comfort and privacy for each worker.
             </li>
             <li>
-              Maximizing room occupancy at the camp, a top priority during
-              periods of peak demand
+            Providing a seamless and comfortable experience for camp residents, from the moment they arrive on site to the moment they leave.
             </li>
             <li>
-              Overseeing daily front- and back-of-house operations on-site,
-              including check-in and check-out, dining, housekeeping, and
-              routine property maintenance
+             
+Overseeing the upkeep of the lodge’s extensive facilities, including routine housekeeping and maintenance.
             </li>
             <li>
-              Providing detailed and accurate billing to its client, the project
-              operators of the Shetland Gas Plant
+            Delivering comprehensive hospitality and food services, including high-speed internet and expansive dining options.
+            </li>
+            <li>
+            Maintaining onsite healthcare, recreational and entertainment facilities to support the physical and mental wellbeing of guests.
             </li>
           </ul>
 
           <div className="mt-12">
             <img
-              src="/sella-ness-camp-room-interior.jpg"
-              alt="sella-ness-camp-room-interior"
+              src="/cvl-vedar-valley-lodge-dormitories-kitimat.jpg"
+              alt="cvl-vedar-valley-lodge-dormitories-kitimat"
             />
           </div>
 
           <span className="custom-caption mt-12">THE CHALLENGE</span>
 
           <h4 className="cs-heading mt-6">
-            Legacy systems used for room allocation left rooms underutilized and
-            made accurate billing difficult to produce for paying clients
+          Sodexo works with Camps & Crew to get ahead of operational challenges endemic to large camps
           </h4>
           <p className="cs-body mt-4">
-            Sodexo faced numerous challenges related to the camp management at
-            Sella Ness due to the outdated disparate systems they had in place.
-            These systems failed to provide efficient room allocation tooling,
-            robust occupancy reporting, or reliable bills for clients. The
-            fragmented systems in place were ill-equipped to handle the demands
-            of a camp regularly managing a high volume of room reservations
-            created, modified or canceled, as is standard in for remote camps of
-            this size.
+          Understanding the project's scale, 
+          Sodexo proactively partnered with Camps & Crew to address the common challenges of 
+          large-scale camps. Ahead of implementation, the companies engaged in discussions related 
+          to the anticipated challenges such as large crew arrivals, the high volume of camp rooms
+           needing regular service, among various other considerations. More specifically,
+            the discussed challenges included:
           </p>
-          <p className="cs-body mt-4">
-            The specific challenges Sodexo faced included:
-          </p>
-          <ul className="cs-body pl-8" style={{ listStyleType: "disc" }}>
+         
+
+
+
+          <ul className="cs-body pl-8 mt-4" style={{ listStyleType: "disc" }}>
             <li>
-              The inability to see which room nights had not yet been blocked
+            Extended wait times during check-in due to the bottleneck created by large crews arriving at once and limited staffing of the front desk
             </li>
             <li>
-              No simple way to allocate room types based on staff type or
-              seniority level
+            The lack of visibility into real-time room availability, potentially leading to suboptimal utilization of accommodations across the camp’s 18 dorms
             </li>
             <li>
-              A lack of visibility into real-time availability of rooms for a
-              given timeframe, resulting in suboptimal room utilization
+            Difficulties monitoring meal consumption, potentially leading to inaccurate food projections and contributing to avoidable food wastage
             </li>
             <li>
-              A broken line of communication between the front desk and
-              housekeeping staff that slowed room turnover down during times of
-              high occupancy
-            </li>
-            <li>
-              Invoices that did not provide a complete audit trail of
-              reservation bookings and related modifications, which prompted
-              many questions from the client when they received their bill
+            Communication breakdowns between teams–common at camps of this size– that hamper how quickly rooms can be logged as clean and assigned to the next incoming worker
             </li>
           </ul>
 
           <div className="mt-12">
             <img
-              src="/sella-ness-camp-accommodation-aerial-shot-buildings.jpg"
-              alt="sella-ness-camp-accommodation-aerial-shot-buildings"
+              src="/sodexo-canada-aerial-cedar-valley-lodge-lng-project.jpg"
+              alt="sodexo-canada-aerial-cedar-valley-lodge-lng-project"
             />
           </div>
 
           <span className="mt-12 custom-caption">THE SOLUTION</span>
 
           <h4 className="mt-6 cs-heading">
-            SmartLodge increases room occupancy and ensures maximum billing
-            accuracy at Sella Ness Lodge
+          Sodexo implements SmartLodge to streamline operations at Cedar Valley Lodge
           </h4>
 
           <p className="mt-4 cs-body">
-            After implementing the Camps & Crew Smartlodge system at the Sella
-            Ness camp, Sodexo successfully drove up room occupancy and
-            streamlined billing. Both outcomes were of great benefit to both
-            Sodexo and its paying client.
-            <br />
-            <br />
-            <Link
+          Sodexo addressed the anticipated challenges of managing Cedar Valley Lodge (CVL) by implementing <Link
               to="/software-for-workforce-camp"
               reloadDocument
               className="underline hover:text-custom-blue"
             >
               SmartLodge
-            </Link>
-             has facilitated camp management for staff at Sella Ness in various
-            ways and enabled Sodexo to more easily achieve their KPI’s for the
-            camp. The system’s impact includes:
+            </Link> upon its launch. This system has unlocked various operational efficiencies across CVL as outlined below.
+            <br />
+            <br />
+            Key operational metrics achieved with SmartLodge include:
           </p>
-          <ul className='cs-body pl-8' style={{ listStyleType: 'disc' }}>        
-        <li> <span className='font-ttCommonProNormal font-semibold'>A reduction in empty room nights,</span> attributable to visual room assignment tooling offered by SmartLodge. 
-          The user interface of the system, which consists of a digital “tape chart”, gives the front desk staff a means to see
-           all rooms that have already been blocked and those that have not. Drag-and-drop functionality ensures existing room 
-           reservations awaiting assignment to a specific room can be efficiently blocked out. That same user interface also
-            ensures front desk staff can easily block crew workers into room types that correspond to their staff type and/or seniority.</li>
-        <li> <span className='font-ttCommonProNormal font-semibold'>Room occupancy has increased up to 95%</span> on average, 
-          when Sella Ness has experienced peak demand. Camp staff have achieved this high rate of occupancy by
-           leveraging SmartLodge to streamline room bookings and 
-          by utilizing room inventory reporting to monitor cancellations or modifications made to existing room reservations.</li>
-        <li><span className='font-ttCommonProNormal font-semibold'>The rate of room turnover by housekeeping doubled</span> thanks
-           to the system’s housekeeping module, which assigns daily workloads to housekeepers 
-           and facilitates faster communication between the housekeeping staff and the front desk.
-            SmartLodge enables housekeeping staff to mark when rooms are cleaned from a mobile device and
-           ensures that room status data is immediately reflected in the room assignment user interface.</li>
-        <li><span className='font-ttCommonProNormal font-semibold'>Improved billing accuracy,</span> powered by invoices that detail every service day logged for every camp
-           resident that stays on-site. By tightening the management of room reservations using SmartLodge, Sodexo 
-           has gained access to a comprehensive audit trail of all reservation activity in the system. Reservation activity 
-           includes all room cancellations, modifications,
-           no-shows, and other billable activities that occurred while a camp resident is on-site.</li>
-       </ul>
+          <ul className="cs-body pl-8" style={{ listStyleType: "disc" }}>
+            <li>
+              
+              <span className="font-ttCommonProNormal font-semibold">
+              Room utilization up to 98%
+              </span> during peak demand by simplifying reservation management for over 4500 rooms. The system makes it 
+              simple for multiple parties internal and external to Sodexo to create, change or cancel room reservations.
+            </li>
+            <li>
+              <span className="font-ttCommonProNormal font-semibold">
+              Average check-in wait times under 60 seconds,</span> facilitated by the Sodexo MyWap app and on-site kiosks. The MyWap app enables workers to begin their
+               check-in process while en route to camp, which they can complete at kiosk upon arrival at camp. SmartLodge’s 
+               seamless integration with CVL's electronic key system (Visionline by Assa Abloy) gives returning residents the
+               ability to reactivate their keycards at the kiosks, ensuring a swift check-in process even for large crews.
+            </li>
+            <li>
+              <span className="font-ttCommonProNormal font-semibold">
+              1100+ room cleanings conducted daily,
+              </span> facilitated by SmartLodge’s Mobile Housekeeping feature. This innovative solution equips more than
+               240 housekeepers at CVL with the ability to easily update room statuses on their tablets after each room cleaning.
+                With immediate visibility of room statuses,
+               front desk staff can swiftly assign newly cleaned rooms, enhancing the rate of room turnover.
+            </li>
+            <li>
+              <span className="font-ttCommonProNormal font-semibold">
+              Accurate meal tracking and reduction of food waste
+              </span> is achieved through SmartLodge Meal Scanning. Workers' meal swipes at buffet line tablets
+               provide valuable data for meal reconciliation, billing back of appropriate parties,
+               and forecasting of food needs for future periods, significantly minimizing food waste.
+            </li>
+            <li>
+              <span className="font-ttCommonProNormal font-semibold">
+              A fully integrated tech-stack across systems.
+              </span> With SmartLodge as the central platform, Sodexo is able to ensure data from other specialized technologies that support on-site operations seamlessly flows into SmartLodge. These systems include an electronic key system powered by Assa Abloy’s Visionline 
+              and a point-of-sale system used at CVL’s bar to track alcohol consumption (Volante).
+            </li>
+          </ul>
         </div>
       </div>
     </div>
