@@ -14,6 +14,7 @@ import CsSodexoDrivesMain from './components/CaseStudiesInner/CsSodexoDrives/CsS
 import CsSodexoLeveragesMain from './components/CaseStudiesInner/CsSodexoLeverages/CsSodexoLeveragesMain';
 import CsCiveoMain from './components/CaseStudiesInner/CsCiveo/CsCiveoMain';
 import CsB2GoldMain from './components/CaseStudiesInner/CsB2Gold/CsB2GoldMain';
+import CsCleanHarborMain from './components/CaseStudiesInner/CsCleanHarbor/CsCleanHarborMain';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
     <Route path="/sodexo-canada-implements-smartlodge-cedar-valley-lodge" element={<CsSodexoLeveragesMain/>}/>
     <Route path='/civeo-implements-smartlodge-camps-north-america' element={<CsCiveoMain/>} />
     <Route path='/b2gold-implements-smartlodge-fekola-mine-camps' element={<CsB2GoldMain/>} />
+    <Route path='/clean-harbors-canada-leverages-smartlodge-turnkey-camps' element={<CsCleanHarborMain/>} />
     </Routes>
    
    </Layout>

@@ -3,6 +3,7 @@ import Aos from 'aos';
 import DemoForm from '../../HomePage/DemoForm';
 import B2GoldHero from './B2GoldHero';
 import B2GoldSecond from './B2GoldSecond';
+import './CsB2GoldMain.css';
 
 const CsB2GoldMain = () => {
 
