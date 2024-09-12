@@ -3,6 +3,7 @@ import './CsCleanHarborMain.css';
 import Aos from 'aos';
 import DemoForm from '../../HomePage/DemoForm';
 import CleanHarborHero from './CleanHarborHero';
+import CleanHarborSecond from './CleanHarborSecond';
 
 const CsCleanHarborMain = () => {
 
@@ -14,7 +15,7 @@ const CsCleanHarborMain = () => {
   return (
     <div className=' w-full mt-[76px] lg:mt-[106px] '>
       <CleanHarborHero/>
-      
+      <CleanHarborSecond/>
       <DemoForm/>
     </div>
   )
