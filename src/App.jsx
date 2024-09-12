@@ -13,6 +13,7 @@ import MiningMain from './components/Mining/MiningMain';
 import CsSodexoDrivesMain from './components/CaseStudiesInner/CsSodexoDrives/CsSodexoDrivesMain';
 import CsSodexoLeveragesMain from './components/CaseStudiesInner/CsSodexoLeverages/CsSodexoLeveragesMain';
 import CsCiveoMain from './components/CaseStudiesInner/CsCiveo/CsCiveoMain';
+import CsB2GoldMain from './components/CaseStudiesInner/CsB2Gold/CsB2GoldMain';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
     <Route path="/sodexo-implements-smartlodge-sella-ness-accommodation-camp" element={<CsSodexoDrivesMain/>}/>
     <Route path="/sodexo-canada-implements-smartlodge-cedar-valley-lodge" element={<CsSodexoLeveragesMain/>}/>
     <Route path='/civeo-implements-smartlodge-camps-north-america' element={<CsCiveoMain/>} />
+    <Route path='/b2gold-implements-smartlodge-fekola-mine-camps' element={<CsB2GoldMain/>} />
     </Routes>
    
    </Layout>

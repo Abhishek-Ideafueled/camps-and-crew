@@ -169,7 +169,7 @@ const CaseStudiesSlider = () => {
                     Operations at Fekola Mine Camps
                   </h2>
                   <Link
-                    to="#"
+                    to="/b2gold-implements-smartlodge-fekola-mine-camps" reloadDocument
                     className="flex items-center text-sm md:text-base gap-2 hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                   >
                     READ STORY
