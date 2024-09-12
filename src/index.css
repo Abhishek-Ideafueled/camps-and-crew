@@ -168,7 +168,7 @@
   }
 
   .cs-main-heading{
-    @apply font-gilroyBold font-bold text-[25.6px] leading-[32px] md:text-[32px] md:leading-[38.4px] 2xl:text-[36px] 2xl:leading-[120%] text-white;
+    @apply font-gilroyBold font-bold text-[25.6px] leading-[32px] md:text-[32px] md:leading-[38.4px] text-white;
   }
   .cs-nums{
     

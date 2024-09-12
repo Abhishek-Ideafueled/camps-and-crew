@@ -63,7 +63,7 @@ const SodexoLeveragesHero = () => {
                 REGION
               </span>
               <span className="font-ttCommonProMedium font-medium text-custom-heading text-base leading-[25.6px]">
-                United Kingdom
+                Canada
               </span>
             </div>
             <div className="flex flex-col">

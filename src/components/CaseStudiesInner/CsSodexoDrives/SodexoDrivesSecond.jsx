@@ -28,7 +28,7 @@ const SodexoDrivesSecond = () => {
                 to="#demoForm"
                 className="btn-orange w-full h-[54px] flex gap-2 items-center justify-center py-[14px] px-4"
               >
-                Contact sales
+                CONTACT SALES
                 <span>
                   <svg
                     width="29"

@@ -31,7 +31,7 @@ const CiveoSecond = () => {
                     to="#demoForm"
                     className="btn-orange w-full h-[54px] flex gap-2 items-center justify-center py-[14px] px-4"
                   >
-                    Contact sales
+                   CONTACT SALES
                     <span>
                       <svg
                         width="29"
@@ -117,7 +117,7 @@ const CiveoSecond = () => {
               </h4>
 
               <p className="cs-body mt-4">
-                Civeo operates 20 lodges in Canada and the United States,
+                Civeo operates <Link to='https://civeo.com/accommodations/' className='underline hover:text-custom-blue'>20 lodges</Link> in Canada and the United States,
                 encompassing over 17,000 rooms across in North America. These
                 accommodations are strategically placed in areas with
                 substantial natural resource activities, such as the Alberta Oil
@@ -148,7 +148,7 @@ const CiveoSecond = () => {
               <p className="cs-body mt-4">
               At their remote camps, Civeo is responsible for:
                             </p>
-              <ul className="cs-body pl-8" style={{ listStyleType: "disc" }}>
+              <ul className="cs-body pt-2 pl-8" style={{ listStyleType: "disc" }}>
                 <li>
                 Managing room reservations and allocation for various work crews across project operators and contractors, ensuring an efficient use of room inventory
                 </li>
@@ -230,7 +230,7 @@ const CiveoSecond = () => {
                 </Link> across Civeo’s lodges has led to multiple positive operational outcomes.By leveraging robust deployments of the system across their sites, Civeo has been able to achieve the following:
                 
               </p>
-              <ul className="cs-body pl-8" style={{ listStyleType: "disc" }}>
+              <ul className="cs-body pl-8 mt-4" style={{ listStyleType: "disc" }}>
                 <li>
                   <span className="font-ttCommonProNormal font-semibold">
                   Reduced check-in wait times, as quick as 30 seconds,
