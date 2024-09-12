@@ -49,7 +49,7 @@ const CleanHarborHero = () => {
             <div className="main-container hidden lg:flex mx-auto gap-8">
               <div className='cs-back-image'></div>
     
-              <div className="grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
+              <div className="lg:pl-[28px] grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
                 <div className="flex flex-col">
                   <span className="font-gilroyBold text-custom-heading text-xl">
                     PROJECT TYPES
