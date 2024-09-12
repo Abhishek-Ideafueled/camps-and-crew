@@ -240,36 +240,18 @@ const CiveoSecond = () => {
                 <li>
                   <span className="font-ttCommonProNormal font-semibold">
                   Enhanced guest experience: 
-                  </span> on average, when Sella Ness has experienced peak demand. Camp
-                  staff have achieved this high rate of occupancy by leveraging
-                  SmartLodge to streamline room bookings and by utilizing room
-                  inventory reporting to monitor cancellations or modifications
-                  made to existing room reservations.
+                  </span> the implementation of a Mobile Check In and Kiosk Check In has enabled guests to quickly check in and head to their rooms, reducing friction upon arrival and contributing to increased worker wellbeing.
                 </li>
                 <li>
                   <span className="font-ttCommonProNormal font-semibold">
                   Optimal room utilization–up to 98% during busy periods:
-                  </span> thanks to the system’s housekeeping module, which assigns
-                  daily workloads to housekeepers and facilitates faster
-                  communication between the housekeeping staff and the front
-                  desk. SmartLodge enables housekeeping staff to mark when rooms
-                  are cleaned from a mobile device and ensures that room status
-                  data is immediately reflected in the room assignment user
-                  interface.
+                  </span> attributable to SmartLodge’s live database of room inventory that tracks the creation, modification and cancellation of room reservations in real-time.
                 </li>
                 <li>
                   <span className="font-ttCommonProNormal font-semibold">
                   Improved coordination of room assignments
-                  </span> powered by invoices that detail every service day logged for
-                  every camp resident that stays on-site. By tightening the
-                  management of room reservations using SmartLodge, Sodexo has
-                  gained access to a comprehensive audit trail of all
-                  reservation activity in the system. Reservation activity
-                  includes all room cancellations, modifications, no-shows, and
-                  other billable activities that occurred while a camp resident
-                  is on-site.
+                  </span> thanks to improved communication between the front desk and housekeeping teams. Real-time updates on room status and availability allowed housekeeping to prioritize cleaning, ensuring rooms were ready for incoming guests.
                 </li>
-                A streamlined room booking process
                 <li>
                 <span className="font-ttCommonProNormal font-semibold">
                 A streamlined room booking process

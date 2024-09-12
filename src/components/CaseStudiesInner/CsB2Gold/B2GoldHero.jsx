@@ -63,7 +63,7 @@ const B2GoldHero = () => {
              REGION
            </span>
            <span className="font-ttCommonProMedium font-medium text-custom-heading text-base leading-[25.6px]">
-           Bali
+           Mali
            </span>
          </div>
          <div className="flex flex-col">
