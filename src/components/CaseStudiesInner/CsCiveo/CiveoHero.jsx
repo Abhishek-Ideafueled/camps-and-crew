@@ -37,7 +37,7 @@ const CiveoHero = () => {
                 <div className="flex flex-col">
                   <span className="cs-nums text-custom-button">100%</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                  Visibility into up-to-date room <br className='md:hidden superxl::block' /> reservation data across lodges
+                  Visibility into up-to-date room <br className='md:hidden superxl:block' /> reservation data across lodges
                   </span>
                 </div>
               </div>

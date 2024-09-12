@@ -23,7 +23,7 @@ const OtherCaseStudies = () => {
                   Efficiencies at Cedar Valley Lodge
                 </h2>
                 <Link
-                  to="#"
+                  to="/clean-harbors-canada-leverages-smartlodge-turnkey-camps" reloadDocument
                   className="flex items-center gap-2 text-sm md:text-base hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY

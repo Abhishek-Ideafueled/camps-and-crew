@@ -14,30 +14,30 @@ const CleanHarborHero = () => {
               <span className="h-[46px] lg:h-full">
                 <img
                   className="object-cover h-[46px]"
-                  src="/white-civeo.png"
-                  alt="white-civeo"
+                  src="/clean_harbors_new_all_white_transparent.png"
+                  alt="clean_harbors_new_all_white_transparent logo"
                 />
               </span>
               <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
-              Civeo Speeds Up Check-In and Streamlines Camp Operations Across North America with SmartLodge
+              Clean Harbors Lodging Services Use <br className='hidden md:block' /> SmartLodge to Streamline Daily <br className='hidden md:block' /> Operations at Network of Remote Camps 
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">30 Sec.</span>
+                  <span className="cs-nums text-custom-button">95%</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                  Average check-in time <br /> using kiosk check-in
+                  Decrease in check-in <br className='hidden md:block'/> processing time
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">98%</span>
+                  <span className="cs-nums text-custom-button">23%</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                  Room utilization reached <br /> during peak demand
+                  Increase in accuracy <br className='hidden md:block'/> of reservation data
                   </span>
                 </div>
                 <div className="flex flex-col">
-                  <span className="cs-nums text-custom-button">100%</span>
+                  <span className="cs-nums text-custom-button">70%</span>
                   <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
-                  Visibility into up-to-date room <br className='md:hidden superxl::block' /> reservation data across lodges
+                  Reduction in <br className='hidden md:block'/> billing discrepancies
                   </span>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const CleanHarborHero = () => {
                     PROJECT TYPES
                   </span>
                   <span className="font-ttCommonProMedium font-medium text-custom-heading text-base leading-[25.6px]">
-                    Oil & Gas
+                  Oil & Gas, Construction
                   </span>
                 </div>
                 <div className="flex flex-col">
