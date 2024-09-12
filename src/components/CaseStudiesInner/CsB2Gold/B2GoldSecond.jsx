@@ -205,8 +205,9 @@ const B2GoldSecond = () => {
               </h4>
 
               <p className="mt-4 cs-body">
-              In a move to streamline room management and unlock greater operational efficiencies at the Fekola camps, B2Gold turned to Camps and Crew. The implementation of SmartLodge, 
-              <Link to="/software-for-workforce-camp" reloadDocument className='underline hover:text-custom-blue'>a camp management system</Link> designed for remote mining camps, has proved to be a game-changer for the remote mining project.
+              In a move to streamline room management and unlock greater operational efficiencies at the Fekola camps,
+               B2Gold turned to Camps and Crew. 
+               The implementation of SmartLodge, <Link to="/software-for-workforce-camp" reloadDocument className='underline hover:text-custom-blue'>a camp management system</Link> designed for remote mining camps, has proved to be a game-changer for the remote mining project.
               </p>
               <p className='mt-4 cs-body'>
   B2Gold has realized the following outcomes by leveraging the system:

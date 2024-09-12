@@ -80,7 +80,8 @@ export default {
       'cs-hero-img':"url('/sodexo-sella-ness-camp-entrance2.png')",
       'cs-hero-img2':"url('/cedar-valley-lodge-dormitories-grassy-patch-springtime.jpg')",
       'cs-hero-img3':"url('/case2.jpg')",
-      'cs-hero-img4':"url('/b2gold-hero.png')"
+      'cs-hero-img4':"url('/b2gold-hero.png')",
+      'cs-hero-img5':"url('/clean-harbors-hero.png')",
       
     },
     screens:{
