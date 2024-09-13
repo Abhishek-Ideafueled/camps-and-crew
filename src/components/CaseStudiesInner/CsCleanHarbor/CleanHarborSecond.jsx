@@ -12,7 +12,7 @@ const CleanHarborSecond = () => {
     
       return (
         <div className="w-full h-full">
-          <div className="main-container mx-auto py-10 lg:pt-20 lg:pb-10 grid  grid-cols-1 lg:grid-cols-3 lg:gap-12">
+          <div className="main-container mx-auto py-10 lg:pt-20 lg:pb-10 grid  grid-cols-1 lg:grid-cols-3 lg:gap-8">
             <div className="col-span-1 lg:sticky lg:top-[120px] lg:z-10 h-auto self-start">
               <div className="w-full lg:max-w-[384px] max-h-max bg-white border-[1px] border-custom-blue shadow-cs-inner-shadow p-6 rounded-2xl flex flex-col">
                 <h3 className="text-xl leading-[120%] lg:text-[32px] 2xl:text-[36px] font-gilroyBold text-custom-heading ">
@@ -78,7 +78,7 @@ const CleanHarborSecond = () => {
               Introducing Clean Harbors: Pioneers in comprehensive workforce lodging solutions
               </h4>
               <p className="cs-body mt-4">
-              <Link to="https://www.cleanharbors.com/about-us" className='underline'>Clean Harbors</Link> is North America's premier provider of environmental, industrial, 
+              <Link to="https://www.cleanharbors.com/about-us" target='_blank' className='underline'>Clean Harbors</Link> is North America's premier provider of environmental, industrial, 
               and lodging services, catering to a diverse clientele that includes many Fortune 500 companies and government
                agencies. Their Lodging Services division offers unparalleled comfort, quality, and flexibility, 
                setting industry standards for both short-term and long-term accommodations. With offerings that include permanent 
@@ -199,7 +199,7 @@ const CleanHarborSecond = () => {
               </h4>
 
               <p className="mt-4 cs-body">
-              The implementation of SmartLodge has yielded various improvements to operational efficiency and guest satisfaction at Clean Harbors' lodging facilities. By embracing the robust functionality of the system across their camps, the company has realized several significant improvements, including:
+              The implementation of <Link to='/software-for-workforce-camp' className='underline hover:text-custom-blue' reloadDocument>SmartLodge</Link> has yielded various improvements to operational efficiency and guest satisfaction at Clean Harbors' lodging facilities. By embracing the robust functionality of the system across their camps, the company has realized several significant improvements, including:
               </p>
             
               <ul className="cs-body pl-8 mt-4" style={{ listStyleType: "disc" }}>
