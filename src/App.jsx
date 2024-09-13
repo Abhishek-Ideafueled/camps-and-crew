@@ -16,6 +16,7 @@ import CsCiveoMain from './components/CaseStudiesInner/CsCiveo/CsCiveoMain';
 import CsB2GoldMain from './components/CaseStudiesInner/CsB2Gold/CsB2GoldMain';
 import CsCleanHarborMain from './components/CaseStudiesInner/CsCleanHarbor/CsCleanHarborMain';
 import CsAnokiigamigMain from './components/CaseStudiesInner/CsAnokiigamig/CsAnokiigamigMain';
+import CsPermianLodgingMain from './components/CaseStudiesInner/CsPermianLodging/CsPermianLodgingMain';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
     <Route path='/b2gold-implements-smartlodge-fekola-mine-camps' element={<CsB2GoldMain/>} />
     <Route path='/clean-harbors-canada-leverages-smartlodge-turnkey-camps' element={<CsCleanHarborMain/>} />
     <Route path='/anokiigamig-installs-smartlodge-remote-camp-management-system' element={<CsAnokiigamigMain/>}/>
+    <Route path='/permian-lodging-streamlines-billing-guest-experience-smartlodge' element={<CsPermianLodgingMain/>}/>
     </Routes>
    
    </Layout>
