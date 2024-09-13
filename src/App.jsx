@@ -17,6 +17,7 @@ import CsB2GoldMain from './components/CaseStudiesInner/CsB2Gold/CsB2GoldMain';
 import CsCleanHarborMain from './components/CaseStudiesInner/CsCleanHarbor/CsCleanHarborMain';
 import CsAnokiigamigMain from './components/CaseStudiesInner/CsAnokiigamig/CsAnokiigamigMain';
 import CsPermianLodgingMain from './components/CaseStudiesInner/CsPermianLodging/CsPermianLodgingMain';
+import CsRightChoiceMain from './components/CaseStudiesInner/CsRightChoice/CsRightChoiceMain';
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
     <Route path='/clean-harbors-canada-leverages-smartlodge-turnkey-camps' element={<CsCleanHarborMain/>} />
     <Route path='/anokiigamig-installs-smartlodge-remote-camp-management-system' element={<CsAnokiigamigMain/>}/>
     <Route path='/permian-lodging-streamlines-billing-guest-experience-smartlodge' element={<CsPermianLodgingMain/>}/>
+    <Route path='/right-choice-catering-edmonton-streamlines-remote-camp-operations-smartlodge' element={<CsRightChoiceMain/>}/>
     </Routes>
    
    </Layout>
