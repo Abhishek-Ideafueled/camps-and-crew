@@ -82,6 +82,7 @@ export default {
       'cs-hero-img3':"url('/case2.jpg')",
       'cs-hero-img4':"url('/b2gold-hero.png')",
       'cs-hero-img5':"url('/clean-harbors-hero.png')",
+      'cs-hero-img6':"url('/aerial-atkinson-road-camp.png')",
       
     },
     screens:{

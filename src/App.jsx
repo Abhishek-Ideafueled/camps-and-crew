@@ -15,6 +15,7 @@ import CsSodexoLeveragesMain from './components/CaseStudiesInner/CsSodexoLeverag
 import CsCiveoMain from './components/CaseStudiesInner/CsCiveo/CsCiveoMain';
 import CsB2GoldMain from './components/CaseStudiesInner/CsB2Gold/CsB2GoldMain';
 import CsCleanHarborMain from './components/CaseStudiesInner/CsCleanHarbor/CsCleanHarborMain';
+import CsAnokiigamigMain from './components/CaseStudiesInner/CsAnokiigamig/CsAnokiigamigMain';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
     <Route path='/civeo-implements-smartlodge-camps-north-america' element={<CsCiveoMain/>} />
     <Route path='/b2gold-implements-smartlodge-fekola-mine-camps' element={<CsB2GoldMain/>} />
     <Route path='/clean-harbors-canada-leverages-smartlodge-turnkey-camps' element={<CsCleanHarborMain/>} />
+    <Route path='/anokiigamig-installs-smartlodge-remote-camp-management-system' element={<CsAnokiigamigMain/>}/>
     </Routes>
    
    </Layout>
