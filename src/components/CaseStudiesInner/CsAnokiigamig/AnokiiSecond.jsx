@@ -344,18 +344,6 @@ const AnokiiSecond = () => {
                   <span className="font-ttCommonProNormal font-semibold">
                   Enhanced communication and coordination </span> across different camp departments by offering real-time insights into operational metrics, such as room occupancy and housekeeping status of rooms.
                 </li>
-                <li>
-                  <span className="font-ttCommonProNormal font-semibold">
-                    Automating billing operations,
-                  </span>{" "}
-                  from reservation to reconciliation. Smartlodge generates
-                  detailed charge sheets that are converted into draft invoices,
-                  which can be configured to include additional charges like
-                  equipment rentals. Once charge sheets are approved, they are
-                  finalized and exported directly to Clean Harbor's accounting
-                  system, matching SmartLodge charge codes with the external
-                  system's correct general ledger accounts.
-                </li>
               </ul>
             </div>
           </div>

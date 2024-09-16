@@ -158,13 +158,15 @@ const PermianSecond = () => {
                 <li>
                   Managing room reservations and allocations with precision.
                   Their lodging options include single and double occupancy
-                  rooms, designed to enhance comfort and privacy. Ensuring
-                  around-the-clock support with 24/7 front desk and maintenance
-                  services to meet all guest needs promptly.
+                  rooms, designed to enhance comfort and privacy.
                 </li>
                 <li>
                   Ensuring around-the-clock support with 24/7 front desk and
                   maintenance services to meet all guest needs promptly.
+                </li>
+                <li>
+                Comprehensive weekly cleanings for all occupied rooms. This service encompasses changing bed linens,
+                 sweeping and mopping floors, and a thorough cleaning of bathrooms, upholding a high standard of cleanliness and comfort for guests.
                 </li>
                 <li>
                   Providing a range of amenities for relaxation and recreation,

@@ -164,7 +164,7 @@
   }
 
   .custom-caption{
-    @apply font-ttCommonProRegular font-semibold text-sm leading-[22px] text-custom-blue;
+    @apply font-ttCommonProMedium text-sm leading-[22px] text-custom-blue;
   }
 
   .cs-main-heading{
