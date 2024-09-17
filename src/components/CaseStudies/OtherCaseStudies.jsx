@@ -151,7 +151,7 @@ const OtherCaseStudies = () => {
                 <br className='block md:hidden lg:block' /> Workforce Camps and Commercial Properties
                 </h2>
                 <Link
-                  to="#"
+                  to="/petroplex-manages-workforce-housing-commercial-property-rentals-smartlodge" reloadDocument
                   className="flex items-center gap-2 text-sm md:text-base hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY

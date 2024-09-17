@@ -18,6 +18,7 @@ import CsCleanHarborMain from './components/CaseStudiesInner/CsCleanHarbor/CsCle
 import CsAnokiigamigMain from './components/CaseStudiesInner/CsAnokiigamig/CsAnokiigamigMain';
 import CsPermianLodgingMain from './components/CaseStudiesInner/CsPermianLodging/CsPermianLodgingMain';
 import CsRightChoiceMain from './components/CaseStudiesInner/CsRightChoice/CsRightChoiceMain';
+import CsPetroplexMain from './components/CaseStudiesInner/CsPetroplex/CsPetroplexMain';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
     <Route path='/anokiigamig-installs-smartlodge-remote-camp-management-system' element={<CsAnokiigamigMain/>}/>
     <Route path='/permian-lodging-streamlines-billing-guest-experience-smartlodge' element={<CsPermianLodgingMain/>}/>
     <Route path='/right-choice-catering-edmonton-streamlines-remote-camp-operations-smartlodge' element={<CsRightChoiceMain/>}/>
+    <Route path='/petroplex-manages-workforce-housing-commercial-property-rentals-smartlodge' element={<CsPetroplexMain/>}/>
     </Routes>
    
    </Layout>

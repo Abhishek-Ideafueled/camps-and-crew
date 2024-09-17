@@ -85,6 +85,7 @@ export default {
       'cs-hero-img6':"url('/aerial-atkinson-road-camp.png')",
       'cs-hero-img7':"url('/entrance-lobby-permian-lodging-camp-lobby.png')",
       'cs-hero-img8':"url('/right-choice-camps-catering-aerial.png')",
+      'cs-hero-img9':"url('/petroplex-hero-img.png')",
       
     },
     screens:{
