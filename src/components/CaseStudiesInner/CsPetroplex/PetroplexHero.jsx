@@ -21,7 +21,7 @@ const PetroplexHero = () => {
                 <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
                 Petroplex Deploys Smartlodge to Boost <br className='hidden lg:block'/>Revenue and Manage Occupancy of<br className='hidden lg:block'/> Workforce Camps and Commercial Properties
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-8 lg:gap-4 xl:gap-[100px]">
                   <div className="flex flex-col">
                     <span className="cs-nums text-custom-button">95%</span>
                     <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">

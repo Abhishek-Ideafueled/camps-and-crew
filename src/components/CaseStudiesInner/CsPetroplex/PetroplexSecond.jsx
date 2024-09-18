@@ -110,16 +110,12 @@ const PetroplexSecond = () => {
               </h4>
 
               <p className="cs-body mt-4">
-              The Permian Basin, spanning west Texas and southeastern New Mexico, stands as a  <Link to='https://www.thecentersquare.com/texas/article_ba9ada06-85ae-11ee-9e2a-3f6d7766469e/' target='_blank' className='underline hover:text-custom-blue'>cornerstone in the energy sector</Link> due to the region's extensive oil and gas reserves. Its geological uniqueness lies in its "stacked plays," 
+              The Permian Basin, spanning west Texas and southeastern New Mexico, stands as a cornerstone in the energy sector due to the region's extensive oil and gas reserves. Its geological uniqueness lies in its "stacked plays," 
                which allow for extracting resources from multiple layers using a single well. This efficiency underpins the basin's 
                capacity for high-volume production, making it an attractive hub for energy and construction projects.
                 Among the key projects bolstering this region's development are <Link to="https://pboilandgasmagazine.com/enterprise-products-partners-announce-four-projects-in-delaware-midland-basins/" target='_blank' className='underline hover:text-custom-blue'>two natural gas processing plants and the Bahia NGL pipeline</Link>-ambitious capital ventures funded by Enterprise Products Partners L.P., among others. These 
                 initiatives position the Permian as 
-              a region vital to meeting future energy demands, with output expected to see a notable increase by 2025. 
-             Alberta oil sands-one of
-                the world's largest reserves of oil. In addition, their Pink
-                Mountain Lodge, positioned on the Alaska Highway, is ideally
-                situated to support British Columbia's energy projects.
+              a region vital to meeting future energy demands, with output expected to see a notable increase by 2025.
               </p>
               <div className="mt-6">
                 <img
@@ -152,6 +148,10 @@ const PetroplexSecond = () => {
                 <li>
                 Efficient management of the check-in process. The process enables guests to 
                 complete their registration digitally and ensures they have a welcoming onboarding experience upon arrival.</li>
+                <li>
+                Effectively managing linen changes, cleaning schedules, and general maintenance-while also coordinating these services based on occupancy, guest needs, 
+                and client agreements, to ensure a clean and comfortable environment.
+                </li>
                 <li>
                 Coordinating meal preparation, which involves planning menus, managing kitchen staff, and ensuring the timely provision of meals.</li>
                 <li>
