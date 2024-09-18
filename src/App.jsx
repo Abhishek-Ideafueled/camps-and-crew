@@ -19,6 +19,7 @@ import CsAnokiigamigMain from './components/CaseStudiesInner/CsAnokiigamig/CsAno
 import CsPermianLodgingMain from './components/CaseStudiesInner/CsPermianLodging/CsPermianLodgingMain';
 import CsRightChoiceMain from './components/CaseStudiesInner/CsRightChoice/CsRightChoiceMain';
 import CsPetroplexMain from './components/CaseStudiesInner/CsPetroplex/CsPetroplexMain';
+import CsSodexoImplementsMain from './components/CaseStudiesInner/CsSodexImplements/CsSodexoImplementsMain';
 
 function App() {
 
@@ -44,6 +45,7 @@ function App() {
     <Route path='/permian-lodging-streamlines-billing-guest-experience-smartlodge' element={<CsPermianLodgingMain/>}/>
     <Route path='/right-choice-catering-edmonton-streamlines-remote-camp-operations-smartlodge' element={<CsRightChoiceMain/>}/>
     <Route path='/petroplex-manages-workforce-housing-commercial-property-rentals-smartlodge' element={<CsPetroplexMain/>}/>
+    <Route path='/sodexo-implements-smartlodge-enroute-keeyask-project-manitoba' element={<CsSodexoImplementsMain/>}/>
     </Routes>
    
    </Layout>

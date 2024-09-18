@@ -181,12 +181,11 @@ const OtherCaseStudies = () => {
                 <h2 className="text-base leading-[20px] text-wrap sm:text-lg sm:leading-[24px] lg:text-xl lg:leading-[24px] text-white font-gilroyBold font-bold w-full">
                
                 Sodexo Partners with Camps & Crew to Streamline<br className='block md:hidden lg:block' /> FIFO Transport Logistics and Camp Management for Remote<br className='block md:hidden lg:block' /> Hydroelectric Project
-                {/* <br className='block md:hidden lg:block' />Revenue and Manage Occupancy of
-                <br className='block md:hidden lg:block' />
-                Workforce Camps and Commercial Properties */}
+               
                 </h2>
                 <Link
-                  to="#"
+                  to="/sodexo-implements-smartlodge-enroute-keeyask-project-manitoba"
+                  reloadDocument
                   className="flex items-center gap-2 text-sm md:text-base hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY
