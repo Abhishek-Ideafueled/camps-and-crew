@@ -2,6 +2,8 @@ import Aos from 'aos';
 import React, { useEffect } from 'react';
 import './CsSodexoImplementsMain.css';
 import SodexoImplementsHero from './SodexoImplementsHero';
+import SodexoImplementsSecond from './SodexoImplementsSecond';
+import DemoForm from '../../HomePage/DemoForm';
 
 const CsSodexoImplementsMain = () => {
 
@@ -13,6 +15,8 @@ const CsSodexoImplementsMain = () => {
   return (
     <div className='w-full mt-[76px] lg:mt-[106px]'>
       <SodexoImplementsHero/>
+      <SodexoImplementsSecond/>
+      <DemoForm/>
     </div>
   )
 }
