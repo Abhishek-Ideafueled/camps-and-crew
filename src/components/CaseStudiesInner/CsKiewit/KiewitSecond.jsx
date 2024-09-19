@@ -188,10 +188,7 @@ const KiewitSecond = () => {
                 className="cs-body pl-8 mt-2"
                 style={{ listStyleType: "disc" }}
               ><li>
-                  Most workers were transported via chartered flights from
-                  Winnipeg directly to local airfields near the site, such as
-                  those in Gillam or Thompson, which were the closest population
-                  centers to Keeyask.</li></ul>
+                  Workers from the Mattagami First Nation and surrounding areas typically traveled to the project site using personal vehicles or shuttle services.</li></ul>
                 </li>
                 <li className="mt-2">
                   <span className="font-ttCommonProNormal font-semibold">
