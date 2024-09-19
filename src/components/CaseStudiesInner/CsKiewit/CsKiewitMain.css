@@ -1,0 +1,58 @@
+
+.cs-back-image{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .cs-back-image{
+        width: calc(100% - 600px);
+    }
+    .cs-back-image div{
+        background-position: center right -100px;
+    }
+     /* .cs-back-image img{
+        position: relative;
+        background-position: 4%;
+     } */
+    
+  }
+
+  @media only screen and (min-width: 1281px) {
+    .cs-back-image{
+        width: calc(100% - 800px);
+    }
+    
+  }
+  /* @media only screen and (min-width: 1840px) {
+    .cs-back-image img{
+        height: 105%;
+        position: relative;
+        bottom: 4%;
+    } 
+}*/
+
+  @media only screen and (min-width: 1630px) {
+    .cs-back-image div{
+       /* background-size: cover; */
+       background-position: center right -10px;     
+       
+    } 
+}
+
+@media only screen and (min-width: 1830px) {
+    .cs-back-image div{
+        
+        background-size: cover;
+        background-position: center right -100px;
+    } 
+}
+
+
+  @media only screen and (min-width: 1921px) {
+    .cs-back-image{
+        width: 526px;
+    }
+    
+  }
+ 
