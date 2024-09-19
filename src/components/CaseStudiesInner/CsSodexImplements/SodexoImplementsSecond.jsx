@@ -304,7 +304,7 @@ const SodexoImplementsSecond = () => {
               >
                 <li>
                   <span className="font-ttCommonProNormal font-semibold">
-                    IStreamlining the reservation process
+                    Streamlining the reservation process
                   </span> by auto-generating travel bookings for workers on roster rotations. For non-rostered groups, the 
                   system expedited the booking process by allowing travel reservations to be quickly created en masse. 
                   Both functionalities significantly alleviated the administrative burden on travel coordinators.
