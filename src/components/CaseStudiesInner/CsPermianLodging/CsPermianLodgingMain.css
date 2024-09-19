@@ -31,7 +31,6 @@
     .permian.cs-back-image div{
         background-size: cover;
         /* background-position: center right -20px; */
-        border-radius: 16px !important;
     }
     
   }
@@ -40,6 +39,9 @@
     .permian.cs-back-image{
         width: 526px;
     }
-    
+    .permian.cs-back-image{
+      background-size: cover;
+      background-position: center;
+    }
   }
  

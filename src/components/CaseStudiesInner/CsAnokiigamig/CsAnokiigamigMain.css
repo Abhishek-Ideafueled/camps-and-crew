@@ -1,26 +1,47 @@
 
-.cs-back-image{
+.anokii.cs-back-image{
     width: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .anokii.cs-back-image div{
+    background-position: center;
+  }
+}
 
 @media only screen and (min-width: 1024px) {
-    .cs-back-image{
+  .anokii.cs-back-image{
         width: calc(100% - 600px);
     }
+    .anokii.cs-back-image div{
+      background-position: center right -10px;
+  }
+    
     
   }
 
   @media only screen and (min-width: 1281px) {
-    .cs-back-image{
+    .anokii.cs-back-image{
         width: calc(100% - 800px);
     }
     
   }
 
+  
+  @media only screen and (min-width: 1580px) {
+    .anokii.cs-back-image div{
+        background-size: auto;
+    }
+    
+  }
+
   @media only screen and (min-width: 1921px) {
-    .cs-back-image{
+    .anokii.cs-back-image{
         width: 526px;
+    }
+    .anokii.cs-back-image div{
+      background-position: center;
+      background-size: cover;
     }
     
   }
