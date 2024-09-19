@@ -1,25 +1,43 @@
 
-.cs-back-image{
+.permian.cs-back-image{
     width: 100%;
 }
 
+@media only screen and (max-width: 1024px) {
+  .permian.cs-back-image div{
+    background-position: center;
+  }
+  
+}
 
 @media only screen and (min-width: 1024px) {
-    .cs-back-image{
+    .permian.cs-back-image{
         width: calc(100% - 600px);
+    }
+    .permian.cs-back-image div{
+      background-position: center right -20px;
     }
     
   }
 
   @media only screen and (min-width: 1281px) {
-    .cs-back-image{
+    .permian.cs-back-image{
         width: calc(100% - 800px);
     }
     
   }
 
+  @media only screen and (min-width: 1560px) {
+    .permian.cs-back-image div{
+        background-size: cover;
+        /* background-position: center right -20px; */
+        border-radius: 16px !important;
+    }
+    
+  }
+
   @media only screen and (min-width: 1921px) {
-    .cs-back-image{
+    .permian.cs-back-image{
         width: 526px;
     }
     
