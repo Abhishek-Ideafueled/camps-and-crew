@@ -87,7 +87,7 @@ export default {
       'cs-hero-img8':"url('/right-choice-camps-catering-aerial.png')",
       'cs-hero-img9':"url('/petroplex-hero-img.png')",
       'cs-hero-img10':"url('/sodexo-canada-keeyask-lobby.png')",
-      'cs-hero-img11':"url('/odexo-canada-keeyask-lobby.png')",
+      'cs-hero-img11':"url('/hydroelectric-project-canada.png')",
       
     },
     screens:{

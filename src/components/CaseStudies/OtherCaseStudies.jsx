@@ -217,7 +217,7 @@ const OtherCaseStudies = () => {
                 with EnRoute and SmartLodge
                 </h2>
                 <Link
-                  to="#"
+                  to="/kiewit-fifo-workforce-movements-camps-ontario-hydroelectric-project-enroute-smartlodge" reloadDocument
                   className="flex items-center gap-2 text-sm md:text-base hover:gap-4  transition-all duration-250 text-white font-ttCommonProNormal font-semibold"
                 >
                   READ STORY
