@@ -253,7 +253,8 @@ const MiningCaseStudies = () => {
           B2Gold Boosts Room Utilization and Streamlines Operations at Fekola Mine Camps
             </h4>
             <Link
-              to="#"
+              to="/b2gold-implements-smartlodge-fekola-mine-camps"
+              reloadDocument
               className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base opacity-0 text-white max-w-max"
             >
               <p>READ STORY</p>
@@ -277,7 +278,8 @@ const MiningCaseStudies = () => {
           B2Gold Boosts Room Utilization and Streamlines Operations at Fekola Mine Camps
             </h4>
             <Link
-              to="#"
+              to="/b2gold-implements-smartlodge-fekola-mine-camps"
+              reloadDocument
               className="flex items-center gap-2 hover:gap-4 transition-all duration-150 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
             >
               <p>READ STORY</p>
@@ -309,7 +311,8 @@ const MiningCaseStudies = () => {
            Atkinson Camp near Rainy River Mine Optimizes Daily Operations and Enhances the Guest Experience with SmartLodge
             </h4>
             <Link
-              to="#"
+              to="/anokiigamig-installs-smartlodge-remote-camp-management-system"
+              reloadDocument
               className="flex items-center gap-2 font-ttCommonProRegular font-semibold text-base opacity-0 text-white max-w-max"
             >
               <p>READ STORY</p>
@@ -333,7 +336,8 @@ const MiningCaseStudies = () => {
            Atkinson Camp near Rainy River Mine Optimizes Daily Operations and Enhances the Guest Experience with SmartLodge
             </h4>
             <Link
-              to="#"
+              to="/anokiigamig-installs-smartlodge-remote-camp-management-system"
+              reloadDocument
               className="flex items-center gap-2  hover:gap-4 transition-all duration-150 font-ttCommonProRegular font-semibold text-base absolute bottom-[10%] dark-part text-white z-10 max-w-max"
             >
               <p>READ STORY</p>

@@ -75,7 +75,7 @@ Mining Exploration Camps
                       <GoCheckCircle size={24} />
                     </span>
                     <p className="font-ttCommonProNormal text-custom-body text-base">
-                    Easily manage cleaning schedules and monitor when linens need to be changed
+                    Easily manage cleaning schedules and monitor when linens need to be changed or when maintenance is required
                     </p>
                   </li>
                 </ul>
