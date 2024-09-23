@@ -47,10 +47,12 @@ const SodexoImplementsHero = () => {
           </div>
         </div>
         <div className="w-full bg-[#5BC0ED] py-10 h-[240px] lg:h-[140px]">
-          <div className="main-container hidden lg:flex mx-auto gap-8">
-            <div className="cs-back-image"></div>
-    
-            <div className="lg:pl-[28px] grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
+          <div className="main-container hidden lg:flex gap-8 mx-auto">
+            <div className="cs-back-image">
+            
+            </div>
+            <div className="flex max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start">
+            <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-6 xl:gap-[100px]">
               <div className="flex flex-col">
                 <span className="font-gilroyBold text-custom-heading text-xl">
                   PROJECT TYPES
@@ -75,6 +77,7 @@ const SodexoImplementsHero = () => {
                 Integrated Facilities Mgmt.
                 </span>
               </div>
+            </div>
             </div>
           </div>
         </div>
