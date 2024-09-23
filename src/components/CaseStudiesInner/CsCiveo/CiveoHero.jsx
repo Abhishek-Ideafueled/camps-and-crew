@@ -5,8 +5,8 @@ const CiveoHero = () => {
         <div className="w-full max-h-max">
            <div className="w-full bg-custom-back h-[700px] smalls:h-[700px] md:h-[600px] lg:h-[450px] pt-10">
         <div className="flex flex-col-reverse lg:gap-8 lg:flex-row main-container w-full mx-auto">
-          <div className="relative cs-back-image">
-            <div className="lg:absolute scLg:static scLg:w-[526px] bg-cs-hero-img3 bg-left bg-cover min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
+          <div className="relative civeo cs-back-image">
+            <div className="lg:absolute scLg:static scLg:w-[526px] bg-cs-hero-img3 bg-cover lg:bg-contain min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
           </div>
 
           <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start py-5">

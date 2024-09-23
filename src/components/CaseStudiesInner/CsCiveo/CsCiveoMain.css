@@ -1,27 +1,39 @@
 
-.cs-back-image{
+.civeo.cs-back-image{
     width: 100%;
 }
 
 
+@media only screen and (max-width: 1024px) {
+  .civeo.cs-back-image div{
+    background-position: center;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
-    .cs-back-image{
+    .civeo.cs-back-image{
         width: calc(100% - 600px);
     }
+    .civeo.cs-back-image div{
+      background-position: center right -7px;
+  }
     
   }
 
   @media only screen and (min-width: 1281px) {
-    .cs-back-image{
+    .civeo.cs-back-image{
         width: calc(100% - 800px);
     }
     
   }
 
   @media only screen and (min-width: 1921px) {
-    .cs-back-image{
+    .civeo.cs-back-image{
         width: 526px;
     }
-    
+    .civeo.cs-back-image div{
+      background-position: center;
+      background-size: cover;
+    }
   }
  
