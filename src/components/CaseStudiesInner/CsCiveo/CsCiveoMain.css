@@ -29,7 +29,7 @@
 
   @media only screen and (min-width: 1440px) {
   .civeo.cs-back-image{
-    
+    width: 400px;
   }  
   .civeo.cs-back-image div{
     background-size: cover;
