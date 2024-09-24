@@ -53,7 +53,7 @@ const AnokiiHero = () => {
 
             </div>
           </div>
-          <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start py-5">
+          <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start">
           <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-6">
             <div className="flex flex-col">
               <span className="font-gilroyBold text-custom-heading text-xl">
