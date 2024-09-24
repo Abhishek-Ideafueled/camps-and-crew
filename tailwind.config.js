@@ -80,7 +80,7 @@ export default {
       'cs-hero-img':"url('/sodexo-sella-ness-camp-entrance2.png')",
       'cs-hero-img2':"url('/cedar-valley-lodge-dormitories-grassy-patch-springtime.jpg')",
       'cs-hero-img3':"url('/civeo-hero.png')",
-      'cs-hero-img4':"url('/b2gold-hero.png')",
+      'cs-hero-img4':"url('/case3.jpg')",
       'cs-hero-img5':"url('/clean-harbors-hero.png')",
       'cs-hero-img6':"url('/aerial-atkinson-road-camp.png')",
       'cs-hero-img7':"url('/entrance-lobby-permian-lodging-camp-lobby.png')",

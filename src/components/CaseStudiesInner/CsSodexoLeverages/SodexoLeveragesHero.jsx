@@ -11,9 +11,9 @@ const SodexoLeveragesHero = () => {
 
           <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start py-5">
             <div className="flex flex-col lg:h-[344px] w-full">
-              <span className="h-[29px] lg:h-full">
+              <span className="h-[46px] lg:h-full">
                 <img
-                  className="object-cover h-[29px]"
+                  className="object-cover h-[46px]"
                   src="/sodexo-logo2.png"
                   alt="sodexo-logo"
                 />
