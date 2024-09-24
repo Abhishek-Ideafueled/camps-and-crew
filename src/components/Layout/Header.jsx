@@ -96,7 +96,7 @@ const Header = () => {
 
               <span
                 className="flex items-center gap-1 hover:text-custom-blue cursor-pointer"
-                // onClick={()=>setIsOpen(true)}
+                onClick={()=>setIsOpen(true)}
               >
                 <p>Solutions</p>
                 <IoIosArrowDown />
@@ -145,7 +145,7 @@ const Header = () => {
           </Link>
         <Link>
         <li className='flex items-center gap-1 hover:text-custom-blue cursor-pointer' 
-        // onClick={()=>setIsOpen(true)}
+        onClick={()=>setIsOpen(true)}
         >
           <p >Solutions</p> 
           <IoIosArrowDown />
