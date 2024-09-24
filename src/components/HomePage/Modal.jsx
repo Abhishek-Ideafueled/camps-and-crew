@@ -55,7 +55,7 @@ const Modal = ({isOpen,onClose,children}) => {
         </h2>
         <div className="grid gap-4">
           <Link reloadDocument
-          to='/software-for-workforce-camp' className="flex items-center gap-4 max-w-full min-h-[219px] max-h-max p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer">
+          to='/software-for-workforce-camp' className="solutions-container flex items-center gap-4 max-w-full min-h-[219px] max-h-max p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer">
             <div className="max-w-max min-h-[130px]">
               <img
                 src="/man-walking-down-row-between-camp-buildings.png"
@@ -71,13 +71,13 @@ const Modal = ({isOpen,onClose,children}) => {
                 A flexible camp management system able to adapt to the
                 requirements of remote camps and villages large and small.
               </p>
-              <p className="font-ttCommonProRegular text-sm leading-[21px] text-custom-blue mt-2 hover:font-ttCommonProNormal hover:text-custom-body cursor-pointer">
+              <p className="read-more font-ttCommonProRegular text-sm leading-[21px] text-custom-blue mt-2 hover:font-ttCommonProNormal hover:text-custom-body cursor-pointer">
                 READ MORE
               </p>
             </div>
           </Link>
           <Link reloadDocument  to='/fifo-travel-online-booking-tool'
-            className="flex items-center gap-4 max-w-full min-h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer"
+            className="solutions-container flex items-center gap-4 max-w-full min-h-[219px] p-5 rounded-2xl border-[1px] border-custom-blue cursor-pointer"
             onMouseEnter={() => setActiveTab("enroute")}
             onMouseLeave={() => setActiveTab("lodge")}
           >
@@ -97,7 +97,7 @@ const Modal = ({isOpen,onClose,children}) => {
                 transportation required to get workers to and from remote
                 projects.
               </p>
-              <p className="font-ttCommonProRegular text-sm leading-[21px] mt-2 text-custom-blue hover:font-ttCommonProNormal hover:text-custom-body cursor-pointer">
+              <p className="read-more font-ttCommonProRegular text-sm leading-[21px] mt-2 text-custom-blue hover:font-ttCommonProNormal hover:text-custom-body cursor-pointer">
                 READ MORE
               </p>
             </div>

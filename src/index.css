@@ -190,3 +190,13 @@ html{
   scroll-behavior: smooth;
   overflow-anchor: none;
 }
+
+.solutions-container:hover{
+  box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.solutions-container:hover .read-more{
+  color: #09425d;
+  transition: all 0.2s ease-in-out;
+}

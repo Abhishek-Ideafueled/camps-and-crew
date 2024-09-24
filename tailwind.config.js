@@ -139,7 +139,8 @@ export default {
       'rw-card-shadow':"0px 8px 8px -4px #10182808,0px 20px 24px -4px #10182814",
       'rw-slide-shadow':"0px 4px 6px -2px #10182808, 0px 12px 16px -4px #10182814",
       'mining-card-shadow' :"0px 32px 64px -12px #10182824",
-      'cs-inner-shadow':"0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03)"
+      'cs-inner-shadow':"0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03)",
+      'solutions-shadow':"0px 6px 18px 0px rgba(0, 0, 0, 0.08)",
     },
   },
    
