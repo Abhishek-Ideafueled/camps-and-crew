@@ -1,26 +1,37 @@
 /* ////////////////////////////////////////////////////////HERO SECTION STYLES ///////////////////////////////////// */
 
-.cs-back-image{
+ .sodexo-lev.cs-back-image{
     width: 100%;
 }
 
 
 @media only screen and (min-width: 1024px) {
-    .cs-back-image{
+     .sodexo-lev.cs-back-image{
         width: calc(100% - 600px);
+    }
+    .sodexo-lev.cs-back-image div{
+     background-size: contain;
+     background-position: center right -70px;
     }
     
   }
 
   @media only screen and (min-width: 1281px) {
-    .cs-back-image{
+     .sodexo-lev.cs-back-image{
         width: calc(100% - 800px);
     }
     
   }
 
+  @media only screen and (min-width: 1630px) {
+    .sodexo-lev.cs-back-image div{
+      background-size: cover;
+      background-position: center right -100px;
+    }
+  }
+
   @media only screen and (min-width: 1921px) {
-    .cs-back-image{
+     .sodexo-lev.cs-back-image{
         width: 526px;
     }
     
