@@ -1,26 +1,36 @@
 /* ////////////////////////////////////////////////////////HERO SECTION STYLES ///////////////////////////////////// */
 
-.cs-back-image{
+.sodexo-drives.cs-back-image{
     width: 100%;
 }
 
 
 @media only screen and (min-width: 1024px) {
-    .cs-back-image{
+    .sodexo-drives.cs-back-image{
         width: calc(100% - 600px);
     }
-    
+    .sodexo-drives.cs-back-image div{
+      background-size: contain;
+      background-position: center right -50px;
+    }
   }
 
   @media only screen and (min-width: 1281px) {
-    .cs-back-image{
+    .sodexo-drives.cs-back-image{
         width: calc(100% - 800px);
+    }
+    
+  }
+  @media only screen and (min-width: 1741px) {
+    .sodexo-drives.cs-back-image div{
+        background-size: cover;
+        background-position: center right -20px;
     }
     
   }
 
   @media only screen and (min-width: 1921px) {
-    .cs-back-image{
+    .sodexo-drives.cs-back-image{
         width: 526px;
     }
     
