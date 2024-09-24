@@ -21,7 +21,7 @@ const B2GoldHero = () => {
        <h3 className="cs-main-heading py-8 lg:py-0 lg:pb-10 flex items-center">
        B2Gold Boosts Room Utilization and Streamlines Operations at Fekola Mine Camps
        </h3>
-       <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4">
+       <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-6 scLg:gap-[50px]">
          <div className="flex flex-col">
            <span className="cs-nums text-custom-button">95%</span>
            <span className="font-ttCommonProNormal font-semibold text-white font-base leading-[22.4px]">
@@ -46,10 +46,14 @@ const B2GoldHero = () => {
  </div>
 </div>
    <div className="w-full bg-[#5BC0ED] py-10 h-[240px] lg:h-[140px]">
-     <div className="main-container hidden lg:flex mx-auto gap-8">
-       <div className='cs-back-image'></div>
+     <div className="main-container hidden lg:flex mx-auto scLg:gap-8">
+       <div className='cs-back-image'>
+        <div className='w-[526px]'>
 
-       <div className="grid grid-cols-1 md:grid-cols-3  main-container max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] scLg:max-w-[700px] scLg:pl-10">
+        </div>
+       </div>
+       <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start">
+       <div className="grid grid-cols-1 md:grid-cols-3 justify-between gap-4 md:gap-6 xl:gap-[75px] scLg:gap-[50px]">
          <div className="flex flex-col">
            <span className="font-gilroyBold text-custom-heading text-xl">
              PROJECT TYPES
@@ -74,6 +78,7 @@ const B2GoldHero = () => {
            Workforce Accommodations
            </span>
          </div>
+       </div>
        </div>
      </div>
    </div>
