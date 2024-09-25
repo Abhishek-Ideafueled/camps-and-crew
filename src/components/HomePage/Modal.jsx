@@ -139,10 +139,10 @@ const Modal = ({isOpen,onClose,children}) => {
                 <span>Housekeeping & Mantainence</span>
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Cleaning Assignments
+                Cleaning assignments
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Walkdown Capabilities
+                Walkdown capabilities
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
                 Maintainence tickets
@@ -153,13 +153,13 @@ const Modal = ({isOpen,onClose,children}) => {
                 <BsBullseye size={20} /> <span>Front Desk</span>
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Arrival and Departures
+                Arrival and departures
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
                 Mobile check-in
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                kiosk check-in and check-out
+                Kiosk check-in and check-out
               </p>
             </div>
             <div className="flex flex-col max-w-max gap-3 ">
@@ -220,7 +220,7 @@ const Modal = ({isOpen,onClose,children}) => {
                 Access to rich GDS content
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Book Flights, hotels or rental cars
+                Book flights, hotels or rental cars
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
                 Provide travellers with single itinerary for all bookings
