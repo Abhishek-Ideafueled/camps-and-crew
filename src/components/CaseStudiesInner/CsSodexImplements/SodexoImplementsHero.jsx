@@ -9,16 +9,16 @@ const SodexoImplementsHero = () => {
               <div className="lg:absolute scLg:static scLg:w-[526px] bg-cs-hero-img10 bg-cover lg:bg-contain min-w-[300px] lg:w-[1000px] h-[300px] md:min-h-[350px] lg:h-[500px] top-[0px] bottom-0 right-0 rounded-2xl bg-no-repeat"></div>
             </div>
     
-            <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start py-5">
+            <div className="flex flex-col max-w-[600px] xl:max-w-[800px] xl:min-w-[700px] items-center self-start">
               <div className="flex flex-col lg:h-[344px] w-full">
-                <span className="h-[24px] lg:h-full">
+                <span className="h-[46px] lg:h-full">
                   <img
-                    className="object-cover h-[24px]"
+                    className="object-cover h-[46px]"
                     src="/white-sodexo.png"
                     alt="white-sodexo logo"
                   />
                 </span>
-                <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[230px] flex items-center">
+                <h3 className="cs-main-heading py-8 lg:py-0 lg:min-h-[210px] flex items-center">
                 Sodexo Partners with Camps & Crew to
  <br className='hidden lg:block'/>Streamline FIFO Transport Logistics and<br className='hidden lg:block'/> Camp Management for Remote<br className='hidden lg:block'/> Hydroelectric Project
                 </h3>

@@ -127,7 +127,7 @@ const Modal = ({isOpen,onClose,children}) => {
                 Multiple ways to book rooms
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Visual Room blocking tools
+                Visual room blocking tools
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
                 Booking for workers on roster schedules
@@ -187,14 +187,14 @@ const Modal = ({isOpen,onClose,children}) => {
                 <span>Book and Manage Chartered Transportation</span>
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Manage seats on chartered air,ground or marine transportation
+                Manage seats on chartered air, ground or marine transportation
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
                 View and edit live passenger manifests for all trips to and from
                 camp
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Quickly book seats for workers on rosters month or week out
+                Quickly book seats for workers on rosters months or weeks out
               </p>
             </div>
             <div className="flex flex-col max-w-max gap-3 ">
@@ -206,10 +206,10 @@ const Modal = ({isOpen,onClose,children}) => {
                 Travel coordinators or end-users can be set up to book
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Require approvals when needed
+                Require approvals, when needed
               </p>
               <p className="text-sm font-ttCommonProMedium text-custom-body">
-                Customise and imhplement a robust rules engine
+                Customise and implement a robust rules engine
               </p>
             </div>
             <div className="flex flex-col max-w-max gap-2 ">
